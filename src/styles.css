@@ -1117,9 +1117,10 @@ h1 {
   .bubble-cloud {
     --outer-ring: 0px;
     --inner-ring: 0px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     min-block-size: 0;
-    padding: 16px;
+    padding: 12px;
   }
 
   .orbit-guide,
@@ -1127,15 +1128,17 @@ h1 {
 
   .orbit-field {
     position: static;
-    display: grid;
-    gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
     min-height: 0;
   }
 
   .orbit-node,
   .center-node {
     position: static;
-    inline-size: 100%;
+    inline-size: auto;
     block-size: auto;
     transform: none;
   }
@@ -1143,6 +1146,10 @@ h1 {
   .orbit-node > .topic-bubble,
   .center-node > .topic-bubble {
     margin: 0;
+  }
+
+  .center-node {
+    inline-size: 100%;
   }
 
   .topic-bubble:hover,
@@ -1154,14 +1161,28 @@ h1 {
   .topic-bubble,
   .topic-bubble.shape-compact,
   .topic-bubble.shape-balanced,
-  .topic-bubble.shape-wide,
-  .topic-bubble.is-current {
-    inline-size: 100%;
+  .topic-bubble.shape-wide {
+    inline-size: auto;
     max-inline-size: none;
     min-inline-size: 0;
-    min-block-size: 82px;
-    border-radius: 24px;
+    min-block-size: 0;
+    padding: 10px 16px;
+    border-radius: 18px;
+    font-size: 0.82rem;
   }
+
+  .topic-bubble.is-current {
+    inline-size: 100%;
+    min-block-size: 0;
+    padding: 14px 20px;
+    border-radius: 22px;
+  }
+
+  .topic-bubble span { font-size: 0.5rem; }
+  .topic-bubble strong { font-size: 0.88rem; }
+  .topic-bubble small { font-size: 0.48rem; }
+  .topic-bubble.is-current strong { font-size: 1.1rem; }
+  .topic-bubble.is-current small { font-size: 0.56rem; }
 
   .status-grid {
     inline-size: 100%;
