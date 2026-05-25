@@ -1,0 +1,10 @@
+topic_id: circuit-verification
+display_order: 30
+short_name: Verification
+display_name: Circuit Verification
+aliases:
+  - circuit verification
+  - formal verification
+  - equivalence checking
+description: Circuit verification topics for checking design correctness, equivalence, and implementation intent.
+baselines: []

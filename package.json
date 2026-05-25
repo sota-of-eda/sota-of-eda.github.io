@@ -1,0 +1,28 @@
+{
+  "name": "sota-of-eda",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Agent-readable EDA baseline coverage registry with a GitHub Pages explorer.",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "validate": "node scripts/validate-registry.mjs",
+    "build:registry": "node scripts/build-registry.mjs",
+    "build": "npm run validate && npm run build:registry && vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "ajv": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest",
+    "yaml": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
+  },
+  "license": "MIT AND CC-BY-4.0"
+}

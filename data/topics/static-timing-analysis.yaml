@@ -1,0 +1,14 @@
+topic_id: static-timing-analysis
+parent_id: timing
+short_name: STA
+display_name: Static Timing Analysis
+aliases:
+  - STA
+  - timing analysis
+  - timing update
+description: Baseline coverage guidance for papers that make static timing analysis claims.
+review_triggers:
+  - paper claims incremental STA acceleration
+  - paper evaluates ECO timing update latency
+  - paper claims GPU or heterogeneous STA speedup
+baselines: []

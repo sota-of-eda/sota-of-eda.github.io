@@ -1,0 +1,9 @@
+topic_id: timing
+display_order: 70
+short_name: Timing
+display_name: Timing
+aliases:
+  - timing
+  - timing analysis
+description: Timing topics that model, update, or optimize timing quantities in EDA flows.
+baselines: []

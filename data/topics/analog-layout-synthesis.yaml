@@ -1,0 +1,10 @@
+topic_id: analog-layout-synthesis
+display_order: 100
+short_name: Analog Layout
+display_name: Analog Layout Synthesis
+aliases:
+  - analog layout synthesis
+  - analog synthesis
+  - analog design automation
+description: Analog layout synthesis topics, including layout generation, sizing, optimization, and agentic workflows.
+baselines: []

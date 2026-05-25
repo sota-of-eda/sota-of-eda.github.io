@@ -1,0 +1,10 @@
+topic_id: dataset-and-tools
+display_order: 120
+short_name: Data & Tools
+display_name: Dataset and Tools
+aliases:
+  - dataset and tools
+  - EDA datasets
+  - EDA tools
+description: Dataset and tool topics that support reproducible EDA research, benchmarks, and infrastructure.
+baselines: []

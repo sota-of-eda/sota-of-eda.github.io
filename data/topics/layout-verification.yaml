@@ -1,0 +1,10 @@
+topic_id: layout-verification
+display_order: 80
+short_name: Layout Verify
+display_name: Layout Verification
+aliases:
+  - layout verification
+  - DRC
+  - LVS
+description: Layout verification topics for checking physical layouts against design-rule and schematic constraints.
+baselines: []

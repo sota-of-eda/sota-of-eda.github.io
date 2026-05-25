@@ -1,0 +1,9 @@
+topic_id: logic-synthesis
+display_order: 20
+short_name: Logic
+display_name: Logic Synthesis
+aliases:
+  - logic synthesis
+  - logic optimization
+description: Logic synthesis topics for optimizing and mapping Boolean networks and gate-level designs.
+baselines: []

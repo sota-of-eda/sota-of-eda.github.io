@@ -1,0 +1,323 @@
+[
+  {
+    "review_triggers": [],
+    "topic_id": "high-level-synthesis",
+    "display_order": 10,
+    "short_name": "HLS",
+    "display_name": "High Level Synthesis",
+    "aliases": [
+      "HLS",
+      "high-level synthesis"
+    ],
+    "description": "High-level synthesis topics for translating behavioral specifications into hardware implementations.",
+    "baselines": []
+  },
+  {
+    "review_triggers": [],
+    "topic_id": "logic-synthesis",
+    "display_order": 20,
+    "short_name": "Logic",
+    "display_name": "Logic Synthesis",
+    "aliases": [
+      "logic synthesis",
+      "logic optimization"
+    ],
+    "description": "Logic synthesis topics for optimizing and mapping Boolean networks and gate-level designs.",
+    "baselines": []
+  },
+  {
+    "review_triggers": [],
+    "topic_id": "circuit-verification",
+    "display_order": 30,
+    "short_name": "Verification",
+    "display_name": "Circuit Verification",
+    "aliases": [
+      "circuit verification",
+      "formal verification",
+      "equivalence checking"
+    ],
+    "description": "Circuit verification topics for checking design correctness, equivalence, and implementation intent.",
+    "baselines": []
+  },
+  {
+    "review_triggers": [],
+    "topic_id": "placement",
+    "display_order": 40,
+    "short_name": "Placement",
+    "display_name": "Placement",
+    "aliases": [
+      "placement",
+      "physical design placement"
+    ],
+    "description": "Placement topics that assign cells, macros, or blocks to legal or optimizable physical locations.",
+    "baselines": []
+  },
+  {
+    "review_triggers": [],
+    "topic_id": "clock-tree-synthesis",
+    "display_order": 50,
+    "short_name": "CTS",
+    "display_name": "Clock Tree Synthesis",
+    "aliases": [
+      "CTS",
+      "clock tree synthesis"
+    ],
+    "description": "Clock tree synthesis topics for distributing clock signals under skew, latency, power, and routing constraints.",
+    "baselines": []
+  },
+  {
+    "review_triggers": [],
+    "topic_id": "routing",
+    "display_order": 60,
+    "short_name": "Routing",
+    "display_name": "Routing",
+    "aliases": [
+      "routing",
+      "physical design routing"
+    ],
+    "description": "Routing topics that connect placed design objects under congestion, design-rule, and timing constraints.",
+    "baselines": []
+  },
+  {
+    "review_triggers": [],
+    "topic_id": "timing",
+    "display_order": 70,
+    "short_name": "Timing",
+    "display_name": "Timing",
+    "aliases": [
+      "timing",
+      "timing analysis"
+    ],
+    "description": "Timing topics that model, update, or optimize timing quantities in EDA flows.",
+    "baselines": []
+  },
+  {
+    "review_triggers": [],
+    "topic_id": "layout-verification",
+    "display_order": 80,
+    "short_name": "Layout Verify",
+    "display_name": "Layout Verification",
+    "aliases": [
+      "layout verification",
+      "DRC",
+      "LVS"
+    ],
+    "description": "Layout verification topics for checking physical layouts against design-rule and schematic constraints.",
+    "baselines": []
+  },
+  {
+    "review_triggers": [],
+    "topic_id": "mask-optimization",
+    "display_order": 90,
+    "short_name": "Mask Opt",
+    "display_name": "Mask Optimization",
+    "aliases": [
+      "mask optimization",
+      "lithography",
+      "OPC"
+    ],
+    "description": "Mask optimization topics for manufacturability, lithography, and mask-aware design closure.",
+    "baselines": []
+  },
+  {
+    "review_triggers": [],
+    "topic_id": "analog-layout-synthesis",
+    "display_order": 100,
+    "short_name": "Analog Layout",
+    "display_name": "Analog Layout Synthesis",
+    "aliases": [
+      "analog layout synthesis",
+      "analog synthesis",
+      "analog design automation"
+    ],
+    "description": "Analog layout synthesis topics, including layout generation, sizing, optimization, and agentic workflows.",
+    "baselines": []
+  },
+  {
+    "review_triggers": [],
+    "topic_id": "testing",
+    "display_order": 110,
+    "short_name": "Testing",
+    "display_name": "Testing",
+    "aliases": [
+      "testing",
+      "test generation",
+      "DFT"
+    ],
+    "description": "Testing topics for validating manufactured chips, generating tests, and improving design-for-test flows.",
+    "baselines": []
+  },
+  {
+    "review_triggers": [],
+    "topic_id": "dataset-and-tools",
+    "display_order": 120,
+    "short_name": "Data & Tools",
+    "display_name": "Dataset and Tools",
+    "aliases": [
+      "dataset and tools",
+      "EDA datasets",
+      "EDA tools"
+    ],
+    "description": "Dataset and tool topics that support reproducible EDA research, benchmarks, and infrastructure.",
+    "baselines": []
+  },
+  {
+    "review_triggers": [
+      "paper claims autonomous analog circuit design",
+      "paper reports circuit sizing success rate or sample efficiency",
+      "paper compares LLM, RL, search, or tool-using analog design agents"
+    ],
+    "topic_id": "agentic-analog-design",
+    "parent_id": "analog-agent",
+    "short_name": "Agentic Analog",
+    "display_name": "Agentic Analog Design",
+    "aliases": [
+      "agentic analog design",
+      "analog circuit design agent",
+      "autonomous analog design"
+    ],
+    "description": "Papers that evaluate agent-driven analog circuit design, sizing, or optimization.",
+    "baselines": []
+  },
+  {
+    "review_triggers": [
+      "paper claims autonomous analog circuit design",
+      "paper reports circuit sizing success rate or sample efficiency",
+      "paper compares LLM, RL, search, or tool-using analog design agents"
+    ],
+    "topic_id": "analog-agent",
+    "parent_id": "analog-layout-synthesis",
+    "short_name": "Analog Agent",
+    "display_name": "Analog Design Agent",
+    "aliases": [
+      "analog agent",
+      "analog design automation",
+      "circuit design agent"
+    ],
+    "description": "Baseline coverage guidance for papers that make agentic analog design claims.",
+    "baselines": []
+  },
+  {
+    "review_triggers": [
+      "paper claims global placement quality or runtime improvement",
+      "paper compares placement wirelength or routability metrics",
+      "paper claims learning-based or GPU-accelerated placement"
+    ],
+    "topic_id": "global-placement",
+    "parent_id": "placement",
+    "short_name": "Global Placement",
+    "display_name": "Global Placement",
+    "aliases": [
+      "GP",
+      "global placement"
+    ],
+    "description": "Baseline coverage guidance for papers that make global placement claims.",
+    "baselines": []
+  },
+  {
+    "review_triggers": [
+      "paper claims global routing quality or runtime improvement",
+      "paper compares overflow, wirelength, or routing congestion",
+      "paper claims learning-based or heterogeneous routing acceleration"
+    ],
+    "topic_id": "global-routing",
+    "parent_id": "routing",
+    "short_name": "GR",
+    "display_name": "Global Routing",
+    "aliases": [
+      "GR",
+      "global routing"
+    ],
+    "description": "Baseline coverage guidance for papers that make global routing claims.",
+    "baselines": []
+  },
+  {
+    "review_triggers": [
+      "paper claims incremental STA acceleration",
+      "paper evaluates ECO timing update latency",
+      "paper claims GPU or heterogeneous STA speedup"
+    ],
+    "topic_id": "incremental-eco-sta",
+    "parent_id": "static-timing-analysis",
+    "short_name": "ECO STA",
+    "display_name": "Incremental ECO STA",
+    "aliases": [
+      "incremental STA",
+      "ECO timing update",
+      "incremental ECO STA"
+    ],
+    "description": "Papers that evaluate timing update after ECO or design edits.",
+    "baselines": []
+  },
+  {
+    "review_triggers": [
+      "paper claims global routing quality or runtime improvement",
+      "paper compares overflow, wirelength, or routing congestion",
+      "paper claims learning-based or heterogeneous routing acceleration"
+    ],
+    "topic_id": "learning-or-accelerated-global-routing",
+    "parent_id": "global-routing",
+    "short_name": "Learning/Accel GR",
+    "display_name": "Learning or Accelerated Global Routing",
+    "aliases": [
+      "learning global routing",
+      "accelerated global routing",
+      "heterogeneous routing acceleration"
+    ],
+    "description": "Papers that evaluate learned, parallel, or otherwise accelerated global routing.",
+    "baselines": []
+  },
+  {
+    "review_triggers": [
+      "paper claims incremental STA acceleration",
+      "paper evaluates ECO timing update latency",
+      "paper claims GPU or heterogeneous STA speedup"
+    ],
+    "topic_id": "static-timing-analysis",
+    "parent_id": "timing",
+    "short_name": "STA",
+    "display_name": "Static Timing Analysis",
+    "aliases": [
+      "STA",
+      "timing analysis",
+      "timing update"
+    ],
+    "description": "Baseline coverage guidance for papers that make static timing analysis claims.",
+    "baselines": []
+  },
+  {
+    "review_triggers": [
+      "paper claims timing-driven global placement improvement",
+      "paper reports WNS, TNS, or timing closure impact from placement",
+      "paper optimizes placement with timing-critical path awareness"
+    ],
+    "topic_id": "timing-driven-global-placement",
+    "parent_id": "global-placement",
+    "short_name": "Timing-driven GP",
+    "display_name": "Timing-driven Global Placement",
+    "aliases": [
+      "TDP",
+      "timing-driven placement",
+      "timing-driven global placement"
+    ],
+    "description": "Global placement methods that optimize timing objectives or timing-aware trade-offs during placement.",
+    "baselines": []
+  },
+  {
+    "review_triggers": [
+      "paper evaluates timing-driven placement on 2D designs",
+      "paper reports timing and wirelength trade-offs for 2D global placement",
+      "paper compares timing-aware placement against non-timing-aware placement"
+    ],
+    "topic_id": "two-dimensional-timing-driven-placement",
+    "parent_id": "timing-driven-global-placement",
+    "short_name": "2D TDP",
+    "display_name": "Two-dimensional Timing-driven Placement",
+    "aliases": [
+      "2D TDP",
+      "2D timing-driven placement"
+    ],
+    "description": "Timing-driven placement methods for conventional two-dimensional placement settings.",
+    "baselines": []
+  }
+]

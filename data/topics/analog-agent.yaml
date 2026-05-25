@@ -1,0 +1,14 @@
+topic_id: analog-agent
+parent_id: analog-layout-synthesis
+short_name: Analog Agent
+display_name: Analog Design Agent
+aliases:
+  - analog agent
+  - analog design automation
+  - circuit design agent
+description: Baseline coverage guidance for papers that make agentic analog design claims.
+review_triggers:
+  - paper claims autonomous analog circuit design
+  - paper reports circuit sizing success rate or sample efficiency
+  - paper compares LLM, RL, search, or tool-using analog design agents
+baselines: []

@@ -1,0 +1,14 @@
+topic_id: timing-driven-global-placement
+parent_id: global-placement
+short_name: Timing-driven GP
+display_name: Timing-driven Global Placement
+aliases:
+  - TDP
+  - timing-driven placement
+  - timing-driven global placement
+description: Global placement methods that optimize timing objectives or timing-aware trade-offs during placement.
+review_triggers:
+  - paper claims timing-driven global placement improvement
+  - paper reports WNS, TNS, or timing closure impact from placement
+  - paper optimizes placement with timing-critical path awareness
+baselines: []

@@ -1,0 +1,14 @@
+topic_id: learning-or-accelerated-global-routing
+parent_id: global-routing
+short_name: Learning/Accel GR
+display_name: Learning or Accelerated Global Routing
+aliases:
+  - learning global routing
+  - accelerated global routing
+  - heterogeneous routing acceleration
+description: Papers that evaluate learned, parallel, or otherwise accelerated global routing.
+review_triggers:
+  - paper claims global routing quality or runtime improvement
+  - paper compares overflow, wirelength, or routing congestion
+  - paper claims learning-based or heterogeneous routing acceleration
+baselines: []

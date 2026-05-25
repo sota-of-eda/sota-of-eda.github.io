@@ -1,0 +1,14 @@
+topic_id: incremental-eco-sta
+parent_id: static-timing-analysis
+short_name: ECO STA
+display_name: Incremental ECO STA
+aliases:
+  - incremental STA
+  - ECO timing update
+  - incremental ECO STA
+description: Papers that evaluate timing update after ECO or design edits.
+review_triggers:
+  - paper claims incremental STA acceleration
+  - paper evaluates ECO timing update latency
+  - paper claims GPU or heterogeneous STA speedup
+baselines: []

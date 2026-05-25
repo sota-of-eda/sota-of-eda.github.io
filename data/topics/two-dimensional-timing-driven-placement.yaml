@@ -1,0 +1,13 @@
+topic_id: two-dimensional-timing-driven-placement
+parent_id: timing-driven-global-placement
+short_name: 2D TDP
+display_name: Two-dimensional Timing-driven Placement
+aliases:
+  - 2D TDP
+  - 2D timing-driven placement
+description: Timing-driven placement methods for conventional two-dimensional placement settings.
+review_triggers:
+  - paper evaluates timing-driven placement on 2D designs
+  - paper reports timing and wirelength trade-offs for 2D global placement
+  - paper compares timing-aware placement against non-timing-aware placement
+baselines: []

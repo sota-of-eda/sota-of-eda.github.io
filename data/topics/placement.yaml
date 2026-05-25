@@ -1,0 +1,9 @@
+topic_id: placement
+display_order: 40
+short_name: Placement
+display_name: Placement
+aliases:
+  - placement
+  - physical design placement
+description: Placement topics that assign cells, macros, or blocks to legal or optimizable physical locations.
+baselines: []

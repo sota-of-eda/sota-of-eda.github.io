@@ -1,0 +1,13 @@
+topic_id: global-placement
+parent_id: placement
+short_name: Global Placement
+display_name: Global Placement
+aliases:
+  - GP
+  - global placement
+description: Baseline coverage guidance for papers that make global placement claims.
+review_triggers:
+  - paper claims global placement quality or runtime improvement
+  - paper compares placement wirelength or routability metrics
+  - paper claims learning-based or GPU-accelerated placement
+baselines: []

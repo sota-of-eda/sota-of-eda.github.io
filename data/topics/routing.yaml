@@ -1,0 +1,9 @@
+topic_id: routing
+display_order: 60
+short_name: Routing
+display_name: Routing
+aliases:
+  - routing
+  - physical design routing
+description: Routing topics that connect placed design objects under congestion, design-rule, and timing constraints.
+baselines: []

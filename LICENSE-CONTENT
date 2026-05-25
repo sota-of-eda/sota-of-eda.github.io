@@ -1,0 +1,13 @@
+SPDX-License-Identifier: CC-BY-4.0
+
+Registry and documentation license: Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+The following repository content is licensed under CC-BY-4.0 unless a file states otherwise:
+
+- `data/topics/` registry YAML files
+- `README.md` and other documentation or contribution text
+- generated registry bundles derived from the registry data, including `src/generated/registry.json`
+
+You are free to share and adapt this material for any purpose, including commercial use, provided that you give appropriate credit, provide a link to the license, and indicate if changes were made.
+
+License text: https://creativecommons.org/licenses/by/4.0/legalcode

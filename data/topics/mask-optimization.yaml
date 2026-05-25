@@ -1,0 +1,10 @@
+topic_id: mask-optimization
+display_order: 90
+short_name: Mask Opt
+display_name: Mask Optimization
+aliases:
+  - mask optimization
+  - lithography
+  - OPC
+description: Mask optimization topics for manufacturability, lithography, and mask-aware design closure.
+baselines: []

@@ -1,0 +1,9 @@
+topic_id: high-level-synthesis
+display_order: 10
+short_name: HLS
+display_name: High Level Synthesis
+aliases:
+  - HLS
+  - high-level synthesis
+description: High-level synthesis topics for translating behavioral specifications into hardware implementations.
+baselines: []
