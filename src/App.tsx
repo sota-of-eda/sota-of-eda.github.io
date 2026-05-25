@@ -614,7 +614,7 @@ function App() {
             </p>
             <p className="agent-note">
               Most entries are AI-generated and may contain errors. Contributions welcome via
-              <a href="https://github.com/sota-of-eda/SOTA-of-EDA" target="_blank" rel="noreferrer"> GitHub</a>.
+              <a href="https://github.com/sota-of-eda/sota-of-eda.github.io" target="_blank" rel="noreferrer"> GitHub</a>.
             </p>
             <div className="status-grid" aria-label="Global registry status">
               <strong><span>{topics.length}</span> topics</strong>
@@ -622,7 +622,7 @@ function App() {
             </div>
           </div>
           <div className="utility-links" aria-label="Project links">
-            <a href="https://github.com/sota-of-eda/SOTA-of-EDA" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <a href="https://github.com/sota-of-eda/sota-of-eda.github.io" target="_blank" rel="noreferrer" aria-label="GitHub">
               <svg className="utility-icon github-icon" viewBox="0 0 98 96" aria-hidden="true">
                 <path fill="currentColor" d="M49 0C22 0 0 22 0 49c0 22 14 40 33 46 2 0 3-1 3-2v-9c-14 3-17-6-17-6-2-6-5-8-5-8-5-3 0-3 0-3 5 0 8 5 8 5 4 8 12 6 15 4 0-3 2-6 3-7-11-1-23-6-23-24 0-5 2-10 5-13-1-1-2-6 0-13 0 0 4-1 14 5 4-1 8-2 13-2s9 1 13 2c10-6 14-5 14-5 2 7 1 12 0 13 3 3 5 8 5 13 0 18-12 23-23 24 2 2 3 5 3 10v14c0 1 1 2 3 2 19-6 33-24 33-46C98 22 76 0 49 0Z" />
               </svg>
