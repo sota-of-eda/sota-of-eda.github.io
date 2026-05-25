@@ -163,21 +163,84 @@
   },
   {
     "review_triggers": [
-      "paper claims autonomous analog circuit design",
-      "paper reports circuit sizing success rate or sample efficiency",
-      "paper compares LLM, RL, search, or tool-using analog design agents"
+      "paper claims 2D predictive PDK or open-source 2D standard cell library",
+      "paper uses ASAP7 or similar 2D PDK for evaluation"
     ],
-    "topic_id": "agentic-analog-design",
-    "parent_id": "analog-agent",
-    "short_name": "Agentic Analog",
-    "display_name": "Agentic Analog Design",
+    "topic_id": "2d-predictive-pdk",
+    "parent_id": "predictive-pdk",
+    "short_name": "2D Predictive PDK",
+    "display_name": "2D Predictive Process Design Kit",
     "aliases": [
-      "agentic analog design",
-      "analog circuit design agent",
-      "autonomous analog design"
+      "2d-predictive-pdk",
+      "2D PDK"
     ],
-    "description": "Papers that evaluate agent-driven analog circuit design, sizing, or optimization.",
-    "baselines": []
+    "description": "Open-source predictive PDKs for two-dimensional IC designs at advanced technology nodes",
+    "baselines": [
+      {
+        "baseline_id": "asap7",
+        "short_name": "ASAP7",
+        "display_name": "ASAP7: A 7-nm finFET predictive process design kit",
+        "role": "canonical_baseline",
+        "nomination": "community",
+        "publication": {
+          "title": "ASAP7: A 7-nm finFET predictive process design kit",
+          "venue": "Microelectronics Journal",
+          "year": 2016,
+          "doi": "10.1016/j.mejo.2016.04.006",
+          "bibtex": "@article{10.1016/j.mejo.2016.04.006,\n  title   = {ASAP7: A 7-nm finFET predictive process design kit},\n  author  = {Clark, Lawrence T. and Vashishtha, Vinay and Shifren, Lucian and Gujja, Aditya and Sinha, Saurabh and Cline, Brian and Ramamurthy, Chandarasekaran and Yeric, Greg},\n  journal = {Microelectronics Journal},\n  volume  = {53},\n  pages   = {105-115},\n  year    = {2016},\n  doi     = {10.1016/j.mejo.2016.04.006}\n}"
+        },
+        "links": {
+          "paper_url": "https://doi.org/10.1016/j.mejo.2016.04.006",
+          "pdf_url": "https://www.sciencedirect.com/science/article/pii/S002626921630026X",
+          "repo_url": "https://github.com/The-OpenROAD-Project/asap7"
+        },
+        "compare_when": [
+          "paper uses 7nm or FinFET PDK for evaluation"
+        ],
+        "benchmark_scope": [
+          "7nm FinFET designs"
+        ],
+        "metrics": [
+          "DRC clean, LVS clean, PPA accuracy"
+        ],
+        "reproducibility": "artifact_available",
+        "caveats": [
+          "Predictive, not foundry-calibrated; primary paper from 2016"
+        ]
+      },
+      {
+        "baseline_id": "usc-3n-2d",
+        "short_name": "USC-3N-2D",
+        "display_name": "A Comparative Study on Front-Side, Buried and Back-Side Power Rail Topologies in 3nm Technology Node",
+        "role": "candidate_recent_baseline",
+        "nomination": "community",
+        "publication": {
+          "title": "A Comparative Study on Front-Side, Buried and Back-Side Power Rail Topologies in 3nm Technology Node",
+          "venue": "ISLPED",
+          "year": 2023,
+          "doi": "10.1109/ISLPED58423.2023.10258099",
+          "bibtex": "@inproceedings{shaji2023comparative,\n  author    = {Sandra Maria Shaji and Lingjun Zhu and Jun-Sik Yoon and Sung Kyu Lim},\n  title     = {A Comparative Study on Front-Side, Buried and Back-Side Power Rail Topologies in 3nm Technology Node},\n  booktitle = {ACM/IEEE International Symposium on Low Power Electronics and Design (ISLPED)},\n  year      = {2023},\n  doi       = {10.1109/ISLPED58423.2023.10258099}\n}"
+        },
+        "links": {
+          "paper_url": "https://doi.org/10.1109/ISLPED58423.2023.10258099",
+          "repo_url": "https://github.com/SCCAD-LAB/USC-3N-2D",
+          "project_url": "https://sites.usc.edu/sccad/islped23-sandra"
+        },
+        "compare_when": [
+          "paper uses 3nm or GAA nanosheet PDK for evaluation"
+        ],
+        "benchmark_scope": [
+          "3nm GAA nanosheet designs"
+        ],
+        "metrics": [
+          "DRC clean, LVS clean, PPA, backside PDN effectiveness"
+        ],
+        "reproducibility": "artifact_available",
+        "caveats": [
+          "Predictive, not silicon-calibrated; small standard cell library"
+        ]
+      }
+    ]
   },
   {
     "review_triggers": [
@@ -195,7 +258,38 @@
       "circuit design agent"
     ],
     "description": "Baseline coverage guidance for papers that make agentic analog design claims.",
-    "baselines": []
+    "baselines": [
+      {
+        "baseline_id": "panda",
+        "short_name": "PANDA",
+        "display_name": "PANDA: An LLM-Enhanced Performance-Driven Analog Design Framework Bridging Design Intent and Layout Generation",
+        "role": "candidate_recent_baseline",
+        "nomination": "community",
+        "publication": {
+          "title": "PANDA: An LLM-Enhanced Performance-Driven Analog Design Framework Bridging Design Intent and Layout Generation",
+          "venue": "DAC",
+          "year": 2026,
+          "bibtex": "@misc{panda2026,\n  title        = {PANDA: An LLM-Enhanced Performance-Driven Analog Design Framework Bridging Design Intent and Layout Generation},\n  author       = {{Peking University EDA Research Institute}},\n  year         = {2026},\n  note         = {To appear at DAC 2026}\n}"
+        },
+        "links": {
+          "repo_url": "https://github.com/PKU-IDEA/PANDA",
+          "project_url": "https://www.pkueda.org.cn/xgzy/cpjs/26.4.8.htm"
+        },
+        "compare_when": [
+          "paper claims agentic analog design or LLM-enhanced analog automation"
+        ],
+        "benchmark_scope": [
+          "OTA and COMP circuit cases"
+        ],
+        "metrics": [
+          "gain, phase margin, turnaround time"
+        ],
+        "reproducibility": "unknown",
+        "caveats": [
+          "DAC 2026 paper (July 2026); repo may not be public yet; only OTA/COMP cases demonstrated; no comparative benchmarks"
+        ]
+      }
+    ]
   },
   {
     "review_triggers": [
@@ -212,7 +306,41 @@
       "global placement"
     ],
     "description": "Baseline coverage guidance for papers that make global placement claims.",
-    "baselines": []
+    "baselines": [
+      {
+        "baseline_id": "dreamplace",
+        "short_name": "DREAMPlace",
+        "display_name": "DREAMPlace: Deep Learning Toolkit-Enabled GPU Acceleration for Modern VLSI Placement",
+        "role": "canonical_baseline",
+        "nomination": "community",
+        "publication": {
+          "title": "DREAMPlace: Deep Learning Toolkit-Enabled GPU Acceleration for Modern VLSI Placement",
+          "venue": "DAC",
+          "year": 2019,
+          "bibtex": "@inproceedings{DBLP:conf/dac/LinDLRKP19,\n  author       = {Yibo Lin and Shounak Dhar and Wuxi Li and Haoxing Ren and Brucek Khailany and David Z. Pan},\n  title        = {DREAMPlace: Deep Learning Toolkit-Enabled {GPU} Acceleration for Modern {VLSI} Placement},\n  booktitle    = {DAC 2019},\n  pages        = {117},\n  publisher    = {ACM},\n  year         = {2019},\n  doi          = {10.1145/3316781.3317803}\n}",
+          "doi": "10.1145/3316781.3317803"
+        },
+        "links": {
+          "paper_url": "https://dl.acm.org/doi/10.1145/3316781.3317803",
+          "pdf_url": "https://yibolin.com/publications/papers/PLACE_DAC2019_Lin.pdf",
+          "repo_url": "https://github.com/limbo018/DREAMPlace",
+          "project_url": "https://github.com/limbo018/DREAMPlace"
+        },
+        "compare_when": [
+          "paper claims GPU-accelerated placement or analytical placement speedup"
+        ],
+        "benchmark_scope": [
+          "ISPD 2005, ISPD 2006, DAC 2012, MMS benchmarks"
+        ],
+        "metrics": [
+          "HPWL, runtime, scalability"
+        ],
+        "reproducibility": "artifact_available",
+        "caveats": [
+          "Wirelength-driven only; timing optimization in DREAMPlace 4.0"
+        ]
+      }
+    ]
   },
   {
     "review_triggers": [
@@ -229,7 +357,40 @@
       "global routing"
     ],
     "description": "Baseline coverage guidance for papers that make global routing claims.",
-    "baselines": []
+    "baselines": [
+      {
+        "baseline_id": "helem-gr",
+        "short_name": "HeLEM-GR",
+        "display_name": "HeLEM-GR: Heterogeneous Global Routing with Linearized Exponential Multiplier Method",
+        "role": "candidate_recent_baseline",
+        "nomination": "community",
+        "publication": {
+          "title": "HeLEM-GR: Heterogeneous Global Routing with Linearized Exponential Multiplier Method",
+          "venue": "ICCAD",
+          "year": 2024,
+          "bibtex": "@inproceedings{DBLP:conf/iccad/ZhaoGWW0L24,\n  author       = {Chunyuan Zhao and Zizheng Guo and Rui Wang and Zaiwen Wen and Yun Liang and Yibo Lin},\n  title        = {HeLEM-GR: Heterogeneous Global Routing with Linearized Exponential Multiplier Method},\n  booktitle    = {ICCAD 2024},\n  pages        = {147:1--147:9},\n  publisher    = {ACM},\n  year         = {2024},\n  doi          = {10.1145/3676536.3676650}\n}",
+          "doi": "10.1145/3676536.3676650"
+        },
+        "links": {
+          "paper_url": "https://dl.acm.org/doi/10.1145/3676536.3676650",
+          "pdf_url": "https://guozz.cn/publication/helemgriccad-24/helemgriccad-24.pdf",
+          "project_url": "https://guozz.cn/publication/helemgriccad-24/"
+        },
+        "compare_when": [
+          "paper claims global routing quality or GPU routing speedup"
+        ],
+        "benchmark_scope": [
+          "ISPD 2024 contest benchmarks"
+        ],
+        "metrics": [
+          "quality score, overflow, runtime"
+        ],
+        "reproducibility": "paper_only",
+        "caveats": [
+          "Comparison only against ISPD 2024 contest top-3; runtime is machine-dependent"
+        ]
+      }
+    ]
   },
   {
     "review_triggers": [
@@ -269,6 +430,213 @@
   },
   {
     "review_triggers": [
+      "paper claims NLDM timing analysis improvement",
+      "paper evaluates delay model accuracy or speedup",
+      "paper proposes new cell delay modeling approach"
+    ],
+    "topic_id": "nldm",
+    "parent_id": "static-timing-analysis",
+    "short_name": "NLDM",
+    "display_name": "Non-Linear Delay Model STA",
+    "aliases": [
+      "NLDM",
+      "non-linear delay model",
+      "delay model STA"
+    ],
+    "description": "Timing analysis using non-linear delay models for cell delay computation.",
+    "baselines": [
+      {
+        "baseline_id": "heterosta",
+        "short_name": "HeteroSTA",
+        "display_name": "HeteroSTA: A CPU-GPU Heterogeneous Static Timing Analysis Engine with Holistic Industrial Design Support",
+        "role": "candidate_recent_baseline",
+        "nomination": "community",
+        "publication": {
+          "title": "HeteroSTA: A CPU-GPU Heterogeneous Static Timing Analysis Engine with Holistic Industrial Design Support",
+          "venue": "ASP-DAC",
+          "year": 2026,
+          "bibtex": "@article{DBLP:journals/corr/abs-2308-01857,\n  author       = {Zizheng Guo and Haichuan Liu and Xizhe Shi and Shenglu Hua and Zuodong Zhang and Chunyuan Zhao and Runsheng Wang and Yibo Lin},\n  title        = {HeteroSTA: A CPU-GPU Heterogeneous Static Timing Analysis Engine with Holistic Industrial Design Support},\n  journal      = {CoRR},\n  volume       = {abs/2511.11660},\n  year         = {2025},\n  eprinttype   = {arXiv},\n  eprint       = {2511.11660},\n  url          = {https://arxiv.org/abs/2511.11660}\n}"
+        },
+        "links": {
+          "paper_url": "https://guozz.cn/publication/heterostaaspdac-26/",
+          "pdf_url": "https://arxiv.org/pdf/2511.11660",
+          "arxiv_url": "https://arxiv.org/abs/2511.11660",
+          "repo_url": "https://github.com/anthonyqzx/HeteroSTA"
+        },
+        "compare_when": [
+          "paper claims STA acceleration or GPU STA speedup"
+        ],
+        "benchmark_scope": [
+          "TAU 2015 benchmarks, ICCAD 2015 benchmarks"
+        ],
+        "metrics": [
+          "runtime, R2, MAE, WNS, TNS"
+        ],
+        "reproducibility": "artifact_available",
+        "caveats": [
+          "CCS delay model not yet available"
+        ]
+      },
+      {
+        "baseline_id": "opensta",
+        "short_name": "OpenSTA",
+        "display_name": "OpenSTA: Gate-Level Static Timing Verifier",
+        "role": "canonical_baseline",
+        "nomination": "community",
+        "publication": {
+          "title": "OpenSTA: Gate-Level Static Timing Verifier",
+          "venue": "GitHub Repository",
+          "year": 2023,
+          "bibtex": "@misc{opensta2023,\n  title        = {OpenSTA: Gate-Level Static Timing Verifier},\n  author       = {{OpenROAD Project}},\n  year         = {2023},\n  url          = {https://github.com/The-OpenROAD-Project/OpenSTA},\n  note         = {Gate-level static timing verifier; part of the OpenROAD project}\n}"
+        },
+        "links": {
+          "repo_url": "https://github.com/The-OpenROAD-Project/OpenSTA",
+          "project_url": "https://github.com/The-OpenROAD-Project"
+        },
+        "compare_when": [
+          "paper claims STA accuracy or runtime comparison"
+        ],
+        "benchmark_scope": [
+          "gate-level designs with Liberty/SDC/SPEF"
+        ],
+        "metrics": [
+          "runtime, slack correlation, delay accuracy"
+        ],
+        "reproducibility": "artifact_available",
+        "caveats": [
+          "No dedicated academic paper; dual licensed GPL v3 + commercial"
+        ]
+      }
+    ]
+  },
+  {
+    "review_triggers": [
+      "paper claims open-source end-to-end EDA flow"
+    ],
+    "topic_id": "open-source-eda-flow",
+    "parent_id": "dataset-and-tools",
+    "short_name": "Open-Source EDA Flow",
+    "display_name": "Open-Source EDA End-to-End Flow",
+    "aliases": [
+      "open-source-eda-flow"
+    ],
+    "description": "End-to-end open-source EDA toolchains covering RTL-to-GDSII physical design",
+    "baselines": [
+      {
+        "baseline_id": "ieda",
+        "short_name": "iEDA",
+        "display_name": "iEDA: An Open-Source Intelligent Physical Implementation Toolkit and Library",
+        "role": "candidate_recent_baseline",
+        "nomination": "community",
+        "publication": {
+          "title": "iEDA: An Open-Source Intelligent Physical Implementation Toolkit and Library",
+          "venue": "ISEDA",
+          "year": 2023,
+          "bibtex": "@article{DBLP:journals/corr/abs-2308-01857,\n  author       = {Xingquan Li and Simin Tao and Zengrong Huang and Shijian Chen and Zhisheng Zeng and Liwei Ni and Zhipeng Huang and Chunan Zhuang and Hongxi Wu and Weiguo Li and Xueyan Zhao and He Liu and Shuaiying Long and Wei He and Bojun Liu and Sifeng Gan and Zihao Yu and Tong Liu and Yuchi Miao and Zhiyuan Yan and Hao Wang and Jie Zhao and Yifan Li and Ruizhi Liu and Xiaoze Lin and Bo Yang and Zhen Xue and Fuxing Huang and Zonglin Yang and Zhenggang Wu and Jiangkao Li and Yuezuo Liu and Ming Peng and Yihang Qiu and Wenrui Wu and Zheqing Shao and Kai Mo and Jikang Liu and Yuyao Liang and Mingzhe Zhang and Zhuang Ma and Xiang Cong and Daxiang Huang and Guojie Luo and Huawei Li and Haihua Shen and Mingyu Chen and Dongbo Bu and Wenxing Zhu and Ye Cai and Xiaoming Xiong and Ying Jiang and Yi Heng and Peng Zhang and Biwei Xie and Yungang Bao},\n  title        = {iEDA: An Open-Source Intelligent Physical Implementation Toolkit and Library},\n  journal      = {CoRR},\n  volume       = {abs/2308.01857},\n  year         = {2023},\n  doi          = {10.48550/ARXIV.2308.01857},\n  eprinttype   = {arXiv},\n  eprint       = {2308.01857}\n}"
+        },
+        "links": {
+          "paper_url": "https://arxiv.org/abs/2308.01857",
+          "pdf_url": "https://arxiv.org/pdf/2308.01857",
+          "arxiv_url": "https://arxiv.org/abs/2308.01857",
+          "repo_url": "https://github.com/OSCC-Project/iEDA",
+          "project_url": "https://ieda.oscc.cc"
+        },
+        "compare_when": [
+          "paper claims open-source EDA infrastructure or physical design toolkit"
+        ],
+        "benchmark_scope": [
+          "110nm and 28nm tapeout designs (700k-1.5M gates)"
+        ],
+        "metrics": [
+          "tapeout success, design flow coverage"
+        ],
+        "reproducibility": "artifact_available",
+        "caveats": [
+          "MulanPSL-2.0 license; multiple papers with overlapping author lists"
+        ]
+      },
+      {
+        "baseline_id": "openroad",
+        "short_name": "OpenROAD",
+        "display_name": "Toward an Open-Source Digital Flow: First Learnings from the OpenROAD Project",
+        "role": "canonical_baseline",
+        "nomination": "community",
+        "publication": {
+          "title": "Toward an Open-Source Digital Flow: First Learnings from the OpenROAD Project",
+          "venue": "DAC",
+          "year": 2019,
+          "doi": "10.1145/3316781.3326334",
+          "bibtex": "@inproceedings{DBLP:conf/dac/AjayiCFHHKKLMNP19,\n  author       = {Tutu Ajayi and Vidya A. Chhabria and Mateus Foga{\\c{c}}a and Soheil Hashemi and Abdelrahman Hosny and Andrew B. Kahng and Minsoo Kim and Jeongsup Lee and Uday Mallappa and Marina Neseem and Geraldo Pradipta and Sherief Reda and Mehdi Saligane and Sachin S. Sapatnekar and Carl Sechen and Mohamed Shalan and William Swartz and Lutong Wang and Zhehong Wang and Mingyu Woo and Bangqi Xu},\n  title        = {Toward an Open-Source Digital Flow: First Learnings from the OpenROAD Project},\n  booktitle    = {DAC 2019},\n  pages        = {76},\n  publisher    = {ACM},\n  year         = {2019},\n  doi          = {10.1145/3316781.3326334}\n}"
+        },
+        "links": {
+          "paper_url": "https://dl.acm.org/doi/10.1145/3316781.3326334",
+          "pdf_url": "https://vlsicad.ucsd.edu/Publications/Conferences/370/c370.pdf",
+          "repo_url": "https://github.com/The-OpenROAD-Project/OpenROAD",
+          "project_url": "https://theopenroadproject.org"
+        },
+        "compare_when": [
+          "paper claims open-source EDA flow or RTL-to-GDSII automation"
+        ],
+        "benchmark_scope": [
+          "multi-PDK tapeout-ready designs"
+        ],
+        "metrics": [
+          "tapeout success, design turnaround, PPA"
+        ],
+        "reproducibility": "artifact_available",
+        "caveats": [
+          "Integrates many sub-tools; DAC 2019 paper describes early state"
+        ]
+      },
+      {
+        "baseline_id": "taiwei",
+        "short_name": "TaiWei",
+        "display_name": "TaiWei: Autonomous Intelligent 3D Physical Design Platform",
+        "role": "candidate_recent_baseline",
+        "nomination": "community",
+        "publication": {
+          "title": "TaiWei: Autonomous Intelligent 3D Physical Design Platform",
+          "venue": "GitHub Repository",
+          "year": 2026,
+          "bibtex": "@misc{taiwei2026,\n  title        = {TaiWei: Autonomous Intelligent 3D Physical Design Platform},\n  author       = {{CODA Team}},\n  year         = {2026},\n  url          = {https://github.com/CODA-Team/TaiWei},\n  note         = {Open-source 3D physical design platform; no academic paper yet}\n}"
+        },
+        "links": {
+          "repo_url": "https://github.com/CODA-Team/TaiWei"
+        },
+        "compare_when": [
+          "paper claims 3D physical design or STCO"
+        ],
+        "benchmark_scope": [
+          "3D IC designs"
+        ],
+        "metrics": [
+          "design turnaround, PPA, 3D integration quality"
+        ],
+        "reproducibility": "unknown",
+        "caveats": [
+          "No academic paper found; repo very new (2026); no DOI/arXiv"
+        ]
+      }
+    ]
+  },
+  {
+    "review_triggers": [
+      "paper claims predictive PDK or open-source standard cell library",
+      "paper uses ASAP7 or similar predictive PDK for evaluation"
+    ],
+    "topic_id": "predictive-pdk",
+    "parent_id": "dataset-and-tools",
+    "short_name": "Predictive PDK",
+    "display_name": "Predictive Process Design Kit",
+    "aliases": [
+      "predictive PDK",
+      "open-source PDK"
+    ],
+    "description": "Open-source predictive process design kits for IC design research at advanced technology nodes",
+    "baselines": []
+  },
+  {
+    "review_triggers": [
       "paper claims incremental STA acceleration",
       "paper evaluates ECO timing update latency",
       "paper claims GPU or heterogeneous STA speedup"
@@ -301,7 +669,105 @@
       "timing-driven global placement"
     ],
     "description": "Global placement methods that optimize timing objectives or timing-aware trade-offs during placement.",
-    "baselines": []
+    "baselines": [
+      {
+        "baseline_id": "dreamplace4",
+        "short_name": "DREAMPlace 4.0",
+        "display_name": "DREAMPlace 4.0: Timing-driven Global Placement with Momentum-based Net Weighting",
+        "role": "candidate_recent_baseline",
+        "nomination": "community",
+        "publication": {
+          "title": "DREAMPlace 4.0: Timing-driven Global Placement with Momentum-based Net Weighting",
+          "venue": "DATE",
+          "year": 2022,
+          "bibtex": "@inproceedings{DBLP:conf/date/LiaoLCLLY22,\n  author       = {Peiyu Liao and Siting Liu and Zhitang Chen and Wenlong Lv and Yibo Lin and Bei Yu},\n  title        = {DREAMPlace 4.0: Timing-driven Global Placement with Momentum-based Net Weighting},\n  booktitle    = {DATE 2022},\n  pages        = {939--944},\n  publisher    = {IEEE},\n  year         = {2022},\n  doi          = {10.23919/DATE54114.2022.9774725}\n}",
+          "doi": "10.23919/DATE54114.2022.9774725"
+        },
+        "links": {
+          "paper_url": "https://ieeexplore.ieee.org/document/9774725",
+          "pdf_url": "https://yibolin.com/publications/papers/PLACE_DATE2022_Liao.pdf",
+          "repo_url": "https://github.com/limbo018/DREAMPlace"
+        },
+        "compare_when": [
+          "paper claims timing-driven placement or DREAMPlace extension"
+        ],
+        "benchmark_scope": [
+          "ICCAD 2015 benchmarks"
+        ],
+        "metrics": [
+          "TNS, WNS, HPWL"
+        ],
+        "reproducibility": "artifact_available",
+        "caveats": [
+          "Limited to DREAMPlace variants; 5x runtime overhead"
+        ]
+      },
+      {
+        "baseline_id": "efficient-tdp",
+        "short_name": "Efficient-TDP",
+        "display_name": "Timing-Driven Global Placement by Efficient Critical Path Extraction",
+        "role": "candidate_recent_baseline",
+        "nomination": "community",
+        "publication": {
+          "title": "Timing-Driven Global Placement by Efficient Critical Path Extraction",
+          "venue": "DATE",
+          "year": 2025,
+          "bibtex": "@inproceedings{DBLP:conf/date/ShiXKL0Y025,\n  author       = {Yunqi Shi and Siyuan Xu and Shixiong Kai and Xi Lin and Ke Xue and Mingxuan Yuan and Chao Qian},\n  title        = {Timing-Driven Global Placement by Efficient Critical Path Extraction},\n  booktitle    = {DATE 2025},\n  pages        = {1--7},\n  publisher    = {IEEE},\n  year         = {2025},\n  doi          = {10.23919/DATE64628.2025.10993273}\n}",
+          "doi": "10.23919/DATE64628.2025.10993273"
+        },
+        "links": {
+          "paper_url": "https://ieeexplore.ieee.org/document/10993273",
+          "arxiv_url": "https://arxiv.org/abs/2503.11674",
+          "pdf_url": "https://arxiv.org/pdf/2503.11674",
+          "repo_url": "https://github.com/lamda-bbo/Efficient-TDP"
+        },
+        "compare_when": [
+          "paper claims timing-driven global placement improvement"
+        ],
+        "benchmark_scope": [
+          "ICCAD 2015 benchmarks"
+        ],
+        "metrics": [
+          "TNS, WNS, HPWL, runtime"
+        ],
+        "reproducibility": "artifact_available",
+        "caveats": [
+          "Academic benchmarks only; uses Abacus legalization"
+        ]
+      },
+      {
+        "baseline_id": "xplace3",
+        "short_name": "Xplace 3.0",
+        "display_name": "Xplace 3.0: Hybrid Modeling and Weighting for Timing-driven Placement with Efficient Calibration",
+        "role": "candidate_recent_baseline",
+        "nomination": "community",
+        "publication": {
+          "title": "Hybrid Modeling and Weighting for Timing-driven Placement with Efficient Calibration",
+          "venue": "ICCAD",
+          "year": 2024,
+          "bibtex": "@inproceedings{DBLP:conf/iccad/FuLWY24,\n  author       = {Bangqi Fu and Lixin Liu and Martin D. F. Wong and Evangeline F. Y. Young},\n  title        = {Hybrid Modeling and Weighting for Timing-driven Placement with Efficient Calibration},\n  booktitle    = {ICCAD 2024},\n  pages        = {22:1--22:9},\n  publisher    = {ACM},\n  year         = {2024},\n  doi          = {10.1145/3676536.3676803}\n}",
+          "doi": "10.1145/3676536.3676803"
+        },
+        "links": {
+          "paper_url": "https://dl.acm.org/doi/10.1145/3676536.3676803",
+          "pdf_url": "https://bunchgrape.github.io/docs/iccad24_tdp.pdf",
+          "repo_url": "https://github.com/cuhk-eda/Xplace"
+        },
+        "compare_when": [
+          "paper claims timing-driven global placement improvement"
+        ],
+        "benchmark_scope": [
+          "ICCAD 2015 benchmarks"
+        ],
+        "metrics": [
+          "TNS, WNS, HPWL, runtime"
+        ],
+        "reproducibility": "paper_only",
+        "caveats": [
+          "ICCAD 2015 benchmarks only; ISPD24 baseline missing HPWL/runtime"
+        ]
+      }
+    ]
   },
   {
     "review_triggers": [

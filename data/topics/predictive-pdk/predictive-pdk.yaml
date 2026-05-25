@@ -1,0 +1,12 @@
+topic_id: predictive-pdk
+parent_id: dataset-and-tools
+short_name: Predictive PDK
+display_name: Predictive Process Design Kit
+aliases:
+  - predictive PDK
+  - open-source PDK
+description: Open-source predictive process design kits for IC design research at advanced technology nodes
+review_triggers:
+  - paper claims predictive PDK or open-source standard cell library
+  - paper uses ASAP7 or similar predictive PDK for evaluation
+baselines: []

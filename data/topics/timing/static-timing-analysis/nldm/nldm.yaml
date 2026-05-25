@@ -1,0 +1,14 @@
+topic_id: nldm
+parent_id: static-timing-analysis
+short_name: NLDM
+display_name: Non-Linear Delay Model STA
+aliases:
+  - NLDM
+  - non-linear delay model
+  - delay model STA
+description: Timing analysis using non-linear delay models for cell delay computation.
+review_triggers:
+  - paper claims NLDM timing analysis improvement
+  - paper evaluates delay model accuracy or speedup
+  - paper proposes new cell delay modeling approach
+baselines: []

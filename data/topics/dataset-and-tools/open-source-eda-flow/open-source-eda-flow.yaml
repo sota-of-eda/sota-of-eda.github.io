@@ -1,0 +1,10 @@
+topic_id: open-source-eda-flow
+parent_id: dataset-and-tools
+short_name: Open-Source EDA Flow
+display_name: Open-Source EDA End-to-End Flow
+aliases:
+  - open-source-eda-flow
+description: End-to-end open-source EDA toolchains covering RTL-to-GDSII physical design
+review_triggers:
+  - paper claims open-source end-to-end EDA flow
+baselines: []

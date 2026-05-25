@@ -1,0 +1,27 @@
+baseline_id: dreamplace4
+short_name: DREAMPlace 4.0
+display_name: 'DREAMPlace 4.0: Timing-driven Global Placement with Momentum-based Net Weighting'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'DREAMPlace 4.0: Timing-driven Global Placement with Momentum-based Net Weighting'
+  venue: DATE
+  year: 2022
+  bibtex: "@inproceedings{DBLP:conf/date/LiaoLCLLY22,\n  author       = {Peiyu Liao and Siting Liu and Zhitang Chen and Wenlong\
+    \ Lv and Yibo Lin and Bei Yu},\n  title        = {DREAMPlace 4.0: Timing-driven Global Placement with Momentum-based Net\
+    \ Weighting},\n  booktitle    = {DATE 2022},\n  pages        = {939--944},\n  publisher    = {IEEE},\n  year         =\
+    \ {2022},\n  doi          = {10.23919/DATE54114.2022.9774725}\n}"
+  doi: 10.23919/DATE54114.2022.9774725
+links:
+  paper_url: https://ieeexplore.ieee.org/document/9774725
+  pdf_url: https://yibolin.com/publications/papers/PLACE_DATE2022_Liao.pdf
+  repo_url: https://github.com/limbo018/DREAMPlace
+compare_when:
+- paper claims timing-driven placement or DREAMPlace extension
+benchmark_scope:
+- ICCAD 2015 benchmarks
+metrics:
+- TNS, WNS, HPWL
+reproducibility: artifact_available
+caveats:
+- Limited to DREAMPlace variants; 5x runtime overhead

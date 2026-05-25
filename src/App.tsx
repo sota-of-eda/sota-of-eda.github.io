@@ -84,6 +84,20 @@ const topics = registry as Topic[];
 const topicById = new Map(topics.map((topic) => [topic.topic_id, topic]));
 const defaultTopicId = topicById.has('placement') ? 'placement' : topics[0]?.topic_id;
 
+const childrenByParentGlobal = buildChildrenByParent(topics);
+
+function getDescendantBaselineCount(topicId: string): number {
+  const children = childrenByParentGlobal.get(topicId) ?? [];
+  return children.reduce(
+    (sum, child) => sum + child.baselines.length + getDescendantBaselineCount(child.topic_id),
+    0,
+  );
+}
+
+const recursiveBaselineCount = new Map<string, number>(
+  topics.map((t) => [t.topic_id, t.baselines.length + getDescendantBaselineCount(t.topic_id)]),
+);
+
 const friendlyLinks = [
   {
     name: 'Awesome AI for EDA',
@@ -348,7 +362,7 @@ function makeCloudItems(topic: Topic, childrenByParent: Map<string, Topic[]>) {
   };
 
   const parentAngles = spreadAngles(ancestors.length, 218, 252);
-  const siblingAngles = spreadAngles(siblings.length, -34, 326);
+  const siblingAngles = spreadAngles(siblings.length, -28, 298);
   const childAngles = spreadAngles(children.length, 42, 138);
 
   const outer = [
@@ -379,100 +393,65 @@ function ExternalLink({ href, children }: { href?: string; children: string }) {
 }
 
 function BaselineCard({ baseline }: { baseline: Baseline }) {
+  const [isExpanded, setIsExpanded] = useState(false);
   const copyBibtex = async () => {
     await navigator.clipboard.writeText(baseline.publication.bibtex);
   };
 
   return (
-    <article className="baseline-card liquid-card">
-      <div className="baseline-heading">
+    <article className={`baseline-card liquid-card${isExpanded ? ' is-expanded' : ''}`}>
+      <button className="baseline-toggle" type="button" onClick={() => setIsExpanded(!isExpanded)} aria-expanded={isExpanded}>
         <div>
           <span>{baseline.short_name}</span>
-          <h3>{baseline.display_name}</h3>
-          <p>
-            {baseline.publication.venue} {baseline.publication.year}
-          </p>
+          <strong>{baseline.display_name}</strong>
+          <p>{baseline.publication.venue} {baseline.publication.year}</p>
         </div>
-        <strong>{formatLabel(baseline.role)}</strong>
-      </div>
-
-      <div className="link-row" aria-label={`${baseline.short_name} links`}>
-        <ExternalLink href={baseline.links.paper_url}>Paper</ExternalLink>
-        <ExternalLink href={baseline.links.pdf_url}>PDF</ExternalLink>
-        <ExternalLink href={baseline.links.arxiv_url}>arXiv</ExternalLink>
-        <ExternalLink href={baseline.links.repo_url}>Repo</ExternalLink>
-        <ExternalLink href={baseline.links.project_url}>Project</ExternalLink>
-      </div>
-
-      <dl className="evidence-grid">
-        <div>
-          <dt>Compare when</dt>
-          <dd>{baseline.compare_when.join('; ')}</dd>
-        </div>
-        <div>
-          <dt>Benchmark scope</dt>
-          <dd>{baseline.benchmark_scope.join('; ')}</dd>
-        </div>
-        <div>
-          <dt>Metrics</dt>
-          <dd>{baseline.metrics.join(', ')}</dd>
-        </div>
-        <div>
-          <dt>Reproducibility</dt>
-          <dd>{formatLabel(baseline.reproducibility)}</dd>
-        </div>
-      </dl>
-
-      <details className="bibtex-box">
-        <summary>Full BibTeX</summary>
-        <pre>{baseline.publication.bibtex}</pre>
-        <button type="button" onClick={copyBibtex}>
-          Copy BibTeX
-        </button>
-      </details>
-
-      <div className="caveat-strip">
-        <span>Caveats</span>
-        <p>{baseline.caveats.join(' ')}</p>
-      </div>
-    </article>
-  );
-}
-
-function CompactBaselineCard({
-  baseline,
-  sourceTopic,
-  onSelect,
-}: {
-  baseline: Baseline;
-  sourceTopic: Topic;
-  onSelect: (topicId: string) => void;
-}) {
-  return (
-    <article className="compact-baseline-card liquid-card">
-      <div className="baseline-heading compact-heading">
-        <div>
-          <span>{baseline.short_name}</span>
-          <h3>{baseline.display_name}</h3>
-          <p>
-            {baseline.publication.venue} {baseline.publication.year}
-          </p>
-        </div>
-        <strong>{formatLabel(baseline.role)}</strong>
-      </div>
-
-      <p className="source-path">{getTopicPath(sourceTopic)}</p>
-      <div className="link-row" aria-label={`${baseline.short_name} links`}>
-        <ExternalLink href={baseline.links.paper_url}>Paper</ExternalLink>
-        <ExternalLink href={baseline.links.pdf_url}>PDF</ExternalLink>
-        <ExternalLink href={baseline.links.arxiv_url}>arXiv</ExternalLink>
-        <ExternalLink href={baseline.links.repo_url}>Repo</ExternalLink>
-        <ExternalLink href={baseline.links.project_url}>Project</ExternalLink>
-      </div>
-      <p className="applicability-preview">{baseline.compare_when[0]}</p>
-      <button className="source-topic-button" type="button" onClick={() => onSelect(sourceTopic.topic_id)}>
-        View source topic
+        <em>{formatLabel(baseline.role)}</em>
       </button>
+
+      {isExpanded && (
+        <div className="baseline-detail">
+          <div className="link-row" aria-label={`${baseline.short_name} links`}>
+            <ExternalLink href={baseline.links.paper_url}>Paper</ExternalLink>
+            <ExternalLink href={baseline.links.pdf_url}>PDF</ExternalLink>
+            <ExternalLink href={baseline.links.arxiv_url}>arXiv</ExternalLink>
+            <ExternalLink href={baseline.links.repo_url}>Repo</ExternalLink>
+            <ExternalLink href={baseline.links.project_url}>Project</ExternalLink>
+          </div>
+
+          <dl className="evidence-grid">
+            <div>
+              <dt>Compare when</dt>
+              <dd>{baseline.compare_when.join('; ')}</dd>
+            </div>
+            <div>
+              <dt>Benchmark scope</dt>
+              <dd>{baseline.benchmark_scope.join('; ')}</dd>
+            </div>
+            <div>
+              <dt>Metrics</dt>
+              <dd>{baseline.metrics.join(', ')}</dd>
+            </div>
+            <div>
+              <dt>Reproducibility</dt>
+              <dd>{formatLabel(baseline.reproducibility)}</dd>
+            </div>
+          </dl>
+
+          <details className="bibtex-box">
+            <summary>BibTeX</summary>
+            <pre>{baseline.publication.bibtex}</pre>
+            <div className="bibtex-actions">
+              <button type="button" onClick={copyBibtex}>Copy</button>
+            </div>
+          </details>
+
+          <div className="caveat-strip">
+            <span>Caveats</span>
+            <p>{baseline.caveats.join(' ')}</p>
+          </div>
+        </div>
+      )}
     </article>
   );
 }
@@ -505,7 +484,7 @@ function TopicButton({
     >
       <span>{roleLabel(item.role)}</span>
       <strong>{item.topic.short_name}</strong>
-      <small>{item.topic.baselines.length} baselines</small>
+      <small>{recursiveBaselineCount.get(item.topic.topic_id) ?? 0} baselines</small>
     </button>
   );
 }
@@ -548,6 +527,8 @@ function OrbitNode({
 function App() {
   const [selectedTopicId, setSelectedTopicId] = useState(defaultTopicId);
   const [isSwitching, setIsSwitching] = useState(false);
+  const [showAllDirect, setShowAllDirect] = useState(false);
+  const [expandedGroups, setExpandedGroups] = useState<Set<string>>(new Set());
   const transitionTimers = useRef<number[]>([]);
   const childrenByParent = useMemo(() => buildChildrenByParent(topics), []);
   const rootTopics = useMemo(() => topics.filter((topic) => !topic.parent_id).sort(compareTopics), []);
@@ -564,7 +545,6 @@ function App() {
   const directBaselineCount = selectedTopic?.baselines.length ?? 0;
   const descendantBaselineGroups = descendantScopeTopics.filter((topic) => topic.baselines.length > 0);
   const descendantBaselineCount = descendantBaselineGroups.reduce((count, topic) => count + topic.baselines.length, 0);
-  const descendantTriggerGroups = descendantScopeTopics.filter((topic) => topic.review_triggers.length > 0);
 
   useEffect(() => {
     return () => {
@@ -573,6 +553,15 @@ function App() {
       }
     };
   }, []);
+
+  const toggleGroup = (topicId: string) => {
+    setExpandedGroups((prev) => {
+      const next = new Set(prev);
+      if (next.has(topicId)) next.delete(topicId);
+      else next.add(topicId);
+      return next;
+    });
+  };
 
   const selectTopic = (topicId: string) => {
     if (topicId === selectedTopicId) {
@@ -583,6 +572,8 @@ function App() {
       window.clearTimeout(timer);
     }
     transitionTimers.current = [];
+    setShowAllDirect(false);
+    setExpandedGroups(new Set());
 
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (prefersReducedMotion) {
@@ -615,61 +606,39 @@ function App() {
           <span className="title-note">An agent-assisted SOTA table for reference only.</span>
         </div>
 
-        <aside className="hero-claim-panel" aria-label="Project links and status">
-          <span className="repo-grid" aria-hidden="true" />
-          <span className="repo-orbit" aria-hidden="true" />
-          <svg className="site-mark" viewBox="0 0 160 160" aria-hidden="true">
-            <rect x="42" y="42" width="76" height="76" rx="18" />
-            <path d="M62 80h36M80 62v36M42 80H20M118 80h22M80 42V20M80 118v22" />
-            <circle cx="20" cy="80" r="6" />
-            <circle cx="140" cy="80" r="6" />
-            <circle cx="80" cy="20" r="6" />
-            <circle cx="80" cy="140" r="6" />
-          </svg>
+        <aside className="hero-claim-panel" aria-label="Project status">
           <div className="claim-copy">
-            <span className="repo-kicker">Registry status</span>
             <p>
               Check whether EDA experiments discuss reference baselines that actually match the paper's claim,
               benchmark scope, and caveats.
             </p>
+            <p className="agent-note">
+              Most entries are AI-generated and may contain errors. Contributions welcome via
+              <a href="https://github.com/sota-of-eda/SOTA-of-EDA" target="_blank" rel="noreferrer"> GitHub</a>.
+            </p>
             <div className="status-grid" aria-label="Global registry status">
               <strong><span>{topics.length}</span> topics</strong>
-              <strong><span>{baselineCount}</span> admitted baselines</strong>
+              <strong><span>{baselineCount}</span> baselines</strong>
             </div>
           </div>
-          <div className="utility-links" aria-label="Project utility links">
-            <a href="https://github.com/sota-of-eda/SOTA-of-EDA" target="_blank" rel="noreferrer" aria-label="GitHub repository">
+          <div className="utility-links" aria-label="Project links">
+            <a href="https://github.com/sota-of-eda/SOTA-of-EDA" target="_blank" rel="noreferrer" aria-label="GitHub">
               <svg className="utility-icon github-icon" viewBox="0 0 98 96" aria-hidden="true">
-                <path
-                  fill="currentColor"
-                  d="M49 0C22 0 0 22 0 49c0 22 14 40 33 46 2 0 3-1 3-2v-9c-14 3-17-6-17-6-2-6-5-8-5-8-5-3 0-3 0-3 5 0 8 5 8 5 4 8 12 6 15 4 0-3 2-6 3-7-11-1-23-6-23-24 0-5 2-10 5-13-1-1-2-6 0-13 0 0 4-1 14 5 4-1 8-2 13-2s9 1 13 2c10-6 14-5 14-5 2 7 1 12 0 13 3 3 5 8 5 13 0 18-12 23-23 24 2 2 3 5 3 10v14c0 1 1 2 3 2 19-6 33-24 33-46C98 22 76 0 49 0Z"
-                />
+                <path fill="currentColor" d="M49 0C22 0 0 22 0 49c0 22 14 40 33 46 2 0 3-1 3-2v-9c-14 3-17-6-17-6-2-6-5-8-5-8-5-3 0-3 0-3 5 0 8 5 8 5 4 8 12 6 15 4 0-3 2-6 3-7-11-1-23-6-23-24 0-5 2-10 5-13-1-1-2-6 0-13 0 0 4-1 14 5 4-1 8-2 13-2s9 1 13 2c10-6 14-5 14-5 2 7 1 12 0 13 3 3 5 8 5 13 0 18-12 23-23 24 2 2 3 5 3 10v14c0 1 1 2 3 2 19-6 33-24 33-46C98 22 76 0 49 0Z" />
               </svg>
             </a>
             <a href="mailto:sota-of-eda@outlook.com" aria-label="Email SOTA-of-EDA">
               <svg className="utility-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M4 6h16v12H4z" />
-                <path d="m4 7 8 6 8-6" />
+                <path d="M4 6h16v12H4z" /><path d="m4 7 8 6 8-6" />
               </svg>
             </a>
             <a href="/atom.xml" aria-label="RSS feed">
               <svg className="utility-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M5 5c7.7 0 14 6.3 14 14" />
-                <path d="M5 11c4.4 0 8 3.6 8 8" />
-                <circle cx="6" cy="18" r="1.5" />
+                <path d="M5 5c7.7 0 14 6.3 14 14" /><path d="M5 11c4.4 0 8 3.6 8 8" /><circle cx="6" cy="18" r="1.5" />
               </svg>
             </a>
-            <a
-              className="visitor-badge"
-              href="https://visitor-badge.laobi.icu/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="SOTA-of-EDA visitor count"
-            >
-              <img
-                src="https://visitor-badge.laobi.icu/badge?page_id=sota-of-eda.github.io&amp;left_text=visitors"
-                alt="Visitors"
-              />
+            <a className="visitor-badge" href="https://visitor-badge.laobi.icu/" target="_blank" rel="noreferrer" aria-label="Visitor count">
+              <img src="https://visitor-badge.laobi.icu/badge?page_id=sota-of-eda.github.io&left_text=visitors" alt="Visitors" />
             </a>
           </div>
         </aside>
@@ -780,127 +749,95 @@ function App() {
           </nav>
 
           <div className="topic-copy">
-            <span>{getTopicPath(selectedTopic)}</span>
             <h2 id="topic-detail-title">{selectedTopic.display_name}</h2>
             <p>{selectedTopic.description}</p>
           </div>
 
-          <div className="topic-facts">
-            <div>
-              <span>Aliases</span>
-              <p>{selectedTopic.aliases.join(', ') || 'None listed'}</p>
-            </div>
-            <div>
-              <span>Children</span>
-              <p>{children.length === 0 ? 'No lower layer registered yet' : children.map((child) => child.short_name).join(', ')}</p>
-            </div>
-          </div>
-
-          <section className="trigger-section" aria-labelledby="trigger-title">
-            <div className="section-heading">
-              <h2 id="trigger-title">Review Triggers</h2>
-              <span>{selectedTopic.review_triggers.length} direct / {descendantTriggerGroups.length} child groups</span>
-            </div>
-
-            {selectedTopic.review_triggers.length > 0 ? (
-              <ul className="trigger-list direct-trigger-list">
-                {selectedTopic.review_triggers.map((trigger) => (
-                  <li key={trigger}>{trigger}</li>
-                ))}
-              </ul>
-            ) : (
-              <p className="inline-empty">No direct trigger text registered at this topic.</p>
-            )}
-
-            {descendantTriggerGroups.length > 0 && (
-              <div className="child-trigger-groups">
-                <span>Child topics cover</span>
-                {descendantTriggerGroups.map((topic) => (
-                  <article className="trigger-group" key={topic.topic_id}>
-                    <strong>{getTopicPath(topic)}</strong>
-                    <ul className="trigger-list">
-                      {topic.review_triggers.map((trigger) => (
-                        <li key={trigger}>{trigger}</li>
-                      ))}
-                    </ul>
-                  </article>
-                ))}
+          {children.length > 0 && (
+            <div className="topic-facts">
+              <div>
+                <span>Children</span>
+                <p className="children-links">
+                  {children.map((child, index) => (
+                    <span key={child.topic_id}>
+                      {index > 0 && ', '}
+                      <button type="button" onClick={() => selectTopic(child.topic_id)}>
+                        {child.short_name}
+                      </button>
+                    </span>
+                  ))}
+                </p>
               </div>
-            )}
-
-            {selectedTopic.review_triggers.length === 0 && descendantTriggerGroups.length === 0 && (
-              <p className="inline-empty">No review triggers registered in this topic subtree yet.</p>
-            )}
-          </section>
+            </div>
+          )}
 
           <section className="baseline-section" aria-labelledby="baseline-title">
             <div className="section-heading">
-              <h2 id="baseline-title">Evidence Cards</h2>
-              <span>{directBaselineCount} direct / {descendantBaselineCount} from child topics</span>
+              <h2 id="baseline-title">SOTA Cards</h2>
+              <span>{directBaselineCount + descendantBaselineCount}</span>
             </div>
 
             {directBaselineCount > 0 && (
-              <div className="baseline-subsection">
-                <h3>Directly registered here</h3>
+              <div className="baseline-subsection direct-baselines">
                 <div className="baseline-list">
-                  {selectedTopic.baselines.map((baseline) => (
-                    <BaselineCard baseline={baseline} key={baseline.baseline_id} />
-                  ))}
+                  {selectedTopic.baselines
+                    .slice(0, showAllDirect ? undefined : 3)
+                    .map((baseline) => (
+                      <BaselineCard baseline={baseline} key={baseline.baseline_id} />
+                    ))}
                 </div>
+                {!showAllDirect && directBaselineCount > 3 && (
+                  <button className="show-more-btn" type="button" onClick={() => setShowAllDirect(true)}>
+                    +{directBaselineCount - 3} more
+                  </button>
+                )}
               </div>
             )}
 
-            {directBaselineCount === 0 && descendantBaselineCount > 0 && (
-              <p className="inline-empty">No direct baseline registered at this topic.</p>
-            )}
-
             {descendantBaselineGroups.length > 0 && (
-              <div className="descendant-baseline-groups">
+              <div className="descendant-baseline-groups child-baselines">
                 <h3>From child topics</h3>
-                {descendantBaselineGroups.map((topic) => (
-                  <section className="descendant-baseline-group" key={topic.topic_id} aria-label={`${topic.display_name} inherited baselines`}>
-                    <div className="source-heading">
-                      <div>
-                        <span>{getTopicPath(topic)}</span>
+                {descendantBaselineGroups.map((topic) => {
+                  const isExpanded = expandedGroups.has(topic.topic_id);
+                  return (
+                    <section className={`descendant-baseline-group${isExpanded ? ' is-expanded' : ''}`} key={topic.topic_id}>
+                      <button
+                        className="source-heading"
+                        type="button"
+                        onClick={() => toggleGroup(topic.topic_id)}
+                        aria-expanded={isExpanded}
+                      >
                         <strong>{topic.display_name}</strong>
-                      </div>
-                      <em>{topic.baselines.length} baselines</em>
-                    </div>
-                    <div className="compact-baseline-list">
-                      {topic.baselines.map((baseline) => (
-                        <CompactBaselineCard baseline={baseline} key={baseline.baseline_id} onSelect={selectTopic} sourceTopic={topic} />
-                      ))}
-                    </div>
-                  </section>
-                ))}
+                        <em>{topic.baselines.length}</em>
+                      </button>
+                      {isExpanded && (
+                        <div className="compact-baseline-list">
+                          {topic.baselines.map((baseline) => (
+                            <BaselineCard baseline={baseline} key={baseline.baseline_id} />
+                          ))}
+                        </div>
+                      )}
+                    </section>
+                  );
+                })}
               </div>
             )}
 
             {directBaselineCount === 0 && descendantBaselineCount === 0 && (
-              <div className="empty-baselines liquid-card">
-                <strong>No admitted baseline yet</strong>
-                <p>
-                  This topic and its child topics do not contain admitted baseline cards yet. The registry cannot
-                  assert a missing baseline until evidence-backed entries are added with scope, metrics, BibTeX,
-                  links, and caveats.
-                </p>
-              </div>
+              <p className="inline-empty">No baselines registered yet.</p>
             )}
           </section>
         </aside>
       </section>
 
-      <footer className="site-footer" aria-labelledby="friendly-links-title">
-        <div className="footer-heading">
-          <span>Friendly Links</span>
-          <h2 id="friendly-links-title">EDA resource map</h2>
-        </div>
+      <footer className="site-footer">
+        <hr className="footer-separator" />
+        <p className="footer-label">Friendly Links</p>
         <div className="friendly-grid">
           {friendlyLinks.map((link) => (
             <a className="friendly-card" href={link.href} key={link.href} target="_blank" rel="noreferrer">
-              <span>{link.label}</span>
               <strong>{link.name}</strong>
-              <p>{link.description}</p>
+              <span>{link.label}</span>
             </a>
           ))}
         </div>

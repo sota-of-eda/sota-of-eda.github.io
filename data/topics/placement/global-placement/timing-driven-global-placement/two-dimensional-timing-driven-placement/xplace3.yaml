@@ -1,0 +1,27 @@
+baseline_id: xplace3
+short_name: Xplace 3.0
+display_name: 'Xplace 3.0: Hybrid Modeling and Weighting for Timing-driven Placement with Efficient Calibration'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Hybrid Modeling and Weighting for Timing-driven Placement with Efficient Calibration
+  venue: ICCAD
+  year: 2024
+  bibtex: "@inproceedings{DBLP:conf/iccad/FuLWY24,\n  author       = {Bangqi Fu and Lixin Liu and Martin D. F. Wong and Evangeline\
+    \ F. Y. Young},\n  title        = {Hybrid Modeling and Weighting for Timing-driven Placement with Efficient Calibration},\n\
+    \  booktitle    = {ICCAD 2024},\n  pages        = {22:1--22:9},\n  publisher    = {ACM},\n  year         = {2024},\n \
+    \ doi          = {10.1145/3676536.3676803}\n}"
+  doi: 10.1145/3676536.3676803
+links:
+  paper_url: https://dl.acm.org/doi/10.1145/3676536.3676803
+  pdf_url: https://bunchgrape.github.io/docs/iccad24_tdp.pdf
+  repo_url: https://github.com/cuhk-eda/Xplace
+compare_when:
+- paper claims timing-driven global placement improvement
+benchmark_scope:
+- ICCAD 2015 benchmarks
+metrics:
+- TNS, WNS, HPWL, runtime
+reproducibility: paper_only
+caveats:
+- ICCAD 2015 benchmarks only; ISPD24 baseline missing HPWL/runtime

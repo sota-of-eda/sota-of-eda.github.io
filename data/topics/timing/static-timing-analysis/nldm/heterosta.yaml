@@ -1,0 +1,28 @@
+baseline_id: heterosta
+short_name: HeteroSTA
+display_name: 'HeteroSTA: A CPU-GPU Heterogeneous Static Timing Analysis Engine with Holistic Industrial Design Support'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'HeteroSTA: A CPU-GPU Heterogeneous Static Timing Analysis Engine with Holistic Industrial Design Support'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@article{DBLP:journals/corr/abs-2308-01857,\n  author       = {Zizheng Guo and Haichuan Liu and Xizhe Shi and Shenglu\
+    \ Hua and Zuodong Zhang and Chunyuan Zhao and Runsheng Wang and Yibo Lin},\n  title        = {HeteroSTA: A CPU-GPU Heterogeneous\
+    \ Static Timing Analysis Engine with Holistic Industrial Design Support},\n  journal      = {CoRR},\n  volume       =\
+    \ {abs/2511.11660},\n  year         = {2025},\n  eprinttype   = {arXiv},\n  eprint       = {2511.11660},\n  url      \
+    \    = {https://arxiv.org/abs/2511.11660}\n}"
+links:
+  paper_url: https://guozz.cn/publication/heterostaaspdac-26/
+  pdf_url: https://arxiv.org/pdf/2511.11660
+  arxiv_url: https://arxiv.org/abs/2511.11660
+  repo_url: https://github.com/anthonyqzx/HeteroSTA
+compare_when:
+- paper claims STA acceleration or GPU STA speedup
+benchmark_scope:
+- TAU 2015 benchmarks, ICCAD 2015 benchmarks
+metrics:
+- runtime, R2, MAE, WNS, TNS
+reproducibility: artifact_available
+caveats:
+- CCS delay model not yet available

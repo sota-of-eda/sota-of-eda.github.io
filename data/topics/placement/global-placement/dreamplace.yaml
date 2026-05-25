@@ -1,0 +1,28 @@
+baseline_id: dreamplace
+short_name: DREAMPlace
+display_name: 'DREAMPlace: Deep Learning Toolkit-Enabled GPU Acceleration for Modern VLSI Placement'
+role: canonical_baseline
+nomination: community
+publication:
+  title: 'DREAMPlace: Deep Learning Toolkit-Enabled GPU Acceleration for Modern VLSI Placement'
+  venue: DAC
+  year: 2019
+  bibtex: "@inproceedings{DBLP:conf/dac/LinDLRKP19,\n  author       = {Yibo Lin and Shounak Dhar and Wuxi Li and Haoxing Ren\
+    \ and Brucek Khailany and David Z. Pan},\n  title        = {DREAMPlace: Deep Learning Toolkit-Enabled {GPU} Acceleration\
+    \ for Modern {VLSI} Placement},\n  booktitle    = {DAC 2019},\n  pages        = {117},\n  publisher    = {ACM},\n  year\
+    \         = {2019},\n  doi          = {10.1145/3316781.3317803}\n}"
+  doi: 10.1145/3316781.3317803
+links:
+  paper_url: https://dl.acm.org/doi/10.1145/3316781.3317803
+  pdf_url: https://yibolin.com/publications/papers/PLACE_DAC2019_Lin.pdf
+  repo_url: https://github.com/limbo018/DREAMPlace
+  project_url: https://github.com/limbo018/DREAMPlace
+compare_when:
+- paper claims GPU-accelerated placement or analytical placement speedup
+benchmark_scope:
+- ISPD 2005, ISPD 2006, DAC 2012, MMS benchmarks
+metrics:
+- HPWL, runtime, scalability
+reproducibility: artifact_available
+caveats:
+- Wirelength-driven only; timing optimization in DREAMPlace 4.0

@@ -16,13 +16,38 @@ function readYaml(filePath) {
   return YAML.parse(fs.readFileSync(filePath, 'utf8'));
 }
 
+function listYamlFiles(dir) {
+  const results = [];
+
+  function walk(d) {
+    for (const entry of fs.readdirSync(d, { withFileTypes: true })) {
+      const fullPath = path.join(d, entry.name);
+      if (entry.isDirectory()) {
+        walk(fullPath);
+      } else if (entry.isFile() && entry.name.endsWith('.yaml')) {
+        results.push(fullPath);
+      }
+    }
+  }
+
+  walk(dir);
+  return results.sort();
+}
+
 function listTopicFiles(root = repoRoot) {
   const topicDir = path.join(root, 'data', 'topics');
-  return fs
-    .readdirSync(topicDir)
-    .filter((entry) => entry.endsWith('.yaml'))
-    .sort()
-    .map((entry) => path.join(topicDir, entry));
+  return listYamlFiles(topicDir).filter((filePath) => {
+    const content = readYaml(filePath);
+    return content && typeof content.topic_id === 'string';
+  });
+}
+
+function listBaselineFiles(root = repoRoot) {
+  const topicDir = path.join(root, 'data', 'topics');
+  return listYamlFiles(topicDir).filter((filePath) => {
+    const content = readYaml(filePath);
+    return content && typeof content.baseline_id === 'string';
+  });
 }
 
 function findDuplicates(values) {
@@ -100,10 +125,12 @@ export function loadAndValidateRegistry(root = repoRoot) {
   const schemaPath = path.join(root, 'data', 'schema', 'topic.schema.json');
   const schema = readJson(schemaPath);
   const ajv = new Ajv({ allErrors: true });
-  const validate = ajv.compile(schema);
+  const validateTopic = ajv.compile(schema);
+  const validateBaseline = ajv.compile(schema.definitions.baseline);
   const topics = [];
   const failures = [];
 
+  // Load topic files
   for (const filePath of listTopicFiles(root)) {
     let topic;
     try {
@@ -113,9 +140,9 @@ export function loadAndValidateRegistry(root = repoRoot) {
       continue;
     }
 
-    const valid = validate(topic);
+    const valid = validateTopic(topic);
     if (!valid) {
-      const messages = validate.errors.map((error) => {
+      const messages = validateTopic.errors.map((error) => {
         const location = error.instancePath || '/';
         return `${location} ${error.message}`;
       });
@@ -132,8 +159,63 @@ export function loadAndValidateRegistry(root = repoRoot) {
     topics.push({
       review_triggers: [],
       ...topic,
-      baselines: [...topic.baselines].sort((a, b) => a.baseline_id.localeCompare(b.baseline_id)),
+      baselines: [],
+      _dir: path.dirname(filePath),
     });
+  }
+
+  // Build topic_id -> topic map for parent lookup
+  const topicById = new Map(topics.map((t) => [t.topic_id, t]));
+
+  // Load baseline files and attach to parent topics
+  for (const filePath of listBaselineFiles(root)) {
+    let baseline;
+    try {
+      baseline = readYaml(filePath);
+    } catch (error) {
+      failures.push(`${path.relative(root, filePath)}: YAML parse failed: ${error.message}`);
+      continue;
+    }
+
+    const valid = validateBaseline(baseline);
+    if (!valid) {
+      const messages = validateBaseline.errors.map((error) => {
+        const location = error.instancePath || '/';
+        return `${location} ${error.message}`;
+      });
+      failures.push(`${path.relative(root, filePath)}:\n  - ${messages.join('\n  - ')}`);
+      continue;
+    }
+
+    // Find parent topic: the topic whose directory is closest ancestor of this baseline file
+    const baselineDir = path.dirname(filePath);
+    let parentTopic = null;
+
+    // Walk up from baseline directory to find a topic whose _dir matches
+    let currentDir = baselineDir;
+    const topicsRoot = path.join(root, 'data', 'topics');
+    while (currentDir.startsWith(topicsRoot)) {
+      // Check if any topic file lives in this directory
+      const candidate = topics.find((t) => t._dir === currentDir);
+      if (candidate) {
+        parentTopic = candidate;
+        break;
+      }
+      currentDir = path.dirname(currentDir);
+    }
+
+    if (!parentTopic) {
+      failures.push(`${path.relative(root, filePath)}: no matching parent topic found for directory "${relPath}"`);
+      continue;
+    }
+
+    parentTopic.baselines.push(baseline);
+  }
+
+  // Sort baselines and clean up
+  for (const topic of topics) {
+    topic.baselines.sort((a, b) => a.baseline_id.localeCompare(b.baseline_id));
+    delete topic._dir;
   }
 
   const registryErrors = collectRegistryErrors(topics);

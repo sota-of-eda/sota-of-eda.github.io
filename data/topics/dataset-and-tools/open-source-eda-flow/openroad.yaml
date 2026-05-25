@@ -1,0 +1,31 @@
+baseline_id: openroad
+short_name: OpenROAD
+display_name: 'Toward an Open-Source Digital Flow: First Learnings from the OpenROAD Project'
+role: canonical_baseline
+nomination: community
+publication:
+  title: 'Toward an Open-Source Digital Flow: First Learnings from the OpenROAD Project'
+  venue: DAC
+  year: 2019
+  doi: 10.1145/3316781.3326334
+  bibtex: "@inproceedings{DBLP:conf/dac/AjayiCFHHKKLMNP19,\n  author       = {Tutu Ajayi and Vidya A. Chhabria and Mateus\
+    \ Foga{\\c{c}}a and Soheil Hashemi and Abdelrahman Hosny and Andrew B. Kahng and Minsoo Kim and Jeongsup Lee and Uday\
+    \ Mallappa and Marina Neseem and Geraldo Pradipta and Sherief Reda and Mehdi Saligane and Sachin S. Sapatnekar and Carl\
+    \ Sechen and Mohamed Shalan and William Swartz and Lutong Wang and Zhehong Wang and Mingyu Woo and Bangqi Xu},\n  title\
+    \        = {Toward an Open-Source Digital Flow: First Learnings from the OpenROAD Project},\n  booktitle    = {DAC 2019},\n\
+    \  pages        = {76},\n  publisher    = {ACM},\n  year         = {2019},\n  doi          = {10.1145/3316781.3326334}\n\
+    }"
+links:
+  paper_url: https://dl.acm.org/doi/10.1145/3316781.3326334
+  pdf_url: https://vlsicad.ucsd.edu/Publications/Conferences/370/c370.pdf
+  repo_url: https://github.com/The-OpenROAD-Project/OpenROAD
+  project_url: https://theopenroadproject.org
+compare_when:
+- paper claims open-source EDA flow or RTL-to-GDSII automation
+benchmark_scope:
+- multi-PDK tapeout-ready designs
+metrics:
+- tapeout success, design turnaround, PPA
+reproducibility: artifact_available
+caveats:
+- Integrates many sub-tools; DAC 2019 paper describes early state

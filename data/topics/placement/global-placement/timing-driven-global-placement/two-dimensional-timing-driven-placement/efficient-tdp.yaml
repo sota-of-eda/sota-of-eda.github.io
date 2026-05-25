@@ -1,0 +1,28 @@
+baseline_id: efficient-tdp
+short_name: Efficient-TDP
+display_name: Timing-Driven Global Placement by Efficient Critical Path Extraction
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Timing-Driven Global Placement by Efficient Critical Path Extraction
+  venue: DATE
+  year: 2025
+  bibtex: "@inproceedings{DBLP:conf/date/ShiXKL0Y025,\n  author       = {Yunqi Shi and Siyuan Xu and Shixiong Kai and Xi Lin\
+    \ and Ke Xue and Mingxuan Yuan and Chao Qian},\n  title        = {Timing-Driven Global Placement by Efficient Critical\
+    \ Path Extraction},\n  booktitle    = {DATE 2025},\n  pages        = {1--7},\n  publisher    = {IEEE},\n  year       \
+    \  = {2025},\n  doi          = {10.23919/DATE64628.2025.10993273}\n}"
+  doi: 10.23919/DATE64628.2025.10993273
+links:
+  paper_url: https://ieeexplore.ieee.org/document/10993273
+  arxiv_url: https://arxiv.org/abs/2503.11674
+  pdf_url: https://arxiv.org/pdf/2503.11674
+  repo_url: https://github.com/lamda-bbo/Efficient-TDP
+compare_when:
+- paper claims timing-driven global placement improvement
+benchmark_scope:
+- ICCAD 2015 benchmarks
+metrics:
+- TNS, WNS, HPWL, runtime
+reproducibility: artifact_available
+caveats:
+- Academic benchmarks only; uses Abacus legalization

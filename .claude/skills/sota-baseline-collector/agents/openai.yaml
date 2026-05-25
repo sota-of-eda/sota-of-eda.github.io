@@ -1,0 +1,4 @@
+interface:
+  display_name: "SOTA Baseline Collector"
+  short_description: "Collect SOTA-of-EDA baseline candidates from names or PDFs."
+  default_prompt: "Collect a SOTA-of-EDA baseline candidate from a method name or local PDF, search for metadata and links, check duplicates, and produce a human-reviewable draft."

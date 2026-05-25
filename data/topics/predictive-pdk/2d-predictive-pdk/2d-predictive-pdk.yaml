@@ -1,0 +1,12 @@
+topic_id: 2d-predictive-pdk
+parent_id: predictive-pdk
+short_name: 2D Predictive PDK
+display_name: 2D Predictive Process Design Kit
+aliases:
+  - 2d-predictive-pdk
+  - 2D PDK
+description: Open-source predictive PDKs for two-dimensional IC designs at advanced technology nodes
+review_triggers:
+  - paper claims 2D predictive PDK or open-source 2D standard cell library
+  - paper uses ASAP7 or similar 2D PDK for evaluation
+baselines: []

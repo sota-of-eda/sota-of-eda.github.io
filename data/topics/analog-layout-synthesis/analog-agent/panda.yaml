@@ -1,0 +1,24 @@
+baseline_id: panda
+short_name: PANDA
+display_name: 'PANDA: An LLM-Enhanced Performance-Driven Analog Design Framework Bridging Design Intent and Layout Generation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'PANDA: An LLM-Enhanced Performance-Driven Analog Design Framework Bridging Design Intent and Layout Generation'
+  venue: DAC
+  year: 2026
+  bibtex: "@misc{panda2026,\n  title        = {PANDA: An LLM-Enhanced Performance-Driven Analog Design Framework Bridging\
+    \ Design Intent and Layout Generation},\n  author       = {{Peking University EDA Research Institute}},\n  year      \
+    \   = {2026},\n  note         = {To appear at DAC 2026}\n}"
+links:
+  repo_url: https://github.com/PKU-IDEA/PANDA
+  project_url: https://www.pkueda.org.cn/xgzy/cpjs/26.4.8.htm
+compare_when:
+- paper claims agentic analog design or LLM-enhanced analog automation
+benchmark_scope:
+- OTA and COMP circuit cases
+metrics:
+- gain, phase margin, turnaround time
+reproducibility: unknown
+caveats:
+- DAC 2026 paper (July 2026); repo may not be public yet; only OTA/COMP cases demonstrated; no comparative benchmarks

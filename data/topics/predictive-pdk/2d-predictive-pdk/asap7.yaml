@@ -1,0 +1,27 @@
+baseline_id: asap7
+short_name: ASAP7
+display_name: 'ASAP7: A 7-nm finFET predictive process design kit'
+role: canonical_baseline
+nomination: community
+publication:
+  title: 'ASAP7: A 7-nm finFET predictive process design kit'
+  venue: Microelectronics Journal
+  year: 2016
+  doi: 10.1016/j.mejo.2016.04.006
+  bibtex: "@article{10.1016/j.mejo.2016.04.006,\n  title   = {ASAP7: A 7-nm finFET predictive process design kit},\n  author\
+    \  = {Clark, Lawrence T. and Vashishtha, Vinay and Shifren, Lucian and Gujja, Aditya and Sinha, Saurabh and Cline, Brian\
+    \ and Ramamurthy, Chandarasekaran and Yeric, Greg},\n  journal = {Microelectronics Journal},\n  volume  = {53},\n  pages\
+    \   = {105-115},\n  year    = {2016},\n  doi     = {10.1016/j.mejo.2016.04.006}\n}"
+links:
+  paper_url: https://doi.org/10.1016/j.mejo.2016.04.006
+  pdf_url: https://www.sciencedirect.com/science/article/pii/S002626921630026X
+  repo_url: https://github.com/The-OpenROAD-Project/asap7
+compare_when:
+- paper uses 7nm or FinFET PDK for evaluation
+benchmark_scope:
+- 7nm FinFET designs
+metrics:
+- DRC clean, LVS clean, PPA accuracy
+reproducibility: artifact_available
+caveats:
+- Predictive, not foundry-calibrated; primary paper from 2016

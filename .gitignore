@@ -29,9 +29,12 @@ Thumbs.db
 
 # Local agent scratch / instructions
 # .agents/
+# .claude/
 # public/
 .codex/
 pdfs/
-draft/
+*.pdf
+drafts/
 AGENTS.md
 CLAUDE.md
+.mcp.json

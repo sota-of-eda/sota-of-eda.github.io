@@ -1,0 +1,23 @@
+baseline_id: taiwei
+short_name: TaiWei
+display_name: 'TaiWei: Autonomous Intelligent 3D Physical Design Platform'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'TaiWei: Autonomous Intelligent 3D Physical Design Platform'
+  venue: GitHub Repository
+  year: 2026
+  bibtex: "@misc{taiwei2026,\n  title        = {TaiWei: Autonomous Intelligent 3D Physical Design Platform},\n  author   \
+    \    = {{CODA Team}},\n  year         = {2026},\n  url          = {https://github.com/CODA-Team/TaiWei},\n  note     \
+    \    = {Open-source 3D physical design platform; no academic paper yet}\n}"
+links:
+  repo_url: https://github.com/CODA-Team/TaiWei
+compare_when:
+- paper claims 3D physical design or STCO
+benchmark_scope:
+- 3D IC designs
+metrics:
+- design turnaround, PPA, 3D integration quality
+reproducibility: unknown
+caveats:
+- No academic paper found; repo very new (2026); no DOI/arXiv

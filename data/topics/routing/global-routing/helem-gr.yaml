@@ -1,0 +1,27 @@
+baseline_id: helem-gr
+short_name: HeLEM-GR
+display_name: 'HeLEM-GR: Heterogeneous Global Routing with Linearized Exponential Multiplier Method'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'HeLEM-GR: Heterogeneous Global Routing with Linearized Exponential Multiplier Method'
+  venue: ICCAD
+  year: 2024
+  bibtex: "@inproceedings{DBLP:conf/iccad/ZhaoGWW0L24,\n  author       = {Chunyuan Zhao and Zizheng Guo and Rui Wang and Zaiwen\
+    \ Wen and Yun Liang and Yibo Lin},\n  title        = {HeLEM-GR: Heterogeneous Global Routing with Linearized Exponential\
+    \ Multiplier Method},\n  booktitle    = {ICCAD 2024},\n  pages        = {147:1--147:9},\n  publisher    = {ACM},\n  year\
+    \         = {2024},\n  doi          = {10.1145/3676536.3676650}\n}"
+  doi: 10.1145/3676536.3676650
+links:
+  paper_url: https://dl.acm.org/doi/10.1145/3676536.3676650
+  pdf_url: https://guozz.cn/publication/helemgriccad-24/helemgriccad-24.pdf
+  project_url: https://guozz.cn/publication/helemgriccad-24/
+compare_when:
+- paper claims global routing quality or GPU routing speedup
+benchmark_scope:
+- ISPD 2024 contest benchmarks
+metrics:
+- quality score, overflow, runtime
+reproducibility: paper_only
+caveats:
+- Comparison only against ISPD 2024 contest top-3; runtime is machine-dependent

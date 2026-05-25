@@ -1,0 +1,24 @@
+baseline_id: opensta
+short_name: OpenSTA
+display_name: 'OpenSTA: Gate-Level Static Timing Verifier'
+role: canonical_baseline
+nomination: community
+publication:
+  title: 'OpenSTA: Gate-Level Static Timing Verifier'
+  venue: GitHub Repository
+  year: 2023
+  bibtex: "@misc{opensta2023,\n  title        = {OpenSTA: Gate-Level Static Timing Verifier},\n  author       = {{OpenROAD\
+    \ Project}},\n  year         = {2023},\n  url          = {https://github.com/The-OpenROAD-Project/OpenSTA},\n  note  \
+    \       = {Gate-level static timing verifier; part of the OpenROAD project}\n}"
+links:
+  repo_url: https://github.com/The-OpenROAD-Project/OpenSTA
+  project_url: https://github.com/The-OpenROAD-Project
+compare_when:
+- paper claims STA accuracy or runtime comparison
+benchmark_scope:
+- gate-level designs with Liberty/SDC/SPEF
+metrics:
+- runtime, slack correlation, delay accuracy
+reproducibility: artifact_available
+caveats:
+- No dedicated academic paper; dual licensed GPL v3 + commercial

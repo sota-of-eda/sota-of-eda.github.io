@@ -1,0 +1,27 @@
+baseline_id: usc-3n-2d
+short_name: USC-3N-2D
+display_name: A Comparative Study on Front-Side, Buried and Back-Side Power Rail Topologies in 3nm Technology Node
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: A Comparative Study on Front-Side, Buried and Back-Side Power Rail Topologies in 3nm Technology Node
+  venue: ISLPED
+  year: 2023
+  doi: 10.1109/ISLPED58423.2023.10258099
+  bibtex: "@inproceedings{shaji2023comparative,\n  author    = {Sandra Maria Shaji and Lingjun Zhu and Jun-Sik Yoon and Sung\
+    \ Kyu Lim},\n  title     = {A Comparative Study on Front-Side, Buried and Back-Side Power Rail Topologies in 3nm Technology\
+    \ Node},\n  booktitle = {ACM/IEEE International Symposium on Low Power Electronics and Design (ISLPED)},\n  year     \
+    \ = {2023},\n  doi       = {10.1109/ISLPED58423.2023.10258099}\n}"
+links:
+  paper_url: https://doi.org/10.1109/ISLPED58423.2023.10258099
+  repo_url: https://github.com/SCCAD-LAB/USC-3N-2D
+  project_url: https://sites.usc.edu/sccad/islped23-sandra
+compare_when:
+- paper uses 3nm or GAA nanosheet PDK for evaluation
+benchmark_scope:
+- 3nm GAA nanosheet designs
+metrics:
+- DRC clean, LVS clean, PPA, backside PDN effectiveness
+reproducibility: artifact_available
+caveats:
+- Predictive, not silicon-calibrated; small standard cell library

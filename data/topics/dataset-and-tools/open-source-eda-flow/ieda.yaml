@@ -1,0 +1,35 @@
+baseline_id: ieda
+short_name: iEDA
+display_name: 'iEDA: An Open-Source Intelligent Physical Implementation Toolkit and Library'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'iEDA: An Open-Source Intelligent Physical Implementation Toolkit and Library'
+  venue: ISEDA
+  year: 2023
+  bibtex: "@article{DBLP:journals/corr/abs-2308-01857,\n  author       = {Xingquan Li and Simin Tao and Zengrong Huang and\
+    \ Shijian Chen and Zhisheng Zeng and Liwei Ni and Zhipeng Huang and Chunan Zhuang and Hongxi Wu and Weiguo Li and Xueyan\
+    \ Zhao and He Liu and Shuaiying Long and Wei He and Bojun Liu and Sifeng Gan and Zihao Yu and Tong Liu and Yuchi Miao\
+    \ and Zhiyuan Yan and Hao Wang and Jie Zhao and Yifan Li and Ruizhi Liu and Xiaoze Lin and Bo Yang and Zhen Xue and Fuxing\
+    \ Huang and Zonglin Yang and Zhenggang Wu and Jiangkao Li and Yuezuo Liu and Ming Peng and Yihang Qiu and Wenrui Wu and\
+    \ Zheqing Shao and Kai Mo and Jikang Liu and Yuyao Liang and Mingzhe Zhang and Zhuang Ma and Xiang Cong and Daxiang Huang\
+    \ and Guojie Luo and Huawei Li and Haihua Shen and Mingyu Chen and Dongbo Bu and Wenxing Zhu and Ye Cai and Xiaoming Xiong\
+    \ and Ying Jiang and Yi Heng and Peng Zhang and Biwei Xie and Yungang Bao},\n  title        = {iEDA: An Open-Source Intelligent\
+    \ Physical Implementation Toolkit and Library},\n  journal      = {CoRR},\n  volume       = {abs/2308.01857},\n  year\
+    \         = {2023},\n  doi          = {10.48550/ARXIV.2308.01857},\n  eprinttype   = {arXiv},\n  eprint       = {2308.01857}\n\
+    }"
+links:
+  paper_url: https://arxiv.org/abs/2308.01857
+  pdf_url: https://arxiv.org/pdf/2308.01857
+  arxiv_url: https://arxiv.org/abs/2308.01857
+  repo_url: https://github.com/OSCC-Project/iEDA
+  project_url: https://ieda.oscc.cc
+compare_when:
+- paper claims open-source EDA infrastructure or physical design toolkit
+benchmark_scope:
+- 110nm and 28nm tapeout designs (700k-1.5M gates)
+metrics:
+- tapeout success, design flow coverage
+reproducibility: artifact_available
+caveats:
+- MulanPSL-2.0 license; multiple papers with overlapping author lists
