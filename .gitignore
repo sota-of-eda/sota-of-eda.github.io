@@ -29,7 +29,7 @@ Thumbs.db
 
 # Local agent scratch / instructions
 # .agents/
-public/
+# public/
 .codex/
 pdfs/
 draft/
