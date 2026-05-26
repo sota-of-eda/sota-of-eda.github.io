@@ -711,11 +711,8 @@ h1 {
 
 .topic-facts {
   display: grid;
-  gap: 10px;
+  gap: 8px;
   margin-bottom: 22px;
-}
-
-.topic-facts div {
   padding: 13px 14px;
   border: 1px solid var(--border);
   border-radius: 18px;
