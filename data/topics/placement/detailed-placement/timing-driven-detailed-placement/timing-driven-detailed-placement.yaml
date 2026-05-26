@@ -1,5 +1,5 @@
 topic_id: timing-driven-detailed-placement
-parent_id: placement
+parent_id: detailed-placement
 short_name: Timing-driven DP
 display_name: Timing-driven Detailed Placement
 aliases:

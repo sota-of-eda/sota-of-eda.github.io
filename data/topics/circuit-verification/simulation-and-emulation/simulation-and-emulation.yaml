@@ -1,6 +1,6 @@
 topic_id: simulation-and-emulation
 parent_id: circuit-verification
-short_name: "Simulation short_name: simulation-and-emulation Emulation"
+short_name: "Simulation & Emulation"
 display_name: Circuit Simulation and Emulation
 description: Circuit-level simulation, FPGA-accelerated emulation, and co-simulation frameworks.
 review_triggers: []

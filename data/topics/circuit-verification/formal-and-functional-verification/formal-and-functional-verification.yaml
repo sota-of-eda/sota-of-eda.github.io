@@ -1,6 +1,6 @@
 topic_id: formal-and-functional-verification
 parent_id: circuit-verification
-short_name: "Formal short_name: formal-and-functional-verification Functional Verification"
+short_name: "Formal & Functional Verification"
 display_name: Formal and Functional Verification
 description: Formal verification, model checking, functional equivalence, and specification validation.
 review_triggers: []

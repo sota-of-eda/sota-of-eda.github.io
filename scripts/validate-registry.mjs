@@ -205,7 +205,7 @@ export function loadAndValidateRegistry(root = repoRoot) {
     }
 
     if (!parentTopic) {
-      failures.push(`${path.relative(root, filePath)}: no matching parent topic found for directory "${relPath}"`);
+      failures.push(`${path.relative(root, filePath)}: no matching parent topic found`);
       continue;
     }
 
