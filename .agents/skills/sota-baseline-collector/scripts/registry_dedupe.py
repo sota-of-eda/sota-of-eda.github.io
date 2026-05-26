@@ -118,7 +118,7 @@ def record_from_baseline(baseline: dict[str, Any], path: Path, topic_id: str | N
 
 def load_records(repo: Path):
     records = []
-    for path in sorted((repo / "data" / "topics").glob("*.yaml")):
+    for path in sorted((repo / "data" / "topics").rglob("*.yaml")):
         records.extend(baseline_records_from_file(path, accepted=True))
     for path in sorted((repo / "data" / "drafts").glob("*.yaml")):
         records.extend(baseline_records_from_file(path, accepted=False))

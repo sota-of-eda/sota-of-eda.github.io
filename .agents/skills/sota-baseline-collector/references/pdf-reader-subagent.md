@@ -4,12 +4,12 @@ Use this prompt shape when delegating local PDF reading for SOTA-of-EDA batch co
 
 ## Role
 
-Read extracted text for one or a few local PDFs and return structured observations. Do not edit files, run network searches, create registry drafts, or decide final admission. The main agent owns topic confirmation, metadata search, dedupe, and draft creation.
+Read compact extracted-text windows for one or a few local PDFs and return structured observations. Do not edit files, run network searches, create registry drafts, or decide final admission. The main agent owns topic confirmation, metadata search, dedupe, and draft creation.
 
 ## Input To Provide
 
 - PDF path and extracted text path.
-- Extracted text, or the most relevant title/abstract/intro/related-work/experiment-table windows.
+- Prefer the most relevant title/abstract/intro/related-work/experiment-table windows. Provide full extracted text only for a small single-paper task when explicitly needed.
 - Optional user-supplied baseline or method name.
 - Optional summary of existing topic IDs and display names.
 
@@ -42,7 +42,7 @@ reports:
 ## Reading Rules
 
 - Prefer exact paper text evidence over inference.
-- Focus on abstract, introduction, terminology, experiment setup, comparison tables, and ablation claims.
+- Focus on abstract, introduction, terminology, experiment setup, comparison tables, and ablation claims; do not summarize unrelated body sections.
 - If the supplied baseline name is not present, set `baseline_name_present: false` and explain in `uncertainties`.
 - Treat compared methods as candidates for later review, not accepted baselines.
 - Keep snippets short and cite where they came from when page/section clues are visible.

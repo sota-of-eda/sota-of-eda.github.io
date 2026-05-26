@@ -6,6 +6,7 @@ dist/
 .vite/
 .cache/
 *.tsbuildinfo
+__pycache__/
 
 # Logs
 *.log

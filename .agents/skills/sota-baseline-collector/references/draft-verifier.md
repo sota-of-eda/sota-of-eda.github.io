@@ -1,6 +1,6 @@
 # Draft Verification Subagent Contract
 
-Use this prompt shape when delegating draft verification for SOTA-of-EDA baseline collection.
+Use this prompt shape only for single-paper verification or small high-risk samples. Proceedings-scale batches should use deterministic `proceedings_audit.py` instead of individual verifier loops.
 
 ## Role
 
@@ -38,7 +38,7 @@ Verify a candidate SOTA-of-EDA draft YAML for completeness, consistency, and pot
 ### 3. Topic Placement
 
 - If `candidate_topic.status` is "existing": does `topic_id` exist in the provided topic list?
-- If `candidate_topic.status` is "proposed": are all required `proposed_topic` fields present (`topic_id`, `short_name`, `display_name`, `description`, `review_triggers`)?
+- If `candidate_topic.status` is "proposed": are all required `proposed_topic` fields present (`topic_id`, `short_name`, `display_name`, `description`, `review_triggers`)? Has `references/topic-merge-rearrange.md` or `proceedings_topic_gate.py` been used when the proposal adds new siblings/children?
 - Is the topic placement justified by `compare_when` and `benchmark_scope` fields?
 
 ### 4. SOTA Assessment Quality
