@@ -407,8 +407,11 @@ function ExternalLink({ href, children }: { href?: string; children: string }) {
 
 function BaselineCard({ baseline, autoExpand }: { baseline: Baseline; autoExpand?: boolean }) {
   const [isExpanded, setIsExpanded] = useState(autoExpand ?? false);
+  const [copied, setCopied] = useState(false);
   const copyBibtex = async () => {
     await navigator.clipboard.writeText(baseline.publication.bibtex);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   };
 
   return (
@@ -433,17 +436,17 @@ function BaselineCard({ baseline, autoExpand }: { baseline: Baseline; autoExpand
           </div>
 
           <dl className="evidence-grid">
-            <div>
-              <dt>Compare when</dt>
-              <dd>{baseline.compare_when.join('; ')}</dd>
-            </div>
-            <div>
+            <div className="evidence-primary">
               <dt>Benchmark scope</dt>
-              <dd>{baseline.benchmark_scope.join('; ')}</dd>
+              <dd><ul>{baseline.benchmark_scope.map((s, i) => <li key={i}>{s}</li>)}</ul></dd>
             </div>
             <div>
               <dt>Metrics</dt>
               <dd>{baseline.metrics.join(', ')}</dd>
+            </div>
+            <div>
+              <dt>Compare when</dt>
+              <dd><ul>{baseline.compare_when.map((s, i) => <li key={i}>{s}</li>)}</ul></dd>
             </div>
             <div>
               <dt>Reproducibility</dt>
@@ -455,13 +458,17 @@ function BaselineCard({ baseline, autoExpand }: { baseline: Baseline; autoExpand
             <summary>BibTeX</summary>
             <pre>{baseline.publication.bibtex}</pre>
             <div className="bibtex-actions">
-              <button type="button" onClick={copyBibtex}>Copy</button>
+              <button type="button" onClick={copyBibtex}>{copied ? '✓ Copied' : 'Copy'}</button>
             </div>
           </details>
 
           <div className="caveat-strip">
             <span>Caveats</span>
-            <p>{baseline.caveats.join(' ')}</p>
+            <ul>
+              {baseline.caveats.map((c, i) => (
+                <li key={i}>{c}</li>
+              ))}
+            </ul>
           </div>
         </div>
       )}
@@ -474,15 +481,17 @@ function TopicButton({
   selectedTopicId,
   onSelect,
   index,
+  searchMatch,
 }: {
   item: CloudItem;
   selectedTopicId: string;
   onSelect: (topicId: string) => void;
   index: number;
+  searchMatch?: boolean;
 }) {
   return (
     <button
-      className={`topic-bubble is-${item.role} shape-${item.shape}`}
+      className={`topic-bubble is-${item.role} shape-${item.shape}${searchMatch ? ' is-search-match' : ''}`}
       style={
         {
           '--i': index,
@@ -508,12 +517,14 @@ function OrbitNode({
   onSelect,
   index,
   radius,
+  searchMatch,
 }: {
   item: OrbitItem;
   selectedTopicId: string;
   onSelect: (topicId: string) => void;
   index: number;
   radius: number;
+  searchMatch?: boolean;
 }) {
   const angle = (item.angle * Math.PI) / 180;
   const x = Math.round(Math.cos(angle) * radius);
@@ -532,7 +543,7 @@ function OrbitNode({
         } as CSSProperties
       }
     >
-      <TopicButton item={item} index={index} onSelect={onSelect} selectedTopicId={selectedTopicId} />
+      <TopicButton item={item} index={index} onSelect={onSelect} selectedTopicId={selectedTopicId} searchMatch={searchMatch} />
     </div>
   );
 }
@@ -563,8 +574,14 @@ function buildScannedConferences() {
 
 const scannedConferences = buildScannedConferences();
 
+function getTopicIdFromHash(): string | null {
+  const hash = window.location.hash.replace(/^#\/?/, '');
+  if (hash && topicById.has(hash)) return hash;
+  return null;
+}
+
 function App() {
-  const [selectedTopicId, setSelectedTopicId] = useState(defaultTopicId);
+  const [selectedTopicId, setSelectedTopicId] = useState(() => getTopicIdFromHash() ?? defaultTopicId);
   const [isSwitching, setIsSwitching] = useState(false);
   const [showAllDirect, setShowAllDirect] = useState(false);
   const [expandedGroups, setExpandedGroups] = useState<Set<string>>(new Set());
@@ -615,6 +632,11 @@ function App() {
     return { topics: matchedTopics, baselines: matchedBaselines };
   })();
 
+  const searchMatchedIds = useMemo(
+    () => new Set(searchResults?.topics.map((t) => t.topic_id) ?? []),
+    [searchResults],
+  );
+
   const handleSearchSelect = (result: { type: 'topic'; topic: Topic } | { type: 'baseline'; topic: Topic; baselineId: string }) => {
     setSearchQuery('');
     setHighlightedBaselineId(result.type === 'baseline' ? result.baselineId : null);
@@ -645,6 +667,8 @@ function App() {
   };
 
   const selectTopic = (topicId: string) => {
+    window.location.hash = topicId;
+
     if (topicId === selectedTopicId) {
       return;
     }
@@ -781,6 +805,7 @@ function App() {
                   onSelect={selectTopic}
                   radius={cloud.layout.outerRadius}
                   selectedTopicId={selectedTopic.topic_id}
+                  searchMatch={searchMatchedIds.has(item.topic.topic_id)}
                 />
               ))}
               {cloud.inner.map((item, index) => (
@@ -791,6 +816,7 @@ function App() {
                   onSelect={selectTopic}
                   radius={cloud.layout.innerRadius}
                   selectedTopicId={selectedTopic.topic_id}
+                  searchMatch={searchMatchedIds.has(item.topic.topic_id)}
                 />
               ))}
               <div
@@ -807,6 +833,7 @@ function App() {
                   index={0}
                   onSelect={selectTopic}
                   selectedTopicId={selectedTopic.topic_id}
+                  searchMatch={searchMatchedIds.has(cloud.center.topic.topic_id)}
                 />
               </div>
             </div>
@@ -904,6 +931,9 @@ function App() {
 
             {directBaselineCount === 0 && descendantBaselineCount === 0 && (
               <p className="inline-empty">No baselines registered yet.</p>
+            )}
+            {directBaselineCount === 0 && descendantBaselineCount > 0 && (
+              <p className="inline-empty">No direct baselines — expand child topics below.</p>
             )}
           </section>
         </aside>

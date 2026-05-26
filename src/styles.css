@@ -647,6 +647,17 @@ h1 {
   --bubble-glow: rgba(134, 215, 191, 0.14);
 }
 
+.topic-bubble.is-search-match {
+  --bubble-border: var(--accent);
+  --bubble-glow: rgba(225, 189, 114, 0.4);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.05),
+    0 16px 42px rgba(0, 0, 0, 0.2),
+    0 0 48px rgba(225, 189, 114, 0.4),
+    0 0 8px rgba(225, 189, 114, 0.3);
+}
+
 .detail-panel {
   padding: 20px;
   transition: opacity 180ms var(--ease-glass);
@@ -942,6 +953,10 @@ h1 {
 .evidence-grid div { padding-top: 8px; border-top: 1px solid var(--border); }
 .evidence-grid dt { color: var(--muted-2); font-size: 0.58rem; }
 .evidence-grid dd { margin: 2px 0 0; font-size: 0.82rem; }
+.evidence-grid ul { margin: 0; padding-left: 14px; display: grid; gap: 2px; }
+.evidence-grid li { font-size: 0.82rem; }
+.evidence-grid li::marker { color: var(--muted-2); font-size: 0.6rem; }
+.evidence-primary dd { color: var(--text); }
 
 .bibtex-box {
   margin-top: 14px;
@@ -958,15 +973,17 @@ h1 {
 }
 
 .bibtex-box pre {
-  max-height: 180px;
+  max-height: 200px;
   margin: 0;
-  padding: 12px;
+  padding: 12px 14px;
   overflow: auto;
-  color: var(--muted);
+  color: var(--text);
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.76rem;
+  line-height: 1.7;
   white-space: pre-wrap;
-  word-break: break-all;
+  word-break: break-word;
+  tab-size: 2;
 }
 
 .bibtex-box .bibtex-actions {
@@ -1002,7 +1019,22 @@ h1 {
   font-size: 0.62rem;
 }
 
-.caveat-strip p { margin: 0; }
+.caveat-strip ul {
+  margin: 0;
+  padding-left: 16px;
+  display: grid;
+  gap: 4px;
+}
+
+.caveat-strip li {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.caveat-strip li::marker {
+  color: var(--accent);
+  font-size: 0.7rem;
+}
 
 .empty-state {
   margin: 0;
@@ -1260,10 +1292,6 @@ h1 {
     column-gap: 12px;
   }
 
-  .site-mark {
-    width: 56px;
-    height: 56px;
-  }
 }
 
 @media (max-width: 860px) {
@@ -1277,7 +1305,6 @@ h1 {
   .hero-title-block h1 { max-width: none; }
   .title-note { width: auto; white-space: normal; }
   .hero-claim-panel { grid-template-columns: 1fr; grid-template-areas: 'copy' 'links'; min-height: 0; }
-  .site-mark { display: none; }
 
   .panel-heading {
     align-items: flex-start;
@@ -1360,8 +1387,7 @@ h1 {
   }
 
   .baseline-heading,
-  .section-heading,
-  .footer-heading {
+  .section-heading {
     align-items: flex-start;
     flex-direction: column;
   }
