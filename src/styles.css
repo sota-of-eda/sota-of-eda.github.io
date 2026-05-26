@@ -734,19 +734,27 @@ h1 {
   font-size: 0.92rem;
 }
 
-.children-links button {
-  border: none;
-  padding: 0;
-  color: var(--accent);
-  cursor: pointer;
-  background: transparent;
-  font: inherit;
-  font-size: 0.92rem;
-  text-decoration: underline;
-  text-underline-offset: 2px;
+.children-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
 }
 
-.children-links button:hover {
+.child-chip {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 3px 10px;
+  color: var(--accent);
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 0.82rem;
+  transition: border-color 120ms, background 120ms;
+}
+
+.child-chip:hover {
+  border-color: var(--accent);
+  background: rgba(225, 189, 114, 0.08);
   color: #fff;
 }
 

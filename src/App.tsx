@@ -836,16 +836,18 @@ function App() {
             <div className="topic-facts">
               <div>
                 <span>Children</span>
-                <p className="children-links">
-                  {children.map((child, index) => (
-                    <span key={child.topic_id}>
-                      {index > 0 && ', '}
-                      <button type="button" onClick={() => selectTopic(child.topic_id)}>
-                        {child.short_name}
-                      </button>
-                    </span>
+                <div className="children-links">
+                  {children.map((child) => (
+                    <button
+                      key={child.topic_id}
+                      type="button"
+                      className="child-chip"
+                      onClick={() => selectTopic(child.topic_id)}
+                    >
+                      {child.short_name}
+                    </button>
                   ))}
-                </p>
+                </div>
               </div>
             </div>
           )}
