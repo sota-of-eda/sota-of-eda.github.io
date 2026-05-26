@@ -1,6 +1,6 @@
 topic_id: physical-analysis
 parent_id: circuit-verification
-short_name: physical-analysis
+short_name: Physical Analysis
 display_name: Power, Thermal, and Reliability Analysis
 description: Power analysis, thermal analysis, EM/IR-drop, and PDN verification for physical signoff.
 review_triggers: []

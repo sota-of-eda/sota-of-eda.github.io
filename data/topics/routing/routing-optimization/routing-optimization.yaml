@@ -1,6 +1,6 @@
 topic_id: routing-optimization
 parent_id: routing
-short_name: routing-optimization
+short_name: Routing Optimization
 display_name: Routing Optimization and Planning
 description: Routability optimization, routing bend space planning, and routing resource estimation.
 review_triggers: []

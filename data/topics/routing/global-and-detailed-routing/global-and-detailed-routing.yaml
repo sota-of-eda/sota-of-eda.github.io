@@ -1,6 +1,6 @@
 topic_id: global-and-detailed-routing
 parent_id: routing
-short_name: global-and-detailed-routing
+short_name: "Global short_name: global-and-detailed-routing Detailed Routing"
 display_name: Global and Detailed Routing
 description: Global routing, detailed routing, track assignment, ECO routing, and pin assignment.
 review_triggers: []

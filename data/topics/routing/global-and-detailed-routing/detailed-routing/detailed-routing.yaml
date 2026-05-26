@@ -1,6 +1,6 @@
 topic_id: detailed-routing
 parent_id: global-and-detailed-routing
-short_name: DR
+short_name: Detailed Routing
 display_name: Detailed Routing
 aliases:
 - detailed router

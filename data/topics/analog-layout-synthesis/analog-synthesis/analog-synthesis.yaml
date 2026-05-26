@@ -1,6 +1,6 @@
 topic_id: analog-synthesis
 parent_id: analog-layout-synthesis
-short_name: analog-synthesis
+short_name: Analog Synthesis
 display_name: Analog Circuit Synthesis and IP
 description: Automated analog circuit topology synthesis, knowledge-driven design, and IP reuse.
 review_triggers: []

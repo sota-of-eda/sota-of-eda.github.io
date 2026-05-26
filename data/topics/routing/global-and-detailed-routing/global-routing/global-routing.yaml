@@ -1,6 +1,6 @@
 topic_id: global-routing
 parent_id: global-and-detailed-routing
-short_name: GR
+short_name: Global Routing
 display_name: Global Routing
 aliases:
   - GR
