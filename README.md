@@ -1,36 +1,18 @@
-# SOTA of EDA — Electronic Design Automation (EDA) / VLSI CAD Baseline &amp; Benchmark Registry
+# SOTA of EDA
 
-An agent-readable, claim-aware reference table for Electronic Design Automation (EDA) and VLSI CAD research baselines and benchmarks. Indexes **106+ topics** and **267+ baselines** across physical design, logic synthesis, verification, analog design, and more.
+**An awesome EDA benchmark collection and baseline registry for Electronic Design Automation (EDA) / VLSI CAD research.**
 
-**Keywords:** EDA benchmark collection, VLSI CAD baseline registry, electronic design automation SOTA table, EDA paper comparison, baseline reference for EDA research.
+Also discoverable as: *awesome EDA*, *EDA SOTA table*, *EDA benchmark registry*, *VLSI CAD baseline reference*, *EDA paper comparison*.
 
-This registry helps authors, reviewers, and coding agents check whether an experiment discusses baselines that actually match the paper's claim, benchmark scope, and caveats. It is **reference guidance, not a leaderboard** — the registry cannot assert a missing baseline until evidence-backed entries are added.
+Indexes **106+ topics** and **267+ baselines** across placement, routing, timing, logic synthesis, high-level synthesis, circuit verification, analog layout, mask optimization, testing, and more.
 
-## How to Contribute
+This registry helps authors, reviewers, and AI agents check whether an experiment discusses reference baselines that match the paper's claim, benchmark scope, and caveats. Designed for AI-assisted SOTA comparison — **verify entries before citing**.
 
-Registry entries are designed for AI-assisted reading and automated SOTA comparison. Researchers are encouraged to verify, correct, and extend the entries before citing.
+Site: https://sota-of-eda.github.io/ &middot; Data: [/registry.json](https://sota-of-eda.github.io/registry.json) &middot; Feed: [/atom.xml](https://sota-of-eda.github.io/atom.xml)
 
-**Using skills (recommended):** The `.agents/skills/sota-baseline-collector/` skill automates baseline entry creation — it searches paper metadata, generates BibTeX, attaches entries to the narrowest matching topic, runs deduplication checks, and produces human-reviewable YAML drafts. To use it:
+## Contribute
 
-```bash
-# for codex
-$sota-baseline-collector
-# for claude
-/sota-baseline-collector
-```
-
-The skill will search for the paper, fill in metadata, and write a draft under `data/drafts/` for your review before merging.
-
-**Manual contributions:** You can also add or correct entries by editing `data/topics/*.yaml` directly. See `data/schema/topic.schema.json` for the required fields.
-
-## Contents
-
-- `data/topics/` — schema-validated topic and baseline YAML files.
-- `data/schema/topic.schema.json` — registry schema.
-- `.agents/skills/` — Claude Code skills for agent-assisted entry creation.
-- `scripts/` — validation, deduplication, and registry bundling utilities.
-- `src/` — Vite/React topic explorer.
-- `.github/workflows/pages.yml` — GitHub Pages deployment.
+Use the `/sota-baseline-collector` skill to automate baseline entry. Or edit `data/topics/*.yaml` directly — see `data/schema/topic.schema.json` for the schema. Run `npm run validate` before committing.
 
 ## Local Preview
 
@@ -40,23 +22,15 @@ npm run build
 npm run preview
 ```
 
-## Registry Semantics
+## License
 
-- `review_triggers` and `baselines` are declared on their narrowest matching topic.
-- Parent topics aggregate descendant triggers and baselines in the UI for browsing only.
-- A baseline applies only when its `compare_when`, benchmark scope, metrics, reproducibility status, and caveats fit the paper claim.
-- If a matching topic has `baselines: []`, that means the registry cannot assert a missing baseline yet — do not invent one.
-
-## Licensing
-
-- Code, scripts, build configuration, and UI source: MIT (`LICENSE`).
-- Registry data and documentation: CC-BY-4.0 (`LICENSE-CONTENT`).
+Code: MIT. Data: CC-BY-4.0.
 
 ## Citation
 
 ```
 @misc{sotaofeda2026,
-  title   = {SOTA of EDA: An Agent-Assisted Baseline and Benchmark Registry for Electronic Design Automation (EDA) and VLSI CAD Research},
+  title   = {SOTA of EDA: An Agent-Assisted Baseline and Benchmark Registry for EDA Research},
   year    = {2026},
   url     = {https://sota-of-eda.github.io/}
 }
