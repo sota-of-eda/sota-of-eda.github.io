@@ -676,9 +676,9 @@ function App() {
     <main className="page-shell">
       <header className="hero-composer liquid-card">
         <div className="hero-title-block">
-          <span className="eyebrow">Claim-aware EDA baseline registry</span>
+          <span className="eyebrow">Agent-generated EDA SOTA registry</span>
           <h1>SOTA of EDA</h1>
-          <span className="title-note">A SOTA baseline registry for EDA research — for authors, reviewers, and AI agents.</span>
+          <span className="title-note">An auto-collected SOTA baseline registry for EDA research — for authors, reviewers, and AI agents.</span>
         </div>
 
         <aside className="hero-claim-panel" aria-label="Project status">
