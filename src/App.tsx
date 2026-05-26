@@ -588,20 +588,26 @@ function App() {
   const descendantBaselineCount = descendantBaselineGroups.reduce((count, topic) => count + topic.baselines.length, 0);
 
   const searchResults = (() => {
-    if (searchQuery.length < 2) return null;
+    if (searchQuery.length === 0) return null;
     const q = searchQuery.toLowerCase();
-    const matchedTopics = topics.filter(
-      (t) =>
-        t.short_name.toLowerCase().includes(q) ||
-        t.display_name.toLowerCase().includes(q) ||
-        t.description.toLowerCase().includes(q),
-    ).slice(0, 8);
+    const matchTopic = (t: Topic) =>
+      t.short_name.toLowerCase().includes(q) ||
+      t.display_name.toLowerCase().includes(q) ||
+      t.description.toLowerCase().includes(q) ||
+      t.topic_id.toLowerCase().includes(q) ||
+      t.aliases.some((a) => a.toLowerCase().includes(q));
+    const matchedTopics = topics.filter(matchTopic).slice(0, 8);
     const matchedBaselines: Array<{ baseline: Baseline; topic: Topic }> = [];
     for (const t of topics) {
       if (matchedBaselines.length >= 8) break;
       for (const b of t.baselines) {
         if (matchedBaselines.length >= 8) break;
-        if (b.short_name.toLowerCase().includes(q) || b.display_name.toLowerCase().includes(q)) {
+        if (
+          b.short_name.toLowerCase().includes(q) ||
+          b.display_name.toLowerCase().includes(q) ||
+          b.baseline_id.toLowerCase().includes(q) ||
+          b.publication.title.toLowerCase().includes(q)
+        ) {
           matchedBaselines.push({ baseline: b, topic: t });
         }
       }
