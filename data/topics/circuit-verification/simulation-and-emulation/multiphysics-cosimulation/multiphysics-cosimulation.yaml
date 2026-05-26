@@ -1,0 +1,14 @@
+topic_id: multiphysics-cosimulation
+parent_id: simulation-and-emulation
+short_name: Multiphysics
+display_name: Multiphysics Co-Simulation
+aliases:
+- Multiphysics Co-Simulation
+- Multiphysics
+- multiphysics cosimulation
+description: Coupled multiphysics simulation for IC signoff, including EM-thermal, thermal-mechanical, and electro-thermal-mechanical co-simulation.
+review_triggers:
+- paper claims coupled multiphysics simulation for ICs or packaging
+- paper addresses EM-thermal or thermal-mechanical co-simulation
+- paper proposes reduced-order or ML-accelerated multiphysics solvers
+baselines: []

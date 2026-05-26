@@ -1,0 +1,8 @@
+topic_id: pin-assignment
+parent_id: global-and-detailed-routing
+short_name: Pin Assignment
+display_name: Pin Assignment
+description: Pin assignment, I/O planning, and pin pattern optimization for physical design.
+review_triggers: []
+aliases: []
+baselines: []

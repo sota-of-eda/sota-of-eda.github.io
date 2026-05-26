@@ -1,0 +1,14 @@
+topic_id: yield-optimization
+parent_id: yield-and-reliability
+short_name: Yield
+display_name: Yield Optimization & Analysis
+aliases:
+- Yield Optimization & Analysis
+- Yield
+- yield optimization
+description: Yield analysis and optimization for IC manufacturing, including statistical timing, process-variation-aware verification, and design-for-yield methodologies.
+review_triggers:
+- paper claims yield analysis or yield optimization improvement
+- paper addresses statistical or variation-aware yield modeling
+- paper proposes design-for-yield or design-for-manufacturability flows
+baselines: []

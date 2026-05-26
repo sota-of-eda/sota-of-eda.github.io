@@ -1,0 +1,8 @@
+topic_id: library-characterization
+parent_id: timing
+short_name: Library Characterization
+display_name: Standard Cell Library Characterization
+description: Timing library characterization, multi-corner setup/hold time modeling, and standard cell timing models.
+review_triggers: []
+aliases: []
+baselines: []

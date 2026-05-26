@@ -1,0 +1,18 @@
+topic_id: arithmetic-circuit-formal-verification
+parent_id: formal-and-functional-verification
+short_name: Arithmetic FV
+display_name: Arithmetic Circuit Formal Verification
+aliases:
+- arithmetic circuit verification
+- divider verification
+- polynomial formal verification
+- symbolic computer algebra verification
+- Arithmetic Circuit Formal Verification
+- Arithmetic FV
+- arithmetic circuit formal verification
+description: Formal-verification methods for arithmetic circuits such as adders, multipliers, and dividers, including symbolic computer algebra, polynomial formal verification, partitioning, SAT/SMT, and equivalence-checking approaches.
+review_triggers:
+- paper verifies arithmetic datapaths such as dividers, adders, multipliers, or fused arithmetic blocks
+- paper reports polynomial bounds, SAT/SMT/SCA runtime, equivalence checking, or counterexample/debugging results
+- baselines include Cadical/Kissat/SAT, symbolic computer algebra, PFV, PolyAdd, FARAD, or divider-specific verification methods
+baselines: []

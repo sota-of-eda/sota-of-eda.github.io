@@ -1,0 +1,8 @@
+topic_id: ml-for-eda
+parent_id: dataset-and-tools
+short_name: ml-for-eda
+display_name: ML Infrastructure for EDA
+description: Circuit representation learning, EDA flow parameter tuning, and ML-driven EDA benchmarks and QA tools.
+review_triggers: []
+aliases: []
+baselines: []

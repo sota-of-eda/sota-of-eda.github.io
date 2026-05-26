@@ -1,0 +1,8 @@
+topic_id: formal-and-functional-verification
+parent_id: circuit-verification
+short_name: formal-and-functional-verification
+display_name: Formal and Functional Verification
+description: Formal verification, model checking, functional equivalence, and specification validation.
+review_triggers: []
+aliases: []
+baselines: []

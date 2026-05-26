@@ -1,0 +1,8 @@
+topic_id: analog-layout
+parent_id: analog-layout-synthesis
+short_name: analog-layout
+display_name: Analog Layout Automation
+description: Analog layout migration, automated cell synthesis, transistor-level placement, and DTCO.
+review_triggers: []
+aliases: []
+baselines: []

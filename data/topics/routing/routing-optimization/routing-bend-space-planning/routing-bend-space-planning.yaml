@@ -1,0 +1,17 @@
+topic_id: routing-bend-space-planning
+parent_id: routing-optimization
+short_name: Bend-Space Planning
+display_name: Routing Bend Space Planning
+aliases:
+- adaptive routing space planning
+- routing candidate space planning
+- routing resource planning
+- Routing Bend Space Planning
+- Bend-Space Planning
+- routing bend space planning
+description: Routing-flow methods that choose or adapt candidate bend spaces, routing patterns, or initial routing resource allocations before detailed/global routing refinement.
+review_triggers:
+- paper claims improvement from adaptive routing-pattern or bend-space planning
+- paper evaluates shorts, spacing violations, routing resources, wirelength, vias, or routing runtime after integrating with routers such as CUGR, Dr.CU, or TritonRoute
+- paper compares adaptive routing-space assignment against static L/Z/monotonic routing-space choices
+baselines: []

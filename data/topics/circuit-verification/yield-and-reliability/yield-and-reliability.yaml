@@ -1,0 +1,8 @@
+topic_id: yield-and-reliability
+parent_id: circuit-verification
+short_name: yield-and-reliability
+display_name: Yield Analysis and Reliability
+description: SRAM yield, process variation, DFM verification, and reliability assessment.
+review_triggers: []
+aliases: []
+baselines: []

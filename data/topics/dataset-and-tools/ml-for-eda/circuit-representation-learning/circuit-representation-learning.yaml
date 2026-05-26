@@ -1,0 +1,17 @@
+topic_id: circuit-representation-learning
+parent_id: ml-for-eda
+short_name: Circuit Representation Learning
+display_name: Circuit Representation Learning
+aliases:
+- multimodal circuit representation learning
+- netlist representation learning
+- Verilog-AIG alignment
+- circuit foundation models
+- Circuit Representation Learning
+- circuit representation learning
+description: Representation-learning methods and datasets that encode circuits, HDL, netlists, synthesis flows, or layouts for downstream EDA prediction, retrieval, optimization, or analysis tasks.
+review_triggers:
+- paper proposes a learned representation for circuits, HDL, netlists, AIGs, layouts, or EDA flows
+- experiments evaluate QoR prediction, cross-modal retrieval, downstream EDA prediction, or transfer across circuit benchmarks
+- compared methods include circuit encoders, graph neural networks, multimodal alignment models, or circuit foundation models
+baselines: []

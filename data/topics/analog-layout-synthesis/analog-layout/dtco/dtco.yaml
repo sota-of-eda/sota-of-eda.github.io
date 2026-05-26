@@ -1,0 +1,16 @@
+topic_id: dtco
+parent_id: analog-layout
+short_name: DTCO
+display_name: Design-Technology Co-Optimization
+aliases:
+- dtco-standard-cell-design
+- cell-ppa-estimation
+- Design-Technology Co-Optimization
+- DTCO
+- dtco
+description: Design-technology co-optimization at the standard-cell and layout level, including cell PPA estimation and process-aware cell design.
+review_triggers:
+- paper claims DTCO flow or standard-cell PPA estimation improvement
+- paper addresses cell-level design optimization across technology nodes
+- paper proposes cell library characterization across process corners
+baselines: []

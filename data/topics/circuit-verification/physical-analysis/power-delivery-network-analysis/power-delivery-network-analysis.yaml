@@ -1,0 +1,28 @@
+topic_id: power-delivery-network-analysis
+parent_id: physical-analysis
+short_name: PDN Analysis
+display_name: Power Delivery Network Analysis
+aliases:
+- IR-drop analysis
+- IR-drop mitigation
+- power integrity
+- BSPDN analysis
+- 3D IC power integrity
+- voltage-drop closure
+- power-grid-model-order-reduction
+- PDN optimization
+- decap-placement
+- Power Delivery Network Analysis
+- PDN Analysis
+- power delivery network analysis
+description: Analysis and optimization methods for power-delivery-network quality, IR drop, power integrity, decap/staple insertion, PDN reinforcement, BSPDN/FSPDN evaluation, and closure-oriented physical-design feedback.
+review_triggers:
+- paper predicts, analyzes, or mitigates static or dynamic IR drop, voltage drop, power integrity, or PDN quality
+- experiments report IR-drop violations, worst voltage drop, effective voltage, PDN resources, runtime, or PPA/thermal impacts
+- baselines include commercial IR-drop analysis, Cadence Voltus, PDN reinforcement, decap/staple insertion, or ML/model-based IR-drop prediction methods
+- paper claims PDN analysis or IR-drop verification improvement
+- paper addresses decap placement or power grid optimization
+- paper proposes model-order reduction for large-scale power grids
+- experiments report IR-drop violations, worst voltage drop, effective voltage, PDN resources, runtime, or PPA impacts
+- baselines include commercial IR-drop ECO flows, IncPIRD, MAVIREC, PDN reinforcement, decap/staple insertion, or ML-based IR-drop prediction methods
+baselines: []

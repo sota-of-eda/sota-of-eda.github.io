@@ -1,0 +1,18 @@
+topic_id: llm-testbench-generation
+parent_id: testing-and-fuzzing
+short_name: LLM Testbench Gen
+display_name: LLM-Based Testbench Generation
+aliases:
+- LLM testbench generation
+- LLM test generation
+- automated hardware testbench generation
+- coverage-aware test generation
+- LLM-Based Testbench Generation
+- LLM Testbench Gen
+- llm testbench generation
+description: Methods that use large language models, agents, retrieval, fine-tuning, simulation feedback, or coverage feedback to generate RTL testbenches, UVM environments, or test stimuli for hardware functional verification.
+review_triggers:
+- paper generates Verilog/SystemVerilog/UVM testbenches or test stimuli from specifications or RTL using LLMs
+- experiments evaluate pass rate, functional coverage, line coverage, toggle coverage, or testbench repair/augmentation
+- baselines include AutoBench, VerilogReader, CorrectBench, MEIC, UVLLM, LLM4DV, UVM^2, or direct commercial/frontier LLM prompting
+baselines: []

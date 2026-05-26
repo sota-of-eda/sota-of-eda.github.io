@@ -1,0 +1,15 @@
+topic_id: gpu-accelerated-eda
+parent_id: hardware-acceleration
+short_name: GPU EDA
+display_name: GPU-Accelerated EDA
+aliases:
+- gpu-accelerated-physical-design
+- GPU-Accelerated EDA
+- GPU EDA
+- gpu accelerated eda
+description: GPU acceleration for EDA algorithms spanning placement, routing, STA, simulation, and physical verification, including CUDA-based and heterogeneous implementations.
+review_triggers:
+- paper claims GPU-accelerated EDA algorithm improvement
+- paper addresses heterogeneous CPU-GPU EDA acceleration
+- paper proposes GPU parallelization for physical design or verification
+baselines: []

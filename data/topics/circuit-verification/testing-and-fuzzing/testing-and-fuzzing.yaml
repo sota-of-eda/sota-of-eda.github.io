@@ -1,0 +1,8 @@
+topic_id: testing-and-fuzzing
+parent_id: circuit-verification
+short_name: testing-and-fuzzing
+display_name: Hardware Testing and Fuzzing
+description: Directed testing, fuzzing, concolic testing, LLM-assisted testbench and assertion generation.
+review_triggers: []
+aliases: []
+baselines: []

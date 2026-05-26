@@ -1,0 +1,17 @@
+topic_id: rtl-concolic-testing
+parent_id: testing-and-fuzzing
+short_name: RTL Concolic Testing
+display_name: RTL Concolic Testing
+aliases:
+- hardware concolic testing
+- RTL test generation
+- semi-formal RTL validation
+- coverage-directed RTL verification
+- RTL Concolic Testing
+- rtl concolic testing
+description: Concolic, symbolic-execution, fuzzing-assisted, or learning-guided methods for generating RTL tests and activating hard-to-cover branches in hardware verification.
+review_triggers:
+- paper targets RTL branch, statement, or functional coverage using concolic execution or symbolic execution
+- experiments compare against EBMC, STSearch, APE-FV, hardware fuzzing, or prior concolic RTL testing
+- benchmarks include ITC/OpenRISC/RISC-V cores or other RTL designs with hard-to-activate branches
+baselines: []

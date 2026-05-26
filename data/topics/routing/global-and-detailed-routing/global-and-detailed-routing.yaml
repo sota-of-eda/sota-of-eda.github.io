@@ -1,0 +1,8 @@
+topic_id: global-and-detailed-routing
+parent_id: routing
+short_name: global-and-detailed-routing
+display_name: Global and Detailed Routing
+description: Global routing, detailed routing, track assignment, ECO routing, and pin assignment.
+review_triggers: []
+aliases: []
+baselines: []

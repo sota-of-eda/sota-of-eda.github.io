@@ -1,0 +1,18 @@
+topic_id: glitch-analysis
+parent_id: hardware-security
+short_name: Glitch Analysis
+display_name: Gate-Level Glitch Analysis
+aliases:
+- glitch propagation modeling
+- glitch power analysis
+- noise-aware gate-level analysis
+- dynamic power glitch modeling
+- Gate-Level Glitch Analysis
+- Glitch Analysis
+- glitch analysis
+description: Gate-level analysis methods for multiple-input-switching glitches, waveform propagation, glitch-induced noise/timing effects, and glitch power estimation, including standard-cell-library models and ML surrogates calibrated to SPICE.
+review_triggers:
+- paper claims improved glitch propagation, glitch power, or gate-level noise/timing analysis
+- experiments compare against SPICE, industrial power/timing tools, inertial/degradation/derate models, or prior ANN glitch models
+- metrics include R2, waveform shape error, delay/power error, model size, characterization time, or full-chip glitch-analysis applicability
+baselines: []

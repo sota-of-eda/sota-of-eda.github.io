@@ -1,0 +1,8 @@
+topic_id: hardware-security
+parent_id: circuit-verification
+short_name: hardware-security
+display_name: Hardware Security Verification
+description: Hardware Trojan detection, side-channel analysis, IP protection, and security property verification.
+review_triggers: []
+aliases: []
+baselines: []

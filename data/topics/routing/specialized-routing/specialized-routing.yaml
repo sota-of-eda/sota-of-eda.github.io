@@ -1,0 +1,8 @@
+topic_id: specialized-routing
+parent_id: routing
+short_name: specialized-routing
+display_name: Specialized and Package Routing
+description: Bus routing, double-sided routing, package routing, and multi-FPGA partitioning/routing.
+review_triggers: []
+aliases: []
+baselines: []

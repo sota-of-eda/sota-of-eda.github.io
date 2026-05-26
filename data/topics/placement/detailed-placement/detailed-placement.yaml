@@ -1,0 +1,8 @@
+topic_id: detailed-placement
+parent_id: placement
+short_name: Detailed Placement
+display_name: Detailed Placement
+description: Legalization, detailed placement optimization, mixed-cell-height placement, and GPU-accelerated detailed placement.
+review_triggers: []
+aliases: []
+baselines: []

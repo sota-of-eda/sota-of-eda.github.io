@@ -1,0 +1,19 @@
+topic_id: llm-assertion-generation
+parent_id: testing-and-fuzzing
+short_name: LLM Assertion Gen
+display_name: LLM-Based Assertion Generation
+aliases:
+- LLM assertion generation
+- SVA generation
+- hardware assertion generation
+- LLM-Based Assertion Generation
+- LLM Assertion Gen
+- llm assertion generation
+description: Methods that use large language models, specifications, RTL, coverage feedback, or formal-verification feedback to generate or refine hardware verification assertions.
+review_triggers:
+- Paper generates SystemVerilog assertions, checkers, or formal properties from specifications or RTL using LLMs.
+- Experiments evaluate assertion syntax correctness, formal pass rate, functional coverage, branch coverage, statement coverage, or toggle coverage.
+- Baselines include AssertLLM, Spec2Assertion, AssertionForge, AssertGen, DeepAssert, GoldMine, PALM, or rule-based assertion generators.
+- Baselines include AssertLLM, Spec2Assertion, AssertionForge, AssertGen, DeepAssert, or rule-based assertion generators.
+- Baselines include AssertLLM, Spec2Assertion, AssertionForge, AssertGen, DeepAssert, PALM, or rule-based assertion generators.
+baselines: []
