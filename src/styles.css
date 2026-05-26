@@ -172,12 +172,33 @@ h1 {
 }
 
 .hero-title-block h1 {
-  max-width: 8.5ch;
+  display: flex;
+  flex-direction: column;
+  max-width: none;
+}
+
+.hero-heading {
+  display: inline-block;
+}
+
+.hero-title-row {
+  display: inline-flex;
+  gap: clamp(18px, 2.2vw, 30px);
+  align-items: center;
+}
+
+.hero-logo {
+  flex: 0 0 auto;
+  width: 1.18em;
+  height: 1.18em;
+  margin-top: 0.01em;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.26));
 }
 
 .title-note {
   max-width: 100%;
-  margin-top: 18px;
+  margin-top: 14px;
   color: var(--accent);
   font-size: clamp(0.62rem, 0.85vw, 0.72rem);
 }
@@ -1282,7 +1303,9 @@ h1 {
 
   .hero-composer { grid-template-columns: 1fr; }
   .hero-title-block { padding-right: 0; }
+  .hero-title-row { gap: clamp(12px, 4vw, 18px); }
   .hero-title-block h1 { max-width: none; }
+  .hero-logo { width: 1.18em; height: 1.18em; }
   .title-note { width: auto; white-space: normal; }
   .hero-claim-panel { grid-template-columns: 1fr; grid-template-areas: 'copy' 'links'; min-height: 0; }
 

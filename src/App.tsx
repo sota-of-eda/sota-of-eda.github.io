@@ -721,7 +721,15 @@ function App() {
     <main className="page-shell">
       <header className="hero-composer liquid-card">
         <div className="hero-title-block">
-          <h1>SOTA of EDA</h1>
+          <div className="hero-heading">
+            <h1>
+              <span>SOTA of</span>
+              <span className="hero-title-row">
+                <span>EDA</span>
+                <img className="hero-logo" src="/logo.svg" alt="" aria-hidden="true" />
+              </span>
+            </h1>
+          </div>
           <span className="title-note">An agent-readable baseline and benchmark registry for Electronic Design Automation (EDA) / VLSI CAD research — for authors, reviewers, and AI agents.</span>
         </div>
 

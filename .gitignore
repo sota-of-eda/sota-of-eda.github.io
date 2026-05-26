@@ -32,6 +32,7 @@ Thumbs.db
 # .claude/
 # public/
 .codex/
+.superpowers/
 pdfs/
 *.pdf
 drafts/
