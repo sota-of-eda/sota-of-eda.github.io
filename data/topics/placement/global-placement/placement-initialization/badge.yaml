@@ -1,0 +1,27 @@
+baseline_id: badge
+short_name: BADGE
+display_name: 'BADGE: Boundary-Aware Dirichlet Graph Embedding for Initialization in DREAMPlace'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'BADGE: Boundary-Aware Dirichlet Graph Embedding for Initialization in DREAMPlace'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{park2026badge,\n  title={BADGE: Boundary-Aware Dirichlet Graph Embedding for Initialization in DREAMPlace},\n  author={Park, Jaemin and Paik, Taejin},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1021.pdf
+compare_when:
+- evaluating initialization strategies for analytical or GPU-accelerated global placers such as DREAMPlace
+- comparing mixed-size global placement convergence and HPWL under different initial coordinate generators
+benchmark_scope:
+- MMS placement benchmarks with fixed macros and DREAMPlace integration
+- global placement initialized by random, GiFt, and BADGE strategies
+metrics:
+- final half-perimeter wirelength
+- global placement iteration count
+- initialization and solver runtime overhead
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- experiments are focused on MMS benchmarks and DREAMPlace initialization, so results may not transfer directly to other placers or legalization/detailed-placement flows
+- proposed topic is narrower than accepted global-placement; human taxonomy review should decide whether placement-initialization merits a separate child topic

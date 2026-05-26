@@ -1,0 +1,30 @@
+baseline_id: setupkit
+short_name: SetupKit
+display_name: 'SetupKit: Efficient Multi-Corner Setup/Hold Time Characterization Using Bias-Enhanced Interpolation and Active Learning'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'SetupKit: Efficient Multi-Corner Setup/Hold Time Characterization Using Bias-Enhanced Interpolation and Active Learning'
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{setupkit2025,\n  author = {Junzhuo Zhou and Ziwen Wang and Haoxuan Xia and Yuxin Yan and Chengyu Zhu and Ting-Jung Lin and Wei Xing and Lei He},\n  title = {SetupKit: Efficient Multi-Corner Setup/Hold Time Characterization Using Bias-Enhanced Interpolation and Active Learning},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--8},\n  doi = {10.1109/ICCAD66269.2025.11240969}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240969
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240969
+  pdf_url: https://arxiv.org/abs/2512.00044
+compare_when:
+- Evaluating library characterization efficiency for standard cells
+- Comparing setup/hold time characterization methodologies
+- Benchmarking active learning approaches for SPICE simulation reduction
+benchmark_scope:
+- Industrial 22nm standard cells
+- 16 PVT corners
+- 4M samples
+metrics:
+- 'CPU time reduction (2.4x: 720 days to 290 days)'
+- Characterization accuracy
+reproducibility: paper_only
+caveats:
+- arXiv preprint available but code not open-source
+- Evaluation on single process node (22nm); generalizability to other nodes unclear
+- 290 days is still substantial; may not be feasible for all design teams

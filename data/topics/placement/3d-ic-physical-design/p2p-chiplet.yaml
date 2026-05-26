@@ -1,0 +1,28 @@
+baseline_id: p2p-chiplet
+short_name: P2P-Chiplet
+display_name: 'P2P-Chiplet: Partition and Placement Co-Optimization for Multi-Chiplet Architecture'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'P2P-Chiplet: Partition and Placement Co-Optimization for Multi-Chiplet Architecture'
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{p2pchiplet2025,\n  author = {Qidie Wu and Jiangyuan Gu and Xuguang Yuan and Shaojun Wei and Shouyi Yin},\n  title = {P2P-Chiplet: Partition and Placement Co-Optimization for Multi-Chiplet Architecture},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--9}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240768
+compare_when:
+- Evaluating chiplet-based design automation flows
+- Comparing partition-placement co-optimization for 2.5D integration
+- Benchmarking multi-chiplet architecture design methodologies
+benchmark_scope:
+- Multi-chiplet designs (2.5D integration)
+- Interposer-based architectures
+metrics:
+- D2D power consumption reduction (13.25%)
+- Latency reduction (21.06%)
+- Area overhead (6.64%)
+reproducibility: unknown
+caveats:
+- HeteroACG framework aggregates topological and physical optimization
+- Limited to 2.5D integration; 3D stacking not addressed
+- No public code repository found at time of review
+links: {}

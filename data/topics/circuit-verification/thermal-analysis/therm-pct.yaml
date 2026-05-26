@@ -1,0 +1,28 @@
+baseline_id: therm-pct
+short_name: Therm-PCT
+display_name: A Geometry-Material Aware Point Cloud Transformer for Large-scale Unstructured Thermal Analysis in 2.5D ICs
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: A Geometry-Material Aware Point Cloud Transformer for Large-scale Unstructured Thermal Analysis in 2.5D ICs
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11241008
+  bibtex: "@inproceedings{zhang2025geometry,\n  author = {Dekang Zhang and Dan Niu and Yichao Cao and Yichao Dong and Zhenya Zhou and Zhou Jin},\n  title = {A Geometry-Material Aware Point Cloud Transformer for Large-scale Unstructured Thermal Analysis in 2.5D ICs},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11241008},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11241008
+compare_when:
+- comparing deep-learning-based thermal analysis methods for 2.5D/3D ICs
+- evaluating point-cloud-based approaches for unstructured thermal simulation
+- benchmarking against commercial FEM (COMSOL) and other ML thermal predictors (FSA-Heat)
+benchmark_scope:
+- large-scale unstructured 2.5D IC thermal benchmarks
+- COMSOL reference simulations
+metrics:
+- error vs FSA-Heat (78.03%, 84.00%, 67.61%, 78.25% improvement)
+- speedup vs COMSOL (147x)
+- prediction accuracy across diverse structures
+reproducibility: unknown
+caveats:
+- first point-cloud representation for 2.5D IC thermal prediction; no comparison with other point-cloud EDA architectures
+- may require retraining for significantly different packaging technologies

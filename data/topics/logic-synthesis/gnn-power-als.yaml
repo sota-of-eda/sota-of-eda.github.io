@@ -1,0 +1,30 @@
+baseline_id: gnn-power-als
+short_name: GNN-CGP ALS
+display_name: 'Bridging the Power Estimation Gap: A GNN-Based Prediction Model for Approximate Logic Synthesis'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Bridging the Power Estimation Gap: A GNN-Based Prediction Model for Approximate Logic Synthesis'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{li2026bridgingPowerAls,\n  title={Bridging the Power Estimation Gap: A GNN-Based Prediction Model for Approximate Logic Synthesis},\n  author={Li, Fuxuan and Liu, Ao and Liu, Siting and Wang, Hui and Han, Jie and Jiang, Honglan},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1245.pdf
+compare_when:
+- evaluating approximate logic synthesis flows that use fast hardware-cost prediction during gate-level design-space exploration
+- comparing power-guided ALS or CGP-based approximate arithmetic synthesis under fixed error constraints
+benchmark_scope:
+- 10000 generated combinational RTL designs plus 72 Synopsys DesignWare arithmetic circuits for GNN training and validation
+- EvoApproxLib v2022 8-bit signed and unsigned multiplier designs for transfer and Pareto-front evaluation
+- 16 RTL-OPTa datapath designs satisfying the model setup requirements for additional transfer evaluation
+metrics:
+- post-synthesis power prediction R2 and near-tie concordance index
+- power-error Pareto fronts under MSE and MRE constraints
+- power savings relative to EvoApproxLib or initial circuits
+- model size and inference time per candidate
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- training labels depend on commercial Synopsys DC, PrimeTime PX, and VCS flows, so reproducibility without the same tools and libraries is limited
+- no public code or dataset artifact was found in this pass
+- the DATE paper studies approximate arithmetic circuits and gate-level ALS; broader logic-synthesis applicability outside this setting needs review

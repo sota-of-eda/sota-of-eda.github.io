@@ -1,0 +1,30 @@
+baseline_id: cure-fuzz
+short_name: CURE-Fuzz
+display_name: 'CURE-Fuzz: Curiosity-Driven Reinforcement Learning for Agile Hardware Testing'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'CURE-Fuzz: Curiosity-Driven Reinforcement Learning for Agile Hardware Testing'
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{curefuzz2025,\n  author = {Hanwei Fan and Ya Wang and Xiaofeng Zhou and Sicheng Li and Binguang Zhao and Yangdi Lyu and Jiang Xu and Wei Zhang},\n  title = {CURE-Fuzz: Curiosity-Driven Reinforcement Learning for Agile Hardware Testing},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/ICCAD66269.2025.11240915}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240915
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240915
+compare_when:
+- Evaluating RL-based hardware fuzzing effectiveness against processor cores (Rocket, BOOM)
+- Comparing agile hardware testing coverage and bug detection rates
+- Benchmarking automated test program generation frameworks for RTL validation
+benchmark_scope:
+- Rocket core (RISC-V)
+- BOOM core (RISC-V)
+metrics:
+- Line coverage
+- Toggle coverage
+- ISA coverage
+- Bug detection count
+reproducibility: unknown
+caveats:
+- Invited paper; may not represent blind peer-reviewed work
+- Comparison limited to two fuzzers (Cascade, DifuzzRTL, ProcessorFuzz)
+- No public code repository found at time of review

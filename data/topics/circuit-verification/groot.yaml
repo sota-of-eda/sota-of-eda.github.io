@@ -1,0 +1,25 @@
+baseline_id: groot
+short_name: GROOT
+display_name: 'GROOT: Graph Edge Re-growth and Partitioning for the Verification of Large Designs in Logic Synthesis'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'GROOT: Graph Edge Re-growth and Partitioning for the Verification of Large Designs in Logic Synthesis'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240954
+  bibtex: "@inproceedings{thorat2025groot,\n  title={GROOT: Graph Edge Re-growth and Partitioning for the Verification of Large Designs in Logic Synthesis},\n  author={Thorat, Kiran and Peng, Hongwu and Luo, Yuebo and Xie, Xi and Huang, Shaoyi and Hasan, Amit and Zhao, Jiahui and Li, Yingjie and Shi, Zhijie and Yu, Cunxi and Ding, Caiwen},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240954
+  pdf_url: https://arxiv.org/abs/2511.18297
+compare_when:
+- Comparing GPU-accelerated GNN-based logic verification approaches
+benchmark_scope:
+- CSA multipliers up to 1024-bit (134M nodes, 268M edges)
+metrics:
+- Memory reduction (59.38% vs GAMORA)
+- Runtime speedup
+- Verification accuracy (99.96%)
+reproducibility: artifact_available
+caveats:
+- ArXiv preprint available; ICCAD official version may have different page limits

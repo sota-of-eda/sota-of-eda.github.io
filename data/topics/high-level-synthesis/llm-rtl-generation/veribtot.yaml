@@ -1,0 +1,31 @@
+baseline_id: veribtot
+short_name: VeriBToT
+display_name: 'VeriBToT: Automated RTL Design with Backtrack Tree-of-Thought'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Think with Self-Decoupling and Self-Verification: Automated RTL Design with Backtrack-ToT'
+  venue: DATE
+  year: 2026
+  bibtex: "@misc{chao2025thinkselfdecouplingselfverificationautomated,\n      title={Think with Self-Decoupling and Self-Verification: Automated RTL Design with Backtrack-ToT}, \n      author={Zhiteng Chao and Yonghao Wang and Xinyu Zhang and Jiaxin Zhou and Tenghui Hua and Husheng Han and Tianmeng Yang and Jianan Mu and Bei Yu and Rui Zhang and Jing Ye and Huawei Li},\n      year={2025},\n      eprint={2511.13139},\n      archivePrefix={arXiv},\n      primaryClass={cs.AR},\n      url={https://arxiv.org/abs/2511.13139}, \n}"
+links:
+  paper_url: https://arxiv.org/abs/2511.13139
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/38.pdf
+  arxiv_url: https://arxiv.org/abs/2511.13139
+compare_when:
+- evaluating LLM reasoning paradigms for natural-language-to-Verilog or automated RTL design
+- comparing IO, CoT, self-consistency CoT, Tree-of-Thought, and domain-specific fine-tuned RTL-generation models
+- measuring pass@1/pass@5, syntactic correctness, functional correctness, and token cost on VerilogEval-Human and RTLLM
+benchmark_scope:
+- VerilogEval-Human and RTLLM natural-language-to-Verilog benchmarks
+- DeepSeek-Coder-V2 and ChatGPT-4 general LLMs plus Thakur and RTLCoder domain-specific models as comparison context
+- hard-case analysis where direct IO prompting failed functional pass@1
+metrics:
+- functional pass@1 and pass@5
+- 'syntax and functional #pass@5 on hard cases'
+- token consumption in thousands of tokens
+reproducibility: paper_only
+caveats:
+- formal DATE/IEEE DOI and DATE BibTeX were not found in DBLP/Crossref at draft time; BibTeX is the verified arXiv entry
+- results depend on LLM model access and evaluation dates; the paper notes experiments were conducted between March 1-20, 2025
+- method is a reasoning/prompting paradigm rather than a fine-tuned standalone model, so comparisons to domain-specific fine-tuned models are not identical training setups

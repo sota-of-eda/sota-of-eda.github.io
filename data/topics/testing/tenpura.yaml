@@ -1,0 +1,27 @@
+baseline_id: tenpura
+short_name: Tenpura
+display_name: 'Tenpura: A General Transient Fault Evaluation and Scope Narrowing Platform for Ultra-fast Reliability Analysis'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Tenpura: A General Transient Fault Evaluation and Scope Narrowing Platform for Ultra-fast Reliability Analysis'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240869
+  bibtex: '@inproceedings{Cheng_2025, title={Tenpura: A General Transient Fault Evaluation and Scope Narrowing Platform for Ultra-fast Reliability Analysis}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240869}, DOI={10.1109/iccad66269.2025.11240869}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Cheng, Quan and Zhang, Huizi and Liang, Chien-Hsing and Zhang, Mingtao and Liou, Jing-jia and Xiong, Jinjun and Lin, Longyang and Hashimoto, Masanori}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240869
+compare_when:
+- comparing transient fault injection and reliability analysis platforms
+- evaluating fault scope narrowing for accelerated soft-error analysis
+benchmark_scope:
+- RISC-V cores
+- NVDLA-based AI accelerator
+metrics:
+- fault reduction percentage
+- fault analysis speedup vs SOTA
+reproducibility: unknown
+caveats:
+- Scan-based activity tracing requires scan chain infrastructure
+- FPGA emulation may not perfectly replicate ASIC fault behavior
+- Fault scope narrowing may miss rare but critical fault scenarios

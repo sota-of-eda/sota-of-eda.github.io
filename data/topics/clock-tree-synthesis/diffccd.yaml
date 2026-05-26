@@ -1,0 +1,28 @@
+baseline_id: diffccd
+short_name: DiffCCD
+display_name: 'DiffCCD: GPU-Accelerated Differentiable Clock Cell Driving Optimization'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'DiffCCD: Differentiable Concurrent Clock and Data Optimization'
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{diffccd2025,\n  author = {Yuhao Ji and Yuntao Lu and Zuodong Zhang and Zizheng Guo and Yibo Lin and Bei Yu},\n  title = {DiffCCD: Differentiable Concurrent Clock and Data Optimization},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--9}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240631
+links:
+  pdf_url: https://guozz.cn/publication/diffccdiccad-25/
+compare_when:
+- Evaluating GPU-accelerated physical optimization for timing closure
+- Comparing differentiable optimization frameworks for clock/data optimization
+- Benchmarking post-CTS timing optimization tools
+benchmark_scope:
+- Open-source industrial benchmarks
+metrics:
+- WNS improvement (22.4%)
+- TNS improvement (45.0%)
+- Runtime speedup (9.434x over CPU-based OpenROAD)
+reproducibility: unknown
+caveats:
+- DOI not confirmed; paper tracked via author webpage
+- GPU-accelerated approach requires specific hardware for reproduction
+- Comparison against OpenROAD only; commercial tool comparison missing

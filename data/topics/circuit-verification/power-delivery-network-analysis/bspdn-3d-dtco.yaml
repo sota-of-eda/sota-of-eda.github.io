@@ -1,0 +1,29 @@
+baseline_id: bspdn-3d-dtco
+short_name: BSPDN 3D DTCO
+display_name: Architecture, Design and Technology Co-optimization for 3D ICs with Advanced BSPDN Considering Power & Thermal Integrity Impact
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Architecture, Design and Technology Co-optimization for 3D ICs with Advanced BSPDN Considering Power & Thermal Integrity Impact
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{zhou2026bspdn3ddtco,\n  title={Architecture, Design and Technology Co-optimization for 3D ICs with Advanced BSPDN Considering Power \\& Thermal Integrity Impact},\n  author={Zhou, Hu and Yang, Haolan and Liu, Xingcheng and Wang, Linqiu and Xie, Feifan and Wang, Yumeng and Chen, Zhuojun and Zhang, Zhiyong and Peng, Lianmao and Chen, Rongmei},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/822.pdf
+compare_when:
+- evaluating early-stage IR-drop and power-integrity analysis for 3D ICs with FSPDN/BSPDN choices
+- comparing power/thermal DTCO scenarios for Memory-on-Logic and Logic-on-Memory 3D CPU stacking
+benchmark_scope:
+- commercial-IP-based 7nm 3D CPU design with SRAM area much larger than logic area
+- 2D control chip validation against Cadence Voltus plus four 3D scenarios combining MoL/LoM stacking with FSPDN/BSPDN
+- thermal simulation using Ansys-based tools and additional DTCO experiments varying micro-TSV count and thermally conductive fill material
+metrics:
+- 98th-percentile IR drop for logic and SRAM dies
+- peak temperature and thermal map comparison across 3D stacking/PDN scenarios
+- IR-drop reduction from additional micro-TSVs
+- temperature reduction from high-thermal-conductivity material integration
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- evaluation uses commercial IP, Cadence Voltus validation, and Ansys-based thermal tools; no public benchmark or artifact was verified in this pass
+- topic parent is provisional because signoff-like PDN/thermal analysis topics may later move from circuit-verification to a dedicated signoff-analysis or manufacturability-reliability taxonomy

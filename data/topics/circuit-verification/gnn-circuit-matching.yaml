@@ -1,0 +1,23 @@
+baseline_id: gnn-circuit-matching
+short_name: GNN Circuit Matching
+display_name: Target Circuit Matching in Large-Scale Netlists Using GNN-Based Region Prediction
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Target Circuit Matching in Large-Scale Netlists Using GNN-Based Region Prediction
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240923
+  bibtex: "@inproceedings{seo2025gnn,\n  title={Target Circuit Matching in Large-Scale Netlists Using GNN-Based Region Prediction},\n  author={Seo, Sangwoo and Seo, Jimin and Lee, Yoonho and Kim, Donghyeon and Shin, Hyejin and Sung, Banghyun and Park, Chanyoung},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240923
+compare_when:
+- Comparing GNN-based subgraph matching for netlist analysis and circuit verification
+benchmark_scope:
+- Large-scale netlists
+metrics:
+- Matching accuracy
+- Time efficiency
+reproducibility: unknown
+caveats:
+- GNN model needs retraining for different target circuits; results depend on negative sample quality

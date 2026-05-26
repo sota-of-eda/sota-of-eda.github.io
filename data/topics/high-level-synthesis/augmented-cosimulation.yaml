@@ -1,0 +1,28 @@
+baseline_id: augmented-cosimulation
+short_name: Augmented Co-Simulation
+display_name: Augmented Co-Simulation for Fast Functional and System-Level Verification of HLS Accelerators
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Augmented Co-Simulation for Fast Functional and System-Level Verification of HLS Accelerators
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240905
+  bibtex: "@inproceedings{fiorito2025augmented,\n  author = {Michele Fiorito and Serena Curzel and Fabrizio Ferrandi},\n  title = {Augmented Co-Simulation for Fast Functional and System-Level Verification of HLS Accelerators},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240905},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240905
+compare_when:
+- comparing HLS co-simulation and verification frameworks
+- evaluating system-level verification speed of HLS-generated accelerators
+- benchmarking against RTL simulation and existing co-simulation methods
+benchmark_scope:
+- HLS-generated accelerator kernels
+- system-level applications combining software and HLS accelerators
+metrics:
+- simulated cycles per second (7.0x vs SOTA, 36.2x vs RTL sim)
+- simulation accuracy
+- memory overhead
+reproducibility: unknown
+caveats:
+- open-source code integrated with Bambu; availability upon publication means it was not yet released when paper was published
+- co-simulation speedup depends on the balance of SW/HW computation in the application

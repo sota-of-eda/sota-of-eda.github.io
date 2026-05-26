@@ -1,0 +1,24 @@
+baseline_id: cordba
+short_name: CorDBA
+display_name: 'CorDBA: Corners Decoupled Bayesian Approach for Yield Optimization'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'CorDBA: Corners Decoupled Bayesian Approach for yield optimization'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240641
+  bibtex: "@inproceedings{zhang2025cordba,\n  author = {Yue Zhang and Yunqi Li and Shichang Ye and Bojun Zhang and Jinkai\nWang and Zhizhong Zhang and Peng Wang},\n  title = {{CorDBA}: Corners Decoupled Bayesian Approach for Yield Optimization},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240641},\n  publisher = {IEEE}\n}\n"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240641
+compare_when:
+- comparing yield optimization speed and robustness against SOTA Bayesian methods
+- evaluating decoupled yield estimation for circuit design unter process variations
+benchmark_scope:
+- circuit designs under process variations (SPICE-level)
+metrics:
+- 'speedup over SOTA: 3.6x (SPICE simulations)'
+- 'robustness improvement: 134.7x'
+reproducibility: unknown
+caveats:
+- first decoupled Bayesian approach with statistical corners; no public code identified yet

@@ -1,0 +1,25 @@
+baseline_id: veri-rl
+short_name: VERI RL
+display_name: 'VERI RL: Boosting the LLM-based Verilog Code Generation via Reinforcement Learning'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'VERI RL: Boosting the LLM-based Verilog Code Generation via Reinforcement Learning'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11241003
+  bibtex: "@inproceedings{Teng_2025, title={VeriRL: Boosting the LLM-based Verilog Code Generation via Reinforcement Learning}, url={http://dx.doi.org/10.1109/iccad66269.2025.11241003}, DOI={10.1109/iccad66269.2025.11241003}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Teng, Fu and Pan, Miao and Zhang, Xuhong and He, Zhezhi and Yang, Yiyao and Chai, Xinyi and Qi, Mengnan and Lu, Liqiang and Yin, Jianwei}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11241003
+compare_when:
+- comparing LLM-based Verilog code generation
+- evaluating RL-enhanced hardware code generation
+benchmark_scope:
+- Veribench-53K dataset (curated from 700K+ Verilog problems)
+metrics:
+- functional pass rate
+- syntax correctness
+- SOTA performance vs prior work
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published

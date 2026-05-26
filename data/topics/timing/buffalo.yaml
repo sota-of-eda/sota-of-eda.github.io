@@ -1,0 +1,22 @@
+baseline_id: buffalo
+short_name: BUFFALO
+display_name: 'BUFFALO: PPA-Configurable, LLM-based Buffer Tree Generation via Group Relative Policy Optimization'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'BUFFALO: PPA-Configurable, LLM-based Buffer Tree Generation via Group Relative Policy Optimization'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240744
+  bibtex: "@inproceedings{hsiao2025buffalo,\n  title={BUFFALO: PPA-Configurable, LLM-based Buffer Tree Generation via Group Relative Policy Optimization},\n  author={Hsiao, Hao-Hsiang and Lu, Yi-Chen and Lim, Sung Kyu and Ren, Haoxing},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240744
+compare_when:
+- Comparing LLM/RL-based buffer insertion approaches for timing optimization
+benchmark_scope:
+- 9 benchmark designs on 7nm technology
+metrics:
+- TNS (Total Negative Slack) improvement
+reproducibility: unknown
+caveats:
+- First work combining LLM with RL for buffer insertion; uses NVIDIA internal toolchain, not open-source

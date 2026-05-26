@@ -1,0 +1,31 @@
+baseline_id: hgnn-part
+short_name: HGNN-Part
+display_name: 'HGNN-Part: A High-Quality Hypergraph Partitioner Based on Hypergraph Generative Model'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'HGNN-Part: A High-Quality Hypergraph Partitioner Based on Hypergraph Generative Model'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{tong2026hgnnpart,\n  title={HGNN-Part: A High-Quality Hypergraph Partitioner Based on Hypergraph Generative Model},\n  author={Tong, Shengbo and Zhou, Rufan and Pei, Chunyan and Yu, Wenjian},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/213.pdf
+  repo_url: https://github.com/THU-numbda/HGNN-Part
+  project_url: https://github.com/THU-numbda/VLSI-Hypergraph-Benchmarks
+compare_when:
+- evaluating VLSI hypergraph partitioners under cutsize and balance constraints
+- comparing learning-based, spectral, and multilevel hypergraph partitioning methods on ISPD98/ISPD05 benchmarks
+benchmark_scope:
+- ISPD98 hypergraph benchmarks for training/fair comparison with prior GenPart setup
+- ISPD05 benchmarks for test evaluation
+- 164 collected VLSI hypergraphs released by the authors for expanded training
+metrics:
+- cutsize at 2% imbalance tolerance
+- balance-constraint satisfaction
+- partitioning runtime and preprocessing/reason/refinement breakdown
+- average cutsize improvement versus hMETIS and prior learning/spectral baselines
+reproducibility: artifact_available
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- reported runtime includes a KaHyPar V-Cycle refinement stage whose speed can dominate total runtime on larger benchmarks
+- the proposed topic is currently placed under placement as physical-design partitioning infrastructure; human taxonomy review may later create a broader physical-design or netlist-partitioning parent

@@ -1,0 +1,27 @@
+baseline_id: apm-enabled-eco-router
+short_name: APM-enabled ECO Router
+display_name: Adaptive Pin Pattern Modification on Standard Cells Towards ECO Routing
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Adaptive Pin Pattern Modification on Standard Cells Towards ECO Routing
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{apmeco2025,\n  author = {Jaehoon Ahn and Sehyeon Chung and Taewhan Kim},\n  title = {Adaptive Pin Pattern Modification on Standard Cells Towards ECO Routing},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--9}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240901
+compare_when:
+- Evaluating ECO routing and post-route repair methodologies
+- Comparing DTCO techniques for pin accessibility improvement
+- Benchmarking pin pattern modification for routing closure
+benchmark_scope:
+- Standard cell designs with pin accessibility issues
+- ECO routing scenarios
+metrics:
+- Pin inaccessibility cases resolved (17.7%)
+- PPA impact (no penalty)
+reproducibility: unknown
+caveats:
+- First work applying DTCO techniques to ECO routing problem
+- Three pin-pattern modifications (PST, PF, PB) may have limited applicability across technologies
+- Comparison only against commercial tool; no academic baseline comparison
+links: {}

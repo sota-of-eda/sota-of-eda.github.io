@@ -1,0 +1,22 @@
+baseline_id: crop
+short_name: CROP
+display_name: 'CROP: Circuit Retrieval and Optimization with Parameter Guidance using LLMs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'CROP: Circuit Retrieval and Optimization with Parameter Guidance using LLMs'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240643
+  bibtex: "@inproceedings{pan2025crop,\n  title={CROP: Circuit Retrieval and Optimization with Parameter Guidance using LLMs},\n  author={Pan, Jingyu and Jacobson, Isaac and Zhao, Zheng and Chen, Tung-Chieh and Zhou, Guanglei and Chang, Chen-Chia and Rashingkar, Vineet and Chen, Yiran},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240643
+compare_when:
+- Comparing LLM-based or ML-based EDA tool parameter tuning approaches
+benchmark_scope:
+- Industrial processor designs
+metrics:
+- Power reduction (9.9% vs Optuna/BO)
+reproducibility: unknown
+caveats:
+- Validated on Synopsys RTL Architect; results tied to commercial tool parameters and may not generalize to other tools

@@ -1,0 +1,28 @@
+baseline_id: bagnet
+short_name: BAGNet
+display_name: 'BAGNet: A Boundary-Aware Graph Neural Network for SRAM Yield Analysis in Post-Layout Simulation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'BAGNet: A Boundary-Aware Graph Neural Network for SRAM Yield Analysis in Post-Layout Simulation'
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{bagnet2025,\n  author = {Anonymous Authors},\n  title = {BAGNet: A Boundary-Aware Graph Neural Network for SRAM Yield Analysis in Post-Layout Simulation},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/ICCAD66269.2025.11240943}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240943
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240943
+compare_when:
+- Evaluating ML-based SRAM yield analysis methods
+- Comparing GNN approaches for post-layout circuit simulation
+- Benchmarking importance sampling for yield estimation
+benchmark_scope:
+- SRAM arrays
+- Post-layout simulation
+metrics:
+- Speedup over SOTA method (1.82x-3.52x)
+- Yield estimation accuracy
+reproducibility: unknown
+caveats:
+- Author metadata not confirmed; paper identified via IEEE Xplore DOI only
+- First GNN framework for SRAM yield in post-layout simulation; limited baselines for comparison
+- Boundary-awareness may be SRAM-specific; generalizability to other memory types unclear

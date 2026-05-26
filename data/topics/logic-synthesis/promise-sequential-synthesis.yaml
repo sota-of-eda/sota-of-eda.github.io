@@ -1,0 +1,28 @@
+baseline_id: promise-sequential-synthesis
+short_name: PROMISE
+display_name: 'PROMISE: Property Mining for Sequential Synthesis'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'PROMISE: Property Mining for Sequential Synthesis'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240727
+  bibtex: "@inproceedings{xu2025promise,\n  author = {Jiahui Xu and Jordi Cortadella and Lana Josipovic},\n  title = {PROMISE: Property Mining for Sequential Synthesis},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240727},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240727
+compare_when:
+- comparing sequential logic synthesis and optimization methods
+- evaluating property mining and invariant generation for circuit optimization
+- benchmarking circuit redundancy removal strategies
+benchmark_scope:
+- sequential logic circuits
+- circuits from HLS tools
+metrics:
+- circuit area/performance after optimization
+- invariant generation quality and coverage
+- runtime of polynomial-time algorithms
+reproducibility: unknown
+caveats:
+- uses polynomial-time algorithms that may miss some exponential-time-inferable invariants
+- effectiveness may depend on simulation trace quality and coverage

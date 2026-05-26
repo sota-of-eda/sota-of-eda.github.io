@@ -1,0 +1,30 @@
+baseline_id: memristor-mixed-mode-synthesis
+short_name: MM-MIG Synthesis
+display_name: Synthesizing Mixed-Mode Operations for Memristors using Majority Decomposition
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Synthesizing Mixed-Mode Operations for Memristors using Majority Decomposition
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{bayhurst2026mixedmodememristors,\n  title={Synthesizing Mixed-Mode Operations for Memristors using Majority Decomposition},\n  author={Bayhurst, Felix and Chen, Li-Wei and Li, Kefeng and Krueger, Heidemarie and Du, Nan and Polian, Ilia},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1573.pdf
+compare_when:
+- evaluating synthesis of mixed-mode memristive logic circuits using V-ops and R-ops
+- comparing memristor-aware logic synthesis and mapping methods for area/device count and latency/cycle reduction
+benchmark_scope:
+- MCNC benchmarks with fewer than 28 primary inputs and selected multi-output circuits
+- one-dimensional memristive line-array mapping with shared bottom-electrode constraints
+- comparison against SIMPLE and ABC/MAGIC-based synthesis/mapping results
+metrics:
+- number of memristive devices
+- number of cycles / delay
+- synthesis runtime
+- supported circuit input scale and logic sharing across outputs
+reproducibility: paper_only
+caveats:
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- no public code repository was verified in this pass
+- topic is proposed because accepted logic-synthesis is currently CMOS/front-end-centric and this paper is technology-specific emerging-device EDA
+- results focus on selected MCNC modules and one-dimensional arrays, with 2D crossbar extension left for future work

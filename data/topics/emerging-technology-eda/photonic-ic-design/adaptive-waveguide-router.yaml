@@ -1,0 +1,24 @@
+baseline_id: adaptive-waveguide-router
+short_name: Adaptive-Waveguide-Router
+display_name: Constraints-aware Adaptive Routing with Hybrid Waveguides for Photonic Integrated Circuits
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Constraints-aware Adaptive Routing with Hybrid Waveguides for Photonic Integrated Circuits
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240866
+  bibtex: "@inproceedings{wu2025adaptive,\n  author = {Yuchao Wu and Xiaofei Yu and Xianyi Feng and Yeyu Tong and Yuzhe\nMa},\n  title = {Constraints-aware Adaptive Routing with Hybrid Waveguides for Photonic\nIntegrated Circuits},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240866},\n  publisher = {IEEE}\n}\n"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240866
+compare_when:
+- comparing photonic waveguide routing quality and speed against prior optical routers
+- evaluating insertion loss minimization with hybrid waveguides
+benchmark_scope:
+- photonic integrated circuits with hybrid waveguide classes
+metrics:
+- 'insertion loss reduction: up to 37%'
+- 'speedup over prior work: 250x'
+reproducibility: unknown
+caveats:
+- first complete optical routing framework handling hybrid waveguide classes; no public code identified

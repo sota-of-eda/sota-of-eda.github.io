@@ -1,0 +1,17 @@
+topic_id: lithography-hotspot-detection
+parent_id: mask-optimization
+short_name: Hotspot Detection
+display_name: Lithography Hotspot Detection
+aliases:
+- hotspot detection
+- lithography hotspot detection
+- manufacturability hotspot detection
+- Lithography Hotspot Detection
+- Hotspot Detection
+description: Lithography hotspot detection methods for identifying layout clips likely to print poorly across process nodes, including supervised, domain-adaptation, graph-based, and layout-language-model approaches.
+review_triggers:
+- paper claims hotspot detection accuracy or false-alarm improvement
+- paper evaluates cross-node or few-label lithography hotspot transfer
+- paper compares against ICCAD hotspot benchmarks or supervised hotspot detectors
+- paper evaluates cross-node, non-Manhattan, or few-label lithography hotspot detection
+baselines: []

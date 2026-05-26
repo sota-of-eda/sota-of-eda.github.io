@@ -1,0 +1,28 @@
+baseline_id: mf-mor
+short_name: MF-MOR
+display_name: 'MF-MOR: Multi-Fidelity Model Order Reduction for Many-Port Linear Systems in Chip Power Modeling'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'MF-MOR: Multi-Fidelity Model Order Reduction for Many-Port Linear Systems in Chip Power Modeling'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240823
+  bibtex: "@inproceedings{lu2025mfmor,\n  author = {Zhenjie Lu and Hang Zhou and Quan Chen},\n  title = {MF-MOR: Multi-Fidelity Model Order Reduction for Many-Port Linear Systems in Chip Power Modeling},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240823},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240823
+compare_when:
+- comparing model order reduction methods for power grid analysis
+- evaluating many-port reduction techniques for 3DIC PDN modeling
+- benchmarking against PRIMA and other MOR methods
+benchmark_scope:
+- power grid systems with millions of nodes and tens of thousands of ports
+- 3DIC power distribution network models
+metrics:
+- ROM size reduction (47.78x vs PRIMA)
+- accuracy compared to PRIMA
+- scalability to many-port systems
+reproducibility: unknown
+caveats:
+- uses aggressive port reduction before conventional MOR; may lose accuracy for certain port configurations
+- validated on power grid models; applicability to other linear systems not demonstrated

@@ -1,0 +1,28 @@
+baseline_id: pinn-electro-thermal
+short_name: Coarse-to-Fine PINN
+display_name: Accelerating Electro-Thermal Co-Analysis via Coarse-to-Fine Physics-Informed Neural Networks
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Accelerating Electro-Thermal Co-Analysis via Coarse-to-Fine Physics-Informed Neural Networks
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240739
+  bibtex: "@inproceedings{dong2025accelerating,\n  author = {Xiao Dong and Songyu Sun and Xunzhao Yin and Zhou Jin and Zhiguo Shi and Cheng Zhuo},\n  title = {Accelerating Electro-Thermal Co-Analysis via Coarse-to-Fine Physics-Informed Neural Networks},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240739},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240739
+compare_when:
+- comparing PINN-based electro-thermal simulation methods for 3D ICs
+- evaluating coarse-to-fine resolution strategies for multiphysics analysis
+- benchmarking against commercial multiphysics tools
+benchmark_scope:
+- 3D IC electro-thermal coupling benchmarks
+- commercial tool reference simulations
+metrics:
+- mean relative error (0.10-0.19%)
+- efficiency improvement (3-4 orders of magnitude vs commercial tool)
+- resolution enhancement for regions of interest
+reproducibility: unknown
+caveats:
+- coarse-to-fine approach requires identifying regions of interest a priori; generalizability to arbitrary hotspot distributions not fully demonstrated
+- PINN training cost not characterized relative to total simulation time

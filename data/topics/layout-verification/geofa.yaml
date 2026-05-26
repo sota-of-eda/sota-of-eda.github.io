@@ -1,0 +1,29 @@
+baseline_id: geofa
+short_name: GeoFA
+display_name: 'GeoFA: A Geometric Finite Automaton Engine for Efficient Layout Pattern Matching'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'GeoFA: A Geometric Finite Automaton Engine for Efficient Layout Pattern Matching'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240662
+  bibtex: "@inproceedings{qiu2025geofa,\n  author = {Qingsheng Qiu and Ziwen Zheng and Boyu Shi and Chao Wang},\n  title = {GeoFA: A Geometric Finite Automaton Engine for Efficient Layout Pattern Matching},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240662},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240662
+compare_when:
+- comparing layout pattern matching tools for DRC and DFM verification
+- evaluating automaton-based geometric pattern matching against industry tools (Calibre)
+- benchmarking layout verification performance at advanced technology nodes
+benchmark_scope:
+- diverse industrial and academic layout patterns
+- single-layer and cell-level matching tasks
+- complex patterns with geometric tolerances
+metrics:
+- speedup vs Calibre (up to 201.7x for single-layer, 22.9x for cell-level)
+- matching accuracy (100%)
+- time complexity (near-linear)
+reproducibility: unknown
+caveats:
+- comparison limited to Calibre; may not cover all commercial DRC tools
+- automaton construction overhead not fully characterized

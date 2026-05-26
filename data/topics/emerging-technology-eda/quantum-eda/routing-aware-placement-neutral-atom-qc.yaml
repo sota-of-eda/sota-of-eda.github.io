@@ -1,0 +1,29 @@
+baseline_id: routing-aware-placement-neutral-atom-qc
+short_name: Routing-Aware Placement for Neutral Atom QC
+display_name: Routing-Aware Placement for Zoned Neutral Atom-based Quantum Computing
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Routing-Aware Placement for Zoned Neutral Atom-based Quantum Computing
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240721
+  bibtex: "@inproceedings{stade2025routing,\n  author = {Yannick Stade and Wan-Hsuan Lin and Jason Cong and Robert Wille},\n  title = {Routing-Aware Placement for Zoned Neutral Atom-based Quantum Computing},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240721},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240721
+  pdf_url: https://arxiv.org/abs/2505.22715
+compare_when:
+- comparing quantum computing layout synthesis and compilation methods
+- evaluating placement and routing co-optimization for neutral atom architectures
+- benchmarking quantum circuit mapping and scheduling approaches
+benchmark_scope:
+- zoned neutral atom quantum computing architectures
+- quantum circuit benchmarks
+metrics:
+- rearrangement steps
+- travel distances
+- routing efficiency vs SOTA
+reproducibility: unknown
+caveats:
+- first routing-aware placement for zoned neutral atom architectures; limited prior art for direct comparison
+- specific to neutral atom zoned architectures; may not generalize to superconducting or trapped-ion qubit technologies

@@ -1,0 +1,27 @@
+baseline_id: etla-3d
+short_name: ETLA-3D
+display_name: 'ETLA-3D: Equivalent Thin Layer Aggregation based Thermal FEM for Hybrid Bonding F2F 3D ICs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ETLA-3D: Equivalent Thin Layer Aggregation based Thermal FEM for Hybrid Bonding F2F 3D ICs'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{wang2026etla3d,\n  title={ETLA-3D: Equivalent Thin Layer Aggregation based Thermal FEM for Hybrid Bonding F2F 3D ICs},\n  author={Wang, Chenghan and Zhuang, Zhen and Zhu, Kai and Huang, Darong and Costero, Luis and Chen, Rongmei and Atienza, David and Ho, Tsung-Yi},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/25.pdf
+compare_when:
+- evaluating thermal FEM or reduced-order thermal simulation for hybrid-bonding face-to-face 3D ICs
+- comparing accuracy-runtime tradeoffs for sub-micrometer thin-layer thermal modeling
+benchmark_scope:
+- F2F 3D IC thermal models with hybrid-bonding, FEOL, BEOL, TIM, heat-spreader, and heat-sink layers
+- SPARC, EV6, and multi-core floorplan couples with multiple power maps
+metrics:
+- maximum absolute error and mean absolute error in deg C
+- degrees of freedom and steady-state/transient simulation runtime
+- speedup relative to COMSOL, FEniCSx, HotSpot 7.0, and 3D-ICE 3.1
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- ETLA-3D's Mode 2 validity depends on sufficiently thin FEOL layers because thicker layers increase horizontal heat transfer and reduce aggregation accuracy
+- proposed topic inherits the provisional thermal-analysis parent; human taxonomy review should decide whether thermal analysis belongs under circuit-verification or a broader signoff/manufacturability topic

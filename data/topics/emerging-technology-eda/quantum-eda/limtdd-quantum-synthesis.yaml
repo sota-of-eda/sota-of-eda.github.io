@@ -1,0 +1,29 @@
+baseline_id: limtdd-quantum-synthesis
+short_name: LimTDD-QCS
+display_name: Quantum Circuit Synthesis Based on LimTDD
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Quantum Circuit Synthesis Based on LimTDD
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{hong2026limtddquantumsynthesis,\n  title={Quantum Circuit Synthesis Based on LimTDD},\n  author={Hong, Xin and Li, Chenjian and Dai, Aochu and He, Runhong and Ying, Shenggang},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/506.pdf
+compare_when:
+- evaluating quantum circuit synthesis based on decision diagrams or tensor-network representations
+- comparing methods that reduce quantum gate count or synthesis time for structured unitary operations
+benchmark_scope:
+- quantum circuit synthesis tasks represented with LimTDD and tensor-decision-diagram structures
+- comparisons against common decomposition/search-based quantum synthesis methods on reported benchmark circuits
+- use as a preprocessing or acceleration component for other quantum synthesis algorithms
+metrics:
+- synthesized quantum gate count
+- synthesis runtime / computational overhead
+- ability to exploit isomorphic operators and reduce entanglements
+reproducibility: paper_only
+caveats:
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- no public code repository was verified in this pass
+- extracted text did not expose all tables cleanly, so detailed benchmark numbers should be rechecked before promotion
+- topic parent is provisional until emerging-technology quantum EDA taxonomy is accepted

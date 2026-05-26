@@ -1,0 +1,30 @@
+baseline_id: ppaas
+short_name: PPAAS
+display_name: 'PPAAS: PVT and Pareto Aware Analog Sizing via Goal-Conditioned Reinforcement Learning'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'PPAAS: PVT and Pareto Aware Analog Sizing via Goal-Conditioned Reinforcement Learning'
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{ppaas2025,\n  author = {Seunggeun Kim and Ziyi Wang and Sungyoung Lee and Youngmin Oh and Hanqing Zhu and Doyun Kim and David Z. Pan},\n  title = {PPAAS: PVT and Pareto Aware Analog Sizing via Goal-Conditioned Reinforcement Learning},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/ICCAD66269.2025.11240795}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240795
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240795
+  pdf_url: https://arxiv.org/abs/2507.17003
+  repo_url: https://github.com/SeunggeunKimkr/PPAAS
+compare_when:
+- Evaluating RL-based analog circuit sizing frameworks
+- Comparing PVT-aware analog design automation methods
+- Benchmarking goal-conditioned RL for circuit optimization
+benchmark_scope:
+- Analog circuit benchmarks (comparison with RoSE-Opt, RobustAnalog, AutoCkt, BO)
+metrics:
+- Sample efficiency improvement (~1.6x)
+- Simulation efficiency improvement (~4.1x)
+- Solution quality under PVT variations
+reproducibility: artifact_available
+caveats:
+- Goal-conditioned RL training can be computationally expensive
+- Skip-on-Fail strategy may miss corner cases
+- Validation limited to specific analog circuit topologies

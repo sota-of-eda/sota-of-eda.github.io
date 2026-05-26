@@ -1,0 +1,29 @@
+baseline_id: adaptive-cost-global-router
+short_name: Adaptive-Cost GR
+display_name: Adaptive Cost-based Via and Congestion Co-optimization Global Router
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: An Adaptive Cost-based Via and Congestion Co-optimization Framework for VLSI Global Routing
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{wu2026adaptivecostgr,\n  title={An Adaptive Cost-based Via and Congestion Co-optimization Framework for VLSI Global Routing},\n  author={Wu, Zhaoyi and Huang, Haishan and Chen, Jianli and Lin, Zhifeng},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1157.pdf
+compare_when:
+- evaluating VLSI global routers that jointly optimize congestion/overflow, via count, and wirelength
+- comparing academic and commercial global-routing engines before detailed routing on large benchmark designs
+benchmark_scope:
+- industrial/open benchmark designs including ct_top_N7, HopenC910_N7, RocketSystem, fetch_cur_luma, z80_core_top, top, ddr3, and openC910
+- global-routing plus downstream detailed-routing measurements against iTool and OpenROAD
+metrics:
+- overflow percentage
+- via count
+- wirelength
+- global-routing runtime
+- detailed-routing runtime
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- comparison includes an advanced commercial tool iTool, so exact commercial setup may not be publicly reproducible
+- the method is a full global router with several components, not only an adaptive cost function ablation

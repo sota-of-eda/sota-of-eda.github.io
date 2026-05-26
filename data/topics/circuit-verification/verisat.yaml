@@ -1,0 +1,28 @@
+baseline_id: verisat
+short_name: VeriSAT
+display_name: 'VeriSAT: the Hardware Design of Modern SAT Solver'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'VeriSAT: the Hardware Design of Modern SAT Solver'
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{verisat2025,\n  author = {Yue Tao and Shaowei Cai},\n  title = {VeriSAT: the Hardware Design of Modern SAT Solver},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--9}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240752
+compare_when:
+- Evaluating hardware-accelerated SAT solvers for EDA
+- Comparing FPGA-based vs CPU-based SAT solving performance
+- Benchmarking hardware SAT solvers for formal verification
+benchmark_scope:
+- Curated benchmark instances
+- SAT competition benchmarks
+metrics:
+- Speedup over SAT-Hard (1044x)
+- Speedup over SAT-Accel (18x)
+- Speedup over MiniSat (30x on specific datasets)
+reproducibility: unknown
+caveats:
+- First modern SAT solver in synthesizable SystemVerilog; may have implementation limitations
+- Still lags behind state-of-the-art CPU solvers like Kissat overall
+- FPGA deployment requires specific hardware platform
+links: {}

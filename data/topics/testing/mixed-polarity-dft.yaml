@@ -1,0 +1,31 @@
+baseline_id: mixed-polarity-dft
+short_name: Mixed-Polarity DFT
+display_name: Design for testability using mixed-polarity flip-flops and latches
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Design for testability using mixed-polarity flip-flops and latches
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{lagostina2026mixedPolarityDft,\n  title={Design for testability using mixed-polarity flip-flops and latches},\n  author={Lagostina, Lorenzo and Cortadella, Jordi and Casu, Mario R. and Lavagno, Luciano},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/852.pdf
+compare_when:
+- evaluating design-for-testability support for latch-based or mixed-polarity flip-flop/latch sequential circuits
+- comparing scan-chain compatible time-borrowing methodologies that preserve ATPG and scan-test functionality
+benchmark_scope:
+- ISCAS89 s15850 and CEP sha256/aes192 benchmark circuits
+- 28 nm technology-library experiments with Synopsys Design Compiler, Tetramax ATPG, VCS simulation, Cadence Innovus P&R, and static timing analysis
+- designs evaluated with and without DFT and with regular FF versus Mix&Latch-style mixed-polarity latch insertion
+metrics:
+- maximum achievable clock frequency after P&R
+- total area and sequential-cell area
+- number of sequential cells
+- power consumption
+- scan-test functionality and ATPG compatibility
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- no public implementation artifact was found in this pass
+- evaluation depends on commercial Synopsys/Cadence tools and a 28 nm technology library, limiting independent reproduction
+- the proposed scan-latch structure is implemented as a macro-cell using standard cells; physical design of a dedicated standard cell is left for future work

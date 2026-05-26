@@ -1,0 +1,28 @@
+baseline_id: pathfinder-taint
+short_name: Pathfinder
+display_name: 'Pathfinder: Constructing Cycle-accurate Taint Graphs for Analyzing Information Flow Traces'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Pathfinder: Constructing Cycle-accurate Taint Graphs for Analyzing Information Flow Traces'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240966
+  bibtex: '@inproceedings{Ceesay_Seitz_2025, title={Pathfinder: Constructing Cycle-accurate Taint Graphs for Analyzing Information Flow Traces}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240966}, DOI={10.1109/iccad66269.2025.11240966}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Ceesay-Seitz, Katharina and Solt, Flavien and Klukas, Alexander and Razavi, Kaveh}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240966
+compare_when:
+- comparing hardware information flow tracking and taint analysis methods
+- evaluating formal verification of hardware security properties
+benchmark_scope:
+- hardware designs with information flow properties
+- security-critical digital designs
+metrics:
+- reduction in signals requiring manual analysis
+- taint graph quality
+- formal proof coverage
+reproducibility: unknown
+caveats:
+- Cycle-accurate taint graphs may be large for complex designs
+- Formal correspondence proof depends on specific taint tracking implementation
+- Security property verification requires expert specification

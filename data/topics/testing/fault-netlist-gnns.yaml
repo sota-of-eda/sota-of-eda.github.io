@@ -1,0 +1,30 @@
+baseline_id: fault-netlist-gnns
+short_name: Fault Netlist GNNs
+display_name: Interpretable Graph Neural Networks for Fault Detection in Circuit Netlists
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Interpretable Graph Neural Networks for Fault Detection in Circuit Netlists
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{karn2026interpretablefaultgnn,\n  title={Interpretable Graph Neural Networks for Fault Detection in Circuit Netlists},\n  author={Karn, Rupesh Raj and Knechtel, Johann and Sinanoglu, Ozgur},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/448.pdf
+  repo_url: https://github.com/rkarn/fault_netlist_gnns
+compare_when:
+- evaluating ML/GNN-based fault detection or localization in digital circuit netlists
+- comparing structural and relational feature sets for stuck-at, bridging, and glitch fault classification
+benchmark_scope:
+- ISCAS85 and EPFL combinational benchmarks converted from Verilog netlists into graph datasets
+- injected stuck-at, bridging, and glitch fault variants plus clean instances for multi-label node classification
+- comparison across GCNN, GraphSAGE, GAT, HybridGAT, GIN, MPNN, and APPNP architectures
+metrics:
+- node-classification test accuracy
+- precision, recall, and F1-score for fault classes
+- ROC-AUC and Cohen d feature-separation metrics
+- prototype-similarity interpretability and top relational feature deviations
+reproducibility: artifact_available
+caveats:
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- GitHub repository was reachable, but dataset completeness and reproduction instructions were not audited in this pass
+- fault-injection setup is benchmark/simulation based and should be reviewed against manufacturing-test assumptions before promotion

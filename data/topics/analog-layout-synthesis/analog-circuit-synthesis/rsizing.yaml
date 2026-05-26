@@ -1,0 +1,27 @@
+baseline_id: rsizing
+short_name: RSizing
+display_name: 'RSizing: Robust Bayesian Optimization for Analog Circuit Sizing Under Process Variations'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'RSizing: Robust Bayesian Optimization for Analog Circuit Sizing Under Process Variations'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240990
+  bibtex: "@inproceedings{Tu_2025, title={RSizing: Robust Bayesian Optimization for Analog Circuit Sizing Under Process Variations}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240990}, DOI={10.1109/iccad66269.2025.11240990}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Tu, Jindong and Li, Yapeng and Xu, Peng and Li, Tuo and Li, Guoqing and Xie, Zushuai and Yu, Bei and Chen, Tinghuan}, year={2025}, month=Oct, pages={1\u20138} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240990
+  pdf_url: https://www.cse.cuhk.edu.hk/~byu/papers/C287-ICCAD2025-RSizing.pdf
+compare_when:
+- comparing robust analog circuit sizing methods
+- evaluating yield-constrained optimization for analog design
+benchmark_scope:
+- three analog benchmark circuits
+metrics:
+- yield satisfaction
+- circuit performance
+- simulation count reduction
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published
+- first work to conduct analog sizing with fixed yield constraint

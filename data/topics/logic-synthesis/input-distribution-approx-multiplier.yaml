@@ -1,0 +1,29 @@
+baseline_id: input-distribution-approx-multiplier
+short_name: IDA Multiplier
+display_name: Input-Distribution-Aware Approximate Multiplier Generation for CNNs
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Towards Input-Distribution-Aware Approximate Multiplier Generation for CNNs
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{buccolini2026inputdistributionapproxmultiplier,\n  title={Towards Input-Distribution-Aware Approximate Multiplier Generation for CNNs},\n  author={Buccolini, Alessandro and Biasion, Marco and Otoni, Rodrigo and Constantinides, George A. and Pozzi, Laura},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/527.pdf
+compare_when:
+- evaluating approximate arithmetic or approximate logic synthesis for CNN accelerators
+- comparing SMT-based approximate multiplier generation under workload-specific input distributions
+benchmark_scope:
+- 8-bit approximate multipliers inserted as LUTs in quantized CNN inference
+- pre-trained ResNet-8 on CIFAR-10 with three-epoch retraining using straight-through estimation
+- 806 generated approximate multiplier designs compared against CNN-oriented approximate multiplier methods
+metrics:
+- power-delay-area product at comparable CNN accuracy
+- CNN classification accuracy after approximate multiplier insertion and retraining
+- mean absolute error weighted by CNN operand distribution
+reproducibility: paper_only
+caveats:
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- no public code repository was verified in this pass
+- experiments focus on 8-bit CNN multipliers and ResNet-8/CIFAR-10, so broader arithmetic/circuit generality needs review
+- accepted taxonomy may later split approximate arithmetic synthesis from the broad logic-synthesis topic

@@ -1,0 +1,28 @@
+baseline_id: any-angle-package-router
+short_name: Any-Angle Package Router
+display_name: Refinement Strategies for Any-Angle Package Routing with I/O Alignment Consideration
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Refinement Strategies for Any-Angle Package Routing with I/O Alignment Consideration
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240829
+  bibtex: "@inproceedings{lin2025refinement,\n  author = {Yu-En Lin and Shao-Yun Fang and Yi-Yu Liu},\n  title = {Refinement Strategies for Any-Angle Package Routing with I/O Alignment Consideration},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240829},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240829
+compare_when:
+- comparing any-angle routing methods for package substrates
+- evaluating die-to-substrate connection routing frameworks
+- benchmarking package routing refinement strategies
+benchmark_scope:
+- package substrate routing benchmarks
+- die-to-substrate I/O alignment test cases
+metrics:
+- wirelength optimization
+- routing quality vs global routing baseline
+- I/O alignment quality
+reproducibility: unknown
+caveats:
+- first any-angle routing framework for die-to-substrate connections; limited baseline comparison
+- refinement strategies may need adaptation for different package technologies

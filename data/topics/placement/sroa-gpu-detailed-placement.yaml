@@ -1,0 +1,28 @@
+baseline_id: sroa-gpu-detailed-placement
+short_name: SROA
+display_name: Leveraging GPU for Better Detailed Placement Quality
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Leveraging GPU for Better Detailed Placement Quality
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240914
+  bibtex: "@inproceedings{lu2025leveraging,\n  author = {Chen-Han Lu and Wen-Hao Liu and Haoxing Ren and Ting-Chi Wang},\n  title = {Leveraging GPU for Better Detailed Placement Quality},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240914},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240914
+compare_when:
+- comparing GPU-accelerated detailed placement methods
+- evaluating row and order assignment heuristics for placement refinement
+- benchmarking against ABCDPlace and other detailed placers
+benchmark_scope:
+- standard cell placement benchmarks
+- detailed routing evaluation on placed designs
+metrics:
+- detailed routing wirelength reduction (1.35%)
+- via count reduction (1.03%)
+- runtime vs CPU-based methods
+reproducibility: unknown
+caveats:
+- wirelength and via improvements are modest (1-1.4%); practical significance may depend on design characteristics
+- GPU memory constraints may limit applicability to very large designs

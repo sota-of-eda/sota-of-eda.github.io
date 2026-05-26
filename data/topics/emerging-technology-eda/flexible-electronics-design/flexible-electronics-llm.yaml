@@ -1,0 +1,23 @@
+baseline_id: flexible-electronics-llm
+short_name: Agentic LLM for FE Design
+display_name: 'Prompt, Fab, Flex: Agentic LLMs for Flexible Electronics Design'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Prompt, Fab, Flex: Agentic LLMs for Flexible Electronics Design'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240714
+  bibtex: "@inproceedings{firouzi2025flex,\n  title={Prompt, Fab, Flex: Agentic LLMs for Flexible Electronics Design},\n  author={Firouzi, Farshad and Farahani, Bahar and Vergos, Polykarpos and Sahoo, Deepesh and Bleier, Nathaniel and Chakrabarty, Krishnendu},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240714
+compare_when:
+- Comparing AI/LLM-based design automation approaches for flexible/printed electronics
+benchmark_scope:
+- ML classifier designs for flexible electronics
+metrics:
+- PPA (Power, Performance, Area)
+- Design space exploration efficiency
+reproducibility: unknown
+caveats:
+- Flexible electronics is a highly specialized domain; results not directly comparable to conventional silicon EDA

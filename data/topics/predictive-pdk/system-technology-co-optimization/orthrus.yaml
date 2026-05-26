@@ -1,0 +1,29 @@
+baseline_id: orthrus
+short_name: Orthrus
+display_name: 'Orthrus: Dual-Loop Automated Framework for System-Technology Co-Optimization'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Orthrus: Dual-Loop Automated Framework for System-Technology Co-Optimization'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240673
+  bibtex: '@inproceedings{Ren_2025, title={Orthrus: Dual-Loop Automated Framework for System-Technology Co-Optimization}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240673}, DOI={10.1109/iccad66269.2025.11240673}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Ren, Yi and Peng, Baokang and Xue, Chenhao and Guo, Kairong and Wang, Yukun and Cheng, Guoyao and Lin, Yibo and Zhang, Lining and Sun, Guangyu}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240673
+  pdf_url: https://arxiv.org/abs/2509.13029
+compare_when:
+- comparing system-technology co-optimization frameworks
+- evaluating dual-loop optimization for joint system/technology PPA tuning
+benchmark_scope:
+- 7nm technology node
+- RISC-V CPU and GPU system benchmarks
+metrics:
+- delay reduction
+- power savings
+- PPA hypervolume
+reproducibility: unknown
+caveats:
+- Bayesian optimization requires multiple technology iterations
+- Neural-network-assisted evolutionary algorithm adds complexity
+- 7nm results may not directly translate to newer nodes

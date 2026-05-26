@@ -1,0 +1,24 @@
+baseline_id: fpga-cc
+short_name: FPGA-CC
+display_name: 'FPGA-CC: Confidential Containers for Virtualized FPGAs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'FPGA-CC: Confidential Containers for Virtualized FPGAs'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240860
+  bibtex: "@inproceedings{xia2025fpgacc,\n  title={FPGA-CC: Confidential Containers for Virtualized FPGAs},\n  author={Xia, Ke and Wei, Sheng},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240860
+compare_when:
+- Comparing secure FPGA virtualization and multi-tenant cloud FPGA solutions
+benchmark_scope:
+- Image processing benchmarks
+- Neural network benchmarks
+metrics:
+- Security isolation
+- Performance overhead
+reproducibility: unknown
+caveats:
+- FPGA cloud security is a niche area; results depend on specific TEE/SGX hardware configuration

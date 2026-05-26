@@ -1,0 +1,24 @@
+baseline_id: fresco
+short_name: FRESCO
+display_name: 'FRESCO: Efficient Subgraph Enumeration for Scalable Clustering in Heterogeneous CGRAs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'FRESCO: Efficient Subgraph Enumeration for Scalable Clustering in Heterogeneous CGRAs'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240852
+  bibtex: "@inproceedings{coulon2025fresco,\n  author = {Louis Coulon and Adham Ragab and Jason Anderson and Mirjana Stojilovi\\'{c}\nand Paolo Ienne},\n  title = {{FRESCO}: Efficient Subgraph Enumeration for Scalable Clustering\nin Heterogeneous {CGRAs}},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240852},\n  publisher = {IEEE}\n}\n"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240852
+compare_when:
+- comparing CGRA clustering quality and runtime against CLUMAP
+- evaluating subgraph enumeration efficiency for heterogeneous architectures
+benchmark_scope:
+- heterogeneous CGRA architectures
+metrics:
+- clustering quality vs CLUMAP
+- search space pruning effectiveness
+reproducibility: unknown
+caveats:
+- two-phase clustering algorithm; no public implementation identified yet

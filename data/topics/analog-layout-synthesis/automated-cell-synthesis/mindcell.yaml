@@ -1,0 +1,28 @@
+baseline_id: mindcell
+short_name: MinDCell
+display_name: Synthesis of Standard Cells of Minimum Delay
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Synthesis of Standard Cells of Minimum Delay
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{mindcell2025,\n  author = {Sehyeon Chung and Hyunbae Seo and Taewhan Kim},\n  title = {Synthesis of Standard Cells of Minimum Delay},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--8}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240906
+compare_when:
+- Evaluating standard cell library generation tools
+- Comparing cell-level synthesis optimization for delay
+- Benchmarking transistor placement and in-cell routing for performance
+benchmark_scope:
+- ASAP7 standard cell library
+- Standard cell benchmarks
+metrics:
+- Cell delay reduction (up to 9.3%)
+- Circuit clock frequency improvement (7.2% on average)
+- Area and power retention (nearly same)
+reproducibility: unknown
+caveats:
+- First work to prioritize delay over area in standard cell synthesis
+- Results demonstrated on ASAP7 (7nm predictive PDK)
+- No public code repository found at time of review
+links: {}

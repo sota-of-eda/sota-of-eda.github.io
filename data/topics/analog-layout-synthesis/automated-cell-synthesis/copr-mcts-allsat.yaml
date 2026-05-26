@@ -1,0 +1,26 @@
+baseline_id: copr-mcts-allsat
+short_name: CoP&R
+display_name: 'CoP&R: Co-Optimizing Place-and-Route for Standard Cell Layout via MCTS and AllSAT'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'CoP&R: Co-Optimizing Place-and-Route for Standard Cell Layout via MCTS and AllSAT'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240928
+  bibtex: "@inproceedings{Su_2025, title={CoP&amp;R: Co-Optimizing Place-and-Route for Standard Cell Layout via MCTS and AllSAT}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240928}, DOI={10.1109/iccad66269.2025.11240928}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Su, Yen-Ju and Tsai, Jiun-Cheng and Huang, Hsuan-Ming and Liang, Aaron C.-W. and Tsai, Han-Ya and Hsu, Wei-Min and Yang, Jen-Hang and Wen, Charles H.-P.}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240928
+compare_when:
+- comparing transistor-level P&R co-optimization
+- evaluating AllSAT-based placement pruning for standard cells
+benchmark_scope:
+- standard cell layout benchmarks
+metrics:
+- routability improvement (1.1% to 62.7%)
+- placement space reduction (>99.9%)
+- runtime speedup vs brute-force (62.2x)
+- TWL quality degradation (0.2%)
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published

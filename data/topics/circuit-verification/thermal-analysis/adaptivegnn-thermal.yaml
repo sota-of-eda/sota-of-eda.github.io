@@ -1,0 +1,26 @@
+baseline_id: adaptivegnn-thermal
+short_name: AdaptiveGNN-Thermal
+display_name: Adaptive Graph Learning for Efficient Thermal Analysis of Multi-Stacking Chiplet Systems under Interface Variations
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Adaptive Graph Learning for Efficient Thermal Analysis of Multi-Stacking Chiplet Systems under Interface Variations
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240700
+  bibtex: "@inproceedings{yang2025adaptivegnn,\n  author = {Ziyao Yang and Jingbo Sun and Vidya A. Chhabria and Yu Cao},\n  title = {Adaptive Graph Learning for Efficient Thermal Analysis of Multi-Stacking\nChiplet Systems under Interface Variations},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240700},\n  publisher = {IEEE}\n}\n"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240700
+compare_when:
+- comparing thermal simulation speed and accuracy for chiplet systems against traditional methods
+- evaluating GNN adaptability to unseen process/material variations without retraining
+benchmark_scope:
+- multi-stacking chiplet systems
+metrics:
+- 'MAPE: 0.05% average'
+- 'speedup: >1000x'
+- 'simulation time: few hundred milliseconds'
+reproducibility: unknown
+caveats:
+- GNN-based surrogate model for thermal analysis; no public code or trained model identified
+- robust to unseen variations but training data for all possible interface scenarios may be needed

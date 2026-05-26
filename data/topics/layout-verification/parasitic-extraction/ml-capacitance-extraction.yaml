@@ -1,0 +1,25 @@
+baseline_id: ml-capacitance-extraction
+short_name: ML Capacitance Extraction
+display_name: Capacitance Extraction via Machine Learning with Application to Interconnect Geometry Exploration
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Capacitance Extraction via Machine Learning with Application to Interconnect Geometry Exploration
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240935
+  bibtex: "@inproceedings{Tsai_2025, title={Capacitance Extraction via Machine Learning with Application to Interconnect Geometry Exploration}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240935}, DOI={10.1109/iccad66269.2025.11240935}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Tsai, Cheng-Yu and Kim, Suwan and Lim, Sung-Kyu}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240935
+compare_when:
+- comparing ML-based parasitic extraction
+- evaluating fast capacitance extraction for DTCO
+benchmark_scope:
+- standard cells with multiple ITF files
+metrics:
+- extraction time (seconds)
+- accuracy vs field solver
+- model speed (LightGBM vs DNN)
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published

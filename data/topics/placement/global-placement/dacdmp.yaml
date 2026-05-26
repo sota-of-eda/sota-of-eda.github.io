@@ -1,0 +1,27 @@
+baseline_id: dacdmp
+short_name: DACDMP
+display_name: Dynamic Algorithm Configuration for Global Placement
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Dynamic Algorithm Configuration for Global Placement
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{lu2026dacdmp,\n  title={Dynamic Algorithm Configuration for Global Placement},\n  author={Lu, Chen and Xue, Ke and Chen, Ruo-Tong and Shi, Yunqi and Xu, Siyuan and Yuan, Mingxuan and Qian, Chao and Zhou, Zhi-Hua},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/163.pdf
+compare_when:
+- evaluating global placement algorithms or DREAMPlace hyperparameter-configuration methods
+- comparing dynamic learning-rate policies for analytical or GPU-accelerated global placement
+benchmark_scope:
+- ISPD 2005 global-placement benchmark suite
+- ICCAD 2015 superblue benchmark suite with GP+LG+DP and PPA evaluation
+metrics:
+- HPWL and routed wirelength
+- WNS, TNS, and number of violation points
+- overlap and training/exploration time
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- DACDMP requires per-case RL exploration time, so training overhead and transferability should be considered when comparing with fixed placers
+- the method configures DREAMPlace rather than replacing the full placement engine, so comparisons depend on DREAMPlace and downstream legalization/detailed-placement settings

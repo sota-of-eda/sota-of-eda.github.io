@@ -1,0 +1,29 @@
+baseline_id: pexact-switching
+short_name: pexact
+display_name: Exact Synthesis with Optimal Switching Activity
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Exact Synthesis with Optimal Switching Activity
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{walter2026exactswitching,\n  title={Exact Synthesis with Optimal Switching Activity},\n  author={Walter, Marcel and Feldmeier, Michael and Wille, Robert},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/515.pdf
+  project_url: https://www.cda.cit.tum.de/research/logicsynth/
+compare_when:
+- evaluating exact logic synthesis methods that optimize switching activity or dynamic-power proxies
+- comparing SAT encodings and search strategies for small Boolean-function synthesis or rewriting-library generation
+benchmark_scope:
+- 222 canonized 4-input NPN class representatives synthesized in ABC
+- comparison against ABC twoexact area-focused exact synthesis under a 3-day timeout
+metrics:
+- total switching activity under uniform input probabilities
+- area/gate-count overhead relative to twoexact
+- runtime for Free Search, Queue Search, and Binary Search variants
+- number of NPN classes solved within timeout
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- evaluation is limited to 4-input NPN classes; runtime remains a significant limitation for higher-activity functions
+- paper states a GitHub repository, but GitHub verification timed out during this pass, so repo_url is not listed as verified

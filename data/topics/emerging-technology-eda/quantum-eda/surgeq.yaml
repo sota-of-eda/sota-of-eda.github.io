@@ -1,0 +1,31 @@
+baseline_id: surgeq
+short_name: SurgeQ
+display_name: 'SurgeQ: A Hybrid Framework for Ultra-Fast Quantum Processor Design and Crosstalk-Aware Circuit Execution'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'SurgeQ: A Hybrid Framework for Ultra-Fast Quantum Processor Design and Crosstalk-Aware Circuit Execution'
+  venue: DATE
+  year: 2026
+  bibtex: "@misc{chen2026surgeqhybridframeworkultrafast,\n      title={SurgeQ: A Hybrid Framework for Ultra-Fast Quantum Processor Design and Crosstalk-Aware Circuit Execution}, \n      author={Xinxuan Chen and Hongxiang Zhu and Zhaohui Yang and Zhaofeng Su and Jianxin Chen and Feng Wu and Hui-Hai Zhao},\n      year={2026},\n      eprint={2601.04645},\n      archivePrefix={arXiv},\n      primaryClass={quant-ph},\n      url={https://arxiv.org/abs/2601.04645}, \n}"
+links:
+  paper_url: https://arxiv.org/abs/2601.04645
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/474.pdf
+  arxiv_url: https://arxiv.org/abs/2601.04645
+compare_when:
+- evaluating crosstalk-aware quantum circuit execution on superconducting processors
+- comparing hardware/software co-design methods that tune two-qubit gate coupling strength and scheduling for fidelity/runtime tradeoffs
+benchmark_scope:
+- 127 quantum benchmarks across 17 real-world-inspired circuit families plus QSIH stress tests
+- 127-qubit heavy-hex and 225-qubit grid superconducting backend models with tunable-coupler physical parameters
+- comparisons against Qiskit optimization level 3, XtalkSched, and CAMEL for depth, duration, and fidelity ratios
+metrics:
+- program fidelity and fidelity ratio
+- circuit duration ratio and depth overhead
+- scalability of crosstalk-free scheduling with gate count and qubit count
+reproducibility: paper_only
+caveats:
+- arXiv BibTeX is used because formal DATE/IEEE DOI metadata is unresolved in DBLP/Crossref during this pass
+- the method relies on modeled superconducting-qubit noise/crosstalk parameters rather than public hardware experiments
+- topic parent is provisional until the emerging-technology quantum EDA taxonomy is accepted
+- no public code repository was verified in this pass

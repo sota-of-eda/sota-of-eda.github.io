@@ -1,0 +1,29 @@
+baseline_id: segt
+short_name: SEGT
+display_name: Enhancing Timing Closure via Spatially Embedded Graph Transformer with Low Power/Area Overhead
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Enhancing Timing Closure via Spatially Embedded Graph Transformer with Low Power/Area Overhead
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240684
+  bibtex: "@inproceedings{seo2025enhancing,\n  author = {Joonyoung Seo and Jonghyeon Nam and Howoo Jang and Yoonseok Jung and Seokhyeong Kang},\n  title = {Enhancing Timing Closure via Spatially Embedded Graph Transformer with Low Power/Area Overhead},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240684},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240684
+compare_when:
+- comparing pre-routing timing prediction methods
+- evaluating graph-transformer-based approaches for timing closure
+- benchmarking timing-prediction-driven placement optimization
+benchmark_scope:
+- post-routing delay prediction datasets
+- post-routing path slack prediction benchmarks
+metrics:
+- R2 score for delay prediction (0.915 to 0.959)
+- R2 score for path slack prediction (0.857 to 0.938)
+- Total Negative Slack reduction
+- power and area overhead
+reproducibility: unknown
+caveats:
+- pre-routing prediction accuracy depends on the quality of placement features; may not capture all routing-induced timing effects
+- power/area overhead reduction may vary across technology nodes

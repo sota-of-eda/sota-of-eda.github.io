@@ -1,0 +1,18 @@
+topic_id: aging-aware-timing-analysis
+parent_id: timing
+short_name: Aging Timing
+display_name: Aging-aware Timing Analysis
+aliases:
+- aging-aware delay estimation
+- BTI/HCI delay prediction
+- cell aging delay modeling
+- reliability-aware timing analysis
+- Aging-aware Timing Analysis
+- Aging Timing
+- aging aware timing analysis
+description: Timing analysis and delay-modeling methods that estimate aging-induced cell or path delay shifts, BTI/HCI reliability effects, or post-aging timing metrics for STA and signoff flows.
+review_triggers:
+- paper claims aging-aware cell delay, path delay, or timing prediction improvement
+- experiments compare against SPICE, aging-aware cell libraries, STA, or ML/GNN delay models under aging/process conditions
+- metrics include delay error, R2, WNS/TNS error, runtime, data requirements, or transfer to unseen cells/corners
+baselines: []

@@ -1,0 +1,28 @@
+baseline_id: acemarl
+short_name: ACEMARL
+display_name: 'ACEMARL: Adaptive Clustering Enhanced Multi-Agent Reinforcement Learning for Analog Circuit Sizing'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ACEMARL: Adaptive Clustering Enhanced Multi-Agent Reinforcement Learning for Analog Circuit Sizing'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{wu2026acemarl,\n  title={ACEMARL: Adaptive Clustering Enhanced Multi-Agent Reinforcement Learning for Analog Circuit Sizing},\n  author={Wu, Han and Jiang, Haoning and Ouyang, Zhuoli and Wang, Ziheng and Shen, Qi and Yuan, Bo and Lu, Yan and Jiang, Junmin},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/996.pdf
+compare_when:
+- evaluating reinforcement-learning or evolutionary optimization methods for analog circuit sizing
+- comparing automated parameter clustering or agent assignment for high-dimensional analog designs
+benchmark_scope:
+- three analog circuits from commercial 65 nm and 55 nm CMOS processes, including a three-stage amplifier and two LDOs
+- circuits with 85, 149, and 179 sizing parameters and 7-14 performance specifications evaluated through Cadence Spectre simulation
+metrics:
+- maximum and mean reward convergence acceleration
+- Figure-of-Merit improvement over block-based MARL baselines
+- confidence-interval width of reward trajectories
+- circuit-level specifications including gain, phase margin, load regulation, line regulation, PSR, overshoot, undershoot, and quiescent current
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- evaluation uses commercial PDKs and Cadence Spectre, so reproduction requires non-public process and simulator access
+- proposed topic is analog circuit synthesis/sizing; human taxonomy review may keep it folded into the broader analog-layout-synthesis topic

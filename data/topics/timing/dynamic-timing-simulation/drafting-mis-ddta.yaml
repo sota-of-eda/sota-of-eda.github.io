@@ -1,0 +1,30 @@
+baseline_id: drafting-mis-ddta
+short_name: Drafting-MIS DDTA
+display_name: Drafting and Multi-Input Switching in Digital Dynamic Timing Simulation for Multi-Input Gates
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Drafting and Multi-Input Switching in Digital Dynamic Timing Simulation for Multi-Input Gates
+  venue: DATE
+  year: 2026
+  bibtex: "@misc{ferdowsi2025draftingmultiinputswitchingdigital,\n      title={Drafting and Multi-Input Switching in Digital Dynamic Timing Simulation for Multi-Input Gates}, \n      author={Arman Ferdowsi and Ulrich Schmid and Josef Salzmann},\n      year={2025},\n      eprint={2512.01309},\n      archivePrefix={arXiv},\n      primaryClass={cs.OH},\n      url={https://arxiv.org/abs/2512.01309}, \n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/19.pdf
+  arxiv_url: https://arxiv.org/abs/2512.01309
+compare_when:
+- evaluating digital dynamic timing analysis for multi-input gates with drafting and multi-input switching effects
+- comparing delay models for fast event-driven timing simulation against SPICE-like analog reference traces
+benchmark_scope:
+- two-input NOR gate networks synthesized with Nangate Open Cell Library and FreePDK15 15 nm FinFET models
+- cross-coupled NOR-chain benchmark with Gaussian-distributed input transitions
+- c_17_slack NOR benchmark with 2000 input transitions
+metrics:
+- average deviation time versus golden analog reference traces
+- qualitative glitch and temporal-shift agreement at deep stages
+- runtime relative to inertial, IDM, and analog simulation
+reproducibility: paper_only
+caveats:
+- arXiv BibTeX is used for the full version because publisher/DBLP/Crossref DATE DOI metadata is unresolved
+- DATE paper is a short version; details rely partly on arXiv full version
+- implementation is described as part of the Involution Tool, but a public repository URL was not verified in this pass
+- scope is demonstrated on NOR-gate benchmarks and should be reviewed before generalizing to broader STA/signoff tasks

@@ -1,0 +1,30 @@
+baseline_id: class
+short_name: CLASS
+display_name: 'CLASS: A Controller-Centric Layout Synthesizer for Dynamic Quantum Circuits'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'CLASS: A Controller-Centric Layout Synthesizer for Dynamic Quantum Circuits'
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{class2025,\n  author = {Yu Chen and Yilun Zhao and Bing Li and He Li and Mengdi Wang and Yinhe Han and Ying Wang},\n  title = {CLASS: A Controller-Centric Layout Synthesizer for Dynamic Quantum Circuits},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--9}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240650
+links:
+  pdf_url: https://arxiv.org/abs/2509.15742
+compare_when:
+- Evaluating quantum circuit layout synthesis tools
+- Comparing controller-centric vs chip-centric qubit mapping approaches
+- Benchmarking dynamic quantum circuit compilation frameworks
+benchmark_scope:
+- Dynamic quantum circuits
+- Multi-controller distributed quantum architectures
+metrics:
+- Inter-controller communication reduction (avg 48.45%)
+- Additional operations overhead (avg 2.10%)
+- Communication hops
+reproducibility: paper_only
+caveats:
+- Best Paper Nomination at ICCAD 2025
+- Controller-centric approach may not generalize to all quantum platforms
+- No public code repository found at time of review
+- Requires specific controller architecture assumptions

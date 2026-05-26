@@ -1,0 +1,25 @@
+baseline_id: riros
+short_name: RIROS
+display_name: 'RIROS: A Parallel RTL Fault Simulation Framework with Two-Dimensional Parallelism and Unified Schedule'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'RIROS: A Parallel RTL Fault Simulation Framework with Two-Dimensional Parallelism and Unified Schedule'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240786
+  bibtex: "@inproceedings{Tang_2025, title={RIROS: A Parallel RTL Fault SImulation FRamework with TwO-Dimensional Parallelism and Unified Schedule}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240786}, DOI={10.1109/iccad66269.2025.11240786}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Tang, Jiaping and Mu, Jianan and Liu, Zizhen and Yu, Ge and Hua, Tenghui and Sun, Bin and Liu, Silin and Ye, Jing and Li, Huawei}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240786
+compare_when:
+- comparing RTL fault simulation frameworks
+- evaluating parallel fault simulation for functional safety
+benchmark_scope:
+- RTL designs for functional safety
+metrics:
+- performance improvement vs SOTA (7.0x)
+- performance improvement vs commercial tool (11.0x)
+- two-dimensional parallelism speedup
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published

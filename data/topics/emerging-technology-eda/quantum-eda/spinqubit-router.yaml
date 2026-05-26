@@ -1,0 +1,25 @@
+baseline_id: spinqubit-router
+short_name: SpinQubit-Router
+display_name: An Efficient Routing Optimization Framework for Silicon-Based Spin-Qubit Devices
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: An Efficient Routing Optimization Framework for Silicon-Based Spin-Qubit Devices
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240960
+  bibtex: "@inproceedings{huang2025spinqubit,\n  author = {Ching-Yao Huang and Wai-Kei Mak},\n  title = {An Efficient Routing Optimization Framework for Silicon-Based Spin-Qubit\nDevices},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240960},\n  publisher = {IEEE}\n}\n"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240960
+compare_when:
+- comparing qubit routing overhead and depth against SOTA spin-qubit routing
+- evaluating Dijkstra-based minimum-cost routing for quantum devices
+benchmark_scope:
+- circuits with up to 1617 qubits and 700,000+ gates
+metrics:
+- 'operation overhead reduction: over 29%'
+- 'depth overhead reduction: over 7%'
+reproducibility: unknown
+caveats:
+- focuses on silicon-based spin-qubit technology; applicability to superconducting/neutral atom qubits not evaluated
+- no public implementation identified yet

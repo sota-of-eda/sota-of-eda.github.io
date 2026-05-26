@@ -1,0 +1,30 @@
+baseline_id: fpaa-fabric-synthesis
+short_name: FPAA Fabric Synthesis (Ashes-based)
+display_name: Synthesizing Analog & Mixed-Signal Floating-Gate enabled Reconfigurable Fabrics using Analog Standard Cells
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Synthesizing Analog & Mixed-Signal Floating-Gate enabled Reconfigurable Fabrics using Analog Standard Cells
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{fpaafabric2025,\n  author = {Jennifer Hasler and Afolabi Ige and Linhao Yang and Pranav O. Mathews},\n  title = {Synthesizing Analog \\& Mixed-Signal Floating-Gate Enabled Reconfigurable Fabrics Using Analog Standard Cells},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--7},\n  doi = {10.1109/ICCAD66269.2025.11240838}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240838
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240838
+compare_when:
+- Evaluating analog/mixed-signal reconfigurable fabric synthesis tools
+- Comparing FPAA design automation flows
+- Benchmarking analog standard cell library generation approaches
+benchmark_scope:
+- 16nm FinFET CMOS process
+- FG pFET crossbar arrays
+- Programmable analog standard cells (TA, VMM-WTA classifier)
+metrics:
+- FG device density (10x improvement over 65nm)
+- Programming speed (1000x over 65nm FGs)
+- Design time reduction for configurable fabrics
+reproducibility: unknown
+caveats:
+- Invited paper; may represent overview rather than novel research
+- Open-source tool is Python-based but repository not publicly confirmed
+- Results focus on 16nm FinFET; not validated on other process nodes

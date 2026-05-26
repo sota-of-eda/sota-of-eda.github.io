@@ -1,0 +1,28 @@
+baseline_id: incremacro-3d
+short_name: IncreMacro-3D
+display_name: 'IncreMacro-3D: Incremental Macro Placement for Face-to-Face Stacked Memory-on-Logic 3D ICs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'IncreMacro-3D: Incremental Macro Placement for Face-to-Face Stacked Memory-on-Logic 3D ICs'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{zou2026incremacro3d,\n  title={IncreMacro-3D: Incremental Macro Placement for Face-to-Face Stacked Memory-on-Logic 3D ICs},\n  author={Zou, Lancheng and Ye, Sing Sen and Yin, Shuo and Pu, Yuan and Jiang, Jiaxi and Liu, Siting and Zhao, Yuxuan and Yu, Bei},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1232.pdf
+compare_when:
+- evaluating macro placement or macro refinement for face-to-face memory-on-logic 3D IC physical design
+- comparing 3D placement refinement methods after analytical MoL 3D placement prototyping
+benchmark_scope:
+- ariane133, ariane136, bp_quad, mempool_tile, and NVDLA memory-on-logic 3D IC benchmarks
+- Open3D-DMP placement prototypes followed by IncreMacro-3D refinement and post-route evaluation
+metrics:
+- routed wirelength
+- WNS and TNS
+- total power consumption
+- 3D placement refinement runtime
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- runtime includes Open3D-DMP prototyping plus refinement and is higher than the baseline flow; quality/runtime trade-off needs human review
+- topic placement reuses the proposed 3d-ic-physical-design bucket pending Workflow C taxonomy decisions

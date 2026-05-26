@@ -1,0 +1,29 @@
+baseline_id: graph-sram
+short_name: Graph-SRAM
+display_name: 'Graph-SRAM: Efficient Graph Learning-based SRAM Simulation via Waveform Propagation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Graph-SRAM: Efficient Graph Learning-based SRAM Simulation via Waveform Propagation'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{lu2026graphsram,\n  title={Graph-SRAM: Efficient Graph Learning-based SRAM Simulation via Waveform Propagation},\n  author={Lu, Beisi and Liu, Lihao and Shang, Li and Yang, Fan},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1201.pdf
+compare_when:
+- evaluating fast transistor-level waveform or timing simulation for SRAM arrays
+- comparing graph-learning circuit-simulation surrogates against HSPICE or commercial fast-SPICE SRAM characterization flows
+benchmark_scope:
+- 150 SRAM circuit netlists with 128-256 rows and 32-64 columns implemented using ASAP7 7nm FinFET PDK
+- HSPICE-generated 8-cycle transient waveform labels for SRAM read/write timing paths
+- test-set comparison against HSPICE, commercial CustomSim fast-SPICE, GCN, GraphSAGE, and ablation without RC interconnect modeling
+metrics:
+- cell waveform and delay MAE/MARE
+- path waveform MARE, read-delay MARE, and write-delay MARE
+- simulation runtime and speedup over fast-SPICE and HSPICE
+- error reduction from RC interconnect modeling
+reproducibility: paper_only
+caveats:
+- no public code or dataset artifact was verified in this pass
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- scope is SRAM waveform/timing simulation; it should not be interpreted as generic timing-driven placement or SRAM compiler SOTA

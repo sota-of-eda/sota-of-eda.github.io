@@ -1,0 +1,27 @@
+baseline_id: nua-timer
+short_name: NUA-Timer
+display_name: 'NUA-Timer: Pre-Synthesis Timing Prediction Under Non-Uniform Input Arrival Times'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'NUA-Timer: Pre-Synthesis Timing Prediction Under Non-Uniform Input Arrival Times'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240652
+  bibtex: '@inproceedings{Wang_2025, title={NUA-Timer: Pre-Synthesis Timing Prediction Under Non-Uniform Input Arrival Times}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240652}, DOI={10.1109/iccad66269.2025.11240652}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Wang, Ziyi and Liu, Fangzhou and Ho, Tsung-Yi and Pan, David Z. and Yu, Bei}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240652
+compare_when:
+- comparing pre-synthesis timing prediction methods for hierarchical design
+- evaluating ML-based timing estimation under non-uniform input arrival times
+benchmark_scope:
+- hierarchical design benchmarks
+- comparison against SOTA pre-synthesis timing evaluators
+metrics:
+- timing prediction accuracy
+- correlation with post-synthesis timing
+reproducibility: unknown
+caveats:
+- Pre-synthesis prediction accuracy depends on training data quality
+- Bidirectional propagation network may not capture all timing effects
+- Non-uniform input arrival time modeling adds complexity

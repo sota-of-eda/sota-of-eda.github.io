@@ -1,0 +1,29 @@
+baseline_id: anchor-and-adapt
+short_name: Anchor-and-Adapt
+display_name: 'Anchor-and-Adapt: HLS QoR Prediction using Ground-Truth Seeding and Few-Shot Fine-Tuning'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Anchor-and-Adapt: HLS QoR Prediction using Ground-Truth Seeding and Few-Shot Fine-Tuning'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{tavares2026anchoradapt,\n  author = {Gabriel C. Tavares and Heitor C. de Andrade and F\\'{a}bio P. Itturriet and Gabriel L. Nazar},\n  title = {Anchor-and-Adapt: HLS QoR Prediction using Ground-Truth Seeding and Few-Shot Fine-Tuning},\n  booktitle = {2026 Design, Automation & Test in Europe Conference (DATE)},\n  year = {2026},\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/643.pdf
+compare_when:
+- evaluating HLS QoR prediction models for design space exploration under an accuracy-versus-runtime trade-off
+- comparing pre-HLS and post-HLS graph-based QoR estimators for resource prediction
+- testing few-shot or anchor-based specialization for unseen HLS kernels
+benchmark_scope:
+- more than 3000 fully implemented designs generated from 10 real-world applications
+- CHStone, MachSuite, and PolyBench benchmark suites with Vitis 2023.2 targeting XCU50-FSVH2104-2-E
+- resource prediction for LUTs, FFs, DSPs, and BRAMs using leave-one-benchmark-out cross-validation
+metrics:
+- mean absolute percentage error (MAPE) for resource predictions
+- average normalized resource prediction error
+- DSE runtime break-even point versus HLS-per-point post-HLS baseline
+reproducibility: paper_only
+caveats:
+- formal DATE/IEEE DOI and publisher-returned BibTeX were not found in DBLP/Crossref at draft time; BibTeX is manually formatted from the official DATE PDF metadata and should be replaced if a publisher BibTeX becomes available
+- paper states source code is available at https://github.com/gct02/Anchor-and-Adapt, but this URL could not be verified by HTTP/git during this pass, so it is not listed as a verified repo link
+- current study focuses on area/resource estimation; the paper notes extension to latency and power as future work

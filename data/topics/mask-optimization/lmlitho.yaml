@@ -1,0 +1,25 @@
+baseline_id: lmlitho
+short_name: LMLitho
+display_name: 'LMLitho: A Large Vision Model-Driven Lithography Simulation Framework'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'LMLitho: A Large Vision Model-Driven Lithography Simulation Framework'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240940
+  bibtex: "@inproceedings{wang2025lmlitho,\n  author = {Zhen Wang and Hongquan He and Tao Wu and Xuming He and Qi Sun and\nCheng Zhuo and Bei Yu and Jingyi Yu and Hao Geng},\n  title = {{LMLitho}: A Large Vision Model-Driven Lithography Simulation Framework},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240940},\n  publisher = {IEEE}\n}\n"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240940
+compare_when:
+- comparing lithography simulation accuracy and speed against commercial and learning-based tools
+- evaluating flexible-source mask optimization workflows
+benchmark_scope:
+- flexible-source 28nm benchmarks
+metrics:
+- 'mPA (mean Pixel Accuracy): 99.67%'
+- 'mIoU (mean Intersection over Union): 98.18%'
+- 'speedup over commercial solutions: >120x'
+reproducibility: unknown
+caveats:
+- first large model-powered lithography framework; no public code or model weights identified yet

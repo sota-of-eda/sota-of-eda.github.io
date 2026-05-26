@@ -1,0 +1,41 @@
+topic_id: 3d-ic-physical-design
+parent_id: placement
+short_name: 3D IC PD
+display_name: 3D IC Physical Design
+aliases:
+- chiplet-cost-modeling
+- 3d-integration-physical-design
+- 3d ic placement
+- chiplet physical design
+- 3d-placement
+- 3d-ic-design
+- chiplet-package-co-design
+- chiplet-design
+- 3D IC physical design
+- 3D placement and floorplanning
+- hybrid bonding physical design
+- 3D IC backend implementation
+- 3d-ic-partitioning
+- 3D chiplet physical design
+- 3D chiplet floorplanning
+- 3D IC partitioning
+- 3D IC Physical Design
+- 3D IC PD
+- 3d ic physical design
+description: Physical-design methods for 2.5D/3D ICs and chiplet stacks, including partitioning, floorplanning, placement, terminal assignment/legalization, bonding-aware routing, and full-flow backend optimization.
+review_triggers:
+- paper claims 3D placement or 3D partitioning improvement
+- paper addresses chiplet-package co-design or interposer-aware placement
+- paper proposes cost modeling for 3D or chiplet integration
+- paper evaluates thermal-aware 3D physical design
+- paper evaluates thermal-aware or timing-aware 3D physical design
+- paper claims 3D placement, floorplanning, or 3D partitioning improvement
+- paper evaluates thermal-aware or bonding-aware 3D physical design
+- paper proposes partition-and-placement co-optimization for chiplet architectures
+- paper claims improvement for 3D IC or chiplet physical design
+- paper evaluates placement, floorplanning, bonding, terminal legalization, routing, or PPA for 3D stacks
+- paper uses 3D IC backend benchmarks, F2F/F2B integration, hybrid bonding, TSVs, MIVs, or chiplet packaging constraints
+- paper targets 3D IC, 3D chiplet, die-stack, hybrid-bonding, micro-bump, or TSV physical design
+- experiments report 3D partitioning, floorplanning, placement, HPWL, vertical interconnect overflow, thermal, or bonding-density metrics
+- baselines include ChipletPart, TritonPart, Floorplet, 3D placement/floorplanning, or chiplet partitioning methods
+baselines: []

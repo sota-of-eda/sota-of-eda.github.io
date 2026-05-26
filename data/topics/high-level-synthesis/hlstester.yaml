@@ -1,0 +1,28 @@
+baseline_id: hlstester
+short_name: HLSTester
+display_name: 'HLSTester: Efficient Testing of Behavioral Discrepancies with LLMs for High-Level Synthesis'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'HLSTester: Efficient Testing of Behavioral Discrepancies with LLMs for High-Level Synthesis'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240891
+  bibtex: "@inproceedings{xu2025hlstester,\n  author = {Kangwei Xu and Bing Li and Grace Li Zhang and Ulf Schlichtmann},\n  title = {HLSTester: Efficient Testing of Behavioral Discrepancies with LLMs for High-Level Synthesis},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240891},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240891
+compare_when:
+- comparing LLM-based testing and verification methods for HLS
+- evaluating behavioral discrepancy detection between C/C++ and HLS-generated RTL
+- benchmarking against direct LLM use and traditional HLS testing
+benchmark_scope:
+- HLS behavioral discrepancy detection tasks
+- C/C++ to RTL verification test cases
+metrics:
+- speedup over direct LLM use (1.81x)
+- speedup with optimizations (2.28x)
+- behavioral discrepancy detection rate
+reproducibility: unknown
+caveats:
+- uses existing C/C++ testbenches to guide LLM; may not help when testbenches are absent or low-quality
+- LLM hallucination mitigation is only partially addressed; some false positives may remain

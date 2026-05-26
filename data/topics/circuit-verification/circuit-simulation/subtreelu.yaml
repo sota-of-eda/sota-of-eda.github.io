@@ -1,0 +1,28 @@
+baseline_id: subtreelu
+short_name: SubtreeLU
+display_name: 'SubtreeLU: High-Performance Parallel Sparse LU Factorization for Circuit Simulation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'SubtreeLU: High-Performance Parallel Sparse LU Factorization for Circuit Simulation'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240789
+  bibtex: '@inproceedings{Cheng_2025, title={SubtreeLU: High-Performance Parallel Sparse LU Factorization for Circuit Simulation}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240789}, DOI={10.1109/iccad66269.2025.11240789}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Cheng, Jiawen and Zhang, Yibin and Yu, Wenjian}, year={2025}, month=Oct, pages={1-8}}'
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240789
+compare_when:
+- comparing parallel sparse LU factorization methods for circuit simulation
+- evaluating separator-tree-based task scheduling for sparse direct solvers
+benchmark_scope:
+- circuit simulation matrices
+- comparison against state-of-the-art sparse solvers
+metrics:
+- runtime
+- accuracy
+- scalability (parallel efficiency)
+reproducibility: unknown
+caveats:
+- Performance benefits depend on matrix sparsity patterns
+- Supernodal acceleration may not benefit all circuit types
+- No open-source code found

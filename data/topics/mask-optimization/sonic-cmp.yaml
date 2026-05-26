@@ -1,0 +1,29 @@
+baseline_id: sonic-cmp
+short_name: SONIC
+display_name: 'SONIC: Smart Optimization for Neural-Integrated CMP with Timing-Aware Fills'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'SONIC: Smart Optimization for Neural-Integrated CMP with Timing-Aware Fills'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{tan2026sonic,\n  title={SONIC: Smart Optimization for Neural-Integrated CMP with Timing-Aware Fills},\n  author={Tan, Jiajun and Ma, Qichao and Du, Yiming and Gan, Yiming and Lang, Ling and Lin, Yibo and Zhu, Ming and Wang, Zongwei and Cai, Yimao},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/170.pdf
+compare_when:
+- evaluating timing-aware dummy-fill insertion or CMP-aware layout-density optimization
+- comparing neural CMP surrogate optimization against rule-based, model-based, or prior neural fill methods
+benchmark_scope:
+- ICCAD 2014 benchmark layouts across ASAP7 7nm and SKY130 130nm designs, including AES, RISC-V, cryptographic accelerator, and SoC layouts
+- post-CMP height validation using Siemens Calibre 2019 and coupling capacitance extraction with ICCAD 2018 Simple Cap Extractor
+- SE-ResUNet neural CMP simulator integrated with gradient-based density optimization and timing-aware fill realization
+metrics:
+- post-CMP height variation, line deviation, and outliers
+- CMP prediction relative error and speedup over full-chip CMP simulator
+- runtime reduction versus model-based fill method
+- coupling capacitance reduction near timing-critical nets
+reproducibility: paper_only
+caveats:
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- no public code or trained model artifact was verified in this pass
+- existing mask-optimization topic is broad; human taxonomy review may split dummy-fill/CMP optimization from lithography/OPC topics

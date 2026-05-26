@@ -1,0 +1,27 @@
+baseline_id: acco-placement
+short_name: ACCO
+display_name: PPA-driven Placement via Adaptive Cluster Constraints Optimization
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: PPA-driven Placement via Adaptive Cluster Constraints Optimization
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{liu2026acco,\n  title={PPA-driven Placement via Adaptive Cluster Constraints Optimization},\n  author={Liu, Ziyan and Xu, Siyuan and Wang, Jie and Geng, Zijie and Chen, Yeqiu and Yuan, Mingxuan and Hao, Jianye and Wu, Feng},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/883.pdf
+compare_when:
+- evaluating global-placement methods that optimize downstream post-route PPA using cluster constraints or EDA-tool feedback
+- comparing analytical, clustered, and OpenROAD/DREAMPlace-based global placement flows
+benchmark_scope:
+- seven public OpenROAD/OpenRISC designs synthesized in NanGate45, including aes, jpeg, bp_be, ariane, BlackParrot, toygpu, and mor1kx
+- post-route OpenROAD flow evaluation after global placement
+metrics:
+- post-route WNS, TNS, and negative violating path count
+- post-route power and area
+- runtime and ablation sensitivity to cluster-bound parameters
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- ACCO is built on DREAMPlace, TritonPart, and an MOTPE optimizer; comparisons depend on OpenROAD post-route flow settings and NanGate45 benchmark synthesis
+- paper emphasizes PPA feedback rather than a standalone placer executable; human review should decide whether to split a future PPA-driven global-placement subtopic

@@ -1,0 +1,24 @@
+baseline_id: fab-wronoc
+short_name: FAB
+display_name: 'FAB: Fast and Demand-Aware Bandwidth Allocation Method for Wavelength-Routed Optical Networks-on-Chip'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'FAB: Fast and Demand-Aware Bandwidth Allocation Method for Wavelength-Routed Optical Networks-on-Chip'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240910
+  bibtex: "@inproceedings{cheng2025fab,\n  author = {Liaoyuan Cheng and Mengchu Li and Zhidan Zheng and Tsun-Ming Tseng\nand Ulf Schlichtmann},\n  title = {{FAB}: Fast and Demand-Aware Bandwidth Allocation Method for Wavelength-Routed\nOptical Networks-on-Chip},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240910},\n  publisher = {IEEE}\n}\n"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240910
+compare_when:
+- comparing optical NoC bandwidth allocation quality and runtime
+- evaluating worst-case transmission latency in WRONoC designs
+benchmark_scope:
+- wavelength-routed optical network-on-chip topologies
+metrics:
+- 'worst-case transmission latency reduction: up to 87.5%'
+- 'optimization speedup: up to 500,000x vs SOTA'
+reproducibility: unknown
+caveats:
+- new ICCAD 2025 paper; no public code repository identified yet

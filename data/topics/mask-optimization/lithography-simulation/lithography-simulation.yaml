@@ -1,0 +1,16 @@
+topic_id: lithography-simulation
+parent_id: mask-optimization
+short_name: Lithography Simulation
+display_name: Lithography Simulation
+aliases:
+- lithography simulation
+- SEM image simulation
+- computational lithography simulation
+- layout-to-SEM modeling
+- Lithography Simulation
+description: Methods that simulate lithography, SEM, or manufacturing-pattern images from IC layouts to support OPC, source-mask optimization, hotspot analysis, or manufacturability closure.
+review_triggers:
+- paper claims lithography or SEM-image simulation improvement
+- paper evaluates layout-to-manufacturing image prediction on IC pattern datasets
+- paper compares against neural lithography, GAN, diffusion, Fourier, or physics-inspired lithography simulation baselines
+baselines: []

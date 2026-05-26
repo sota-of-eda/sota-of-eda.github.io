@@ -328,13 +328,13 @@ function computeCloudLayout(outer: OrbitItem[], inner: OrbitItem[], center: Clou
   const maxInnerFootprint = inner.reduce((max, item) => Math.max(max, item.metrics.footprint), 0);
   const maxOuterFootprint = outer.reduce((max, item) => Math.max(max, item.metrics.footprint), 0);
   const centerFootprint = center.metrics.footprint;
-  const innerBySpacing = radiusForAngularSpacing(inner, 112, false);
+  const innerBySpacing = radiusForAngularSpacing(inner, 112, true);
   const outerBySpacing = radiusForAngularSpacing(outer, 184, true);
-  const innerRadius = clampNumber(Math.ceil(Math.max(innerBySpacing, centerFootprint / 2 + maxInnerFootprint / 2 + 28)), 104, 188);
+  const innerRadius = clampNumber(Math.ceil(Math.max(innerBySpacing, centerFootprint / 2 + maxInnerFootprint / 2 + 28)), 104, 240);
   const outerRadius = clampNumber(
     Math.ceil(Math.max(outerBySpacing, innerRadius + maxInnerFootprint / 2 + maxOuterFootprint / 2 + 34)),
     inner.length > 0 ? innerRadius + 92 : 178,
-    330,
+    400,
   );
   const padding = clampNumber(Math.ceil(maxOuterFootprint / 2 + 22), 54, 86);
 
@@ -361,16 +361,28 @@ function makeCloudItems(topic: Topic, childrenByParent: Map<string, Topic[]>) {
     };
   };
 
-  const parentAngles = spreadAngles(ancestors.length, 218, 252);
-  const siblingAngles = spreadAngles(siblings.length, -28, 298);
-  const childAngles = spreadAngles(children.length, 42, 138);
-
-  const outer = [
-    ...ancestors.map((ancestor, index): OrbitItem => ({ ...toItem(ancestor, 'parent'), angle: parentAngles[index], ring: 'outer' })),
-    ...siblings.map((sibling, index): OrbitItem => ({ ...toItem(sibling, 'sibling'), angle: siblingAngles[index], ring: 'outer' })),
+  const outerItems = [
+    ...ancestors.map((a) => toItem(a, 'parent')),
+    ...siblings.map((s) => toItem(s, 'sibling')),
   ];
+  const outerEnd = outerItems.length > 1 ? 360 - 360 / outerItems.length : 360;
+  const outerAngles = spreadAngles(outerItems.length, 0, outerEnd);
+  const outer: OrbitItem[] = outerItems.map((item, index) => ({
+    ...item,
+    angle: outerAngles[index],
+    ring: 'outer',
+  }));
+
+  const childItems = children.map((c) => toItem(c, 'child'));
+  const childEnd = childItems.length > 1 ? 360 - 360 / childItems.length : 360;
+  const childAngles = spreadAngles(childItems.length, 0, childEnd);
+  const inner: OrbitItem[] = childItems.map((item, index) => ({
+    ...item,
+    angle: childAngles[index],
+    ring: 'inner',
+  }));
+
   const center = toItem(topic, 'current');
-  const inner = children.map((child, index): OrbitItem => ({ ...toItem(child, 'child'), angle: childAngles[index], ring: 'inner' }));
 
   return {
     outer,
@@ -392,8 +404,8 @@ function ExternalLink({ href, children }: { href?: string; children: string }) {
   );
 }
 
-function BaselineCard({ baseline }: { baseline: Baseline }) {
-  const [isExpanded, setIsExpanded] = useState(false);
+function BaselineCard({ baseline, autoExpand }: { baseline: Baseline; autoExpand?: boolean }) {
+  const [isExpanded, setIsExpanded] = useState(autoExpand ?? false);
   const copyBibtex = async () => {
     await navigator.clipboard.writeText(baseline.publication.bibtex);
   };
@@ -524,11 +536,39 @@ function OrbitNode({
   );
 }
 
+interface ScannedConference {
+  venue: string;
+  year: number;
+}
+
+const scannedConfDefs: ScannedConference[] = [
+  { venue: 'ICCAD', year: 2025 },
+  { venue: 'DATE', year: 2026 },
+];
+
+function buildScannedConferences() {
+  return scannedConfDefs.map((def) => {
+    let count = 0;
+    for (const topic of topics) {
+      for (const baseline of topic.baselines) {
+        if (baseline.publication.venue === def.venue && baseline.publication.year === def.year) {
+          count++;
+        }
+      }
+    }
+    return { name: `${def.venue} ${def.year}`, count };
+  });
+}
+
+const scannedConferences = buildScannedConferences();
+
 function App() {
   const [selectedTopicId, setSelectedTopicId] = useState(defaultTopicId);
   const [isSwitching, setIsSwitching] = useState(false);
   const [showAllDirect, setShowAllDirect] = useState(false);
   const [expandedGroups, setExpandedGroups] = useState<Set<string>>(new Set());
+  const [searchQuery, setSearchQuery] = useState('');
+  const [highlightedBaselineId, setHighlightedBaselineId] = useState<string | null>(null);
   const transitionTimers = useRef<number[]>([]);
   const childrenByParent = useMemo(() => buildChildrenByParent(topics), []);
   const rootTopics = useMemo(() => topics.filter((topic) => !topic.parent_id).sort(compareTopics), []);
@@ -546,6 +586,34 @@ function App() {
   const descendantBaselineGroups = descendantScopeTopics.filter((topic) => topic.baselines.length > 0);
   const descendantBaselineCount = descendantBaselineGroups.reduce((count, topic) => count + topic.baselines.length, 0);
 
+  const searchResults = (() => {
+    if (searchQuery.length < 2) return null;
+    const q = searchQuery.toLowerCase();
+    const matchedTopics = topics.filter(
+      (t) =>
+        t.short_name.toLowerCase().includes(q) ||
+        t.display_name.toLowerCase().includes(q) ||
+        t.description.toLowerCase().includes(q),
+    ).slice(0, 8);
+    const matchedBaselines: Array<{ baseline: Baseline; topic: Topic }> = [];
+    for (const t of topics) {
+      if (matchedBaselines.length >= 8) break;
+      for (const b of t.baselines) {
+        if (matchedBaselines.length >= 8) break;
+        if (b.short_name.toLowerCase().includes(q) || b.display_name.toLowerCase().includes(q)) {
+          matchedBaselines.push({ baseline: b, topic: t });
+        }
+      }
+    }
+    return { topics: matchedTopics, baselines: matchedBaselines };
+  })();
+
+  const handleSearchSelect = (result: { type: 'topic'; topic: Topic } | { type: 'baseline'; topic: Topic; baselineId: string }) => {
+    setSearchQuery('');
+    setHighlightedBaselineId(result.type === 'baseline' ? result.baselineId : null);
+    selectTopic(result.topic.topic_id);
+  };
+
   useEffect(() => {
     return () => {
       for (const timer of transitionTimers.current) {
@@ -553,6 +621,12 @@ function App() {
       }
     };
   }, []);
+
+  useEffect(() => {
+    if (highlightedBaselineId && selectedTopicId) {
+      setHighlightedBaselineId(null);
+    }
+  }, [selectedTopicId]);
 
   const toggleGroup = (topicId: string) => {
     setExpandedGroups((prev) => {
@@ -783,7 +857,7 @@ function App() {
                   {selectedTopic.baselines
                     .slice(0, showAllDirect ? undefined : 3)
                     .map((baseline) => (
-                      <BaselineCard baseline={baseline} key={baseline.baseline_id} />
+                      <BaselineCard baseline={baseline} key={baseline.baseline_id} autoExpand={baseline.baseline_id === highlightedBaselineId} />
                     ))}
                 </div>
                 {!showAllDirect && directBaselineCount > 3 && (
@@ -813,7 +887,7 @@ function App() {
                       {isExpanded && (
                         <div className="compact-baseline-list">
                           {topic.baselines.map((baseline) => (
-                            <BaselineCard baseline={baseline} key={baseline.baseline_id} />
+                            <BaselineCard baseline={baseline} key={baseline.baseline_id} autoExpand={baseline.baseline_id === highlightedBaselineId} />
                           ))}
                         </div>
                       )}
@@ -828,6 +902,77 @@ function App() {
             )}
           </section>
         </aside>
+      </section>
+
+      <section className="search-area" aria-label="Search and scanned conferences">
+        <div className="search-box">
+          <input
+            type="search"
+            className="search-input"
+            placeholder="Search topics or baselines..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === 'Escape') setSearchQuery('');
+            }}
+            aria-label="Search topics and baselines"
+          />
+          {searchQuery && (
+            <button className="search-clear" type="button" onClick={() => setSearchQuery('')} aria-label="Clear search">
+              Esc
+            </button>
+          )}
+          {searchResults && (
+            <div className="search-dropdown">
+              {searchResults.topics.length === 0 && searchResults.baselines.length === 0 && (
+                <p className="search-empty">No results for &ldquo;{searchQuery}&rdquo;</p>
+              )}
+              {searchResults.topics.length > 0 && (
+                <div className="search-group">
+                  <span className="search-label">Topics</span>
+                  {searchResults.topics.map((t) => (
+                    <button
+                      key={t.topic_id}
+                      type="button"
+                      className="search-item"
+                      onClick={() => handleSearchSelect({ type: 'topic', topic: t })}
+                    >
+                      <strong>{t.short_name}</strong>
+                      <span>{t.display_name}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
+              {searchResults.baselines.length > 0 && (
+                <div className="search-group">
+                  <span className="search-label">Baselines</span>
+                  {searchResults.baselines.map(({ baseline, topic }) => (
+                    <button
+                      key={baseline.baseline_id}
+                      type="button"
+                      className="search-item"
+                      onClick={() => handleSearchSelect({ type: 'baseline', topic, baselineId: baseline.baseline_id })}
+                    >
+                      <strong>{baseline.short_name}</strong>
+                      <span>{baseline.display_name} &mdash; {topic.short_name}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+        <div className="conference-strip">
+          <span className="conference-label">Scanned by agents</span>
+          <div className="conference-scroll">
+            {scannedConferences.map((conf) => (
+              <span className="conference-chip" key={conf.name}>
+                {conf.name}
+                <em>{conf.count}</em>
+              </span>
+            ))}
+          </div>
+        </div>
       </section>
 
       <footer className="site-footer">

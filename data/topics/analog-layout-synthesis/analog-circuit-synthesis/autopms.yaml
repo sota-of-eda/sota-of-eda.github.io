@@ -1,0 +1,30 @@
+baseline_id: autopms
+short_name: AutoPMS
+display_name: 'AutoPMS: A Framework for Automated Power Management System Design via Hierarchical Modeling and Embedded Design Knowledge'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'AutoPMS: A Framework for Automated Power Management System Design via Hierarchical Modeling and Embedded Design Knowledge'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{ye2026autopms,\n  title={AutoPMS: A Framework for Automated Power Management System Design via Hierarchical Modeling and Embedded Design Knowledge},\n  author={Ye, Bin and Li, Shuo},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1113.pdf
+compare_when:
+- evaluating automated design of analog/mixed-signal power management systems from high-level specifications
+- comparing hierarchical modeling and design-knowledge-based AMS automation against BO/RL or prior PMU synthesis methods
+benchmark_scope:
+- multi-output PMS generation with buck, boost, buck-boost, and LDO topologies
+- 65 nm technology validation with system/block-level models and netlist verification
+- generated PMS examples with multiple output rails and up to seven blocks
+metrics:
+- design success rate and objective score
+- runtime or design-efficiency improvement from hierarchical modeling
+- model-netlist discrepancy after design-coefficient feedback
+- supported power range, topology coverage, efficiency, transient response, and settling time
+reproducibility: paper_only
+caveats:
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- implementation, PMU library, and technology setup were not verified as public artifacts
+- proposed analog-circuit-synthesis currently sits under analog-layout-synthesis as a provisional parent and should be reviewed before Workflow C
+- direct comparisons are partly against prior PMU automation works with different technologies and specifications

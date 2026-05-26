@@ -1,0 +1,27 @@
+baseline_id: photonic-interposer-vlsi-design
+short_name: Ph2El/El2Ph
+display_name: VLSI Design and Experimental Demonstration of Photonic Interposers in Thin-Film Lithium Niobate
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: VLSI Design and Experimental Demonstration of Photonic Interposers in Thin-Film Lithium Niobate
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240827
+  bibtex: "@inproceedings{Kyriazidis_2025, title={VLSI Design and Experimental Demonstration of Photonic Interposers in Thin-Film Lithium Niobate}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240827}, DOI={10.1109/iccad66269.2025.11240827}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Kyriazidis, Georgios and Tsekouras, Aristotelis and Davis, John and Pavlidis, Vasilis F. and Hills, Gage}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240827
+compare_when:
+- comparing photonic IC design methodologies
+- evaluating electronic-photonic co-design flows
+benchmark_scope:
+- 128x128 electro-optical router
+- TFLN photonic interposer
+metrics:
+- design time (<40 min)
+- optical timing skew improvement (13.85%)
+- design automation vs manual
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published
+- experimental silicon demonstration

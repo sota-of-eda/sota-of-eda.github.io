@@ -1,0 +1,29 @@
+baseline_id: zerosim
+short_name: ZEROSIM
+display_name: 'ZeroSim: Zero-Shot Analog Circuit Evaluation with Unified Transformer Embeddings'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ZeroSim: Zero-Shot Analog Circuit Evaluation with Unified Transformer Embeddings'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240890
+  bibtex: '@inproceedings{Yang_2025, title={ZeroSim: Zero-Shot Analog Circuit Evaluation with Unified Transformer Embeddings}, url={http://dx.doi.org/10.1109/ICCAD66269.2025.11240890}, DOI={10.1109/iccad66269.2025.11240890}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Yang, Xiaomeng and Gao, Jian and Wang, Yanzhi and Zhang, Xuan}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240890
+  pdf_url: https://arxiv.org/abs/2511.07658
+compare_when:
+- evaluating ML-based analog circuit performance surrogate models
+- comparing zero-shot generalization capability to unseen circuit topologies
+benchmark_scope:
+- over 60 amplifier topologies
+- 3.6 million training instances
+metrics:
+- inference accuracy vs SPICE
+- speedup vs SPICE simulation
+- zero-shot generalization error
+reproducibility: unknown
+caveats:
+- Zero-shot evaluation limited to amplifier topologies in training distribution range
+- Large training corpus requirement (3.6M instances) may limit reproducibility
+- Transformer-based model may require significant GPU resources for training

@@ -1,0 +1,28 @@
+baseline_id: tangram
+short_name: TANGRAM
+display_name: 'TANGRAM: A Novel ILP-based On-Track Bus Routing via Placement and Compression of Polygons'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'TANGRAM: A Novel ILP-based On-Track Bus Routing via Placement and Compression of Polygons'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{im2026tangram,\n  title={TANGRAM: A Novel ILP-based On-Track Bus Routing via Placement and Compression of Polygons},\n  author={Im, Jaekyung and Kang, Seokhyeong},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/557.pdf
+  repo_url: https://github.com/jkim971201/TANGRAM
+compare_when:
+- evaluating on-track bus-routing algorithms with topology consistency and compactness constraints
+- comparing routing-quality and runtime on ICCAD 2018 CAD Contest bus-routing benchmarks
+benchmark_scope:
+- ICCAD 2018 on-track bus-routing contest benchmarks beta_1 through beta_5 and final_1 through final_3
+- multi-layer bus-routing cases with track, layer, obstacle, topology, compactness, and spacing constraints
+metrics:
+- total contest routing score and normalized average cost
+- wirelength, segment, compactness, spacing-violation, and routing-failure costs
+- runtime using the official contest evaluator
+reproducibility: artifact_available
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- previous MARCH, COMPACT, DAG, and SAT implementations are not publicly available according to the paper, so comparative numbers are cited from prior publications rather than rerun uniformly
+- proposed topic is bus-routing under routing; human taxonomy review may later merge it into a broader detailed-routing topic if one is created

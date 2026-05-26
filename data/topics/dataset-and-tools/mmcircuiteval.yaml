@@ -1,0 +1,32 @@
+baseline_id: mmcircuiteval
+short_name: MMCircuitEval
+display_name: 'MMCircuitEval: A Comprehensive Multimodal Circuit-Focused Benchmark for Evaluating LLMs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'MMCircuitEval: A Comprehensive Multimodal Circuit-Focused Benchmark for Evaluating LLMs'
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{mmcircuiteval2025,\n  author = {Chenchen Zhao and Zhengyuan Shi and Xiangyu Wen and others},\n  title = {MMCircuitEval: A Comprehensive Multimodal Circuit-Focused Benchmark for Evaluating LLMs},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--10},\n  doi = {10.1109/ICCAD66269.2025.11240653}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240653
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240653
+  pdf_url: https://arxiv.org/abs/2507.19525
+  repo_url: https://github.com/cure-lab/MMCircuitEval
+compare_when:
+- Evaluating LLM performance on EDA-specific circuit design tasks
+- Comparing multimodal benchmarks for hardware design AI
+- Benchmarking domain-specific LLM evaluation frameworks
+benchmark_scope:
+- 3614 QA pairs spanning digital and analog circuits
+- 4 EDA design stages (General Knowledge, Design Spec, Front-End, Back-End)
+- Multiple modalities (text, text+image)
+metrics:
+- Accuracy across question types
+- Performance across EDA stages
+- Domain-specific knowledge and reasoning scores
+reproducibility: artifact_available
+caveats:
+- First multimodal benchmark for EDA; no prior baseline for comparison
+- Expert review ensures quality but may introduce human bias
+- Benchmark represents curated QA pairs; may not reflect real-world design complexity

@@ -1,0 +1,21 @@
+topic_id: llm-for-eda-automation
+parent_id: dataset-and-tools
+short_name: LLM for EDA Automation
+display_name: LLM for EDA Automation
+aliases:
+- llm-eda-parameter-tuning
+- EDA copilots
+- LLM EDA agents
+- EDA tool documentation QA
+- LLM evaluation for EDA tools
+- LLM for EDA Automation
+- llm for eda automation
+description: LLM-based agents, copilots, benchmarks, and evaluation frameworks that automate or assess EDA tool use, documentation question answering, scripting, debugging, or workflow assistance.
+review_triggers:
+- paper claims LLM-based EDA tool tuning or automation
+- paper addresses LLM-assisted EDA script or constraint generation
+- paper proposes LLM agent for EDA flow optimization
+- paper proposes an LLM agent, benchmark, or evaluation framework for EDA tool use or documentation QA
+- experiments use EDA tool documentation, scripts, command-line flows, or domain-specific EDA error categories
+- compared methods include RAG/LLM evaluation frameworks, EDA copilots, documentation QA systems, or generic LLM evaluators adapted to EDA
+baselines: []

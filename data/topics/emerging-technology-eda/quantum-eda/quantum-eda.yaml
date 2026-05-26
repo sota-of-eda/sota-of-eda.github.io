@@ -1,0 +1,26 @@
+topic_id: quantum-eda
+parent_id: emerging-technology-eda
+short_name: Quantum EDA
+display_name: Quantum Circuit Design Automation
+aliases:
+- circuit-cutting
+- quantum-circuit-synthesis
+- quantum-circuit-mapping
+- quantum compilation
+- quantum design automation
+- quantum-layout-synthesis
+- qubit-routing
+- Quantum Circuit Design Automation
+- Quantum EDA
+- quantum eda
+description: EDA tools and methodologies for quantum circuit design, including qubit mapping, layout synthesis, routing, compilation, and optimization for quantum computing platforms.
+review_triggers:
+- paper claims qubit placement or routing optimization
+- paper addresses quantum circuit mapping to hardware topology
+- paper proposes compilation for superconducting or trapped-ion quantum processors
+- paper claims quantum circuit layout, mapping, routing, or synthesis improvement
+- paper targets controller-aware or architecture-aware quantum circuit design automation
+- paper claims quantum circuit synthesis, mapping, routing, compilation, or fault-tolerant layout improvement
+- experiments compare against quantum compilers, synthesis algorithms, ZX-calculus flows, SABRE, Qiskit, or lattice-surgery compilers
+- metrics include gate count, depth, SWAP count, synthesis time, logical depth, or space-time cost
+baselines: []

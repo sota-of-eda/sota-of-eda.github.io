@@ -1,0 +1,30 @@
+baseline_id: ftqcs-lattice-surgery
+short_name: FTQCS
+display_name: Fault-Tolerant Quantum Circuit Synthesis via Lattice Surgery
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Ultra-Low Logical Depth Fault-Tolerant Quantum Circuit Synthesis via Lattice Surgery
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{kuo2026ftqcs,\n  title={Ultra-Low Logical Depth Fault-Tolerant Quantum Circuit Synthesis via Lattice Surgery},\n  author={Kuo, Chien-Tung and Tsai, Cheng-En and Huang, Chung-Yang},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1600.pdf
+compare_when:
+- evaluating fault-tolerant quantum circuit synthesis and lattice-surgery compilation
+- comparing ZX-calculus-based synthesis against gate-by-gate or routing-oriented lattice-surgery compilers
+benchmark_scope:
+- random Clifford circuits generated with Qiskit
+- Clifford+T circuits from the SABRE benchmark suite
+- FTQCS implemented as an extension of Qsyn
+metrics:
+- logical time steps / logical depth
+- space-time cost / fault-tolerant resource volume
+- asymptotic scaling for Clifford circuits
+- speedup and reduction versus lattice-surgery compiler baselines
+reproducibility: paper_only
+caveats:
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- no public code repository was verified in this pass
+- results are in a quantum EDA subdomain whose topic hierarchy is provisional
+- non-Clifford handling depends on magic-state boundary assumptions and should be reviewed by a quantum compilation expert before promotion

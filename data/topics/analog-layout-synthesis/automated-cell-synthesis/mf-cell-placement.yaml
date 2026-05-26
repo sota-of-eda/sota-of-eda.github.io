@@ -1,0 +1,29 @@
+baseline_id: mf-cell-placement
+short_name: MF-Cell Placement
+display_name: Margin-Free Cell Placement for Area-Efficient VLSI Design
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Breaking Standard Cell Margin Constraints for Area-Efficient VLSI Design
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{yoon2026breaking,\n  title={Breaking Standard Cell Margin Constraints for Area-Efficient VLSI Design},\n  author={Yoon, Junghyun and Jeong, Jooyeon and Park, Heechun},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/493.pdf
+compare_when:
+- evaluating standard-cell layout optimization or margin-free cell merging in a full physical-design flow
+- comparing cell-generation-enabled placement against conventional standard-cell placement and pre-merged cell libraries
+benchmark_scope:
+- OpenCores benchmarks implemented with ASAP7, Synopsys Design Compiler, Cadence Innovus, Calibre DRC/LVS/PEX, PrimeLib characterization, and Cadence Abstract Generator
+- merge-on-demand and pre-merged MF-cell flows using maximum weighted matching and congestion-aware MF-cell placement
+metrics:
+- total cell area and full-chip area
+- total wirelength
+- timing performance / effective frequency
+- power consumption
+- MF-cell CPP and pin-accessibility characteristics
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- experiments rely on commercial EDA tools and an automated standard-cell generator; no public artifact was verified in this pass
+- topic placement should be reviewed with other cell-generation drafts because the method spans cell synthesis and placement-stage optimization

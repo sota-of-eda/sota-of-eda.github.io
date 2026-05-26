@@ -1,0 +1,25 @@
+baseline_id: g-contour
+short_name: G-Contour
+display_name: 'G-Contour: GPU Accelerated Contour Tracing For Large-Scale Layouts'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'G-Contour: GPU Accelerated Contour Tracing For Large-Scale Layouts'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240932
+  bibtex: "@inproceedings{Yin_2025, title={G-Contour: GPU Accelerated Contour Tracing For Large-Scale Layouts}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240932}, DOI={10.1109/iccad66269.2025.11240932}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Yin, Shuo and Xu, Jiahao and Jiang, Jiaxi and Li, Mingjun and Ma, Yuzhe and Ho, Tsung-Yi and Yu, Bei}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240932
+compare_when:
+- comparing GPU-accelerated layout processing
+- evaluating contour tracing for OPC/DFM
+benchmark_scope:
+- large-scale EDA layouts
+metrics:
+- speedup vs CPU SOTA (90x)
+- parallel component analysis
+- contour extraction throughput
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published

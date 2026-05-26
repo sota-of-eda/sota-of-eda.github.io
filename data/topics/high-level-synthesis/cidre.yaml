@@ -1,0 +1,30 @@
+baseline_id: cidre
+short_name: CIDRE
+display_name: 'CIDRE: Automatic Microarchitecture-Aware Custom Instruction Design for RISC-V Processors'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Automatic Microarchitecture-Aware Custom Instruction Design for RISC-V Processors
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{cidre2025,\n  author = {Evgenii Rezunov and Niko Zurstra{\\ss}en and Lennart M. Reimann and Rainer Leupers},\n  title = {Automatic Microarchitecture-Aware Custom Instruction Design for RISC-V Processors},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--9}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240781
+links:
+  pdf_url: https://arxiv.org/abs/2509.15782
+compare_when:
+- Evaluating automated ASIP design tools for RISC-V processors
+- Comparing custom instruction generation and selection methods
+- Benchmarking microarchitecture-aware design space exploration
+benchmark_scope:
+- Embench benchmarks (8 applications)
+- MiBench benchmarks
+- RISC-V RV64IM 3-stage pipeline (trv64p3)
+metrics:
+- Speedup (up to 2.47x)
+- Area increase (<24%)
+- Clock period impact (0-2.4%)
+reproducibility: paper_only
+caveats:
+- Automated flow requires Synopsys ASIP Designer (commercial tool)
+- Instruction selection uses two-optimal greedy (not globally optimal)
+- Exhaustive subgraph enumeration limited by I/O constraints

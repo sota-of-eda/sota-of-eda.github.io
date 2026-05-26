@@ -1,0 +1,30 @@
+baseline_id: smart-pclib
+short_name: Smart-PCLib
+display_name: 'Smart-PCLib: A LLM-based Multi-Agent Framework for Automated PCB Component Library Generation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Smart-PCLib: A LLM-based Multi-Agent Framework for Automated PCB Component Library Generation'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{di2026smartpclib,\n  title={Smart-PCLib: A LLM-based Multi-Agent Framework for Automated PCB Component Library Generation},\n  author={Di, Zhaohai and Tu, Jindong and He, Zhiyuan and Pu, Yuan and Liu, Jiawei and Tong, Chong and Ho, Tsung-Yi and Yu, Bei and Chen, Tinghuan},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1187.pdf
+compare_when:
+- evaluating automated PCB symbol/footprint/component-library generation from datasheets
+- comparing domain-specific MLLM agents and DSL-based generation against general-purpose MLLMs or semi-automated PCB library tools
+benchmark_scope:
+- dataset of more than 3000 PCB component samples with 1160 training samples and 2320 test samples grouped by pin-count difficulty
+- multi-agent workflow using Qwen2.5VL-7B LoRA adapters, PyPCLib DSL, OCR, verification, and iterative repair
+- evaluation through KiCad 8.0.7 visualization and generated symbol/footprint comparisons
+metrics:
+- PCC pin/pad count correctness
+- NMR pin-name match rate
+- DMR dimension match rate for extraction
+- POR pad-overlap rate for footprint geometry
+- single-case generation time and ablation gains from verification/fix and OCR
+reproducibility: paper_only
+caveats:
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- dataset/artifact availability was not verified in this pass
+- topic is board-level EDA library generation, not IC routing, PCB PnR, or general LLM code generation

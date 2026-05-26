@@ -1,0 +1,32 @@
+baseline_id: bmcfuzz
+short_name: BMCFuzz
+display_name: 'BMCFuzz: Hybrid Verification Combining Bounded Model Checking and Coverage-Guided Fuzzing'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'BMCFuzz: Hybrid Verification Combining Bounded Model Checking and Coverage-Guided Fuzzing'
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{bmcfuzz2025,\n  author = {Shidong Shen and Jinyu Liu and Weizhi Feng and Fu Song and Zhilin Wu},\n  title = {BMCFuzz: Hybrid Verification Combining Bounded Model Checking and Coverage-Guided Fuzzing},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/ICCAD66269.2025.11240887}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240887
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240887
+  repo_url: https://github.com/iscas-versys/BMCFuzz
+compare_when:
+- Evaluating hybrid formal+fuzzing verification for RISC-V processors
+- Comparing coverage-guided fuzzing frameworks for hardware
+- Benchmarking BMC-assisted hardware verification methodologies
+benchmark_scope:
+- NutShell (RISC-V)
+- Rocket (RISC-V)
+- BOOM (RISC-V)
+metrics:
+- Register toggle coverage (Reg-Tog)
+- Branch coverage
+- Multiplexer toggle coverage (Mux-Tog)
+- Bug detection (3 new bugs in NutShell, 1 in BOOM)
+reproducibility: artifact_available
+caveats:
+- Snapshot mechanism requires significant engineering effort to reproduce
+- Evaluation limited to three RISC-V cores; generalizability to other architectures unclear
+- State-of-the-art reference (SOITA) may not be the strongest baseline

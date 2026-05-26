@@ -1,0 +1,28 @@
+baseline_id: gta-track-assignment
+short_name: GTA
+display_name: 'GTA: GPU-Accelerated Track Assignment with Lightweight Lookup Table for Conflict Detection'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'GTA: GPU-Accelerated Track Assignment with Lightweight Lookup Table for Conflict Detection'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240694
+  bibtex: "@inproceedings{zhao2025gta,\n  author = {Chunyuan Zhao and Jiarui Wang and Xun Jiang and Jincheng Lou and Yibo Lin},\n  title = {GTA: GPU-Accelerated Track Assignment with Lightweight Lookup Table for Conflict Detection},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240694},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240694
+compare_when:
+- comparing GPU-accelerated track assignment and detailed routing methods
+- evaluating design-rule-aware routing frameworks
+- benchmarking against TritonRoute-WXL and other detailed routers
+benchmark_scope:
+- standard routing benchmarks
+- design rule constrained routing tasks
+metrics:
+- runtime speedup (20x vs TritonRoute-WXL)
+- peak memory reduction (25% vs TritonRoute-WXL)
+- routing completion and quality
+reproducibility: unknown
+caveats:
+- comparison limited to TritonRoute-WXL; other commercial routers not evaluated
+- GPU-based approach may have overhead for small designs where CPU is competitive

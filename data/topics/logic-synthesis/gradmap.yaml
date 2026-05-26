@@ -1,0 +1,28 @@
+baseline_id: gradmap
+short_name: GradMap
+display_name: 'GradMap: A Gradient-Descent Approach to Simultaneous Technology Mapping, Buffer Insertion, and Gate Sizing'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'GradMap: A Gradient-Descent Approach to Simultaneous Technology Mapping, Buffer Insertion, and Gate Sizing'
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{gradmap2025,\n  author = {Hsin-Ying Tsai and Chung-Kai Wu and Chih-Cheng Hsu and Jie-Hong Roland Jiang},\n  title = {GradMap: A Gradient-Descent Approach to Simultaneous Technology Mapping, Buffer Insertion, and Gate Sizing},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--9}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240773
+compare_when:
+- Evaluating differentiable technology mapping frameworks
+- Comparing gradient-based logic optimization approaches
+- Benchmarking joint mapping-buffering-sizing optimization
+benchmark_scope:
+- Standard cell libraries for technology mapping
+- Comparison with ABC technology mapper
+metrics:
+- Area improvement (avg 7%)
+- Delay improvement (avg 33%)
+- Area-delay product improvement (avg 25%)
+reproducibility: unknown
+caveats:
+- Differentiable STA engine uses linear delay model (approximation)
+- Gradient-descent approach may converge to local optima
+- No public code repository found at time of review
+links: {}

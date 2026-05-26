@@ -1,0 +1,28 @@
+baseline_id: thermophoton
+short_name: ThermoPhoton
+display_name: 'ThermoPhoton: Fast 3D Thermal Simulation of Photonic Integrated Circuits via Operator Learning'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ThermoPhoton: Fast 3D Thermal Simulation of Photonic Integrated Circuits via Operator Learning'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240705
+  bibtex: '@inproceedings{Guan_2025, title={ThermoPhoton: Fast 3D Thermal Simulation of Photonic Integrated Circuits via Operator Learning}, url={http://dx.doi.org/10.1109/ICCAD66269.2025.11240705}, DOI={10.1109/iccad66269.2025.11240705}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Guan, Weilong and Huang, Li and Lin, Yuxuan and Wu, Yuchao and Tong, Yeyu and Ma, Yuzhe}, year={2025}, month=Oct, pages={1-8}}'
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240705
+compare_when:
+- comparing thermal simulation methods for photonic integrated circuits
+- evaluating operator learning approaches for PIC physics simulation
+benchmark_scope:
+- photonic integrated circuit designs
+- comparison against DeepOHeat
+metrics:
+- peak GPU memory usage
+- training time
+- MAPE (thermal prediction error)
+reproducibility: unknown
+caveats:
+- Limited to thermal simulation only; does not cover optical simulation
+- DeepONet-based approach requires retraining for new PIC geometries
+- 0.07% MAPE may not reflect worst-case thermal prediction errors

@@ -1,0 +1,16 @@
+topic_id: parasitic-extraction
+parent_id: layout-verification
+short_name: Parasitic Extr
+display_name: Parasitic Extraction
+aliases:
+- parasitic-estimation
+- ml-parasitic-extraction
+- Parasitic Extraction
+- Parasitic Extr
+- parasitic extraction
+description: Parasitic extraction for post-layout verification, including ML-based RLC extraction, capacitance field solvers, and early-stage parasitic estimation.
+review_triggers:
+- paper claims parasitic extraction accuracy or runtime improvement
+- paper addresses ML-based or learning-accelerated parasitic extraction
+- paper proposes early-stage or pre-layout parasitic estimation
+baselines: []

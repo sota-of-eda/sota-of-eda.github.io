@@ -1,0 +1,30 @@
+baseline_id: pnc-dtpg
+short_name: pNC-DTPG
+display_name: Diagnostic Test Generation for Fault Localization in Printed Neuromorphic Circuits
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Diagnostic Test Generation for Fault Localization in Printed Neuromorphic Circuits
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{gheshlaghi2026diagnosticPnc,\n  title={Diagnostic Test Generation for Fault Localization in Printed Neuromorphic Circuits},\n  author={Gheshlaghi, Tara and Studt, Alexander and Pal, Priyanjana and Moussa, Dina A. and Hefenbrock, Michael and Beigl, Michael and Tahoori, Mehdi B.},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1197.pdf
+compare_when:
+- evaluating diagnostic test pattern generation for printed electronics or printed neuromorphic circuits under black-box access
+- comparing compact test-set generation methods for fault localization rather than only fault detection
+benchmark_scope:
+- ten printed neuromorphic circuit models trained on UCI datasets
+- catastrophic open/short primitive-level faults characterized with SPICE/Cadence Virtuoso using the nEGT printed-electronics P-PDK
+- fixed test budget of 50 times the lower bound on the number of patterns required to distinguish primitives
+metrics:
+- diagnostic coverage over distinguishable detectable primitive pairs
+- percentage of undetected primitives
+- test-set size budget
+- coverage improvements versus data-driven sensitivity and detection-only ATPG baselines
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- no public implementation or generated test-pattern artifact was found in this pass
+- the method assumes black-box pNC access and single-fault catastrophic primitive-level models; finer-grained component-level diagnosis is listed as future work
+- results depend on SPICE-characterized printed-electronics primitive faults and ten UCI-derived pNC workloads, so transfer to other analog/printed technologies requires review

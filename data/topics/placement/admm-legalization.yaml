@@ -1,0 +1,28 @@
+baseline_id: admm-legalization
+short_name: ADMM Legalization
+display_name: A Parallel Analytical Legalization Algorithm via Alternating Direction Method of Multipliers
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: A Parallel Analytical Legalization Algorithm via Alternating Direction Method of Multipliers
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240741
+  bibtex: "@inproceedings{im2025parallel,\n  author = {Jaekyung Im and Seokhyeong Kang},\n  title = {A Parallel Analytical Legalization Algorithm via Alternating Direction Method of Multipliers},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240741},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240741
+compare_when:
+- comparing analytical legalization methods for placement
+- evaluating parallel CPU-GPU legalization approaches
+- benchmarking against open-source legalizers
+benchmark_scope:
+- standard placement benchmarks
+- legalization tasks after global placement
+metrics:
+- legalization quality (wirelength, displacement)
+- runtime with heterogeneous CPU-GPU parallelism
+- comparison vs existing open-source legalizers
+reproducibility: unknown
+caveats:
+- analytical approach may not guarantee legality in all cases; may need post-processing
+- heterogeneous CPU-GPU parallelism complexity may limit adoption

@@ -1,0 +1,33 @@
+baseline_id: so3-cell
+short_name: SO3-Cell
+display_name: 'SO3-Cell: Standard Cell Layout Automation Framework for Simultaneous Optimization of Topology, Placement, and Routing'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'SO3-Cell: Standard Cell Layout Automation Framework for Simultaneous Optimization of Topology, Placement, and Routing'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240677
+  bibtex: '@inproceedings{Cheng_2025, title={SO3-Cell: Standard Cell Layout Automation Framework for Simultaneous Optimization of Topology, Placement, and Routing}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240677}, DOI={10.1109/iccad66269.2025.11240677}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Cheng, Chung-Kuan and Kahng, Andrew B. and Kang, Byeonggon and Kang, Seokhyeong and Lee, Jakang and Lin, Bill}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240677
+  pdf_url: https://vlsicad.ucsd.edu/Publications/Conferences/418/c418.pdf
+  repo_url: https://github.com/ckchengucsd/SO3-Cell
+compare_when:
+- comparing automated standard cell layout generation frameworks
+- evaluating MILP-based simultaneous topology/placement/routing optimization
+benchmark_scope:
+- PROBE3.0 PDK standard cells
+- full adder, reset flip-flop, 2-bit flip-flop cells
+metrics:
+- total metal usage
+- cell layout flexibility (Cell-Flex)
+- power reduction
+- frequency improvement
+- area reduction
+reproducibility: artifact_available
+caveats:
+- 44-transistor 2-bit FF took 25,862 seconds (7.2 hours) to generate
+- Requires commercial Gurobi MILP solver
+- Design space pruning techniques may not generalize to all cell types
+- Block-level PPA evaluation depends on downstream tool quality

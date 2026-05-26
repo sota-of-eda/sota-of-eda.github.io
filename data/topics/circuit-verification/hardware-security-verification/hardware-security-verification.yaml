@@ -1,0 +1,18 @@
+topic_id: hardware-security-verification
+parent_id: circuit-verification
+short_name: HW Security Verification
+display_name: Hardware Security Verification
+aliases:
+- hardware Trojan detection
+- RTL security verification
+- pre-silicon security verification
+- hardware non-interference and trust verification
+- Hardware Security Verification
+- HW Security Verification
+- hardware security verification
+description: Pre-silicon verification and analysis methods for hardware security properties, hardware Trojan detection/localization, security non-interference, taint/trust analysis, and explainable security checking at RTL, gate, LUT, or netlist level.
+review_triggers:
+- paper claims hardware Trojan, backdoor, security-property, non-interference, taint, or trust verification improvement
+- experiments use Trust-Hub, OpenCores, RTL/gate/LUT netlists, formal/security verification, or Trojan localization benchmarks
+- metrics include TPR/TNR, precision, accuracy, F1, proof time, detection time, localization quality, or explainability
+baselines: []

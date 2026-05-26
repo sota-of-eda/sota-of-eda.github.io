@@ -1,0 +1,28 @@
+baseline_id: diffresist
+short_name: DiffResist
+display_name: 'DiffResist: Physics-Constrained Diffusion for Photoresist Modeling'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'DiffResist: Physics-Constrained Diffusion for Photoresist Modeling'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{wang2026diffresist,\n  title={DiffResist: Physics-Constrained Diffusion for Photoresist Modeling},\n  author={Wang, Zixiao and Zhou, Jieya and Zhang, Xinyun and Hu, Shoubo and Farnia, Farzan and Yu, Bei},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/46.pdf
+compare_when:
+- evaluating fast learned or physics-constrained photoresist profile simulators for computational lithography
+- comparing 3D resist-profile prediction accuracy and inference speed from aerial-image inputs
+benchmark_scope:
+- LithoBench 3D photoresist modeling benchmark with 16,472 tiles and TorchResist reference profiles
+- down-sampled 3D inhibitor volumes with printed-pattern and edge-placement evaluation
+metrics:
+- mean squared error on 3D inhibitor volume
+- pixel difference percentage for binarized printed images
+- EPE-max and EPE-mean in nanometers
+- per-tile inference runtime
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- benchmark uses TorchResist analytical simulator outputs as reference rather than silicon measurements
+- the draft proposes a narrow photoresist-modeling topic under mask-optimization; human taxonomy review should decide whether to keep it separate from lithography hotspot detection and OPC-style mask optimization

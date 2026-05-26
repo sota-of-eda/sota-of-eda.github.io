@@ -1,0 +1,16 @@
+topic_id: photoresist-modeling
+parent_id: mask-optimization
+short_name: Photoresist Modeling
+display_name: Photoresist Modeling
+aliases:
+- resist simulation
+- photoresist simulation
+- lithography resist modeling
+- Photoresist Modeling
+- photoresist modeling
+description: Photoresist and lithography-process modeling methods for predicting 2D or 3D resist profiles, printed patterns, and edge-placement behavior from aerial images or mask/layout inputs.
+review_triggers:
+- paper claims photoresist or lithography process simulation improvement
+- paper evaluates resist-profile, printed-pattern, or edge-placement prediction accuracy
+- paper compares learned lithography/resist models against analytical simulators or prior neural baselines
+baselines: []

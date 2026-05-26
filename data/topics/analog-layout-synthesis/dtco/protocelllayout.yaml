@@ -1,0 +1,29 @@
+baseline_id: protocelllayout
+short_name: ProtoCellLayout
+display_name: 'ProtoCellLayout: Prototype-Guided Graph Learning for Accurate and Generalizable Standard Cell Layout PPA Estimation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ProtoCellLayout: Prototype-Guided Graph Learning for Accurate and Generalizable Standard Cell Layout PPA Estimation'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240788
+  bibtex: "@inproceedings{Luo_2025, title={ProtoCellLayout: Prototype-Guided Graph Learning for Accurate and Generalizable Standard Cell Layout PPA Estimation}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240788}, DOI={10.1109/iccad66269.2025.11240788}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Luo, Zhiyuan and Zhou, Le and Zhang, Zenghui and Zhou, Jie and Li, Zhien and You, Huiqing and Yao, Feng and Zhao, Zhenyu}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240788
+compare_when:
+- comparing ML-based cell PPA estimation methods
+- evaluating DTCO cell characterization workflows
+benchmark_scope:
+- industrial standard cell library
+metrics:
+- percentage error (<3.5%)
+- estimation time
+- delay
+- leakage
+- internal power
+- transition time
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published
+- code not publicly available

@@ -1,0 +1,28 @@
+baseline_id: autoassert-trustassert
+short_name: AutoAssert/TrustAssert
+display_name: AutoAssert and TrustAssert for Trustworthy LLM-Based Assertion Generation
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Towards Trustworthy LLM-Based Assertion Generation: A Data Augmentation Framework with Formal Check Approach'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{zhai2026trustworthy,\n  title={Towards Trustworthy LLM-Based Assertion Generation: A Data Augmentation Framework with Formal Check Approach},\n  author={Zhai, Qingchen and Yu, Hao and Bai, Chen and Young, Charles and Qu, Frank and Ran, Dezhi and Xie, Yuan and Xie, Tao},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/159.pdf
+compare_when:
+- evaluating LLM-based SystemVerilog assertion generation with formally verified training data
+- comparing dataset-driven assertion generation against prompt-based LLM methods, static/dynamic assertion mining, and general-purpose GPT-4 outputs
+benchmark_scope:
+- TrustAssert dataset with 112,021 formally checked assertions from open-source Verilog/SystemVerilog code and generated/mutated assertion variants
+- UART, HATX, I2C, and SOCKIT assertion-generation benchmarks, plus an E203 ablation comparing verified and unverified training data
+metrics:
+- non-trivial assertion count and ratio
+- syntax-correct assertions
+- FPV-correct assertions
+- dataset composition by immediate, concurrent-simple, and temporal assertions
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- the paper-stated GitHub dataset URL returned HTTP 404 during this pass, so the artifact is not marked verified despite the paper describing TrustAssert as public
+- experiments depend on large-scale GitHub mining, LLM-generated descriptions/mutations, FPV filtering, and multi-GPU fine-tuning, so exact reproduction requires substantial data/tool access

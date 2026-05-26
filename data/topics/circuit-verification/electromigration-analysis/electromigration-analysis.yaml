@@ -1,0 +1,18 @@
+topic_id: electromigration-analysis
+parent_id: circuit-verification
+short_name: EM Analysis
+display_name: Electromigration & Reliability Analysis
+aliases:
+- electromigration-reliability-analysis
+- EM-aware physical design
+- interconnect reliability analysis
+- Electromigration & Reliability Analysis
+- EM Analysis
+- electromigration analysis
+description: Electromigration analysis and reliability verification for power-delivery networks, signal interconnects, aging effects, and EM-aware physical-design closure.
+review_triggers:
+- paper claims electromigration analysis or reliability verification improvement
+- paper addresses EM-aware PDN or signal interconnect design
+- paper proposes aging or wearout analysis for IC reliability
+- paper integrates EM prediction or mitigation into placement, routing, or physical verification flows
+baselines: []

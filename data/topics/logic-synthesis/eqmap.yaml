@@ -1,0 +1,32 @@
+baseline_id: eqmap
+short_name: EqMap
+display_name: 'EqMap: FPGA LUT Remapping using E-Graphs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'EqMap: FPGA LUT Remapping using E-Graphs'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240672
+  bibtex: '@inproceedings{Hofmann_2025, title={EqMap: FPGA LUT Remapping using E-Graphs}, url={http://dx.doi.org/10.1109/ICCAD66269.2025.11240672}, DOI={10.1109/iccad66269.2025.11240672}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Hofmann, Matthew and Gokmen, Berk and Zhang, Zhiru}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240672
+  pdf_url: https://www.csl.cornell.edu/~zhiruz/pdfs/eqmap-iccad2025.pdf
+  repo_url: https://github.com/cornell-zhang/eqmap
+  project_url: https://cornell-zhang.github.io/eqmap/
+compare_when:
+- comparing FPGA LUT-based technology mapping approaches using e-graph superoptimization
+- evaluating LUT count reduction without increasing circuit depth
+benchmark_scope:
+- EPFL benchmarks
+- ISCAS'85 benchmarks
+- LGSynth'91 benchmarks
+metrics:
+- number of LUTs
+- circuit depth
+- runtime
+reproducibility: artifact_available
+caveats:
+- Focuses on FPGA LUT mapping only; not tested on ASIC standard cells
+- E-graph node limit (default 2000) constrains exact extraction on larger designs
+- Uses Yosys+ABC for initial synthesis before remapping

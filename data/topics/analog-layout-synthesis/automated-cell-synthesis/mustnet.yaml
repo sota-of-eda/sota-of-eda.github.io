@@ -1,0 +1,28 @@
+baseline_id: mustnet
+short_name: MuSTNet
+display_name: 'MuSTNet: SAT-based Exact Multi-Stage Transistor Network Synthesis with Placement Awareness'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'MuSTNet: SAT-based Exact Multi-Stage Transistor Network Synthesis with Placement Awareness'
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{mustnet2025,\n  author = {Jiun-Cheng Tsai and Wei-Min Hsu and Kuei-Lin Wu},\n  title = {MuSTNet: SAT-based Exact Multi-Stage Transistor Network Synthesis with Placement Awareness},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--8}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240651
+compare_when:
+- Evaluating transistor-level network synthesis for standard cell generation
+- Comparing SAT-based exact synthesis vs heuristic approaches
+- Benchmarking placement-aware transistor network optimization
+benchmark_scope:
+- 4-input P-class functions
+- Multi-output functions
+- CMOS transistor networks
+metrics:
+- Transistor count reduction for P-class functions (18%)
+- Transistor count reduction for multi-output functions (12.9%)
+reproducibility: unknown
+caveats:
+- Collaboration with MediaTek; may contain proprietary optimizations
+- SAT-based approach may not scale to large circuits
+- Multi-stage synthesis adds complexity to implementation
+links: {}

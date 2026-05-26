@@ -1,0 +1,29 @@
+baseline_id: m3-analog-circuit-optimization
+short_name: M3
+display_name: 'M3: Mamba-assisted Multi-Circuit Optimization via Model-based RL with Effective Scheduling'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'M3: Mamba-assisted Multi-Circuit Optimization via Model-based RL with Effective Scheduling'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240790
+  bibtex: '@inproceedings{Oh_2025, title={M3: Mamba-assisted Multi-Circuit Optimization via Model-based RL with Effective Scheduling}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240790}, DOI={10.1109/iccad66269.2025.11240790}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Oh, Youngmin and Park, Jinje and Paik, Taejin and Kim, Seunggeun and Kim, Suwan and Lee, Yoon Hyeok and Pan, David Z.}, year={2025}, month=Oct, pages={1-8}}'
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240790
+  pdf_url: https://arxiv.org/abs/2411.16019
+compare_when:
+- comparing RL-based analog circuit optimization methods
+- evaluating model-based RL with state-space model architectures for transistor sizing
+benchmark_scope:
+- analog circuit designs with heterogeneous topologies
+- comparison of Mamba vs Transformer/LSTM/FC variants
+metrics:
+- episode reward
+- convergence speed (environment steps)
+- final circuit performance
+reproducibility: unknown
+caveats:
+- Single RL agent for multi-circuit requires extensive pre-training
+- Mamba architecture is relatively new; less established than Transformer
+- Only tested on limited set of analog topologies

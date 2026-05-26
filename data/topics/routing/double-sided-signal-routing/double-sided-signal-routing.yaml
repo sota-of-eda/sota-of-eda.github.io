@@ -1,0 +1,18 @@
+topic_id: double-sided-signal-routing
+parent_id: routing
+short_name: Double-Sided Routing
+display_name: Double-Sided Signal Routing
+aliases:
+- backside signal routing
+- front-side/back-side routing
+- double-sided routing
+- BS signal routing
+- Double-Sided Signal Routing
+- Double-Sided Routing
+- double sided signal routing
+description: Routing methods that jointly use front-side and back-side metal resources, including bridging-cell insertion, unified 3D routing graphs, design-rule legality, and timing-aware detailed/global routing for backside-interconnect nodes.
+review_triggers:
+- paper proposes a native or unified front-side/back-side signal-routing algorithm
+- paper evaluates backside or double-sided routing with bridging cells, DRVs, wirelength, timing, or routing runtime
+- paper compares against netlist-planning flows, TritonRoute-style detailed routing, or commercial single-sided routing
+baselines: []

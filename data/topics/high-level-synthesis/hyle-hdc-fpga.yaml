@@ -1,0 +1,27 @@
+baseline_id: hyle-hdc-fpga
+short_name: Hyle
+display_name: 'Hyle: An HLS Framework for Hyperdimensional Computing Accelerators on FPGAs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Hyle: An HLS Framework for Hyperdimensional Computing Accelerators on FPGAs'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240971
+  bibtex: "@inproceedings{Vieira_2025, title={Hyle: An HLS Framework for Hyperdimensional Computing Accelerators on FPGAs}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240971}, DOI={10.1109/iccad66269.2025.11240971}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Vieira, Caio and Schneider Beck, Antonio Carlos}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240971
+compare_when:
+- comparing HLS-based HDC accelerator frameworks
+- evaluating FPGA-based hyperdimensional computing accelerators
+benchmark_scope:
+- HDC benchmarks including CGR and BSC classes
+metrics:
+- area
+- throughput
+- memory footprint
+- accuracy
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published
+- first to accelerate CGR class HDC on FPGAs

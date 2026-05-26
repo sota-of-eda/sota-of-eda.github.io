@@ -1,0 +1,28 @@
+baseline_id: em-lumped-element-model
+short_name: EM Lumped Model
+display_name: Equivalent Lumped Element Model for Electromigration Considering Thermal Effects
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Equivalent Lumped Element Model for Electromigration Considering Thermal Effects
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240681
+  bibtex: '@inproceedings{Zhu_2025, title={Equivalent Lumped Element Model for Electromigration Considering Thermal Effects}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240681}, DOI={10.1109/iccad66269.2025.11240681}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Zhu, Hengyi and Zhu, Wenjie and Hou, Tianshu and Ji, Zhigang and Wang, Runsheng and Tang, Min and Chen, Hai-Bao}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240681
+compare_when:
+- comparing electromigration analysis models for VLSI interconnects
+- evaluating SPICE-compatible equivalent circuit models with thermal coupling
+benchmark_scope:
+- small interconnects (vs FEM)
+- large-scale interconnect structures
+metrics:
+- speedup vs FEM
+- speedup vs conventional equivalent circuits
+- error relative to FEM
+reproducibility: unknown
+caveats:
+- Equivalent circuit model may not capture all EM physics
+- Thermal effects model assumes specific boundary conditions
+- Accuracy validated against FEM only, not silicon measurement

@@ -1,0 +1,29 @@
+baseline_id: liveverilogeval
+short_name: LiveVerilogEval
+display_name: 'LiveVerilogEval: Contamination Free and Automatically Scalable Benchmark for Verilog Code Generation'
+role: artifact_baseline
+nomination: community
+publication:
+  title: 'LiveVerilogEval: Contamination Free and Automatically Scalable Benchmark for Verilog Code Generation'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{young2026liveverilogeval,\n  title={LiveVerilogEval: Contamination Free and Automatically Scalable Benchmark for Verilog Code Generation},\n  author={Young, Charles and Yu, Hao and Ran, Dezhi and Zhai, Qingchen and Qiu, Tianqi and Qu, Frank and Wang, Bangyan and Xie, Yuan and Xie, Tao},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/167.pdf
+  repo_url: https://github.com/agctute/liveverilogeval
+compare_when:
+- evaluating LLM-based Verilog or RTL code generation on contamination-resistant benchmark variants
+- checking whether static RTL benchmarks such as VerilogEval and RTLLM overestimate model performance because of data leakage
+benchmark_scope:
+- LiveVerilogEval-V1.0 generated from VerilogEval-V2 and RTLLM-V2 seeds
+- nine commercial LLMs including DeepSeek-V3.1, Claude 3.5/3.7/4 Sonnet or Haiku variants, GPT-3.5, GPT-4, GPT-4o-mini, GPT-4o, and GPT-5
+- Yosys SAT-based equivalence validation for generated RTL variants
+metrics:
+- pass@1 and pass@5
+- Levenshtein, Jaccard, and cosine similarity for contamination assessment
+- benchmark generation validity through functional equivalence checks
+reproducibility: artifact_available
+caveats:
+- no DBLP/Crossref/arXiv exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- generated problems are accepted only if an LLM can solve them under the paper's oracle, so the benchmark is primarily comparative rather than a pure measure of novel-concept understanding
+- question difficulty depends on the SAT-equivalence timeout and source seed designs

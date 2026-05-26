@@ -1,0 +1,27 @@
+baseline_id: ctdm
+short_name: CTDM
+display_name: 'CTDM: Resource-Efficient FPGA-Accelerated Simulation of Large-Scale NPU Designs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'CTDM: Resource-Efficient FPGA-Accelerated Simulation of Large-Scale NPU Designs'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240632
+  bibtex: "@inproceedings{jo2025ctdm,\n  author = {Hyunje Jo and Han-Sok Suh and Hyungseok Heo and Jinseok Kim and\nHyunsung Kim and Boeui Hong and Jungju Oh and Sunghyun Park and Jinwook Oh and Sunghwan Jo and Kangwook Lee and Jae-Sun Seo},\n  title = {{CTDM}: Resource-Efficient {FPGA}-Accelerated Simulation of Large-Scale\n{NPU} Designs},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240632},\n  publisher = {IEEE}\n}\n"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240632
+compare_when:
+- comparing FPGA-accelerated simulation speed and resource usage against commercial CPU simulators
+- evaluating time-division multiplexing for large-scale NPU emulation
+benchmark_scope:
+- large-scale NPU designs (including NVDLA, 4-die 1024 TFLOPS chiplet)
+metrics:
+- 'LUT reduction: 66%'
+- 'FF reduction: 82%'
+- 'simulation acceleration: 3,653x over Synopsys VCS'
+- 'scale: 144 FPGAs on ZeBu 5 server'
+reproducibility: unknown
+caveats:
+- resource-efficient TDM for FPGA-accelerated simulation; requires ZeBu emulation platform
+- industry work from Samsung; code not expected to be open-source

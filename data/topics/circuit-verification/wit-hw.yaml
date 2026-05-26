@@ -1,0 +1,30 @@
+baseline_id: wit-hw
+short_name: Wit-HW
+display_name: 'Wit-HW: Bug Localization in Hardware Design Code via Witness Test Case Generation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Wit-HW: Bug Localization in Hardware Design Code via Witness Test Case Generation'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240909
+  bibtex: '@inproceedings{Ma_2025, title={Wit-HW: Bug Localization in Hardware Design Code via Witness Test Case Generation}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240909}, DOI={10.1109/iccad66269.2025.11240909}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Ma, Ruiyang and Kuang, Daikang and Liu, Ziqian and Zhang, Jiaxi and Fan, Ping and Luo, Guojie}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240909
+  pdf_url: https://arxiv.org/abs/2508.14414
+  repo_url: https://github.com/magicyang1573/Wit-HW
+compare_when:
+- comparing hardware bug localization approaches
+- evaluating spectrum-based fault localization with witness test case generation
+benchmark_scope:
+- 41 bugs across 10 designs
+- 13 real-world open-source FPGA bugs
+metrics:
+- Top-1 bug localization rate
+- Top-5 bug localization rate
+- Top-10 bug localization rate
+reproducibility: artifact_available
+caveats:
+- Bug localization depends on quality of generated witness test cases
+- Coverage distance and DTW-based state distance may not capture all bug types
+- Evaluated on RTL designs only; not tested on gate-level netlists

@@ -1,0 +1,28 @@
+baseline_id: unicircuit
+short_name: UniCircuit
+display_name: 'UniCircuit: Multimodal Circuit Representation Learning with Anchor-Free Alignment'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'UniCircuit: Multimodal Circuit Representation Learning with Anchor-Free Alignment'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{wang2026unicircuit,\n  title={UniCircuit: Multimodal Circuit Representation Learning with Anchor-Free Alignment},\n  author={Wang, Jingxin and Qian, Weikang},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1104.pdf
+compare_when:
+- evaluating multimodal circuit embeddings for QoR prediction or Verilog/AIG/synthesis-flow retrieval
+- comparing circuit representation learning methods on OpenABC-D or similar synthesis-flow datasets
+benchmark_scope:
+- OpenABC-D benchmark with 870000 AIG samples from 29 hardware IPs
+- IP-level hold-out QoR prediction using Verilog, AIG, and synthesis-flow modalities
+- cross-modal retrieval among Verilog, AIG, and synthesis-flow representations
+metrics:
+- mean absolute percentage error for optimized area QoR prediction
+- recall@K for cross-modal retrieval
+- relative improvement over GCN, DeepGate2, HOGA, and CircuitFusion-style baselines
+reproducibility: paper_only
+caveats:
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- no public code repository was verified in this pass
+- proposed topic should be reviewed against broader dataset-and-tools or logic-synthesis taxonomy before promotion

@@ -1,0 +1,18 @@
+topic_id: eda-flow-parameter-tuning
+parent_id: dataset-and-tools
+short_name: Flow Tuning
+display_name: EDA Flow Parameter Tuning
+aliases:
+- EDA flow tuning
+- design flow parameter tuning
+- physical design flow DSE
+- VLSI flow design space exploration
+- EDA Flow Parameter Tuning
+- Flow Tuning
+- eda flow parameter tuning
+description: Methods that tune configurable EDA tool and flow parameters across one or more implementation stages, optimizing PPA or multi-objective QoR under expensive evaluation budgets.
+review_triggers:
+- paper claims automatic EDA tool parameter tuning or flow design space exploration
+- paper optimizes PPA or hypervolume over synthesis, floorplan, placement, routing, or full-flow parameters
+- paper compares Bayesian optimization, recommender, retrieval, or learning-based flow tuning methods
+baselines: []

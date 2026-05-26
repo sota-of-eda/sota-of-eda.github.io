@@ -1,0 +1,21 @@
+topic_id: design-space-exploration
+parent_id: high-level-synthesis
+short_name: DSE
+display_name: Design Space Exploration
+aliases:
+- hls-design-space-exploration
+- hls-qor-prediction
+- ai-accelerator-design-space-exploration
+- Design Space Exploration
+- DSE
+- design space exploration
+description: Design space exploration for HLS-generated hardware, accelerator architectures, and related Pareto-frontier or quality-of-result prediction tasks across design trade-offs.
+review_triggers:
+- paper claims design space exploration for HLS or accelerator design
+- paper predicts HLS quality-of-result metrics such as area, latency, resource use, or power for design exploration
+- paper proposes learning-assisted, few-shot, anchor-based, or surrogate-model-driven exploration methodology
+- paper addresses Pareto-optimal DSE for area, power, performance trade-offs
+- paper proposes AI-accelerator architecture exploration methodology
+- paper addresses Pareto-optimal DSE for area, latency, resource, power, or performance trade-offs
+- paper proposes learning-assisted, LLM-assisted, or surrogate-model-driven exploration methodology
+baselines: []

@@ -1,0 +1,28 @@
+baseline_id: deepcell
+short_name: DeepCell
+display_name: 'DeepCell: Self-Supervised Multiview Fusion for Circuit Representation Learning'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'DeepCell: Self-Supervised Multiview Fusion for Circuit Representation Learning'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240883
+  bibtex: "@inproceedings{shi2025deepcell,\n  author = {Zhengyuan Shi and Chengyu Ma and Ziyang Zheng and Lingfeng Zhou and Hongyang Pan and Wentao Jiang and Fan Yang and Xiaoyan Yang and Zhufei Chu and Qiang Xu},\n  title = {DeepCell: Self-Supervised Multiview Fusion for Circuit Representation Learning},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240883},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240883
+  repo_url: https://github.com/cure-lab/DeepCell
+compare_when:
+- comparing circuit representation learning methods for logic synthesis and ECO
+- evaluating self-supervised learning for gate-level netlist analysis
+- benchmarking against open-source EDA tools in functional ECO tasks
+benchmark_scope:
+- post-mapping (PM) netlists
+- functional ECO and technology mapping benchmarks
+metrics:
+- predictive accuracy
+- reconstruction quality
+- functional ECO efficiency and performance vs open-source tools
+reproducibility: artifact_available
+caveats:
+- first framework explicitly for PM netlist representation; lacks comparison against mature industry-standard representation learning methods outside EDA

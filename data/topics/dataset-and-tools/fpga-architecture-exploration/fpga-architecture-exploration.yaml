@@ -1,0 +1,14 @@
+topic_id: fpga-architecture-exploration
+parent_id: dataset-and-tools
+short_name: FPGA Arch
+display_name: FPGA Architecture Exploration
+aliases:
+- FPGA Architecture Exploration
+- FPGA Arch
+- fpga architecture exploration
+description: FPGA architecture exploration tools and methodologies, including VPR-based exploration, routing-architecture studies, and open-source FPGA CAD flows.
+review_triggers:
+- paper claims FPGA architecture exploration or CAD flow improvement
+- paper addresses open-source FPGA toolchains or benchmarks
+- paper proposes new FPGA routing or logic-block architectures
+baselines: []

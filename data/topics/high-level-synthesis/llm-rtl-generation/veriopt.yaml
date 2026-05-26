@@ -1,0 +1,26 @@
+baseline_id: veriopt
+short_name: VeriOpt
+display_name: 'VeriOpt: PPA-Aware High-Quality Verilog Generation via Multi-Role LLMs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'VeriOpt: PPA-Aware High-Quality Verilog Generation via Multi-Role LLMs'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240771
+  bibtex: "@inproceedings{Tasnia_2025, title={VeriOpt: PPA-Aware High-Quality Verilog Generation via Multi-Role LLMs}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240771}, DOI={10.1109/iccad66269.2025.11240771}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Tasnia, Kimia and Garcia, Alexander and Farheen, Tasnuva and Rahman, Sazadur}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240771
+compare_when:
+- comparing LLM-based Verilog generation
+- evaluating PPA-aware RTL code generation
+benchmark_scope:
+- RTLLM benchmark (29 designs)
+metrics:
+- power reduction (88%)
+- area reduction (76%)
+- timing improvement (73%)
+- functional pass rate (86%)
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published

@@ -1,0 +1,26 @@
+baseline_id: llm-multimodal-dse
+short_name: LLM-Multimodal-DSE
+display_name: LLM-Augmented Multi-Modal Fusion for SoC Design Space Exploration
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: LLM-Augmented Multi-Modal Fusion for SoC Design Space Exploration
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240720
+  bibtex: "@inproceedings{luo2025llm,\n  author = {Donger Luo and Tianyi Li and Xinheng Li and Qi Sun and Cheng Zhuo and Bei Yu and Jingyi Yu and Hao Geng},\n  title = {LLM-Augmented Multi-Modal Fusion for SoC Design Space Exploration},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240720},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240720
+  pdf_url: https://www.cse.cuhk.edu.hk/~byu/papers/C285-ICCAD2025-MultimodelDSE.pdf
+compare_when:
+- comparing ML-based design space exploration methods for SoC architectures
+- evaluating LLM-augmented HLS/DSE frameworks
+benchmark_scope:
+- Gemini-based RISC-V SoC on Chipyard platform
+metrics:
+- Pareto hypervolume improvement
+- exploration efficiency under limited evaluation budget
+- design quality (power, performance, area)
+reproducibility: unknown
+caveats:
+- validated on a single SoC configuration (Gemini-based RISC-V); generalizability to other microarchitectures needs further evaluation

@@ -1,0 +1,25 @@
+baseline_id: hlps-dse-rapidstream
+short_name: HLPS DSE (RapidStream)
+display_name: Automated Design Space Exploration in High-Level Physical Synthesis
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Automated Design Space Exploration in High-Level Physical Synthesis
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240757
+  bibtex: "@inproceedings{Du_2025, title={Automated Design Space Exploration in High-Level Physical Synthesis}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240757}, DOI={10.1109/iccad66269.2025.11240757}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Du, Linfeng and Liang, Jiawei and Lau, Jason and Chi, Yuze and Xie, Yutong and Su, Chunyou and Ahmad, Afzal and He, Zifan and Ke, Jake and Ge, Jinming and Cong, Jason and Zhang, Wei and Guo, Licheng}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240757
+compare_when:
+- comparing HLPS design space exploration frameworks
+- evaluating automated parameter tuning for FPGA timing closure
+benchmark_scope:
+- multi-die FPGA designs
+metrics:
+- frequency (311.06 MHz avg)
+- frequency improvement vs Vitis/Vivado (2.42x)
+- frequency improvement vs academic tools (1.67x)
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published

@@ -1,0 +1,29 @@
+baseline_id: metasyn
+short_name: MetaSyn
+display_name: 'MetaSyn: A Meta-Reinforcement Learning Framework with Multimodal Circuit Representation for Adaptive Logic Synthesis'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'MetaSyn: A Meta-Reinforcement Learning Framework with Multimodal Circuit Representation for Adaptive Logic Synthesis'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{liu2026metasyn,\n  title={MetaSyn: A Meta-Reinforcement Learning Framework with Multimodal Circuit Representation for Adaptive Logic Synthesis},\n  author={Liu, Shukai and Liao, Ruoyan and Wang, Siyu and Xu, Qimin and Chen, Cailian},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1056.pdf
+compare_when:
+- evaluating RL/meta-RL logic synthesis sequence optimization methods
+- comparing adaptive/few-shot logic-synthesis optimization on EPFL, ISCAS85, or ABC-based LUT mapping benchmarks
+benchmark_scope:
+- 16 EPFL benchmarks optimized with ABC compress2rs as baseline
+- few-shot adaptation comparisons against AlphaSyn, CBTune, and PIRLLS
+- ISCAS85 transfer and ablation over MAML/MSRL/MCR modules
+metrics:
+- minimum LUT-6 count under level constraint
+- improvement rate relative to compress2rs
+- runtime in minutes and balance factor Fb
+- adaptation performance on unseen circuits
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- runtime comparisons depend strongly on hardware and training setup; the paper argues pure runtime minimization is not the main objective
+- method requires pretrained DeepGate2/Mamba representations and RL/meta-learning training infrastructure

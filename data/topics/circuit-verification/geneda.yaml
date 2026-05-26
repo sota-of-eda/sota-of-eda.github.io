@@ -1,0 +1,30 @@
+baseline_id: geneda
+short_name: GenEDA
+display_name: 'GenEDA: Towards Generative Netlist Functional Reasoning via Cross-Modal Circuit Encoder-Decoder Alignment'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'GenEDA: Towards Generative Netlist Functional Reasoning via Cross-Modal Circuit Encoder-Decoder Alignment'
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{geneda2025,\n  author = {Wenji Fang and Jing Wang and Yao Lu and Shang Liu and Zhiyao Xie},\n  title = {GenEDA: Towards Generative Netlist Functional Reasoning via Cross-Modal Circuit Encoder-Decoder Alignment},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--9}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240762
+links:
+  pdf_url: https://arxiv.org/abs/2504.09485
+compare_when:
+- Evaluating circuit foundation models for netlist reasoning
+- Comparing LLM-based approaches for RTL and netlist generation
+- Benchmarking cross-modal circuit-text alignment frameworks
+benchmark_scope:
+- Netlist-to-functional-description generation
+- Netlist-to-RTL code reconstruction
+- Circuit benchmark datasets
+metrics:
+- BLEU, ROUGE, embedding similarity
+- Syntax success rate
+- Functional pass rate (69% with GenEDA+DeepSeek-V3 vs 16% baseline)
+reproducibility: paper_only
+caveats:
+- First framework of its kind; limited comparison baselines
+- Alignment strategy requires training per LLM target
+- Dataset scale limited; generalizability to large industrial netlists unclear

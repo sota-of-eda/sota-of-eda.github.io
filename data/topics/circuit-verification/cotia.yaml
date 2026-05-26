@@ -1,0 +1,29 @@
+baseline_id: cotia
+short_name: COTIA
+display_name: 'COTIA: Concolic Testing with Intelligent Agent'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'COTIA: Concolic Testing with Intelligent Agent'
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{cotia2025,\n  author = {Anonymous Authors},\n  title = {COTIA: Concolic Testing with Intelligent Agent},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240634
+compare_when:
+- Evaluating concolic testing frameworks for RTL verification
+- Comparing LLM-assisted hardware verification methodologies
+- Benchmarking path exploration strategies in hardware testing
+benchmark_scope:
+- b11 benchmark
+- b12 benchmark
+- RTL designs (ITC99 benchmarks)
+metrics:
+- Branch coverage
+- Execution time (95% reduction in b11)
+- Memory usage (71% reduction in b12)
+reproducibility: unknown
+caveats:
+- Author metadata not yet indexed on DBLP; metadata search incomplete
+- LLM-based agent framework may have reproducibility challenges
+- Limited benchmark set; generalizability to large industrial designs unclear
+links: {}

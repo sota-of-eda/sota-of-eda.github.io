@@ -1,0 +1,27 @@
+baseline_id: chip-map
+short_name: CHIP-MAP
+display_name: 'CHIP-MAP: A Collaborative Optimization Framework for Macro Placement Using Large Language Models'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'CHIP-MAP: A Collaborative Optimization Framework for Macro Placement Using Large Language Models'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{du2026chipmap,\n  title={CHIP-MAP: A Collaborative Optimization Framework for Macro Placement Using Large Language Models},\n  author={Du, Yiming and Yan, Renye and Yang, Yunfan and Qu, Frank and Tan, Jiajun and Zheng, Zhiyu and Gan, Yiming and Liang, Ling and Wang, Zongwei and Cai, Yimao},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/579.pdf
+compare_when:
+- evaluating macro-placement frameworks that optimize final PPA and legality through OpenROAD or commercial physical design flows
+- comparing LLM-assisted or multi-agent macro placement against analytical, simulated-annealing, and learning-based macro placers
+benchmark_scope:
+- BlackParrot, Ariane136, SweRV wrapper, Chameleon, and Microwatt public macro-placement benchmarks
+- OpenROAD flow evaluation after macro placement using RePlace, TritonCTS, and TritonRoute
+metrics:
+- TNS and WNS after downstream implementation
+- congestion, power, wirelength, area, DRC count, NVP, and macro-placement runtime
+- minimum core area under area-compression stress tests
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- results depend on LLM backend choice and prompt/agent implementation details; paper reports GPT-4o and DeepSeek-R1 variants
+- proposed topic is macro-placement under placement; human taxonomy review should decide whether to merge it into broader global-placement coverage

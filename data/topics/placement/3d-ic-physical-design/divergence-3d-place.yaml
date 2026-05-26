@@ -1,0 +1,25 @@
+baseline_id: divergence-3d-place
+short_name: Divergence-3D-Place
+display_name: Ultrafast Density Gradient Accumulation in 3D Analytical Placement with Divergence Theorem
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Ultrafast Density Gradient Accumulation in 3D Analytical Placement with Divergence Theorem
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240670
+  bibtex: "@inproceedings{liao2025ultrafast,\n  author = {Peiyu Liao and Yuxuan Zhao and Siting Liu and Bei Yu},\n  title = {Ultrafast Density Gradient Accumulation in {3D} Analytical Placement\nwith Divergence Theorem},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240670},\n  publisher = {IEEE}\n}\n"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240670
+compare_when:
+- comparing GPU-accelerated 3D analytical placement runtime and wirelength quality
+- evaluating density gradient computation efficiency in placement optimization
+benchmark_scope:
+- 3D IC designs with multiple tiers
+metrics:
+- runtime speedup (3.3x CPU, 4.0x GPU)
+- wirelength
+- density gradient computation time
+reproducibility: unknown
+caveats:
+- new ICCAD 2025 paper with no public code repository identified yet

@@ -1,0 +1,22 @@
+baseline_id: mmpack
+short_name: MMPack
+display_name: 'MMPack: Multi-Mask Co-Design for Ultra-Large Wafer-Scale Package Integration'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'MMPack: Multi-Mask Co-Design for Ultra-Large Wafer-Scale Package Integration'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240755
+  bibtex: "@inproceedings{li2025mmpack,\n  title={MMPack: Multi-Mask Co-Design for Ultra-Large Wafer-Scale Package Integration},\n  author={Li, Shanyi and Zhuang, Zhen and Liang, Siyuan and Yu, Bei and Ho, Tsung-Yi},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240755
+compare_when:
+- Comparing chiplet/package co-design floorplanning frameworks with multi-die integration
+benchmark_scope:
+- Synthetic chiplet-package co-design benchmarks
+metrics:
+- Runtime reduction (95%+ vs MCMP)
+reproducibility: unknown
+caveats:
+- Evaluated on synthetic benchmarks only; real chiplet designs may have additional constraints

@@ -1,0 +1,30 @@
+baseline_id: offline-rl-detailed-routing
+short_name: Offline-RL DR
+display_name: Offline RL for Detailed Routing Convergence
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Accelerating Detailed Routing Convergence through Offline Reinforcement Learning
+  venue: DATE
+  year: 2026
+  bibtex: "@article{DBLP:journals/corr/abs-2512-03594,\n  author       = {Afsara Khan and\n                  Austin Rovinski},\n  title        = {Accelerating Detailed Routing Convergence through Offline Reinforcement\n                  Learning},\n  journal      = {CoRR},\n  volume       = {abs/2512.03594},\n  year         = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2512.03594},\n  doi          = {10.48550/ARXIV.2512.03594},\n  eprinttype   = {arXiv},\n  eprint       = {2512.03594},\n  timestamp    = {Fri, 23 Jan 2026 09:38:39 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2512-03594.bib},\n  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}"
+links:
+  paper_url: https://arxiv.org/abs/2512.03594
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/665.pdf
+  arxiv_url: https://arxiv.org/abs/2512.03594
+compare_when:
+- evaluating learned or adaptive cost-weight scheduling for detailed-router rip-up-and-reroute convergence
+- comparing detailed-routing runtime and DRV convergence on ISPD18/ISPD19-style detailed-routing benchmarks
+benchmark_scope:
+- OpenROAD-style detailed router experiments using generated training trajectories
+- ISPD19 detailed-routing benchmarks as unseen designs and ISPD18 benchmarks in training/data generation context
+metrics:
+- detailed-routing runtime speedup
+- number of routing iterations to convergence
+- final design rule violation count
+- wirelength impact
+reproducibility: paper_only
+caveats:
+- the paper states an intent to open-source training and inference code, but no repository was verified during this pass
+- the verified BibTeX is the DBLP/arXiv record rather than formal DATE/IEEE proceedings metadata; no formal DATE DOI was found in Crossref/DBLP/IEEE web search during this pass
+- method is demonstrated inside an OpenROAD-style detailed-routing setup, so results may depend on router configuration and learned training distribution

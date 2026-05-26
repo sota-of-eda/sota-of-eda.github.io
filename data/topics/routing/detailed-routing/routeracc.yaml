@@ -1,0 +1,28 @@
+baseline_id: routeracc
+short_name: RouterAcc
+display_name: 'RouterAcc: FPGA Acceleration for VLSI Detailed Router via Hierarchical Storage Mapping'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'RouterAcc: FPGA Acceleration for VLSI Detailed Router via Hierarchical Storage Mapping'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{guo2026routeracc,\n  title={RouterAcc: FPGA Acceleration for VLSI Detailed Router via Hierarchical Storage Mapping},\n  author={Guo, Ruiyuan and Zhang, Zexu and Liu, Chang and Tang, Da and Shen, Weiqi and Lu, Haodong and Bai, Xiqiong and Wang, Kun and Chen, Jianli and Yu, Jun},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/72.pdf
+compare_when:
+- evaluating hardware acceleration for VLSI detailed routing or maze-routing kernels
+- comparing detailed-router runtime and quality on ISPD18 detailed-routing benchmarks with TritonRoute/Dr.CU-style baselines
+benchmark_scope:
+- ISPD18 detailed-routing benchmarks
+- FPGA-accelerated TritonRoute and software-hardware co-optimized routing variants compared with TritonRoute, Dr.CU 2.0, and prior FPGA acceleration
+metrics:
+- detailed-routing runtime speedup
+- ISPD18 routing quality score
+- wirelength/via/DRC-related routing quality degradation
+- FPGA acceleration efficiency versus 8-thread CPU baseline
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- no project repository was verified; GitHub search only returned an unrelated RouterAccess page
+- quality/runtime depend on FPGA platform, CPU-thread baseline, and the authors software-hardware co-optimization setup

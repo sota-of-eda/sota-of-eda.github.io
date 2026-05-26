@@ -1,0 +1,29 @@
+baseline_id: hardware-trojan-attention
+short_name: RTL Trojan Attention
+display_name: Explainable Hardware Trojan Detection at RTL using Attention Mechanism
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Explainable Hardware Trojan Detection at RTL using Attention Mechanism
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{tian2026explainabletrojan,\n  title={Explainable Hardware Trojan Detection at RTL using Attention Mechanism},\n  author={Tian, Siyu and Hu, Wei and Wu, Lingjuan and You, Tianle and Su, Hao and Zhu, Jiacheng},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1148.pdf
+compare_when:
+- evaluating pre-silicon RTL hardware Trojan detection without a golden reference
+- comparing explainable AI-based hardware security verification methods on Trust-Hub/OpenCores Trojan benchmarks
+benchmark_scope:
+- 63 Trust-Hub Trojan benchmarks and 147 Trojan-free OpenCores design cores represented as RTL AST path-contexts
+- 20 independently repeated experiments with 4-fold cross-validation and 3:1 train/test split
+- comparison against decision-tree, GNN/GCN/GAT/GAN, GPT-3.5, and LUT/RTL/gate-level Trojan-detection methods
+metrics:
+- TPR, TNR, precision, accuracy, and F1-score
+- per-IP detection time
+- automated feature extraction, golden-reference-free operation, and explainability support
+- attention-ranked path-context explanation quality for Trojan trigger logic
+reproducibility: paper_only
+caveats:
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- evaluation is benchmark-based and may not cover all real-world third-party IP obfuscation styles
+- new proposed hardware-security-verification topic should be reconciled with existing broad circuit-verification entries such as SecIC3 before Workflow C

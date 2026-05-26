@@ -1,0 +1,14 @@
+topic_id: package-routing
+parent_id: routing
+short_name: Package Route
+display_name: Package / Interposer Routing
+aliases:
+- Package / Interposer Routing
+- Package Route
+- package routing
+description: Routing for advanced packaging substrates, silicon interposers, and fan-out redistribution layers, including escape routing and multi-chip routing.
+review_triggers:
+- paper claims package or interposer routing improvement
+- paper addresses escape routing or RDL routing
+- paper proposes routing for chiplet or 2.5D/3D integration
+baselines: []

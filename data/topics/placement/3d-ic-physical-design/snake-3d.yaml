@@ -1,0 +1,27 @@
+baseline_id: snake-3d
+short_name: Snake-3D
+display_name: 'Snake-3D: Differentiable Learning for Cross-Tier Logic Path Snaking Optimization in 3D ICs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Snake-3D: Differentiable Learning for Cross-Tier Logic Path Snaking Optimization in 3D ICs'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240802
+  bibtex: "@inproceedings{Huang_2025, title={Snake-3D: Differentiable Learning for Cross-Tier Logic Path Snaking Optimization in 3D ICs}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240802}, DOI={10.1109/iccad66269.2025.11240802}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Huang, Yen-Hsiang and Lim, Sung Kyu}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240802
+compare_when:
+- comparing 3D IC partitioning methods
+- evaluating snaking-aware 3D placement
+benchmark_scope:
+- 3D IC benchmarks
+metrics:
+- bond pad reduction (29%)
+- snaking reduction (34% avg, 20% max)
+- WNS improvement (17%)
+- TNS improvement (42%)
+- runtime (7.4x vs GNN)
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published

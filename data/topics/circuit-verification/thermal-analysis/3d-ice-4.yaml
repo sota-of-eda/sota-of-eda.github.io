@@ -1,0 +1,32 @@
+baseline_id: 3d-ice-4
+short_name: 3D-ICE 4.0
+display_name: '3D-ICE 4.0: Accurate and efficient thermal modeling for 2.5D/3D heterogeneous chiplet systems'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: '3D-ICE 4.0: Accurate and efficient thermal modeling for 2.5D/3D heterogeneous chiplet systems'
+  venue: DATE
+  year: 2026
+  doi: 10.48550/ARXIV.2512.05823
+  bibtex: "@misc{zhu20253dice40accurateefficient,\n  title={3D-ICE 4.0: Accurate and efficient thermal modeling for 2.5D/3D heterogeneous chiplet systems},\n  author={Zhu, Kai and Huang, Darong and Costero, Luis and Atienza, David},\n  year={2025},\n  eprint={2512.05823},\n  archivePrefix={arXiv},\n  primaryClass={eess.SY},\n  url={https://arxiv.org/abs/2512.05823}\n}"
+links:
+  paper_url: https://arxiv.org/abs/2512.05823
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/740.pdf
+  arxiv_url: https://arxiv.org/abs/2512.05823
+compare_when:
+- evaluating compact thermal models or thermal simulators for 2.5D/3D heterogeneous chiplet systems
+- comparing accuracy-runtime tradeoffs for layout-aware anisotropic thermal modeling and non-uniform grid generation
+benchmark_scope:
+- PACT validation example with 256x256 grids and large grid-count parallel scaling experiments
+- 2.5D chiplet system with detailed material distribution imported from GDSII and COMSOL steady-state/transient references
+- 100 um die with gate-level power map for temperature-aware non-uniform grid refinement
+metrics:
+- runtime and parallel speedup
+- peak memory usage
+- RMSE and absolute temperature error versus COMSOL or PACT
+- grid-count reduction for target thermal error
+reproducibility: paper_only
+caveats:
+- formal DATE/IEEE DOI was unresolved during this pass; BibTeX uses the verified arXiv metadata while DATE PDF is recorded as the proceedings source
+- paper states an open-source repository, but GitHub verification timed out during this pass, so repo_url is not listed as verified
+- proposed topic inherits provisional thermal-analysis parent; human taxonomy review should decide whether thermal analysis belongs under circuit-verification or a broader signoff/manufacturability topic

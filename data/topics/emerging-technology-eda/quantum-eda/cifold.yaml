@@ -1,0 +1,26 @@
+baseline_id: cifold
+short_name: CiFOLD
+display_name: 'Circuit Folding: Scalable and Graph-Based Circuit Cutting via Modular Structure Exploitation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Circuit Folding: Scalable and Graph-Based Circuit Cutting via Modular Structure Exploitation'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240933
+  bibtex: "@inproceedings{kan2025cifold,\n  author = {Shuwen Kan and Yanni Li and Hao Wang and Sara Mouradian and Ying\nMao},\n  title = {Circuit Folding: Scalable and Graph-Based Circuit Cutting via Modular\nStructure Exploitation},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240933},\n  publisher = {IEEE}\n}\n"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240933
+compare_when:
+- comparing circuit cutting quality (number of cuts, sampling overhead) against prior methods
+- evaluating graph-based modular structure exploitation for quantum circuit partitioning
+benchmark_scope:
+- complex quantum circuits
+metrics:
+- 'cut reduction: 31.6% average'
+- 'sampling overhead reduction: 3.55e9'
+- 'runtime: below 1-second for complex circuits'
+reproducibility: unknown
+caveats:
+- exploits qubit-level structural repetition; effectiveness depends on circuit modularity
+- no public code identified yet

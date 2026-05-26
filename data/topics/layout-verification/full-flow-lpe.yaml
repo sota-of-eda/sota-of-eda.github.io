@@ -1,0 +1,29 @@
+baseline_id: full-flow-lpe
+short_name: Full-flow LPE Methodology
+display_name: A Complete Modeling Methodology for Full-chip Parasitic Extraction
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: A Complete Modeling Methodology for Full-chip Parasitic Extraction
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{fulllpe2025,\n  author = {Yipei Xu and Zhisheng Zeng and Qing He},\n  title = {A Complete Modeling Methodology for Full-chip Parasitic Extraction},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/ICCAD66269.2025.11240982}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240982
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240982
+compare_when:
+- Evaluating full-chip parasitic extraction methodologies
+- Comparing pattern-matching and FDM approaches for RC extraction
+- Benchmarking geometric distribution methods for parasitic modeling
+benchmark_scope:
+- Full-chip parasitic extraction
+- Ring structure geometric distribution
+- Aggressor identification (STR tree + event-based sweeping lines)
+metrics:
+- Extraction accuracy
+- Computational efficiency for full-chip LPE
+reproducibility: unknown
+caveats:
+- Methodology paper; quantitative comparisons with commercial tools may be limited
+- Ring structure patterns may not apply to all layout styles
+- Scalability to very large designs (100M+ gates) unclear

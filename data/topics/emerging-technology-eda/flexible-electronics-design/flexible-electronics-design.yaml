@@ -1,0 +1,13 @@
+topic_id: flexible-electronics-design
+parent_id: emerging-technology-eda
+short_name: Flexible Elec
+display_name: Flexible Electronics Design
+aliases:
+- Flexible Electronics Design
+- Flexible Elec
+- flexible electronics design
+description: EDA for flexible and printed electronics, addressing mechanical-compliance-aware physical design and process-specific design rules.
+review_triggers:
+- paper addresses design automation for flexible or printed electronics
+- paper claims physical design under bending or stretching constraints
+baselines: []

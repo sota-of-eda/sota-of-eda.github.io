@@ -1,0 +1,17 @@
+topic_id: tcad-device-optimization
+parent_id: predictive-pdk
+short_name: TCAD Device Optimization
+display_name: TCAD Device Optimization
+aliases:
+- TCAD code generation
+- TCAD agents
+- device optimization for DTCO
+- automated TCAD simulation
+- TCAD Device Optimization
+- tcad device optimization
+description: Methods and tools that automate TCAD script generation, device simulation setup, semiconductor-device optimization, or technology-side design exploration for DTCO and predictive technology modeling.
+review_triggers:
+- paper proposes TCAD script/code generation, simulation automation, or device-optimization agents
+- experiments use TCAD tools, device structures, IRDS targets, process/device parameters, or DTCO objectives
+- metrics include valid simulation rate, device metrics, optimization iterations, runtime, or expert-effort reduction
+baselines: []

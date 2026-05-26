@@ -1,0 +1,25 @@
+baseline_id: approxgnn
+short_name: ApproxGNN
+display_name: 'ApproxGNN: A Pretrained GNN for Parameter Prediction in Design Space Exploration for Approximate Computing'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ApproxGNN: A Pretrained GNN for Parameter Prediction in Design Space Exploration for Approximate Computing'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240776
+  bibtex: "@inproceedings{vlcek2025approxgnn,\n  author = {Ond\\v{r}ej Vl\\v{c}ek and Vojt\\v{e}ch Mr\\'{a}zek},\n  title = {{ApproxGNN}: A Pretrained {GNN} for Parameter Prediction in Design\nSpace Exploration for Approximate Computing},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240776},\n  publisher = {IEEE}\n}\n"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240776
+compare_when:
+- comparing DSE parameter prediction accuracy for approximate computing against conventional methods
+- evaluating pre-trained GNN without application-specific retraining
+benchmark_scope:
+- approximate computing design space exploration
+metrics:
+- 'MSE improvement: 50% vs conventional methods'
+- 'prediction accuracy: 30% better than statistical ML (no fine-tuning), 54% better with fine-tuning'
+reproducibility: unknown
+caveats:
+- pretrained GNN for approximate computing DSE; no public model or code identified
+- generalization to non-approximate HLS applications not demonstrated

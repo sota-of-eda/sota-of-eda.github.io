@@ -1,0 +1,25 @@
+baseline_id: beol-thermal-model
+short_name: BEOL-Thermal-Model
+display_name: High-Resolution Full-Chip Thermal Resistance Extraction of BEOL Interconnects in 3-D ICs Considering Detailed Via Connectivity
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: High-Resolution Full-Chip Thermal Resistance Extraction of BEOL Interconnects in 3-D ICs Considering Detailed Via Connectivity
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11241005
+  bibtex: "@inproceedings{zhu2025beolthermal,\n  author = {Tianxiang Zhu and Qipan Wang and Yibo Lin and Runsheng Wang},\n  title = {High-Resolution Full-Chip Thermal Resistance Extraction of {BEOL}\nInterconnects in 3-{D} {ICs} Considering Detailed Via Connectivity},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11241005},\n  publisher = {IEEE}\n}\n"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11241005
+compare_when:
+- comparing full-chip thermal resistance extraction accuracy against previous work
+- evaluating temperature prediction error with detailed via connectivity
+benchmark_scope:
+- 3D ICs with BEOL interconnects
+metrics:
+- 'accuracy improvement: 3.4x over previous work'
+- 'maximum temperature absolute percentage error: reduced from 5.2% to 1.8%'
+reproducibility: unknown
+caveats:
+- high-resolution extraction considering detailed via connectivity; no public tool release identified
+- accuracy improvement with negligible time overhead claimed but not quantified

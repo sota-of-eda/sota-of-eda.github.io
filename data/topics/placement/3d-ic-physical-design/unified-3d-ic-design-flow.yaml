@@ -1,0 +1,26 @@
+baseline_id: unified-3d-ic-design-flow
+short_name: Unified 3D IC Flow
+display_name: A Unified Design Flow for Homogeneous and Heterogeneous 3D Integration with Fine-Pitch Hybrid Bonding
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: A Unified Design Flow for Homogeneous and Heterogeneous 3D Integration with Fine-Pitch Hybrid Bonding
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240974
+  bibtex: "@inproceedings{Kim_2025, title={A Unified Design Flow for Homogeneous and Heterogeneous 3D Integration with Fine-Pitch Hybrid Bonding}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240974}, DOI={10.1109/iccad66269.2025.11240974}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Kim, Gyumin and Park, Heechun}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240974
+compare_when:
+- comparing 3D IC physical design flows
+- evaluating hybrid bonding-aware P&R methodologies
+benchmark_scope:
+- 3D IC benchmarks with fine-pitch hybrid bonding
+metrics:
+- 3D via count reduction (62%)
+- WNS improvement (62%)
+- TNS improvement (74%)
+- 3D via overlap elimination
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published

@@ -1,0 +1,25 @@
+baseline_id: cristal
+short_name: CRISTAL
+display_name: Revisit Choice Network for Synthesis and Technology Mapping
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Revisit Choice Network for Synthesis and Technology Mapping
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240920
+  bibtex: "@inproceedings{chen2025cristal,\n  title={Revisit Choice Network for Synthesis and Technology Mapping},\n  author={Chen, Chen and Yin, Jiaqi and Yu, Cunxi},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240920
+compare_when:
+- Comparing equality saturation / e-graph based logic synthesis and technology mapping approaches
+benchmark_scope:
+- IWLS2005 benchmarks
+- EPFL benchmarks
+- ISCAS89 benchmarks
+metrics:
+- Area reduction (3.85%)
+- Delay reduction (8.35%)
+reproducibility: unknown
+caveats:
+- Compared against ABC's dch command; results depend on specific e-graph construction parameters

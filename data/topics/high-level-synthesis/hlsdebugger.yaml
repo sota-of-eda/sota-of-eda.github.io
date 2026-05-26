@@ -1,0 +1,29 @@
+baseline_id: hlsdebugger
+short_name: HLSDebugger
+display_name: 'HLSDebugger: Identification and Correction of Logic Bugs in HLS Code with LLM Solutions'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'HLSDebugger: Identification and Correction of Logic Bugs in HLS Code with LLM Solutions'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240664
+  bibtex: "@inproceedings{Wang_2025, title={HLSDebugger: Identification and Correction of Logic Bugs in HLS Code with LLM Solutions}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240664}, DOI={10.1109/iccad66269.2025.11240664}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Wang, Jing and Liu, Shang and Lu, Yao and Xie, Zhiyao}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240664
+  pdf_url: https://arxiv.org/pdf/2507.21485.pdf
+  repo_url: https://github.com/hkust-zhiyao/HLSDebugger
+compare_when:
+- comparing LLM-based HLS debugging tools
+- evaluating automated HLS logic bug detection and correction
+benchmark_scope:
+- 300K labeled HLS logic bug dataset
+- HLS benchmarks from Chrysalis-HLS
+metrics:
+- bug identification accuracy
+- bug correction accuracy (3x over GPT-4)
+- multi-task performance
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published
+- first fine-tuned LLM for HLS debugging

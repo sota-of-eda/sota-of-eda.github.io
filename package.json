@@ -7,9 +7,11 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "validate": "node scripts/validate-registry.mjs",
+    "check:siblings": "node scripts/check-sibling-count.mjs",
     "build:registry": "node scripts/build-registry.mjs",
     "build:atom": "node scripts/generate-atom.mjs",
-    "build": "npm run validate && npm run build:registry && npm run build:atom && vite build",
+    "build:sitemap": "node scripts/generate-sitemap.mjs",
+    "build": "npm run validate && npm run build:registry && npm run build:atom && npm run build:sitemap && vite build",
     "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {

@@ -1,0 +1,28 @@
+baseline_id: clay
+short_name: Clay
+display_name: 'Clay: High-level ASIP Framework for Flexible Microarchitecture-Aware Instruction Customization'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Clay: High-level ASIP Framework for Flexible Microarchitecture-Aware Instruction Customization'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240669
+  bibtex: '@inproceedings{Peng_2025, title={Clay: High-level ASIP Framework for Flexible Microarchitecture-Aware Instruction Customization}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240669}, DOI={10.1109/iccad66269.2025.11240669}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Peng, Weijie and Xiao, Youwei and Zou, Yuyang and Luo, Zizhang and Liang, Yun}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240669
+compare_when:
+- comparing ASIP design frameworks for RISC-V custom instruction extension
+- evaluating ILP-based scheduling for microarchitecture-aware instruction synthesis
+benchmark_scope:
+- RISC-V based ASIP designs
+- custom instruction benchmarks with arbitrary control flow
+metrics:
+- synthesis quality of custom instructions
+- ILP scheduling optimality
+- RISC-V ISA extension coverage
+reproducibility: unknown
+caveats:
+- Open-source but framework completeness not fully verified
+- ILP-based scheduling may not scale to very complex instruction sets
+- Performance compared against limited set of existing ASIP frameworks

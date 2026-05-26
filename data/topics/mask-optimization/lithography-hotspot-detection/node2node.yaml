@@ -1,0 +1,28 @@
+baseline_id: node2node
+short_name: Node2Node
+display_name: 'Node2Node: Node Adaptation with Transformer for Cross-Node Hotspot Detection'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Node2Node: Node Adaptation with Transformer for Cross-Node Hotspot Detection'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{xu2026node2node,\n  title={Node2Node: Node Adaptation with Transformer for Cross-Node Hotspot Detection},\n  author={Xu, Wenbo and Chen, Silin and Huang, Yibo and Zhang, Xinyun and Wang, Zixiao and Yu, Bei and Zou, Ningmu},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/262.pdf
+compare_when:
+- evaluating lithography hotspot detectors under cross-process-node transfer or few-label target-node adaptation
+- comparing hotspot-detection accuracy and false alarms on ICCAD 2012 and ICCAD 2016 benchmark-derived datasets
+benchmark_scope:
+- ICCAD 2012 32nm and 28nm hotspot datasets and ICCAD 2016 7nm hotspot datasets
+- six cross-node transfer settings among 32nm, 28nm, and 7nm nodes
+- supervised-method comparison on individual 32nm, 28nm, and 7nm nodes with limited target labels
+metrics:
+- hotspot detection accuracy percentage
+- false alarm percentage or false-alarm count
+- average accuracy and average false alarm across cross-node transfers
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- the method uses a small amount of labeled target-node data, so comparisons against fully supervised target-node methods require care
+- source/target data preprocessing and augmentation details may affect transfer fairness across process nodes

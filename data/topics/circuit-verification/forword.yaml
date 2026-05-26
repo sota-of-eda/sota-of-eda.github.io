@@ -1,0 +1,32 @@
+baseline_id: forword
+short_name: FORWORD
+display_name: 'FORWORD: Accelerating Formal Datapath Verification via Word-Level Sweeping'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'FORWORD: Accelerating Formal Datapath Verification via Word-Level Sweeping'
+  venue: DATE
+  year: 2026
+  doi: 10.48550/ARXIV.2507.02008
+  bibtex: "@misc{yang2025forwordacceleratingformaldatapath,\n  title={FORWORD: Accelerating Formal Datapath Verification via Word-Level Sweeping},\n  author={Yang, Ziyi and Hu, Guangyu and Zhou, Xiaofeng and Miao, Mingkai and Yu, Changyuan and Zhang, Wei and Zhang, Hongce},\n  year={2025},\n  eprint={2507.02008},\n  archivePrefix={arXiv},\n  primaryClass={cs.LO},\n  url={https://arxiv.org/abs/2507.02008}\n}"
+links:
+  paper_url: https://arxiv.org/abs/2507.02008
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/55.pdf
+  arxiv_url: https://arxiv.org/abs/2507.02008
+  project_url: https://figshare.com/s/e9ce05892872001f42f9
+compare_when:
+- evaluating formal datapath verification or equivalence checking for word-level arithmetic and memory-heavy designs
+- comparing SAT sweeping, SMT, and hybrid word-level equivalence discovery on BTOR2 or similar word-level circuit models
+benchmark_scope:
+- 511 conditional and unconditional equivalence-checking cases spanning arithmetic datapaths, cryptographic engines, HLS-generated designs, and ILA/Piccolo cases
+- representative AES, HLS SEC, modified multiplier/divider, SPI, and ILA Piccolo benchmarks under one-hour timeouts
+metrics:
+- runtime speedup over fastest baseline
+- number of solver calls
+- verified result within timeout
+- AST node size and maximum bit-width for benchmark characterization
+reproducibility: artifact_available
+caveats:
+- formal DATE/IEEE DOI was unresolved during this pass; BibTeX uses verified arXiv metadata while DATE PDF is recorded as the proceedings source
+- paper-stated GitHub benchmark URL timed out during this pass; the figshare complete-results link was verified and recorded as project_url
+- existing circuit-verification topic is broad; a future formal-datapath-verification child topic may be more precise

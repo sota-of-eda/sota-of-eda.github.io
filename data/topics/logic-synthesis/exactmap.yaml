@@ -1,0 +1,28 @@
+baseline_id: exactmap
+short_name: ExactMap
+display_name: 'ExactMap: Enhancing Delay Optimization in Parallel ASIC Technology Mapping'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ExactMap: Enhancing Delay Optimization in Parallel ASIC Technology Mapping'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240698
+  bibtex: "@inproceedings{xie2025exactmap,\n  author = {Zhenxuan Xie and Lixin Liu and Tianji Liu and Evangeline F. Y. Young},\n  title = {ExactMap: Enhancing Delay Optimization in Parallel ASIC Technology Mapping},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240698},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240698
+compare_when:
+- comparing GPU-accelerated ASIC technology mapping tools
+- evaluating delay-optimized logic synthesis flows
+- benchmarking against ABC and other open-source synthesis tools
+benchmark_scope:
+- standard ASIC cell libraries
+- EPFL and ISCAS benchmark circuits
+metrics:
+- delay reduction (avg 32% vs ABC)
+- area penalty (~3%)
+- runtime speedup (65.33x on GPU)
+reproducibility: unknown
+caveats:
+- area penalty (~3%) may be significant for area-constrained designs
+- configuration-level parallelism may not scale to arbitrarily large designs

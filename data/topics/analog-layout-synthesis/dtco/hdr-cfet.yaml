@@ -1,0 +1,24 @@
+baseline_id: hdr-cfet
+short_name: hDR CFET
+display_name: Half-Height Double-Row CFET Standard Cells for Area Optimized Placement in A7 CMOS Node
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Half-Height Double-Row CFET Standard Cells for Area Optimized Placement in A7 CMOS Node
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240689
+  bibtex: "@inproceedings{kukner2025hdr,\n  title={Half-Height Double-Row CFET Standard Cells for Area Optimized Placement in A7 CMOS Node},\n  author={K{\\\"u}kner, Halil and Lin, Ji-Yung and Yang, Sheng and Verschueren, Lynn and B{\\\"o}mmels, J{\\\"u}rgen and Farokhnejad, Anita and Van de Put, Maarten and Zografos, Odysseas and Horiguchi, Naoto and Hellings, Geert and Bardon, Marie Garcia and Ryckaert, Julien},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240689
+compare_when:
+- Comparing CFET/nanosheet standard cell designs for advanced technology nodes
+benchmark_scope:
+- ARM Cortex-M0 32-bit core at 90% utilization
+- SRAM cell area comparisons vs A14 nanosheet
+metrics:
+- Cell area reduction
+- Block-level area scaling
+reproducibility: paper_only
+caveats:
+- imec industry research; PDK details are proprietary; experimental results depend on specific CFET process assumptions

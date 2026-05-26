@@ -1,0 +1,26 @@
+baseline_id: harmonic-rl-buffer
+short_name: Harmonic-RL-Buffer
+display_name: Achieving Simultaneous Buffering and Steiner Tree Synthesis via Harmonic Based Reinforcement Learning
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Achieving Simultaneous Buffering and Steiner Tree Synthesis via Harmonic Based Reinforcement Learning
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240816
+  bibtex: "@inproceedings{chen2025achieving,\n  author = {Lin Chen and Yuxuan Li and Hu Ding},\n  title = {Achieving Simultaneous Buffering and Steiner Tree Synthesis via Harmonic Based Reinforcement Learning},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240816},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240816
+compare_when:
+- comparing RL-based buffering and routing methods for physical design
+- evaluating simultaneous Steiner tree construction with buffer insertion
+benchmark_scope:
+- synthetic routing benchmarks
+- physical design routing benchmarks with buffer requirements
+metrics:
+- wirelength reduction
+- buffer count
+- timing improvement
+reproducibility: unknown
+caveats:
+- first RL-based approach for simultaneous buffering and Steiner tree; may not yet have mature open-source baselines for comparison

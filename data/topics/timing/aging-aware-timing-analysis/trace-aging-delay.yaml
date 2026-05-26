@@ -1,0 +1,29 @@
+baseline_id: trace-aging-delay
+short_name: TRACE
+display_name: 'TRACE: A Transferable Framework for Aging-aware Cell Delay Estimation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'TRACE: A Transferable Framework for Aging-aware Cell Delay Estimation'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{jin2026trace,\n  title={TRACE: A Transferable Framework for Aging-aware Cell Delay Estimation},\n  author={Jin, Muyan and Yang, Chao and Liu, Yunlin and Cai, Zejian and Ren, Pengpeng and Ji, Zhigang},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1142.pdf
+compare_when:
+- evaluating aging-aware standard-cell delay prediction for timing analysis
+- comparing transfer-learning or GNN-based delay models across cells, process corners, driving strengths, and aging conditions
+benchmark_scope:
+- advanced-node standard cells with BTI/HCI aging conditions and multiple process/driving/stress scenarios
+- few-shot transfer learning using 400 simulation samples per new task, compared with H-GAT retraining using 100000 samples
+- circuit-level STA comparison on designs from 23K to over 200K gates for WNS/TNS after 10 years of aging
+metrics:
+- root mean squared percentage error and R2 for gate-level delay prediction
+- WNS and TNS agreement with conventional aging-aware STA
+- runtime versus SPICE/STA and AI baselines
+- training-data requirement for transfer to new cells or conditions
+reproducibility: paper_only
+caveats:
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- technology/library details are partly industrial and may not be fully reproducible
+- topic parent is provisional and may be merged into a broader timing/signoff analysis taxonomy

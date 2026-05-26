@@ -1,0 +1,22 @@
+baseline_id: larbe
+short_name: LARBE
+display_name: A Graph-Based Deep Reinforcement Learning Framework for Quantum Circuit Mapping with Look-Ahead Rewards and Biased Exploration
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: A Graph-Based Deep Reinforcement Learning Framework for Quantum Circuit Mapping with Look-Ahead Rewards and Biased Exploration
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240780
+  bibtex: "@inproceedings{zhao2025larbe,\n  title={A Graph-Based Deep Reinforcement Learning Framework for Quantum Circuit Mapping with Look-Ahead Rewards and Biased Exploration},\n  author={Zhao, Yueran and Li, Kaiqi and Guo, Ziying and Zhang, Jialin},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240780
+compare_when:
+- Comparing quantum circuit mapping approaches that use RL/GNN for qubit routing on IBM topologies
+benchmark_scope:
+- IBM quantum hardware topology benchmarks
+metrics:
+- SWAP gate count reduction
+reproducibility: unknown
+caveats:
+- Very recent ICCAD 2025 paper; results not yet independently reproduced

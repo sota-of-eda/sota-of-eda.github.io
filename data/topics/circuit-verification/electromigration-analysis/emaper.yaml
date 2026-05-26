@@ -1,0 +1,28 @@
+baseline_id: emaper
+short_name: EMaper
+display_name: 'EMaper: Cross-level Electromigration Aware Placement and Routing EDA Workflow for Interconnects Hotspot Prediction and Mitigation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'EMaper: Cross-level Electromigration Aware Placement and Routing EDA Workflow for Interconnects Hotspot Prediction and Mitigation'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{ye2026emaper,\n  title={EMaper: Cross-level Electromigration Aware Placement and Routing EDA Workflow for Interconnects Hotspot Prediction and Mitigation},\n  author={Ye, Chenglin and Lu, Yuze and Liu, Yizhan and Zhang, Ligong and Xu, Jinghan and Liu, Fei and Lin, Yibo and Zhou, Zheng and Liu, Xiaoyan},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/498.pdf
+compare_when:
+- evaluating EM-aware physical design flows that integrate reliability prediction with placement and routing
+- comparing interconnect EM violation mitigation under mission-profile-dependent temperature and current constraints
+benchmark_scope:
+- ISPD 2018 benchmarks with NanGate 15 nm standard-cell library-derived current and power data
+- placement and routing comparisons using DREAMPlace+CUGR baseline versus EMaper under 300 K, 350 K, and 360 K conditions
+metrics:
+- number of EM violations
+- wirelength and via-count score overhead
+- temperature and IR-drop evolution under EM aging
+- violation reduction percentage across operating temperatures
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- evaluation couples custom physical EM modeling, thermal simulation, and modified placement/routing; reproduction may require technology-specific EM techfile assumptions and current/power extraction
+- the central topic is EM reliability/signoff co-optimization; placement/routing results should not be interpreted as generic global-placement or global-routing SOTA

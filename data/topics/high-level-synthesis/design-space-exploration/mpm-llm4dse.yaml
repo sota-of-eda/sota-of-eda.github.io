@@ -1,0 +1,32 @@
+baseline_id: mpm-llm4dse
+short_name: MPM-LLM4DSE
+display_name: 'MPM-LLM4DSE: Reaching the Pareto Frontier in HLS with Multimodal Learning and LLM-Driven Exploration'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'MPM-LLM4DSE: Reaching the Pareto Frontier in HLS with Multimodal Learning and LLM-Driven Exploration'
+  venue: DATE
+  year: 2026
+  bibtex: "@misc{xu2026mpmllm4dsereachingparetofrontier,\n      title={MPM-LLM4DSE: Reaching the Pareto Frontier in HLS with Multimodal Learning and LLM-Driven Exploration}, \n      author={Lei Xu and Shanshan Wang and Chenglong Xiao},\n      year={2026},\n      eprint={2601.04801},\n      archivePrefix={arXiv},\n      primaryClass={cs.AR},\n      url={https://arxiv.org/abs/2601.04801}, \n}"
+links:
+  paper_url: https://arxiv.org/abs/2601.04801
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/143.pdf
+  arxiv_url: https://arxiv.org/abs/2601.04801
+  repo_url: https://github.com/wslcccc/MPM-LLM4DSE
+compare_when:
+- evaluating HLS design space exploration methods that optimize Pareto-frontier quality under limited synthesis budget
+- comparing multimodal QoR prediction models that combine source-code semantics with CDFG/graph features for HLS
+- comparing LLM-assisted DSE optimizers using ADRS and runtime on unseen HLS benchmarks
+benchmark_scope:
+- training data from MachSuite and Polyhedral HLS kernels with C/C++ behavioral descriptions, pragmas, CDFGs, and HLS QoR reports
+- unseen kernels for QoR prediction and DSE, including heat-3d, jacobi, seidel, stencil, and nw workloads
+- large design spaces up to about 7.6 million configurations in the paper's GNN-DSE comparison
+metrics:
+- RMSE for latency, LUT, DSP, FF, BRAM, and aggregate QoR prediction error
+- average distance from reference set (ADRS) for approximate Pareto-frontier quality
+- overall runtime for DSE search under comparable evaluation conditions
+reproducibility: artifact_available
+caveats:
+- formal DATE/IEEE DOI and DATE BibTeX were not found in DBLP/Crossref at draft time; BibTeX is the verified arXiv entry
+- LLM4DSE experiments rely on external LLM APIs/models such as GPT-4o, GPT-3.5-turbo, and Qwen3, so exact reproduction may depend on model/version availability
+- topic parent remains provisional because the broader registry taxonomy may later split HLS-specific DSE from SoC or architecture-level DSE

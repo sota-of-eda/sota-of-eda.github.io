@@ -1,0 +1,29 @@
+baseline_id: quadol
+short_name: QUADOL
+display_name: 'QUADOL: A Quality-Driven Approximate Logic Synthesis Method Leveraging Dual-Output LUTs for Modern FPGAs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'QUADOL: A Quality-Driven Approximate Logic Synthesis Method Leveraging Dual-Output LUTs for Modern FPGAs'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{shi2026quadol,\n  title={QUADOL: A Quality-Driven Approximate Logic Synthesis Method Leveraging Dual-Output LUTs for Modern FPGAs},\n  author={Shi, Jian and Meng, Chang and Wang, Xuan and Qian, Weikang},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/800.pdf
+  arxiv_url: https://arxiv.org/abs/2411.18330
+compare_when:
+- evaluating approximate logic synthesis for FPGA LUT networks
+- comparing area-error trade-offs for approximate arithmetic circuits on modern FPGA dual-output LUT architectures
+benchmark_scope:
+- IWLS and EPFL combinational benchmarks mapped to LUT-6 netlists with AMD Xilinx Vivado 2022.2 validation
+- approximate multiplier comparisons against EvoApproxLib and FPGA approximate multiplier baselines
+metrics:
+- LUT area ratio under ER and MRED constraints
+- runtime
+- Pareto area-error trade-off for approximate multipliers
+- output error metrics including ER and MRED
+reproducibility: paper_only
+caveats:
+- formal DATE/IEEE DOI was unresolved during this pass; BibTeX is manually formatted from the official DATE PDF metadata
+- DBLP/arXiv has an earlier CoRR record with title wording 'Exploiting Dual-Output LUTs' and a withdrawn note; the DATE draft uses the official DATE PDF title and metadata
+- paper states that code is open-sourced on GitHub, but GitHub URL verification timed out during this pass, so repo_url is not listed as verified

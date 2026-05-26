@@ -1,0 +1,17 @@
+topic_id: multiple-patterning-layout-decomposition
+parent_id: mask-optimization
+short_name: MPLD
+display_name: Multiple Patterning Layout Decomposition
+aliases:
+- multiple patterning decomposition
+- triple patterning layout decomposition
+- TPLD
+- Multiple Patterning Layout Decomposition
+- MPLD
+- multiple patterning layout decomposition
+description: Algorithms and tools that decompose layout features across multiple lithography masks, including coloring, conflict minimization, stitch/conflict tradeoffs, and hard/soft spacing-rule handling.
+review_triggers:
+- Paper proposes or evaluates a layout decomposition/coloring method for double, triple, or multiple patterning.
+- Benchmarks include ISCAS, ISPD, OpenMPL, or foundry/commercial-tool layout decomposition cases.
+- Metrics include hard conflicts, soft conflicts, stitches, weighted decomposition cost, or decomposition runtime.
+baselines: []

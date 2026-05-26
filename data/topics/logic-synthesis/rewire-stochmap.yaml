@@ -1,0 +1,28 @@
+baseline_id: rewire-stochmap
+short_name: rewire + stochmap
+display_name: Versatile Rewiring and Concurrent Resynthesis for High-Quality Customized Optimization
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Versatile Rewiring and Concurrent Resynthesis for High-Quality Customized Optimization
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{rewire2025,\n  author = {Jiun-Hao Chen and Jie-Hong R. Jiang and Alan Mishchenko},\n  title = {Versatile Rewiring and Concurrent Resynthesis for High-Quality Customized Optimization},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--9}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240927
+links:
+  repo_url: https://github.com/berkeley-abc/abc
+compare_when:
+- Evaluating AIG-based logic synthesis optimization
+- Comparing rewiring and resynthesis techniques in ABC
+- Benchmarking customizable logic optimization frameworks
+benchmark_scope:
+- Logic synthesis benchmarks (AIG circuits)
+- Standard-cell mapping for area
+metrics:
+- Transistor count reduction (21.24%)
+- Area reduction after mapping (6.32%)
+reproducibility: unknown
+caveats:
+- rewire method limited to 16 inputs (does not scale beyond)
+- Implemented in ABC but not yet in mainline release
+- Stochastic strategy may produce non-deterministic results

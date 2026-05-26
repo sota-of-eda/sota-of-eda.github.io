@@ -1,0 +1,20 @@
+topic_id: photonic-ic-design
+parent_id: emerging-technology-eda
+short_name: Photonic IC
+display_name: Photonic IC Design
+aliases:
+- photonic-routing
+- photonic-placement
+- optical-network-on-chip
+- electronic-photonic-co-design
+- photonic-ic-simulation
+- Photonic IC Design
+- Photonic IC
+- photonic ic design
+description: Design automation for silicon photonic integrated circuits, including placement, routing, simulation, and electro-optical co-design.
+review_triggers:
+- paper claims placement or routing for photonic integrated circuits
+- paper addresses photonic IC simulation or compact modeling
+- paper covers electronic-photonic or optical-network-on-chip co-design
+- paper proposes physical design automation for photonic components
+baselines: []

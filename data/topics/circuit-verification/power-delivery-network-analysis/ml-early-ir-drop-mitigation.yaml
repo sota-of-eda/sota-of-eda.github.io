@@ -1,0 +1,28 @@
+baseline_id: ml-early-ir-drop-mitigation
+short_name: ML Early IR-Drop
+display_name: ML-Driven Early IR-Drop Mitigation for Fast and Reliable IR-Drop Closure
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Consolidating ML-driven Early IR-drop Mitigation for Fast and Reliable IR-drop Closure
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{lee2026consolidating,\n  title={Consolidating ML-driven Early IR-drop Mitigation for Fast and Reliable IR-drop Closure},\n  author={Lee, Munwon and Jeon, Chanhee and Kim, Taewhan},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/151.pdf
+compare_when:
+- evaluating pre-layout or placement-stage IR-drop mitigation for fast post-layout IR-drop closure
+- comparing ML/GNN-based early power or IR-drop prediction with commercial ECO-style IR-drop mitigation flows
+benchmark_scope:
+- seven OpenCores designs implemented in ASAP7 using Synopsys Design Compiler, Cadence Innovus, Xcelium, and Voltus
+- GNN power prediction trained/evaluated with leave-one-out over benchmark circuits and integrated into placement refinement
+metrics:
+- IR-drop violation count using a 100 mV threshold
+- worst dynamic voltage drop
+- power, effective frequency, area, and runtime
+- post-layout power prediction RMSE
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- experiments rely on commercial EDA tools and ASAP7 flow details; no public artifact was verified in this pass
+- topic parent is provisional because signoff-like analysis topics may later move from circuit-verification to a dedicated signoff-analysis or reliability taxonomy

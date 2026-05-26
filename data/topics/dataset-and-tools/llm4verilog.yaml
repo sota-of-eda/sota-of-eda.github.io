@@ -1,0 +1,24 @@
+baseline_id: llm4verilog
+short_name: LLM4Verilog
+display_name: 'LLM4Verilog: Building Large-Scale, High-Quality Data Infrastructure for Verilog Code Generation via Community Efforts'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'LLM4Verilog: Building Large-Scale, High-Quality Data Infrastructure for Verilog Code Generation via Community Efforts'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240644
+  bibtex: "@inproceedings{yu2025llm4verilog,\n  title={LLM4Verilog: Building Large-Scale, High-Quality Data Infrastructure for Verilog Code Generation via Community Efforts},\n  author={Yu, Zhongzhi and Li, Chaojian and Zhang, Yongan and Liu, Mingjie and Pinckney, Nathaniel and Zhou, Wenfei and Liang, Rongjian and Yang, Haoyu and Ren, Haoxing and Lin, Yingyan Celine},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240644
+compare_when:
+- Comparing Verilog datasets and data infrastructure for LLM-based RTL code generation
+benchmark_scope:
+- VerilogEval-human benchmark
+- VerilogEval-Machine benchmark
+metrics:
+- pass@1 score improvement (6.6%-11.2% human, 5.3%-13.2% machine)
+- Dataset size (70x larger than MG-Verilog)
+reproducibility: artifact_available
+caveats:
+- Community-driven data collection may introduce quality variance; filtering pipeline is critical to dataset quality

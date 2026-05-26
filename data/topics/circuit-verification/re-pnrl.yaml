@@ -1,0 +1,28 @@
+baseline_id: re-pnrl
+short_name: RE-PNRL
+display_name: 'Defense in the Reverse Fragment: RL-Based Partial Netlist Hardware Trojan Detection'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Defense in the Reverse Fragment: RL-Based Partial Netlist Hardware Trojan Detection'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240710
+  bibtex: "@inproceedings{li2025defense,\n  author = {Bolun Li and Chen Dong and Decheng Qiu and Mingzhi Chen and Yang Yang},\n  title = {Defense in the Reverse Fragment: RL-Based Partial Netlist Hardware Trojan Detection},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240710},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240710
+compare_when:
+- comparing hardware Trojan detection methods on gate-level netlists
+- evaluating RL-based and ML-based HT detection approaches
+- comparing detection under incomplete/partial netlist conditions
+benchmark_scope:
+- partial netlist datasets from reverse engineering flows
+- HT-infected gate-level netlists
+metrics:
+- 'TPR (True Positive Rate): 96.80%'
+- 'TNR (True Negative Rate): 94.80%'
+- detection accuracy
+reproducibility: unknown
+caveats:
+- focuses on partial netlist scenarios which may not be representative of all HT detection use cases
+- RL framework may require retraining for different technology nodes or HT types

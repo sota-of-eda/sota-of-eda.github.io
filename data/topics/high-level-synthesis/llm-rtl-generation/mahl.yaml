@@ -1,0 +1,26 @@
+baseline_id: mahl
+short_name: MAHL
+display_name: 'MAHL: Multi-Agent LLM-Guided Hierarchical Chiplet Design with Adaptive Debugging'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'MAHL: Multi-Agent LLM-Guided Hierarchical Chiplet Design with Adaptive Debugging'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240973
+  bibtex: "@inproceedings{Tang_2025, title={MAHL: Multi-Agent LLM-Guided Hierarchical Chiplet Design with Adaptive Debugging}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240973}, DOI={10.1109/iccad66269.2025.11240973}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Tang, Jinwei and Qin, Jiayin and Xu, Nuo and Nalla, Pragnya Sudershan and Cao, Yu and Zhao, Yang Katie and Ding, Caiwen}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240973
+compare_when:
+- comparing multi-agent LLM frameworks for chip design
+- evaluating LLM-based chiplet design generation
+benchmark_scope:
+- real-world chiplet designs
+- RTL design benchmarks
+metrics:
+- Pass@5 accuracy (0 to 0.72)
+- latency reduction (16.08%)
+- area reduction (83.96%)
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published

@@ -1,0 +1,26 @@
+baseline_id: 3d-cosim
+short_name: 3D-CoSim
+display_name: '3D CoSim: Coupled Operator Learning-Based Co-Simulator for Transferable 3D-IC Analysis'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: '3D CoSim: Coupled Operator Learning-Based Co-Simulator for Transferable 3D-IC Analysis'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240711
+  bibtex: "@inproceedings{wu20253dcosim,\n  author = {Youran Wu and Shunjie Chang and Jianli Chen and Jun Yu and Kun Wang},\n  title = {3D CoSim: Coupled Operator Learning-Based Co-Simulator for Transferable 3D-IC Analysis},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240711},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240711
+compare_when:
+- comparing physics-informed simulation tools for 3D-IC multiphysics analysis
+- evaluating speed and accuracy of ML-based co-simulators against traditional FEM
+benchmark_scope:
+- custom 3D-IC configurations with combined EM and thermal fields
+- COMSOL reference simulations
+metrics:
+- speedup vs COMSOL (844x to 7600x)
+- accuracy of EM/thermal field prediction
+- transferability across different 3D-IC configurations
+reproducibility: unknown
+caveats:
+- first PINN-based co-simulator of this kind; comparison is primarily against commercial FEM (COMSOL) rather than other ML-based EDA simulators

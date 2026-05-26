@@ -1,0 +1,29 @@
+baseline_id: gangr
+short_name: GANGR
+display_name: 'GANGR: GAN-Assisted Scalable and Efficient Global Routing Parallelization'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'GANGR: GAN-Assisted Scalable and Efficient Global Routing Parallelization'
+  venue: DATE
+  year: 2026
+  bibtex: "@misc{jooshin2025gangrganassistedscalableefficient,\n      title={GANGR: GAN-Assisted Scalable and Efficient Global Routing Parallelization}, \n      author={Hadi Khodaei Jooshin and Inna Partin-Vaisband},\n      year={2025},\n      eprint={2511.17665},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2511.17665}, \n}"
+links:
+  paper_url: https://arxiv.org/abs/2511.17665
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/600.pdf
+  arxiv_url: https://arxiv.org/abs/2511.17665
+compare_when:
+- evaluating learning-assisted or GPU-parallel global-routing batching methods
+- comparing global routers on ISPD 2024 contest benchmarks with score/runtime and routing-quality metrics
+benchmark_scope:
+- ISPD 2024 global routing contest benchmarks and evaluator
+- InstantGR framework with WGAN-based layer-aware batching integrated into the routing pipeline
+metrics:
+- routing score and runtime
+- wirelength, via count, and overflow
+- batch count and batch-generation/runtime speedup
+reproducibility: paper_only
+caveats:
+- formal DATE/IEEE DOI and DATE BibTeX were not found in DBLP/Crossref at draft time; BibTeX is the verified arXiv entry
+- main direct comparison is against InstantGR because the paper states it is the only publicly available current SOTA framework used for fair reevaluation
+- method changes net batching inside InstantGR rather than proposing a fully independent end-to-end router

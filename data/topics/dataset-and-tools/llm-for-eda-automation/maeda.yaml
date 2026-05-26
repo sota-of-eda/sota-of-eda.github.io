@@ -1,0 +1,29 @@
+baseline_id: maeda
+short_name: MAEDA
+display_name: 'MAEDA: An LLM-Powered Multi-Agent Evaluation Framework for EDA Tool Documentation QA'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'MAEDA: An LLM-Powered Multi-Agent Evaluation Framework for EDA Tool Documentation QA'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{chen2026maeda,\n  title={MAEDA: An LLM-Powered Multi-Agent Evaluation Framework for EDA Tool Documentation QA},\n  author={Chen, Zhenghao and Pu, Yuan and Han, Hairuo and Nie, Yuntao and Qin, Jiajun and Qin, Yuhan and Qiu, Tairu and He, Zhuolun and Zhai, Jianwang and Yu, Bei and Zhao, Kang},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1192.pdf
+  repo_url: https://github.com/Rayzzz14/MAEDA-DATE26
+compare_when:
+- evaluating EDA tool documentation QA or RAG answer-evaluation frameworks
+- comparing domain-specific hallucination, retrieval-error, refusal, contradiction, or missing-information detection for EDA copilots
+benchmark_scope:
+- OpenROAD documentation QA benchmark with 300 manually reviewed QA instances
+- commercial timing-ECO tool documentation QA benchmark with 205 QA instances
+- error categories including retrieval error, contradiction, missing information, inappropriate refusal, and hallucination
+metrics:
+- recall and precision for each fine-grained error type
+- F1-score ablations for structured reasoning strategy
+- transfer performance from OpenROAD to commercial EDA tool documentation
+reproducibility: artifact_available
+caveats:
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- GitHub repository was reachable, but dataset licensing and reproduction completeness were not audited in this pass
+- topic parent is provisional and may be split into documentation QA, LLM agents, and EDA benchmark subtopics later

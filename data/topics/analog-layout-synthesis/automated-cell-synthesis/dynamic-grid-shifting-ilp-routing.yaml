@@ -1,0 +1,25 @@
+baseline_id: dynamic-grid-shifting-ilp-routing
+short_name: Dynamic Grid-Shifting ILP
+display_name: Standard Cell Layout Generator Empowered by ILP-based Routing with Dynamic Grid-Shifting for Advanced Nodes
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Standard Cell Layout Generator Empowered by ILP-based Routing with Dynamic Grid-Shifting for Advanced Nodes
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{Zheng_2025_SCLG,\n  author    = {Zhengzhe Zheng and Keyu Peng and Yinuo Wu and Hao Gu and Chao Wang and Ziran Zhu},\n  title     = {Standard Cell Layout Generator Empowered by {ILP}-based Routing with Dynamic Grid-Shifting for Advanced Nodes},\n  booktitle = {IEEE/ACM International Conference On Computer Aided Design, ICCAD 2025, Munich, Germany, October 26-30, 2025},\n  pages     = {1--9},\n  publisher = {IEEE},\n  year      = {2025},\n}"
+links: {}
+compare_when:
+- comparing automated standard cell layout generators
+- evaluating ILP-based cell routing for advanced nodes
+benchmark_scope:
+- standard cells under ASAP7 design rules
+metrics:
+- cell width reduction (4.6%)
+- total wirelength reduction (34.1%)
+- M2 usage reduction (35.7%)
+- routing completion
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published
+- DOI and publisher landing page were not found in public metadata search as of 2026-05-25; conference-program evidence confirms title/authors/session.

@@ -1,0 +1,29 @@
+baseline_id: nstherm
+short_name: NSTherm
+display_name: 'NSTherm: An Error-Bounded Network-Stochastic Fusion Thermal Simulator for Geometry-Adaptable Chiplets'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'NSTherm: An Error-Bounded Network-Stochastic Fusion Thermal Simulator for Geometry-Adaptable Chiplets via Diffeomorphic Mapping and Neural-Guided Variance Reduction'
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{nstherm2025,\n  author = {Anonymous Authors},\n  title = {NSTherm: An Error-Bounded Network-Stochastic Fusion Thermal Simulator for Geometry-Adaptable Chiplets via Diffeomorphic Mapping and Neural-Guided Variance Reduction},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/ICCAD66269.2025.11240671}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240671
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240671
+compare_when:
+- Evaluating thermal simulation accuracy and speed for chiplet-based designs
+- Comparing operator-learning-based thermal solvers for geometry variations
+- Benchmarking stochastic thermal simulation methods
+benchmark_scope:
+- Chiplet thermal simulation (variable geometries)
+- Comparison with COMSOL (commercial field solver)
+metrics:
+- Speedup over COMSOL (10.69x-23.04x)
+- Speedup over traditional stochastic methods (5.20x-11.87x)
+- Error-bounded accuracy guarantee
+reproducibility: unknown
+caveats:
+- Author metadata not confirmed; paper identified via IEEE Xplore DOI only
+- Diffeomorphic mapping approach may have limitations for extreme geometry variations
+- Neural-guided variance reduction requires training data from target process

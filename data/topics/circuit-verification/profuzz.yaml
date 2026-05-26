@@ -1,0 +1,28 @@
+baseline_id: profuzz
+short_name: PROFUZZ
+display_name: 'PROFUZZ: Directed Graybox Fuzzing via Module Selection and ATPG-Guided Seed Generation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'PROFUZZ: Directed Graybox Fuzzing via Module Selection and ATPG-Guided Seed Generation'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240782
+  bibtex: "@inproceedings{saravanan2025profuzz,\n  author = {Raghul Saravanan and Sudipta Paria and Aritra Dasgupta and Swarup Bhunia and Sai Manoj P. D.},\n  title = {PROFUZZ: Directed Graybox Fuzzing via Module Selection and ATPG-Guided Seed Generation},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240782},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240782
+compare_when:
+- comparing hardware fuzzing and security verification methods
+- evaluating ATPG-guided directed fuzzing approaches
+- benchmarking against DirectFuzz and other hardware fuzzing tools
+benchmark_scope:
+- hardware security benchmarks
+- large-scale digital designs
+metrics:
+- scalability in target sites (30x vs DirectFuzz)
+- coverage improvement (11.66%)
+- execution speed (2.76x vs DirectFuzz)
+reproducibility: unknown
+caveats:
+- ATPG integration adds complexity to the fuzzing flow; setup may be design-specific
+- graybox approach requires partial design knowledge that may not always be available

@@ -1,0 +1,23 @@
+baseline_id: copa-pin-assignment
+short_name: COPA
+display_name: 'COPA: A Congestion-Oriented Pin Assignment Framework for Intra-Block Physical Design Optimization'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'COPA: A Congestion-Oriented Pin Assignment Framework for Intra-Block Physical Design Optimization'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240661
+  bibtex: "@inproceedings{Tsai_2025, title={COPA: A Congestion-Oriented Pin Assignment Framework for Intra-Block Physical Design Optimization}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240661}, DOI={10.1109/iccad66269.2025.11240661}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Tsai, Shu-Yi and Chen, Yu-Guang and Chen, Kun-Min and Ke, Sheng-Bing and Hsieh, Chung-Hui and Lin, Chih-Wei and Chao, Mango Chia-Tso}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240661
+compare_when:
+- comparing pin assignment methods
+- evaluating congestion-aware physical design optimization
+benchmark_scope:
+- intra-block physical design benchmarks
+metrics:
+- total overflow reduction (7.6% avg, 9% max)
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published

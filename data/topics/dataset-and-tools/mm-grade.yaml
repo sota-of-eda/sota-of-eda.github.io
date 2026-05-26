@@ -1,0 +1,30 @@
+baseline_id: mm-grade
+short_name: MM-GRADE
+display_name: 'MM-GRADE: A Multi-Modal EDA Tool Documentation QA Framework Leveraging Retrieval Augmented Generation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'MM-GRADE: A Multi-Modal EDA Tool Documentation QA Framework Leveraging Retrieval Augmented Generation'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240857
+  bibtex: '@inproceedings{Pu_2025, title={MM-GRADE: A Multi-Modal EDA Tool Documentation QA Framework Leveraging Retrieval Augmented Generation}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240857}, DOI={10.1109/iccad66269.2025.11240857}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Pu, Yuan and He, Zhuolun and Lin, Shutong and Qin, Jiajun and Zhang, Xinyun and Han, Hairuo and Zheng, Haisheng and Jiang, Yuqi and Zhuo, Cheng and Sun, Qi and Pan, David and Yu, Bei}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240857
+  pdf_url: https://www.cse.cuhk.edu.hk/~byu/papers/C292-ICCAD2025-MM-GRADE.pdf
+  repo_url: https://github.com/lesliepy99/MM-GRADE-Benchmarks-ICCAD
+compare_when:
+- comparing LLM-based EDA tool documentation QA systems
+- evaluating multi-modal RAG frameworks for circuit design assistance
+benchmark_scope:
+- ORD-MMBench (120 question-document-answer triplets)
+- OpenROAD documentation
+metrics:
+- Recall@1
+- Recall@5
+- answer quality
+reproducibility: artifact_available
+caveats:
+- Benchmark limited to 120 QA pairs from single tool (OpenROAD)
+- Multi-modal performance depends on ViT-MLP-LLM architecture quality
+- Not tested on other EDA tools beyond OpenROAD

@@ -1,0 +1,28 @@
+baseline_id: vr-place-hi
+short_name: VR-Place-HI
+display_name: Optimal Selection and Placement of Voltage Regulators in 2.5D Heterogeneously Integrated Systems
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Optimal Selection and Placement of Voltage Regulators in 2.5D Heterogeneously Integrated Systems
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240850
+  bibtex: '@inproceedings{Zhang_2025, title={Optimal Selection and Placement of Voltage Regulators in 2.5D Heterogeneously Integrated Systems}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240850}, DOI={10.1109/iccad66269.2025.11240850}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Zhang, Hangyu and Yogi, Divya and Harjani, Ramesh and Sapatnekar, Sachin S.}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240850
+compare_when:
+- comparing power delivery optimization for 2.5D heterogeneous integration
+- evaluating MILP-based voltage regulator selection and placement
+benchmark_scope:
+- 2.5D heterogeneously integrated system designs
+- MILP optimization within 18.8-46.1 minutes
+metrics:
+- solution accuracy (average error below 1.7%)
+- optimization runtime
+- SCVR (Switched Capacitor Voltage Regulator) placement quality
+reproducibility: unknown
+caveats:
+- MILP formulation may not scale to very large 2.5D systems
+- Limited to SCVR type voltage regulators
+- Accuracy validation against simplified models

@@ -1,0 +1,30 @@
+baseline_id: non-manhattan-gnn-hotspot
+short_name: Non-Manhattan GNN-HD
+display_name: GNN-based Lithography Hotspot Detection for Complex Non-Manhattan Layouts
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Lithography Hotspot Detection for Complex Non-Manhattan Layouts via Graph Neural Network
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{li2026nonmanhattangnnhotspot,\n  title={Lithography Hotspot Detection for Complex Non-Manhattan Layouts via Graph Neural Network},\n  author={Li, Bohao and Liu, Ranran and Liu, Yumeng and Jiang, Cong and Liu, Kang and Yu, Bei and Ren, Kun and Sun, Qi and Zhuo, Cheng},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/857.pdf
+  repo_url: https://github.com/yb-hitsz/DATE2026-GNN4LSD
+compare_when:
+- evaluating lithography hotspot detection on non-Manhattan or complex layout clips
+- comparing graph-based and image-based hotspot detectors on ICCAD 2019 and industrial hotspot datasets
+benchmark_scope:
+- ICCAD 2019 hotspot-detection benchmarks for Manhattan-layout generalization and hard-to-classify patterns
+- four industrial non-Manhattan metal-layer hotspot datasets labeled by Calibre lithography simulation/rule checking
+- 4um by 4um clips with pinch/bridge hotspot labels
+metrics:
+- recall percentage
+- false alarm count
+- F1 score
+- model inference time
+reproducibility: artifact_available
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- industrial non-Manhattan datasets and Calibre labeling details may affect reproducibility outside the released artifact
+- the paper title does not give a concise method acronym; baseline_id uses a descriptive method name and the paper-stated GitHub artifact is linked

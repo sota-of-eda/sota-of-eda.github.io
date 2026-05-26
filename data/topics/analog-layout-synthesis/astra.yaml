@@ -1,0 +1,23 @@
+baseline_id: astra
+short_name: ASTRA
+display_name: 'ASTRA: Automatic Sizing of Transistors with Reasoning Agents'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ASTRA: Automatic Sizing of Transistors with Reasoning Agents'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240675
+  bibtex: "@inproceedings{xing2025astra,\n  title={ASTRA: Automatic Sizing of Transistors with Reasoning Agents},\n  author={Xing, Wei W. and Ou, Baowen and Zhang, Yuxuan and Liu, Zhuohua and Hu, Yuanqi},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240675
+compare_when:
+- Comparing LLM/ML-assisted analog transistor sizing methods
+benchmark_scope:
+- 3 analog circuits
+metrics:
+- Speedup (4.35x over BO)
+- Performance improvement (2.36x)
+reproducibility: unknown
+caveats:
+- Evaluated on only 3 analog circuits; generalization to broader circuit classes unclear

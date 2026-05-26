@@ -1,0 +1,27 @@
+baseline_id: aps
+short_name: APS
+display_name: 'APS: Open-Source Hardware-Software Co-Design Framework for Agile Processor Specialization'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'APS: Open-Source Hardware-Software Co-Design Framework for Agile Processor Specialization'
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{aps2025,\n  author = {Anonymous Authors},\n  title = {APS: Open-Source Hardware-Software Co-Design Framework for Agile Processor Specialization},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240817
+compare_when:
+- Evaluating open-source frameworks for RISC-V custom instruction design
+- Comparing hardware-software co-design methodologies for ASIP specialization
+- Benchmarking ISAX-based processor customization tools
+benchmark_scope:
+- RISC-V custom instruction case studies
+- Embedded benchmarks
+metrics:
+- Speedup over baseline (2.29x to 14.99x)
+- Lines of ISAX description (<175)
+reproducibility: unknown
+caveats:
+- Author metadata not yet indexed on DBLP; metadata search incomplete
+- First open-source framework of its kind; limited comparison baseline available
+- No public code repository found at time of review
+links: {}

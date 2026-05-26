@@ -1,0 +1,33 @@
+baseline_id: explainable-gnn-fusa
+short_name: Explainable GNN FuSa Framework
+display_name: ISO 26262-Aligned Functional Safety Verification Framework with Explainable Graph Neural Network
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: ISO 26262-Aligned Functional Safety Verification Framework with Explainable Graph Neural Network
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{sunfusa2025,\n  author = {Yutao Sun and Jiehua Huang and Xiangping Liao and Zhijun Wang and Liping Liang},\n  title = {ISO 26262-Aligned Functional Safety Verification Framework with Explainable Graph Neural Network},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/ICCAD66269.2025.11240753}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240753
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240753
+compare_when:
+- Evaluating functional safety verification frameworks for automotive SoCs
+- Comparing ML-based fault injection and detection methods
+- Benchmarking explainable AI techniques for ISO 26262 compliance
+benchmark_scope:
+- I2C controller
+- FIFO
+- 32-bit multiplier
+- RISC-V CPU
+- Automotive SoC circuits
+metrics:
+- Precision (up to 99.6%)
+- F1-score (up to 99.8%)
+- Fault injection data requirement (50% reduction vs SOTA)
+- Simulation time reduction
+reproducibility: unknown
+caveats:
+- Requires specialized EDA tool support (XSIM/SSIM) for simulation
+- Validation limited to specific circuit types; generalizability to very large SoCs unclear
+- Accuracy improvement ~5% over SOTA; incremental rather than breakthrough

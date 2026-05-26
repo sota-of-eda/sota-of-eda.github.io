@@ -1,0 +1,28 @@
+baseline_id: dynvec
+short_name: DynVec
+display_name: 'DynVec: An End-to-End Framework for Efficient Vector-Dataflow Execution'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'DynVec: An End-to-End Framework for Efficient Vector-Dataflow Execution'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240863
+  bibtex: '@inproceedings{Li_2025, title={DynVec: An End-to-End Framework for Efficient Vector-Dataflow Execution}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240863}, DOI={10.1109/iccad66269.2025.11240863}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Li, Jiangnan and Cao, Xianfeng and Zhu, Kaixiang and Yin, Wenbo and Wang, Lingli}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240863
+compare_when:
+- comparing HLS-based vector-dataflow acceleration frameworks
+- evaluating auto-vectorization and dynamic scheduling for FPGA accelerators
+benchmark_scope:
+- regular and irregular kernel benchmarks
+- comparison against Dynamatic and Bambu
+metrics:
+- execution time
+- speedup over hybrid accelerators
+- vector coverage
+reproducibility: unknown
+caveats:
+- Dependent on MLIR-based compilation infrastructure
+- Vector-dataflow model may not suit all application types
+- Comparison limited to Dynamatic and Bambu HLS tools

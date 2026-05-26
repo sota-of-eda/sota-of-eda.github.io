@@ -1,0 +1,14 @@
+topic_id: transistor-level-placement
+parent_id: analog-layout-synthesis
+short_name: Transistor Place
+display_name: Transistor-Level Placement
+aliases:
+- Transistor-Level Placement
+- Transistor Place
+- transistor level placement
+description: Placement at the transistor level for analog, mixed-signal, and custom digital designs, including symmetry and matching constraints.
+review_triggers:
+- paper claims transistor-level or analog placement improvement
+- paper addresses placement with device matching or symmetry constraints
+- paper proposes custom or semi-custom transistor placement automation
+baselines: []

@@ -1,0 +1,28 @@
+baseline_id: 3d-drc
+short_name: 3D-DRC
+display_name: '3D DRC: Design Rule Checking for 3D IC with U-Net-based Non-Manhattan Optimization'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: '3D DRC: Design Rule Checking for 3D IC with U-Net-based Non-Manhattan Optimization'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240842
+  bibtex: '@inproceedings{Chang_2025, title={3D DRC: Design Rule Checking for 3D IC with U-Net-based Non-Manhattan Optimization}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240842}, DOI={10.1109/iccad66269.2025.11240842}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Chang, Shunjie and Wu, Youran and Chen, Jianli and Yu, Jun and Wang, Kun}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240842
+compare_when:
+- comparing DRC tools for 3D IC designs with both 2D and 3D rule checking
+- evaluating machine learning based DRC acceleration
+benchmark_scope:
+- 3D IC test cases
+- comparison against Calibre nmDRC (2D) and Calibre 3DSTACK (3D)
+metrics:
+- runtime speedup vs Calibre
+- recall
+- precision
+reproducibility: unknown
+caveats:
+- U-Net based approach may miss certain corner-case DRC violations
+- 97.5% recall means some violations may be missed (false negatives)
+- Compared against commercial tools without access to internal algorithms

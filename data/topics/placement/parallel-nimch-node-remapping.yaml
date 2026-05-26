@@ -1,0 +1,24 @@
+baseline_id: parallel-nimch-node-remapping
+short_name: Parallel NIMCH Remapping
+display_name: Parallel Non-Integer Multiple-Cell-Height Node Remapping
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Parallel Non-Integer Multiple-Cell-Height Node Remapping
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240758
+  bibtex: "@inproceedings{Wu_2025, title={Parallel Non-Integer Multiple-Cell-Height Node Remapping}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240758}, DOI={10.1109/iccad66269.2025.11240758}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Wu, Zong-Han and Huang, Bo-Ying and Chen, Yu-Chen and Chang, Yao-Wen}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240758
+compare_when:
+- comparing NIMCH standard cell optimization methods
+- evaluating parallel node remapping for timing optimization
+benchmark_scope:
+- standard cell designs with NIMCH cells
+metrics:
+- runtime speedup (5.58x vs Lesyn)
+- timing optimization
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published

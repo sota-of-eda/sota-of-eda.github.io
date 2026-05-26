@@ -1,0 +1,25 @@
+baseline_id: sdp-decap
+short_name: SDP-Decap
+display_name: Semidefinite Programming-Based Decoupling Capacitor Placement for Power Distribution Network Optimization
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Semidefinite Programming-Based Decoupling Capacitor Placement for Power Distribution Network Optimization
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240747
+  bibtex: "@inproceedings{cai2025sdp,\n  author = {Zong-Ying Cai and Wei-Han Mao and Yao-Wen Chang and Yang Lu and\nJerry Bai and Bin-Chyi Tseng},\n  title = {Semidefinite Programming-Based Decoupling Capacitor Placement for\nPower Distribution Network Optimization},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240747},\n  publisher = {IEEE}\n}\n"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240747
+compare_when:
+- comparing decap placement quality against SOTA non-deterministic methods and commercial tools
+- evaluating PDN optimization runtime and decap usage efficiency
+benchmark_scope:
+- power distribution network / PCB designs
+metrics:
+- 'decap usage reduction: 72%'
+- 'runtime speedup: 6.90x'
+reproducibility: unknown
+caveats:
+- SDP formulation may have scalability limits for very large PDN instances
+- no public code release identified yet

@@ -1,0 +1,25 @@
+baseline_id: unitho
+short_name: Unitho
+display_name: 'Unitho: A Unified Multi-Task Framework for Computational Lithography'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Unitho: A Unified Multi-Task Framework for Computational Lithography'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240871
+  bibtex: "@inproceedings{jin2025unitho,\n  title={Unitho: A Unified Multi-Task Framework for Computational Lithography},\n  author={Jin, Qian and Liu, Yumeng and Jiang, Yuqi and Sun, Qi and Zhuo, Cheng},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240871
+compare_when:
+- Comparing AI-based computational lithography frameworks integrating mask generation, simulation, and verification
+benchmark_scope:
+- Process window simulation
+- DRC/MRC/LRC benchmarks
+metrics:
+- Full process window simulation time (minutes)
+- Mask quality
+- Lithography-friendly design feedback accuracy
+reproducibility: unknown
+caveats:
+- Large vision model approach requires significant compute resources; specific process condition models may not generalize across foundries

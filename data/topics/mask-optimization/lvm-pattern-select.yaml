@@ -1,0 +1,25 @@
+baseline_id: lvm-pattern-select
+short_name: LVM-Pattern-Select
+display_name: When Semi-Supervised LVM Meets Frequency-Based Critical Layout Pattern Selection
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: When Semi-Supervised LVM Meets Frequency-Based Critical Layout Pattern Selection
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240729
+  bibtex: "@inproceedings{wang2025semisupervised,\n  author = {Liuke Wang and Shenshuo Yao and Shihan Wang and Zhen Wang and Zicheng\nHuang and Jingyi Yu and Hao Geng},\n  title = {When Semi-Supervised {LVM} Meets Frequency-Based Critical Layout\nPattern Selection},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240729},\n  publisher = {IEEE}\n}\n"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240729
+compare_when:
+- comparing critical pattern selection accuracy for lithography OPC/SMA
+- evaluating large vision model performance on layout pattern analysis
+benchmark_scope:
+- million-scale layout database from open-source circuit designs
+metrics:
+- pattern selection accuracy
+- frequency-domain optical characterization quality
+reproducibility: unknown
+caveats:
+- first LVM tailored for critical layout pattern selection; no model weights or code published yet
+- pattern criticality definition based on frequency domain may need further validation across technologies

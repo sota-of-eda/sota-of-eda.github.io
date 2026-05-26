@@ -1,0 +1,28 @@
+baseline_id: dygrass
+short_name: dyGRASS
+display_name: 'dyGRASS: Dynamic Spectral Graph Sparsification via Localized Random Walks on GPUs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'dyGRASS: Dynamic Spectral Graph Sparsification via Localized Random Walks on GPUs'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240980
+  bibtex: "@inproceedings{Yuan_2025, title={dyGRASS: Dynamic Spectral Graph Sparsification via Localized Random Walks on GPUs}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240980}, DOI={10.1109/iccad66269.2025.11240980}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Yuan, Yihang and Aghdaei, Ali and Feng, Zhuo}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240980
+compare_when:
+- comparing spectral graph sparsification
+- evaluating GPU-accelerated dynamic sparsification for EDA
+benchmark_scope:
+- circuit simulation graphs
+- power grid analysis graphs
+- finite element analysis graphs
+metrics:
+- speedup vs inGRASS (10x)
+- GPU vs CPU speedup (70x)
+- no setup overhead
+- solution quality
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published

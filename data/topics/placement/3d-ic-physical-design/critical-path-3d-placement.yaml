@@ -1,0 +1,28 @@
+baseline_id: critical-path-3d-placement
+short_name: CP-3D Placement
+display_name: Critical-Path-Centric 3D IC Placement for Timing Optimization
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Critical-Path-Centric 3D IC Placement for Timing Optimization
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{park2026criticalpath3dplacement,\n  title={Critical-Path-Centric 3D IC Placement for Timing Optimization},\n  author={Park, Sojung and Park, Heechun},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/569.pdf
+compare_when:
+- evaluating timing-driven placement, tier assignment, or planar refinement for pseudo-3D IC flows
+- comparing 3D placement methods that optimize WNS/TNS through critical-path-aware vertical and planar decisions
+benchmark_scope:
+- Ecg, Nova, Ethernet, Vga_lcd, and Sudoku pseudo-3D placement benchmarks
+- initial 2D placement followed by critical-path-aware tier assignment and planar refinement
+metrics:
+- WNS and TNS
+- wirelength
+- power
+- tier changes, cut count, displacement, and refinement runtime
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- evaluation compares against a pseudo-3D placement flow rather than a commercial native 3D placer, because commercial gate-level 3D placement support remains limited
+- topic placement reuses the proposed 3d-ic-physical-design bucket; a future taxonomy may split timing-driven 3D placement into a narrower child topic

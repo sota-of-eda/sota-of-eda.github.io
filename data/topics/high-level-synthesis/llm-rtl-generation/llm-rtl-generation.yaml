@@ -1,0 +1,15 @@
+topic_id: llm-rtl-generation
+parent_id: high-level-synthesis
+short_name: LLM RTL
+display_name: LLM-Assisted RTL Generation
+aliases:
+- LLM-Assisted RTL Generation
+- LLM RTL
+- llm rtl generation
+description: Use of large language models for RTL code generation, including Verilog/VHDL generation from natural-language specifications and RTL bug fixing.
+review_triggers:
+- paper claims LLM-based RTL or HLS code generation
+- paper evaluates LLM-generated RTL quality or functional correctness
+- paper proposes LLM fine-tuning or prompting for hardware description languages
+- paper proposes LLM fine-tuning, prompting, reasoning, repair, or inference-time steering for hardware description languages
+baselines: []

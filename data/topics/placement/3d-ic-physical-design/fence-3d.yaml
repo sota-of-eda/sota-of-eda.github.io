@@ -1,0 +1,29 @@
+baseline_id: fence-3d
+short_name: Fence-3D + Block-Level 3D IC Flow
+display_name: 'Closing the Gap: Advantages of Block-Level over Gate-Level in 3D IC Design for Advanced Nodes'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Closing the Gap: Advantages of Block-Level over Gate-Level in 3D IC Design for Advanced Nodes'
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{fence3d2025,\n  author = {Anonymous Authors},\n  title = {Closing the Gap: Advantages of Block-Level over Gate-Level in 3D IC Design for Advanced Nodes},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/ICCAD66269.2025.11240683}\n}\n"
+  doi: 10.1109/iccad66269.2025.11240683
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240683
+compare_when:
+- Evaluating 3D IC floorplanning and physical design flows
+- Comparing block-level vs gate-level 3D design methodologies
+- Benchmarking analytical vs simulated-annealing 3D floorplanners
+benchmark_scope:
+- Advanced node 3D IC designs
+- Hybrid bond interconnect
+metrics:
+- Power-Delay Product improvement (up to 15%)
+- Congestion-aware sizing PDP improvement (6.6%)
+- Runtime and scalability vs SA-based approaches
+reproducibility: unknown
+caveats:
+- Author metadata not confirmed; paper identified via IEEE Xplore DOI only
+- Results specific to advanced nodes; generalizability to other technologies unclear
+- ML-based sizing adds complexity to the flow

@@ -1,0 +1,28 @@
+baseline_id: polyrad
+short_name: PolyRAD
+display_name: 'PolyRAD: Polynomial Formal Verification of Restoring Array Dividers'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Late Breaking Results: PolyRAD - Polynomial Formal Verification of Restoring Array Dividers'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{nadeem2026polyrad,\n  title={Late Breaking Results: PolyRAD - Polynomial Formal Verification of Restoring Array Dividers},\n  author={Nadeem, Mohamed and Jha, Chandan Kumar and Drechsler, Rolf},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/3010.pdf
+compare_when:
+- evaluating formal verification of restoring array divider circuits or arithmetic datapath equivalence under polynomial-time guarantees
+- comparing partitioning-based polynomial formal verification against SAT-based miter solving on optimized divider AIGs
+benchmark_scope:
+- restoring array divider instances from 8/4 through 256/128 bits
+- three AIG optimization command sets generated with ABC and Yosys from clean and optimized divider designs
+metrics:
+- wall-clock verification time
+- memory consumption
+- maximum partition cutwidth and gate count
+- timeout behavior under a 3600-second limit and 16 GB memory cap
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- late-breaking result focuses on restoring array dividers only; extension to other divider architectures or arithmetic circuits is future work
+- implementation is described as Python but no public repository was verified during this pass

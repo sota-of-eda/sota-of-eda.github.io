@@ -1,0 +1,25 @@
+baseline_id: cimtester
+short_name: CIMTester
+display_name: 'CIMTester: An Agile Golden-Result-Free BIST Compiler for Robust Compute-in-Memory'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'CIMTester: An Agile Golden-Result-Free BIST Compiler for Robust Compute-in-Memory'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240874
+  bibtex: "@inproceedings{ren2025cimtester,\n  author = {Wenjie Ren and Meng Wu and Mingxuan Li and Peiyu Chen and Tianyu\nJia and Le Ye},\n  title = {{CIMTester}: An Agile Golden-Result-Free {BIST} Compiler for Robust\nCompute-in-Memory},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240874},\n  publisher = {IEEE}\n}\n"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240874
+compare_when:
+- comparing CIM BIST fault coverage and area overhead against traditional BIST methods
+- evaluating golden-result-free test compilation for DCIM designs
+benchmark_scope:
+- digital compute-in-memory (DCIM) designs
+metrics:
+- 'fault coverage: up to 99.48%'
+- 'area overhead: less than 2.44%'
+reproducibility: unknown
+caveats:
+- golden-result-free BIST methodology for CIM; no public compiler code identified yet
+- computation-coupled March C- algorithm may need adaptation for different CIM architectures

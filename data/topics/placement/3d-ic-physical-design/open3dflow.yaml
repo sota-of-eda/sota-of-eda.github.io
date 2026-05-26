@@ -1,0 +1,23 @@
+baseline_id: open3dflow
+short_name: Open3DFlow
+display_name: 'Open3DFlow: An Open-Source EDA Platform for 3D Chip Design with AI Enhancement'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Open3DFlow: An Open-Source EDA Platform for 3D Chip Design with AI Enhancement'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240886
+  bibtex: "@inproceedings{zhu2025open3dflow,\n  title={Open3DFlow: An Open-Source EDA Platform for 3D Chip Design with AI Enhancement},\n  author={Zhu, Yifei and Feng, Dawei and Luan, Zhenxuan and Ren, Lei and Chen, Weiwei and Tan, Zhangxi},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240886
+compare_when:
+- Comparing open-source 3D IC design platforms and EDA flows
+benchmark_scope:
+- 3D RISC-V CPU with vertically stacked L2 cache (GF180)
+metrics:
+- Design flow completeness
+- Multi-physics analysis coverage
+reproducibility: artifact_available
+caveats:
+- First open-source 3D IC platform; currently validated on mature GF180 node, not advanced nodes

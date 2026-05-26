@@ -1,0 +1,28 @@
+baseline_id: dsr-double-sided-routing
+short_name: DSR
+display_name: 'DSR: A Systematic Approach for Efficient Double-sided Signal Routing'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'DSR: A Systematic Approach for Efficient Double-sided Signal Routing'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{chen2026dsr,\n  title={DSR: A Systematic Approach for Efficient Double-sided Signal Routing},\n  author={Chen, Jianqing and Lin, Zhenkun and Jiang, Xun and Liu, Genggeng and Lin, Yibo and Du, Gang},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/861.pdf
+compare_when:
+- evaluating native double-sided or backside-interconnect signal routing after CTS
+- comparing front-side/back-side global and detailed routing with bridging-cell insertion, timing awareness, and design-rule legality
+benchmark_scope:
+- ASAP7-based post-CTS benchmark designs C1 through C9 with added backside metal resources and bridging cells
+- comparisons against Cadence Innovus single-sided routing, a double-sided netlist-planning flow, and TritonRoute-style detailed routing
+metrics:
+- wirelength in micrometers
+- total delay and maximum delay in picoseconds
+- design rule violations
+- number of bridging cells and routing runtime
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- comparison includes a commercial single-sided flow and prior netlist-planning approach; exact commercial setup may not be fully reproducible
+- proposed topic should be reviewed with future detailed-routing/backside-interconnect taxonomy before Workflow C merge

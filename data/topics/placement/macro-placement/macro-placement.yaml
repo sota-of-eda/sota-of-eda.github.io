@@ -1,0 +1,20 @@
+topic_id: macro-placement
+parent_id: placement
+short_name: Macro Placement
+display_name: Macro Placement
+aliases:
+- macro placement
+- macro floorplanning
+- mixed-size placement
+- floorplan macro placement
+- RL macro placement
+- Macro Placement
+description: Physical-design methods for placing macros or mixed-size blocks, including analytical, search, reinforcement-learning, and LLM-assisted macro-placement flows evaluated by PPA, routability, and legality metrics.
+review_triggers:
+- paper claims macro placement or macro floorplanning improvement
+- paper evaluates PPA, DRC, congestion, or wirelength after macro placement
+- paper compares against OpenROAD Hier-RTLMP, DREAMPlace, simulated annealing, or learning-based macro placers
+- paper optimizes macro or mixed-size placement rather than only standard-cell placement
+- experiments report HPWL, congestion, routability, CRH/CRV, DRC, or downstream routing metrics on macro-placement benchmarks
+- baselines include AlphaChip, ChiPFormer, MaskPlace, MaskRegulate, DREAMPlace, AutoDMP, Hier-RTLMP, or commercial Innovus macro placement
+baselines: []

@@ -1,0 +1,32 @@
+baseline_id: uvm2
+short_name: UVM^2
+display_name: 'From Concept to Practice: an Automated LLM-aided UVM Machine for RTL Verification'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'From Concept to Practice: an Automated LLM-aided UVM Machine for RTL Verification'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240679
+  bibtex: "@inproceedings{ye2025concept,\n  author = {Junhao Ye and Yuchen Hu and Ke Xu and Dingrong Pan and Qichun Chen\nand Jie Zhou and Shuai Zhao and Xinwei Fang and Xi Wang and Nan Guan and Zhe Jiang},\n  title = {From Concept to Practice: an Automated {LLM}-aided {UVM} Machine\nfor {RTL} Verification},\n  booktitle = {2025 IEEE/ACM International Conference on Computer-Aided Design\n(ICCAD)},\n  pages = {1--9},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240679}\n}\n"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240679
+  arxiv_url: https://arxiv.org/abs/2504.19959
+  pdf_url: https://arxiv.org/pdf/2504.19959
+compare_when:
+- comparing LLM-assisted UVM testbench generation flows for RTL functional verification
+- evaluating coverage-driven automatic testbench generation and repair for UVM environments
+- benchmarking agent-based verification automation against manual verification-engineer workflows and prior automated approaches
+benchmark_scope:
+- RTL designs up to about 1.6K lines of code
+- UVM testbench generation, simulation repair, and coverage-guided testcase supplement tasks
+metrics:
+- testbench setup time reduction up to 38.82x compared with experienced engineers
+- average code coverage of 87.44%
+- average functional coverage of 89.58%
+- reported coverage improvements of 20.96% code coverage and 23.51% functional coverage over compared SOTA solutions
+reproducibility: unknown
+caveats:
+- targets UVM-based RTL functional verification rather than full formal or signoff verification
+- LLM-generated verification artifacts can still require simulation feedback and guardrails to avoid hallucinated names or protocol errors
+- benchmark designs are moderate-size RTL examples, so subsystem- or SoC-scale generality should be reviewed separately

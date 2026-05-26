@@ -1,0 +1,28 @@
+baseline_id: hopart
+short_name: HoPart
+display_name: 'HoPart: Hop-Constrained Partitioning with Routing Support for Multi-FPGA Systems'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'HoPart: Hop-Constrained Partitioning with Routing Support for Multi-FPGA Systems'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{huang2026hopart,\n  title={HoPart: Hop-Constrained Partitioning with Routing Support for Multi-FPGA Systems},\n  author={Huang, Yuan and Guo, Longkun and Fang, Weijie and Lin, Jiawei},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/679.pdf
+compare_when:
+- evaluating partitioning and routing for multi-FPGA emulation/prototyping systems under hop-count and resource constraints
+- comparing timing-driven partitioning, violation correction, and congestion-aware routing on public multi-FPGA benchmark suites
+benchmark_scope:
+- public multi-FPGA benchmarks including Titan23-style cases and designs such as sparcT1, neuron, stereo vision, des90, OpenCV, and bitcoin miner
+- partitioning plus routing comparisons using the same benchmark settings and maximum-hop constraints as MaPart
+metrics:
+- cut size after partitioning
+- maximum path delay after routing
+- overall runtime
+- number of hop/resource-constraint violating nodes
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- experiments compare against MaPart using results from its original publication rather than an independently rerun baseline
+- proposed topic overlaps partitioning and routing; human taxonomy review may choose a broader FPGA-prototyping or system-level EDA parent before merge

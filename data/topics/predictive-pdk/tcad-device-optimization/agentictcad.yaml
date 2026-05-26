@@ -1,0 +1,29 @@
+baseline_id: agentictcad
+short_name: AgenticTCAD
+display_name: 'AgenticTCAD: A LLM-based Multi-Agent Framework for Automated TCAD Code Generation and Device Optimization'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'AgenticTCAD: A LLM-based Multi-Agent Framework for Automated TCAD Code Generation and Device Optimization'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{fan2026agentictcad,\n  title={AgenticTCAD: A LLM-based Multi-Agent Framework for Automated TCAD Code Generation and Device Optimization},\n  author={Fan, Guangxi and Ma, Tianliang and Sun, Xuguang and Wang, Xun and Low, Kain Lu and Shao, Leilai},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1007.pdf
+compare_when:
+- evaluating LLM-based TCAD script generation or automated semiconductor device optimization
+- comparing DTCO-oriented TCAD workflows that generate SDE/SDevice code and close optimization loops
+benchmark_scope:
+- expert-curated and augmented TCAD dataset with 2D and 3D device structures, SDE scripts, and SDevice simulations
+- Qwen2.5-14B-Instruct fine-tuning for TCAD code generation
+- 2 nm nanosheet FET optimization against IRDS-2024 targets using Synopsys Sentaurus
+metrics:
+- TCAD functionality coverage for structure, mesh, I-V, C-V, and device-agent optimization
+- device metrics including SS, Ioff, Ion, and ON-OFF ratio against IRDS specifications
+- time to reach valid optimized device design versus human expert workflow
+reproducibility: paper_only
+caveats:
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- paper states that AgenticTCAD resources are available on GitHub, but no concrete public repository URL was verified in this pass
+- commercial Sentaurus dependency and expert-curated data may limit reproduction
+- proposed topic parent is provisional; taxonomy review may prefer a DTCO or device-technology root

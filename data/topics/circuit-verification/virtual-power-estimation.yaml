@@ -1,0 +1,30 @@
+baseline_id: virtual-power-estimation
+short_name: VIRTUAL
+display_name: 'VIRTUAL: Vector-based Dynamic Power Estimation via Decoupled Multi-Modality Learning'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'VIRTUAL: Vector-based Dynamic Power Estimation via Decoupled Multi-Modality Learning'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240833
+  bibtex: '@inproceedings{Lu_2025, title={VIRTUAL: Vector-based Dynamic Power Estimation via Decoupled Multi-Modality Learning}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240833}, DOI={10.1109/iccad66269.2025.11240833}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Lu, Yuntao and Wang, Mingjun and Wen, Yihan and Han, Boyu and Mu, Jianan and Li, Huawei and Yu, Bei}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240833
+  pdf_url: https://www.cse.cuhk.edu.hk/~byu/papers/C294-ICCAD2025-RTLPower.pdf
+compare_when:
+- comparing RTL-level power estimation methods that avoid gate-level synthesis
+- evaluating multi-modality learning for dynamic power prediction
+benchmark_scope:
+- RTL designs with input port waveform vectors
+- comparison against MasterRTL and GRASPE
+metrics:
+- Pearson Correlation Coefficient (PCC)
+- R-squared (R2)
+- Mean Absolute Percentage Error (MAPE)
+- end-to-end speedup vs synthesis+simulation
+reproducibility: unknown
+caveats:
+- 23.43% MAPE may be too high for signoff-level power estimation
+- Self-supervised pre-training requires careful tuning
+- Transformer+GNN architecture adds model complexity

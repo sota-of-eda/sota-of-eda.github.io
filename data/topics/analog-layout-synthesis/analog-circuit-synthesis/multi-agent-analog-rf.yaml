@@ -1,0 +1,24 @@
+baseline_id: multi-agent-analog-rf
+short_name: Multi-Agent Analog/RF Gen
+display_name: 'Multi-Agent Generative Synthesis for Analog/RF Circuit: from Scalable Topology Generation to Efficient Inverse Design'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Multi-Agent Generative Synthesis for Analog/RF Circuit: from Scalable Topology Generation to Efficient Inverse Design'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240792
+  bibtex: "@inproceedings{wang2025multiagent,\n  title={Multi-Agent Generative Synthesis for Analog/RF Circuit: from Scalable Topology Generation to Efficient Inverse Design},\n  author={Wang, Shikai and Li, Qiufeng and He, Houbo and Gao, Jian and Wang, Zining and Sun, Yu and Zhang, Xuan and Chi, Taiyun and Cao, Weidong},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240792
+compare_when:
+- Comparing generative AI approaches for analog/RF circuit synthesis covering both topology and sizing
+benchmark_scope:
+- Analog/RF circuit benchmarks
+metrics:
+- Topology novelty
+- Device parameter quality
+- Inverse design efficiency
+reproducibility: unknown
+caveats:
+- First-of-its-kind framework; topology generation and inverse design are separately evaluated, end-to-end integration maturity unclear

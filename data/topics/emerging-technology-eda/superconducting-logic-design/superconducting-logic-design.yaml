@@ -1,0 +1,18 @@
+topic_id: superconducting-logic-design
+parent_id: emerging-technology-eda
+short_name: Superconducting Logic EDA
+display_name: Superconducting Logic Design Automation
+aliases:
+- AQFP design automation
+- RSFQ design automation
+- superconducting digital logic synthesis
+- buffer and splitter insertion
+- Superconducting Logic Design Automation
+- Superconducting Logic EDA
+- superconducting logic design
+description: Design automation for superconducting digital logic technologies such as AQFP and RSFQ, including technology mapping, placement, timing, buffer/splitter insertion, clocking, and other technology-specific synthesis or optimization flows.
+review_triggers:
+- paper targets AQFP, RSFQ, SFQ, or other superconducting logic design automation
+- experiments compare buffer/splitter insertion, path balancing, technology mapping, timing, placement, or clocking methods for superconducting circuits
+- metrics include JJ count, buffer/splitter count, circuit depth, delay, runtime, or superconducting-logic-specific timing correctness
+baselines: []

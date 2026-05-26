@@ -1,0 +1,25 @@
+baseline_id: adaptem
+short_name: AdaptEM
+display_name: A Precision-Steerable Electromigration Solver with Physics-Informed Adaptive Graph Partitioning
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: A Precision-Steerable Electromigration Solver with Physics-Informed Adaptive Graph Partitioning
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240732
+  bibtex: "@inproceedings{liu2025adaptem,\n  author = {Zhaoyuan Liu and Haodong Lu and Jianli Chen and Jun Yu and Kun Wang},\n  title = {A Precision-Steerable Electromigration Solver with Physics-Informed\nAdaptive Graph Partitioning},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240732},\n  publisher = {IEEE}\n}\n"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240732
+compare_when:
+- comparing EM stress simulation speed and accuracy against FEM-based methods
+- evaluating physics-informed message passing for interconnect reliability
+benchmark_scope:
+- VLSI interconnects
+metrics:
+- 'speedup over FEM: 20x'
+- 'accuracy loss: about 0.5%'
+reproducibility: unknown
+caveats:
+- unsupervised physics-informed training framework; no public code identified
+- adaptive graph partitioning approach may need tuning for different interconnect topologies

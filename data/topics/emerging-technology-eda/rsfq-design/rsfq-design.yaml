@@ -1,0 +1,15 @@
+topic_id: rsfq-design
+parent_id: emerging-technology-eda
+short_name: RSFQ
+display_name: RSFQ / Superconducting Design
+aliases:
+- rsfq-placement
+- emerging-technology-eda
+- RSFQ / Superconducting Design
+- RSFQ
+- rsfq design
+description: EDA for Rapid Single Flux Quantum (RSFQ) and superconducting logic, including placement under Josephson junction and pulse-timing constraints.
+review_triggers:
+- paper addresses placement or routing for RSFQ or superconducting logic
+- paper claims physical design for Josephson-junction-based circuits
+baselines: []

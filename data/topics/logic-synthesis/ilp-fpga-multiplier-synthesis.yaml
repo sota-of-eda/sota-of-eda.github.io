@@ -1,0 +1,28 @@
+baseline_id: ilp-fpga-multiplier-synthesis
+short_name: ILP Multiplier Synthesis
+display_name: 'ILP-Driven FPGA Multiplier Synthesis: A Scalable Framework for Area-Latency Co-Optimization'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ILP-Driven FPGA Multiplier Synthesis: A Scalable Framework for Area-Latency Co-Optimization'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240978
+  bibtex: '@inproceedings{Yao_2025, title={ILP-Driven FPGA Multiplier Synthesis: A Scalable Framework for Area-Latency Co-Optimization}, url={http://dx.doi.org/10.1109/ICCAD66269.2025.11240978}, DOI={10.1109/iccad66269.2025.11240978}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Yao, Shangshang and Li, Kunlong and Shen, Li}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240978
+compare_when:
+- comparing FPGA arithmetic synthesis approaches for multiplier circuits
+- evaluating Pareto-optimal area vs latency tradeoffs for FPGA DSP blocks
+benchmark_scope:
+- 8-bit to 16-bit multipliers
+- Xilinx FPGA platforms
+metrics:
+- LUT count
+- critical path delay
+- area-delay product
+reproducibility: unknown
+caveats:
+- Limited to multiplier circuits only (8-16b); not applicable to general arithmetic
+- ILP framework scalability to wider bit-width multipliers not fully characterized
+- Compared against Xilinx LogiCORE IP only; not against other academic approaches

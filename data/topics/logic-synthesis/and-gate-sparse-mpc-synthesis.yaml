@@ -1,0 +1,30 @@
+baseline_id: and-gate-sparse-mpc-synthesis
+short_name: AND-Sparse MPC Synthesis
+display_name: AND-Gate-Sparse Circuit Synthesis for Multi-party Computation Systems
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Optimization of AND-Gate-Sparse Circuit Synthesis for Multi-party Computation Systems with Local Communications
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{zhao2026andgatesparsempc,\n  title={Optimization of AND-Gate-Sparse Circuit Synthesis for Multi-party Computation Systems with Local Communications},\n  author={Zhao, Yinfan and Ikeda, Makoto},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1510.pdf
+compare_when:
+- evaluating logic synthesis flows for secret-sharing or MPC circuit implementations
+- comparing AND-count, AND-depth, and evaluation-time optimization for low-latency MPC hardware
+benchmark_scope:
+- ISCAS85 and 74-series combinational circuits synthesized with Yosys-ABC and Synopsys Design Compiler
+- low-latency MPC device platform using Virtex UltraScale+ VU13P and on-chip NoC communication assumptions
+- comparison against depth-optimized MPC synthesis/netlists from prior state-of-the-art tools
+metrics:
+- AND-gate count after normalization to equivalent secret-sharing AND2 units
+- AND-gate depth and total instruction count
+- normalized MPC evaluation time
+- speedup in low-latency local-communication scenarios
+reproducibility: paper_only
+caveats:
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- no public code repository was verified in this pass
+- conclusions target low-latency/local MPC communication and may not apply to high-latency Internet MPC settings
+- accepted taxonomy may later need a specialized secure-computation circuit synthesis child topic

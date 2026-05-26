@@ -1,0 +1,28 @@
+baseline_id: cotl
+short_name: CoTL
+display_name: 'Towards Multi-Objective Routing: A Novel Coreset-based Transfer Learning Framework'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Towards Multi-Objective Routing: A Novel Coreset-based Transfer Learning Framework'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240972
+  bibtex: "@inproceedings{wang2025towards,\n  author = {Xianglu Wang and Hu Ding},\n  title = {Towards Multi-Objective Routing: A Novel Coreset-based Transfer Learning Framework},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240972},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240972
+compare_when:
+- comparing learning-based multi-objective routing frameworks
+- evaluating transfer learning for rectilinear Steiner tree routing
+- benchmarking routing methods that balance training efficiency and quality
+benchmark_scope:
+- rectilinear Steiner tree routing benchmarks
+- multi-objective routing problem instances
+metrics:
+- training time reduction (5-8x)
+- routing quality (wirelength, via count)
+- transfer learning efficiency
+reproducibility: unknown
+caveats:
+- model-guided coreset approach is specifically designed for transfer learning; may not generalize to all routing sub-problems
+- multi-objective trade-off exploration may be limited to the objectives presented in the paper

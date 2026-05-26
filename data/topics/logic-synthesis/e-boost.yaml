@@ -1,0 +1,25 @@
+baseline_id: e-boost
+short_name: e-boost
+display_name: 'e-boost: Boosted E-Graph Extraction with Adaptive Heuristics and Exact Solving'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'e-boost: Boosted E-Graph Extraction with Adaptive Heuristics and Exact Solving'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240719
+  bibtex: "@inproceedings{yin2025eboost,\n  title={e-boost: Boosted E-Graph Extraction with Adaptive Heuristics and Exact Solving},\n  author={Yin, Jiaqi and Song, Zhan and Chen, Chen and Cai, Yaohui and Zhang, Zhiru and Yu, Cunxi},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240719
+compare_when:
+- Comparing e-graph extraction methods for logic synthesis and technology mapping
+benchmark_scope:
+- BoolE benchmarks
+- E-Syn benchmarks
+- IMpress benchmarks
+metrics:
+- Extraction speedup (558x over ILP)
+- Quality improvement (19.04% over SmoothE)
+reproducibility: unknown
+caveats:
+- Results depend on the specific e-graph construction and ILP solver used

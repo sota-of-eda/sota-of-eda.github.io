@@ -1,0 +1,29 @@
+baseline_id: rl-multicore-verification
+short_name: RL Multicore Verification
+display_name: Multicore Design Verification Directed by Reinforcement Learning
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Multicore Design Verification Directed by Reinforcement Learning
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{pereira2026multicoreverification,\n  title={Multicore Design Verification Directed by Reinforcement Learning},\n  author={Pereira, Luiz M. V. and Meditsch, Diego M. and Campos, Guilherme O. and dos Santos, Luiz C. V.},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/910.pdf
+compare_when:
+- evaluating reinforcement-learning or coverage-directed test generation for multicore/shared-memory design verification
+- comparing state representations or execution-witness signatures for agent-directed verification environments
+benchmark_scope:
+- 16-core and 32-core ARMv8 two-level MOESI design-under-verification models
+- gem5 simulation environment with runtime checker and memory-consistency-model coverage metrics
+- 3-hour and 10-hour verification episodes comparing DQG variants, random generation, and McVersi test generation
+metrics:
+- structural and functional coverage evolution
+- median and maximum coverage after fixed verification time
+- ability to outperform random generation and MTG on hard 32-core functional-coverage tasks
+reproducibility: paper_only
+caveats:
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- no public implementation or benchmark repository was verified in this pass
+- results rely on a specific gem5-based MOESI verification environment and may not directly generalize to arbitrary RTL verification flows
+- proposed directed-test-generation topic should be reconciled with the broader circuit-verification taxonomy before Workflow C

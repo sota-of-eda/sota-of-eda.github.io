@@ -1,0 +1,30 @@
+baseline_id: arsp-routing-bend-space
+short_name: ARSP
+display_name: 'ARSP: Adaptive Routing Bend Space Planning'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Submodular Maximization-inspired Adaptive Routing Bend Space Planning
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{liu2026arsp,\n  title={Submodular Maximization-inspired Adaptive Routing Bend Space Planning},\n  author={Liu, Siting and Xu, Peng and Liao, Peiyu and Zhu, Keren and Lin, Yibo and Yu, Bei},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/872.pdf
+compare_when:
+- evaluating adaptive routing-space or candidate-bend planning in sequential routing frameworks
+- comparing routing-quality impact when integrating a planning stage with CUGR/Dr.CU/TritonRoute-style flows
+benchmark_scope:
+- ICCAD2019/ISPD-style routing benchmark cases 18t5 through 19t9 with CUGR 2.0 as global router and Dr.CU 2.0 as detailed router
+- additional validation with TritonRoute to test portability of the bend-space planning framework
+metrics:
+- shorts violation score
+- spacing violation score
+- wirelength
+- via count
+- non-preferred usage
+- ARSP planning time and global/detailed-routing runtime
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- ARSP is a routing-space planning add-on evaluated inside existing routing flows rather than a standalone end-to-end router
+- proposed topic may later be merged into a broader detailed-routing or routing-optimization topic during taxonomy review

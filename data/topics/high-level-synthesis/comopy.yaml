@@ -1,0 +1,25 @@
+baseline_id: comopy
+short_name: ComoPy
+display_name: 'Software-Style Hardware Debugging: A Hardware Generation, Simulation and Debugging Framework'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Software-Style Hardware Debugging: A Hardware Generation, Simulation and Debugging Framework'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240882
+  bibtex: "@inproceedings{Liu_2025, title={Software-Style Hardware Debugging: A Hardware Generation, Simulation and Debugging Framework}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240882}, DOI={10.1109/iccad66269.2025.11240882}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Liu, Weiran and Chen, Shixuan and Yang, Chun and Liu, Xianhua}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240882
+compare_when:
+- comparing hardware debugging frameworks
+- evaluating software-style debugging for HDL
+benchmark_scope:
+- Python-based hardware generation designs
+metrics:
+- performance loss vs Verilator (6%)
+- debugging iteration time
+- source-line-level tracing
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published

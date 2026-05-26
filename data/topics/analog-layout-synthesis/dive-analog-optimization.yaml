@@ -1,0 +1,25 @@
+baseline_id: dive-analog-optimization
+short_name: DIVE
+display_name: 'DIVE: Dynamic Information-Guided Variable Expansion for Deeper Analog Circuit Optimization'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'DIVE: Dynamic Information-Guided Variable Expansion for Deeper Analog Circuit Optimization'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240976
+  bibtex: "@inproceedings{Liu_2025, title={DIVE: Dynamic Information-Guided Variable Expansion for Deeper Analog Circuit Optimization}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240976}, DOI={10.1109/iccad66269.2025.11240976}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Liu, Zhuohua and Xie, Weilun and Zhang, Yuxuan and Wang, Chen and Hu, Yuanqi and Xing, Wei W.}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240976
+compare_when:
+- comparing Bayesian optimization for analog sizing
+- evaluating progressive dimension expansion for analog optimization
+benchmark_scope:
+- analog circuit benchmarks
+metrics:
+- simulation reduction (1.61x-21.11x)
+- spec improvement (up to 2.69x)
+- simulation budget (~50 vs 200-300 for SOTA)
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published

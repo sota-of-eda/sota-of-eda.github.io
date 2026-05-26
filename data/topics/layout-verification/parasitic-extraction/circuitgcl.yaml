@@ -1,0 +1,25 @@
+baseline_id: circuitgcl
+short_name: CircuitGCL
+display_name: Transferable Parasitic Estimation via Graph Contrastive Learning and Label Rebalancing in AMS Circuits
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Transferable Parasitic Estimation via Graph Contrastive Learning and Label Rebalancing in AMS Circuits
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240660
+  bibtex: "@inproceedings{shen2025circuitgcl,\n  author = {Shan Shen and Shenglu Hua and Jiajun Zou and Jiawei Liu and Jianwang\nZhai and Chuan Shi and Wenjian Yu},\n  title = {Transferable Parasitic Estimation via Graph Contrastive Learning\nand Label Rebalancing in {AMS} Circuits},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240660},\n  publisher = {IEEE}\n}\n"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240660
+compare_when:
+- comparing parasitic estimation accuracy (R2, F1) against SOTA methods for AMS circuits
+- evaluating transferability across heterogeneous circuit graphs
+benchmark_scope:
+- TSMC 28nm AMS designs
+metrics:
+- 'R2 improvement for edge regression: 33.64% ~ 44.20%'
+- 'F1-score gain for node classification: 0.9x ~ 2.1x'
+reproducibility: unknown
+caveats:
+- graph contrastive learning approach with label rebalancing; no public code or model identified
+- evaluated on TSMC 28nm but transferability to other nodes not demonstrated

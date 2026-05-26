@@ -1,0 +1,24 @@
+baseline_id: hyperef-2
+short_name: HyperEF 2.0
+display_name: 'HyperEF 2.0: Spectral Hypergraph Coarsening via Krylov Subspace Expansion and Resistance-Based Local Clustering'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'HyperEF 2.0: Spectral Hypergraph Coarsening via Krylov Subspace Expansion and Resistance-Based Local Clustering'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240836
+  bibtex: "@inproceedings{sajadinia2025hyperef,\n  title={HyperEF 2.0: Spectral Hypergraph Coarsening via Krylov Subspace Expansion and Resistance-Based Local Clustering},\n  author={Sajadinia, Hamed and Feng, Zhuo},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240836
+compare_when:
+- Comparing hypergraph partitioning methods for VLSI netlist partitioning
+benchmark_scope:
+- ISPD98 VLSI benchmarks
+- Titan23 VLSI benchmarks
+metrics:
+- Partitioning quality (cut size)
+- Runtime
+reproducibility: unknown
+caveats:
+- Spectral methods may have scalability limits on very large modern designs

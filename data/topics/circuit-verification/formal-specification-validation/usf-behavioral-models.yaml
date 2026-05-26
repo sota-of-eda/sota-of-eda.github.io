@@ -1,0 +1,28 @@
+baseline_id: usf-behavioral-models
+short_name: USF Behavioral Models
+display_name: USF Behavioral Models for Formal Hardware Specification Validation
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Validating Formal Hardware Specifications Through Generated Behavioral Models
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{kunzelmann2026validating,\n  title={Validating Formal Hardware Specifications Through Generated Behavioral Models},\n  author={Kunzelmann, Robert and Tahoun, Zeyad and Ganesh, Vinod Bangalore and Berger, Maximilian and Baerens, Emil and Ecker, Wolfgang},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1221.pdf
+compare_when:
+- evaluating early validation of formal hardware specifications before RTL is complete
+- comparing executable specification approaches that generate behavioral models and formal properties from a common specification source
+benchmark_scope:
+- 'seven industrial or representative digital hardware components: ALU, SIMD divider, FIFO, MMIO, AHB matrix, timer/counter, and SPI controller'
+- cycle-accurate behavioral simulations using Verilator and generated formal properties checked with Cadence Jasper FPV
+metrics:
+- specification gaps and inconsistencies detected by runtime checks
+- behavioral-model simulation time per cycle
+- generated formal property count and proof time
+- USF specification/model/property lines of code
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- experiments use industrial-style components, generated SystemVerilog models, Verilator, and commercial Cadence Jasper FPV; source artifacts were not verified as publicly available
+- proposed formal-specification-validation topic should be reviewed with other circuit-verification, assertion-generation, and specification-language drafts before Workflow C merge

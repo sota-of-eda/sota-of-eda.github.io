@@ -1,0 +1,25 @@
+baseline_id: ado-kt-knowledge-graph
+short_name: ADO-KT
+display_name: 'Analog Design Agents: On Knowledge Extraction and Transfer with Knowledge Graphs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Analog Design Agents: On Knowledge Extraction and Transfer with Knowledge Graphs'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240770
+  bibtex: "@inproceedings{N_S_2025, title={AI Analog Circuit Design Agents : On Knowledge Extraction and Transfer with Knowledge Graphs}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240770}, DOI={10.1109/iccad66269.2025.11240770}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={N.S, Karthik Somayaji and Li, Peng}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240770
+compare_when:
+- comparing knowledge-transfer methods for analog design
+- evaluating LLM-assisted analog circuit optimization
+benchmark_scope:
+- analog circuit benchmarks (topology-agnostic)
+metrics:
+- design quality
+- data efficiency
+- optimization convergence
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published

@@ -1,0 +1,28 @@
+baseline_id: coxplorer
+short_name: CoXplorer
+display_name: 'CoXplorer: Multi-Staged Co-Exploration Framework for AI Model Compression and Accelerator Design'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'CoXplorer: Multi-Staged Co-Exploration Framework for AI Model Compression and Accelerator Design'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240731
+  bibtex: '@inproceedings{Ma_2025, title={CoXplorer: Multi-Staged Co-Exploration Framework for AI Model Compression and Accelerator Design}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240731}, DOI={10.1109/iccad66269.2025.11240731}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Ma, Songchen and Wu, Junyi and Tan, Yonghao and Dong, Pingcheng and Luo, Peng and Pang, Di and Liu, Yu and Liu, Xuejiao and Liang, Luhong and Cheng, Kwang-Ting and Tu, Fengbin}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240731
+compare_when:
+- comparing AI model-accelerator co-design frameworks
+- evaluating multi-staged design space decomposition for co-exploration
+benchmark_scope:
+- CNN and Transformer models
+- AC-Copilot toolchain with multi-grained performance modeling
+metrics:
+- throughput
+- energy efficiency
+- design space exploration speedup
+reproducibility: unknown
+caveats:
+- Multi-staged decomposition may miss global Pareto-optimal designs
+- AC-Copilot toolchain not publicly available as of search date
+- Results depend on specific AI model and accelerator template

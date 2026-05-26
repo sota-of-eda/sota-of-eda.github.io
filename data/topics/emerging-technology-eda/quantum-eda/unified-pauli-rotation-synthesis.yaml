@@ -1,0 +1,29 @@
+baseline_id: unified-pauli-rotation-synthesis
+short_name: pMST Tableau Synthesis
+display_name: Unified Pauli-Rotation Synthesis for Relieving CX-Count Overhead in Tableau-Based Quantum Circuit Optimization Flow
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Unified Pauli-Rotation Synthesis for Relieving CX-Count Overhead in Tableau-Based Quantum Circuit Optimization Flow
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{kuo2026unifiedpaulirotation,\n  title={Unified Pauli-Rotation Synthesis for Relieving CX-Count Overhead in Tableau-Based Quantum Circuit Optimization Flow},\n  author={Kuo, Yi-Hsiang and Yang, Hsiang-Chun and Chen, Hsin-Yu and Huang, Chung-Yang},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1110.pdf
+compare_when:
+- evaluating tableau-based quantum circuit optimization or Clifford+T resynthesis
+- comparing methods that reduce two-qubit/CX-count overhead after T-count optimization
+benchmark_scope:
+- standard Clifford+T circuits used by LazySynth/FastTODD studies, excluding hwb11 and hwb12 due to FastTODD timeout
+- Qsyn implementation with FastTODD T-optimization shared across synthesis strategies
+- post-synthesis local optimization with Qiskit, TKET, and Qsyn passes
+metrics:
+- two-qubit/CX count and ratio to original circuit
+- T-count after shared T-optimization
+- synthesis runtime
+- robustness after local optimization passes
+reproducibility: paper_only
+caveats:
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- the paper says the method was implemented in Qsyn, but a public code URL for this DATE contribution was not verified in this pass
+- topic parent is provisional until the emerging-technology quantum EDA taxonomy is accepted

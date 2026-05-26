@@ -1,0 +1,23 @@
+topic_id: thermal-analysis
+parent_id: circuit-verification
+short_name: Thermal
+display_name: Thermal & Electro-Thermal Analysis
+aliases:
+- gnn-thermal-simulation
+- thermal-resistance-extraction
+- thermal-analysis-for-advanced-packaging
+- chiplet-thermal-simulation
+- thermal-and-electro-thermal-analysis-for-advanced-packaging
+- Thermal & Electro-Thermal Analysis
+- Thermal
+- thermal analysis
+description: Thermal and electro-thermal analysis for ICs and advanced packaging, including GNN-based thermal simulation, thermal-resistance extraction, stochastic solvers, compact thermal models, FEM reduction, and packaging-level thermal modeling.
+review_triggers:
+- paper claims thermal or electro-thermal simulation improvement
+- paper addresses thermal analysis for 3D IC or advanced packaging
+- paper proposes ML-based, stochastic, compact, FEM, or reduced-order thermal modeling
+- paper proposes ML-based or reduced-order thermal modeling
+- paper evaluates thermal resistance or hotspot mitigation
+- paper proposes ML-based, stochastic, FEM, or reduced-order thermal modeling
+- paper proposes ML-based, stochastic, or reduced-order thermal modeling
+baselines: []

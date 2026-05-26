@@ -1,0 +1,15 @@
+topic_id: pcb-physical-design
+short_name: PCB Physical Design
+display_name: PCB Physical Design
+aliases:
+- PCB placement and routing
+- PCB PnR
+- printed circuit board physical design
+- PCB Physical Design
+- pcb physical design
+description: Board-level PCB physical-design methods for component placement, routing, and layout migration, including migration from reference layouts and evaluation by board routing, signal-integrity, electromagnetic, and manufacturability metrics.
+review_triggers:
+- paper claims automated PCB placement-and-routing improvement
+- paper evaluates PCB layout quality using wirelength, vias, insertion loss, crosstalk, or design-rule checks
+- paper addresses board-level layout migration or reference-layout reuse
+baselines: []

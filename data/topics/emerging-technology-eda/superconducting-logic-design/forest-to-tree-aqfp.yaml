@@ -1,0 +1,29 @@
+baseline_id: forest-to-tree-aqfp
+short_name: Forest-to-Tree AQFP
+display_name: 'From Forest to Tree: Prioritizing the Maximum Additional Delay in AQFP Circuit Design'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'From Forest to Tree: Prioritizing the Maximum Additional Delay in AQFP Circuit Design'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{bai2026foresttreeaqfp,\n  title={From Forest to Tree: Prioritizing the Maximum Additional Delay in AQFP Circuit Design},\n  author={Bai, Yinuo and Fan, Mingjia and Ho, Tsung-Yi and Jin, Zhou},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/847.pdf
+compare_when:
+- evaluating buffer and splitter insertion for AQFP or superconducting logic circuits
+- comparing scalable algorithms for minimizing additional delay, insertion count, and circuit depth under AQFP fanout/timing constraints
+benchmark_scope:
+- standard AQFP benchmarks with wire-level buffer/splitter insertion and circuit-level refinement
+- comparisons against ICCAD 2021 optimal insertion, ASP-DAC 2023 global optimization, and TCAD 2025 buffer/splitter insertion methods
+metrics:
+- maximum additional delay and total additional delay
+- buffer/splitter or JJ insertion count
+- circuit depth / logic depth
+- runtime speedup over prior AQFP insertion methods
+reproducibility: paper_only
+caveats:
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- no public code repository was verified in this pass
+- the topic deliberately avoids existing CMOS logic-synthesis because AQFP buffer/splitter insertion is superconducting-logic technology-specific EDA
+- proposed topic should be reviewed against the existing provisional rsfq-design topic before Workflow C

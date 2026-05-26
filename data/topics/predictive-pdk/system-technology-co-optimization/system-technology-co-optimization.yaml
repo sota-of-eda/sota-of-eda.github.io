@@ -1,0 +1,14 @@
+topic_id: system-technology-co-optimization
+parent_id: predictive-pdk
+short_name: STCO
+display_name: System-Technology Co-Optimization
+aliases:
+- System-Technology Co-Optimization
+- STCO
+- system technology co optimization
+description: System-technology co-optimization, partitioning decisions across technology nodes, and architecture-aware technology pathfinding.
+review_triggers:
+- paper claims STCO methodology or system-level technology pathfinding
+- paper addresses architecture-driven technology node selection
+- paper proposes cross-stack optimization across system and technology layers
+baselines: []

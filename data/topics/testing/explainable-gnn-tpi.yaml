@@ -1,0 +1,29 @@
+baseline_id: explainable-gnn-tpi
+short_name: Explainable GNN TPI
+display_name: Explainable GNN-Driven Test Point Insertion on Uncontrollable I/Os
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Explainable GNN-Driven Test Point Insertion on Uncontrollable I/Os
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{cho2026explainablegnntpi,\n  title={Explainable GNN-Driven Test Point Insertion on Uncontrollable I/Os},\n  author={Cho, Sung-Hyuk and Park, Tae-Min and Lee, Jeongyeol and Hong, Jae-Youn and Gerstlauer, Andreas and Yang, Joon-Sung},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/431.pdf
+compare_when:
+- evaluating DFT test point insertion for uncontrollable or masked I/Os
+- comparing ML/GNN-based test-coverage prediction and saliency-driven testability improvement
+benchmark_scope:
+- 43 circuits from ISCAS89, ITC99, and OpenLane CI designs synthesized with Design Compiler and Synopsys 32 nm technology
+- AIG conversion with Yosys and masked I/O ratios from 0% to 100%
+- comparison against Synopsys TMAX ATPG labels and TMAX Advisor TPI baseline
+metrics:
+- Pearson correlation between predicted and ground-truth test coverage
+- number and ratio of inserted test points needed to reach target coverage
+- test-coverage improvement under the same test-point budget
+reproducibility: paper_only
+caveats:
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- no public code or dataset repository was verified in this pass
+- results depend on commercial Synopsys TMAX/Design Compiler flows and a proprietary 32 nm technology setup
+- accepted registry may later split DFT/test-point-insertion from the broad testing root topic

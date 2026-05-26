@@ -1,0 +1,27 @@
+baseline_id: h3d
+short_name: H3D
+display_name: 'H3D: Heterogeneous Resources Aware Global Router for Face-to-Face Bonded 3D ICs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'H3D: Heterogeneous Resources Aware Global Router for Face-to-Face Bonded 3D ICs'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240944
+  bibtex: '@inproceedings{Zhao_2025, title={H3D: Heterogeneous Resources Aware Global Router for Face-to-Face Bonded 3D ICs}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240944}, DOI={10.1109/iccad66269.2025.11240944}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Zhao, Yuxuan and Gu, Feng and Liu, Siting and Liao, Peiyu and Yu, Bei}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240944
+compare_when:
+- comparing 3D IC global routing tools for face-to-face bonded designs
+- evaluating hybrid bonding routing optimization with Steiner tree algorithms
+benchmark_scope:
+- face-to-face bonded 3D IC benchmark designs
+metrics:
+- wirelength
+- number of hybrid bonding terminals (HBTs)
+- runtime
+reproducibility: unknown
+caveats:
+- Targets face-to-face bonded 3D ICs specifically; not general 3D routing
+- Steiner tree heuristics may not achieve global optimality
+- No open-source code found

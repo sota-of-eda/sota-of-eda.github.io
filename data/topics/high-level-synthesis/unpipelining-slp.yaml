@@ -1,0 +1,29 @@
+baseline_id: unpipelining-slp
+short_name: Unpipelining SLP
+display_name: Area Efficient Speculative Loop Pipelining for High-Level Synthesis
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Area Efficient Speculative Loop Pipelining for High-Level Synthesis
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{leothaud2026areaefficientslp,\n  title={Area Efficient Speculative Loop Pipelining for High-Level Synthesis},\n  author={Leothaud, Dylan and Rokicki, Simon and Derrien, Steven and Puaut, Isabelle},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/489.pdf
+  project_url: https://lotr.irisa.fr/
+compare_when:
+- evaluating HLS techniques for speculative loop pipelining, dynamic/speculative scheduling, or resource sharing under irregular control flow
+- comparing area/throughput tradeoffs against static Vitis HLS and SpecHLS-generated speculative pipelines
+benchmark_scope:
+- representative HLS kernels with irregular control flow or memory hazards, synthesized for a Xilinx XC7A25 FPGA using Vitis HLS 2023.1
+- comparisons among static pipelining, baseline SpecHLS, and the proposed unpipelined resource-sharing transformation
+metrics:
+- LUT and flip-flop resource utilization
+- critical path or operating frequency
+- cycles per iteration and throughput
+- relative area reduction and throughput change versus SpecHLS
+reproducibility: artifact_available
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- evaluation is on a small representative kernel set and an FPGA/Vitis HLS target; applicability to ASIC HLS flows or larger application kernels needs separate review
+- project URL is the SpecHLS/LOTR page cited by the paper, not a per-paper artifact snapshot

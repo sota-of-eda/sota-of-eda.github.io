@@ -1,0 +1,24 @@
+baseline_id: j2place
+short_name: J2Place
+display_name: 'J2Place: A Multiphase Clocking-Oriented Length-Matching Placement for Rapid Single-Flux-Quantum Circuits'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'J2Place: A Multiphase Clocking-Oriented Length-Matching Placement for Rapid Single-Flux-Quantum Circuits'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240637
+  bibtex: "@inproceedings{fu2025j2place,\n  author = {Rongliang Fu and Minglei Zhou and Huilong Jiang and Junying Huang\nand Xiaochun Ye and Tsung-Yi Ho},\n  title = {{J2Place}: A Multiphase Clocking-Oriented Length-Matching Placement\nfor Rapid Single-Flux-Quantum Circuits},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240637},\n  publisher = {IEEE}\n}\n"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240637
+compare_when:
+- comparing RSFQ placement wirelength and clock network quality against SOTA methods
+- evaluating multiphase clocking-aware length-matching
+benchmark_scope:
+- RSFQ superconducting circuits
+metrics:
+- 'vertical wirelength reduction: 50.09%, 57.12%, 56.24% vs SOTA methods'
+reproducibility: unknown
+caveats:
+- first work addressing multiphase clocking in RSFQ placement; no public code identified
+- proposes novel TFFDO and TFFDE RSFQ cells that may require foundry support

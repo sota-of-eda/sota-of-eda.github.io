@@ -1,0 +1,25 @@
+baseline_id: ican-microarchitecture-search
+short_name: ICAN
+display_name: 'Seeing Through Designs: Attention-Based Knowledge Transfer for Preference-Guided Microarchitecture Search'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Seeing Through Designs: Attention-Based Knowledge Transfer for Preference-Guided Microarchitecture Search'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240774
+  bibtex: "@inproceedings{Zhao_2025, title={Seeing Through Designs: Attention-Based Knowledge Transfer for Preference-Guided Microarchitecture Search}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240774}, DOI={10.1109/iccad66269.2025.11240774}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Zhao, Yiyang and Zhao, Xuyang and Bi, Zhaori and Zhu, Ming and Zhan, Qiwei and Zhu, Keren and Yang, Fan and Yan, Changhao and Zhou, Dian and Zeng, Xuan}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240774
+compare_when:
+- comparing attention-based or meta-learning approaches for microarchitecture DSE
+benchmark_scope:
+- 52-dim microarchitectural design space
+- CPU microarchitecture benchmarks
+metrics:
+- hypervolume indicator
+- time-to-reach-hypervolume
+- speedup
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published

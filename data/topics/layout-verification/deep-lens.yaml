@@ -1,0 +1,27 @@
+baseline_id: deep-lens
+short_name: DEEP-LENS
+display_name: 'DEEP-LENS: Deep-Learning Powered Layout Extraction and Novel Segmentation for IC Assurance and Security'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'DEEP-LENS: Deep-Learning Powered Layout Extraction and Novel Segmentation for IC Assurance and Security'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{maitra2026deeplens,\n  title={DEEP-LENS: Deep-Learning Powered Layout Extraction and Novel Segmentation for IC Assurance and Security},\n  author={Maitra, Shuvodip and Chakraborty, Abhishek and Mukhopadhyay, Debdeep},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1246.pdf
+compare_when:
+- evaluating IC layout extraction or segmentation from delayered SEM images for physical assurance
+- comparing layout-modification or hardware-Trojan detection from image-derived layout masks
+benchmark_scope:
+- 1296 SEM gate-layer images from a delayered microprocessor IC, split into training and test data
+- simulated polygon addition/deletion modifications on high-resolution GDSII-derived images
+metrics:
+- segmentation IoU, mean pixel accuracy, and Dice score
+- polygon addition and deletion detection accuracy
+- qualitative robustness to SEM noise, debris, and delayering artifacts
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- dataset and SEM imaging pipeline appear paper-specific; no public artifact or reusable dataset link was verified in this pass
+- existing layout-verification is a broad parent; human taxonomy review should decide whether IC physical assurance/layout extraction deserves a dedicated topic

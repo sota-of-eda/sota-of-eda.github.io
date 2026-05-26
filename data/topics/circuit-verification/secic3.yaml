@@ -1,0 +1,30 @@
+baseline_id: secic3
+short_name: SecIC3
+display_name: 'SecIC3: Customizing IC3 for Hardware Security Verification'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'SecIC3: Customizing IC3 for Hardware Security Verification'
+  venue: DATE
+  year: 2026
+  bibtex: "@article{DBLP:journals/corr/abs-2601-21353,\n  author       = {Qinhan Tan and\n                  Akash Gaonkar and\n                  Yu{-}Wei Fan and\n                  Aarti Gupta and\n                  Sharad Malik},\n  title        = {SecIC3: Customizing {IC3} for Hardware Security Verification},\n  journal      = {CoRR},\n  volume       = {abs/2601.21353},\n  year         = {2026},\n  url          = {https://doi.org/10.48550/arXiv.2601.21353},\n  doi          = {10.48550/ARXIV.2601.21353},\n  eprinttype   = {arXiv},\n  eprint       = {2601.21353},\n  timestamp    = {Thu, 26 Feb 2026 09:55:37 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2601-21353.bib},\n  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}"
+links:
+  paper_url: https://arxiv.org/abs/2601.21353
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/287.pdf
+  arxiv_url: https://arxiv.org/abs/2601.21353
+  repo_url: https://github.com/qinhant/SecIC3
+compare_when:
+- evaluating formal verification of hardware security non-interference properties
+- comparing IC3/PDR-based model checking on self-composed hardware designs
+benchmark_scope:
+- ten open-source hardware non-interference checking benchmarks, including arithmetic modules, memory modules, secure enclave, cache, and RISC-V cores
+- self-composition circuits verified with ABC-PDR and rIC3 backends under a one-hour timeout
+metrics:
+- number of verified designs and proof time
+- proof bound reached within timeout
+- proof speedup over baseline IC3 implementations
+reproducibility: artifact_available
+caveats:
+- formal DATE/IEEE DOI and DATE BibTeX were not found in DBLP/Crossref at draft time; BibTeX is the verified DBLP CoRR/arXiv entry
+- scope is non-interference hardware security verification; applicability to general functional verification or other hyperproperties needs separate review
+- existing circuit-verification topic is broad; a future hardware-security-verification child topic may be more precise if this area grows

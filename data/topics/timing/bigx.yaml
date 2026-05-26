@@ -1,0 +1,28 @@
+baseline_id: bigx
+short_name: BIGX
+display_name: 'BIGX: GPU Acceleration for Versatile Buffer Insertion'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: GPU Acceleration for Versatile Buffer Insertion
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240837
+  bibtex: '@inproceedings{Pu_2025, title={GPU Acceleration for Versatile Buffer Insertion}, url={http://dx.doi.org/10.1109/ICCAD66269.2025.11240837}, DOI={10.1109/iccad66269.2025.11240837}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Pu, Yuan and Ji, Yuhao and Yu, Siying and Zhang, Zuodong and Guo, Zizheng and He, Zhuolun and Lin, Yibo and Pan, David and Yu, Bei}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240837
+  pdf_url: https://yibolin.com/publications/papers/OPT_ICCAD2025_Pu.pdf
+compare_when:
+- comparing GPU-accelerated buffer insertion algorithms for timing closure
+- evaluating maximum capacitance violation repair effectiveness
+benchmark_scope:
+- OpenROAD benchmark designs
+metrics:
+- max capacitance violation repair rate
+- speedup over CPU (OpenROAD)
+- Van Ginneken algorithm GPU speedup
+reproducibility: unknown
+caveats:
+- Requires GPU hardware for acceleration benefits
+- Focuses on buffer insertion only; does not cover other timing optimization steps
+- GPU implementation details (CUDA kernels) not open-sourced as of search date

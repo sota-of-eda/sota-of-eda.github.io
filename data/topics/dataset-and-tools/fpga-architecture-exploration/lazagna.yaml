@@ -1,0 +1,26 @@
+baseline_id: lazagna
+short_name: LaZagna
+display_name: 'LaZagna: An Open-Source 3D FPGA Architecture Exploration Framework'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'LaZagna: An Open-Source 3D FPGA Architecture Exploration Framework'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240893
+  bibtex: "@inproceedings{Youssef_2025, title={LaZagna: An Open-Source Framework for Flexible 3D FPGA Architectural Exploration}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240893}, DOI={10.1109/iccad66269.2025.11240893}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Youssef, Ismael and Yang, Hang and Hao, Cong}, year={2025}, month=Oct, pages={1\u20139} }"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240893
+compare_when:
+- comparing 3D FPGA architecture exploration frameworks
+- evaluating open-source FPGA architecture tools
+benchmark_scope:
+- Koios benchmark suite
+metrics:
+- 3D switch box configurations
+- connection box support
+- benchmark evaluation coverage
+reproducibility: unknown
+caveats:
+- ICCAD 2025 paper, recently published
+- open-source tool

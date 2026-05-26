@@ -1,0 +1,28 @@
+baseline_id: eda-flow-matters
+short_name: EDA Flow Matters
+display_name: 'EDA Flow Matters: Stage-Aware Parameter Optimization of Tool Chain'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'EDA Flow Matters: Stage-Aware Parameter Optimization of Tool Chain'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{li2026edaflowmatters,\n  title={EDA Flow Matters: Stage-Aware Parameter Optimization of Tool Chain},\n  author={Li, Xinheng and Luo, Donger and Xu, Peng and Yu, Ziyang and Sun, Qi and Chen, Tinghuan and Yu, Bei and Geng, Hao},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/367.pdf
+compare_when:
+- evaluating stage-aware Bayesian optimization for EDA tool-chain parameter tuning
+- comparing PPA hypervolume improvements under limited full-flow evaluation budgets
+benchmark_scope:
+- six designs across ASAP7 7nm, FreePDK45 45nm, and SkyWater 130nm process nodes
+- Cadence Genus and Innovus flow with synthesis, floorplan, placement, CTS, and routing parameters
+- runtime budget equivalent to 50 default EDA flow runs
+metrics:
+- TNS-power hypervolume and TNS-area hypervolume
+- full multi-objective hypervolume over TNS, power, and area
+- prediction R2 for power and area under scarce training data
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- experiments use commercial Cadence tools, so independent reproduction may be limited
+- proposed topic is under dataset-and-tools as a cross-flow tuning category; human taxonomy review may prefer a separate physical-design-flow-optimization parent

@@ -1,0 +1,27 @@
+baseline_id: elogic
+short_name: eLogic
+display_name: 'eLogic: An E-Graph-based Logic Rewriting Framework for Majority-Inverter Graphs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'eLogic: An E-Graph-based Logic Rewriting Framework for Majority-Inverter Graphs'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{fu2026elogic,\n  title={eLogic: An E-Graph-based Logic Rewriting Framework for Majority-Inverter Graphs},\n  author={Fu, Rongliang and Xuan, Wei and Yin, Shuo and Hu, Guangyu and Chen, Chen and Zhang, Hongce and Yu, Bei and Ho, Tsung-Yi},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1137.pdf
+compare_when:
+- evaluating Majority-Inverter Graph rewriting or optimization methods
+- comparing logic-synthesis methods that optimize Boolean network size and depth on EPFL benchmarks
+benchmark_scope:
+- 20 EPFL benchmark circuits synthesized into MIGs using mockturtle
+- single-method and combined-method evaluations against resubstitution and exact rewriting baselines
+metrics:
+- majority-node count
+- circuit depth
+- runtime
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- paper states an open-source GitHub URL, but GitHub verification timed out during this pass, so repo_url is not listed as verified
+- runtime is higher than some local rewriting baselines because e-graphs are rebuilt for each subgraph input

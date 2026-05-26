@@ -1,0 +1,19 @@
+topic_id: hypergraph-partitioning
+parent_id: placement
+short_name: Hypergraph Partitioning
+display_name: Hypergraph Partitioning
+aliases:
+- VLSI hypergraph partitioning
+- netlist partitioning
+- hypergraph bisection
+- Hypergraph Partitioning
+- hypergraph partitioning
+description: Partitioning methods for VLSI netlist hypergraphs, including multilevel, spectral, learning-based, and hybrid approaches evaluated by cutsize, balance, runtime, and physical-design impact.
+review_triggers:
+- paper claims VLSI hypergraph partitioning quality or runtime improvement
+- paper evaluates on ISPD98, ISPD05, DAC/ICCAD partitioning contest, or netlist hypergraph benchmarks
+- paper compares cutsize, balance constraints, or partitioning runtime against hMETIS, KaHyPar, SpecPart, MedPart, or GenPart
+- paper claims hypergraph partitioning quality or runtime improvement
+- paper addresses partitioning for multi-FPGA or multi-die systems
+- paper proposes learning-based or spectral partitioning methods
+baselines: []

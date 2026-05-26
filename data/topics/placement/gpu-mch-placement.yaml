@@ -1,0 +1,23 @@
+baseline_id: gpu-mch-placement
+short_name: GPU-Accelerated MCH DP
+display_name: Generalized GPU-Accelerated Dynamic Programming with Application to Mixed-Cell-Height Detailed Placement
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Generalized GPU-Accelerated Dynamic Programming with Application to Mixed-Cell-Height Detailed Placement
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240861
+  bibtex: "@inproceedings{huang2025gpu,\n  title={Generalized GPU-Accelerated Dynamic Programming with Application to Mixed-Cell-Height Detailed Placement},\n  author={Huang, Da-Wei and Fang, Shao-Yun and Liu, Wen-Hao},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240861
+compare_when:
+- Comparing GPU-accelerated detailed placement methods for advanced node mixed-cell-height designs
+benchmark_scope:
+- Standard cell placement benchmarks
+metrics:
+- Runtime reduction (96.6% average)
+- Speedup (up to 1600x)
+reproducibility: unknown
+caveats:
+- GPU DP approach is specialized to MCH detailed placement; DP formulation may not cover all placement constraints

@@ -1,0 +1,30 @@
+baseline_id: ip-camouflage-aig-vae
+short_name: IP Camouflage (AIG-VAE)
+display_name: 'Designing with Deception: ML- and Covert Gate-Enhanced Camouflaging to Thwart IC Reverse Engineering'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Designing with Deception: ML- and Covert Gate-Enhanced Camouflaging to Thwart IC Reverse Engineering'
+  venue: ICCAD
+  year: 2025
+  bibtex: "@inproceedings{ipcamouflage2025,\n  author = {Junling Fan and David Koblah and Domenic Forte},\n  title = {Designing with Deception: ML- and Covert Gate-Enhanced Camouflaging to Thwart IC Reverse Engineering},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--9}\n}\n"
+  doi: 10.1109/iccad66269.2025.11241012
+links:
+  pdf_url: https://arxiv.org/abs/2508.08462
+compare_when:
+- Evaluating IC camouflaging and hardware security techniques
+- Comparing ML-based circuit obfuscation against reverse engineering
+- Benchmarking SAT-attack resistance for camouflaged circuits
+benchmark_scope:
+- Camouflaged gate-level circuits
+- SAT-based de-camouflaging attacks
+- AI-enhanced reverse engineering tools
+metrics:
+- Resistance to SAT-based attacks
+- Resistance to AI-based RE
+- Structural overhead (area, delay)
+reproducibility: paper_only
+caveats:
+- Mimetic deception introduces novel covert gates (fake inverters, fake buffers, universal transmitters)
+- AIG-VAE model requires training data for each target IP
+- Assumes optical side channels are counteracted

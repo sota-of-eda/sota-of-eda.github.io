@@ -1,0 +1,27 @@
+baseline_id: pcb-migrator
+short_name: PCB-Migrator
+display_name: 'PCB-Migrator: Automated PCB PnR Migration'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'PCB-Migrator: Automated PCB PnR Migration'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{han2026pcbmigrator,\n  title={PCB-Migrator: Automated PCB PnR Migration},\n  author={Han, Yaohui and Li, Beichen and Fu, Rongliang and Ye, Qunsong and Lu, Zhiyuan and Liu, Junchen and Yu, Bei and Ho, Tsung-Yi and Chen, Tinghuan},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/21.pdf
+compare_when:
+- evaluating automated PCB placement-and-routing or PCB layout migration from expert reference designs
+- comparing board-level layout quality under changed board boundaries or added obstacles
+benchmark_scope:
+- eleven PCB layout migration benchmarks derived from OpenROAD and real-world industrial PCB designs
+- changed board boundaries and inserted obstacles that make direct reference-layout transfer infeasible
+metrics:
+- wirelength and via count
+- insertion loss and crosstalk from Keysight ADS electromagnetic simulation
+- placement cost, runtime, legality, and design-rule-check validity
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- paper references public PCB-PR-App, PcbRouter, SA-PCB, Freerouting, and DeepPCB baselines, but no PCB-Migrator implementation repository was verified in this pass
+- proposed topic is board-level PCB physical design; human taxonomy review should not fold it into IC global-placement solely because it includes placement

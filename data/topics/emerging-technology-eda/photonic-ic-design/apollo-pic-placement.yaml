@@ -1,0 +1,28 @@
+baseline_id: apollo-pic-placement
+short_name: Apollo
+display_name: 'Apollo: Automated Routing-Informed Placement for Large-Scale Photonic Integrated Circuits'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Apollo: Automated Routing-Informed Placement for Large-Scale Photonic Integrated Circuits'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240728
+  bibtex: "@inproceedings{zhou2025apollo,\n  author = {Hongjian Zhou and Haoyu Yang and Nicholas Gangi and Zhaoran Rena Huang and Haoxing Ren and Jiaqi Gu},\n  title = {Apollo: Automated Routing-Informed Placement for Large-Scale Photonic Integrated Circuits},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240728},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240728
+compare_when:
+- comparing automated placement methods for photonic integrated circuits
+- evaluating routing-informed placement frameworks for emerging technologies
+- benchmarking GPU-accelerated PIC design automation
+benchmark_scope:
+- large-scale PIC benchmarks
+- photonic circuit layouts with routing constraints
+metrics:
+- routing success rate (94.79% average)
+- placement runtime (minutes on GPU)
+- wirelength / waveguide length
+reproducibility: unknown
+caveats:
+- first GPU-accelerated PIC placement framework; limited comparison against prior automated PIC placers since the field is nascent
+- may not cover all photonic-specific constraints (e.g., thermal crosstalk, fabrication variation)

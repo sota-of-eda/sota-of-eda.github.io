@@ -1,0 +1,29 @@
+baseline_id: minfill
+short_name: MinFill
+display_name: 'MinFill: Reinforcement Learning and GNN Guided Reordering for Fill-In Reduction in RF Circuit Matrices'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'MinFill: Reinforcement Learning and GNN Guided Reordering for Fill-In Reduction in RF Circuit Matrices'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{zhang2026minfill,\n  title={MinFill: Reinforcement Learning and GNN Guided Reordering for Fill-In Reduction in RF Circuit Matrices},\n  author={Zhang, Hao and Niu, Dan and Zhuo, Cheng and Jin, Zhou},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/113.pdf
+compare_when:
+- evaluating sparse-matrix reordering for direct LU factorization in RF or harmonic-balance circuit simulation
+- comparing block-aware GNN/RL ordering policies with AMD, nested-dissection, or block-aware reordering heuristics
+benchmark_scope:
+- six industrial RF circuit matrices ranging from 44K to 5.81M rows and 2M to 243M nonzeros
+- synthetic E/D/F block matrices extracted from one industrial RF sparsity pattern for training, with full industrial matrices held out for evaluation
+- SuperLU DIST 9.0.0 evaluation on AMD EPYC 7702 CPU, 512 GB RAM, and RTX 4070 GPU
+metrics:
+- number of fill-ins
+- factorization time and speedup over ND/AMD
+- peak memory usage normalized to ND
+- reordering time speedup over ND and AMD
+reproducibility: paper_only
+caveats:
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- evaluation uses industrial RF matrices that may not be publicly redistributable
+- scope is sparse ordering for RF circuit simulation solvers, not general graph partitioning or physical placement

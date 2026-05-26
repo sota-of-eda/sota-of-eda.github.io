@@ -1,0 +1,27 @@
+baseline_id: near-optimal-tdm-ratio-assignment
+short_name: Near-Optimal TDM
+display_name: Near-Optimal TDM Ratio Assignment for Die-Level Routing in Multi-FPGA Systems
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Near-Optimal TDM Ratio Assignment for Die-Level Routing in Multi-FPGA Systems
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{lin2026nearoptimaltdm,\n  title={Near-Optimal TDM Ratio Assignment for Die-Level Routing in Multi-FPGA Systems},\n  author={Lin, Jiawei and Guo, Longkun and Fang, Weijie},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/206.pdf
+compare_when:
+- evaluating TDM ratio assignment, TDM wire assignment, or die-level routing for multi-FPGA systems
+- comparing critical-connection delay on die-level multi-FPGA routing contest benchmarks and state-of-the-art routing/TDM methods
+benchmark_scope:
+- die-level multi-FPGA routing contest benchmarks design1 through design10 with 8 to 20 dies and up to 3.3M nets
+- comparison against top contest entries and state-of-the-art die-level multi-FPGA routing/TDM assignment methods
+metrics:
+- critical connection delay
+- normalized delay versus contest winners and prior methods
+- TDM ratio feasibility and SLL/TDM wire constraint satisfaction
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- the paper adopts the same routing strategy as a prior method, so the main contribution is TDM ratio assignment and delay-aware TDM wire assignment
+- proposed topic overlaps HoPart's multi-FPGA partitioning/routing topic; human taxonomy review may split die-level routing if enough drafts accumulate

@@ -1,0 +1,28 @@
+baseline_id: verirepair
+short_name: VeriRepair
+display_name: 'VeriRepair: Toward Reliable LLM-Based RTL Repair via CoT-Supervised Multi-Objective Fine-Tuning and Hybrid Retrieval'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'VeriRepair: Toward Reliable LLM-Based RTL Repair via CoT-Supervised Multi-Objective Fine-Tuning and Hybrid Retrieval'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{peng2026verirepair,\n  title={VeriRepair: Toward Reliable LLM-Based RTL Repair via CoT-Supervised Multi-Objective Fine-Tuning and Hybrid Retrieval},\n  author={Peng, Lei and Cui, Aijiao and Jin, Yier},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/118.pdf
+compare_when:
+- evaluating LLM-based Verilog or RTL repair methods
+- comparing reasoning-supervised fine-tuning, retrieval-augmented RTL repair, and prompt- or dataset-driven Verilog repair methods
+benchmark_scope:
+- about 13,000 RTL bug-fix pairs spanning more than 40 error types across six categories
+- held-out 1,000-sample inference set plus benchmark samples from VeriDebug, CirFix, and RTL-Repair
+- DeepSeek-Coder-7B-Instruct fine-tuning and retrieval-augmented inference with Icarus Verilog/Yosys validation
+metrics:
+- Top-1, Top-5, and Top-10 repair accuracy/pass@k
+- syntax and structural validation
+- effect of retrieval strategy and AST/code retriever filtering
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- the paper states a GitHub dataset URL, but HTTP/git verification timed out during this pass, so the repository is not listed as a verified baseline link
+- results depend on generated reasoning annotations, injected bug taxonomy, and access to GPU fine-tuning infrastructure

@@ -1,0 +1,28 @@
+baseline_id: dynaopt
+short_name: DynaOpt
+display_name: 'DynaOpt: A Heterogeneous Logic Optimization Framework with Dynamic Sequence Generation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'DynaOpt: A Heterogeneous Logic Optimization Framework with Dynamic Sequence Generation'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{qin2026dynaopt,\n  title={DynaOpt: A Heterogeneous Logic Optimization Framework with Dynamic Sequence Generation},\n  author={Qin, Xingyu and Dong, Guande and Zhai, Jianwang and Zhao, Kang},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/412.pdf
+compare_when:
+- evaluating technology-independent logic optimization frameworks over AIG/MIG/XAG/XMG representations
+- comparing heterogeneous logic optimization and dynamic synthesis-sequence generation methods on EPFL-style logic benchmarks
+benchmark_scope:
+- HeLO benchmark suite with LSOracle rerun and HeLO quoted from original paper
+- AIG-based EPFL benchmarks for controlled comparison and ablation
+- ASAP7 standard-cell mapping for post-synthesis ADP evaluation
+metrics:
+- node count, logic level, and node-depth product
+- mapped delay, area, and area-delay product
+- runtime in seconds and ablation NDP reduction
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- HeLO is non-open source and the paper quotes HeLO results from the original paper; conversion and mapping-flow differences may affect exact comparability
+- DynaOpt trades runtime for quality because GA search is more expensive than LSOracle's fixed scripts

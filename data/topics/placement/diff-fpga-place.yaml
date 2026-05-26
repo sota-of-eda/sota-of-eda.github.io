@@ -1,0 +1,26 @@
+baseline_id: diff-fpga-place
+short_name: Diff-FPGA-Place
+display_name: Differentiable Timing-Driven FPGA Placement with Smooth Optimization and ML-Based Delay Calibration
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Differentiable Timing-Driven FPGA Placement with Smooth Optimization and ML-Based Delay Calibration
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240642
+  bibtex: '@inproceedings{Lin_2025, title={Differentiable Timing-Driven FPGA Placement with Smooth Optimization and ML-Based Delay Calibration}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240642}, DOI={10.1109/iccad66269.2025.11240642}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Lin, Yu-Kang and Xiong, Zhili and Pan, David Z.}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240642
+compare_when:
+- comparing differentiable placement methods for FPGA timing optimization
+- evaluating ML-based delay calibration for placement guidance
+benchmark_scope:
+- FPGA designs
+metrics:
+- critical path delay
+- half-perimeter wirelength (HPWL)
+reproducibility: unknown
+caveats:
+- XGBoost delay model requires per-FPGA-architecture training
+- Differentiable optimization may converge to local minima
+- Only 4% critical path delay improvement may not justify ML overhead

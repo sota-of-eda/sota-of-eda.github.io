@@ -1,0 +1,32 @@
+baseline_id: gpu-transduction
+short_name: GPU Transduction
+display_name: GPU-Accelerated Efficient Transduction for Logic Optimization
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: GPU-Accelerated Efficient Transduction for Logic Optimization
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{lin2026gpuTransduction,\n  title={GPU-Accelerated Efficient Transduction for Logic Optimization},\n  author={Lin, Zhuofan and Lin, Shiju},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/214.pdf
+  repo_url: https://github.com/Lin-HKUST-Guangzhou/gpu-transduction
+  project_url: https://personal.hkust-gz.edu.cn/shijulin/papers/DATE26_GPU_Transduction.pdf
+compare_when:
+- evaluating high-effort transduction or don't-care based AIG minimization in logic synthesis flows
+- comparing GPU-accelerated logic optimization methods on large AIGs from IWLS-style benchmark suites
+benchmark_scope:
+- IWLS 2022 Programming Contest truth-table benchmarks converted to AIGs with ABC strash, selecting circuits with at least 16 primary inputs and 3000 nodes
+- single-transduction comparison against ABC &transduction and integrated optimization-sequence comparison against ABC &transtoch
+- CUDA implementation evaluated on an AMD EPYC 7542 CPU server with an NVIDIA GeForce RTX 4090 GPU
+metrics:
+- AIG size and logic depth after transduction or integrated optimization sequences
+- runtime in seconds and speedup versus CPU ABC transduction flows
+- normalized runtime for bit packing and kernel optimizations
+reproducibility: artifact_available
+caveats:
+- no DBLP/Crossref/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- the main GitHub web page timed out during this pass, but the GitHub repository API returned HTTP 200 and the paper also states the source-code URL
+- integrated-sequence comparison is not algorithmically identical because ABC &transtoch uses CPU algorithms without GPU versions, while the proposed flow interleaves GPU transduction with CULS GPU resyn2/resyn2rs
+- benchmark selection focuses on large IWLS 2022 AIGs where transduction runtime is challenging, so results may not represent small circuits
+- SCARLET was inspected in the same DATE aggregate region and skipped because it is a photonic/OPCM LLM accelerator architecture, not an EDA method despite a machine-reader false positive on OPCM/OPC terminology

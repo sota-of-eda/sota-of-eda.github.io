@@ -1,0 +1,23 @@
+baseline_id: rfic-rl-inverse-design
+short_name: RL+DL RFIC Synthesis
+display_name: End-to-end RFIC Topology Synthesis and Design combining Reinforcement Learning and Inverse Design
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: End-to-end RFIC Topology Synthesis and Design combining Reinforcement Learning and Inverse Design
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11241013
+  bibtex: "@inproceedings{sengupta2025rfic,\n  title={End-to-end RFIC Topology Synthesis and Design combining Reinforcement Learning and Inverse Design},\n  author={Sengupta, Kaushik and Zhou, Jonathan and Karahan, Emir Ali and Park, Juho},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11241013
+compare_when:
+- Comparing end-to-end RFIC synthesis approaches from specifications to GDSII layout
+benchmark_scope:
+- RF/mmWave circuit designs
+metrics:
+- Design quality (scattering parameters, EM performance)
+- Spec-to-GDS automation completeness
+reproducibility: unknown
+caveats:
+- RFIC synthesis is highly specialized; results depend on EM solver accuracy and process technology models

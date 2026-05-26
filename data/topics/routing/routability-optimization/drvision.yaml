@@ -1,0 +1,28 @@
+baseline_id: drvision
+short_name: DRVision
+display_name: 'DRVision: A DRV-aware Routability Optimization Framework with Multi-modal Prediction and Vision-Based Routing Guidance'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'DRVision: A DRV-aware Routability Optimization Framework with Multi-modal Prediction and Vision-Based Routing Guidance'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{cheng2026drvision,\n  title={DRVision: A DRV-aware Routability Optimization Framework with Multi-modal Prediction and Vision-Based Routing Guidance},\n  author={Cheng, Xu and Fan, Pengcheng and Cao, Peng},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/542.pdf
+compare_when:
+- evaluating DRV-aware routability prediction and routing-guidance methods after placement or early global routing
+- comparing learned routing blockage generation or DRV hotspot prediction on ISPD 2015 routability benchmarks
+benchmark_scope:
+- ISPD 2015 routability benchmarks with fence regions and routing blockages
+- physical design flow using commercial tools with early global routing, post-routing, and post-routing optimization stages
+- train/test designs with Gcell, net, and DRV counts ranging from small FFT to large matrix multiplication cases
+metrics:
+- SSIM and NRMSE for DRV hotspot prediction
+- mean average precision for routing blockage prediction
+- design-rule violation reduction, wirelength, via count, and flow runtime
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- relies on commercial physical-design tool flow and generated routing blockage commands, which may limit reproducibility
+- proposed topic placement is provisional because the work bridges placement/routability prediction and routing guidance; it should not be merged into global-placement without human taxonomy review

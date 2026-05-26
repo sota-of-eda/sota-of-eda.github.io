@@ -1,0 +1,18 @@
+topic_id: memristive-logic-synthesis
+parent_id: emerging-technology-eda
+short_name: Memristive Logic Synthesis
+display_name: Memristive and In-Memory Logic Synthesis
+aliases:
+- memristor logic synthesis
+- in-memory logic synthesis
+- MAGIC synthesis
+- mixed-mode memristive synthesis
+- Memristive and In-Memory Logic Synthesis
+- Memristive Logic Synthesis
+- memristive logic synthesis
+description: Logic synthesis and mapping methods for memristive, resistive-memory, or in-memory logic technologies, including stateful/non-stateful operation selection, crossbar/line-array mapping, and technology-specific area/latency optimization.
+review_triggers:
+- paper targets memristor, ReRAM, RRAM, MAGIC, mixed-mode, or in-memory logic synthesis/mapping
+- experiments compare against ABC, MAGIC/SIMPLE/SIMPLER, optimal memristive synthesis, or memristor-aware mapping flows
+- metrics include device count, cycle latency, delay, area, synthesis runtime, or supported input/output scale
+baselines: []

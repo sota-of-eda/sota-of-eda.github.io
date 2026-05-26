@@ -1,0 +1,24 @@
+baseline_id: displace
+short_name: DiSPlace
+display_name: 'DiSPlace: Diffusion-Sharing-Driven Transistor-Level Placement Beyond Standard-Cell Boundaries for DTCO'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'DiSPlace: Diffusion-Sharing-Driven Transistor-Level Placement Beyond Standard-Cell Boundaries for DTCO'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240688
+  bibtex: "@inproceedings{peng2025displace,\n  author = {Keyu Peng and Yinuo Wu and Zhengzhe Zheng and Hao Gu and Ziran Zhu\nand Chao Wang and Jun Yang},\n  title = {{DiSPlace}: Diffusion-Sharing-Driven Transistor-Level Placement Beyond\nStandard-Cell Boundaries for {DTCO}},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240688},\n  publisher = {IEEE}\n}\n"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240688
+compare_when:
+- comparing transistor-level placement quality against standard-cell-based and SOTA transistor-level placers
+- evaluating DTCO placement with diffusion sharing
+benchmark_scope:
+- custom standard-cell designs
+metrics:
+- 'wirelength reduction: 18% vs standard-cell, 11% vs SOTA transistor-level'
+- 'design area reduction: 24% vs standard-cell, 4% vs SOTA transistor-level'
+reproducibility: unknown
+caveats:
+- first diffusion-sharing-driven global placement framework; no public release identified yet

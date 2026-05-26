@@ -1,0 +1,16 @@
+topic_id: placement-initialization
+parent_id: global-placement
+short_name: Placement Init
+display_name: Placement Initialization
+aliases:
+- placement initialization
+- global placement initialization
+- placer initialization
+- Placement Initialization
+- Placement Init
+description: Initialization methods for analytical or learning-assisted global placers, including netlist embeddings, macro/fixed-cell boundary handling, and initial coordinate generation that affects convergence and placement quality.
+review_triggers:
+- paper claims improved global placement initialization
+- paper reports HPWL, convergence, or iteration improvements from initial placement generation
+- paper compares against random, embedding-based, or prior placer-initialization strategies
+baselines: []

@@ -1,0 +1,24 @@
+baseline_id: ei-tr
+short_name: EI-TR
+display_name: 'EI-TR: A Versatile Exponential Integrator Framework for Transient Analysis of Generic Nonlinear Circuits'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'EI-TR: A Versatile Exponential Integrator Framework for Transient Analysis of Generic Nonlinear Circuits'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240715
+  bibtex: "@inproceedings{zhou2025eitr,\n  author = {Hang Zhou and Zhenjie Lu and Quan Chen},\n  title = {{EI-TR}: A Versatile Exponential Integrator Framework for Transient\nAnalysis of Generic Nonlinear Circuits},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240715},\n  publisher = {IEEE}\n}\n"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240715
+compare_when:
+- comparing transient simulation speed and accuracy against traditional trapezoidal and EI-NK methods
+- evaluating nonlinear circuit simulation convergence
+benchmark_scope:
+- generic nonlinear circuits at SPICE level
+metrics:
+- 'Newton iteration reduction: 3x vs EI-NK'
+- 'time step size: 6.5x larger than trapezoidal'
+reproducibility: unknown
+caveats:
+- new exponential integrator framework; integration into mainstream SPICE tools not demonstrated

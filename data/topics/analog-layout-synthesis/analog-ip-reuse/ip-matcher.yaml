@@ -1,0 +1,27 @@
+baseline_id: ip-matcher
+short_name: IP-Matcher
+display_name: 'IP-Matcher: An Efficient One-to-Many Matching Framework for Analog Circuit Design and Reusing'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'IP-Matcher: An Efficient One-to-Many Matching Framework for Analog Circuit Design and Reusing'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{chen2026ipmatcher,\n  title={IP-Matcher: An Efficient One-to-Many Matching Framework for Analog Circuit Design and Reusing},\n  author={Chen, Shixin and Xu, Peng and Li, Yapeng and Chen, Tinghuan and Yu, Bei},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/195.pdf
+compare_when:
+- evaluating analog circuit subgraph matching or analog IP reuse frameworks
+- comparing one-to-many matching coverage and runtime on analog circuit graph benchmarks
+benchmark_scope:
+- eleven analog query circuits including signbit, dac_r2r, voltage bandgap, PLL, spare cell, PWM, reference system, level shifter, and testmode-entry examples
+- analog IP library built from hierarchical partitioning and graph conversion of analog schematics/layout-related IPs
+metrics:
+- reusable IP cover ratio
+- one-to-many matching runtime under a 3600 second timeout
+- matching accuracy and speedup relative to graph-matching baselines
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- matching results depend on analog graph conversion, IP-library construction, and access to reusable legacy analog designs
+- proposed topic is analog IP reuse/matching; human taxonomy review may merge it into broader analog-circuit-synthesis or analog-layout-synthesis coverage

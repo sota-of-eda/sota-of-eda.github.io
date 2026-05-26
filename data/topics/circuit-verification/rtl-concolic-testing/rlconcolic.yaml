@@ -1,0 +1,31 @@
+baseline_id: rlconcolic
+short_name: RLConcolic
+display_name: 'RLConcolic: Reinforcement-Learning-Guided RTL Concolic Testing'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'RLConcolic: Enhancing Concolic Testing via Multi-Step Reinforcement Learning'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{tan2026rlconcolic,\n  title={RLConcolic: Enhancing Concolic Testing via Multi-Step Reinforcement Learning},\n  author={Tan, Yan and Meng, Xiangchen and Lyu, Yangdi},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/494.pdf
+  repo_url: https://github.com/HKUSTGZ-MICS-LYU/RLConcolic
+  project_url: https://personal.hkust-gz.edu.cn/yangdilyu/publications.html
+compare_when:
+- evaluating branch-coverage-directed test generation for RTL designs using concolic execution
+- comparing RL-guided path exploration with static or adaptive concolic heuristics, bounded model checking, and RTL search/fuzzing methods
+benchmark_scope:
+- 13 benchmarks from OpenRISC1200 and ITC99 plus the RISC-V Rocket Chip core
+- Python RLConcolic implementation using Pyverilog for RTL features, Z3 for constraints, and a 5-step DQN exploration policy
+metrics:
+- branch coverage
+- test generation runtime
+- memory consumption
+- coverage over iterations
+- scalability on large RTL designs
+reproducibility: artifact_available
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- the public GitHub repository was reachable, but artifact completeness and exact environment reproduction were not deeply audited in this pass
+- Rocket Chip and commercial-scale scalability claims should be reviewed together with benchmark-version and instrumentation differences noted in the paper

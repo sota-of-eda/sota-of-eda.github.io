@@ -1,0 +1,31 @@
+baseline_id: meltrtl
+short_name: MeltRTL
+display_name: 'MeltRTL: Multi-Expert LLMs with Inference-time Intervention for RTL Code Generation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'MeltRTL: Multi-Expert LLMs with Inference-time Intervention for RTL Code Generation'
+  venue: DATE
+  year: 2026
+  bibtex: "@misc{mashnoor2026meltrtlmultiexpertllmsinferencetime,\n      title={MeltRTL: Multi-Expert LLMs with Inference-time Intervention for RTL Code Generation}, \n      author={Nowfel Mashnoor and Mohammad Akyash and Hadi Kamali and Kimia Azar},\n      year={2026},\n      eprint={2601.13015},\n      archivePrefix={arXiv},\n      primaryClass={cs.SE},\n      url={https://arxiv.org/abs/2601.13015}, \n}"
+links:
+  paper_url: https://arxiv.org/abs/2601.13015
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1372.pdf
+  arxiv_url: https://arxiv.org/abs/2601.13015
+compare_when:
+- evaluating LLM-based RTL or Verilog code generation methods without retraining the base model
+- comparing inference-time steering, multi-expert, fine-tuned, RAG, and agentic RTL generation approaches
+- measuring synthesizability and functional correctness on VerilogEval-style benchmarks
+benchmark_scope:
+- VerilogEval benchmark with RTL synthesizability and functional-correctness evaluation
+- QwenCoder2.5-14B base model plus MeltRTL single-expert and multi-expert variants
+- 200 curated instruction-code pairs for probe training across combinational, sequential/datapath, and FSM design categories
+metrics:
+- synthesizability percentage
+- functional correctness percentage
+- computational overhead and expert-specific functional-correctness gains
+reproducibility: paper_only
+caveats:
+- formal DATE/IEEE DOI and DATE BibTeX were not found in DBLP/Crossref at draft time; BibTeX is the verified arXiv entry
+- paper states code is available at https://github.com/mashnoor/melt-rtl, but this URL could not be verified by HTTP during this pass, so it is not listed as a verified repo link
+- results are tied to QwenCoder2.5-14B and the paper's curated probe-training dataset; comparison to full agentic or retrieval pipelines is mostly feature-level/contextual rather than a uniform end-to-end rerun

@@ -1,0 +1,23 @@
+baseline_id: pattern-paint
+short_name: PatternPaint / Vario
+display_name: Diffusion-Model-Enhanced Layout Pattern Generation for Sub-3nm DFM
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Diffusion-Model-Enhanced Layout Pattern Generation for Sub-3nm DFM
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240639
+  bibtex: "@inproceedings{zhou2025patternpaint,\n  title={Diffusion-Model-Enhanced Layout Pattern Generation for Sub-3nm DFM},\n  author={Zhou, Guanglei and Chang, Chen-Chia and Zhang, Junyao and Pan, Jingyu and Chen, Yiran},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240639
+compare_when:
+- Comparing ML-based layout pattern generation for DFM at advanced technology nodes
+benchmark_scope:
+- Intel 18A PDK (in-production industrial-grade)
+metrics:
+- Layout legality (conforming to sign-off rule deck)
+- Pattern diversity
+reproducibility: paper_only
+caveats:
+- Deployed on Intel 18A proprietary PDK; results not independently reproducible without access to the PDK

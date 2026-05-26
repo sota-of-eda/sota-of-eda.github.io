@@ -1,0 +1,24 @@
+baseline_id: anaflow
+short_name: AnaFlow
+display_name: 'AnaFlow: Agentic LLM-based Workflow for Reasoning-Driven Explainable and Sample-Efficient Analog Circuit Sizing'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'AnaFlow: Agentic LLM-based Workflow for Reasoning-Driven Explainable and Sample-Efficient Analog Circuit Sizing'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240818
+  bibtex: "@inproceedings{ahmadzadeh2025anaflow,\n  title={AnaFlow: Agentic LLM-based Workflow for Reasoning-Driven Explainable and Sample-Efficient Analog Circuit Sizing},\n  author={Ahmadzadeh, Mohsen and Chen, Kaichang and Gielen, Georges},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240818
+compare_when:
+- Comparing LLM-based agentic approaches for analog circuit sizing and optimization
+benchmark_scope:
+- Analog circuit designs with SPICE simulation
+metrics:
+- Sample efficiency
+- Design specification achievement
+- Explainability
+reproducibility: unknown
+caveats:
+- Agentic LLM workflow relies on structured reasoning mimicking expert designers; may not generalize beyond trained circuit topologies

@@ -1,0 +1,30 @@
+baseline_id: sina
+short_name: SINA
+display_name: 'SINA: A Circuit Schematic Image-to-Netlist Generator Using Artificial Intelligence'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'SINA: A Circuit Schematic Image-to-Netlist Generator Using Artificial Intelligence'
+  venue: DATE
+  year: 2026
+  bibtex: "@misc{aldowaish2026sinacircuitschematicimagetonetlist,\n      title={SINA: A Circuit Schematic Image-to-Netlist Generator Using Artificial Intelligence}, \n      author={Saoud Aldowaish and Yashwanth Karumanchi and Kai-Chen Chiang and Soroosh Noorzad and Morteza Fayazi},\n      year={2026},\n      eprint={2601.22114},\n      archivePrefix={arXiv},\n      primaryClass={cs.CV},\n      url={https://arxiv.org/abs/2601.22114}, \n}"
+links:
+  paper_url: https://arxiv.org/abs/2601.22114
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/186.pdf
+  arxiv_url: https://arxiv.org/abs/2601.22114
+  project_url: https://anonymous.4open.science/r/SINA-213F/README.md
+compare_when:
+- evaluating automated circuit schematic image-to-netlist generation tools
+- measuring component detection, text extraction, circuit-structure recovery, and overall netlist-generation accuracy
+benchmark_scope:
+- open-source benchmark with 75 schematics and more than 1000 components across 10 component types
+- curated 40-schematic comparison set restricted to component types supported by both SINA and Masala-CHAI
+metrics:
+- overall netlist-generation accuracy
+- text extraction accuracy, component detection F1 score, and circuit structure accuracy
+- component detection precision, recall, F1 score, and weighted mean average precision
+reproducibility: artifact_available
+caveats:
+- formal DATE/IEEE DOI and DATE BibTeX were not found in DBLP/Crossref at draft time; BibTeX is the verified arXiv entry
+- direct baseline comparison is limited to Masala-CHAI, described as the only available open-source framework for the task
+- pipeline depends on external OCR/VLM components including EasyOCR and GPT-4o, which should be considered when assessing reproducibility

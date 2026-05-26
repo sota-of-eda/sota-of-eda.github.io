@@ -1,0 +1,28 @@
+baseline_id: lctmwalk
+short_name: LCTMwalk
+display_name: 'LCTMwalk: GPU-Accelerated Transient Thermal Simulation for Liquid-Cooled 2.5D/3D ICs via Random Walks on Circuit Networks of Modified Compact Thermal Models'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'LCTMwalk: GPU-Accelerated Transient Thermal Simulation for Liquid-Cooled 2.5D/3D ICs via Random Walks on Circuit Networks of Modified Compact Thermal Models'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/ICCAD66269.2025.11240778
+  bibtex: "@inproceedings{dong2025lctmwalk,\n  author = {Zhixuan Dong and Yonghan Luo and Yuan Meng and Changhao Yan and Zhaori Bi and Keren Zhu and Sheng-Guo Wang and Dian Zhou and Xuan Zeng},\n  title = {LCTMwalk: GPU-Accelerated Transient Thermal Simulation for Liquid-Cooled 2.5D/3D ICs via Random Walks on Circuit Networks of Modified Compact Thermal Models},\n  booktitle = {2025 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/ICCAD66269.2025.11240778},\n}"
+links:
+  paper_url: https://doi.org/10.1109/ICCAD66269.2025.11240778
+compare_when:
+- comparing GPU-accelerated thermal simulation methods for 2.5D/3D ICs
+- evaluating random-walk-based transient thermal analysis
+- benchmarking against ADI method and 3D-ICE
+benchmark_scope:
+- liquid-cooled 2.5D/3D IC thermal models
+- 3D-ICE reference simulations
+metrics:
+- speedup vs ADI method (14-22x)
+- temperature error vs 3D-ICE (<1 K)
+- GPU acceleration efficiency
+reproducibility: unknown
+caveats:
+- specifically designed for liquid-cooled 2.5D/3D ICs; may not directly apply to air-cooled or other cooling configurations
+- random walk convergence properties may vary with thermal model complexity

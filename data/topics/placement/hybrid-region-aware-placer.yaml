@@ -1,0 +1,24 @@
+baseline_id: hybrid-region-aware-placer
+short_name: Hybrid-Region-Aware Multi-Electrostatic Placer
+display_name: Efficient Analytical Placement Algorithm with Hybrid Fence Region Constraints Using Non-Newtonian Fluid Model
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Efficient Analytical Placement Algorithm with Hybrid Fence Region Constraints Using Non-Newtonian Fluid Model
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240878
+  bibtex: "@inproceedings{lin2025hybrid,\n  title={Efficient Analytical Placement Algorithm with Hybrid Fence Region Constraints Using Non-Newtonian Fluid Model},\n  author={Lin, Jai-Ming and Hsu, Hung-Wei and Huang, Tan and Tsai, Chen-Fa and Fu, De-Shiun and Huang, Shih-Cheng},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240878
+compare_when:
+- Comparing analytical placement methods with fence region constraints
+benchmark_scope:
+- ICCAD 2015/2017 contest benchmarks
+metrics:
+- Wirelength
+- Runtime
+- Convergence stability
+reproducibility: unknown
+caveats:
+- Non-Newtonian fluid model is a novel analogy for placement; practical benefits vs simpler methods need more validation

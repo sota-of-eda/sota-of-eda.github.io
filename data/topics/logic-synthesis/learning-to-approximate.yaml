@@ -1,0 +1,29 @@
+baseline_id: learning-to-approximate
+short_name: Learning to Approximate
+display_name: 'Learning to Approximate: Circuit Learning and Deep Reinforcement Learning for Approximate Logic Synthesis with an Error Rate Guarantee'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Learning to Approximate: Circuit Learning and Deep Reinforcement Learning for Approximate Logic Synthesis with an Error Rate Guarantee'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{chen2026learningapproximate,\n  title={Learning to Approximate: Circuit Learning and Deep Reinforcement Learning for Approximate Logic Synthesis with an Error Rate Guarantee},\n  author={Chen, Chi-Wei and Li, Yi-Ting and Tang, Wuqian and Chen, Yung-Chih and Yang, Jian-Meng and Wang, Chun-Yao},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/829.pdf
+compare_when:
+- evaluating approximate logic synthesis under explicit error-rate constraints
+- comparing reinforcement-learning or local-approximate-change methods for area-delay-product reduction in AIG/Boolean networks
+benchmark_scope:
+- IWLS2005 and MCNC benchmark circuits transformed to AIG with ABC
+- error-rate constraints of 5% and 10% evaluated using 100000 random input patterns
+- DRL/PPO policy trained under 5% error-rate constraint and reused for relaxed 10% scenarios
+metrics:
+- area-delay product and ADP reduction ratio
+- error-rate constraint satisfaction
+- area node count and delay level
+- relative improvement versus recent approximate logic synthesis baselines
+reproducibility: paper_only
+caveats:
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- experiments use random-pattern error-rate estimation as in cited ALS baselines; exact exhaustive error may differ for larger circuits
+- no public code artifact was verified in this pass

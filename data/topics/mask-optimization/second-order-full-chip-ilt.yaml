@@ -1,0 +1,29 @@
+baseline_id: second-order-full-chip-ilt
+short_name: Second-Order ILT
+display_name: Scalable Second-Order Optimizer for Full-Chip Inverse Lithography Techniques
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Scalable Second-Order Optimizer for Full-Chip Inverse Lithography Techniques
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{zheng2026secondorderilt,\n  title={Scalable Second-Order Optimizer for Full-Chip Inverse Lithography Techniques},\n  author={Zheng, Su and Yu, Ziyang and Yu, Bei and Wong, Martin},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/531.pdf
+compare_when:
+- evaluating full-chip inverse lithography technique optimizers for mask optimization
+- comparing first-order and second-order ILT solvers on full-chip layouts with OpenILT-style simulation
+benchmark_scope:
+- six OpenROAD-flow full-chip layouts aes, dyn_node, gcd, ibex, pico, and riscv32i using NanGate 45nm and metal-1 optimization
+- multi-GPU full-chip ILT implementation based on PyTorch and OpenILT with ICCAD-13 optical kernels
+metrics:
+- L2 pattern-fidelity loss
+- process variation band (PVB)
+- edge placement error (EPE)
+- number of ILT optimization steps
+- composite score 4*PVB + 5000*EPE
+reproducibility: paper_only
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- experiments build on FuILT/OpenILT and compare primarily with a first-order FuILT baseline; broader comparisons to learning-based or commercial ILT flows are not shown
+- PVB slightly increases in the reported full configuration even though L2, EPE, and composite score improve

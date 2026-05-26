@@ -1,0 +1,30 @@
+baseline_id: dapo
+short_name: DAPO
+display_name: 'DAPO: Design Structure-Aware Pass Ordering for HLS via Contrastive and Reinforcement Learning'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'DAPO: Design Structure-Aware Pass Ordering for HLS via Contrastive and Reinforcement Learning'
+  venue: DATE
+  year: 2026
+  bibtex: "@misc{ge2025dapodesignstructureawarepass,\n      title={DAPO: Design Structure-Aware Pass Ordering in High-Level Synthesis with Graph Contrastive and Reinforcement Learning}, \n      author={Jinming Ge and Linfeng Du and Likith Anaparty and Shangkun Li and Tingyuan Liang and Afzal Ahmad and Vivek Chaturvedi and Sharad Sinha and Zhiyao Xie and Jiang Xu and Wei Zhang},\n      year={2025},\n      eprint={2512.11342},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2512.11342}, \n}"
+links:
+  paper_url: https://arxiv.org/abs/2512.11342
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/279.pdf
+  arxiv_url: https://arxiv.org/abs/2512.11342
+  repo_url: https://github.com/gjskywalker/DAPO
+compare_when:
+- evaluating HLS compiler pass-ordering or middle-end optimization policies
+- comparing HLS QoR on PolyBench, MachSuite, Rosetta, CHStone, and HLS-benchmark designs with Vitis HLS flows
+benchmark_scope:
+- 100 representative HLS designs from PolyBench, MachSuite, Rosetta, CHStone, and HLS-benchmarks
+- Vitis HLS 2023.2 targeting AMD Alveo U280 at 100 MHz, with and without pragma annotations
+metrics:
+- latency/cycle speedup
+- LUT and DSP utilization
+- estimator rank correlation and RL reward in ablations
+reproducibility: artifact_available
+caveats:
+- formal DATE/IEEE DOI and publisher BibTeX were not found in DBLP/Crossref at draft time; BibTeX is the verified arXiv entry whose title wording differs slightly from the DATE proceedings title
+- primary direct comparison is against Vitis HLS middle-end behavior; several prior methods are related pass-ordering or representation-learning context rather than identical end-to-end baselines
+- DATE PDF reports speedups on selected classic HLS designs, so human review should check whether the benchmark scope is broad enough for accepted baseline status

@@ -1,0 +1,22 @@
+baseline_id: fadr
+short_name: FADR
+display_name: Building Reasoning LLMs for Hardware Design Generation via Function-Aligned Differentiated Revision
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Building Reasoning LLMs for Hardware Design Generation via Function-Aligned Differentiated Revision
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240942
+  bibtex: "@inproceedings{fu2025fadr,\n  title={Building Reasoning {LLMs} for Hardware Design Generation via Function-Aligned Differentiated Revision},\n  author={Fu, Weimin and Li, Shijie and Yang, Kaichen and Zhang, Xuan Silvia and Jin, Yier and Guo, Xiaolong},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240942
+compare_when:
+- Comparing LLM-based RTL/Verilog code generation approaches with reasoning enhancements
+benchmark_scope:
+- VerilogEval benchmark
+metrics:
+- pass@1 score
+reproducibility: unknown
+caveats:
+- LLM-based code generation is sensitive to prompt design and model version; reproducibility depends on model access

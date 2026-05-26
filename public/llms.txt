@@ -1,0 +1,19 @@
+# SOTA of EDA — LLM-readable project index
+
+## About
+SOTA of EDA is an agent-assisted, claim-aware reference table for EDA (Electronic Design Automation) research baselines. It helps authors, reviewers, and coding agents check whether an experiment discusses baselines that match the paper's claim, benchmark scope, and caveats.
+
+## Data
+- Registry JSON (all topics + baselines): https://sota-of-eda.github.io/registry.json
+- Schema: https://github.com/sota-of-eda/sota-of-eda.github.io/blob/main/data/schema/topic.schema.json
+- Atom feed (git-based updates): https://sota-of-eda.github.io/atom.xml
+
+## Structure
+- Topics are hierarchical (parent_id chains).
+- Each topic has zero or more baselines (SOTA Cards).
+- Baselines include: publication metadata, BibTeX, links (paper/PDF/arXiv/repo), compare_when / benchmark_scope / metrics / caveats / reproducibility.
+
+## How to contribute
+- Use the sota-baseline-collector Claude Code skill (see .agents/skills/ in the repo).
+- Or edit data/topics/*.yaml manually and open a PR.
+- Most entries are AI-generated and may contain errors — review before citing.

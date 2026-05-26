@@ -1,0 +1,29 @@
+baseline_id: gate-level-glitch-analysis
+short_name: ML Glitch Analysis
+display_name: Towards learning-based gate-level glitch analysis
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Towards learning-based gate-level glitch analysis
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{vagenas2026learningglitch,\n  title={Towards learning-based gate-level glitch analysis},\n  author={Vagenas, Anastasis and Garyfallou, Dimitrios and Stamoulis, George},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/865.pdf
+compare_when:
+- evaluating gate-level glitch propagation models for timing, noise, reliability, or dynamic-power analysis
+- building standard-cell-library compatible models calibrated to SPICE for full-chip glitch analysis
+benchmark_scope:
+- ASAP7 7nm FinFET standard-cell gates including BUF, INV, NAND/NOR/OR/XOR, AOI21, and OAI21
+- SPICE data generated with Xyce for input glitches with varied width, height, time-to-peak, and output load
+- per glitch-arc ANN models predicting output width, height, time-to-peak, propagation delay, and energy
+metrics:
+- R2 score versus SPICE for Wout, Hout, TPout, Dout, and Eout
+- binary memory footprint of trained ANN models per gate
+- SPICE data generation and model training time per gate
+- ability to meet target R2 threshold across glitch arcs
+reproducibility: paper_only
+caveats:
+- experiments are cell-library-level and do not yet demonstrate a full-chip signoff flow
+- manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved
+- topic parent is provisional because glitch/power/noise signoff may later move from circuit-verification to signoff-analysis or power-analysis

@@ -1,0 +1,29 @@
+baseline_id: palm-sva
+short_name: PALM
+display_name: 'PALM: Program Analysis and LLM Methods for Crafting SystemVerilog Assertions'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'PALM: Program Analysis and LLM Methods for Crafting SystemVerilog Assertions'
+  venue: DATE
+  year: 2026
+  bibtex: "@inproceedings{afsharmazayejani2026palm,\n  title={PALM: Program Analysis and LLM Methods for Crafting SystemVerilog Assertions},\n  author={Afsharmazayejani, Raheel and Tan, Benjamin},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+links:
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1358.pdf
+  repo_url: https://github.com/CalgaryISH/PALM
+compare_when:
+- evaluating RTL-stage security-oriented SystemVerilog assertion generation with static analysis and LLM assistance
+- comparing where LLM agents should be inserted in SVA generation pipelines using syntax correctness, FPV success, cost, and time
+benchmark_scope:
+- AES, RSA, SHA, and FSM-controller designs from GitHub, TrustHub, OpenTitan, and manually crafted cases
+- 60 security-property generation tests using Cadence JasperGold formal-property verification
+metrics:
+- syntax-correct assertion generation rate
+- FPV pass count/rate
+- token consumption and total generation/evaluation time
+- LLM Efficacy Score across PA-LLM, LLM-PA, LLM-LLM, and PA-PA variants
+reproducibility: artifact_available
+caveats:
+- no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review
+- the paper is partly an efficacy study of LLM placement rather than a pure leaderboard claim; PA-LLM is the best reported tradeoff while PA-PA remains competitive
+- formal verification uses Cadence JasperGold and security-property templates, so reproducing exact results may require commercial tool access
