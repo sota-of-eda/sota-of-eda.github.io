@@ -1,0 +1,29 @@
+baseline_id: differentiable-physical-optimization
+short_name: DPO
+display_name: Differentiable Physical Optimization
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Differentiable Physical Optimization
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240839
+  bibtex: '@inproceedings{Du_2025_DPO, title={Differentiable Physical Optimization}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240839}, DOI={10.1109/iccad66269.2025.11240839}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Du, Yufan and Guo, Zizheng and Wang, Runsheng and Lin, Yibo}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240839
+compare_when:
+- comparing timing-closure physical-optimization flows that combine gate sizing and buffer insertion
+- evaluating differentiable or GPU-accelerated physical optimization with timing, power, and density objectives
+benchmark_scope:
+- placed VLSI designs requiring gate sizing and buffer insertion for timing closure
+- comparisons against OpenROAD buffering/sizing flows and differentiable gate-sizing baselines
+metrics:
+- total negative slack (TNS)
+- worst negative slack (WNS)
+- leakage power
+- runtime speedup
+reproducibility: unknown
+caveats:
+- GPU implementation and benchmark setup are required for fair runtime comparison
+- Uses differentiable approximations and discrete-aware updates for inherently discrete buffer-insertion decisions
+- Added during post-merge gap scan because the original ICCAD machine-reader pass missed this paper

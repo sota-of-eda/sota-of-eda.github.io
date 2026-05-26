@@ -1,0 +1,26 @@
+baseline_id: estcoder
+short_name: EstCoder
+display_name: 'EstCoder: A RTL Code Generator based on Static Functional Estimation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'EstCoder: A RTL Code Generator based on Static Functional Estimation'
+  venue: DATE
+  year: 2026
+  bibtex: '@inproceedings{Xiong_2026_EstCoder, title={EstCoder: A RTL Code Generator based on Static Functional Estimation}, booktitle={2026 Design, Automation \& Test in Europe Conference (DATE)}, author={Xiong, Qi and Chen, Renzhi and Fang, Zhigang and Wang, Bowei and Zhou, Yingjie and Huang, Libo and Wang, Lei}, year={2026}, pages={1-6}}'
+links:
+  paper_url: https://past.date-conference.com/proceedings-archive/2026/DATA/504.pdf
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/504.pdf
+compare_when:
+- comparing LLM-based RTL code-generation and repair frameworks on functional correctness
+- evaluating static functional estimation as feedback before simulation or correction
+benchmark_scope:
+- VerilogEval v1/v2 benchmark tasks and RTL code-generation pass@1 evaluation
+metrics:
+- Pass@1 functional correctness
+- improvement over generic LLM baselines
+- functional estimation and correction success
+reproducibility: paper_only
+caveats:
+- Formal DOI was not found during quick gap scan; metadata is from the official DATE 2026 PDF
+- The anonymous artifact URL in the paper was not reachable during earlier inspection, so no repository link is listed

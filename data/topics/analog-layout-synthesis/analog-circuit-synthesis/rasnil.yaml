@@ -1,0 +1,28 @@
+baseline_id: rasnil
+short_name: RASNIL
+display_name: 'RASNIL: PVT-Robust Many-Objective Analog Sizing via Nested Hybrid Fidelity Framework with Incremental Learning'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'RASNIL: PVT-Robust Many-Objective Analog Sizing via Nested Hybrid Fidelity Framework with Incremental Learning'
+  venue: DATE
+  year: 2026
+  bibtex: '@inproceedings{Tang_2026_RASNIL, title={RASNIL: PVT-Robust Many-Objective Analog Sizing via Nested Hybrid Fidelity Framework with Incremental Learning}, booktitle={2026 Design, Automation \& Test in Europe Conference (DATE)}, author={Tang, Xingyu and Yin, Sen and Yao, Zhujun and Huang, Bingzhang and Liu, Xiaosen and Wang, Yan}, year={2026}, pages={1-6}}'
+links:
+  paper_url: https://past.date-conference.com/proceedings-archive/2026/DATA/439.pdf
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/439.pdf
+compare_when:
+- comparing PVT-aware or yield-driven analog sizing methods under many objectives
+- evaluating hybrid-fidelity Bayesian optimization and incremental-learning sizing frameworks
+benchmark_scope:
+- operational amplifier and comparator examples with PVT/process variation constraints
+metrics:
+- hypervolume
+- success rate
+- yield
+- model training time
+- total runtime speedup
+reproducibility: paper_only
+caveats:
+- Formal DOI was not found during quick gap scan; metadata is from the official DATE 2026 PDF
+- Baseline variants adapt NSGA-II, MFBO, and SILE for yield-driven evaluation, so comparisons depend on adaptation details

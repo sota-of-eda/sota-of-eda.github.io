@@ -1,0 +1,27 @@
+baseline_id: cadro
+short_name: CaDRO
+display_name: 'CaDRO: Causal-Guided Dimensionality Reduction for Scalable Multi-Objective Pareto Optimization'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'CaDRO: Causal-Guided Dimensionality Reduction for Scalable Multi-Objective Pareto Optimization'
+  venue: DATE
+  year: 2026
+  bibtex: '@inproceedings{Jayasuriya_2026_CaDRO, title={CaDRO: Causal-Guided Dimensionality Reduction for Scalable Multi-Objective Pareto Optimization}, booktitle={2026 Design, Automation \& Test in Europe Conference (DATE)}, author={Jayasuriya, Dinithi and Kumar, Divake and Senthilkumar, Sureshkumar and Naik, Devashri and Darabi, Nastaran and Trivedi, Amit Ranjan}, year={2026}, pages={1-6}}'
+links:
+  paper_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1417.pdf
+  pdf_url: https://past.date-conference.com/proceedings-archive/2026/DATA/1417.pdf
+compare_when:
+- comparing analog and RF multi-objective sizing optimizers that reduce simulation budget
+- evaluating causal or sensitivity-guided dimensionality reduction before Pareto optimization
+benchmark_scope:
+- analog amplifiers, low-dropout regulators, voltage-controlled oscillators, and two-stage voltage amplifiers
+metrics:
+- hypervolume
+- generational distance and inverted generational distance
+- simulation count reduction
+- non-dominated solution count
+reproducibility: paper_only
+caveats:
+- Formal DOI was not found during quick gap scan; metadata is from the official DATE 2026 PDF
+- CaDRO wraps NSGA-II after causal pruning, so comparisons depend on the selected baseline optimizer and simulation budget

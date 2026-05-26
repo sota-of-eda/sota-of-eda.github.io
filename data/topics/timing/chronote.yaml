@@ -1,0 +1,29 @@
+baseline_id: chronote
+short_name: ChronoTE
+display_name: 'ChronoTE: Crosstalk-Aware Timing Estimation for Routing Optimization via Edge-Enhanced GNNs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ChronoTE: Crosstalk-Aware Timing Estimation for Routing Optimization via Edge-Enhanced GNNs'
+  venue: ICCAD
+  year: 2025
+  doi: 10.1109/iccad66269.2025.11240759
+  bibtex: '@inproceedings{Jin_2025_ChronoTE, title={ChronoTE: Crosstalk-Aware Timing Estimation for Routing Optimization via Edge-Enhanced GNNs}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240759}, DOI={10.1109/iccad66269.2025.11240759}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Jin, Leilei and Fu, Rongliang and Zhuang, Zhen and Xiao, Liang and Liu, Fangzhou and Yu, Bei and Ho, Tsung-Yi}, year={2025}, month=Oct, pages={1-9}}'
+links:
+  paper_url: https://doi.org/10.1109/iccad66269.2025.11240759
+compare_when:
+- comparing early-stage crosstalk-aware timing estimation methods for routing optimization
+- evaluating GNN-based net-delay prediction against signoff timing references
+benchmark_scope:
+- industrial-scale open-source designs during global routing
+- crosstalk-induced net-delay, WNS, and TNS prediction before full routing and parasitic extraction
+metrics:
+- crosstalk delay prediction accuracy
+- WNS and TNS prediction error
+- runtime versus full routing/parasitic-extraction/signoff timing flow
+- downstream area, frequency, and power impact after routing optimization
+reproducibility: unknown
+caveats:
+- Requires signoff timing data for supervised training and calibration
+- Results depend on timing-window feature quality and routing-stage feature extraction
+- Added during post-merge gap scan from ICCAD extracted text not covered by accepted baselines

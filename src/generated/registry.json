@@ -2537,6 +2537,80 @@
           ]
         },
         {
+          "baseline_id": "chronote",
+          "short_name": "ChronoTE",
+          "display_name": "ChronoTE: Crosstalk-Aware Timing Estimation for Routing Optimization via Edge-Enhanced GNNs",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "ChronoTE: Crosstalk-Aware Timing Estimation for Routing Optimization via Edge-Enhanced GNNs",
+            "venue": "ICCAD",
+            "year": 2025,
+            "doi": "10.1109/iccad66269.2025.11240759",
+            "bibtex": "@inproceedings{Jin_2025_ChronoTE, title={ChronoTE: Crosstalk-Aware Timing Estimation for Routing Optimization via Edge-Enhanced GNNs}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240759}, DOI={10.1109/iccad66269.2025.11240759}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Jin, Leilei and Fu, Rongliang and Zhuang, Zhen and Xiao, Liang and Liu, Fangzhou and Yu, Bei and Ho, Tsung-Yi}, year={2025}, month=Oct, pages={1-9}}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/iccad66269.2025.11240759"
+          },
+          "compare_when": [
+            "comparing early-stage crosstalk-aware timing estimation methods for routing optimization",
+            "evaluating GNN-based net-delay prediction against signoff timing references"
+          ],
+          "benchmark_scope": [
+            "industrial-scale open-source designs during global routing",
+            "crosstalk-induced net-delay, WNS, and TNS prediction before full routing and parasitic extraction"
+          ],
+          "metrics": [
+            "crosstalk delay prediction accuracy",
+            "WNS and TNS prediction error",
+            "runtime versus full routing/parasitic-extraction/signoff timing flow",
+            "downstream area, frequency, and power impact after routing optimization"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Requires signoff timing data for supervised training and calibration",
+            "Results depend on timing-window feature quality and routing-stage feature extraction",
+            "Added during post-merge gap scan from ICCAD extracted text not covered by accepted baselines"
+          ]
+        },
+        {
+          "baseline_id": "differentiable-physical-optimization",
+          "short_name": "DPO",
+          "display_name": "Differentiable Physical Optimization",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Differentiable Physical Optimization",
+            "venue": "ICCAD",
+            "year": 2025,
+            "doi": "10.1109/iccad66269.2025.11240839",
+            "bibtex": "@inproceedings{Du_2025_DPO, title={Differentiable Physical Optimization}, url={http://dx.doi.org/10.1109/iccad66269.2025.11240839}, DOI={10.1109/iccad66269.2025.11240839}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Du, Yufan and Guo, Zizheng and Wang, Runsheng and Lin, Yibo}, year={2025}, month=Oct, pages={1-9}}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/iccad66269.2025.11240839"
+          },
+          "compare_when": [
+            "comparing timing-closure physical-optimization flows that combine gate sizing and buffer insertion",
+            "evaluating differentiable or GPU-accelerated physical optimization with timing, power, and density objectives"
+          ],
+          "benchmark_scope": [
+            "placed VLSI designs requiring gate sizing and buffer insertion for timing closure",
+            "comparisons against OpenROAD buffering/sizing flows and differentiable gate-sizing baselines"
+          ],
+          "metrics": [
+            "total negative slack (TNS)",
+            "worst negative slack (WNS)",
+            "leakage power",
+            "runtime speedup"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "GPU implementation and benchmark setup are required for fair runtime comparison",
+            "Uses differentiable approximations and discrete-aware updates for inherently discrete buffer-insertion decisions",
+            "Added during post-merge gap scan because the original ICCAD machine-reader pass missed this paper"
+          ]
+        },
+        {
           "baseline_id": "nua-timer",
           "short_name": "NUA-Timer",
           "display_name": "NUA-Timer: Pre-Synthesis Timing Prediction Under Non-Uniform Input Arrival Times",
@@ -4627,6 +4701,41 @@
           ]
         },
         {
+          "baseline_id": "cadro",
+          "short_name": "CaDRO",
+          "display_name": "CaDRO: Causal-Guided Dimensionality Reduction for Scalable Multi-Objective Pareto Optimization",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "CaDRO: Causal-Guided Dimensionality Reduction for Scalable Multi-Objective Pareto Optimization",
+            "venue": "DATE",
+            "year": 2026,
+            "bibtex": "@inproceedings{Jayasuriya_2026_CaDRO, title={CaDRO: Causal-Guided Dimensionality Reduction for Scalable Multi-Objective Pareto Optimization}, booktitle={2026 Design, Automation \\& Test in Europe Conference (DATE)}, author={Jayasuriya, Dinithi and Kumar, Divake and Senthilkumar, Sureshkumar and Naik, Devashri and Darabi, Nastaran and Trivedi, Amit Ranjan}, year={2026}, pages={1-6}}"
+          },
+          "links": {
+            "paper_url": "https://past.date-conference.com/proceedings-archive/2026/DATA/1417.pdf",
+            "pdf_url": "https://past.date-conference.com/proceedings-archive/2026/DATA/1417.pdf"
+          },
+          "compare_when": [
+            "comparing analog and RF multi-objective sizing optimizers that reduce simulation budget",
+            "evaluating causal or sensitivity-guided dimensionality reduction before Pareto optimization"
+          ],
+          "benchmark_scope": [
+            "analog amplifiers, low-dropout regulators, voltage-controlled oscillators, and two-stage voltage amplifiers"
+          ],
+          "metrics": [
+            "hypervolume",
+            "generational distance and inverted generational distance",
+            "simulation count reduction",
+            "non-dominated solution count"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formal DOI was not found during quick gap scan; metadata is from the official DATE 2026 PDF",
+            "CaDRO wraps NSGA-II after causal pruning, so comparisons depend on the selected baseline optimizer and simulation budget"
+          ]
+        },
+        {
           "baseline_id": "multi-agent-analog-rf",
           "short_name": "Multi-Agent Analog/RF Gen",
           "display_name": "Multi-Agent Generative Synthesis for Analog/RF Circuit: from Scalable Topology Generation to Efficient Inverse Design",
@@ -4656,6 +4765,42 @@
           "reproducibility": "unknown",
           "caveats": [
             "First-of-its-kind framework; topology generation and inverse design are separately evaluated, end-to-end integration maturity unclear"
+          ]
+        },
+        {
+          "baseline_id": "rasnil",
+          "short_name": "RASNIL",
+          "display_name": "RASNIL: PVT-Robust Many-Objective Analog Sizing via Nested Hybrid Fidelity Framework with Incremental Learning",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "RASNIL: PVT-Robust Many-Objective Analog Sizing via Nested Hybrid Fidelity Framework with Incremental Learning",
+            "venue": "DATE",
+            "year": 2026,
+            "bibtex": "@inproceedings{Tang_2026_RASNIL, title={RASNIL: PVT-Robust Many-Objective Analog Sizing via Nested Hybrid Fidelity Framework with Incremental Learning}, booktitle={2026 Design, Automation \\& Test in Europe Conference (DATE)}, author={Tang, Xingyu and Yin, Sen and Yao, Zhujun and Huang, Bingzhang and Liu, Xiaosen and Wang, Yan}, year={2026}, pages={1-6}}"
+          },
+          "links": {
+            "paper_url": "https://past.date-conference.com/proceedings-archive/2026/DATA/439.pdf",
+            "pdf_url": "https://past.date-conference.com/proceedings-archive/2026/DATA/439.pdf"
+          },
+          "compare_when": [
+            "comparing PVT-aware or yield-driven analog sizing methods under many objectives",
+            "evaluating hybrid-fidelity Bayesian optimization and incremental-learning sizing frameworks"
+          ],
+          "benchmark_scope": [
+            "operational amplifier and comparator examples with PVT/process variation constraints"
+          ],
+          "metrics": [
+            "hypervolume",
+            "success rate",
+            "yield",
+            "model training time",
+            "total runtime speedup"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formal DOI was not found during quick gap scan; metadata is from the official DATE 2026 PDF",
+            "Baseline variants adapt NSGA-II, MFBO, and SILE for yield-driven evaluation, so comparisons depend on adaptation details"
           ]
         },
         {
@@ -4722,6 +4867,41 @@
           "caveats": [
             "ICCAD 2025 paper, recently published",
             "first work to conduct analog sizing with fixed yield constraint"
+          ]
+        },
+        {
+          "baseline_id": "simulator-driven-analog-rl",
+          "short_name": "Simulator-Driven Analog RL",
+          "display_name": "Simulator-Driven Deep Reinforcement Learning for Analog Circuit Design",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Simulator-Driven Deep Reinforcement Learning for Analog Circuit Design",
+            "venue": "DATE",
+            "year": 2026,
+            "bibtex": "@inproceedings{Guo_2026_Simulator_Driven_Analog_RL, title={Simulator-Driven Deep Reinforcement Learning for Analog Circuit Design}, booktitle={2026 Design, Automation \\& Test in Europe Conference (DATE)}, author={Guo, Felicia B. and Ho, Ken T. and Vladimirescu, Andrei and Nikolic, Borivoje}, year={2026}, pages={1-6}}"
+          },
+          "links": {
+            "paper_url": "https://past.date-conference.com/proceedings-archive/2026/DATA/1070.pdf",
+            "pdf_url": "https://past.date-conference.com/proceedings-archive/2026/DATA/1070.pdf"
+          },
+          "compare_when": [
+            "comparing automated analog topology-generation methods that use simulator feedback",
+            "evaluating RL-based analog circuit design against LLM or generator baselines"
+          ],
+          "benchmark_scope": [
+            "ring oscillator, comparator, and operational transconductance amplifier topology generation"
+          ],
+          "metrics": [
+            "netlisting validity",
+            "simulation validity",
+            "specification fulfillment rate",
+            "functional design rate"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formal DOI was not found during quick gap scan; metadata is from the official DATE 2026 PDF",
+            "Results depend on commercial simulator/testbench setup and circuit-specific reward design"
           ]
         }
       ]
@@ -7604,6 +7784,40 @@
           "caveats": [
             "ICCAD 2025 paper, recently published",
             "no fine-tuning required"
+          ]
+        },
+        {
+          "baseline_id": "estcoder",
+          "short_name": "EstCoder",
+          "display_name": "EstCoder: A RTL Code Generator based on Static Functional Estimation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "EstCoder: A RTL Code Generator based on Static Functional Estimation",
+            "venue": "DATE",
+            "year": 2026,
+            "bibtex": "@inproceedings{Xiong_2026_EstCoder, title={EstCoder: A RTL Code Generator based on Static Functional Estimation}, booktitle={2026 Design, Automation \\& Test in Europe Conference (DATE)}, author={Xiong, Qi and Chen, Renzhi and Fang, Zhigang and Wang, Bowei and Zhou, Yingjie and Huang, Libo and Wang, Lei}, year={2026}, pages={1-6}}"
+          },
+          "links": {
+            "paper_url": "https://past.date-conference.com/proceedings-archive/2026/DATA/504.pdf",
+            "pdf_url": "https://past.date-conference.com/proceedings-archive/2026/DATA/504.pdf"
+          },
+          "compare_when": [
+            "comparing LLM-based RTL code-generation and repair frameworks on functional correctness",
+            "evaluating static functional estimation as feedback before simulation or correction"
+          ],
+          "benchmark_scope": [
+            "VerilogEval v1/v2 benchmark tasks and RTL code-generation pass@1 evaluation"
+          ],
+          "metrics": [
+            "Pass@1 functional correctness",
+            "improvement over generic LLM baselines",
+            "functional estimation and correction success"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formal DOI was not found during quick gap scan; metadata is from the official DATE 2026 PDF",
+            "The anonymous artifact URL in the paper was not reachable during earlier inspection, so no repository link is listed"
           ]
         },
         {
@@ -11017,6 +11231,6 @@
   ],
   "_counts": {
     "topics": 84,
-    "baselines": 261
+    "baselines": 267
   }
 }
