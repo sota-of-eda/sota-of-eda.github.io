@@ -676,7 +676,6 @@ function App() {
     <main className="page-shell">
       <header className="hero-composer liquid-card">
         <div className="hero-title-block">
-          <span className="eyebrow">Agent-generated EDA SOTA registry</span>
           <h1>SOTA of EDA</h1>
           <span className="title-note">An auto-collected SOTA baseline registry for EDA research — for authors, reviewers, and AI agents.</span>
         </div>
@@ -685,13 +684,11 @@ function App() {
           <div className="claim-copy">
             <p>
               Check whether EDA experiments discuss reference baselines that match the paper's claim,
-              benchmark scope, and caveats — for authors, reviewers, and coding agents.
+              benchmark scope, and caveats.
             </p>
             <p className="agent-note">
               Most entries are AI-generated and may contain errors. Browse, search, or query
               {' '}<a href="/registry.json"><code>/registry.json</code></a> directly with your agent.
-              Contributions welcome via
-              <a href="https://github.com/sota-of-eda/sota-of-eda.github.io" target="_blank" rel="noreferrer"> GitHub</a>.
             </p>
             <div className="status-grid" aria-label="Global registry status">
               <strong><span>{topics.length}</span> topics</strong>
