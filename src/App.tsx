@@ -106,13 +106,7 @@ const friendlyLinks = [
     label: 'Papers',
     description: 'Curated AI-for-EDA publication list.',
   },
-  {
-    name: 'EDACommons',
-    href: 'https://edacommons.com/',
-    label: 'Benchmarks',
-    description: 'Datasets, evaluations, and tools for EDA research.',
-  },
-  {
+{
     name: 'SLICE',
     href: 'https://slice-ml-eda.github.io/',
     label: 'Infrastructure',
