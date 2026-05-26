@@ -7,4 +7,3 @@ aliases:
   - lithography
   - OPC
 description: Mask optimization topics for manufacturability, lithography, and mask-aware design closure.
-baselines: []

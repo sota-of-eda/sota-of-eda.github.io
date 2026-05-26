@@ -38,4 +38,3 @@ review_triggers:
 - paper targets 3D IC, 3D chiplet, die-stack, hybrid-bonding, micro-bump, or TSV physical design
 - experiments report 3D partitioning, floorplanning, placement, HPWL, vertical interconnect overflow, thermal, or bonding-density metrics
 - baselines include ChipletPart, TritonPart, Floorplet, 3D placement/floorplanning, or chiplet partitioning methods
-baselines: []

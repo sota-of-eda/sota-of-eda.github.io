@@ -15,4 +15,3 @@ review_triggers:
 - paper targets AQFP, RSFQ, SFQ, or other superconducting logic design automation
 - experiments compare buffer/splitter insertion, path balancing, technology mapping, timing, placement, or clocking methods for superconducting circuits
 - metrics include JJ count, buffer/splitter count, circuit depth, delay, runtime, or superconducting-logic-specific timing correctness
-baselines: []

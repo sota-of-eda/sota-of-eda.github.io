@@ -11,4 +11,3 @@ review_triggers:
 - paper claims transistor-level or analog placement improvement
 - paper addresses placement with device matching or symmetry constraints
 - paper proposes custom or semi-custom transistor placement automation
-baselines: []

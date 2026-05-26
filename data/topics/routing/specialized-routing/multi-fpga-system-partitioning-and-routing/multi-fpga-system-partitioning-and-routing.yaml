@@ -15,4 +15,3 @@ review_triggers:
 - paper targets multi-FPGA emulation/prototyping partitioning or system-level FPGA routing
 - paper optimizes hop count, TDM ratio, maximum path delay, inter-FPGA cut size, or congestion
 - paper compares against MaPart, TopoPart, TopoPart+, SPARK, PathFinder-style routing, or ICCAD multi-FPGA routing contest methods
-baselines: []

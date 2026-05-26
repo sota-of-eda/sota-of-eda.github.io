@@ -11,4 +11,3 @@ review_triggers:
 - paper claims yield analysis or yield optimization improvement
 - paper addresses statistical or variation-aware yield modeling
 - paper proposes design-for-yield or design-for-manufacturability flows
-baselines: []

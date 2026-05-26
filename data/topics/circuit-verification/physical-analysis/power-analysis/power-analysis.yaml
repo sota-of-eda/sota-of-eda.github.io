@@ -15,4 +15,3 @@ review_triggers:
 - paper claims RTL or gate-level power estimation, power trace prediction, or power-analysis acceleration
 - experiments compare against PrimeTime PX, gate-level simulation, RTL power estimators, ML power models, or commercial EDA power tools
 - metrics include power error, NRMSE, MAPE, R2, correlation, runtime, or speedup versus conventional power analysis
-baselines: []

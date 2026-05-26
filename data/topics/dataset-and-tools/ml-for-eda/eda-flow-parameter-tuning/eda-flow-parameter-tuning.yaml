@@ -15,4 +15,3 @@ review_triggers:
 - paper claims automatic EDA tool parameter tuning or flow design space exploration
 - paper optimizes PPA or hypervolume over synthesis, floorplan, placement, routing, or full-flow parameters
 - paper compares Bayesian optimization, recommender, retrieval, or learning-based flow tuning methods
-baselines: []

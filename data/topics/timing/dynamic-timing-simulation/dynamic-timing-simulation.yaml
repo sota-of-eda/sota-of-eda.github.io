@@ -14,4 +14,3 @@ review_triggers:
 - paper proposes dynamic timing analysis, event-driven delay simulation, or gate-delay models for dynamic timing effects
 - experiments compare against SPICE, inertial delay, degradation/involution delay models, or STA timing models
 - metrics include average deviation time, waveform/timing-error accuracy, glitch prediction, or runtime versus analog simulation
-baselines: []

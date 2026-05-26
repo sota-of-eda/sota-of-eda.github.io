@@ -11,4 +11,3 @@ review_triggers:
   - paper claims autonomous analog circuit design
   - paper reports circuit sizing success rate or sample efficiency
   - paper compares LLM, RL, search, or tool-using analog design agents
-baselines: []

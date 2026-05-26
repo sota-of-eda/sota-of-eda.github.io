@@ -16,4 +16,3 @@ review_triggers:
 - paper claims automated PCB symbol, footprint, or component-library generation
 - paper extracts component geometry, pins, pads, or package dimensions from datasheets for EDA tool libraries
 - experiments report pin/pad correctness, name/dimension match, pad overlap, parsing/execution success, runtime, or comparison to manual/semi-automated library generation tools
-baselines: []

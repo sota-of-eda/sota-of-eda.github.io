@@ -3,6 +3,4 @@ parent_id: analog-layout-synthesis
 short_name: Analog Sizing
 display_name: Analog Circuit Sizing and Optimization
 description: ML/RL-driven analog transistor sizing, circuit optimization, and performance surrogate modeling.
-review_triggers: []
 aliases: []
-baselines: []

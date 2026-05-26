@@ -29,4 +29,3 @@ review_triggers:
 - paper claims automated analog, mixed-signal, RF, or power-management circuit generation or sizing
 - experiments compare against BO, RL, surrogate models, manual design, or prior AMS automation flows
 - metrics include specification success rate, power/area/noise/performance, simulation count, runtime, or design-space coverage
-baselines: []

@@ -14,4 +14,3 @@ review_triggers:
 - paper proposes TCAD script/code generation, simulation automation, or device-optimization agents
 - experiments use TCAD tools, device structures, IRDS targets, process/device parameters, or DTCO objectives
 - metrics include valid simulation rate, device metrics, optimization iterations, runtime, or expert-effort reduction
-baselines: []

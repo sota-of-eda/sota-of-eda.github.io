@@ -3,6 +3,4 @@ parent_id: timing
 short_name: Physical Optimization
 display_name: Timing-Driven Physical Optimization
 description: Gate sizing, buffer insertion, and physical optimization methods for timing closure.
-review_triggers: []
 aliases: []
-baselines: []

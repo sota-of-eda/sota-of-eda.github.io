@@ -15,4 +15,3 @@ review_triggers:
 - paper claims aging-aware cell delay, path delay, or timing prediction improvement
 - experiments compare against SPICE, aging-aware cell libraries, STA, or ML/GNN delay models under aging/process conditions
 - metrics include delay error, R2, WNS/TNS error, runtime, data requirements, or transfer to unseen cells/corners
-baselines: []

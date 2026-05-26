@@ -13,4 +13,3 @@ review_triggers:
 - paper claims analog layout migration or technology migration improvement
 - paper evaluates LVS/DRC-clean migrated analog layouts across process nodes
 - paper reports area, wirelength, or post-layout schematic-to-layout performance degradation after migration
-baselines: []

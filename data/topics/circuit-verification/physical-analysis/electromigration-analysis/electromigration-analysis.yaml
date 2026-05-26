@@ -15,4 +15,3 @@ review_triggers:
 - paper addresses EM-aware PDN or signal interconnect design
 - paper proposes aging or wearout analysis for IC reliability
 - paper integrates EM prediction or mitigation into placement, routing, or physical verification flows
-baselines: []

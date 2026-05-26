@@ -17,4 +17,3 @@ review_triggers:
 - paper optimizes macro or mixed-size placement rather than only standard-cell placement
 - experiments report HPWL, congestion, routability, CRH/CRV, DRC, or downstream routing metrics on macro-placement benchmarks
 - baselines include AlphaChip, ChiPFormer, MaskPlace, MaskRegulate, DREAMPlace, AutoDMP, Hier-RTLMP, or commercial Innovus macro placement
-baselines: []

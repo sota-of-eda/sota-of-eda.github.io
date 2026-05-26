@@ -25,4 +25,3 @@ review_triggers:
 - paper proposes model-order reduction for large-scale power grids
 - experiments report IR-drop violations, worst voltage drop, effective voltage, PDN resources, runtime, or PPA impacts
 - baselines include commercial IR-drop ECO flows, IncPIRD, MAVIREC, PDN reinforcement, decap/staple insertion, or ML-based IR-drop prediction methods
-baselines: []

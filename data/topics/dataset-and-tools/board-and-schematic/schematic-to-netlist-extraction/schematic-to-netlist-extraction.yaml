@@ -14,4 +14,3 @@ review_triggers:
 - paper converts circuit schematic images or diagrams into SPICE-compatible or EDA-readable netlists
 - paper evaluates component recognition, connectivity inference, and netlist-generation accuracy
 - paper uses schematic-image extraction to build circuit datasets or enable AI-assisted circuit design workflows
-baselines: []

@@ -18,4 +18,3 @@ review_triggers:
 - paper proposes an LLM agent, benchmark, or evaluation framework for EDA tool use or documentation QA
 - experiments use EDA tool documentation, scripts, command-line flows, or domain-specific EDA error categories
 - compared methods include RAG/LLM evaluation frameworks, EDA copilots, documentation QA systems, or generic LLM evaluators adapted to EDA
-baselines: []

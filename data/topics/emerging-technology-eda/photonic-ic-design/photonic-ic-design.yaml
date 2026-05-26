@@ -17,4 +17,3 @@ review_triggers:
 - paper addresses photonic IC simulation or compact modeling
 - paper covers electronic-photonic or optical-network-on-chip co-design
 - paper proposes physical design automation for photonic components
-baselines: []

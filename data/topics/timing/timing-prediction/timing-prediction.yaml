@@ -3,6 +3,4 @@ parent_id: timing
 short_name: Timing Prediction
 display_name: Timing Estimation and Prediction
 description: Pre-synthesis and pre-routing timing prediction, crosstalk-aware estimation, and early-stage timing analysis.
-review_triggers: []
 aliases: []
-baselines: []

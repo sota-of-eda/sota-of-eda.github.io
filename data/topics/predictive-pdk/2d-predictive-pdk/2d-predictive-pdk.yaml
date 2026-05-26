@@ -9,4 +9,3 @@ description: Open-source predictive PDKs for two-dimensional IC designs at advan
 review_triggers:
   - paper claims 2D predictive PDK or open-source 2D standard cell library
   - paper uses ASAP7 or similar 2D PDK for evaluation
-baselines: []

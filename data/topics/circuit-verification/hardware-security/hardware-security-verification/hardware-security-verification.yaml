@@ -15,4 +15,3 @@ review_triggers:
 - paper claims hardware Trojan, backdoor, security-property, non-interference, taint, or trust verification improvement
 - experiments use Trust-Hub, OpenCores, RTL/gate/LUT netlists, formal/security verification, or Trojan localization benchmarks
 - metrics include TPR/TNR, precision, accuracy, F1, proof time, detection time, localization quality, or explainability
-baselines: []

@@ -8081,7 +8081,7 @@
             "paper_url": "https://guozz.cn/publication/heterostaaspdac-26/",
             "pdf_url": "https://arxiv.org/pdf/2511.11660",
             "arxiv_url": "https://arxiv.org/abs/2511.11660",
-            "repo_url": "https://github.com/anthonyqzx/HeteroSTA"
+            "repo_url": "https://heterosta.pkueda.org.cn/"
           },
           "compare_when": [
             "paper claims STA acceleration or GPU STA speedup"

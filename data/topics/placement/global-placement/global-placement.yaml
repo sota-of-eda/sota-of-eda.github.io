@@ -10,4 +10,3 @@ review_triggers:
   - paper claims global placement quality or runtime improvement
   - paper compares placement wirelength or routability metrics
   - paper claims learning-based or GPU-accelerated placement
-baselines: []

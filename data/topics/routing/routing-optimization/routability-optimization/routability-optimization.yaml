@@ -11,4 +11,3 @@ review_triggers:
 - paper claims routability prediction or optimization improvement
 - paper predicts congestion, design-rule violations, or routing hotspots
 - paper changes routing guidance, blockages, or routing resources based on learned predictions
-baselines: []

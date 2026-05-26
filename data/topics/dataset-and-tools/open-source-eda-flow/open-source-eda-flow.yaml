@@ -7,4 +7,3 @@ aliases:
 description: End-to-end open-source EDA toolchains covering RTL-to-GDSII physical design
 review_triggers:
   - paper claims open-source end-to-end EDA flow
-baselines: []

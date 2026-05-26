@@ -14,4 +14,3 @@ review_triggers:
 - paper targets RTL branch, statement, or functional coverage using concolic execution or symbolic execution
 - experiments compare against EBMC, STSearch, APE-FV, hardware fuzzing, or prior concolic RTL testing
 - benchmarks include ITC/OpenRISC/RISC-V cores or other RTL designs with hard-to-activate branches
-baselines: []

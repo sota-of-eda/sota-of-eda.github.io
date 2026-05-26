@@ -11,4 +11,3 @@ review_triggers:
 - paper claims FPGA architecture exploration or CAD flow improvement
 - paper addresses open-source FPGA toolchains or benchmarks
 - paper proposes new FPGA routing or logic-block architectures
-baselines: []

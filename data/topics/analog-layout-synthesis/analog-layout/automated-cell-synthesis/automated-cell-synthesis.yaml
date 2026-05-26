@@ -20,4 +20,3 @@ review_triggers:
 - experiments report cell area, CPP, pin accessibility, DRC/LVS/PEX, timing/power characterization, or integration with physical design flows
 - baselines include SMT/DP/heuristic cell generators, automatic standard-cell layout generation, megacell/cell-merging approaches, or transistor-level placement/routing
 - paper addresses cell-level transistor network synthesis, sizing, or placement
-baselines: []

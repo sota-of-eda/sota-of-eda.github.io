@@ -9,4 +9,3 @@ description: Open-source predictive process design kits for IC design research a
 review_triggers:
   - paper claims predictive PDK or open-source standard cell library
   - paper uses ASAP7 or similar predictive PDK for evaluation
-baselines: []

@@ -14,4 +14,3 @@ review_triggers:
 - paper claims detailed-routing quality or runtime improvement
 - paper evaluates detailed routers on ISPD detailed-routing benchmarks or OpenROAD/TritonRoute/Dr.CU-style flows
 - paper compares DRVs, wirelength, iterations, or detailed-routing runtime
-baselines: []

@@ -10,4 +10,3 @@ review_triggers:
   - paper evaluates timing-driven placement on 2D designs
   - paper reports timing and wirelength trade-offs for 2D global placement
   - paper compares timing-aware placement against non-timing-aware placement
-baselines: []

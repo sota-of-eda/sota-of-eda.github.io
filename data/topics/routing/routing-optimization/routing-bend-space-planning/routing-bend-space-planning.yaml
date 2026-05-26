@@ -14,4 +14,3 @@ review_triggers:
 - paper claims improvement from adaptive routing-pattern or bend-space planning
 - paper evaluates shorts, spacing violations, routing resources, wirelength, vias, or routing runtime after integrating with routers such as CUGR, Dr.CU, or TritonRoute
 - paper compares adaptive routing-space assignment against static L/Z/monotonic routing-space choices
-baselines: []

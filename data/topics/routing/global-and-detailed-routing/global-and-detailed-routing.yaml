@@ -3,6 +3,4 @@ parent_id: routing
 short_name: "Global & Detailed Routing"
 display_name: Global and Detailed Routing
 description: Global routing, detailed routing, track assignment, ECO routing, and pin assignment.
-review_triggers: []
 aliases: []
-baselines: []

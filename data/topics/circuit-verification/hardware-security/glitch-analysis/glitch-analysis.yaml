@@ -15,4 +15,3 @@ review_triggers:
 - paper claims improved glitch propagation, glitch power, or gate-level noise/timing analysis
 - experiments compare against SPICE, industrial power/timing tools, inertial/degradation/derate models, or prior ANN glitch models
 - metrics include R2, waveform shape error, delay/power error, model size, characterization time, or full-chip glitch-analysis applicability
-baselines: []

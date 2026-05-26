@@ -16,4 +16,3 @@ review_triggers:
 - paper claims hypergraph partitioning quality or runtime improvement
 - paper addresses partitioning for multi-FPGA or multi-die systems
 - paper proposes learning-based or spectral partitioning methods
-baselines: []

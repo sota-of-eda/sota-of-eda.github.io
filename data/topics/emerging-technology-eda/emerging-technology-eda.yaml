@@ -11,4 +11,3 @@ aliases:
 description: EDA methods for emerging technologies beyond conventional CMOS digital flows, including photonic, quantum, flexible-electronics, superconducting, and memristive design automation.
 review_triggers:
 - paper targets EDA for photonic, quantum, flexible, superconducting, memristive, or other emerging device technologies
-baselines: []

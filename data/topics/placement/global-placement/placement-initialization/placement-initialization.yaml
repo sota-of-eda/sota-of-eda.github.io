@@ -13,4 +13,3 @@ review_triggers:
 - paper claims improved global placement initialization
 - paper reports HPWL, convergence, or iteration improvements from initial placement generation
 - paper compares against random, embedding-based, or prior placer-initialization strategies
-baselines: []

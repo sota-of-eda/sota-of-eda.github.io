@@ -13,4 +13,3 @@ review_triggers:
 - paper claims photoresist or lithography process simulation improvement
 - paper evaluates resist-profile, printed-pattern, or edge-placement prediction accuracy
 - paper compares learned lithography/resist models against analytical simulators or prior neural baselines
-baselines: []

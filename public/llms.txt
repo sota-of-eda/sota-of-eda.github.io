@@ -20,10 +20,15 @@ Not a leaderboard — it is a reference index where each baseline is backed by e
 
 ### Quick lookup (fetch once)
 - Full registry as JSON: `GET https://sota-of-eda.github.io/registry.json`
-  Returns a wrapped object with `topics[]` array. Each topic has:
-  - `topic_id`, `parent_id` (hierarchy), `short_name`, `display_name`, `description`
-  - `baselines[]`: each with `baseline_id`, `short_name`, `display_name`, `role`, `publication` (venue/year/doi/bibtex), `links` (paper/pdf/arxiv/repo/project URLs), `compare_when[]`, `benchmark_scope[]`, `metrics[]`, `reproducibility`, `caveats[]`
-  - `$schema`, `title`, `description`, `version`, `_counts` at the top level for self-description
+  Wrapped object with `$schema`, `title`, `description`, `version`, `_counts`, and `topics[]`.
+
+### Per-topic lookup (fetch one topic at a time)
+- Topic JSON at hierarchical paths: `GET https://sota-of-eda.github.io/topic/<path>.json`
+  Path is the ancestor chain joined by `/`, e.g.:
+  - `/topic/placement.json` — root topic
+  - `/topic/placement/global-placement.json` — child topic
+  - `/topic/placement/global-placement/timing-driven-global-placement/two-dimensional-timing-driven-placement.json` — deeply nested topic
+  Each file is a single topic object with its `baselines[]` array.
 
 ### Fuzzy search (in-browser)
 The search box on the page filters topics and baselines by short_name, display_name, description, topic_id, aliases, baseline_id, and publication.title with substring matching. An agent using a headless browser can type into `input.search-input` and read `.search-dropdown`.

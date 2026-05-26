@@ -6,4 +6,3 @@ aliases:
   - routing
   - physical design routing
 description: Routing topics that connect placed design objects under congestion, design-rule, and timing constraints.
-baselines: []

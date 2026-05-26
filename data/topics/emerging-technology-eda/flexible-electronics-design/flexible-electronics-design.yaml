@@ -10,4 +10,3 @@ description: EDA for flexible and printed electronics, addressing mechanical-com
 review_triggers:
 - paper addresses design automation for flexible or printed electronics
 - paper claims physical design under bending or stretching constraints
-baselines: []

@@ -11,4 +11,3 @@ review_triggers:
   - paper claims NLDM timing analysis improvement
   - paper evaluates delay model accuracy or speedup
   - paper proposes new cell delay modeling approach
-baselines: []

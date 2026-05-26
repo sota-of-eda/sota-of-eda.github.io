@@ -23,4 +23,3 @@ review_triggers:
 - paper claims quantum circuit synthesis, mapping, routing, compilation, or fault-tolerant layout improvement
 - experiments compare against quantum compilers, synthesis algorithms, ZX-calculus flows, SABRE, Qiskit, or lattice-surgery compilers
 - metrics include gate count, depth, SWAP count, synthesis time, logical depth, or space-time cost
-baselines: []

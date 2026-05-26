@@ -18,12 +18,14 @@
   },
   "apis": {
     "registry": "/registry.json",
+    "perTopic": "/topic/<hierarchical-path>.json",
     "atom": "/atom.xml",
     "sitemap": "/sitemap.xml"
   },
   "queryHints": {
     "fuzzySearch": "type into input.search-input and read .search-dropdown for filtered topic/baseline results",
     "fullDownload": "GET /registry.json for the complete machine-readable registry",
+    "perTopicLookup": "GET /topic/<path>.json where path is the hierarchical ancestor chain (e.g., /topic/placement/global-placement.json)",
     "llmsTxt": "GET /llms.txt for LLM-oriented project documentation"
   },
   "license": "CC-BY-4.0"

@@ -3,6 +3,4 @@ parent_id: analog-layout-synthesis
 short_name: Analog Fabric
 display_name: Reconfigurable Analog Fabrics
 description: FPAA fabric synthesis, reconfigurable analog/mixed-signal architectures.
-review_triggers: []
 aliases: []
-baselines: []

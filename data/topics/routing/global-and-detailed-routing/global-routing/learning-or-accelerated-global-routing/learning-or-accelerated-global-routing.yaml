@@ -11,4 +11,3 @@ review_triggers:
   - paper claims global routing quality or runtime improvement
   - paper compares overflow, wirelength, or routing congestion
   - paper claims learning-based or heterogeneous routing acceleration
-baselines: []

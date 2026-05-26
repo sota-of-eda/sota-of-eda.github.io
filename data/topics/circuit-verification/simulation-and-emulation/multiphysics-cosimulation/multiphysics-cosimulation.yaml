@@ -11,4 +11,3 @@ review_triggers:
 - paper claims coupled multiphysics simulation for ICs or packaging
 - paper addresses EM-thermal or thermal-mechanical co-simulation
 - paper proposes reduced-order or ML-accelerated multiphysics solvers
-baselines: []

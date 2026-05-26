@@ -15,4 +15,3 @@ review_triggers:
 - paper targets memristor, ReRAM, RRAM, MAGIC, mixed-mode, or in-memory logic synthesis/mapping
 - experiments compare against ABC, MAGIC/SIMPLE/SIMPLER, optimal memristive synthesis, or memristor-aware mapping flows
 - metrics include device count, cycle latency, delay, area, synthesis runtime, or supported input/output scale
-baselines: []

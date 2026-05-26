@@ -12,4 +12,3 @@ review_triggers:
 - paper claims GPU-accelerated EDA algorithm improvement
 - paper addresses heterogeneous CPU-GPU EDA acceleration
 - paper proposes GPU parallelization for physical design or verification
-baselines: []

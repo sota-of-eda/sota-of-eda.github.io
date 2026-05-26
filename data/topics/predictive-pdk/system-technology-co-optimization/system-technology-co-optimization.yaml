@@ -11,4 +11,3 @@ review_triggers:
 - paper claims STCO methodology or system-level technology pathfinding
 - paper addresses architecture-driven technology node selection
 - paper proposes cross-stack optimization across system and technology layers
-baselines: []

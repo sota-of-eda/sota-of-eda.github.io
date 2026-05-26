@@ -13,4 +13,3 @@ review_triggers:
 - paper claims DTCO flow or standard-cell PPA estimation improvement
 - paper addresses cell-level design optimization across technology nodes
 - paper proposes cell library characterization across process corners
-baselines: []

@@ -4,7 +4,7 @@
   "description": "JSON Schema for the SOTA of EDA baseline and benchmark registry. Defines topics, baselines, and metadata for Electronic Design Automation (EDA) / VLSI CAD research paper comparison and SOTA reference tables.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["topic_id", "short_name", "display_name", "aliases", "description", "baselines"],
+  "required": ["topic_id", "short_name", "display_name", "aliases", "description"],
   "properties": {
     "topic_id": {
       "type": "string",

@@ -16,4 +16,3 @@ review_triggers:
 - Baselines include AssertLLM, Spec2Assertion, AssertionForge, AssertGen, DeepAssert, GoldMine, PALM, or rule-based assertion generators.
 - Baselines include AssertLLM, Spec2Assertion, AssertionForge, AssertGen, DeepAssert, or rule-based assertion generators.
 - Baselines include AssertLLM, Spec2Assertion, AssertionForge, AssertGen, DeepAssert, PALM, or rule-based assertion generators.
-baselines: []

@@ -3,6 +3,4 @@ parent_id: routing
 short_name: Specialized Routing
 display_name: Specialized and Package Routing
 description: Bus routing, double-sided routing, package routing, and multi-FPGA partitioning/routing.
-review_triggers: []
 aliases: []
-baselines: []

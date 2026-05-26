@@ -15,4 +15,3 @@ review_triggers:
 - paper generates Verilog/SystemVerilog/UVM testbenches or test stimuli from specifications or RTL using LLMs
 - experiments evaluate pass rate, functional coverage, line coverage, toggle coverage, or testbench repair/augmentation
 - baselines include AutoBench, VerilogReader, CorrectBench, MEIC, UVLLM, LLM4DV, UVM^2, or direct commercial/frontier LLM prompting
-baselines: []

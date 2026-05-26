@@ -6,4 +6,3 @@ aliases:
   - placement
   - physical design placement
 description: Placement topics that assign cells, macros, or blocks to legal or optimizable physical locations.
-baselines: []

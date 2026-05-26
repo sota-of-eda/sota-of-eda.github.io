@@ -6,4 +6,3 @@ aliases:
   - logic synthesis
   - logic optimization
 description: Logic synthesis topics for optimizing and mapping Boolean networks and gate-level designs.
-baselines: []

@@ -14,4 +14,3 @@ review_triggers:
 - paper proposes a learned representation for circuits, HDL, netlists, AIGs, layouts, or EDA flows
 - experiments evaluate QoR prediction, cross-modal retrieval, downstream EDA prediction, or transfer across circuit benchmarks
 - compared methods include circuit encoders, graph neural networks, multimodal alignment models, or circuit foundation models
-baselines: []

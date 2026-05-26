@@ -37,4 +37,3 @@ review_triggers:
 - paper claims circuit-simulation, SPICE-acceleration, waveform-simulation, or numerical-solver improvement
 - experiments compare against SPICE, Spectre, HSPICE, circuit-specific simulators, or sparse solver baselines
 - metrics include simulation error, waveform error, convergence, runtime, memory, or design-space exploration throughput
-baselines: []

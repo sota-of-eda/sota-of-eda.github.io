@@ -14,4 +14,3 @@ review_triggers:
 - paper claims timing-driven detailed placement improvement
 - paper reports TNS, WNS, or timing violation improvements from detailed placement
 - paper performs local cell-position refinement guided by STA or timing-critical paths
-baselines: []

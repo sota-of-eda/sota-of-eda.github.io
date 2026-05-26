@@ -15,4 +15,3 @@ review_triggers:
 - paper verifies arithmetic datapaths such as dividers, adders, multipliers, or fused arithmetic blocks
 - paper reports polynomial bounds, SAT/SMT/SCA runtime, equivalence checking, or counterexample/debugging results
 - baselines include Cadical/Kissat/SAT, symbolic computer algebra, PFV, PolyAdd, FARAD, or divider-specific verification methods
-baselines: []

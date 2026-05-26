@@ -11,4 +11,3 @@ review_triggers:
 - paper claims package or interposer routing improvement
 - paper addresses escape routing or RDL routing
 - paper proposes routing for chiplet or 2.5D/3D integration
-baselines: []

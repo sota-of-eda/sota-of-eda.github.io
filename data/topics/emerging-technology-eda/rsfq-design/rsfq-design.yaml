@@ -12,4 +12,3 @@ description: EDA for Rapid Single Flux Quantum (RSFQ) and superconducting logic,
 review_triggers:
 - paper addresses placement or routing for RSFQ or superconducting logic
 - paper claims physical design for Josephson-junction-based circuits
-baselines: []

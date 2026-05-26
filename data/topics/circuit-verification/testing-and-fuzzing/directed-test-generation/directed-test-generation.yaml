@@ -15,4 +15,3 @@ review_triggers:
 - paper claims coverage-directed, reinforcement-learning, constrained-random, or model-based test generation for design verification
 - experiments compare against random test generation, directed test generators, litmus-test generators, or commercial verification flows
 - metrics include functional/structural coverage, bug exposure, generated test count, simulation time, or coverage convergence
-baselines: []

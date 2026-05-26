@@ -47,7 +47,6 @@ def build_candidate_topic(args: argparse.Namespace) -> dict:
             **({"aliases": args.proposed_alias} if args.proposed_alias else {}),
             **({"description": args.proposed_description} if args.proposed_description else {}),
             **({"review_triggers": args.proposed_review_trigger} if args.proposed_review_trigger else {}),
-            "baselines": [],
         }
         return {
             "status": "proposed",

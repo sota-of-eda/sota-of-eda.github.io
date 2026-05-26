@@ -15,4 +15,3 @@ review_triggers:
 - paper validates hardware requirements or formal specifications before RTL implementation
 - paper generates executable behavioral models, assertions, or formal properties from a formal specification language
 - experiments report detected specification gaps, inconsistencies, runtime checks, property counts, proof time, or simulation performance
-baselines: []

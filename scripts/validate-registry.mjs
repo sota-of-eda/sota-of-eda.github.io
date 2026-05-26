@@ -76,11 +76,6 @@ function collectTopicErrors(topic, filePath) {
     errors.push(`topic "${topic.topic_id}" cannot be its own parent`);
   }
 
-  const baselineIds = topic.baselines.map((baseline) => baseline.baseline_id);
-  for (const baselineId of findDuplicates(baselineIds)) {
-    errors.push(`duplicate baseline_id "${baselineId}" in topic "${topic.topic_id}"`);
-  }
-
   return errors;
 }
 

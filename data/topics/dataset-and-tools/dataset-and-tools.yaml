@@ -7,4 +7,3 @@ aliases:
   - EDA datasets
   - EDA tools
 description: Dataset and tool topics that support reproducible EDA research, benchmarks, and infrastructure.
-baselines: []

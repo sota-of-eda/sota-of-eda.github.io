@@ -3,6 +3,4 @@ parent_id: dataset-and-tools
 short_name: Hardware Acceleration
 display_name: Hardware-Accelerated EDA
 description: GPU-accelerated EDA algorithms and FPGA architecture exploration tools.
-review_triggers: []
 aliases: []
-baselines: []

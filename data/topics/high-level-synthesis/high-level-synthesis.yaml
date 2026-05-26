@@ -6,4 +6,3 @@ aliases:
   - HLS
   - high-level synthesis
 description: High-level synthesis topics for translating behavioral specifications into hardware implementations.
-baselines: []

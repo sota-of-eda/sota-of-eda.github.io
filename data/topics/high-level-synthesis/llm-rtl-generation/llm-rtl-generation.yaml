@@ -12,4 +12,3 @@ review_triggers:
 - paper evaluates LLM-generated RTL quality or functional correctness
 - paper proposes LLM fine-tuning or prompting for hardware description languages
 - paper proposes LLM fine-tuning, prompting, reasoning, repair, or inference-time steering for hardware description languages
-baselines: []

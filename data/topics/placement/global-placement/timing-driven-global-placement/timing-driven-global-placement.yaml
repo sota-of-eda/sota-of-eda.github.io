@@ -11,4 +11,3 @@ review_triggers:
   - paper claims timing-driven global placement improvement
   - paper reports WNS, TNS, or timing closure impact from placement
   - paper optimizes placement with timing-critical path awareness
-baselines: []

@@ -13,4 +13,3 @@ review_triggers:
 - paper claims lithography or SEM-image simulation improvement
 - paper evaluates layout-to-manufacturing image prediction on IC pattern datasets
 - paper compares against neural lithography, GAN, diffusion, Fourier, or physics-inspired lithography simulation baselines
-baselines: []

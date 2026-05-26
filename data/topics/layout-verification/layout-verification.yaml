@@ -7,4 +7,3 @@ aliases:
   - DRC
   - LVS
 description: Layout verification topics for checking physical layouts against design-rule and schematic constraints.
-baselines: []

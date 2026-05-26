@@ -15,4 +15,3 @@ review_triggers:
 - paper proposes a native or unified front-side/back-side signal-routing algorithm
 - paper evaluates backside or double-sided routing with bridging cells, DRVs, wirelength, timing, or routing runtime
 - paper compares against netlist-planning flows, TritonRoute-style detailed routing, or commercial single-sided routing
-baselines: []

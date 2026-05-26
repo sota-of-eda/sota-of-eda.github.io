@@ -11,4 +11,3 @@ review_triggers:
   - paper claims incremental STA acceleration
   - paper evaluates ECO timing update latency
   - paper claims GPU or heterogeneous STA speedup
-baselines: []

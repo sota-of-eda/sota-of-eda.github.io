@@ -20,4 +20,3 @@ review_triggers:
 - paper evaluates thermal resistance or hotspot mitigation
 - paper proposes ML-based, stochastic, FEM, or reduced-order thermal modeling
 - paper proposes ML-based, stochastic, or reduced-order thermal modeling
-baselines: []

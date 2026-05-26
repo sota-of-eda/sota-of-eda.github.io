@@ -12,4 +12,3 @@ review_triggers:
 - paper claims automated PCB placement-and-routing improvement
 - paper evaluates PCB layout quality using wirelength, vias, insertion loss, crosstalk, or design-rule checks
 - paper addresses board-level layout migration or reference-layout reuse
-baselines: []

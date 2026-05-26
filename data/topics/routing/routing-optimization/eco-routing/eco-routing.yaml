@@ -3,6 +3,4 @@ parent_id: routing-optimization
 short_name: ECO Routing
 display_name: Engineering Change Order Routing
 description: ECO routing, post-route repair, and incremental routing optimization.
-review_triggers: []
 aliases: []
-baselines: []

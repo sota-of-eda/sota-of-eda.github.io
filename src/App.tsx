@@ -227,10 +227,6 @@ function collectTopicSubtree(topic: Topic, childrenByParent: Map<string, Topic[]
   return collected;
 }
 
-function getTopicPath(topic: Topic) {
-  return [...getAncestors(topic), topic].map((pathTopic) => pathTopic.display_name).join(' / ');
-}
-
 function descendantTopics(topic: Topic, childrenByParent: Map<string, Topic[]>) {
   return collectTopicSubtree(topic, childrenByParent).filter((candidate) => candidate.topic_id !== topic.topic_id);
 }
@@ -574,9 +570,27 @@ function buildScannedConferences() {
 
 const scannedConferences = buildScannedConferences();
 
+function getTopicPath(topic: Topic): string {
+  const parts = [topic.topic_id];
+  let current = topic;
+  while (current.parent_id) {
+    const parent = topicById.get(current.parent_id);
+    if (!parent) break;
+    parts.unshift(parent.topic_id);
+    current = parent;
+  }
+  return parts.join('/');
+}
+
 function getTopicIdFromHash(): string | null {
   const hash = window.location.hash.replace(/^#\/?/, '');
-  if (hash && topicById.has(hash)) return hash;
+  if (!hash) return null;
+  // Try exact topic_id match first (backcompat)
+  if (topicById.has(hash)) return hash;
+  // Try resolving path like "placement/global-placement"
+  const parts = hash.split('/');
+  const lastId = parts[parts.length - 1];
+  if (lastId && topicById.has(lastId)) return lastId;
   return null;
 }
 
@@ -667,7 +681,8 @@ function App() {
   };
 
   const selectTopic = (topicId: string) => {
-    window.location.hash = topicId;
+    const topic = topicById.get(topicId);
+    if (topic) window.location.hash = getTopicPath(topic);
 
     if (topicId === selectedTopicId) {
       return;

@@ -11,4 +11,3 @@ review_triggers:
 - paper claims CIM or in-memory computing test methodology improvement
 - paper addresses analog compute error testing or fault modeling
 - paper proposes BIST or DFT for compute-in-memory architectures
-baselines: []

@@ -7,4 +7,3 @@ aliases:
   - analog synthesis
   - analog design automation
 description: Analog layout synthesis topics, including layout generation, sizing, optimization, and agentic workflows.
-baselines: []

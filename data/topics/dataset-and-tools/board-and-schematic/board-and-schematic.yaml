@@ -3,6 +3,4 @@ parent_id: dataset-and-tools
 short_name: "Board & Schematic"
 display_name: Board-Level and Schematic Tools
 description: PCB component library generation, schematic extraction, and board-level design automation.
-review_triggers: []
 aliases: []
-baselines: []

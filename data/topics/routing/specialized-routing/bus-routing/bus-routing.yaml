@@ -13,4 +13,3 @@ review_triggers:
 - paper claims bus-routing or on-track bus-routing improvement
 - paper evaluates topology consistency, compactness, route cost, spacing violations, or bus-routing contest score
 - paper compares against MARCH, COMPACT, DAG, SAT, or ICCAD bus-routing contest baselines
-baselines: []

@@ -13,4 +13,3 @@ review_triggers:
 - paper claims parasitic extraction accuracy or runtime improvement
 - paper addresses ML-based or learning-accelerated parasitic extraction
 - paper proposes early-stage or pre-layout parasitic estimation
-baselines: []

@@ -15,4 +15,3 @@ review_triggers:
 - paper claims analog IP matching, subcircuit reuse, or design-reuse improvement
 - paper evaluates one-to-many analog graph matching or reusable analog subcircuit coverage
 - paper compares against subgraph isomorphism, graph-learning, or analog subcircuit matching baselines
-baselines: []
