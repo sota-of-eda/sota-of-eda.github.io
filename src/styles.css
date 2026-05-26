@@ -178,13 +178,10 @@ h1 {
 }
 
 .title-note {
-  display: inline-block;
-  width: max-content;
   max-width: 100%;
   margin-top: 18px;
   color: var(--accent);
   font-size: clamp(0.62rem, 0.85vw, 0.72rem);
-  white-space: nowrap;
 }
 
 .utility-icon path,

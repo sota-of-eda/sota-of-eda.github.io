@@ -1,8 +1,15 @@
 {
   "@context": "https://schema.org",
   "@type": "DataCatalog",
-  "name": "SOTA of EDA",
-  "description": "Agent-readable, claim-aware baseline coverage index for EDA (Electronic Design Automation) research. Topics are hierarchical; each topic carries baselines with publication metadata, BibTeX, links, benchmark scope, metrics, reproducibility, and caveats.",
+  "name": "SOTA of EDA — Electronic Design Automation (EDA) / VLSI CAD Baseline &amp; Benchmark Registry",
+  "alternateName": [
+    "EDA Benchmark Collection",
+    "VLSI CAD Baseline Registry",
+    "EDA SOTA Table",
+    "Electronic Design Automation Baseline Reference"
+  ],
+  "description": "Agent-readable, claim-aware baseline and benchmark coverage index for Electronic Design Automation (EDA) and VLSI CAD research. A SOTA reference table and benchmark registry with hierarchical topics. Each topic carries baselines with publication metadata, BibTeX, links, benchmark scope, metrics, reproducibility, and caveats. Used for paper comparison, peer review baseline checking, and AI-assisted EDA research.",
+  "keywords": ["EDA", "Electronic Design Automation", "VLSI CAD", "baseline registry", "benchmark collection", "SOTA table", "paper comparison", "EDA research"],
   "url": "https://sota-of-eda.github.io/",
   "distribution": {
     "@type": "DataDownload",

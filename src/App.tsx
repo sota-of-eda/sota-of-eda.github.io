@@ -683,17 +683,16 @@ function App() {
       <header className="hero-composer liquid-card">
         <div className="hero-title-block">
           <h1>SOTA of EDA</h1>
-          <span className="title-note">An auto-collected SOTA baseline registry for EDA research — for authors, reviewers, and AI agents.</span>
+          <span className="title-note">An agent-readable baseline and benchmark registry for Electronic Design Automation (EDA) / VLSI CAD research — for authors, reviewers, and AI agents.</span>
         </div>
 
         <aside className="hero-claim-panel" aria-label="Project status">
           <div className="claim-copy">
             <p>
-              Check whether EDA experiments discuss reference baselines that match the paper's claim,
-              benchmark scope, and caveats.
+              Check whether Electronic Design Automation (EDA) experiments discuss reference baselines that match the paper's claim, benchmark scope, and caveats.
             </p>
             <p className="agent-note">
-              Most entries are AI-generated and may contain errors. Browse, search, or query
+              Designed for AI-assisted SOTA reference and baseline comparison. Browse, search, or query
               {' '}<a href="/registry.json"><code>/registry.json</code></a> directly with your agent.
             </p>
             <div className="status-grid" aria-label="Global registry status">
@@ -915,13 +914,13 @@ function App() {
           <input
             type="search"
             className="search-input"
-            placeholder="Search topics or baselines..."
+            placeholder="Search topics, baselines, or benchmarks..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             onKeyDown={(e) => {
               if (e.key === 'Escape') setSearchQuery('');
             }}
-            aria-label="Search topics and baselines"
+            aria-label="Search topics, baselines, and benchmarks"
           />
           {searchQuery && (
             <button className="search-clear" type="button" onClick={() => setSearchQuery('')} aria-label="Clear search">
@@ -969,7 +968,7 @@ function App() {
           )}
         </div>
         <div className="conference-strip">
-          <span className="conference-label">Scanned by agents</span>
+          <span className="conference-label">Agent-indexed conferences</span>
           <div className="conference-scroll">
             {scannedConferences.map((conf) => (
               <span className="conference-chip" key={conf.name}>
@@ -983,7 +982,7 @@ function App() {
 
       <footer className="site-footer">
         <hr className="footer-separator" />
-        <p className="footer-label">Friendly Links</p>
+        <p className="footer-label">Related EDA Resources</p>
         <div className="friendly-grid">
           {friendlyLinks.map((link) => (
             <a className="friendly-card" href={link.href} key={link.href} target="_blank" rel="noreferrer">
