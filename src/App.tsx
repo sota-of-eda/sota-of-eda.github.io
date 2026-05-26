@@ -859,6 +859,10 @@ function App() {
             <p>{selectedTopic.description}</p>
           </div>
 
+          {directBaselineCount === 0 && descendantBaselineCount > 0 && (
+            <p className="inline-empty">No direct baselines — expand child topics below.</p>
+          )}
+
           {children.length > 0 && (
             <div className="topic-facts">
               <span>Children</span>
@@ -931,9 +935,6 @@ function App() {
 
             {directBaselineCount === 0 && descendantBaselineCount === 0 && (
               <p className="inline-empty">No baselines registered yet.</p>
-            )}
-            {directBaselineCount === 0 && descendantBaselineCount > 0 && (
-              <p className="inline-empty">No direct baselines — expand child topics below.</p>
             )}
           </section>
         </aside>
