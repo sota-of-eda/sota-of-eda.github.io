@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react';
-import registry from './generated/registry.json';
+import registryData from './generated/registry.json';
 
 type BaselineRole =
   | 'canonical_baseline'
@@ -80,7 +80,8 @@ type CloudLayout = {
   padding: number;
 };
 
-const topics = registry as Topic[];
+const registry = registryData as { topics: Topic[] };
+const topics = registry.topics;
 const topicById = new Map(topics.map((topic) => [topic.topic_id, topic]));
 const defaultTopicId = topicById.has('placement') ? 'placement' : topics[0]?.topic_id;
 
@@ -683,11 +684,13 @@ function App() {
         <aside className="hero-claim-panel" aria-label="Project status">
           <div className="claim-copy">
             <p>
-              Check whether EDA experiments discuss reference baselines that actually match the paper's claim,
-              benchmark scope, and caveats.
+              Check whether EDA experiments discuss reference baselines that match the paper's claim,
+              benchmark scope, and caveats — for authors, reviewers, and coding agents.
             </p>
             <p className="agent-note">
-              Most entries are AI-generated and may contain errors. Contributions welcome via
+              Most entries are AI-generated and may contain errors. Browse, search, or query
+              {' '}<a href="/registry.json"><code>/registry.json</code></a> directly with your agent.
+              Contributions welcome via
               <a href="https://github.com/sota-of-eda/sota-of-eda.github.io" target="_blank" rel="noreferrer"> GitHub</a>.
             </p>
             <div className="status-grid" aria-label="Global registry status">

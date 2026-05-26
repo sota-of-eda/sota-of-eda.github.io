@@ -1,0 +1,23 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DataCatalog",
+  "name": "SOTA of EDA",
+  "description": "Agent-readable, claim-aware baseline coverage index for EDA (Electronic Design Automation) research. Topics are hierarchical; each topic carries baselines with publication metadata, BibTeX, links, benchmark scope, metrics, reproducibility, and caveats.",
+  "url": "https://sota-of-eda.github.io/",
+  "distribution": {
+    "@type": "DataDownload",
+    "encodingFormat": "application/json",
+    "contentUrl": "https://sota-of-eda.github.io/registry.json"
+  },
+  "apis": {
+    "registry": "/registry.json",
+    "atom": "/atom.xml",
+    "sitemap": "/sitemap.xml"
+  },
+  "queryHints": {
+    "fuzzySearch": "type into input.search-input and read .search-dropdown for filtered topic/baseline results",
+    "fullDownload": "GET /registry.json for the complete machine-readable registry",
+    "llmsTxt": "GET /llms.txt for LLM-oriented project documentation"
+  },
+  "license": "CC-BY-4.0"
+}

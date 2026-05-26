@@ -10,7 +10,17 @@ const outputPath = path.join(repoRoot, 'src', 'generated', 'registry.json');
 
 try {
   const topics = loadAndValidateRegistry(repoRoot);
-  const json = `${JSON.stringify(topics, null, 2)}\n`;
+  const baselineCount = topics.reduce((sum, t) => sum + t.baselines.length, 0);
+  const wrapper = {
+    $schema: 'https://json-schema.org/draft/2020-12/schema',
+    title: 'SOTA of EDA Registry',
+    description:
+      'Agent-readable, claim-aware baseline coverage index for EDA research. Each topic has a parent_id chain and a list of baselines with publication metadata, BibTeX, links, benchmark scope, metrics, reproducibility, and caveats.',
+    version: '0.1.0',
+    topics,
+    _counts: { topics: topics.length, baselines: baselineCount },
+  };
+  const json = `${JSON.stringify(wrapper, null, 2)}\n`;
   fs.mkdirSync(path.dirname(outputPath), { recursive: true });
   fs.writeFileSync(outputPath, json);
   console.log(`Wrote ${path.relative(repoRoot, outputPath)} with ${topics.length} topics.`);

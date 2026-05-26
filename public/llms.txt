@@ -1,19 +1,34 @@
 # SOTA of EDA — LLM-readable project index
 
-## About
-SOTA of EDA is an agent-assisted, claim-aware reference table for EDA (Electronic Design Automation) research baselines. It helps authors, reviewers, and coding agents check whether an experiment discusses baselines that match the paper's claim, benchmark scope, and caveats.
+## What this site is
+A machine-readable, hierarchical registry of EDA (Electronic Design Automation) research baselines.
+Helps check whether a paper's compared methods match the paper's claim, benchmark scope, and caveats.
+Not a leaderboard — it is a reference index where each baseline is backed by evidence.
 
-## Data
-- Registry JSON (all topics + baselines): https://sota-of-eda.github.io/registry.json
-- Schema: https://github.com/sota-of-eda/sota-of-eda.github.io/blob/main/data/schema/topic.schema.json
-- Atom feed (git-based updates): https://sota-of-eda.github.io/atom.xml
+## How an agent should query this site
 
-## Structure
-- Topics are hierarchical (parent_id chains).
-- Each topic has zero or more baselines (SOTA Cards).
-- Baselines include: publication metadata, BibTeX, links (paper/PDF/arXiv/repo), compare_when / benchmark_scope / metrics / caveats / reproducibility.
+### Quick lookup (fetch once)
+- Full registry as JSON: `GET https://sota-of-eda.github.io/registry.json`
+  Returns an array of topics. Each topic has:
+  - `topic_id`, `parent_id` (hierarchy), `short_name`, `display_name`, `description`
+  - `baselines[]`: each with `baseline_id`, `short_name`, `display_name`, `role`, `publication` (venue/year/doi/bibtex), `links` (paper/pdf/arxiv/repo/project URLs), `compare_when[]`, `benchmark_scope[]`, `metrics[]`, `reproducibility`, `caveats[]`
 
-## How to contribute
-- Use the sota-baseline-collector Claude Code skill (see .agents/skills/ in the repo).
-- Or edit data/topics/*.yaml manually and open a PR.
+### Fuzzy search (in-browser)
+The search box on the page filters topics (by short_name, display_name, description) and baselines (by short_name, display_name) with substring matching. An agent using a headless browser can type into `input.search-input` and read `.search-dropdown`.
+
+### Stay updated
+- Atom feed: `https://sota-of-eda.github.io/atom.xml` (entries generated from git commit history on each push)
+- Sitemap: `https://sota-of-eda.github.io/sitemap.xml`
+
+## Agents well-known endpoint
+- `https://sota-of-eda.github.io/.well-known/agent.json` — machine-readable API descriptor
+
+## Schema
+- JSON Schema for topics and baselines: `https://github.com/sota-of-eda/sota-of-eda.github.io/blob/main/data/schema/topic.schema.json`
+- Baseline roles: `canonical_baseline`, `candidate_recent_baseline`, `artifact_baseline`, `historical_reference`
+- Reproducibility: `reproduced`, `artifact_available`, `paper_only`, `unknown`
+
+## Contributing
+- Use the sota-baseline-collector Claude Code skill (see `.agents/skills/` in the repo).
+- Or edit `data/topics/*.yaml` manually and open a PR.
 - Most entries are AI-generated and may contain errors — review before citing.
