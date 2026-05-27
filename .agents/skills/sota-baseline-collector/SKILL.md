@@ -1,144 +1,81 @@
 ---
 name: sota-baseline-collector
-description: Use when collecting candidate SOTA-of-EDA topic or baseline entries from a baseline, method, paper name, URL/list, or local PDF batch, especially when metadata, BibTeX, topic placement, duplicate checks, or human-reviewable registry drafts are needed.
+description: Use when processing SOTA-of-EDA baseline candidates from paper titles, URLs, official proceedings, local PDFs, or Claude extracts, especially when drafts and experiment-baseline evidence must stay reviewable before registry merge.
 ---
 
 # SOTA Baseline Collector
 
-## Core Rules
+Goal: Codex is the conversational entrypoint and reviewer/orchestrator. The user tells Codex what proceedings/list/PDF paths to process; Codex then uses scripts and Claude internally, one source path at a time, without polluting accepted `data/topics/`.
 
-- Produce drafts for human review first; do not directly edit accepted `data/topics/` files unless the user explicitly asks after review.
-- Use one unified workflow for every input shape: oral paper/method reference, pasted list, URLs, existing manifest, local PDFs, or a large proceedings directory.
-- Normalize inputs first. Resolve canonical title, DOI/arXiv, PDF URL, or local PDF path into a batch-local source manifest before reading evidence.
-- Never save web PDFs in the repo. Store PDF URLs. Local user PDFs may be referenced by path; copy them only if the user explicitly asks.
-- Do not bulk-scrape Google Scholar. Prefer DOI/Crossref, DBLP, arXiv, Semantic Scholar/OpenAlex, publisher/official proceedings pages, project pages, and GitHub.
-- Keep registry semantics strict: declared `baselines` and `review_triggers` are direct to their topic. Parent aggregation is UI-only.
-- Attach candidates to the narrowest confirmed topic. If a topic is uncertain or new, propose one and use the Topic Merge/Rearrange Gate before creating or migrating topics.
-- Do not load complete PDFs or complete extracted text into conversation context. Scripts must first produce compact title/abstract/experiment/table windows.
-- Remind the user to delete reviewed `data/drafts/` and `data/drafts/batches/` files after merging or rejecting them.
+## Hard Rules
 
-Read `references/registry-semantics.md` before producing topic or baseline YAML. Read `references/pdf-reader-subagent.md` before delegating compact evidence reading. Read `references/bibtex-retrieval.md` before retrieving BibTeX or PDF links. Read `references/topic-merge-rearrange.md` before running the Topic Gate or proposing topic aggregates. Read `references/draft-verifier.md` only for single-paper verification or high-risk batch sampling. Read `references/confirmed-draft-merge.md` before moving a user-confirmed draft into `data/topics/`.
+- Do not write `data/topics/` unless the user explicitly asks to merge confirmed drafts.
+- Work on one full source path at a time; never classify a whole proceedings batch in one prompt.
+- Claude reads only `packets/<id>.md` and returns YAML; Codex verifies topic, metadata, duplicates, and merge readiness.
+- Never invent BibTeX. DOI/DBLP/arXiv/publisher BibTeX is `verified`; official-PDF/listing-only metadata is `provisional` and stays draft-only by default.
+- Experiment baselines must come from Experiment/Evaluation/Results/Table/Figure evidence, not related work.
+- Fast-match experiment baselines against the accepted registry before treating them as new follow-up candidates.
+- If title contains authors, affiliations, emails, session labels, or truncated fragments, mark `deferred` instead of guessing.
+- Standard-cell, cell layout, transistor-level placement/routing, and cell-library work are layout/cell topics, not logic synthesis.
 
-## Unified Workflow: Acquire -> Index -> Triage -> Packet -> Metadata -> Topic Gate -> Draft -> Audit
+## Required Loop
 
-Use this workflow for a single named baseline, a paper title, a URL/list, or hundreds of local PDFs. The only difference is the acquisition input; every later stage is the same script-first, context-light path.
+User-facing flow: receive a proceedings/list/PDF request, create or reuse a batch, then call the commands below internally while reporting only concise progress and blockers.
 
-### Status Vocabulary
-
-Use only these statuses in batch docs/reports:
-
-- `resolved`: input was normalized to a manifest item with source path/URL/title hint.
-- `pdf_available`: local PDF exists or a verified PDF URL is recorded.
-- `screened`: paper was indexed and triaged by scripts.
-- `skip`: not an EDA baseline candidate.
-- `duplicate`: already represented in accepted registry or active root drafts.
-- `candidate`: high-confidence EDA candidate ready for compact review/metadata.
-- `deferred`: plausible but insufficient evidence or noisy metadata; do not spend tokens unless gap scanning needs it.
-- `drafted`: draft YAML generated for human review.
-- `accepted`: merged into `data/topics/` after explicit approval.
-- `rearrange_required`: topic fanout/layering must be resolved before topic creation or migration.
-
-### Artifact Layout
-
-Keep durable workflow state under `data/drafts/batches/<batch-id>/`:
-
-```text
-sources/         source_manifest.yaml/jsonl, URL/list/PDF discovery results
-pdfs/            optional local user-provided PDFs only when explicitly allowed
-extracted/       full extracted text; local search only, never pasted wholesale
-index/           paper_index.yaml/jsonl, registry snapshot, dedupe index
-triage/          triage.yaml, skips.tsv, deferred.tsv, gap_scan.tsv
-packets/         compact agent-readable review packets
-metadata_cache/  DOI/BibTeX/API/cache artifacts
-topic_gate/      fanout report, rearrange packet, topic_remap.yaml
-audit/           deterministic batch audit reports
-STATUS.md        compact current status
-```
-
-### Steps
-
-1. **Acquire**: run `scripts/proceedings_acquire.py` or manually create the same manifest. For a name/title, resolve canonical metadata and PDF URL if available. For a list, create one manifest item per entry. For local PDFs, record paths. For proceedings directories, build a manifest without pasting file contents.
-2. **Extract**: use `scripts/extract_pdf_text.py` for local PDFs. Store extracted text under `extracted/`; do not put full text in prompts.
-3. **Index**: run `scripts/proceedings_index.py` to create compact title, abstract, section offsets, experiment windows, and table windows.
-4. **Triage**: run `scripts/proceedings_triage.py` to classify `candidate`, `skip`, `duplicate`, or `deferred` and produce gap-scan lists.
-5. **Packet**: run `scripts/proceedings_windows.py` for `candidate` and selected `deferred` items only. Agents may read these compact packets, not full papers.
-6. **Metadata**: run `scripts/proceedings_metadata.py` to resolve DOI/BibTeX/PDF/repo evidence. If formal metadata is unavailable, use explicit medium-confidence proceedings metadata and record unresolved fields; never invent DOI/BibTeX.
-7. **Topic Gate**: run `scripts/proceedings_topic_gate.py` before creating or migrating proposed topics. If it returns `rearrange_required`, stop topic creation and present the compact remap packet.
-8. **Draft**: create human-reviewable drafts under `data/drafts/` only after candidate review. Do not auto-merge compared baselines.
-9. **Audit**: run `scripts/proceedings_audit.py` for deterministic batch checks. This replaces individual verifier loops for large/batch work.
-10. **Status**: update `STATUS.md` with counts and blockers only. Do not narrate every paper.
-
-### Slimming Rules
-
-- Do not re-read full proceedings PDFs or full extracted text in agent context.
-- Do not dispatch verifier subagents by individual paper or draft.
-- Do not create gates that fail because of historical repository state; a gate blocks only when the current batch worsens a concrete problem.
-- Prefer high-precision first pass plus deterministic gap scan over exhaustive uncertain-paper reading.
-- Use agent judgment only for compact packets, topic ambiguity, metadata conflicts, or a small high-risk audit sample.
-
-## Duplicate Check
-
-Use title/DOI/arXiv/baseline ID checks only. Run examples:
+Use one batch directory, e.g. `data/drafts/batches/<batch-id>/`.
 
 ```bash
-python3 .agents/skills/sota-baseline-collector/scripts/registry_dedupe.py --repo . --title "Paper Title" --doi "10.xxxx/yyyy"
-python3 .agents/skills/sota-baseline-collector/scripts/registry_dedupe.py --repo . --candidate data/drafts/example.yaml
+python3 .agents/skills/sota-baseline-collector/scripts/proceedings_step.py init --batch <batch-dir> --pdf-list <paths.txt>
+python3 scripts/proceedings_orchestrator.py run-one --batch <batch-dir>
+python3 scripts/proceedings_orchestrator.py audit --batch <batch-dir>
 ```
 
-If duplicates appear, do not create a new accepted baseline. Produce a draft note that recommends updating the existing entry instead.
-
-## Draft Output
-
-Drafts belong under `data/drafts/` and are temporary. A draft should include only real data fields, no fake TODO placeholders:
-
-- `candidate_topic`: existing topic ID or structured `proposed_topic` fields.
-- `baseline`: schema-compatible baseline snippet with verified or explicitly unresolved metadata.
-- `evidence_notes`: source URLs, confidence, unresolved fields, and SOTA assessment.
-- `compared_baselines_to_review`: baselines found in experiments that may deserve separate collection.
-
-Use `scripts/make_candidate_draft.py` for a skeleton containing only real data fields, then fill remaining fields from metadata and compact evidence packets. For batch work, run `scripts/proceedings_audit.py` instead of individual verifier loops.
-
-## Topic Merge/Rearrange Gate
-
-The orbit cloud layout has hard limits to prevent visual overlap:
-
-- **Max siblings per parent**: 6.
-- **Max direct children per topic**: 10.
-
-Run `scripts/proceedings_topic_gate.py` before creating/migrating proposed topics. This is a real gate: it blocks only when the current batch would create new topics or remaps that worsen fanout. Historical overflow is reported as context, not as a fake failure for ordinary baseline additions.
-
-Gate statuses:
-
-- `allow`: no current-batch fanout risk; proceed.
-- `rearrange_required`: stop topic creation/migration and present `topic_rearrange_packet.md`.
-- `manual_decision_required`: EDA semantic grouping is ambiguous; ask for a human topic decision.
-
-Rearrangement workflow:
-
-1. Count target parents, direct children, and siblings for every proposed parent.
-2. If the batch worsens fanout, stop migration and list overloaded parent plus candidate additions.
-3. Cluster nearby siblings by EDA meaning, not by paper venue/year.
-4. Propose intermediate aggregate topics, then remap affected draft topics under those aggregates.
-5. Re-run the topic gate and only then migrate drafts into `data/topics/`.
-
-Default EDA boundary rules:
-
-- Logic synthesis is front-end Boolean/RTL/gate optimization.
-- Cell generation, transistor-level placement, and standard-cell layout are cell/layout-centric and belong under analog/layout-oriented topics, not logic synthesis.
-- Common aggregates include signoff analysis, front-end RTL automation, emerging-technology EDA, package/PCB physical design, manufacturing/reliability, and analog/cell design automation.
-
-If the user asks for minimal-token operation, report only the overloaded parent, proposed aggregate topics, and remapping table.
-
-## Validation
-
-Before presenting final batch results, run:
+Manual fallback for one item:
 
 ```bash
-python3 -m py_compile .agents/skills/sota-baseline-collector/scripts/*.py
-python3 .agents/skills/sota-baseline-collector/scripts/proceedings_audit.py --repo . --batch-dir data/drafts/batches/<batch-id> --dry-run
-python3 .agents/skills/sota-baseline-collector/scripts/proceedings_topic_gate.py --repo . --batch-dir data/drafts/batches/<batch-id> --dry-run
+python3 .agents/skills/sota-baseline-collector/scripts/proceedings_step.py next --batch <batch-dir>
+python3 .agents/skills/sota-baseline-collector/scripts/proceedings_step.py packet --batch <batch-dir> --id <item_id>
+# Run Claude or manually create extracts/<item_id>.yaml from the packet.
+python3 .agents/skills/sota-baseline-collector/scripts/proceedings_step.py attach-extract --batch <batch-dir> --id <item_id> --extract <extract.yaml>
+python3 .agents/skills/sota-baseline-collector/scripts/proceedings_step.py draft --batch <batch-dir> --id <item_id>
+python3 .agents/skills/sota-baseline-collector/scripts/proceedings_step.py audit --batch <batch-dir>
+```
+
+## Claude Extract Contract
+
+Claude's `.claude/skills/proceedings-extractor` skill should output only:
+
+- `decision`: `skip`, `duplicate`, `deferred`, or `draft`.
+- clean `title`, `authors`, `topic_hint`, and `reason`.
+- `candidate_baseline`: the paper's own method/tool/benchmark.
+- `experiment_baselines`: methods/tools/benchmarks/ablations explicitly used in experiments.
+- `metadata_requests`: query hints only; Claude does not verify DOI/BibTeX.
+
+## Outputs
+
+- `items.tsv`: queue; one source path per row.
+- `packets/<id>.md`: raw first page plus compact abstract/experiment/table snippets.
+- `extracts/<id>.yaml`: Claude/manual extraction; still untrusted.
+- `registry_index.tsv`: generated accepted-baseline index for quick duplicate checks.
+- `metadata_requests.tsv`: unresolved metadata and unmatched experiment baselines for Codex follow-up.
+- `report.tsv`: main review surface for Codex/human.
+- `drafts/<id>.yaml`: reviewable draft only; never accepted data.
+
+## Decisions
+
+- `skip`: not a concrete EDA/VLSI-CAD method, dataset, tool, or benchmark.
+- `duplicate`: same normalized title, DOI, arXiv, or accepted-baseline match already represents the item.
+- `deferred`: plausible EDA, but title/authors/topic/metadata/evidence is not clean enough.
+- `draft`: clean candidate with packet evidence, topic hint, experiment-baseline evidence, and metadata requests if needed.
+
+## Final Checks
+
+```bash
+python3 scripts/proceedings_orchestrator.py audit --batch <batch-dir>
+python3 -m py_compile .agents/skills/sota-baseline-collector/scripts/proceedings_step.py
+python3 -m py_compile scripts/proceedings_orchestrator.py
 npm run validate
-npm run check:siblings
+git diff --check
 ```
 
-`npm run check:siblings` is a global taxonomy warning/audit. It is not by itself a batch failure unless the current batch worsens fanout. `npm run validate` validates accepted registry files; drafts are intentionally outside the accepted schema.
+Report counts from `report.tsv`; do not claim venue completion unless every row is non-pending and Codex/human review has accepted the relevant drafts.

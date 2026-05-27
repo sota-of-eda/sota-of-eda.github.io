@@ -1,0 +1,137 @@
+#!/usr/bin/env python3
+"""Outer controller for Codex/Claude proceedings extraction."""
+from __future__ import annotations
+
+import argparse
+import shutil
+import subprocess
+from pathlib import Path
+
+import yaml
+
+STEP = Path(".agents/skills/sota-baseline-collector/scripts/proceedings_step.py")
+
+
+def run(cmd: list[str], *, capture: bool = False) -> subprocess.CompletedProcess[str]:
+    return subprocess.run(cmd, check=True, text=True, stdout=subprocess.PIPE if capture else None)
+
+
+def step(args: list[str], *, capture: bool = False) -> subprocess.CompletedProcess[str]:
+    return run(["python3", str(STEP), *args], capture=capture)
+
+
+def next_item(batch: Path) -> tuple[str, str] | None:
+    result = step(["next", "--batch", str(batch)], capture=True)
+    line = result.stdout.strip().splitlines()[-1]
+    if line == "NO_PENDING_ITEMS":
+        return None
+    item_id, source = line.split("\t", 1)
+    return item_id, source
+
+
+def packet(batch: Path, item_id: str) -> Path:
+    result = step(["packet", "--batch", str(batch), "--id", item_id], capture=True)
+    return Path(result.stdout.strip().splitlines()[-1])
+
+
+def claude_prompt(packet_path: Path) -> str:
+    packet_text = packet_path.read_text(encoding="utf-8")
+    return f"""Use the /proceedings-extractor skill. Return YAML only.
+
+Packet path: {packet_path}
+
+```markdown
+{packet_text}
+```
+"""
+
+
+def run_claude(args: argparse.Namespace) -> int:
+    if not shutil.which("claude"):
+        raise SystemExit("claude CLI not found; packet is ready for manual extraction")
+    batch = args.batch
+    packet_path = batch / "packets" / f"{args.id}.md"
+    if not packet_path.exists():
+        packet_path = packet(batch, args.id)
+    out = batch / "extracts" / f"{args.id}.yaml"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    if out.exists() and not args.force:
+        raise SystemExit(f"extract exists; use --force to overwrite: {out}")
+    cmd = ["claude", "--print", "--tools", "", "--permission-mode", "dontAsk"]
+    if args.model:
+        cmd += ["--model", args.model]
+    cmd.append(claude_prompt(packet_path))
+    result = run(cmd, capture=True)
+    text = result.stdout.strip()
+    # Fail early if Claude did not follow YAML-only output.
+    yaml.safe_load(text.replace("```yaml", "").replace("```", ""))
+    out.write_text(text + "\n", encoding="utf-8")
+    print(out)
+    return 0
+
+
+def attach_extract(args: argparse.Namespace) -> int:
+    cmd = [
+        "attach-extract", "--batch", str(args.batch), "--id", args.id,
+        "--extract", str(args.extract),
+    ]
+    if args.force:
+        cmd.append("--force")
+    step(cmd)
+    return 0
+
+
+def run_one(args: argparse.Namespace) -> int:
+    item = next_item(args.batch)
+    if item is None:
+        print("NO_PENDING_ITEMS")
+        return 0
+    item_id, source = item
+    print(f"processing {item_id}\t{source}")
+    packet(args.batch, item_id)
+    rc = run_claude(argparse.Namespace(batch=args.batch, id=item_id, force=args.force, model=args.model))
+    if rc:
+        return rc
+    extract = args.batch / "extracts" / f"{item_id}.yaml"
+    step(["attach-extract", "--batch", str(args.batch), "--id", item_id, "--extract", str(extract), "--force"])
+    data = yaml.safe_load(extract.read_text(encoding="utf-8").replace("```yaml", "").replace("```", "")) or {}
+    if data.get("decision") == "draft":
+        step(["draft", "--batch", str(args.batch), "--id", item_id])
+    step(["audit", "--batch", str(args.batch)])
+    return 0
+
+
+def audit(args: argparse.Namespace) -> int:
+    return step(["audit", "--batch", str(args.batch)]).returncode
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    sub = parser.add_subparsers(dest="cmd", required=True)
+    p = sub.add_parser("run-one")
+    p.add_argument("--batch", type=Path, required=True)
+    p.add_argument("--force", action="store_true")
+    p.add_argument("--model", default="")
+    p.set_defaults(func=run_one)
+    p = sub.add_parser("run-claude")
+    p.add_argument("--batch", type=Path, required=True)
+    p.add_argument("--id", required=True)
+    p.add_argument("--force", action="store_true")
+    p.add_argument("--model", default="")
+    p.set_defaults(func=run_claude)
+    p = sub.add_parser("attach-extract")
+    p.add_argument("--batch", type=Path, required=True)
+    p.add_argument("--id", required=True)
+    p.add_argument("--extract", type=Path, required=True)
+    p.add_argument("--force", action="store_true")
+    p.set_defaults(func=attach_extract)
+    p = sub.add_parser("audit")
+    p.add_argument("--batch", type=Path, required=True)
+    p.set_defaults(func=audit)
+    args = parser.parse_args()
+    args.batch.mkdir(parents=True, exist_ok=True)
+    return args.func(args)
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
