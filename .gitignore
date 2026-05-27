@@ -42,3 +42,9 @@ CLAUDE.md
 .mcp.json
 public/atom.xml
 public/topic/
+docs/
+tools/
+
+# Generated public data
+public/registry.json
+public/sitemap.xml
