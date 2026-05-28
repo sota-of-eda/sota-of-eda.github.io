@@ -1,0 +1,25 @@
+baseline_id: prompting-for-power
+short_name: Prompting for Power
+display_name: 'Prompting for Power: Benchmarking Large Language Models for Low-Power RTL Design Generation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Prompting for Power: Benchmarking Large Language Models for Low-Power RTL Design Generation'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189130
+  bibtex: "@inproceedings{gubbi2025promptingforpower,\n  author = {Kevin Immanuel Gubbi and Marcus Halm and Sarbani Kumar and Arvind Sudarshan and Pavan Dheeraj Kota and Mohammadnavid Tarighat and Avesta Sasan and Houman Homayoun},\n  title = {Prompting for Power: Benchmarking Large Language Models for Low-Power RTL Design Generation},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189130}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189130
+compare_when:
+- comparing LLM-assisted RTL generation, repair, optimization, or low-power RTL prompting methods
+benchmark_scope:
+- RTL-generation benchmarks, HDLBits/VerilogEval/RTLLM-style tasks, or paper-specific RTL designs reported in the MLCAD 2025 experiments
+metrics:
+- pass@k / functional correctness
+- syntax correctness
+- PPA or low-power quality when reported
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.

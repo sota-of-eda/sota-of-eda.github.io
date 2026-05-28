@@ -1,0 +1,26 @@
+baseline_id: trajectory-ai
+short_name: Trajectory.AI
+display_name: 'Industry Track: Trajectory.AI: An Automated P&R Flow Trajectory Agent'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Industry Track: Trajectory.AI: An Automated P&R Flow Trajectory Agent'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189102
+  bibtex: "@inproceedings{zeng2025trajectoryai,\n  author = {Wei Zeng and Sudipto Kundu and Jerry Wu},\n  title = {Industry Track: Trajectory.AI: An Automated P\\&R Flow Trajectory Agent},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189102}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189102
+compare_when:
+- comparing EDA flow autotuning, parameter optimization, and agentic P&R trajectory optimization methods
+benchmark_scope:
+- OpenROAD/ORFS, P&R, or commercial EDA flow-parameter optimization tasks used in the paper
+metrics:
+- PPA / QoR
+- wirelength or timing proxy
+- optimization iterations
+- runtime
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.

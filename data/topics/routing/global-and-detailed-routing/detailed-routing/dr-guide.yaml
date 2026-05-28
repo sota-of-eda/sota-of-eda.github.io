@@ -1,0 +1,27 @@
+baseline_id: dr-guide
+short_name: Dr. Guide
+display_name: 'Dr. Guide: AI-Guided Detailed Routing'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Dr. Guide: AI-Guided Detailed Routing'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189136
+  bibtex: "@inproceedings{wang2025drguide,\n  author = {Qijing Wang and Wing Ho LAU and Tsung-Yi Ho and Fung Young and Martin D.F. Wong},\n  title = {Dr. Guide: AI-Guided Detailed Routing},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189136}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189136
+compare_when:
+- comparing detailed-routing guidance methods and routability/DRV reduction flows
+benchmark_scope:
+- ISPD-style detailed-routing benchmarks and re-placed routing stress cases reported by the paper
+metrics:
+- DRC count
+- wirelength
+- via count
+- routing iterations
+- runtime
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.

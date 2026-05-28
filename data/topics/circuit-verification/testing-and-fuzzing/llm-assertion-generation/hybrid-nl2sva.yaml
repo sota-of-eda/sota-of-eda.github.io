@@ -1,0 +1,26 @@
+baseline_id: hybrid-nl2sva
+short_name: Hybrid-NL2SVA
+display_name: 'Hybrid-NL2SVA: Integrating RAG and Finetuning for LLM-based NL2SVA'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Hybrid-NL2SVA: Integrating RAG and Finetuning for LLM-based NL2SVA'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189208
+  bibtex: "@inproceedings{xiao2025hybridnl2sva,\n  author = {Weihua Xiao and Derek Ekberg and Siddharth Garg and Ramesh Karri},\n  title = {Hybrid-NL2SVA: Integrating RAG and Finetuning for LLM-based NL2SVA},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189208}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189208
+compare_when:
+- comparing LLM-based assertion or security-property generation workflows
+benchmark_scope:
+- SystemVerilog assertion/security-property generation tasks and RTL/security benchmark sets reported in the paper
+metrics:
+- valid/non-vacuous assertion count
+- functional match / coverage
+- generation accuracy
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.
+- 'Draft audit recorded experiment comparison candidates including: GPT-4o-mini, Qwen2.5-Coder-7B-Instruct.'

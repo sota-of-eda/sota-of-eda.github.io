@@ -1,28 +1,26 @@
 ---
 name: sota-baseline-collector
-description: Use when processing SOTA-of-EDA baseline candidates from paper titles, URLs, official proceedings, local PDFs, or Claude extracts, especially when drafts and experiment-baseline evidence must stay reviewable before registry merge.
+description: Use when processing SOTA-of-EDA baseline candidates from paper titles, URLs, official proceedings, local PDFs, or Claude extracts, especially when drafts, topic creation, topic merge/rearrange, and experiment-baseline evidence must stay reviewable before registry merge.
 ---
 
 # SOTA Baseline Collector
 
-Goal: Codex is the conversational entrypoint and reviewer/orchestrator. The user tells Codex what proceedings/list/PDF paths to process; Codex then uses scripts and Claude internally, one source path at a time, without polluting accepted `data/topics/`.
+Keep this workflow small. Codex coordinates; Claude Code reads papers and fills one minimal template; Codex reviews before merge.
 
-## Hard Rules
+## Rules
 
-- Do not write `data/topics/` unless the user explicitly asks to merge confirmed drafts.
-- Work on one full source path at a time; never classify a whole proceedings batch in one prompt.
-- Claude reads only `packets/<id>.md` and returns YAML; Codex verifies topic, metadata, duplicates, and merge readiness.
-- Never invent BibTeX. DOI/DBLP/arXiv/publisher BibTeX is `verified`; official-PDF/listing-only metadata is `provisional` and stays draft-only by default.
-- Experiment baselines must come from Experiment/Evaluation/Results/Table/Figure evidence, not related work.
-- Fast-match experiment baselines against the accepted registry before treating them as new follow-up candidates.
-- If title contains authors, affiliations, emails, session labels, or truncated fragments, mark `deferred` instead of guessing.
-- Standard-cell, cell layout, transistor-level placement/routing, and cell-library work are layout/cell topics, not logic synthesis.
+- Never write `data/topics/` unless the user explicitly asks to merge.
+- Process one PDF/packet at a time; avoid venue-wide giant prompts.
+- For hard PDF reading or YAML editing, call Claude Code directly and give it the template script.
+- First-pass YAML is only a review note, not registry data.
+- Do not invent DOI, BibTeX, metrics, benchmarks, or comparisons.
+- Experiment baselines must be from Experiment/Evaluation/Results/Table/Figure evidence only.
+- Do not output registry-shaped empty stubs such as empty `compare_when`, `benchmark_scope`, or `metrics`.
+- Cell/standard-cell/transistor-level work belongs to layout/cell topics, not logic synthesis.
+- New topics are allowed only after checking existing `data/topics/**/<topic>.yaml`; otherwise defer as `topic_review`.
+- Before merging accepted YAML, run the topic gate: existing-topic fit, new-topic need, and sibling/child fanout.
 
-## Required Loop
-
-User-facing flow: receive a proceedings/list/PDF request, create or reuse a batch, then call the commands below internally while reporting only concise progress and blockers.
-
-Use one batch directory, e.g. `data/drafts/batches/<batch-id>/`.
+## Minimal Loop
 
 ```bash
 python3 .agents/skills/sota-baseline-collector/scripts/proceedings_step.py init --batch <batch-dir> --pdf-list <paths.txt>
@@ -30,52 +28,40 @@ python3 scripts/proceedings_orchestrator.py run-one --batch <batch-dir>
 python3 scripts/proceedings_orchestrator.py audit --batch <batch-dir>
 ```
 
-Manual fallback for one item:
+Repeat `run-one` until there are no `pending` rows, then stop. Do not merge by default.
+
+## Claude Code Handoff
+
+For each difficult item:
 
 ```bash
-python3 .agents/skills/sota-baseline-collector/scripts/proceedings_step.py next --batch <batch-dir>
 python3 .agents/skills/sota-baseline-collector/scripts/proceedings_step.py packet --batch <batch-dir> --id <item_id>
-# Run Claude or manually create extracts/<item_id>.yaml from the packet.
-python3 .agents/skills/sota-baseline-collector/scripts/proceedings_step.py attach-extract --batch <batch-dir> --id <item_id> --extract <extract.yaml>
-python3 .agents/skills/sota-baseline-collector/scripts/proceedings_step.py draft --batch <batch-dir> --id <item_id>
-python3 .agents/skills/sota-baseline-collector/scripts/proceedings_step.py audit --batch <batch-dir>
+python3 .claude/skills/proceedings-extractor/scripts/review_template.py --id <item_id> --source <packet-or-pdf>
 ```
 
-## Claude Extract Contract
+Tell Claude Code: read only this packet/PDF, fill the template, return YAML only. Unknown fields stay empty and must be listed under `needs`.
 
-Claude's `.claude/skills/proceedings-extractor` skill should output only:
+## Codex Review
 
-- `decision`: `skip`, `duplicate`, `deferred`, or `draft`.
-- clean `title`, `authors`, `topic_hint`, and `reason`.
-- `candidate_baseline`: the paper's own method/tool/benchmark.
-- `experiment_baselines`: methods/tools/benchmarks/ablations explicitly used in experiments.
-- `metadata_requests`: query hints only; Claude does not verify DOI/BibTeX.
+Codex accepts a YAML for the next step only if it has clean title/authors, a concrete candidate method/tool/benchmark, a plausible existing `topic_id`, and useful experiment evidence or an explicit `needs: experiment_review` item.
 
-## Outputs
+Defer outputs with polluted titles, uncertain topics, related-work-only comparisons, generic baselines, or mostly-empty scaffolding.
 
-- `items.tsv`: queue; one source path per row.
-- `packets/<id>.md`: raw first page plus compact abstract/experiment/table snippets.
-- `extracts/<id>.yaml`: Claude/manual extraction; still untrusted.
-- `registry_index.tsv`: generated accepted-baseline index for quick duplicate checks.
-- `metadata_requests.tsv`: unresolved metadata and unmatched experiment baselines for Codex follow-up.
-- `report.tsv`: main review surface for Codex/human.
-- `drafts/<id>.yaml`: reviewable draft only; never accepted data.
+## Topic Gate
 
-## Decisions
+Use this only after extraction/formalization, never inside Claude's paper-reading prompt.
 
-- `skip`: not a concrete EDA/VLSI-CAD method, dataset, tool, or benchmark.
-- `duplicate`: same normalized title, DOI, arXiv, or accepted-baseline match already represents the item.
-- `deferred`: plausible EDA, but title/authors/topic/metadata/evidence is not clean enough.
-- `draft`: clean candidate with packet evidence, topic hint, experiment-baseline evidence, and metadata requests if needed.
+- Prefer an existing topic when it accurately describes the comparison task.
+- Propose a new topic when at least two papers need the same missing task label, or one paper is clearly outside every existing topic.
+- If a parent would exceed sibling/child limits, stop adding flat siblings; aggregate related siblings under an intermediate topic, then reclassify.
+- Load `references/topic-taxonomy-gate.md` when adding topics, moving topic parents, or resolving `npm run check:siblings`.
 
-## Final Checks
+## Checks
 
 ```bash
 python3 scripts/proceedings_orchestrator.py audit --batch <batch-dir>
-python3 -m py_compile .agents/skills/sota-baseline-collector/scripts/proceedings_step.py
-python3 -m py_compile scripts/proceedings_orchestrator.py
+python3 -m py_compile .agents/skills/sota-baseline-collector/scripts/proceedings_step.py scripts/proceedings_orchestrator.py .claude/skills/proceedings-extractor/scripts/review_template.py
 npm run validate
+npm run check:siblings
 git diff --check
 ```
-
-Report counts from `report.tsv`; do not claim venue completion unless every row is non-pending and Codex/human review has accepted the relevant drafts.

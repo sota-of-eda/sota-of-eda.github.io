@@ -1,0 +1,26 @@
+baseline_id: llm-path-exploration
+short_name: LLM Path Exploration
+display_name: 'LLM Path Exploration: LLM-assisted Path Exploration for RTL Verification'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: LLM-assisted Path Exploration for RTL Verification
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189172
+  bibtex: "@inproceedings{tan2025llmpathexploration,\n  author = {Yan TAN and Yangdi Lyu and Xiangchen MENG},\n  title = {LLM-assisted Path Exploration for RTL Verification},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189172}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189172
+compare_when:
+- comparing functional/formal verification search, coverage, or satisfiability techniques
+benchmark_scope:
+- RTL verification, coverage, or CircuitSAT benchmarks reported in the MLCAD 2025 paper
+metrics:
+- coverage
+- runtime
+- verification success or sampling quality
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.
+- 'Draft audit recorded experiment comparison candidates including: Random, Concolic, GPT-4, PHI-2, TinyLlama.'

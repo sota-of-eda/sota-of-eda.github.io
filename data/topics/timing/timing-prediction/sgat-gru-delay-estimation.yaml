@@ -1,0 +1,26 @@
+baseline_id: sgat-gru-delay-estimation
+short_name: SGAT-GRU
+display_name: Post-Routing Path Statistical Delay Estimation Based on SGAT-GRU Prediction Framework
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Post-Routing Path Statistical Delay Estimation Based on SGAT-GRU Prediction Framework
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189191
+  bibtex: "@inproceedings{guo2025sgatgrudelayestimation,\n  author = {Jingjing Guo and Xuejie Ning and Suohang Yang and Jun Yang and Zhikuang Cai},\n  title = {Post-Routing Path Statistical Delay Estimation Based on SGAT-GRU Prediction Framework},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189191}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189191
+compare_when:
+- comparing statistical timing, delay-prediction, or SSTA scheduling methods
+benchmark_scope:
+- post-routing path delay, SSTA, or timing propagation datasets reported by the paper
+metrics:
+- delay prediction MAE/MSE
+- SSTA runtime
+- prediction accuracy
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.
+- 'Draft audit recorded experiment comparison candidates including: GAT, SGAT-GAT.'

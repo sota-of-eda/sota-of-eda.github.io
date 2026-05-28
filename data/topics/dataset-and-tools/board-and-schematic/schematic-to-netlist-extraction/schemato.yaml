@@ -1,0 +1,25 @@
+baseline_id: schemato
+short_name: Schemato
+display_name: Schemato - An LLM for Netlist-to-Schematic Conversion
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Schemato - An LLM for Netlist-to-Schematic Conversion
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189059
+  bibtex: "@inproceedings{matsuo2025schemato,\n  author = {Ryoga Matsuo and Stefan Uhlich and Arun Venkitaraman and Andrea Bonetti and Chia-Yu Hsieh and Ali Momeni and Lukas Mauch and Augusto Capone and Eisaku Ohbuchi and Lorenzo Servadei},\n  title = {Schemato - An LLM for Netlist-to-Schematic Conversion},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189059}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189059
+compare_when:
+- evaluating ML/LLM-assisted schematic, netlist, or schematic-to-netlist conversion methods
+benchmark_scope:
+- schematic images, SPICE netlists, or netlist-to-schematic examples evaluated in the paper
+metrics:
+- component accuracy
+- connectivity accuracy
+- netlist generation correctness
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.

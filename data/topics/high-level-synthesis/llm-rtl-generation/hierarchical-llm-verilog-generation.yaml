@@ -1,0 +1,25 @@
+baseline_id: hierarchical-llm-verilog-generation
+short_name: Hierarchical LLM Verilog Generation
+display_name: 'Hierarchical LLM Verilog Generation: Verilog Code Generation of Hierarchical Design Using LLMs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Verilog Code Generation of Hierarchical Design Using LLMs
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189211
+  bibtex: "@inproceedings{chang2025hierarchicalllmverilogge,\n  author = {Geuna Chang and Shilong Zhang and Seohyun Kim and Woojin Kim and Youngsoo Shin},\n  title = {Verilog Code Generation of Hierarchical Design Using LLMs},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189211}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189211
+compare_when:
+- comparing LLM-assisted RTL generation, repair, optimization, or low-power RTL prompting methods
+benchmark_scope:
+- RTL-generation benchmarks, HDLBits/VerilogEval/RTLLM-style tasks, or paper-specific RTL designs reported in the MLCAD 2025 experiments
+metrics:
+- pass@k / functional correctness
+- syntax correctness
+- PPA or low-power quality when reported
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.

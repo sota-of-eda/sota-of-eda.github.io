@@ -1,0 +1,26 @@
+baseline_id: llm-verippa
+short_name: LLM-VeriPPA
+display_name: 'LLM-VeriPPA: Power, Performance, and Area Optimization aware Verilog Code Generation with Large Language Models'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'LLM-VeriPPA: Power, Performance, and Area Optimization aware Verilog Code Generation with Large Language Models'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189158
+  bibtex: "@inproceedings{thorat2025llmverippa,\n  author = {Kiran Thorat and Jiahui Zhao and Yaotian Liu and Amit Hasan and Hongwu Peng and Xi Xie and Bin Lei and Caiwen Ding},\n  title = {LLM-VeriPPA: Power, Performance, and Area Optimization aware Verilog Code Generation with Large Language Models},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189158}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189158
+compare_when:
+- comparing LLM-assisted RTL generation, repair, optimization, or low-power RTL prompting methods
+benchmark_scope:
+- RTL-generation benchmarks, HDLBits/VerilogEval/RTLLM-style tasks, or paper-specific RTL designs reported in the MLCAD 2025 experiments
+metrics:
+- pass@k / functional correctness
+- syntax correctness
+- PPA or low-power quality when reported
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.
+- 'Draft audit recorded experiment comparison candidates including: GPT-3.5, GPT-4, GPT-4o, RTL-Coder.'

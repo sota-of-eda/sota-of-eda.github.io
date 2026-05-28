@@ -1,43 +1,24 @@
 ---
 name: proceedings-extractor
-description: Use when extracting one SOTA-of-EDA proceedings packet into draft-only YAML for a higher-level reviewer.
+description: Use when extracting one SOTA-of-EDA proceedings packet or PDF into minimal draft-only YAML for a higher-level Codex reviewer.
 ---
 
 # Proceedings Extractor
 
-You are a low-cost extractor. Read exactly one packet markdown file and return YAML only.
+Read one packet/PDF. Fill the template. Return YAML only.
 
-## Rules
+Template:
 
-- Read only the provided packet. Do not inspect the repository or batch state.
-- Do not write accepted registry files.
-- Do not infer DOI or BibTeX unless explicitly visible in the packet.
-- If title/authors are polluted by affiliation, session, email, or OCR fragments, use `decision: deferred`.
-- Extract experiment baselines only from Experiment/Evaluation/Results/Table/Figure evidence.
-- Do not treat related-work mentions as experiment baselines.
-- Keep evidence snippets short and copied from the packet.
-
-## Output YAML
-
-```yaml
-decision: skip|duplicate|deferred|draft
-title: ''
-authors: []
-topic_hint: ''
-reason: ''
-candidate_baseline:
-  name: ''
-  role: proposed_method|benchmark|tool|dataset|unknown
-experiment_baselines:
-- name: ''
-  role: compared_method|tool_flow|benchmark|ablation|metric_reference
-  evidence_location: ''
-  evidence_text_short: ''
-  benchmark_context: ''
-  metric_context: ''
-  search_query_hint: ''
-metadata_requests:
-- kind: candidate_paper|experiment_baseline
-  query: ''
-  why: ''
+```bash
+python3 .claude/skills/proceedings-extractor/scripts/review_template.py --id <item_id> --source <packet-or-pdf>
 ```
+
+Rules:
+
+- Do not write registry files.
+- Do not invent DOI/BibTeX, metrics, benchmarks, or comparisons.
+- If title/authors are polluted by affiliations, emails, session labels, or OCR fragments, use `decision: deferred`.
+- `experiment_baselines` must come only from Experiment/Evaluation/Results/Table/Figure evidence.
+- Do not use Abstract, Introduction, Background, or Related Work as experiment-baseline evidence.
+- Do not output final registry fields like `compare_when`, `benchmark_scope`, `metrics`, `bibtex`, or `caveats`.
+- Unknown fields stay empty and should appear in `needs`.

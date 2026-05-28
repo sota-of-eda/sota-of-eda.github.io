@@ -1,0 +1,25 @@
+baseline_id: recurrent-circuitsat-sampling
+short_name: Recurrent CircuitSAT
+display_name: Recurrent CircuitSAT Sampling for Sequential Circuits
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Recurrent CircuitSAT Sampling for Sequential Circuits
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189141
+  bibtex: "@inproceedings{ardakani2025recurrentcircuitsatsampl,\n  author = {Arash Ardakani and Kevin He and John Wawrzynek},\n  title = {Recurrent CircuitSAT Sampling for Sequential Circuits},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189141}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189141
+compare_when:
+- comparing functional/formal verification search, coverage, or satisfiability techniques
+benchmark_scope:
+- RTL verification, coverage, or CircuitSAT benchmarks reported in the MLCAD 2025 paper
+metrics:
+- coverage
+- runtime
+- verification success or sampling quality
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.

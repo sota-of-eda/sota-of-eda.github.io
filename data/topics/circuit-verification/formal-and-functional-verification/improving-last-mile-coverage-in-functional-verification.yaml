@@ -1,0 +1,26 @@
+baseline_id: improving-last-mile-coverage-in-functional-verification
+short_name: Last-Mile Coverage
+display_name: Improving Last-Mile Coverage in Functional Verification
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Improving Last-Mile Coverage in Functional Verification
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189220
+  bibtex: "@inproceedings{liu2025improvinglastmilecoverag,\n  author = {Chengjia Liu and Jnana Preeti Parlapalli and David Kebo Houngninou and Michael Quinn and Aakash Tyagi and Jiang Hu},\n  title = {Improving Last-Mile Coverage in Functional Verification},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189220}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189220
+compare_when:
+- comparing functional/formal verification search, coverage, or satisfiability techniques
+benchmark_scope:
+- RTL verification, coverage, or CircuitSAT benchmarks reported in the MLCAD 2025 paper
+metrics:
+- coverage
+- runtime
+- verification success or sampling quality
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.
+- 'Draft audit recorded experiment comparison candidates including: Constrained-random simulation.'

@@ -1,0 +1,26 @@
+baseline_id: vcdiag
+short_name: VCDiag
+display_name: 'VCDiag: Classifying Erroneous Waveforms for Failure Triage Acceleration'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'VCDiag: Classifying Erroneous Waveforms for Failure Triage Acceleration'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189168
+  bibtex: "@inproceedings{luu2025vcdiag,\n  author = {Minh Luu and Surya Jasper and Khoi Le and Evan Pan and Michael Quinn and Aakash Tyagi and Jiang Hu},\n  title = {VCDiag: Classifying Erroneous Waveforms for Failure Triage Acceleration},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189168}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189168
+compare_when:
+- comparing ML/LLM-assisted RTL bug generation, mutation testing, waveform triage, or fuzzing workflows
+benchmark_scope:
+- RTL verification infrastructures, processor/IP testbenches, waveform datasets, or generated-bug corpora used in the paper
+metrics:
+- coverage or bug-detection rate
+- classification accuracy
+- runtime / triage speedup
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.
+- 'Draft audit recorded experiment comparison candidates including: XGBoost, LightGBM, Random Forest.'

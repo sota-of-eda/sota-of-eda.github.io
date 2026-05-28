@@ -1,0 +1,26 @@
+baseline_id: turtle
+short_name: TuRTLe
+display_name: 'TuRTLe: A Unified Evaluation of LLMs for RTL Generation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'TuRTLe: A Unified Evaluation of LLMs for RTL Generation'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189228
+  bibtex: "@inproceedings{garciagasulla2025turtle,\n  author = {Dario Garcia-Gasulla and Gokcen Kestor and Emanuele Parisi and Miquel Albert\xED-Binimelis and Cristian Gutierrez and Razine Moundir Ghorab and Orlando Montenegro and Bernat Homs and Miquel Moreto},\n  title = {TuRTLe: A Unified Evaluation of LLMs for RTL Generation},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189228}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189228
+compare_when:
+- selecting recent MLCAD benchmark, dataset, contest, or evaluation-suite references
+benchmark_scope:
+- the benchmark tasks, contest designs, or dataset splits defined by the paper and its MLCAD 2025 evaluation protocol
+metrics:
+- benchmark task coverage
+- baseline model/tool scores
+- evaluation reproducibility
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.
+- 'Draft audit recorded experiment comparison candidates including: Llama-3.1-405B-FP8, Llama-3-70B, CodeLlama-70b-hf.'

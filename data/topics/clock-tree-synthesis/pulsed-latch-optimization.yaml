@@ -1,0 +1,26 @@
+baseline_id: pulsed-latch-optimization
+short_name: Pulsed-Latch Optimization
+display_name: 'Pulsed-Latch Optimization: A Hybrid Optimization Framework for Power-Efficient Pulsed Latch Utilization in Clock Networks'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: A Hybrid Optimization Framework for Power-Efficient Pulsed Latch Utilization in Clock Networks
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189209
+  bibtex: "@inproceedings{lu2025pulsedlatchoptimization,\n  author = {Yuntao Lu and Dehua Liang and Siting Liu and Yuhao Ji and Yu Zhang and Xuanqi Chen and Xia Lin and Jinlei Lu and Weihua Sheng and Bei Yu},\n  title = {A Hybrid Optimization Framework for Power-Efficient Pulsed Latch Utilization in Clock Networks},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189209}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189209
+compare_when:
+- comparing clock-network, pulsed-latch, or multi-bit flip-flop optimization methods
+benchmark_scope:
+- clock network, MBFF, pulsed-latch, or industrial CPU/block experiments reported by the paper
+metrics:
+- clock power
+- timing slack
+- replacement/clustering ratio
+- runtime
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.

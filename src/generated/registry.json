@@ -562,6 +562,41 @@
           ]
         },
         {
+          "baseline_id": "aspen",
+          "short_name": "ASPEN",
+          "display_name": "ASPEN: LLM-Guided E-Graph Rewriting for RTL Datapath Optimization",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "ASPEN: LLM-Guided E-Graph Rewriting for RTL Datapath Optimization",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189222",
+            "bibtex": "@inproceedings{zhang2025aspen,\n  author = {Niansong Zhang and Chenhui Deng and Johannes Maximilian Kuehn and Chia-Tung Ho and CUNXI YU and Zhiru Zhang and Haoxing Ren},\n  title = {ASPEN: LLM-Guided E-Graph Rewriting for RTL Datapath Optimization},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189222}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189222"
+          },
+          "compare_when": [
+            "comparing learned or LLM-assisted logic/datapath synthesis and technology-mapping flows"
+          ],
+          "benchmark_scope": [
+            "RTL datapath, multiplier, FPGA mapping, or resynthesis benchmarks evaluated in the paper"
+          ],
+          "metrics": [
+            "area",
+            "delay / timing",
+            "PPA improvement",
+            "runtime"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: Commercial synthesizer baseline, ROVER."
+          ]
+        },
+        {
           "baseline_id": "cristal",
           "short_name": "CRISTAL",
           "display_name": "Revisit Choice Network for Synthesis and Technology Mapping",
@@ -1073,6 +1108,41 @@
           ]
         },
         {
+          "baseline_id": "mapping-fusion",
+          "short_name": "Mapping Fusion",
+          "display_name": "Mapping Fusion: Improving FPGA Technology Mapping with ASIC Mapper",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Mapping Fusion: Improving FPGA Technology Mapping with ASIC Mapper",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189128",
+            "bibtex": "@inproceedings{yu2025mappingfusion,\n  author = {CUNXI YU},\n  title = {Mapping Fusion: Improving FPGA Technology Mapping with ASIC Mapper},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189128}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189128"
+          },
+          "compare_when": [
+            "comparing learned or LLM-assisted logic/datapath synthesis and technology-mapping flows"
+          ],
+          "benchmark_scope": [
+            "RTL datapath, multiplier, FPGA mapping, or resynthesis benchmarks evaluated in the paper"
+          ],
+          "metrics": [
+            "area",
+            "delay / timing",
+            "PPA improvement",
+            "runtime"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: ABC map, ABC LUT mapper if -K."
+          ]
+        },
+        {
           "baseline_id": "metasyn",
           "short_name": "MetaSyn",
           "display_name": "MetaSyn: A Meta-Reinforcement Learning Framework with Multimodal Circuit Representation for Adaptive Logic Synthesis",
@@ -1107,6 +1177,40 @@
             "no DBLP/Crossref/arXiv exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review",
             "runtime comparisons depend strongly on hardware and training setup; the paper argues pure runtime minimization is not the main objective",
             "method requires pretrained DeepGate2/Mamba representations and RL/meta-learning training infrastructure"
+          ]
+        },
+        {
+          "baseline_id": "ml-inspired-logic-synthesis",
+          "short_name": "ML-Inspired Logic Synthesis",
+          "display_name": "ML-Inspired Logic Synthesis: Improving Multiplier Circuits",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "ML-Inspired Logic Synthesis: Improving Multiplier Circuits",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189110",
+            "bibtex": "@inproceedings{miyasaka2025mlinspiredlogicsynthesis,\n  author = {Yukio Miyasaka and Walter Lau Neto and Eleonora Testa and Anika Prasad and Michael Shuster and Reto Zimmermann and Patrick Vuillod and Alan Mishchenko and John Wawrzynek and Luca Amaru},\n  title = {ML-Inspired Logic Synthesis: Improving Multiplier Circuits},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189110}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189110"
+          },
+          "compare_when": [
+            "comparing learned or LLM-assisted logic/datapath synthesis and technology-mapping flows"
+          ],
+          "benchmark_scope": [
+            "RTL datapath, multiplier, FPGA mapping, or resynthesis benchmarks evaluated in the paper"
+          ],
+          "metrics": [
+            "area",
+            "delay / timing",
+            "PPA improvement",
+            "runtime"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
           ]
         },
         {
@@ -1330,6 +1434,75 @@
             "DOI not confirmed; paper tracked via author webpage",
             "GPU-accelerated approach requires specific hardware for reproduction",
             "Comparison against OpenROAD only; commercial tool comparison missing"
+          ]
+        },
+        {
+          "baseline_id": "ml-mbff-clustering",
+          "short_name": "ML MBFF Clustering",
+          "display_name": "ML MBFF Clustering: Machine Learning Driven Early Clustering for Multi-bit Flip-Flop Allocation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Machine Learning Driven Early Clustering for Multi-bit Flip-Flop Allocation",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189132",
+            "bibtex": "@inproceedings{jeong2025mlmbffclustering,\n  author = {Jooyeon Jeong and Taewhan Kim},\n  title = {Machine Learning Driven Early Clustering for Multi-bit Flip-Flop Allocation},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189132}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189132"
+          },
+          "compare_when": [
+            "comparing clock-network, pulsed-latch, or multi-bit flip-flop optimization methods"
+          ],
+          "benchmark_scope": [
+            "clock network, MBFF, pulsed-latch, or industrial CPU/block experiments reported by the paper"
+          ],
+          "metrics": [
+            "clock power",
+            "timing slack",
+            "replacement/clustering ratio",
+            "runtime"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: Random MBFF clustering, Commercial MFF clustering."
+          ]
+        },
+        {
+          "baseline_id": "pulsed-latch-optimization",
+          "short_name": "Pulsed-Latch Optimization",
+          "display_name": "Pulsed-Latch Optimization: A Hybrid Optimization Framework for Power-Efficient Pulsed Latch Utilization in Clock Networks",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "A Hybrid Optimization Framework for Power-Efficient Pulsed Latch Utilization in Clock Networks",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189209",
+            "bibtex": "@inproceedings{lu2025pulsedlatchoptimization,\n  author = {Yuntao Lu and Dehua Liang and Siting Liu and Yuhao Ji and Yu Zhang and Xuanqi Chen and Xia Lin and Jinlei Lu and Weihua Sheng and Bei Yu},\n  title = {A Hybrid Optimization Framework for Power-Efficient Pulsed Latch Utilization in Clock Networks},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189209}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189209"
+          },
+          "compare_when": [
+            "comparing clock-network, pulsed-latch, or multi-bit flip-flop optimization methods"
+          ],
+          "benchmark_scope": [
+            "clock network, MBFF, pulsed-latch, or industrial CPU/block experiments reported by the paper"
+          ],
+          "metrics": [
+            "clock power",
+            "timing slack",
+            "replacement/clustering ratio",
+            "runtime"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
           ]
         }
       ]
@@ -2108,7 +2281,143 @@
         "EDA tools"
       ],
       "description": "Dataset and tool topics that support reproducible EDA research, benchmarks, and infrastructure.",
-      "baselines": []
+      "baselines": [
+        {
+          "baseline_id": "archxbench",
+          "short_name": "ArchXBench",
+          "display_name": "ArchXBench: A Complex Digital Systems Benchmark Suite for LLM Driven RTL Synthesis",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "ArchXBench: A Complex Digital Systems Benchmark Suite for LLM Driven RTL Synthesis",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189156",
+            "bibtex": "@inproceedings{purini2025archxbench,\n  author = {Suresh Purini and Siddhant Garg and Mudit Gaur and Sankalp Bhat and Sohan Mupparapu and Arun Ravindran},\n  title = {ArchXBench: A Complex Digital Systems Benchmark Suite for LLM Driven RTL Synthesis},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189156}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189156"
+          },
+          "compare_when": [
+            "selecting recent MLCAD benchmark, dataset, contest, or evaluation-suite references"
+          ],
+          "benchmark_scope": [
+            "the benchmark tasks, contest designs, or dataset splits defined by the paper and its MLCAD 2025 evaluation protocol"
+          ],
+          "metrics": [
+            "benchmark task coverage",
+            "baseline model/tool scores",
+            "evaluation reproducibility"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: GPT-4.1, o4-mini-high, DeepSeek R1."
+          ]
+        },
+        {
+          "baseline_id": "hdl2v",
+          "short_name": "hdl2v",
+          "display_name": "hdl2v: A Code Translation Dataset for Enhanced LLM Verilog Generation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "hdl2v: A Code Translation Dataset for Enhanced LLM Verilog Generation",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189055",
+            "bibtex": "@inproceedings{hong2025hdl2v,\n  author = {Charles Hong and Brendan Roberts and Huijae An and Alex Um and Advay Ratan and Sophia Shao},\n  title = {hdl2v: A Code Translation Dataset for Enhanced LLM Verilog Generation},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189055}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189055"
+          },
+          "compare_when": [
+            "selecting recent MLCAD benchmark, dataset, contest, or evaluation-suite references"
+          ],
+          "benchmark_scope": [
+            "the benchmark tasks, contest designs, or dataset splits defined by the paper and its MLCAD 2025 evaluation protocol"
+          ],
+          "metrics": [
+            "benchmark task coverage",
+            "baseline model/tool scores",
+            "evaluation reproducibility"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: Qwen2.5-Coder-32B-Instruct, Qwen2.5-Coder-7B-Instruct."
+          ]
+        },
+        {
+          "baseline_id": "resynthai-contest",
+          "short_name": "ReSynthAI Contest",
+          "display_name": "ReSynthAI Contest: Invited Paper: MLCAD 2025 Contest on ReSynthAI: Physical-Aware Logic Resynthesis using AI",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Invited Paper: MLCAD 2025 Contest on ReSynthAI: Physical-Aware Logic Resynthesis using AI",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189135",
+            "bibtex": "@inproceedings{gopalakrishnan2025resynthaicontest,\n  author = {Vikram Gopalakrishnan and Atmadip Dey and Rongjian Liang and Yanqing Zhang and Haoxing Ren and Vidya A. Chhabria},\n  title = {Invited Paper: MLCAD 2025 Contest on ReSynthAI: Physical-Aware Logic Resynthesis using AI},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189135}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189135"
+          },
+          "compare_when": [
+            "selecting recent MLCAD benchmark, dataset, contest, or evaluation-suite references"
+          ],
+          "benchmark_scope": [
+            "the benchmark tasks, contest designs, or dataset splits defined by the paper and its MLCAD 2025 evaluation protocol"
+          ],
+          "metrics": [
+            "benchmark task coverage",
+            "baseline model/tool scores",
+            "evaluation reproducibility"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
+          ]
+        },
+        {
+          "baseline_id": "turtle",
+          "short_name": "TuRTLe",
+          "display_name": "TuRTLe: A Unified Evaluation of LLMs for RTL Generation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "TuRTLe: A Unified Evaluation of LLMs for RTL Generation",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189228",
+            "bibtex": "@inproceedings{garciagasulla2025turtle,\n  author = {Dario Garcia-Gasulla and Gokcen Kestor and Emanuele Parisi and Miquel Albertí-Binimelis and Cristian Gutierrez and Razine Moundir Ghorab and Orlando Montenegro and Bernat Homs and Miquel Moreto},\n  title = {TuRTLe: A Unified Evaluation of LLMs for RTL Generation},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189228}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189228"
+          },
+          "compare_when": [
+            "selecting recent MLCAD benchmark, dataset, contest, or evaluation-suite references"
+          ],
+          "benchmark_scope": [
+            "the benchmark tasks, contest designs, or dataset splits defined by the paper and its MLCAD 2025 evaluation protocol"
+          ],
+          "metrics": [
+            "benchmark task coverage",
+            "baseline model/tool scores",
+            "evaluation reproducibility"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: Llama-3.1-405B-FP8, Llama-3-70B, CodeLlama-70b-hf."
+          ]
+        }
+      ]
     },
     {
       "review_triggers": [
@@ -2126,7 +2435,74 @@
         "emerging technology eda"
       ],
       "description": "EDA methods for emerging technologies beyond conventional CMOS digital flows, including photonic, quantum, flexible-electronics, superconducting, and memristive design automation.",
-      "baselines": []
+      "baselines": [
+        {
+          "baseline_id": "neurosim-agent",
+          "short_name": "NeuroSim Agent",
+          "display_name": "NeuroSim Agent: Automated Compute-in-Memory Accelerator Deployment with Transferable Reinforcement Learning and Dynamic Design Space Pruning",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "NeuroSim Agent: Automated Compute-in-Memory Accelerator Deployment with Transferable Reinforcement Learning and Dynamic Design Space Pruning",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189113",
+            "bibtex": "@inproceedings{lee2025neurosimagent,\n  author = {Ming-Yen Lee and Shimeng Yu},\n  title = {NeuroSim Agent: Automated Compute-in-Memory Accelerator Deployment with Transferable Reinforcement Learning and Dynamic Design Space Pruning},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189113}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189113"
+          },
+          "compare_when": [
+            "comparing ML-assisted emerging-technology design automation methods"
+          ],
+          "benchmark_scope": [
+            "RRAM/CIM/emerging-device design tasks and optimization datasets reported by the paper"
+          ],
+          "metrics": [
+            "prediction accuracy",
+            "design optimization score",
+            "resource or programming-effort reduction"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
+          ]
+        },
+        {
+          "baseline_id": "prompt-rram",
+          "short_name": "PROMPT",
+          "display_name": "PROMPT: Prediction Model for RRAM Programming Optimized by Adaptive Mechanism and Progressive Continuous Transformation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "PROMPT: Prediction Model for RRAM Programming Optimized by Adaptive Mechanism and Progressive Continuous Transformation",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189229",
+            "bibtex": "@inproceedings{guo2025promptrram,\n  author = {Yanxing Guo and Ling Liang and Zihao Zheng and Zezhi Cheng and Yuhang Yang and linbo shan and Zongwei Wang and Yimao Cai},\n  title = {PROMPT: Prediction Model for RRAM Programming Optimized by Adaptive Mechanism and Progressive Continuous Transformation},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189229}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189229"
+          },
+          "compare_when": [
+            "comparing ML-assisted emerging-technology design automation methods"
+          ],
+          "benchmark_scope": [
+            "RRAM/CIM/emerging-device design tasks and optimization datasets reported by the paper"
+          ],
+          "metrics": [
+            "prediction accuracy",
+            "design optimization score",
+            "resource or programming-effort reduction"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
+          ]
+        }
+      ]
     },
     {
       "review_triggers": [
@@ -2951,6 +3327,73 @@
           ]
         },
         {
+          "baseline_id": "genie-asi",
+          "short_name": "GENIE-ASI",
+          "display_name": "GENIE-ASI: Generative Instruction and Executable Code for Analog Subcircuit Identification",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "GENIE-ASI: Generative Instruction and Executable Code for Analog Subcircuit Identification",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189126",
+            "bibtex": "@inproceedings{pham2025genieasi,\n  author = {Phuoc Pham and Arun Venkitaraman and Chia-Yu Hsieh and Andrea Bonetti and Stefan Uhlich and Markus Leibl and Simon Hofmann and Eisaku Ohbuchi and Lorenzo Servadei and Ulf Schlichtmann and Robert Wille},\n  title = {GENIE-ASI: Generative Instruction and Executable Code for Analog Subcircuit Identification},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189126}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189126"
+          },
+          "compare_when": [
+            "comparing ML/LLM-assisted analog circuit modeling, architecture exploration, or subcircuit-identification methods"
+          ],
+          "benchmark_scope": [
+            "analog/RF/neuromorphic circuits, SPICE netlists, or subcircuit-identification benchmarks from the paper"
+          ],
+          "metrics": [
+            "prediction/classification accuracy",
+            "simulation speedup",
+            "energy/latency error"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: Anygraph, GPT-4.1, Gemini 2.5, Claude 3.7 Sonnet."
+          ]
+        },
+        {
+          "baseline_id": "lasana",
+          "short_name": "LASANA",
+          "display_name": "LASANA: Large-scale Surrogate Modeling for Analog Neuromorphic Architecture Exploration",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "LASANA: Large-scale Surrogate Modeling for Analog Neuromorphic Architecture Exploration",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189133",
+            "bibtex": "@inproceedings{ho2025lasana,\n  author = {Jason Ho and James A. Boyle and Linshen Liu and Andreas Gerstlauer},\n  title = {LASANA: Large-scale Surrogate Modeling for Analog Neuromorphic Architecture Exploration},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189133}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189133"
+          },
+          "compare_when": [
+            "comparing ML/LLM-assisted analog circuit modeling, architecture exploration, or subcircuit-identification methods"
+          ],
+          "benchmark_scope": [
+            "analog/RF/neuromorphic circuits, SPICE netlists, or subcircuit-identification benchmarks from the paper"
+          ],
+          "metrics": [
+            "prediction/classification accuracy",
+            "simulation speedup",
+            "energy/latency error"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
+          ]
+        },
+        {
           "baseline_id": "multi-agent-analog-rf",
           "short_name": "Multi-Agent Analog/RF Gen",
           "display_name": "Multi-Agent Generative Synthesis for Analog/RF Circuit: from Scalable Topology Generation to Efficient Inverse Design",
@@ -3434,6 +3877,41 @@
           ]
         },
         {
+          "baseline_id": "hr2",
+          "short_name": "HR2",
+          "display_name": "HR2: HR$^2$: A PVT Aware Hierarchical RL Based Sizing Framework for Robust Analog Circuit Design",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "HR$^2$: A PVT Aware Hierarchical RL Based Sizing Framework for Robust Analog Circuit Design",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189231",
+            "bibtex": "@inproceedings{jung2025hr2,\n  author = {Jaeheon Jung and Dongwoo Lew and JangSeok Yu and Jongsun Park},\n  title = {HR$^2$: A PVT Aware Hierarchical RL Based Sizing Framework for Robust Analog Circuit Design},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189231}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189231"
+          },
+          "compare_when": [
+            "comparing robust analog sizing and variation-aware optimization methods"
+          ],
+          "benchmark_scope": [
+            "PVT-variation-aware analog circuit sizing test cases reported by the paper"
+          ],
+          "metrics": [
+            "sample efficiency",
+            "success rate",
+            "Monte Carlo failure ratio",
+            "runtime"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: PVTSizing, GLOVA."
+          ]
+        },
+        {
           "baseline_id": "m3-analog-circuit-optimization",
           "short_name": "M3",
           "display_name": "M3: Mamba-assisted Multi-Circuit Optimization via Model-based RL with Effective Scheduling",
@@ -3709,6 +4187,41 @@
           ]
         },
         {
+          "baseline_id": "mambo",
+          "short_name": "MAMBO",
+          "display_name": "Industry Track: MAMBO: ML Accelerated Multi-Agent Black-Box Optimization for Enhancing Standard Cell Synthesis Quality",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Industry Track: MAMBO: ML Accelerated Multi-Agent Black-Box Optimization for Enhancing Standard Cell Synthesis Quality",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189185",
+            "bibtex": "@inproceedings{liu2025mambo,\n  author = {Tianchi Liu and Sriram Madhavan and Dastagiri Dudekula and Luke Thomas and Ivo van Zandvoort and Maarten Berkens},\n  title = {Industry Track: MAMBO: ML Accelerated Multi-Agent Black-Box Optimization for Enhancing Standard Cell Synthesis Quality},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189185}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189185"
+          },
+          "compare_when": [
+            "evaluating standard-cell or cell-library synthesis, compaction, and optimization methods"
+          ],
+          "benchmark_scope": [
+            "standard-cell synthesis, standard-cell library, or cell-library compaction experiments reported by the paper"
+          ],
+          "metrics": [
+            "PPA",
+            "cell-library size",
+            "EDA tool runtime",
+            "standard-cell synthesis quality"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: TPE sampler, Randomized search, Gaussian process."
+          ]
+        },
+        {
           "baseline_id": "mf-cell-placement",
           "short_name": "MF-Cell Placement",
           "display_name": "Margin-Free Cell Placement for Area-Efficient VLSI Design",
@@ -3779,6 +4292,40 @@
             "No public code repository found at time of review"
           ],
           "links": {}
+        },
+        {
+          "baseline_id": "ml-cell-library-compaction",
+          "short_name": "ML Cell Library Compaction",
+          "display_name": "ML Cell Library Compaction: Machine-Learning Driven Cell Library Compaction",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Machine-Learning Driven Cell Library Compaction",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189107",
+            "bibtex": "@inproceedings{cho2025mlcelllibrarycompaction,\n  author = {Handong Cho and Taewhan Kim},\n  title = {Machine-Learning Driven Cell Library Compaction},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189107}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189107"
+          },
+          "compare_when": [
+            "evaluating standard-cell or cell-library synthesis, compaction, and optimization methods"
+          ],
+          "benchmark_scope": [
+            "standard-cell synthesis, standard-cell library, or cell-library compaction experiments reported by the paper"
+          ],
+          "metrics": [
+            "PPA",
+            "cell-library size",
+            "EDA tool runtime",
+            "standard-cell synthesis quality"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
+          ]
         },
         {
           "baseline_id": "mustnet",
@@ -3997,6 +4544,39 @@
       ],
       "description": "Representation-learning methods and datasets that encode circuits, HDL, netlists, synthesis flows, or layouts for downstream EDA prediction, retrieval, optimization, or analysis tasks.",
       "baselines": [
+        {
+          "baseline_id": "pieceformer",
+          "short_name": "Pieceformer",
+          "display_name": "Pieceformer: Similarity-Driven Knowledge Transfer via Scalable Graph Transformer in VLSI",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Pieceformer: Similarity-Driven Knowledge Transfer via Scalable Graph Transformer in VLSI",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189177",
+            "bibtex": "@inproceedings{yang2025pieceformer,\n  author = {Hang Yang and Callie Hao and Yong Liu and Yusheng Hu},\n  title = {Pieceformer: Similarity-Driven Knowledge Transfer via Scalable Graph Transformer in VLSI},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189177}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189177"
+          },
+          "compare_when": [
+            "evaluating circuit graph representation learning and transfer-learning methods"
+          ],
+          "benchmark_scope": [
+            "VLSI graph benchmarks and circuit-transfer experiments reported by the paper"
+          ],
+          "metrics": [
+            "transfer accuracy",
+            "ranking/similarity quality",
+            "DSE speedup"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
+          ]
+        },
         {
           "baseline_id": "unicircuit",
           "short_name": "UniCircuit",
@@ -4391,6 +4971,40 @@
           ]
         },
         {
+          "baseline_id": "coco-ml",
+          "short_name": "CoCO-ML",
+          "display_name": "CoCO-ML: ML-Enhanced Performance and Power Estimation for DNNs on Heterogeneous SoCs",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "ML-Enhanced Performance and Power Estimation for DNNs on Heterogeneous SoCs",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189223",
+            "bibtex": "@inproceedings{selvam2025cocoml,\n  author = {Surya Selvam and Jacob R. Stevens and Sujit Dey and Anand Raghunathan},\n  title = {ML-Enhanced Performance and Power Estimation for DNNs on Heterogeneous SoCs},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189223}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189223"
+          },
+          "compare_when": [
+            "comparing ML-enhanced system or accelerator design-space estimation methods"
+          ],
+          "benchmark_scope": [
+            "DNN accelerator or heterogeneous SoC design-space estimation workloads reported by the paper"
+          ],
+          "metrics": [
+            "performance estimation error",
+            "power estimation error",
+            "estimation/runtime speedup"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: Paleo, NeuralPower."
+          ]
+        },
+        {
           "baseline_id": "coxplorer",
           "short_name": "CoXplorer",
           "display_name": "CoXplorer: Multi-Staged Co-Exploration Framework for AI Model Compression and Accelerator Design",
@@ -4701,6 +5315,41 @@
       ],
       "description": "Fine-grained VLSI routing methods that assign wires and vias under design-rule constraints after global routing, including rip-up-and-reroute convergence, detailed-router acceleration, and DRV reduction.",
       "baselines": [
+        {
+          "baseline_id": "dr-guide",
+          "short_name": "Dr. Guide",
+          "display_name": "Dr. Guide: AI-Guided Detailed Routing",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Dr. Guide: AI-Guided Detailed Routing",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189136",
+            "bibtex": "@inproceedings{wang2025drguide,\n  author = {Qijing Wang and Wing Ho LAU and Tsung-Yi Ho and Fung Young and Martin D.F. Wong},\n  title = {Dr. Guide: AI-Guided Detailed Routing},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189136}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189136"
+          },
+          "compare_when": [
+            "comparing detailed-routing guidance methods and routability/DRV reduction flows"
+          ],
+          "benchmark_scope": [
+            "ISPD-style detailed-routing benchmarks and re-placed routing stress cases reported by the paper"
+          ],
+          "metrics": [
+            "DRC count",
+            "wirelength",
+            "via count",
+            "routing iterations",
+            "runtime"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
+          ]
+        },
         {
           "baseline_id": "gta-track-assignment",
           "short_name": "GTA",
@@ -5185,6 +5834,76 @@
           ]
         },
         {
+          "baseline_id": "ml-rank-prediction-eda-tool-parameter-optimization",
+          "short_name": "ML Rank-Prediction DSO",
+          "display_name": "ML Rank-Prediction DSO: EDA Tool Parameter Optimization Through Fast and Reliable Machine-Learning based Rank Prediction Model",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "EDA Tool Parameter Optimization Through Fast and Reliable Machine-Learning based Rank Prediction Model",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189232",
+            "bibtex": "@inproceedings{won2025mlrankpredictionedatoolp,\n  author = {Doyeon Won and Taewhan Kim},\n  title = {EDA Tool Parameter Optimization Through Fast and Reliable Machine-Learning based Rank Prediction Model},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189232}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189232"
+          },
+          "compare_when": [
+            "comparing EDA flow autotuning, parameter optimization, and agentic P&R trajectory optimization methods"
+          ],
+          "benchmark_scope": [
+            "OpenROAD/ORFS, P&R, or commercial EDA flow-parameter optimization tasks used in the paper"
+          ],
+          "metrics": [
+            "PPA / QoR",
+            "wirelength or timing proxy",
+            "optimization iterations",
+            "runtime"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: FIST, PPA prediction based sampling."
+          ]
+        },
+        {
+          "baseline_id": "orfs-agent",
+          "short_name": "ORFS-agent",
+          "display_name": "ORFS-agent: Tool-Using Agents for Chip Design Optimization",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "ORFS-agent: Tool-Using Agents for Chip Design Optimization",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189204",
+            "bibtex": "@inproceedings{ghose2025orfsagent,\n  author = {Amur Ghose and Andrew Kahng and Sayak Kundu and Zhiang Wang},\n  title = {ORFS-agent: Tool-Using Agents for Chip Design Optimization},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189204}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189204"
+          },
+          "compare_when": [
+            "comparing EDA flow autotuning, parameter optimization, and agentic P&R trajectory optimization methods"
+          ],
+          "benchmark_scope": [
+            "OpenROAD/ORFS, P&R, or commercial EDA flow-parameter optimization tasks used in the paper"
+          ],
+          "metrics": [
+            "PPA / QoR",
+            "wirelength or timing proxy",
+            "optimization iterations",
+            "runtime"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: ORFS AutoTuner, Bayesian optimization."
+          ]
+        },
+        {
           "baseline_id": "ratuner",
           "short_name": "RATuner",
           "display_name": "RATuner: Retrieval-Augmented VLSI Flow Design Parameter Tuning Framework",
@@ -5217,6 +5936,40 @@
             "no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review",
             "the method depends on EDA documentation retrieval quality and the chosen parameter space, so portability across commercial/open flows needs review",
             "proposed topic is under dataset-and-tools as a cross-flow tuning category; human taxonomy review may prefer a physical-design-flow or design-space-exploration parent"
+          ]
+        },
+        {
+          "baseline_id": "trajectory-ai",
+          "short_name": "Trajectory.AI",
+          "display_name": "Industry Track: Trajectory.AI: An Automated P&R Flow Trajectory Agent",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Industry Track: Trajectory.AI: An Automated P&R Flow Trajectory Agent",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189102",
+            "bibtex": "@inproceedings{zeng2025trajectoryai,\n  author = {Wei Zeng and Sudipto Kundu and Jerry Wu},\n  title = {Industry Track: Trajectory.AI: An Automated P\\&R Flow Trajectory Agent},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189102}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189102"
+          },
+          "compare_when": [
+            "comparing EDA flow autotuning, parameter optimization, and agentic P&R trajectory optimization methods"
+          ],
+          "benchmark_scope": [
+            "OpenROAD/ORFS, P&R, or commercial EDA flow-parameter optimization tasks used in the paper"
+          ],
+          "metrics": [
+            "PPA / QoR",
+            "wirelength or timing proxy",
+            "optimization iterations",
+            "runtime"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
           ]
         }
       ]
@@ -5588,6 +6341,107 @@
           "reproducibility": "artifact_available",
           "caveats": [
             "ArXiv preprint available; ICCAD official version may have different page limits"
+          ]
+        },
+        {
+          "baseline_id": "improving-last-mile-coverage-in-functional-verification",
+          "short_name": "Last-Mile Coverage",
+          "display_name": "Improving Last-Mile Coverage in Functional Verification",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Improving Last-Mile Coverage in Functional Verification",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189220",
+            "bibtex": "@inproceedings{liu2025improvinglastmilecoverag,\n  author = {Chengjia Liu and Jnana Preeti Parlapalli and David Kebo Houngninou and Michael Quinn and Aakash Tyagi and Jiang Hu},\n  title = {Improving Last-Mile Coverage in Functional Verification},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189220}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189220"
+          },
+          "compare_when": [
+            "comparing functional/formal verification search, coverage, or satisfiability techniques"
+          ],
+          "benchmark_scope": [
+            "RTL verification, coverage, or CircuitSAT benchmarks reported in the MLCAD 2025 paper"
+          ],
+          "metrics": [
+            "coverage",
+            "runtime",
+            "verification success or sampling quality"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: Constrained-random simulation."
+          ]
+        },
+        {
+          "baseline_id": "llm-path-exploration",
+          "short_name": "LLM Path Exploration",
+          "display_name": "LLM Path Exploration: LLM-assisted Path Exploration for RTL Verification",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "LLM-assisted Path Exploration for RTL Verification",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189172",
+            "bibtex": "@inproceedings{tan2025llmpathexploration,\n  author = {Yan TAN and Yangdi Lyu and Xiangchen MENG},\n  title = {LLM-assisted Path Exploration for RTL Verification},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189172}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189172"
+          },
+          "compare_when": [
+            "comparing functional/formal verification search, coverage, or satisfiability techniques"
+          ],
+          "benchmark_scope": [
+            "RTL verification, coverage, or CircuitSAT benchmarks reported in the MLCAD 2025 paper"
+          ],
+          "metrics": [
+            "coverage",
+            "runtime",
+            "verification success or sampling quality"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: Random, Concolic, GPT-4, PHI-2, TinyLlama."
+          ]
+        },
+        {
+          "baseline_id": "recurrent-circuitsat-sampling",
+          "short_name": "Recurrent CircuitSAT",
+          "display_name": "Recurrent CircuitSAT Sampling for Sequential Circuits",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Recurrent CircuitSAT Sampling for Sequential Circuits",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189141",
+            "bibtex": "@inproceedings{ardakani2025recurrentcircuitsatsampl,\n  author = {Arash Ardakani and Kevin He and John Wawrzynek},\n  title = {Recurrent CircuitSAT Sampling for Sequential Circuits},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189141}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189141"
+          },
+          "compare_when": [
+            "comparing functional/formal verification search, coverage, or satisfiability techniques"
+          ],
+          "benchmark_scope": [
+            "RTL verification, coverage, or CircuitSAT benchmarks reported in the MLCAD 2025 paper"
+          ],
+          "metrics": [
+            "coverage",
+            "runtime",
+            "verification success or sampling quality"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
           ]
         },
         {
@@ -5992,6 +6846,41 @@
           "reproducibility": "unknown",
           "caveats": [
             "Non-Newtonian fluid model is a novel analogy for placement; practical benefits vs simpler methods need more validation"
+          ]
+        },
+        {
+          "baseline_id": "mlbuf-replace",
+          "short_name": "MLBuf-RePlAce",
+          "display_name": "MLBuf-RePlAce: Recursive Learning-Based Virtual Buffering for Analytical Global Placement",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Recursive Learning-Based Virtual Buffering for Analytical Global Placement",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189114",
+            "bibtex": "@inproceedings{kahng2025mlbufreplace,\n  author = {Andrew Kahng and Yiting Liu and Zhiang Wang},\n  title = {Recursive Learning-Based Virtual Buffering for Analytical Global Placement},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189114}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189114"
+          },
+          "compare_when": [
+            "comparing analytical global-placement methods that account for buffering or timing closure"
+          ],
+          "benchmark_scope": [
+            "analytical global-placement benchmark designs and post-route validation flows reported by the paper"
+          ],
+          "metrics": [
+            "wirelength",
+            "timing slack",
+            "post-route PPA",
+            "runtime"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: OpenROAD flow, TD-RePlAce, OpenROAD resizer."
           ]
         }
       ]
@@ -6498,6 +7387,72 @@
             "evaluation is benchmark-based and may not cover all real-world third-party IP obfuscation styles",
             "new proposed hardware-security-verification topic should be reconciled with existing broad circuit-verification entries such as SecIC3 before Workflow C"
           ]
+        },
+        {
+          "baseline_id": "salad",
+          "short_name": "SALAD",
+          "display_name": "SALAD: Systematic Assessment of Machine Unlearning on LLM-Aided Hardware Design",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "SALAD: Systematic Assessment of Machine Unlearning on LLM-Aided Hardware Design",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189152",
+            "bibtex": "@inproceedings{wang2025salad,\n  author = {Zeng Wang and Minghao Shao and Rupesh Raj Karn and Lakshmi Likhitha Mankali and Jitendra Bhandari and Ramesh Karri and Ozgur Sinanoglu and Muhammad Shafique and Johann Knechtel},\n  title = {SALAD: Systematic Assessment of Machine Unlearning on LLM-Aided Hardware Design},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189152}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189152"
+          },
+          "compare_when": [
+            "evaluating security analysis or machine-unlearning methods for generated hardware designs"
+          ],
+          "benchmark_scope": [
+            "LLM-generated RTL security checks, hardware-design unlearning tasks, or security benchmark suites used by the paper"
+          ],
+          "metrics": [
+            "security-rule violations",
+            "forgetting/retention metrics",
+            "generated-design correctness"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
+          ]
+        },
+        {
+          "baseline_id": "trusting-the-machine",
+          "short_name": "Trusting the Machine",
+          "display_name": "Trusting the Machine: How Secure is LLM-Generated RTL Code?",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Trusting the Machine: How Secure is LLM-Generated RTL Code?",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189213",
+            "bibtex": "@inproceedings{ibnat2025trustingthemachine,\n  author = {Zahin Ibnat and Paul E. Calzada and Dipayan Saha and Hasan Al-Shaikh and Sujan Kumar Saha and Jingbo Zhou and Farimah Farahmandi and Mark Tehranipoor},\n  title = {Trusting the Machine: How Secure is LLM-Generated RTL Code?},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189213}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189213"
+          },
+          "compare_when": [
+            "evaluating security analysis or machine-unlearning methods for generated hardware designs"
+          ],
+          "benchmark_scope": [
+            "LLM-generated RTL security checks, hardware-design unlearning tasks, or security benchmark suites used by the paper"
+          ],
+          "metrics": [
+            "security-rule violations",
+            "forgetting/retention metrics",
+            "generated-design correctness"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
+          ]
         }
       ]
     },
@@ -7001,6 +7956,108 @@
           ]
         },
         {
+          "baseline_id": "hada",
+          "short_name": "HADA",
+          "display_name": "HADA: Leveraging Multi-Source Data to Train Large Language Models for Hardware Security Assertion Generation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "HADA: Leveraging Multi-Source Data to Train Large Language Models for Hardware Security Assertion Generation",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189143",
+            "bibtex": "@inproceedings{fu2025hada,\n  author = {Weimin Fu and Yiting Wang and Zelin Lu and Xiaolong Guo and Gang Qu},\n  title = {HADA: Leveraging Multi-Source Data to Train Large Language Models for Hardware Security Assertion Generation},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189143}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189143"
+          },
+          "compare_when": [
+            "comparing LLM-based assertion or security-property generation workflows"
+          ],
+          "benchmark_scope": [
+            "SystemVerilog assertion/security-property generation tasks and RTL/security benchmark sets reported in the paper"
+          ],
+          "metrics": [
+            "valid/non-vacuous assertion count",
+            "functional match / coverage",
+            "generation accuracy"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: GPT-4o-mini, LLaMA3 70B, LLaMA3.2 3B."
+          ]
+        },
+        {
+          "baseline_id": "hybrid-nl2sva",
+          "short_name": "Hybrid-NL2SVA",
+          "display_name": "Hybrid-NL2SVA: Integrating RAG and Finetuning for LLM-based NL2SVA",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Hybrid-NL2SVA: Integrating RAG and Finetuning for LLM-based NL2SVA",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189208",
+            "bibtex": "@inproceedings{xiao2025hybridnl2sva,\n  author = {Weihua Xiao and Derek Ekberg and Siddharth Garg and Ramesh Karri},\n  title = {Hybrid-NL2SVA: Integrating RAG and Finetuning for LLM-based NL2SVA},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189208}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189208"
+          },
+          "compare_when": [
+            "comparing LLM-based assertion or security-property generation workflows"
+          ],
+          "benchmark_scope": [
+            "SystemVerilog assertion/security-property generation tasks and RTL/security benchmark sets reported in the paper"
+          ],
+          "metrics": [
+            "valid/non-vacuous assertion count",
+            "functional match / coverage",
+            "generation accuracy"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: GPT-4o-mini, Qwen2.5-Coder-7B-Instruct."
+          ]
+        },
+        {
+          "baseline_id": "lasso",
+          "short_name": "LASSO",
+          "display_name": "LASSO: LLM-Aided Security Property Generation for Assertion-based SoC Verification",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "LASSO: LLM-Aided Security Property Generation for Assertion-based SoC Verification",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189178",
+            "bibtex": "@inproceedings{ankireddy2025lasso,\n  author = {Dinesh Reddy Ankireddy and Sudipta Paria and Aritra Dasgupta and Sandip Ray and Swarup Bhunia},\n  title = {LASSO: LLM-Aided Security Property Generation for Assertion-based SoC Verification},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189178}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189178"
+          },
+          "compare_when": [
+            "comparing LLM-based assertion or security-property generation workflows"
+          ],
+          "benchmark_scope": [
+            "SystemVerilog assertion/security-property generation tasks and RTL/security benchmark sets reported in the paper"
+          ],
+          "metrics": [
+            "valid/non-vacuous assertion count",
+            "functional match / coverage",
+            "generation accuracy"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: GPT-4o, Gemini-1.5, Llama-3.1."
+          ]
+        },
+        {
           "baseline_id": "palm-sva",
           "short_name": "PALM",
           "display_name": "PALM: Program Analysis and LLM Methods for Crafting SystemVerilog Assertions",
@@ -7063,6 +8120,40 @@
       ],
       "description": "LLM-based agents, copilots, benchmarks, and evaluation frameworks that automate or assess EDA tool use, documentation question answering, scripting, debugging, or workflow assistance.",
       "baselines": [
+        {
+          "baseline_id": "context-enhanced-spec-generation",
+          "short_name": "Context-Enhanced Spec Generation",
+          "display_name": "Context-Enhanced Spec Generation: Context-Enhanced Architectural Specification Generation for SoC Designs",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Context-Enhanced Architectural Specification Generation for SoC Designs",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189058",
+            "bibtex": "@inproceedings{ahmed2025contextenhancedspecgener,\n  author = {Md Rubel Ahmed and Sadiba Nusrat Nur and Rickard Ewetz},\n  title = {Context-Enhanced Architectural Specification Generation for SoC Designs},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189058}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189058"
+          },
+          "compare_when": [
+            "evaluating LLM-based EDA documentation, summarization, question answering, or specification-generation assistants"
+          ],
+          "benchmark_scope": [
+            "OpenCores/Verilog projects, architecture specifications, or design-assistant QA tasks used in the paper"
+          ],
+          "metrics": [
+            "summary or specification quality",
+            "question-answering accuracy",
+            "ROUGE/BERTScore or LLM-judge scores when reported"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: RTL-only prompting, GPT-4.1-mini, GPT-4.1-nano, GPT-3.5."
+          ]
+        },
         {
           "baseline_id": "crop",
           "short_name": "CROP",
@@ -7160,6 +8251,40 @@
             "manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved",
             "GitHub repository was reachable, but dataset licensing and reproduction completeness were not audited in this pass",
             "topic parent is provisional and may be split into documentation QA, LLM agents, and EDA benchmark subtopics later"
+          ]
+        },
+        {
+          "baseline_id": "rtlexplain",
+          "short_name": "RTLExplain",
+          "display_name": "RTLExplain: A Structured Approach to RTL Code Summarization and Question Answering for Medium-to-Large Designs Using LLMs",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "RTLExplain: A Structured Approach to RTL Code Summarization and Question Answering for Medium-to-Large Designs Using LLMs",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189167",
+            "bibtex": "@inproceedings{chi2025rtlexplain,\n  author = {Ting-Hsun Chi and Charles Mackin and Luyao Shi and Prashanth Vijayaraghavan and Hsinyu Tsai and Ehsan Degan},\n  title = {RTLExplain: A Structured Approach to RTL Code Summarization and Question Answering for Medium-to-Large Designs Using LLMs},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189167}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189167"
+          },
+          "compare_when": [
+            "evaluating LLM-based EDA documentation, summarization, question answering, or specification-generation assistants"
+          ],
+          "benchmark_scope": [
+            "OpenCores/Verilog projects, architecture specifications, or design-assistant QA tasks used in the paper"
+          ],
+          "metrics": [
+            "summary or specification quality",
+            "question-answering accuracy",
+            "ROUGE/BERTScore or LLM-judge scores when reported"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: Naive prompting, Granite-Code-34b, CodeLlama34b, Deepseek-33b, Mixtral-8x7b."
           ]
         }
       ]
@@ -7281,6 +8406,39 @@
           ]
         },
         {
+          "baseline_id": "hierarchical-llm-verilog-generation",
+          "short_name": "Hierarchical LLM Verilog Generation",
+          "display_name": "Hierarchical LLM Verilog Generation: Verilog Code Generation of Hierarchical Design Using LLMs",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Verilog Code Generation of Hierarchical Design Using LLMs",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189211",
+            "bibtex": "@inproceedings{chang2025hierarchicalllmverilogge,\n  author = {Geuna Chang and Shilong Zhang and Seohyun Kim and Woojin Kim and Youngsoo Shin},\n  title = {Verilog Code Generation of Hierarchical Design Using LLMs},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189211}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189211"
+          },
+          "compare_when": [
+            "comparing LLM-assisted RTL generation, repair, optimization, or low-power RTL prompting methods"
+          ],
+          "benchmark_scope": [
+            "RTL-generation benchmarks, HDLBits/VerilogEval/RTLLM-style tasks, or paper-specific RTL designs reported in the MLCAD 2025 experiments"
+          ],
+          "metrics": [
+            "pass@k / functional correctness",
+            "syntax correctness",
+            "PPA or low-power quality when reported"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
+          ]
+        },
+        {
           "baseline_id": "liveverilogeval",
           "short_name": "LiveVerilogEval",
           "display_name": "LiveVerilogEval: Contamination Free and Automatically Scalable Benchmark for Verilog Code Generation",
@@ -7315,6 +8473,40 @@
             "no DBLP/Crossref/arXiv exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review",
             "generated problems are accepted only if an LLM can solve them under the paper's oracle, so the benchmark is primarily comparative rather than a pure measure of novel-concept understanding",
             "question difficulty depends on the SAT-equivalence timeout and source seed designs"
+          ]
+        },
+        {
+          "baseline_id": "llm-verippa",
+          "short_name": "LLM-VeriPPA",
+          "display_name": "LLM-VeriPPA: Power, Performance, and Area Optimization aware Verilog Code Generation with Large Language Models",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "LLM-VeriPPA: Power, Performance, and Area Optimization aware Verilog Code Generation with Large Language Models",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189158",
+            "bibtex": "@inproceedings{thorat2025llmverippa,\n  author = {Kiran Thorat and Jiahui Zhao and Yaotian Liu and Amit Hasan and Hongwu Peng and Xi Xie and Bin Lei and Caiwen Ding},\n  title = {LLM-VeriPPA: Power, Performance, and Area Optimization aware Verilog Code Generation with Large Language Models},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189158}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189158"
+          },
+          "compare_when": [
+            "comparing LLM-assisted RTL generation, repair, optimization, or low-power RTL prompting methods"
+          ],
+          "benchmark_scope": [
+            "RTL-generation benchmarks, HDLBits/VerilogEval/RTLLM-style tasks, or paper-specific RTL designs reported in the MLCAD 2025 experiments"
+          ],
+          "metrics": [
+            "pass@k / functional correctness",
+            "syntax correctness",
+            "PPA or low-power quality when reported"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: GPT-3.5, GPT-4, GPT-4o, RTL-Coder."
           ]
         },
         {
@@ -7388,6 +8580,73 @@
             "formal DATE/IEEE DOI and DATE BibTeX were not found in DBLP/Crossref at draft time; BibTeX is the verified arXiv entry",
             "paper states code is available at https://github.com/mashnoor/melt-rtl, but this URL could not be verified by HTTP during this pass, so it is not listed as a verified repo link",
             "results are tied to QwenCoder2.5-14B and the paper's curated probe-training dataset; comparison to full agentic or retrieval pipelines is mostly feature-level/contextual rather than a uniform end-to-end rerun"
+          ]
+        },
+        {
+          "baseline_id": "prompting-for-power",
+          "short_name": "Prompting for Power",
+          "display_name": "Prompting for Power: Benchmarking Large Language Models for Low-Power RTL Design Generation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Prompting for Power: Benchmarking Large Language Models for Low-Power RTL Design Generation",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189130",
+            "bibtex": "@inproceedings{gubbi2025promptingforpower,\n  author = {Kevin Immanuel Gubbi and Marcus Halm and Sarbani Kumar and Arvind Sudarshan and Pavan Dheeraj Kota and Mohammadnavid Tarighat and Avesta Sasan and Houman Homayoun},\n  title = {Prompting for Power: Benchmarking Large Language Models for Low-Power RTL Design Generation},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189130}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189130"
+          },
+          "compare_when": [
+            "comparing LLM-assisted RTL generation, repair, optimization, or low-power RTL prompting methods"
+          ],
+          "benchmark_scope": [
+            "RTL-generation benchmarks, HDLBits/VerilogEval/RTLLM-style tasks, or paper-specific RTL designs reported in the MLCAD 2025 experiments"
+          ],
+          "metrics": [
+            "pass@k / functional correctness",
+            "syntax correctness",
+            "PPA or low-power quality when reported"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
+          ]
+        },
+        {
+          "baseline_id": "scalertl",
+          "short_name": "ScaleRTL",
+          "display_name": "ScaleRTL: Scaling LLMs with Reasoning Data and Test-Time Compute for Accurate RTL Code Generation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "ScaleRTL: Scaling LLMs with Reasoning Data and Test-Time Compute for Accurate RTL Code Generation",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189212",
+            "bibtex": "@inproceedings{deng2025scalertl,\n  author = {Chenhui Deng and Yun-Da Tsai and Guan-Ting Liu and Zhongzhi Yu and Haoxing Ren},\n  title = {ScaleRTL: Scaling LLMs with Reasoning Data and Test-Time Compute for Accurate RTL Code Generation},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189212}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189212"
+          },
+          "compare_when": [
+            "comparing LLM-assisted RTL generation, repair, optimization, or low-power RTL prompting methods"
+          ],
+          "benchmark_scope": [
+            "RTL-generation benchmarks, HDLBits/VerilogEval/RTLLM-style tasks, or paper-specific RTL designs reported in the MLCAD 2025 experiments"
+          ],
+          "metrics": [
+            "pass@k / functional correctness",
+            "syntax correctness",
+            "PPA or low-power quality when reported"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: DeepSeek-R1-Distill-Qwen-32B, CodeV-6.7B, OriGen-6.7B, CraftRTL-15B, Claude3.5-Sonnet."
           ]
         },
         {
@@ -7619,6 +8878,40 @@
       "description": "Physical-design methods for placing macros or mixed-size blocks, including analytical, search, reinforcement-learning, and LLM-assisted macro-placement flows evaluated by PPA, routability, and legality metrics.",
       "baselines": [
         {
+          "baseline_id": "beyondppa",
+          "short_name": "BeyondPPA",
+          "display_name": "BeyondPPA: Human-Inspired Reinforcement Learning for Post-Route Reliability Aware Macro Placement",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "BeyondPPA: Human-Inspired Reinforcement Learning for Post-Route Reliability Aware Macro Placement",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189164",
+            "bibtex": "@inproceedings{tashdid2025beyondppa,\n  author = {Ishraq Tashdid and Valentina Terry and Jordan Merkel and Tasnuva Farheen and Sazadur Rahman},\n  title = {BeyondPPA: Human-Inspired Reinforcement Learning for Post-Route Reliability Aware Macro Placement},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189164}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189164"
+          },
+          "compare_when": [
+            "comparing macro placement methods beyond HPWL/PPA-only objectives"
+          ],
+          "benchmark_scope": [
+            "macro-placement benchmark layouts and post-route/reliability validation scenarios reported by the paper"
+          ],
+          "metrics": [
+            "HPWL",
+            "reliability / power-integrity metrics",
+            "post-route PPA"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: DREAMPlace, MaskPlace."
+          ]
+        },
+        {
           "baseline_id": "chip-map",
           "short_name": "CHIP-MAP",
           "display_name": "CHIP-MAP: A Collaborative Optimization Framework for Macro Placement Using Large Language Models",
@@ -7837,6 +9130,39 @@
             "First multimodal benchmark for EDA; no prior baseline for comparison",
             "Expert review ensures quality but may introduce human bias",
             "Benchmark represents curated QA pairs; may not reflect real-world design complexity"
+          ]
+        },
+        {
+          "baseline_id": "privacy-preserving-eda-data-model-sharing",
+          "short_name": "Privacy-Preserving EDA Sharing",
+          "display_name": "Privacy-Preserving EDA Sharing: Privacy-Preserving Data and Model Sharing for EDA via Inference Control and DP-SGD",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Privacy-Preserving Data and Model Sharing for EDA via Inference Control and DP-SGD",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189140",
+            "bibtex": "@inproceedings{deng2025privacypreservingedadata,\n  author = {Ziyu Deng and Rada Chirkova and Leigh Anne Clevenger and W. Rhett Davis},\n  title = {Privacy-Preserving Data and Model Sharing for EDA via Inference Control and DP-SGD},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189140}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189140"
+          },
+          "compare_when": [
+            "comparing privacy-preserving, model-sharing, or general ML-for-EDA methods"
+          ],
+          "benchmark_scope": [
+            "EDA data/model sharing experiments and privacy-preserving training or inference-control scenarios reported by the paper"
+          ],
+          "metrics": [
+            "privacy leakage / inference-control metric",
+            "utility retention",
+            "model/data sharing overhead"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
           ]
         }
       ]
@@ -9211,6 +10537,40 @@
           ]
         },
         {
+          "baseline_id": "decap-placement-dram",
+          "short_name": "Decap Placement for DRAM",
+          "display_name": "Decap Placement for DRAM: On-Chip Decoupling Capacitor Placement with Impedance Constraint for DRAM Design",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "On-Chip Decoupling Capacitor Placement with Impedance Constraint for DRAM Design",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189202",
+            "bibtex": "@inproceedings{shin2025decapplacementdram,\n  author = {Minseung Shin and Shilong Zhang and Geuna Chang and Youngsoo Shin},\n  title = {On-Chip Decoupling Capacitor Placement with Impedance Constraint for DRAM Design},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189202}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189202"
+          },
+          "compare_when": [
+            "comparing PDN/decap placement and impedance-constrained optimization approaches"
+          ],
+          "benchmark_scope": [
+            "DRAM/PDN decap-placement models and impedance-constrained test layouts reported by the paper"
+          ],
+          "metrics": [
+            "maximum impedance / voltage noise",
+            "decap area",
+            "optimization iterations"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: Iterative greedy decap placement."
+          ]
+        },
+        {
           "baseline_id": "mf-mor",
           "short_name": "MF-MOR",
           "display_name": "MF-MOR: Multi-Fidelity Model Order Reduction for Many-Port Linear Systems in Chip Power Modeling",
@@ -9878,7 +11238,43 @@
       "display_name": "Routing Optimization and Planning",
       "description": "Routability optimization, routing bend space planning, and routing resource estimation.",
       "aliases": [],
-      "baselines": []
+      "baselines": [
+        {
+          "baseline_id": "priority-aware-routing-ml",
+          "short_name": "Priority-Aware Routing ML",
+          "display_name": "Priority-Aware Routing ML: Priority-Aware Routing Optimization with Full-Path Delay Prediction Using Machine Learning",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Priority-Aware Routing Optimization with Full-Path Delay Prediction Using Machine Learning",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189121",
+            "bibtex": "@inproceedings{jo2025priorityawareroutingml,\n  author = {Hyunmin Jo and Heechun Park},\n  title = {Priority-Aware Routing Optimization with Full-Path Delay Prediction Using Machine Learning},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189121}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189121"
+          },
+          "compare_when": [
+            "comparing routing-order, delay-aware routing, or routing optimization methods"
+          ],
+          "benchmark_scope": [
+            "commercial or academic routing benchmarks and path-delay prediction/optimization cases reported by the paper"
+          ],
+          "metrics": [
+            "path delay",
+            "wirelength",
+            "routing quality",
+            "MSE when predicting delay"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: Synopsys IC Compiler II (ICC2)."
+          ]
+        }
+      ]
     },
     {
       "review_triggers": [
@@ -10050,6 +11446,73 @@
       "description": "Tools and benchmarks that convert circuit schematic images or diagrams into machine-readable circuit netlists for EDA reuse, dataset construction, or downstream analog/mixed-signal automation.",
       "baselines": [
         {
+          "baseline_id": "netlistify",
+          "short_name": "Netlistify",
+          "display_name": "Netlistify: Transforming Circuit Schematics into Netlists with Deep Learning",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Netlistify: Transforming Circuit Schematics into Netlists with Deep Learning",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189145",
+            "bibtex": "@inproceedings{huang2025netlistify,\n  author = {Chun-Yen Huang and Hsuan-I Chen and Hao-Wen Ho and Pei-Hsin Kang and Mark Po-Hung Lin and Wen-Hao Liu and Haoxing Ren},\n  title = {Netlistify: Transforming Circuit Schematics into Netlists with Deep Learning},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189145}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189145"
+          },
+          "compare_when": [
+            "evaluating ML/LLM-assisted schematic, netlist, or schematic-to-netlist conversion methods"
+          ],
+          "benchmark_scope": [
+            "schematic images, SPICE netlists, or netlist-to-schematic examples evaluated in the paper"
+          ],
+          "metrics": [
+            "component accuracy",
+            "connectivity accuracy",
+            "netlist generation correctness"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: GPT-4o."
+          ]
+        },
+        {
+          "baseline_id": "schemato",
+          "short_name": "Schemato",
+          "display_name": "Schemato - An LLM for Netlist-to-Schematic Conversion",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Schemato - An LLM for Netlist-to-Schematic Conversion",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189059",
+            "bibtex": "@inproceedings{matsuo2025schemato,\n  author = {Ryoga Matsuo and Stefan Uhlich and Arun Venkitaraman and Andrea Bonetti and Chia-Yu Hsieh and Ali Momeni and Lukas Mauch and Augusto Capone and Eisaku Ohbuchi and Lorenzo Servadei},\n  title = {Schemato - An LLM for Netlist-to-Schematic Conversion},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189059}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189059"
+          },
+          "compare_when": [
+            "evaluating ML/LLM-assisted schematic, netlist, or schematic-to-netlist conversion methods"
+          ],
+          "benchmark_scope": [
+            "schematic images, SPICE netlists, or netlist-to-schematic examples evaluated in the paper"
+          ],
+          "metrics": [
+            "component accuracy",
+            "connectivity accuracy",
+            "netlist generation correctness"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
+          ]
+        },
+        {
           "baseline_id": "sina",
           "short_name": "SINA",
           "display_name": "SINA: A Circuit Schematic Image-to-Netlist Generator Using Artificial Intelligence",
@@ -10197,7 +11660,41 @@
         "timing update"
       ],
       "description": "Baseline coverage guidance for papers that make static timing analysis claims.",
-      "baselines": []
+      "baselines": [
+        {
+          "baseline_id": "rl-cuda-graph-ssta-scheduling",
+          "short_name": "RL CUDA-Graph SSTA Scheduling",
+          "display_name": "RL CUDA-Graph SSTA Scheduling: Optimizing CUDA Graph Scheduling with Reinforcement Learning: A Case Study in SSTA Propagation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Optimizing CUDA Graph Scheduling with Reinforcement Learning: A Case Study in SSTA Propagation",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189194",
+            "bibtex": "@inproceedings{chiu2025rlcudagraphsstaschedulin,\n  author = {Cheng-Hsiang Chiu and Chedi Morchdi and Chih-Chun Chang and CUNXI YU and Yi Zhou and twhuang},\n  title = {Optimizing CUDA Graph Scheduling with Reinforcement Learning: A Case Study in SSTA Propagation},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189194}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189194"
+          },
+          "compare_when": [
+            "comparing GPU-accelerated static/statistical timing analysis scheduling or propagation methods"
+          ],
+          "benchmark_scope": [
+            "SSTA propagation graphs and GPU timing-analysis workloads reported by the paper"
+          ],
+          "metrics": [
+            "SSTA propagation runtime",
+            "CUDA graph scheduling quality",
+            "runtime improvement over application-given CUDA graph or random edge insertion"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
+          ]
+        }
+      ]
     },
     {
       "review_triggers": [
@@ -10424,6 +11921,39 @@
           ]
         },
         {
+          "baseline_id": "buggen",
+          "short_name": "BugGen",
+          "display_name": "BugGen: A Self-Correcting Multi-Agent LLM Pipeline for Realistic RTL Bug Synthesis",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "BugGen: A Self-Correcting Multi-Agent LLM Pipeline for Realistic RTL Bug Synthesis",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189127",
+            "bibtex": "@inproceedings{jasper2025buggen,\n  author = {Surya Jasper and Minh Luu and Evan Pan and Aakash Tyagi and Michael Quinn and Jiang Hu and David Kebo Houngninou},\n  title = {BugGen: A Self-Correcting Multi-Agent LLM Pipeline for Realistic RTL Bug Synthesis},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189127}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189127"
+          },
+          "compare_when": [
+            "comparing ML/LLM-assisted RTL bug generation, mutation testing, waveform triage, or fuzzing workflows"
+          ],
+          "benchmark_scope": [
+            "RTL verification infrastructures, processor/IP testbenches, waveform datasets, or generated-bug corpora used in the paper"
+          ],
+          "metrics": [
+            "coverage or bug-detection rate",
+            "classification accuracy",
+            "runtime / triage speedup"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
+          ]
+        },
+        {
           "baseline_id": "cotia",
           "short_name": "COTIA",
           "display_name": "COTIA: Concolic Testing with Intelligent Agent",
@@ -10458,6 +11988,39 @@
             "Limited benchmark set; generalizability to large industrial designs unclear"
           ],
           "links": {}
+        },
+        {
+          "baseline_id": "firefly",
+          "short_name": "Firefly",
+          "display_name": "Firefly: Shedding Light on Verification Gaps Using LLM-Powered Mutation Testing",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Firefly: Shedding Light on Verification Gaps Using LLM-Powered Mutation Testing",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189125",
+            "bibtex": "@inproceedings{skakov2025firefly,\n  author = {Bekzat Skakov and Sanzhar Abduraimov and Olzhas Nurman and Nursultan Kabylkas},\n  title = {Firefly: Shedding Light on Verification Gaps Using LLM-Powered Mutation Testing},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189125}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189125"
+          },
+          "compare_when": [
+            "comparing ML/LLM-assisted RTL bug generation, mutation testing, waveform triage, or fuzzing workflows"
+          ],
+          "benchmark_scope": [
+            "RTL verification infrastructures, processor/IP testbenches, waveform datasets, or generated-bug corpora used in the paper"
+          ],
+          "metrics": [
+            "coverage or bug-detection rate",
+            "classification accuracy",
+            "runtime / triage speedup"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
+          ]
         },
         {
           "baseline_id": "profuzz",
@@ -10533,6 +12096,40 @@
             "targets UVM-based RTL functional verification rather than full formal or signoff verification",
             "LLM-generated verification artifacts can still require simulation feedback and guardrails to avoid hallucinated names or protocol errors",
             "benchmark designs are moderate-size RTL examples, so subsystem- or SoC-scale generality should be reviewed separately"
+          ]
+        },
+        {
+          "baseline_id": "vcdiag",
+          "short_name": "VCDiag",
+          "display_name": "VCDiag: Classifying Erroneous Waveforms for Failure Triage Acceleration",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "VCDiag: Classifying Erroneous Waveforms for Failure Triage Acceleration",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189168",
+            "bibtex": "@inproceedings{luu2025vcdiag,\n  author = {Minh Luu and Surya Jasper and Khoi Le and Evan Pan and Michael Quinn and Aakash Tyagi and Jiang Hu},\n  title = {VCDiag: Classifying Erroneous Waveforms for Failure Triage Acceleration},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189168}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189168"
+          },
+          "compare_when": [
+            "comparing ML/LLM-assisted RTL bug generation, mutation testing, waveform triage, or fuzzing workflows"
+          ],
+          "benchmark_scope": [
+            "RTL verification infrastructures, processor/IP testbenches, waveform datasets, or generated-bug corpora used in the paper"
+          ],
+          "metrics": [
+            "coverage or bug-detection rate",
+            "classification accuracy",
+            "runtime / triage speedup"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: XGBoost, LightGBM, Random Forest."
           ]
         },
         {
@@ -10642,6 +12239,39 @@
           ]
         },
         {
+          "baseline_id": "3dic-thermal-solver",
+          "short_name": "3DIC Thermal Solver",
+          "display_name": "3DIC Thermal Solver: Multimodal Learning-Based Thermal Solver for 3DICs with Arbitrary Chip Dimensions and Power Distributions",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Multimodal Learning-Based Thermal Solver for 3DICs with Arbitrary Chip Dimensions and Power Distributions",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189201",
+            "bibtex": "@inproceedings{lu20253dicthermalsolver,\n  author = {Zelin Lu and Akhilesh Kumar and Norman Chang and Haiyang He and LANG LIN and Wenbo Xia and Jie Yang and Gang Qu},\n  title = {Multimodal Learning-Based Thermal Solver for 3DICs with Arbitrary Chip Dimensions and Power Distributions},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189201}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189201"
+          },
+          "compare_when": [
+            "comparing transient or 3DIC thermal-analysis acceleration methods"
+          ],
+          "benchmark_scope": [
+            "2D/3D chip thermal simulation scenarios and power-distribution cases reported by the paper"
+          ],
+          "metrics": [
+            "transient temperature prediction error",
+            "MSE",
+            "runtime / speedup"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
+          ]
+        },
+        {
           "baseline_id": "adaptivegnn-thermal",
           "short_name": "AdaptiveGNN-Thermal",
           "display_name": "Adaptive Graph Learning for Efficient Thermal Analysis of Multi-Stacking Chiplet Systems under Interface Variations",
@@ -10741,6 +12371,39 @@
             "no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review",
             "ETLA-3D's Mode 2 validity depends on sufficiently thin FEOL layers because thicker layers increase horizontal heat transfer and reduce aggregation accuracy",
             "proposed topic inherits the provisional thermal-analysis parent; human taxonomy review should decide whether thermal analysis belongs under circuit-verification or a broader signoff/manufacturability topic"
+          ]
+        },
+        {
+          "baseline_id": "fast-chip-temperature-ml",
+          "short_name": "Fast Chip Temperature ML",
+          "display_name": "Fast Chip Temperature ML: Fast Chip Transient Temperature Simulation via Machine Learning",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Fast Chip Transient Temperature Simulation via Machine Learning",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189189",
+            "bibtex": "@inproceedings{hajikhodaverdian2025fastchiptemperatureml,\n  author = {Mohammadamin Hajikhodaverdian and Sherief Reda and Ayse Coskun},\n  title = {Fast Chip Transient Temperature Simulation via Machine Learning},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189189}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189189"
+          },
+          "compare_when": [
+            "comparing transient or 3DIC thermal-analysis acceleration methods"
+          ],
+          "benchmark_scope": [
+            "2D/3D chip thermal simulation scenarios and power-distribution cases reported by the paper"
+          ],
+          "metrics": [
+            "transient temperature prediction error",
+            "MSE",
+            "runtime / speedup"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass."
           ]
         },
         {
@@ -11155,6 +12818,40 @@
             "pre-routing prediction accuracy depends on the quality of placement features; may not capture all routing-induced timing effects",
             "power/area overhead reduction may vary across technology nodes"
           ]
+        },
+        {
+          "baseline_id": "sgat-gru-delay-estimation",
+          "short_name": "SGAT-GRU",
+          "display_name": "Post-Routing Path Statistical Delay Estimation Based on SGAT-GRU Prediction Framework",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Post-Routing Path Statistical Delay Estimation Based on SGAT-GRU Prediction Framework",
+            "venue": "MLCAD",
+            "year": 2025,
+            "doi": "10.1109/mlcad65511.2025.11189191",
+            "bibtex": "@inproceedings{guo2025sgatgrudelayestimation,\n  author = {Jingjing Guo and Xuejie Ning and Suohang Yang and Jun Yang and Zhikuang Cai},\n  title = {Post-Routing Path Statistical Delay Estimation Based on SGAT-GRU Prediction Framework},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189191}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/mlcad65511.2025.11189191"
+          },
+          "compare_when": [
+            "comparing statistical timing, delay-prediction, or SSTA scheduling methods"
+          ],
+          "benchmark_scope": [
+            "post-routing path delay, SSTA, or timing propagation datasets reported by the paper"
+          ],
+          "metrics": [
+            "delay prediction MAE/MSE",
+            "SSTA runtime",
+            "prediction accuracy"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
+            "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
+            "Draft audit recorded experiment comparison candidates including: GAT, SGAT-GAT."
+          ]
         }
       ]
     },
@@ -11461,6 +13158,6 @@
   ],
   "_counts": {
     "topics": 106,
-    "baselines": 267
+    "baselines": 317
   }
 }

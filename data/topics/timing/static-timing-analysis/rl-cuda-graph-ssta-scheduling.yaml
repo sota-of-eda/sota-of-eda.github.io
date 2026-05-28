@@ -1,0 +1,25 @@
+baseline_id: rl-cuda-graph-ssta-scheduling
+short_name: RL CUDA-Graph SSTA Scheduling
+display_name: 'RL CUDA-Graph SSTA Scheduling: Optimizing CUDA Graph Scheduling with Reinforcement Learning: A Case Study in SSTA Propagation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Optimizing CUDA Graph Scheduling with Reinforcement Learning: A Case Study in SSTA Propagation'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189194
+  bibtex: "@inproceedings{chiu2025rlcudagraphsstaschedulin,\n  author = {Cheng-Hsiang Chiu and Chedi Morchdi and Chih-Chun Chang and CUNXI YU and Yi Zhou and twhuang},\n  title = {Optimizing CUDA Graph Scheduling with Reinforcement Learning: A Case Study in SSTA Propagation},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189194}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189194
+compare_when:
+- comparing GPU-accelerated static/statistical timing analysis scheduling or propagation methods
+benchmark_scope:
+- SSTA propagation graphs and GPU timing-analysis workloads reported by the paper
+metrics:
+- SSTA propagation runtime
+- CUDA graph scheduling quality
+- runtime improvement over application-given CUDA graph or random edge insertion
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.

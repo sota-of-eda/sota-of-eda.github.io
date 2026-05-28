@@ -1,0 +1,26 @@
+baseline_id: scalertl
+short_name: ScaleRTL
+display_name: 'ScaleRTL: Scaling LLMs with Reasoning Data and Test-Time Compute for Accurate RTL Code Generation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ScaleRTL: Scaling LLMs with Reasoning Data and Test-Time Compute for Accurate RTL Code Generation'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189212
+  bibtex: "@inproceedings{deng2025scalertl,\n  author = {Chenhui Deng and Yun-Da Tsai and Guan-Ting Liu and Zhongzhi Yu and Haoxing Ren},\n  title = {ScaleRTL: Scaling LLMs with Reasoning Data and Test-Time Compute for Accurate RTL Code Generation},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189212}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189212
+compare_when:
+- comparing LLM-assisted RTL generation, repair, optimization, or low-power RTL prompting methods
+benchmark_scope:
+- RTL-generation benchmarks, HDLBits/VerilogEval/RTLLM-style tasks, or paper-specific RTL designs reported in the MLCAD 2025 experiments
+metrics:
+- pass@k / functional correctness
+- syntax correctness
+- PPA or low-power quality when reported
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.
+- 'Draft audit recorded experiment comparison candidates including: DeepSeek-R1-Distill-Qwen-32B, CodeV-6.7B, OriGen-6.7B, CraftRTL-15B, Claude3.5-Sonnet.'

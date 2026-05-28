@@ -1,0 +1,25 @@
+baseline_id: privacy-preserving-eda-data-model-sharing
+short_name: Privacy-Preserving EDA Sharing
+display_name: 'Privacy-Preserving EDA Sharing: Privacy-Preserving Data and Model Sharing for EDA via Inference Control and DP-SGD'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Privacy-Preserving Data and Model Sharing for EDA via Inference Control and DP-SGD
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189140
+  bibtex: "@inproceedings{deng2025privacypreservingedadata,\n  author = {Ziyu Deng and Rada Chirkova and Leigh Anne Clevenger and W. Rhett Davis},\n  title = {Privacy-Preserving Data and Model Sharing for EDA via Inference Control and DP-SGD},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189140}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189140
+compare_when:
+- comparing privacy-preserving, model-sharing, or general ML-for-EDA methods
+benchmark_scope:
+- EDA data/model sharing experiments and privacy-preserving training or inference-control scenarios reported by the paper
+metrics:
+- privacy leakage / inference-control metric
+- utility retention
+- model/data sharing overhead
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.

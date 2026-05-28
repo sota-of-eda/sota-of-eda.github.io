@@ -1,0 +1,26 @@
+baseline_id: lasso
+short_name: LASSO
+display_name: 'LASSO: LLM-Aided Security Property Generation for Assertion-based SoC Verification'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'LASSO: LLM-Aided Security Property Generation for Assertion-based SoC Verification'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189178
+  bibtex: "@inproceedings{ankireddy2025lasso,\n  author = {Dinesh Reddy Ankireddy and Sudipta Paria and Aritra Dasgupta and Sandip Ray and Swarup Bhunia},\n  title = {LASSO: LLM-Aided Security Property Generation for Assertion-based SoC Verification},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189178}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189178
+compare_when:
+- comparing LLM-based assertion or security-property generation workflows
+benchmark_scope:
+- SystemVerilog assertion/security-property generation tasks and RTL/security benchmark sets reported in the paper
+metrics:
+- valid/non-vacuous assertion count
+- functional match / coverage
+- generation accuracy
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.
+- 'Draft audit recorded experiment comparison candidates including: GPT-4o, Gemini-1.5, Llama-3.1.'

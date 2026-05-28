@@ -1,0 +1,25 @@
+baseline_id: prompt-rram
+short_name: PROMPT
+display_name: 'PROMPT: Prediction Model for RRAM Programming Optimized by Adaptive Mechanism and Progressive Continuous Transformation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'PROMPT: Prediction Model for RRAM Programming Optimized by Adaptive Mechanism and Progressive Continuous Transformation'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189229
+  bibtex: "@inproceedings{guo2025promptrram,\n  author = {Yanxing Guo and Ling Liang and Zihao Zheng and Zezhi Cheng and Yuhang Yang and linbo shan and Zongwei Wang and Yimao Cai},\n  title = {PROMPT: Prediction Model for RRAM Programming Optimized by Adaptive Mechanism and Progressive Continuous Transformation},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189229}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189229
+compare_when:
+- comparing ML-assisted emerging-technology design automation methods
+benchmark_scope:
+- RRAM/CIM/emerging-device design tasks and optimization datasets reported by the paper
+metrics:
+- prediction accuracy
+- design optimization score
+- resource or programming-effort reduction
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.

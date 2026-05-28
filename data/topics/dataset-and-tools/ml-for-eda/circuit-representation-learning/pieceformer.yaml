@@ -1,0 +1,25 @@
+baseline_id: pieceformer
+short_name: Pieceformer
+display_name: 'Pieceformer: Similarity-Driven Knowledge Transfer via Scalable Graph Transformer in VLSI'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Pieceformer: Similarity-Driven Knowledge Transfer via Scalable Graph Transformer in VLSI'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189177
+  bibtex: "@inproceedings{yang2025pieceformer,\n  author = {Hang Yang and Callie Hao and Yong Liu and Yusheng Hu},\n  title = {Pieceformer: Similarity-Driven Knowledge Transfer via Scalable Graph Transformer in VLSI},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189177}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189177
+compare_when:
+- evaluating circuit graph representation learning and transfer-learning methods
+benchmark_scope:
+- VLSI graph benchmarks and circuit-transfer experiments reported by the paper
+metrics:
+- transfer accuracy
+- ranking/similarity quality
+- DSE speedup
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.

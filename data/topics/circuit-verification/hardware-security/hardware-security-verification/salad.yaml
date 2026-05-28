@@ -1,0 +1,25 @@
+baseline_id: salad
+short_name: SALAD
+display_name: 'SALAD: Systematic Assessment of Machine Unlearning on LLM-Aided Hardware Design'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'SALAD: Systematic Assessment of Machine Unlearning on LLM-Aided Hardware Design'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189152
+  bibtex: "@inproceedings{wang2025salad,\n  author = {Zeng Wang and Minghao Shao and Rupesh Raj Karn and Lakshmi Likhitha Mankali and Jitendra Bhandari and Ramesh Karri and Ozgur Sinanoglu and Muhammad Shafique and Johann Knechtel},\n  title = {SALAD: Systematic Assessment of Machine Unlearning on LLM-Aided Hardware Design},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189152}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189152
+compare_when:
+- evaluating security analysis or machine-unlearning methods for generated hardware designs
+benchmark_scope:
+- LLM-generated RTL security checks, hardware-design unlearning tasks, or security benchmark suites used by the paper
+metrics:
+- security-rule violations
+- forgetting/retention metrics
+- generated-design correctness
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.

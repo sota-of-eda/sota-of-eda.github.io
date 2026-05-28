@@ -1,0 +1,26 @@
+baseline_id: ml-inspired-logic-synthesis
+short_name: ML-Inspired Logic Synthesis
+display_name: 'ML-Inspired Logic Synthesis: Improving Multiplier Circuits'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ML-Inspired Logic Synthesis: Improving Multiplier Circuits'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189110
+  bibtex: "@inproceedings{miyasaka2025mlinspiredlogicsynthesis,\n  author = {Yukio Miyasaka and Walter Lau Neto and Eleonora Testa and Anika Prasad and Michael Shuster and Reto Zimmermann and Patrick Vuillod and Alan Mishchenko and John Wawrzynek and Luca Amaru},\n  title = {ML-Inspired Logic Synthesis: Improving Multiplier Circuits},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189110}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189110
+compare_when:
+- comparing learned or LLM-assisted logic/datapath synthesis and technology-mapping flows
+benchmark_scope:
+- RTL datapath, multiplier, FPGA mapping, or resynthesis benchmarks evaluated in the paper
+metrics:
+- area
+- delay / timing
+- PPA improvement
+- runtime
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.

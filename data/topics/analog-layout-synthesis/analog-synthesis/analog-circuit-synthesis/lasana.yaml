@@ -1,0 +1,25 @@
+baseline_id: lasana
+short_name: LASANA
+display_name: 'LASANA: Large-scale Surrogate Modeling for Analog Neuromorphic Architecture Exploration'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'LASANA: Large-scale Surrogate Modeling for Analog Neuromorphic Architecture Exploration'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189133
+  bibtex: "@inproceedings{ho2025lasana,\n  author = {Jason Ho and James A. Boyle and Linshen Liu and Andreas Gerstlauer},\n  title = {LASANA: Large-scale Surrogate Modeling for Analog Neuromorphic Architecture Exploration},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189133}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189133
+compare_when:
+- comparing ML/LLM-assisted analog circuit modeling, architecture exploration, or subcircuit-identification methods
+benchmark_scope:
+- analog/RF/neuromorphic circuits, SPICE netlists, or subcircuit-identification benchmarks from the paper
+metrics:
+- prediction/classification accuracy
+- simulation speedup
+- energy/latency error
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.

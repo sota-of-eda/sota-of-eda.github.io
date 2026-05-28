@@ -1,0 +1,27 @@
+baseline_id: priority-aware-routing-ml
+short_name: Priority-Aware Routing ML
+display_name: 'Priority-Aware Routing ML: Priority-Aware Routing Optimization with Full-Path Delay Prediction Using Machine Learning'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Priority-Aware Routing Optimization with Full-Path Delay Prediction Using Machine Learning
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189121
+  bibtex: "@inproceedings{jo2025priorityawareroutingml,\n  author = {Hyunmin Jo and Heechun Park},\n  title = {Priority-Aware Routing Optimization with Full-Path Delay Prediction Using Machine Learning},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189121}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189121
+compare_when:
+- comparing routing-order, delay-aware routing, or routing optimization methods
+benchmark_scope:
+- commercial or academic routing benchmarks and path-delay prediction/optimization cases reported by the paper
+metrics:
+- path delay
+- wirelength
+- routing quality
+- MSE when predicting delay
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.
+- 'Draft audit recorded experiment comparison candidates including: Synopsys IC Compiler II (ICC2).'

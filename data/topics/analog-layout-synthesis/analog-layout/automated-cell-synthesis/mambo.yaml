@@ -1,0 +1,27 @@
+baseline_id: mambo
+short_name: MAMBO
+display_name: 'Industry Track: MAMBO: ML Accelerated Multi-Agent Black-Box Optimization for Enhancing Standard Cell Synthesis Quality'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Industry Track: MAMBO: ML Accelerated Multi-Agent Black-Box Optimization for Enhancing Standard Cell Synthesis Quality'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189185
+  bibtex: "@inproceedings{liu2025mambo,\n  author = {Tianchi Liu and Sriram Madhavan and Dastagiri Dudekula and Luke Thomas and Ivo van Zandvoort and Maarten Berkens},\n  title = {Industry Track: MAMBO: ML Accelerated Multi-Agent Black-Box Optimization for Enhancing Standard Cell Synthesis Quality},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189185}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189185
+compare_when:
+- evaluating standard-cell or cell-library synthesis, compaction, and optimization methods
+benchmark_scope:
+- standard-cell synthesis, standard-cell library, or cell-library compaction experiments reported by the paper
+metrics:
+- PPA
+- cell-library size
+- EDA tool runtime
+- standard-cell synthesis quality
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.
+- 'Draft audit recorded experiment comparison candidates including: TPE sampler, Randomized search, Gaussian process.'

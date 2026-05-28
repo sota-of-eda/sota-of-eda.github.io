@@ -1,0 +1,25 @@
+baseline_id: buggen
+short_name: BugGen
+display_name: 'BugGen: A Self-Correcting Multi-Agent LLM Pipeline for Realistic RTL Bug Synthesis'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'BugGen: A Self-Correcting Multi-Agent LLM Pipeline for Realistic RTL Bug Synthesis'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189127
+  bibtex: "@inproceedings{jasper2025buggen,\n  author = {Surya Jasper and Minh Luu and Evan Pan and Aakash Tyagi and Michael Quinn and Jiang Hu and David Kebo Houngninou},\n  title = {BugGen: A Self-Correcting Multi-Agent LLM Pipeline for Realistic RTL Bug Synthesis},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189127}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189127
+compare_when:
+- comparing ML/LLM-assisted RTL bug generation, mutation testing, waveform triage, or fuzzing workflows
+benchmark_scope:
+- RTL verification infrastructures, processor/IP testbenches, waveform datasets, or generated-bug corpora used in the paper
+metrics:
+- coverage or bug-detection rate
+- classification accuracy
+- runtime / triage speedup
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.

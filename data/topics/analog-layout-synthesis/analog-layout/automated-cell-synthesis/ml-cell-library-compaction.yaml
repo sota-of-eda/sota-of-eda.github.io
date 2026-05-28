@@ -1,0 +1,26 @@
+baseline_id: ml-cell-library-compaction
+short_name: ML Cell Library Compaction
+display_name: 'ML Cell Library Compaction: Machine-Learning Driven Cell Library Compaction'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Machine-Learning Driven Cell Library Compaction
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189107
+  bibtex: "@inproceedings{cho2025mlcelllibrarycompaction,\n  author = {Handong Cho and Taewhan Kim},\n  title = {Machine-Learning Driven Cell Library Compaction},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189107}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189107
+compare_when:
+- evaluating standard-cell or cell-library synthesis, compaction, and optimization methods
+benchmark_scope:
+- standard-cell synthesis, standard-cell library, or cell-library compaction experiments reported by the paper
+metrics:
+- PPA
+- cell-library size
+- EDA tool runtime
+- standard-cell synthesis quality
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.

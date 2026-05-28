@@ -1,0 +1,26 @@
+baseline_id: context-enhanced-spec-generation
+short_name: Context-Enhanced Spec Generation
+display_name: 'Context-Enhanced Spec Generation: Context-Enhanced Architectural Specification Generation for SoC Designs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Context-Enhanced Architectural Specification Generation for SoC Designs
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189058
+  bibtex: "@inproceedings{ahmed2025contextenhancedspecgener,\n  author = {Md Rubel Ahmed and Sadiba Nusrat Nur and Rickard Ewetz},\n  title = {Context-Enhanced Architectural Specification Generation for SoC Designs},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189058}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189058
+compare_when:
+- evaluating LLM-based EDA documentation, summarization, question answering, or specification-generation assistants
+benchmark_scope:
+- OpenCores/Verilog projects, architecture specifications, or design-assistant QA tasks used in the paper
+metrics:
+- summary or specification quality
+- question-answering accuracy
+- ROUGE/BERTScore or LLM-judge scores when reported
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.
+- 'Draft audit recorded experiment comparison candidates including: RTL-only prompting, GPT-4.1-mini, GPT-4.1-nano, GPT-3.5.'

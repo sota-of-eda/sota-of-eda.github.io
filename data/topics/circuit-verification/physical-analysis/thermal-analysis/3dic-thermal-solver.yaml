@@ -1,0 +1,25 @@
+baseline_id: 3dic-thermal-solver
+short_name: 3DIC Thermal Solver
+display_name: '3DIC Thermal Solver: Multimodal Learning-Based Thermal Solver for 3DICs with Arbitrary Chip Dimensions and Power Distributions'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Multimodal Learning-Based Thermal Solver for 3DICs with Arbitrary Chip Dimensions and Power Distributions
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189201
+  bibtex: "@inproceedings{lu20253dicthermalsolver,\n  author = {Zelin Lu and Akhilesh Kumar and Norman Chang and Haiyang He and LANG LIN and Wenbo Xia and Jie Yang and Gang Qu},\n  title = {Multimodal Learning-Based Thermal Solver for 3DICs with Arbitrary Chip Dimensions and Power Distributions},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189201}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189201
+compare_when:
+- comparing transient or 3DIC thermal-analysis acceleration methods
+benchmark_scope:
+- 2D/3D chip thermal simulation scenarios and power-distribution cases reported by the paper
+metrics:
+- transient temperature prediction error
+- MSE
+- runtime / speedup
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.

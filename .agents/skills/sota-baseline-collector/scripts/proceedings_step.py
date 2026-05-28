@@ -27,7 +27,7 @@ METADATA_FIELDS = [
 REGISTRY_FIELDS = ["match_key", "baseline_id", "topic_id", "short_name", "display_name", "title", "doi"]
 POLLUTION_RE = re.compile(r"\b(1st|2nd|3rd|University|School of|Department|Faculty|@|\.edu|\.com)\b", re.I)
 SECTION_RE = re.compile(r"\b(Abstract|Experiment|Experimental|Evaluation|Results|Benchmark|Table|Fig\.?|Figure)\b", re.I)
-ROLE_VALUES = {"proposed_method", "benchmark", "tool", "dataset", "unknown"}
+ROLE_VALUES = {"proposed_method", "method", "benchmark", "tool", "dataset", "unknown"}
 EXPERIMENT_ROLE_VALUES = {"compared_method", "tool_flow", "benchmark", "ablation", "metric_reference"}
 REQUEST_KIND_VALUES = {"candidate_paper", "experiment_baseline"}
 
@@ -211,6 +211,29 @@ def authors_text(value: Any) -> str:
     return "; ".join(str(v).strip() for v in as_list(value) if str(v).strip())
 
 
+def extract_topic(data: dict[str, Any]) -> str:
+    topic = data.get("topic")
+    if isinstance(topic, dict):
+        return str(topic.get("topic_id", "") or "").strip()
+    return str(data.get("topic_hint", "") or "").strip()
+
+
+def extract_candidate(data: dict[str, Any]) -> dict[str, Any]:
+    candidate = data.get("candidate")
+    if isinstance(candidate, dict):
+        return candidate
+    candidate = data.get("candidate_baseline")
+    return candidate if isinstance(candidate, dict) else {}
+
+
+def extract_reason(data: dict[str, Any]) -> str:
+    return str(data.get("reason", "") or data.get("notes", "") or "").strip()
+
+
+def candidate_role(candidate: dict[str, Any]) -> str:
+    return str(candidate.get("role", "") or candidate.get("kind", "") or "unknown")
+
+
 def validate_extract(data: dict[str, Any]) -> list[str]:
     errors: list[str] = []
     decision = str(data.get("decision", "")).strip()
@@ -221,11 +244,11 @@ def validate_extract(data: dict[str, Any]) -> list[str]:
         errors.append("title is required for draft/deferred")
     if title and POLLUTION_RE.search(title):
         errors.append(f"polluted title: {title}")
-    candidate = data.get("candidate_baseline") or {}
+    candidate = data.get("candidate") or data.get("candidate_baseline") or {}
     if candidate and not isinstance(candidate, dict):
-        errors.append("candidate_baseline must be a mapping")
+        errors.append("candidate/candidate_baseline must be a mapping")
     if isinstance(candidate, dict):
-        role = str(candidate.get("role", "unknown") or "unknown")
+        role = candidate_role(candidate)
         if role not in ROLE_VALUES:
             errors.append(f"invalid candidate role: {role}")
     for i, baseline in enumerate(as_list(data.get("experiment_baselines")), 1):
@@ -240,6 +263,8 @@ def validate_extract(data: dict[str, Any]) -> list[str]:
         if role not in EXPERIMENT_ROLE_VALUES:
             errors.append(f"experiment_baselines[{i}] invalid role: {role}")
     for i, req in enumerate(as_list(data.get("metadata_requests")), 1):
+        if isinstance(req, str):
+            continue
         if not isinstance(req, dict):
             errors.append(f"metadata_requests[{i}] must be a mapping")
             continue
@@ -405,7 +430,7 @@ def attach_extract(args: argparse.Namespace) -> int:
         shutil.copyfile(args.extract, out)
     exp_count = len(as_list(data.get("experiment_baselines")))
     decision = str(data.get("decision", "deferred") or "deferred")
-    topic = str(data.get("topic_hint", "") or "")
+    topic = extract_topic(data)
     report = {
         "item_id": args.id,
         "source_path": row["source_path"],
@@ -415,7 +440,7 @@ def attach_extract(args: argparse.Namespace) -> int:
         "topic": topic,
         "doi": str(data.get("doi", "") or ""),
         "bibtex_status": "missing",
-        "reason": str(data.get("reason", "") or ""),
+        "reason": extract_reason(data),
         "packet_path": row.get("packet_path") or str(paths["packets"] / f"{args.id}.md"),
         "extract_path": str(out),
         "n_experiment_baselines": str(exp_count),
@@ -468,9 +493,7 @@ def draft(args: argparse.Namespace) -> int:
     if not row.get("extract_path"):
         raise SystemExit("draft rows need extract_path; run attach-extract")
     extract = load_extract(Path(row["extract_path"]))
-    candidate = extract.get("candidate_baseline") or {}
-    if not isinstance(candidate, dict):
-        candidate = {}
+    candidate = extract_candidate(extract)
     authors = [str(a).strip() for a in as_list(extract.get("authors")) if str(a).strip()]
     content = {
         "draft_kind": "proceedings_candidate",
@@ -481,7 +504,7 @@ def draft(args: argparse.Namespace) -> int:
             "baseline_id": slug(str(candidate.get("name") or row["title"])),
             "title": row["title"],
             "authors": authors,
-            "role": str(candidate.get("role", "unknown") or "unknown"),
+            "role": candidate_role(candidate),
             "doi": row.get("doi", ""),
             "bibtex_status": row.get("bibtex_status", "missing"),
         },
@@ -549,10 +572,6 @@ def audit(args: argparse.Namespace) -> int:
             data = load_extract(Path(row["extract_path"]))
             for err in validate_extract(data):
                 errors.append(f"{item}: {err}")
-            for baseline in as_list(data.get("experiment_baselines")):
-                if isinstance(baseline, dict):
-                    if not match_registry(registry_lookup(args.batch), str(baseline.get("name", "") or "")) and not str(baseline.get("search_query_hint", "") or ""):
-                        errors.append(f"{item}: unmatched experiment baseline lacks search_query_hint: {baseline.get('name', '')}")
     print(f"items={len(items)} reports={len(reports)} errors={len(errors)}")
     for err in errors:
         print(f"ERROR: {err}")

@@ -1,0 +1,25 @@
+baseline_id: trusting-the-machine
+short_name: Trusting the Machine
+display_name: 'Trusting the Machine: How Secure is LLM-Generated RTL Code?'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Trusting the Machine: How Secure is LLM-Generated RTL Code?'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189213
+  bibtex: "@inproceedings{ibnat2025trustingthemachine,\n  author = {Zahin Ibnat and Paul E. Calzada and Dipayan Saha and Hasan Al-Shaikh and Sujan Kumar Saha and Jingbo Zhou and Farimah Farahmandi and Mark Tehranipoor},\n  title = {Trusting the Machine: How Secure is LLM-Generated RTL Code?},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189213}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189213
+compare_when:
+- evaluating security analysis or machine-unlearning methods for generated hardware designs
+benchmark_scope:
+- LLM-generated RTL security checks, hardware-design unlearning tasks, or security benchmark suites used by the paper
+metrics:
+- security-rule violations
+- forgetting/retention metrics
+- generated-design correctness
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.

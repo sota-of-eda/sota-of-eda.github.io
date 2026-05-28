@@ -1,0 +1,27 @@
+baseline_id: mapping-fusion
+short_name: Mapping Fusion
+display_name: 'Mapping Fusion: Improving FPGA Technology Mapping with ASIC Mapper'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Mapping Fusion: Improving FPGA Technology Mapping with ASIC Mapper'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189128
+  bibtex: "@inproceedings{yu2025mappingfusion,\n  author = {CUNXI YU},\n  title = {Mapping Fusion: Improving FPGA Technology Mapping with ASIC Mapper},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189128}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189128
+compare_when:
+- comparing learned or LLM-assisted logic/datapath synthesis and technology-mapping flows
+benchmark_scope:
+- RTL datapath, multiplier, FPGA mapping, or resynthesis benchmarks evaluated in the paper
+metrics:
+- area
+- delay / timing
+- PPA improvement
+- runtime
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.
+- 'Draft audit recorded experiment comparison candidates including: ABC map, ABC LUT mapper if -K.'

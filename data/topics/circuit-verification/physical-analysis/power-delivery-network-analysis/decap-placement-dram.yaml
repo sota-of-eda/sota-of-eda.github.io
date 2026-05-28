@@ -1,0 +1,26 @@
+baseline_id: decap-placement-dram
+short_name: Decap Placement for DRAM
+display_name: 'Decap Placement for DRAM: On-Chip Decoupling Capacitor Placement with Impedance Constraint for DRAM Design'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: On-Chip Decoupling Capacitor Placement with Impedance Constraint for DRAM Design
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189202
+  bibtex: "@inproceedings{shin2025decapplacementdram,\n  author = {Minseung Shin and Shilong Zhang and Geuna Chang and Youngsoo Shin},\n  title = {On-Chip Decoupling Capacitor Placement with Impedance Constraint for DRAM Design},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189202}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189202
+compare_when:
+- comparing PDN/decap placement and impedance-constrained optimization approaches
+benchmark_scope:
+- DRAM/PDN decap-placement models and impedance-constrained test layouts reported by the paper
+metrics:
+- maximum impedance / voltage noise
+- decap area
+- optimization iterations
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.
+- 'Draft audit recorded experiment comparison candidates including: Iterative greedy decap placement.'

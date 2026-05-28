@@ -1,3 +1,3 @@
 display_name: SOTA Baseline Collector
-short_description: Draft SOTA-of-EDA candidates from papers, proceedings, PDFs, or Claude extracts without polluting accepted registry data.
-default_prompt: Process one SOTA-of-EDA candidate or proceedings source path into reviewable drafts, including experiment-baseline evidence and metadata follow-up requests.
+short_description: Draft SOTA-of-EDA candidates and guard topic taxonomy before accepted registry merge.
+default_prompt: Process SOTA-of-EDA proceedings into reviewable drafts, then run topic creation/rearrange gates before any accepted merge.

@@ -1,0 +1,26 @@
+baseline_id: hada
+short_name: HADA
+display_name: 'HADA: Leveraging Multi-Source Data to Train Large Language Models for Hardware Security Assertion Generation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'HADA: Leveraging Multi-Source Data to Train Large Language Models for Hardware Security Assertion Generation'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189143
+  bibtex: "@inproceedings{fu2025hada,\n  author = {Weimin Fu and Yiting Wang and Zelin Lu and Xiaolong Guo and Gang Qu},\n  title = {HADA: Leveraging Multi-Source Data to Train Large Language Models for Hardware Security Assertion Generation},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189143}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189143
+compare_when:
+- comparing LLM-based assertion or security-property generation workflows
+benchmark_scope:
+- SystemVerilog assertion/security-property generation tasks and RTL/security benchmark sets reported in the paper
+metrics:
+- valid/non-vacuous assertion count
+- functional match / coverage
+- generation accuracy
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.
+- 'Draft audit recorded experiment comparison candidates including: GPT-4o-mini, LLaMA3 70B, LLaMA3.2 3B.'

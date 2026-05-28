@@ -1,0 +1,26 @@
+baseline_id: netlistify
+short_name: Netlistify
+display_name: 'Netlistify: Transforming Circuit Schematics into Netlists with Deep Learning'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Netlistify: Transforming Circuit Schematics into Netlists with Deep Learning'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189145
+  bibtex: "@inproceedings{huang2025netlistify,\n  author = {Chun-Yen Huang and Hsuan-I Chen and Hao-Wen Ho and Pei-Hsin Kang and Mark Po-Hung Lin and Wen-Hao Liu and Haoxing Ren},\n  title = {Netlistify: Transforming Circuit Schematics into Netlists with Deep Learning},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189145}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189145
+compare_when:
+- evaluating ML/LLM-assisted schematic, netlist, or schematic-to-netlist conversion methods
+benchmark_scope:
+- schematic images, SPICE netlists, or netlist-to-schematic examples evaluated in the paper
+metrics:
+- component accuracy
+- connectivity accuracy
+- netlist generation correctness
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.
+- 'Draft audit recorded experiment comparison candidates including: GPT-4o.'

@@ -1,0 +1,27 @@
+baseline_id: ml-rank-prediction-eda-tool-parameter-optimization
+short_name: ML Rank-Prediction DSO
+display_name: 'ML Rank-Prediction DSO: EDA Tool Parameter Optimization Through Fast and Reliable Machine-Learning based Rank Prediction Model'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: EDA Tool Parameter Optimization Through Fast and Reliable Machine-Learning based Rank Prediction Model
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189232
+  bibtex: "@inproceedings{won2025mlrankpredictionedatoolp,\n  author = {Doyeon Won and Taewhan Kim},\n  title = {EDA Tool Parameter Optimization Through Fast and Reliable Machine-Learning based Rank Prediction Model},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189232}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189232
+compare_when:
+- comparing EDA flow autotuning, parameter optimization, and agentic P&R trajectory optimization methods
+benchmark_scope:
+- OpenROAD/ORFS, P&R, or commercial EDA flow-parameter optimization tasks used in the paper
+metrics:
+- PPA / QoR
+- wirelength or timing proxy
+- optimization iterations
+- runtime
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.
+- 'Draft audit recorded experiment comparison candidates including: FIST, PPA prediction based sampling.'

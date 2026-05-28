@@ -10,6 +10,8 @@ from pathlib import Path
 import yaml
 
 STEP = Path(".agents/skills/sota-baseline-collector/scripts/proceedings_step.py")
+CLAUDE_SKILL = Path(".claude/skills/proceedings-extractor/SKILL.md")
+TEMPLATE = Path(".claude/skills/proceedings-extractor/scripts/review_template.py")
 
 
 def run(cmd: list[str], *, capture: bool = False) -> subprocess.CompletedProcess[str]:
@@ -36,14 +38,45 @@ def packet(batch: Path, item_id: str) -> Path:
 
 def claude_prompt(packet_path: Path) -> str:
     packet_text = packet_path.read_text(encoding="utf-8")
-    return f"""Use the /proceedings-extractor skill. Return YAML only.
+    skill_text = CLAUDE_SKILL.read_text(encoding="utf-8") if CLAUDE_SKILL.exists() else ""
+    template_text = run(["python3", str(TEMPLATE), "--id", packet_path.stem, "--source", str(packet_path)], capture=True).stdout
+    return f"""Return YAML only. Fill this template; keep unknown fields empty and list them under needs.
+Do not include markdown fences or commentary. Use double-quoted strings for free text.
+Experiment baselines must come only from Experiment/Evaluation/Results/Table/Figure evidence.
+
+Extractor rules:
+```markdown
+{skill_text}
+```
+
+Template:
+```yaml
+{template_text}
+```
 
 Packet path: {packet_path}
 
+Packet:
 ```markdown
 {packet_text}
 ```
 """
+
+
+def yaml_text(text: str) -> str:
+    text = text.strip()
+    if "\ndecision:" in text and not text.startswith("decision:"):
+        text = "decision:" + text.split("\ndecision:", 1)[1]
+    if text.startswith("```"):
+        lines = text.splitlines()
+        if lines and lines[0].startswith("```"):
+            lines = lines[1:]
+        if lines and lines[-1].strip() == "```":
+            lines = lines[:-1]
+        text = "\n".join(lines).strip()
+    if text.endswith("```"):
+        text = text.rsplit("```", 1)[0].strip()
+    return text
 
 
 def run_claude(args: argparse.Namespace) -> int:
@@ -62,9 +95,9 @@ def run_claude(args: argparse.Namespace) -> int:
         cmd += ["--model", args.model]
     cmd.append(claude_prompt(packet_path))
     result = run(cmd, capture=True)
-    text = result.stdout.strip()
+    text = yaml_text(result.stdout)
     # Fail early if Claude did not follow YAML-only output.
-    yaml.safe_load(text.replace("```yaml", "").replace("```", ""))
+    yaml.safe_load(text)
     out.write_text(text + "\n", encoding="utf-8")
     print(out)
     return 0
@@ -94,7 +127,7 @@ def run_one(args: argparse.Namespace) -> int:
         return rc
     extract = args.batch / "extracts" / f"{item_id}.yaml"
     step(["attach-extract", "--batch", str(args.batch), "--id", item_id, "--extract", str(extract), "--force"])
-    data = yaml.safe_load(extract.read_text(encoding="utf-8").replace("```yaml", "").replace("```", "")) or {}
+    data = yaml.safe_load(yaml_text(extract.read_text(encoding="utf-8"))) or {}
     if data.get("decision") == "draft":
         step(["draft", "--batch", str(args.batch), "--id", item_id])
     step(["audit", "--batch", str(args.batch)])

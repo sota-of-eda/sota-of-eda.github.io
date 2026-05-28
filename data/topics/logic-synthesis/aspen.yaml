@@ -1,0 +1,27 @@
+baseline_id: aspen
+short_name: ASPEN
+display_name: 'ASPEN: LLM-Guided E-Graph Rewriting for RTL Datapath Optimization'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ASPEN: LLM-Guided E-Graph Rewriting for RTL Datapath Optimization'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189222
+  bibtex: "@inproceedings{zhang2025aspen,\n  author = {Niansong Zhang and Chenhui Deng and Johannes Maximilian Kuehn and Chia-Tung Ho and CUNXI YU and Zhiru Zhang and Haoxing Ren},\n  title = {ASPEN: LLM-Guided E-Graph Rewriting for RTL Datapath Optimization},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189222}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189222
+compare_when:
+- comparing learned or LLM-assisted logic/datapath synthesis and technology-mapping flows
+benchmark_scope:
+- RTL datapath, multiplier, FPGA mapping, or resynthesis benchmarks evaluated in the paper
+metrics:
+- area
+- delay / timing
+- PPA improvement
+- runtime
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.
+- 'Draft audit recorded experiment comparison candidates including: Commercial synthesizer baseline, ROVER.'

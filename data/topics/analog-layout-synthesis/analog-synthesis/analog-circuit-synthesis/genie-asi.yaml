@@ -1,0 +1,26 @@
+baseline_id: genie-asi
+short_name: GENIE-ASI
+display_name: 'GENIE-ASI: Generative Instruction and Executable Code for Analog Subcircuit Identification'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'GENIE-ASI: Generative Instruction and Executable Code for Analog Subcircuit Identification'
+  venue: MLCAD
+  year: 2025
+  doi: 10.1109/mlcad65511.2025.11189126
+  bibtex: "@inproceedings{pham2025genieasi,\n  author = {Phuoc Pham and Arun Venkitaraman and Chia-Yu Hsieh and Andrea Bonetti and Stefan Uhlich and Markus Leibl and Simon Hofmann and Eisaku Ohbuchi and Lorenzo Servadei and Ulf Schlichtmann and Robert Wille},\n  title = {GENIE-ASI: Generative Instruction and Executable Code for Analog Subcircuit Identification},\n  booktitle = {2025 ACM/IEEE 7th Symposium on Machine Learning for CAD (MLCAD)},\n  year = {2025},\n  publisher = {IEEE},\n  doi = {10.1109/mlcad65511.2025.11189126}\n}"
+links:
+  paper_url: https://doi.org/10.1109/mlcad65511.2025.11189126
+compare_when:
+- comparing ML/LLM-assisted analog circuit modeling, architecture exploration, or subcircuit-identification methods
+benchmark_scope:
+- analog/RF/neuromorphic circuits, SPICE netlists, or subcircuit-identification benchmarks from the paper
+metrics:
+- prediction/classification accuracy
+- simulation speedup
+- energy/latency error
+reproducibility: unknown
+caveats:
+- Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.
+- Artifact availability and exact reproduction scripts were not verified in this merge pass.
+- 'Draft audit recorded experiment comparison candidates including: Anygraph, GPT-4.1, Gemini 2.5, Claude 3.7 Sonnet.'
