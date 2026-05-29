@@ -1,0 +1,23 @@
+baseline_id: multi-tier-mol-macro-placement-framework
+short_name: Multi Tier Mol Macro Placement
+display_name: 'Boosting Scalability and Performance: Macro Placement for Flexible 3D-Stacked ML Accelerators'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Boosting Scalability and Performance: Macro Placement for Flexible 3D-Stacked ML Accelerators'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{hu2026multi,\n  author = {Jiawei Hu and Canlin Zhang and Pruek Vanna-iampikul and Tushar Krishna and Sung Kyu Lim},\n  title = {Boosting Scalability and Performance: Macro Placement for Flexible 3D-Stacked ML Accelerators},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing macro placement, floorplanning, or large-block placement frameworks
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for macro-placement
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: 2D SARA, SOTA MoL (two-tier), 2D Systolic Array.'

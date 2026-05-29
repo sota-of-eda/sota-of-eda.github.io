@@ -1,0 +1,25 @@
+baseline_id: smt-based-simultaneous-transistor-folding-and-placement
+short_name: Smt Based Simultaneous Transistor Folding
+display_name: SMT-Based Optimal Transistor Folding and Placement for Standard Cell Layout Generation
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: SMT-Based Optimal Transistor Folding and Placement for Standard Cell Layout Generation
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{yoon2026smt,\n  author = {Junghyun Yoon and Heechun Park},\n  title = {SMT-Based Optimal Transistor Folding and Placement for Standard Cell Layout Generation},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- evaluating standard-cell, cell-library, transistor-level cell synthesis, or layout generation methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for automated-cell-synthesis
+metrics:
+- cell area
+- pin accessibility
+- DRC count
+- PPA
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: ARM manually designed cells, DATE''24, Sequential transistor folding/placement approach.'

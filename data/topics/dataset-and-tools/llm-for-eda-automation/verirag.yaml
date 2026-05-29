@@ -1,0 +1,23 @@
+baseline_id: verirag
+short_name: Verirag
+display_name: 'VeriRAG: A Knowledge Graph-Augmented RAG for Verilog and Assertion Generation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'VeriRAG: A Knowledge Graph-Augmented RAG for Verilog and Assertion Generation'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{thangellamudi2026verirag,\n  author = {Jayanth Thangellamudi and Raghul Saravanan and and Sai Manoj Pudukotai Dinakarrao},\n  title = {VeriRAG: A Knowledge Graph-Augmented RAG for Verilog and Assertion Generation},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing LLM/RAG/agent workflows for EDA automation or hardware-design assistance
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for llm-for-eda-automation
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: VeriGen, RTLCoder, BetterV, OriGen, CodeV, AssertLLM, SANGAM, VerilogCoder.'

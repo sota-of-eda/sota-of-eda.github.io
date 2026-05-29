@@ -1,0 +1,23 @@
+baseline_id: ir-drop-aware-eco
+short_name: Ir Drop Aware ECO
+display_name: 'IR Drop-Aware ECO: A Fast Approach to Minimize Layout and Timing Disturbance'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'IR Drop-Aware ECO: A Fast Approach to Minimize Layout and Timing Disturbance'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{hu2026ir,\n  author = {Jingchao Hu and Yibo Lin and Hao Yu and Quan Chen and Zhou Jin and Cheng Zhuo},\n  title = {IR Drop-Aware ECO: A Fast Approach to Minimize Layout and Timing Disturbance},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing post-placement physical optimization, ECO, delay padding, or gate sizing methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for physical-optimization
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded.

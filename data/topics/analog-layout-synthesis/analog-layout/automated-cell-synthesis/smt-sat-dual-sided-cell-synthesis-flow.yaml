@@ -1,0 +1,25 @@
+baseline_id: smt-sat-dual-sided-cell-synthesis-flow
+short_name: Smt Sat Dual Sided Cell
+display_name: Standard Cell Layout Synthesis for Dual-Sided 3D-Stacked Transistors
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Standard Cell Layout Synthesis for Dual-Sided 3D-Stacked Transistors
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{guo2026smt,\n  author = {Kairong Guo and Haoran Lu and Rui Guo and Jiarui Wang and Chunyuan Zhao and Heng Wu and Runsheng Wang and Yibo Lin},\n  title = {Standard Cell Layout Synthesis for Dual-Sided 3D-Stacked Transistors},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- evaluating standard-cell, cell-library, transistor-level cell synthesis, or layout generation methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for automated-cell-synthesis
+metrics:
+- cell area
+- pin accessibility
+- DRC count
+- PPA
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: [8] 3.5T dual-sided designs, Manual AOI22xp5 designs.'

@@ -1,0 +1,23 @@
+baseline_id: dual-decomposition-with-path-relationship-analysis
+short_name: Dual Decomposition With Path Relationship
+display_name: Novel Multi-Corner Delay Padding using Path Relationship Analysis and Dual Decomposition
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Novel Multi-Corner Delay Padding using Path Relationship Analysis and Dual Decomposition
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{zhu2026dual,\n  author = {Kaixiang Zhu and Jiangnan Li and Lingli Wang and Wai-Shing Luk},\n  title = {Novel Multi-Corner Delay Padding using Path Relationship Analysis and Dual Decomposition},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing post-placement physical optimization, ECO, delay padding, or gate sizing methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for physical-optimization
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: single worst-case corner baseline.'

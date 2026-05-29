@@ -1,0 +1,25 @@
+baseline_id: dpo-3d
+short_name: Dpo 3d
+display_name: 'DPO-3D: Differentiable Power Delivery Network Optimization via Flexible Modeling for Routability and IR-Drop Tradeoff in Face-to-Face 3D ICs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'DPO-3D: Differentiable Power Delivery Network Optimization via Flexible Modeling for Routability and IR-Drop Tradeoff in Face-to-Face 3D ICs'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{zhuang2026dpo,\n  author = {Zhen Zhuang and Zheng Yang and Yuxuan Zhao and Jiawei Hu and Bei Yu and Sung Kyu Lim and Tsung-Yi Ho},\n  title = {DPO-3D: Differentiable Power Delivery Network Optimization via Flexible Modeling for Routability and IR-Drop Tradeoff in Face-to-Face 3D ICs},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing PDN, IR-drop, decap, or current-crowding analysis/optimization methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for power-delivery-network-analysis
+metrics:
+- IR drop
+- impedance
+- current density
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: original flow, ILP-based method, state-of-the-art baseline (unnamed).'

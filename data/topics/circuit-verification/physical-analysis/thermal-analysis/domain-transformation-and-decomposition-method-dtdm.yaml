@@ -1,0 +1,24 @@
+baseline_id: domain-transformation-and-decomposition-method-dtdm
+short_name: Domain Transformation And Decomposition Method
+display_name: Domain Transformation and Decomposition Method for Composable Thermal Modeling and Simulation of Chiplet-Based 2.5D Integrated System
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Domain Transformation and Decomposition Method for Composable Thermal Modeling and Simulation of Chiplet-Based 2.5D Integrated System
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{lan2026domain,\n  author = {Shunxiang Lan and Min Tang},\n  title = {Domain Transformation and Decomposition Method for Composable Thermal Modeling and Simulation of Chiplet-Based 2.5D Integrated System},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing chip/package thermal modeling, simulation, or thermal-map estimation methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for thermal-analysis
+metrics:
+- temperature error
+- runtime
+- memory usage
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: ANSYS FLUENT, Thermal-WLP [25].'

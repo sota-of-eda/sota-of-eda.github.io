@@ -1,0 +1,24 @@
+baseline_id: asm-satnn-co-simulation-framework
+short_name: Asm Satnn Co Simulation Framework
+display_name: Efficient Simulation of IC Packages with TEC Based on Adaptive Segmented Method and Spatially-Aware Thermal Neural Network
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Efficient Simulation of IC Packages with TEC Based on Adaptive Segmented Method and Spatially-Aware Thermal Neural Network
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{li2026asm,\n  author = {Longfei Li and Xinyue Li and Shunxiang Lan and Liang Chen and Haibao Chen and Min Tang},\n  title = {Efficient Simulation of IC Packages with TEC Based on Adaptive Segmented Method and Spatially-Aware Thermal Neural Network},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing chip/package thermal modeling, simulation, or thermal-map estimation methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for thermal-analysis
+metrics:
+- temperature error
+- runtime
+- memory usage
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: MLP, CNN, U-Net, COMSOL Multiphysics.'

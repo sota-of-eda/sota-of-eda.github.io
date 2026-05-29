@@ -1,0 +1,23 @@
+baseline_id: ml-driven-dtco-framework
+short_name: ML Driven Dtco Framework
+display_name: ML-driven Design Technology Co-Optimization Framework for Advanced Technology Nodes
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: ML-driven Design Technology Co-Optimization Framework for Advanced Technology Nodes
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{seo2026ml,\n  author = {Hyunbae Seo and Handong Cho and Sehyeon Chung and Kyumyung Choi and Taewhan Kim},\n  title = {ML-driven Design Technology Co-Optimization Framework for Advanced Technology Nodes},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing design-technology co-optimization or technology-aware layout/standard-cell exploration methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for dtco
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: sweep.'

@@ -1,0 +1,23 @@
+baseline_id: fifoadvisor
+short_name: Fifoadvisor
+display_name: 'FIFOAdvisor: A DSE Framework for Automated FIFO Sizing of High-Level Synthesis Designs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'FIFOAdvisor: A DSE Framework for Automated FIFO Sizing of High-Level Synthesis Designs'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{abikaram2026fifoadvisor,\n  author = {Stefan Abi-Karam and Rishov Sarkar and Suhail Basalama and Jason Cong and Callie Hao},\n  title = {FIFOAdvisor: A DSE Framework for Automated FIFO Sizing of High-Level Synthesis Designs},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing design-space exploration, microarchitecture search, or HLS/architecture DSE methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for design-space-exploration
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: Baseline-Min, Baseline-Max.'

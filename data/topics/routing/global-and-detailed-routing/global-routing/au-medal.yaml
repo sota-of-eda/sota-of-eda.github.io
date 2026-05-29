@@ -1,0 +1,23 @@
+baseline_id: au-medal
+short_name: Au Medal
+display_name: 'Au-MEDAL: Adaptable Grid Router with Metal Edge Detection And Layer Integration'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Au-MEDAL: Adaptable Grid Router with Metal Edge Detection And Layer Integration'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{kahng2026au,\n  author = {Andrew B. Kahng and Seokhyeong Kang and Sehyeon Kim and Jakang Lee and Dooseok Yoon},\n  title = {Au-MEDAL: Adaptable Grid Router with Metal Edge Detection And Layer Integration},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing global routing, grid routing, or layer-integrated routing methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for global-routing
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded.

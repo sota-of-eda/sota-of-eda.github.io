@@ -1,0 +1,23 @@
+baseline_id: dph-sizer
+short_name: Dph Sizer
+display_name: A Heterogeneous Graph-based Gate Sizer Integrating Graph Attention Network and Transformer
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: A Heterogeneous Graph-based Gate Sizer Integrating Graph Attention Network and Transformer
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{ahn2026dph,\n  author = {Jinmo Ahn and Jinoh Cho and Jaemin Seo and Jaeseung Lee and Jakang Lee and Seokhyeong Kang},\n  title = {A Heterogeneous Graph-based Gate Sizer Integrating Graph Attention Network and Transformer},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing post-placement physical optimization, ECO, delay padding, or gate sizing methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for physical-optimization
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded.

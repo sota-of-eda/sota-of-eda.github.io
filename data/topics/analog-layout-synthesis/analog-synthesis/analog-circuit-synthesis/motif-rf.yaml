@@ -1,0 +1,23 @@
+baseline_id: motif-rf
+short_name: Motif RF
+display_name: 'MOTIF-RF: Multi-template On-chip Transformer Synthesis Incorporating Frequency-domain Self-transfer Learning for RFIC Design Automation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'MOTIF-RF: Multi-template On-chip Transformer Synthesis Incorporating Frequency-domain Self-transfer Learning for RFIC Design Automation'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{he2026motif,\n  author = {Houbo He and Yizhou Xu and Lei Xia and Yaolong Hu and Fan Cai and Taiyun Chi},\n  title = {MOTIF-RF: Multi-template On-chip Transformer Synthesis Incorporating Frequency-domain Self-transfer Learning for RFIC Design Automation},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing analog/RF circuit modeling, sizing, synthesis, or surrogate-generation methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for analog-circuit-synthesis
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: MLP, CNN, UNet, GT.'

@@ -1,0 +1,23 @@
+baseline_id: gpu-accelerated-global-routing-with-timing-and-congestion-optimization
+short_name: Gpu Accelerated Global Routing With
+display_name: GPU-Accelerated Global Routing with Balanced Timing and Congestion Optimization
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: GPU-Accelerated Global Routing with Balanced Timing and Congestion Optimization
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{zhou2026gpu,\n  author = {Jinghui Zhou and Fuxing Huang and Lixin Chen and Xinglin Zheng and Ziran Zhu},\n  title = {GPU-Accelerated Global Routing with Balanced Timing and Congestion Optimization},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing global-routing methods with timing/congestion objectives
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for timing-driven-global-routing
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: ISPD 2025 contest 1st place, ISPD 2025 contest 2nd place, ISPD 2025 contest 3rd place.'

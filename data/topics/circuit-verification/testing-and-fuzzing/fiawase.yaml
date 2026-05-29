@@ -1,0 +1,24 @@
+baseline_id: fiawase
+short_name: Fiawase
+display_name: 'FIawase: A SET Fault Injection Framework Towards Exhaustive System-Level Impact Evaluation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'FIawase: A SET Fault Injection Framework Towards Exhaustive System-Level Impact Evaluation'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{zhang2026fiawase,\n  author = {Mingtao Zhang and Quan Cheng and Masanori Hashimoto},\n  title = {FIawase: A SET Fault Injection Framework Towards Exhaustive System-Level Impact Evaluation},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing hardware/system testing, fuzzing, or fault-injection methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for testing-and-fuzzing
+metrics:
+- bug/fault detection
+- coverage
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: HachiFI.'

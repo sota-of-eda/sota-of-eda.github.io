@@ -1,0 +1,24 @@
+baseline_id: multimodal-diffusion-fusion
+short_name: Multimodal Diffusion Fusion
+display_name: Full-Chip Thermal Map Estimation by Multimodal Data Fusion via Denoising Diffusion
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Full-Chip Thermal Map Estimation by Multimodal Data Fusion via Denoising Diffusion
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{li2026multimodal,\n  author = {Jing Li and Wei Xing and Yuquan Sun and Yuanqing Cheng},\n  title = {Full-Chip Thermal Map Estimation by Multimodal Data Fusion via Denoising Diffusion},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing chip/package thermal modeling, simulation, or thermal-map estimation methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for thermal-analysis
+metrics:
+- temperature error
+- runtime
+- memory usage
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: thermal-sensors-only, performance-counters-only, multimodal-fusion.'

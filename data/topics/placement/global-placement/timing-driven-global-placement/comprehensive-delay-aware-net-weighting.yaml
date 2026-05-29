@@ -1,0 +1,25 @@
+baseline_id: comprehensive-delay-aware-net-weighting
+short_name: Comprehensive Delay Aware Net Weighting
+display_name: Comprehensive Delay-Aware Net Weighting Framework for Timing-Driven Global Placement
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Comprehensive Delay-Aware Net Weighting Framework for Timing-Driven Global Placement
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{chen2026comprehensive,\n  author = {Lixin Chen and Keyu Peng and Jinghui Zhou and Hao Gu and Wei Fu and Shuting Cai and Ziran Zhu},\n  title = {Comprehensive Delay-Aware Net Weighting Framework for Timing-Driven Global Placement},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing placement methods that optimize timing, routability, and wirelength together
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for timing-driven-global-placement
+metrics:
+- wirelength
+- timing
+- routability
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: DREAMPlace 4.0, DAC''22, ISPD''24, ICCAD''24, DATE''25.'

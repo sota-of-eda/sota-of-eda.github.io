@@ -1,0 +1,23 @@
+baseline_id: cnn-assisted-low-power-cts
+short_name: Cnn Assisted Low Power Cts
+display_name: CNN-Assisted Low-Power Clock Tree Synthesis for 3D ICs
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: CNN-Assisted Low-Power Clock Tree Synthesis for 3D ICs
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{xi2026cnn,\n  author = {Chenbo Xi and Jindong Zhou and Pingqiang Zhou},\n  title = {CNN-Assisted Low-Power Clock Tree Synthesis for 3D ICs},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing CTS or multi-bit flip-flop timing/power optimization methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for clock-tree-synthesis
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: NNG-based method, 3D-MMM method, DLE-3D and DME-3D.'

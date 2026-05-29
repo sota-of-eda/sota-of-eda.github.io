@@ -1,0 +1,25 @@
+baseline_id: ac-refiner
+short_name: Ac Refiner
+display_name: 'AC-Refiner: Efficient Arithmetic Circuit Optimization Using Conditional Diffusion Models'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'AC-Refiner: Efficient Arithmetic Circuit Optimization Using Conditional Diffusion Models'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{xue2026ac,\n  author = {Chenhao Xue and Kezhi Li and Jiaxing Zhang and Yi Ren and Zhengyuan Shi and Chen Zhang and Yibo Lin and Lining Zhang and Qiang Xu and Guangyu Sun},\n  title = {AC-Refiner: Efficient Arithmetic Circuit Optimization Using Conditional Diffusion Models},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing logic synthesis, arithmetic optimization, rewriting, or hardware-compiler optimization methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for logic-synthesis
+metrics:
+- area
+- delay
+- power
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded.

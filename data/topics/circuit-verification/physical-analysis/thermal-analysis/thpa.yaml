@@ -1,0 +1,24 @@
+baseline_id: thpa
+short_name: Thpa
+display_name: 'ThPA: Thermal Simulation for Advanced ICs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ThPA: Thermal Simulation for Advanced ICs'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{chen2026thpa,\n  author = {Bo-Wen Chen and Yong-Han Lin and Chien-Yu Lin and Yu-Min Lee},\n  title = {ThPA: Thermal Simulation for Advanced ICs},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing chip/package thermal modeling, simulation, or thermal-map estimation methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for thermal-analysis
+metrics:
+- temperature error
+- runtime
+- memory usage
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: ANSYS Icepak, CG-Jacobi-precon.'

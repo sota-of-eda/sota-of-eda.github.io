@@ -1,0 +1,23 @@
+baseline_id: cl-benchmarking-on-circuit-targeted-gnns
+short_name: Cl Benchmarking On Circuit Targeted
+display_name: Benchmarking Continual Learning on Netlists with Circuit-Targeted Graph Neural Networks
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Benchmarking Continual Learning on Netlists with Circuit-Targeted Graph Neural Networks
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{karn2026cl,\n  author = {Rupesh Raj Karn and Johann Knechtel and Ozgur Sinanoglu},\n  title = {Benchmarking Continual Learning on Netlists with Circuit-Targeted Graph Neural Networks},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing ML representation learning benchmarks or models for circuits/netlists
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for circuit-representation-learning
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: EWC, SI, A-GEM, iCaRL, MER, CoPE.'

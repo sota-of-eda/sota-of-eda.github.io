@@ -1,0 +1,23 @@
+baseline_id: great3d
+short_name: Great3d
+display_name: Partitioning-free 3D-IC Floorplanning
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Partitioning-free 3D-IC Floorplanning
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{ren2026great3d,\n  author = {Shuo Ren and Zhen Zhuang and Rongliang Fu and Leilei Jin and Libo Shen and Bei Yu and Tsung-Yi Ho},\n  title = {Partitioning-free 3D-IC Floorplanning},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing 2.5D/3D IC placement, floorplanning, tier assignment, or planning methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for 3d-ic-placement-and-planning
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded.

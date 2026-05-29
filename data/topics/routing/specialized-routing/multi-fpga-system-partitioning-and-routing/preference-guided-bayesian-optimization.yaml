@@ -1,0 +1,23 @@
+baseline_id: preference-guided-bayesian-optimization
+short_name: Preference Guided Bayesian Optimization
+display_name: 'Automated Parameter Tuning for Multi-FPGA Partitioning: A Preference-Guided Approach'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Automated Parameter Tuning for Multi-FPGA Partitioning: A Preference-Guided Approach'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{dai2026preference,\n  author = {Yutao Dai and Shengbo Tong and Chunyan Pei and Zhuohua Liu and Wei Xing and Yi Liu and Rui Wang and Wenjian Yu},\n  title = {Automated Parameter Tuning for Multi-FPGA Partitioning: A Preference-Guided Approach},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing multi-FPGA partitioning, die-level routing, or TDM assignment methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for multi-fpga-system-partitioning-and-routing
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded.

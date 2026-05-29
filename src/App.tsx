@@ -548,6 +548,7 @@ const scannedConfDefs: ScannedConference[] = [
   { venue: 'DATE', year: 2026 },
   { venue: 'MLCAD', year: 2025},
   { venue: 'ISPD', year: 2026 },
+  { venue: 'ASP-DAC', year: 2026 },
 ];
 
 function buildScannedConferences() {

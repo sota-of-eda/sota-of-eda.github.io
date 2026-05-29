@@ -1,0 +1,23 @@
+baseline_id: dali-pd
+short_name: Dali Pd
+display_name: 'DALI-PD: Diffusion-based Synthetic Layout Heatmap Generation for ML in Physical Design'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'DALI-PD: Diffusion-based Synthetic Layout Heatmap Generation for ML in Physical Design'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{wu2026dali,\n  author = {Bing-Yue Wu and Vidya A. Chhabria},\n  title = {DALI-PD: Diffusion-based Synthetic Layout Heatmap Generation for ML in Physical Design},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing ML-for-EDA datasets, pretrained models, or physical-design learning workflows
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for ml-for-eda
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: CircuitNet.'

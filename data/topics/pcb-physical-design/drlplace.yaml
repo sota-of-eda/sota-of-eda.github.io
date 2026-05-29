@@ -1,0 +1,23 @@
+baseline_id: drlplace
+short_name: Drlplace
+display_name: 'DRLPlace: A Deep Reinforcement Learning-based Irregular and High-Density Printed Circuit Board Placement Method'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'DRLPlace: A Deep Reinforcement Learning-based Irregular and High-Density Printed Circuit Board Placement Method'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{cai2026drlplace,\n  author = {Lei Cai and Ke Cheng and Jixin Zhang and Haiyun Li and Zhiwei Ye},\n  title = {DRLPlace: A Deep Reinforcement Learning-based Irregular and High-Density Printed Circuit Board Placement Method},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing PCB placement, routing, migration, or physical-design methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for pcb-physical-design
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: manual placement, SA-PCB, RL-based placement.'

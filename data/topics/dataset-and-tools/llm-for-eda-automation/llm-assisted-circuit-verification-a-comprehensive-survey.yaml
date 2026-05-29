@@ -1,0 +1,23 @@
+baseline_id: llm-assisted-circuit-verification-a-comprehensive-survey
+short_name: Llm Assisted Circuit Verification A
+display_name: 'LLM-Assisted Circuit Verification: A Comprehensive Survey'
+role: historical_reference
+nomination: community
+publication:
+  title: 'LLM-Assisted Circuit Verification: A Comprehensive Survey'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{liu2026llm,\n  author = {Hongduo Liu and Yuntao Lu and Mingjun Wang and Xufeng Yao and Bei Yu},\n  title = {LLM-Assisted Circuit Verification: A Comprehensive Survey},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing LLM/RAG/agent workflows for EDA automation or hardware-design assistance
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for llm-for-eda-automation
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded.

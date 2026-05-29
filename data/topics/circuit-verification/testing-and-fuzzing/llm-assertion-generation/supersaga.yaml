@@ -1,0 +1,23 @@
+baseline_id: supersaga
+short_name: Supersaga
+display_name: 'SuperSAGA: A Supervisor-Subordinate Agentic Workflow for the Generation of Assertions'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'SuperSAGA: A Supervisor-Subordinate Agentic Workflow for the Generation of Assertions'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{paul2026supersaga,\n  author = {Subhajit Paul and Ansuman Banerjee and Sumana Ghosh and Sudhakar Surendran and Raj Kumar Gajavelly},\n  title = {SuperSAGA: A Supervisor-Subordinate Agentic Workflow for the Generation of Assertions},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing LLM-assisted assertion generation, assertion mining, or hardware specification workflows
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for llm-assertion-generation
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded.

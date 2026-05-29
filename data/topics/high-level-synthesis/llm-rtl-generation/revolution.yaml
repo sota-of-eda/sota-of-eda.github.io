@@ -1,0 +1,25 @@
+baseline_id: revolution
+short_name: Revolution
+display_name: 'REvolution: An Evolutionary Framework for RTL Generation driven by Large Language Models'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'REvolution: An Evolutionary Framework for RTL Generation driven by Large Language Models'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{min2026revolution,\n  author = {Kyungjun Min and Kyumin Cho and Junhwan Jang and Seokhyeong Kang},\n  title = {REvolution: An Evolutionary Framework for RTL Generation driven by Large Language Models},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing LLM-assisted RTL, Verilog, HDL generation, or repair methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for llm-rtl-generation
+metrics:
+- functional correctness
+- syntax pass rate
+- repair success
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded.

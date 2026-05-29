@@ -1,0 +1,24 @@
+baseline_id: promea
+short_name: Promea
+display_name: Safeguarding Neural Network IPs from Scan Chain based Model Extraction Attacks
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Safeguarding Neural Network IPs from Scan Chain based Model Extraction Attacks
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{reddy2026promea,\n  author = {E Bhawani Eswar Reddy and Gundameedi Sai Ram Mohan and Sukanta Bhattacharjee and Chandan Karfa},\n  title = {Safeguarding Neural Network IPs from Scan Chain based Model Extraction Attacks},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing hardware-security verification, Trojan detection, logic-locking, or IP-protection methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for hardware-security-verification
+metrics:
+- detection accuracy
+- attack success/failure
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: 784-1024-10 baseline, 784-256-32-10 baseline, 784-512-64-10 baseline, 784-1024-128-10 baseline, 784-256-64-32-10 baseline.'

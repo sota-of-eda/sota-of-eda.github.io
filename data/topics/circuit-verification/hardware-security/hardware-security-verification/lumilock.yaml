@@ -1,0 +1,24 @@
+baseline_id: lumilock
+short_name: Lumilock
+display_name: 'LumiLock: LUT-based Multi-Key Logic Locking'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'LumiLock: LUT-based Multi-Key Logic Locking'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{nakai2026lumilock,\n  author = {Tsunato Nakai and Takuya Higashi},\n  title = {LumiLock: LUT-based Multi-Key Logic Locking},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing hardware-security verification, Trojan detection, logic-locking, or IP-protection methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for hardware-security-verification
+metrics:
+- detection accuracy
+- attack success/failure
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: LUT-based logic locking, K-Gate Lock.'

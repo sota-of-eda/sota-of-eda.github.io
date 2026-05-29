@@ -1,0 +1,25 @@
+baseline_id: sofa-h
+short_name: Sofa H
+display_name: 'SOFA-H: Post-Synthesis Area Optimization via Functionally Encoded, Net-Driven Subgraph Mining and SAT-Based Hypercell Remapping'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'SOFA-H: Post-Synthesis Area Optimization via Functionally Encoded, Net-Driven Subgraph Mining and SAT-Based Hypercell Remapping'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{lee2026sofa,\n  author = {Jimmy Y.-C. Lee and Yen-Ju Su and Jiun-Cheng Tsai and Aaron C.-W. Liang and Charles H.-P. Wen and Hsuan-Ming Huang},\n  title = {SOFA-H: Post-Synthesis Area Optimization via Functionally Encoded, Net-Driven Subgraph Mining and SAT-Based Hypercell Remapping},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing logic synthesis, arithmetic optimization, rewriting, or hardware-compiler optimization methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for logic-synthesis
+metrics:
+- area
+- delay
+- power
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: TeMacle.'

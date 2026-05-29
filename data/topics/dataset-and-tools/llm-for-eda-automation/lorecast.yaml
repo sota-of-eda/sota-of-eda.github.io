@@ -1,0 +1,23 @@
+baseline_id: lorecast
+short_name: Lorecast
+display_name: 'Lorecast: Layout-Aware Performance and Power Forecasting from Natural Language'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Lorecast: Layout-Aware Performance and Power Forecasting from Natural Language'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{wang2026lorecast,\n  author = {Runzhi Wang and Prianka Sengupta and Cristhian Roman-Vicharra and Yiran Chen and Jiang Hu},\n  title = {Lorecast: Layout-Aware Performance and Power Forecasting from Natural Language},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing LLM/RAG/agent workflows for EDA automation or hardware-design assistance
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for llm-for-eda-automation
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: GPT4-based Lorecast, Gemini 1.5 Pro-based Lorecast.'

@@ -268,6 +268,38 @@
           ]
         },
         {
+          "baseline_id": "festal",
+          "short_name": "Festal",
+          "display_name": "FESTAL: Dataflow Accelerator Synthesis Framework with Graph-Based Fusion for FPGA",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "FESTAL: Dataflow Accelerator Synthesis Framework with Graph-Based Fusion for FPGA",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{xu2026festal,\n  author = {Ruifan Xu and Yuyang Zou and Yun Liang},\n  title = {FESTAL: Dataflow Accelerator Synthesis Framework with Graph-Based Fusion for FPGA},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing HLS transformation, estimation, or synthesis-flow methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for high-level-synthesis"
+          ],
+          "metrics": [
+            "latency",
+            "resource usage",
+            "timing estimate",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: POM, ScaleHLS, Stream-HLS, HIDA."
+          ]
+        },
+        {
           "baseline_id": "fresco",
           "short_name": "FRESCO",
           "display_name": "FRESCO: Efficient Subgraph Enumeration for Scalable Clustering in Heterogeneous CGRAs",
@@ -362,6 +394,38 @@
           "reproducibility": "unknown",
           "caveats": [
             "ICCAD 2025 paper, recently published"
+          ]
+        },
+        {
+          "baseline_id": "hls-timer",
+          "short_name": "HLS Timer",
+          "display_name": "HLS-Timer: Fine-Grained Path-Level Timing Estimation for High-Level Synthesis",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "HLS-Timer: Fine-Grained Path-Level Timing Estimation for High-Level Synthesis",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{hu2026hls,\n  author = {Zibo Hu and Zhe Lin and Renjing Hou and Xingyu Qin and Jianwang Zhai and Kang Zhao},\n  title = {HLS-Timer: Fine-Grained Path-Level Timing Estimation for High-Level Synthesis},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing HLS transformation, estimation, or synthesis-flow methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for high-level-synthesis"
+          ],
+          "metrics": [
+            "latency",
+            "resource usage",
+            "timing estimate",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
           ]
         },
         {
@@ -473,6 +537,38 @@
           ]
         },
         {
+          "baseline_id": "recrel-recelim",
+          "short_name": "Recrel Recelim",
+          "display_name": "Automatic Recursion Elimination using Recurrence Relations for Synthesis of Stack-free Hardware",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Automatic Recursion Elimination using Recurrence Relations for Synthesis of Stack-free Hardware",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{musa2026recrel,\n  author = {Adam Musa and Christophe Dubach},\n  title = {Automatic Recursion Elimination using Recurrence Relations for Synthesis of Stack-free Hardware},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing HLS transformation, estimation, or synthesis-flow methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for high-level-synthesis"
+          ],
+          "metrics": [
+            "latency",
+            "resource usage",
+            "timing estimate",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: HeteroGen, HeteroRefactor, HLSRecurse, TreeRecur, Flatten (Recursion Flattening), RHFSM, RTR."
+          ]
+        },
+        {
           "baseline_id": "unpipelining-slp",
           "short_name": "Unpipelining SLP",
           "display_name": "Area Efficient Speculative Loop Pipelining for High-Level Synthesis",
@@ -523,6 +619,38 @@
       ],
       "description": "Logic synthesis topics for optimizing and mapping Boolean networks and gate-level designs.",
       "baselines": [
+        {
+          "baseline_id": "ac-refiner",
+          "short_name": "Ac Refiner",
+          "display_name": "AC-Refiner: Efficient Arithmetic Circuit Optimization Using Conditional Diffusion Models",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "AC-Refiner: Efficient Arithmetic Circuit Optimization Using Conditional Diffusion Models",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{xue2026ac,\n  author = {Chenhao Xue and Kezhi Li and Jiaxing Zhang and Yi Ren and Zhengyuan Shi and Chen Zhang and Yibo Lin and Lining Zhang and Qiang Xu and Guangyu Sun},\n  title = {AC-Refiner: Efficient Arithmetic Circuit Optimization Using Conditional Diffusion Models},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing logic synthesis, arithmetic optimization, rewriting, or hardware-compiler optimization methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for logic-synthesis"
+          ],
+          "metrics": [
+            "area",
+            "delay",
+            "power",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
+          ]
+        },
         {
           "baseline_id": "and-gate-sparse-mpc-synthesis",
           "short_name": "AND-Sparse MPC Synthesis",
@@ -597,6 +725,70 @@
           ]
         },
         {
+          "baseline_id": "autoct",
+          "short_name": "Autoct",
+          "display_name": "AutoCT: Hybrid Compressor Tree Optimization via Reinforcement Learning with Graph Modeling",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "AutoCT: Hybrid Compressor Tree Optimization via Reinforcement Learning with Graph Modeling",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{yao2026autoct,\n  author = {Shangshang Yao and Kunlong Li and Li Shen and Ruoxi Wang and Jingyu Liu},\n  title = {AutoCT: Hybrid Compressor Tree Optimization via Reinforcement Learning with Graph Modeling},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing logic synthesis, arithmetic optimization, rewriting, or hardware-compiler optimization methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for logic-synthesis"
+          ],
+          "metrics": [
+            "area",
+            "delay",
+            "power",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: S_IP, Wallace, RL-MUL, GOMIL."
+          ]
+        },
+        {
+          "baseline_id": "combrewriter",
+          "short_name": "Combrewriter",
+          "display_name": "CombRewriter: Enabling Combinational Logic Simplification in MLIR-Based Hardware Compiler",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "CombRewriter: Enabling Combinational Logic Simplification in MLIR-Based Hardware Compiler",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{zheng2026combrewriter,\n  author = {Haisheng Zheng and Zhuolun He and Shuo Yin and Yuzhe Ma and Bei Yu},\n  title = {CombRewriter: Enabling Combinational Logic Simplification in MLIR-Based Hardware Compiler},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing logic synthesis, arithmetic optimization, rewriting, or hardware-compiler optimization methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for logic-synthesis"
+          ],
+          "metrics": [
+            "area",
+            "delay",
+            "power",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: SOTA netlist optimization (unnamed)."
+          ]
+        },
+        {
           "baseline_id": "cristal",
           "short_name": "CRISTAL",
           "display_name": "Revisit Choice Network for Synthesis and Technology Mapping",
@@ -627,6 +819,38 @@
           "reproducibility": "unknown",
           "caveats": [
             "Compared against ABC's dch command; results depend on specific e-graph construction parameters"
+          ]
+        },
+        {
+          "baseline_id": "dclog",
+          "short_name": "Dclog",
+          "display_name": "DCLOG: Don't Cares-based Logic Optimization using Pre-training Graph Neural Networks",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "DCLOG: Don't Cares-based Logic Optimization using Pre-training Graph Neural Networks",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{fu2026dclog,\n  author = {Rongliang Fu and Libo Shen and Ziyi Wang and Zhengxing Lei and Zixiao Wang and Junying Huang and Bei Yu and Tsung-Yi Ho},\n  title = {DCLOG: Don't Cares-based Logic Optimization using Pre-training Graph Neural Networks},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing logic synthesis, arithmetic optimization, rewriting, or hardware-compiler optimization methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for logic-synthesis"
+          ],
+          "metrics": [
+            "area",
+            "delay",
+            "power",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: logic resubstitution [8], exact rewriting [10]."
           ]
         },
         {
@@ -843,6 +1067,38 @@
           "caveats": [
             "area penalty (~3%) may be significant for area-constrained designs",
             "configuration-level parallelism may not scale to arbitrarily large designs"
+          ]
+        },
+        {
+          "baseline_id": "genial",
+          "short_name": "Genial",
+          "display_name": "GENIAL: Generative Design Space Exploration via Network Inversion for Low Power Algorithmic Logic Units",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "GENIAL: Generative Design Space Exploration via Network Inversion for Low Power Algorithmic Logic Units",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{bouvier2026genial,\n  author = {Maxence Bouvier and Ryan Amaudruz and Felix Arnold and Renzo Andri and Lukas Cavigelli},\n  title = {GENIAL: Generative Design Space Exploration via Network Inversion for Low Power Algorithmic Logic Units},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing logic synthesis, arithmetic optimization, rewriting, or hardware-compiler optimization methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for logic-synthesis"
+          ],
+          "metrics": [
+            "area",
+            "delay",
+            "power",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: GENIAL 4-bit multiplier encoding, GENIAL Pareto front, GENIAL vs SME encoding."
           ]
         },
         {
@@ -1358,6 +1614,38 @@
             "Implemented in ABC but not yet in mainline release",
             "Stochastic strategy may produce non-deterministic results"
           ]
+        },
+        {
+          "baseline_id": "sofa-h",
+          "short_name": "Sofa H",
+          "display_name": "SOFA-H: Post-Synthesis Area Optimization via Functionally Encoded, Net-Driven Subgraph Mining and SAT-Based Hypercell Remapping",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "SOFA-H: Post-Synthesis Area Optimization via Functionally Encoded, Net-Driven Subgraph Mining and SAT-Based Hypercell Remapping",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{lee2026sofa,\n  author = {Jimmy Y.-C. Lee and Yen-Ju Su and Jiun-Cheng Tsai and Aaron C.-W. Liang and Charles H.-P. Wen and Hsuan-Ming Huang},\n  title = {SOFA-H: Post-Synthesis Area Optimization via Functionally Encoded, Net-Driven Subgraph Mining and SAT-Based Hypercell Remapping},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing logic synthesis, arithmetic optimization, rewriting, or hardware-compiler optimization methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for logic-synthesis"
+          ],
+          "metrics": [
+            "area",
+            "delay",
+            "power",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: TeMacle."
+          ]
         }
       ]
     },
@@ -1400,6 +1688,36 @@
       ],
       "description": "Clock tree synthesis topics for distributing clock signals under skew, latency, power, and routing constraints.",
       "baselines": [
+        {
+          "baseline_id": "cnn-assisted-low-power-cts",
+          "short_name": "Cnn Assisted Low Power Cts",
+          "display_name": "CNN-Assisted Low-Power Clock Tree Synthesis for 3D ICs",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "CNN-Assisted Low-Power Clock Tree Synthesis for 3D ICs",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{xi2026cnn,\n  author = {Chenbo Xi and Jindong Zhou and Pingqiang Zhou},\n  title = {CNN-Assisted Low-Power Clock Tree Synthesis for 3D ICs},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing CTS or multi-bit flip-flop timing/power optimization methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for clock-tree-synthesis"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: NNG-based method, 3D-MMM method, DLE-3D and DME-3D."
+          ]
+        },
         {
           "baseline_id": "diffccd",
           "short_name": "DiffCCD",
@@ -1503,6 +1821,36 @@
           "caveats": [
             "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
             "Artifact availability and exact reproduction scripts were not verified in this merge pass."
+          ]
+        },
+        {
+          "baseline_id": "timber",
+          "short_name": "Timber",
+          "display_name": "TIMBER: A Fast Algorithm for Timing and Power Optimization using Multi-bit Flip-flops",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "TIMBER: A Fast Algorithm for Timing and Power Optimization using Multi-bit Flip-flops",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{sarma2026timber,\n  author = {Aditya Das Sarma and Shui Jiang and Wan Luan Lee and Tsung-Yi Ho and Tsung-Wei Huang},\n  title = {TIMBER: A Fast Algorithm for Timing and Power Optimization using Multi-bit Flip-flops},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing CTS or multi-bit flip-flop timing/power optimization methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for clock-tree-synthesis"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: ICCAD 2024 Contest First-Place Winner."
           ]
         }
       ]
@@ -1707,6 +2055,36 @@
       "description": "Mask optimization topics for manufacturability, lithography, and mask-aware design closure.",
       "baselines": [
         {
+          "baseline_id": "beam",
+          "short_name": "Beam",
+          "display_name": "BEAM: Bidirectional MEEF-Driven Mask Optimization for Curvilinear Photonic Design",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "BEAM: Bidirectional MEEF-Driven Mask Optimization for Curvilinear Photonic Design",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{liang2026beam,\n  author = {Xiaoxiao Liang and Yang Luo and Bei Yu and Yuzhe Ma},\n  title = {BEAM: Bidirectional MEEF-Driven Mask Optimization for Curvilinear Photonic Design},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing OPC, curvilinear mask optimization, or lithography mask correction methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for mask-optimization"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
+          ]
+        },
+        {
           "baseline_id": "g-contour",
           "short_name": "G-Contour",
           "display_name": "G-Contour: GPU Accelerated Contour Tracing For Large-Scale Layouts",
@@ -1908,6 +2286,36 @@
             "manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved",
             "no public code or trained model artifact was verified in this pass",
             "existing mask-optimization topic is broad; human taxonomy review may split dummy-fill/CMP optimization from lithography/OPC topics"
+          ]
+        },
+        {
+          "baseline_id": "u-net-mlp-re-fragmentation-for-curvilinear-opc",
+          "short_name": "U Net Mlp Re Fragmentation",
+          "display_name": "Integrated Re-Fragmentation and Curve Correction for Curvilinear Optical Proximity Correction",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Integrated Re-Fragmentation and Curve Correction for Curvilinear Optical Proximity Correction",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{kim2026u,\n  author = {Seohyun Kim and Shilong Zhang and Junha Jang and Youngsoo Shin},\n  title = {Integrated Re-Fragmentation and Curve Correction for Curvilinear Optical Proximity Correction},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing OPC, curvilinear mask optimization, or lithography mask correction methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for mask-optimization"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: Standard OPC (no re-fragmentation), RFC re-fragmentation (Zhang et al.), Heuristic 1 (early EPE), Heuristic 2 (pre-OPC EPE)."
           ]
         },
         {
@@ -2828,6 +3236,36 @@
           ]
         },
         {
+          "baseline_id": "drg-3d",
+          "short_name": "Drg 3d",
+          "display_name": "Differentiable Tier Assignment for Timing and Congestion-Aware Routing in 3D ICs",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Differentiable Tier Assignment for Timing and Congestion-Aware Routing in 3D ICs",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{lu2026drg,\n  author = {Yuan-Hsiang Lu and Hao-Hsiang Hsiao and Yi-Chen Lu and Haoxing Ren and Sung Kyu Lim},\n  title = {Differentiable Tier Assignment for Timing and Congestion-Aware Routing in 3D ICs},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing 2.5D/3D IC placement, floorplanning, tier assignment, or planning methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for 3d-ic-placement-and-planning"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: Pin-3D, Naive 2D PRTG."
+          ]
+        },
+        {
           "baseline_id": "fence-3d",
           "short_name": "Fence-3D + Block-Level 3D IC Flow",
           "display_name": "Closing the Gap: Advantages of Block-Level over Gate-Level in 3D IC Design for Advanced Nodes",
@@ -2862,6 +3300,36 @@
             "Author metadata not confirmed; paper identified via IEEE Xplore DOI only",
             "Results specific to advanced nodes; generalizability to other technologies unclear",
             "ML-based sizing adds complexity to the flow"
+          ]
+        },
+        {
+          "baseline_id": "great3d",
+          "short_name": "Great3d",
+          "display_name": "Partitioning-free 3D-IC Floorplanning",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Partitioning-free 3D-IC Floorplanning",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{ren2026great3d,\n  author = {Shuo Ren and Zhen Zhuang and Rongliang Fu and Leilei Jin and Libo Shen and Bei Yu and Tsung-Yi Ho},\n  title = {Partitioning-free 3D-IC Floorplanning},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing 2.5D/3D IC placement, floorplanning, tier assignment, or planning methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for 3d-ic-placement-and-planning"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
           ]
         },
         {
@@ -3698,6 +4166,36 @@
           ]
         },
         {
+          "baseline_id": "motif-rf",
+          "short_name": "Motif RF",
+          "display_name": "MOTIF-RF: Multi-template On-chip Transformer Synthesis Incorporating Frequency-domain Self-transfer Learning for RFIC Design Automation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "MOTIF-RF: Multi-template On-chip Transformer Synthesis Incorporating Frequency-domain Self-transfer Learning for RFIC Design Automation",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{he2026motif,\n  author = {Houbo He and Yizhou Xu and Lei Xia and Yaolong Hu and Fan Cai and Taiyun Chi},\n  title = {MOTIF-RF: Multi-template On-chip Transformer Synthesis Incorporating Frequency-domain Self-transfer Learning for RFIC Design Automation},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing analog/RF circuit modeling, sizing, synthesis, or surrogate-generation methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for analog-circuit-synthesis"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: MLP, CNN, UNet, GT."
+          ]
+        },
+        {
           "baseline_id": "multi-agent-analog-rf",
           "short_name": "Multi-Agent Analog/RF Gen",
           "display_name": "Multi-Agent Generative Synthesis for Analog/RF Circuit: from Scalable Topology Generation to Efficient Inverse Design",
@@ -4425,6 +4923,38 @@
       "description": "Methods for automatically generating, optimizing, or co-optimizing standard-cell or custom-cell implementations, including transistor placement/routing, cell-library generation, cell merging, pin access, and layout-rule-aware cell optimization.",
       "baselines": [
         {
+          "baseline_id": "cfet-cell-synthesis-with-backside-metal-utilization",
+          "short_name": "Cfet Cell Synthesis With Backside",
+          "display_name": "Synthesis of CFET Standard Cells Utilizing Backside Interconnects Towards Improving Pin Accessibility",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Synthesis of CFET Standard Cells Utilizing Backside Interconnects Towards Improving Pin Accessibility",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{park2026cfet,\n  author = {Hyunbum Park and Taewhan Kim},\n  title = {Synthesis of CFET Standard Cells Utilizing Backside Interconnects Towards Improving Pin Accessibility},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "evaluating standard-cell, cell-library, transistor-level cell synthesis, or layout generation methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for automated-cell-synthesis"
+          ],
+          "metrics": [
+            "cell area",
+            "pin accessibility",
+            "DRC count",
+            "PPA"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: conventional CFET cells."
+          ]
+        },
+        {
           "baseline_id": "copr-mcts-allsat",
           "short_name": "CoP&R",
           "display_name": "CoP&R: Co-Optimizing Place-and-Route for Standard Cell Layout via MCTS and AllSAT",
@@ -4456,6 +4986,38 @@
           "reproducibility": "unknown",
           "caveats": [
             "ICCAD 2025 paper, recently published"
+          ]
+        },
+        {
+          "baseline_id": "disclosed-pins",
+          "short_name": "Disclosed Pins",
+          "display_name": "Enhancing Pin Accessibility Through Pin Pattern Migration and Optimization Across Cell Boundaries",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Enhancing Pin Accessibility Through Pin Pattern Migration and Optimization Across Cell Boundaries",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{seo2026disclosed,\n  author = {Hyunbae Seo and Sehyeon Chung and Taewhan Kim},\n  title = {Enhancing Pin Accessibility Through Pin Pattern Migration and Optimization Across Cell Boundaries},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "evaluating standard-cell, cell-library, transistor-level cell synthesis, or layout generation methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for automated-cell-synthesis"
+          ],
+          "metrics": [
+            "cell area",
+            "pin accessibility",
+            "DRC count",
+            "PPA"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: internally extended cells, dummy poly inserted cells, ML minimized cells."
           ]
         },
         {
@@ -4703,6 +5265,70 @@
           "links": {}
         },
         {
+          "baseline_id": "smt-based-simultaneous-transistor-folding-and-placement",
+          "short_name": "Smt Based Simultaneous Transistor Folding",
+          "display_name": "SMT-Based Optimal Transistor Folding and Placement for Standard Cell Layout Generation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "SMT-Based Optimal Transistor Folding and Placement for Standard Cell Layout Generation",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{yoon2026smt,\n  author = {Junghyun Yoon and Heechun Park},\n  title = {SMT-Based Optimal Transistor Folding and Placement for Standard Cell Layout Generation},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "evaluating standard-cell, cell-library, transistor-level cell synthesis, or layout generation methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for automated-cell-synthesis"
+          ],
+          "metrics": [
+            "cell area",
+            "pin accessibility",
+            "DRC count",
+            "PPA"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: ARM manually designed cells, DATE'24, Sequential transistor folding/placement approach."
+          ]
+        },
+        {
+          "baseline_id": "smt-sat-dual-sided-cell-synthesis-flow",
+          "short_name": "Smt Sat Dual Sided Cell",
+          "display_name": "Standard Cell Layout Synthesis for Dual-Sided 3D-Stacked Transistors",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Standard Cell Layout Synthesis for Dual-Sided 3D-Stacked Transistors",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{guo2026smt,\n  author = {Kairong Guo and Haoran Lu and Rui Guo and Jiarui Wang and Chunyuan Zhao and Heng Wu and Runsheng Wang and Yibo Lin},\n  title = {Standard Cell Layout Synthesis for Dual-Sided 3D-Stacked Transistors},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "evaluating standard-cell, cell-library, transistor-level cell synthesis, or layout generation methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for automated-cell-synthesis"
+          ],
+          "metrics": [
+            "cell area",
+            "pin accessibility",
+            "DRC count",
+            "PPA"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: [8] 3.5T dual-sided designs, Manual AOI22xp5 designs."
+          ]
+        },
+        {
           "baseline_id": "so3-cell",
           "short_name": "SO3-Cell",
           "display_name": "SO3-Cell: Standard Cell Layout Automation Framework for Simultaneous Optimization of Topology, Placement, and Routing",
@@ -4741,6 +5367,38 @@
             "Requires commercial Gurobi MILP solver",
             "Design space pruning techniques may not generalize to all cell types",
             "Block-level PPA evaluation depends on downstream tool quality"
+          ]
+        },
+        {
+          "baseline_id": "standard-cell-layout-generation-survey",
+          "short_name": "Standard Cell Layout Generation Survey",
+          "display_name": "Standard Cell Layout Generation: Methodological Evolution and Architectural Impacts",
+          "role": "historical_reference",
+          "nomination": "community",
+          "publication": {
+            "title": "Standard Cell Layout Generation: Methodological Evolution and Architectural Impacts",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{yoon2026standard,\n  author = {Junghyun Yoon and Ikkyum Kim and Gyumin Kim and Sojung Park and Heechun Park},\n  title = {Standard Cell Layout Generation: Methodological Evolution and Architectural Impacts},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "evaluating standard-cell, cell-library, transistor-level cell synthesis, or layout generation methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for automated-cell-synthesis"
+          ],
+          "metrics": [
+            "cell area",
+            "pin accessibility",
+            "DRC count",
+            "PPA"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
           ]
         },
         {
@@ -5101,6 +5759,36 @@
       "description": "Representation-learning methods and datasets that encode circuits, HDL, netlists, synthesis flows, or layouts for downstream EDA prediction, retrieval, optimization, or analysis tasks.",
       "baselines": [
         {
+          "baseline_id": "cl-benchmarking-on-circuit-targeted-gnns",
+          "short_name": "Cl Benchmarking On Circuit Targeted",
+          "display_name": "Benchmarking Continual Learning on Netlists with Circuit-Targeted Graph Neural Networks",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Benchmarking Continual Learning on Netlists with Circuit-Targeted Graph Neural Networks",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{karn2026cl,\n  author = {Rupesh Raj Karn and Johann Knechtel and Ozgur Sinanoglu},\n  title = {Benchmarking Continual Learning on Netlists with Circuit-Targeted Graph Neural Networks},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing ML representation learning benchmarks or models for circuits/netlists"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for circuit-representation-learning"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: EWC, SI, A-GEM, iCaRL, MER, CoPE."
+          ]
+        },
+        {
           "baseline_id": "pieceformer",
           "short_name": "Pieceformer",
           "display_name": "Pieceformer: Similarity-Driven Knowledge Transfer via Scalable Graph Transformer in VLSI",
@@ -5394,6 +6082,36 @@
           ]
         },
         {
+          "baseline_id": "ticer-graph-spectral-sparsification-hybrid",
+          "short_name": "Ticer Graph Spectral Sparsification Hybrid",
+          "display_name": "Effective RC Reduction via Graph Sparsification for Accurate Post-Simulation of Mixed-Signal ICs",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Effective RC Reduction via Graph Sparsification for Accurate Post-Simulation of Mixed-Signal ICs",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{zhang2026ticer,\n  author = {Yibin Zhang and Zhiqiang Liu and Shan Shen and Chao Hu and Wenjian Yu},\n  title = {Effective RC Reduction via Graph Sparsification for Accurate Post-Simulation of Mixed-Signal ICs},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing circuit simulation, RC reduction, or post-simulation acceleration methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for circuit-simulation"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: TICER, SIP."
+          ]
+        },
+        {
           "baseline_id": "x-sim-cim",
           "short_name": "X-Sim",
           "display_name": "X-Sim: An Accurate and Scalable Simulator for Memristive Computing-in-Memory Accelerators",
@@ -5481,6 +6199,36 @@
             "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
             "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
             "Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry."
+          ]
+        },
+        {
+          "baseline_id": "code-based-multi-agent-layout-generation",
+          "short_name": "Code Based Multi Agent Layout",
+          "display_name": "Code, Not Canvas: Multi-Agent Layout Generation Beyond Vision Models",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Code, Not Canvas: Multi-Agent Layout Generation Beyond Vision Models",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{yang2026code,\n  author = {Haoyu Yang and Haoxing Ren},\n  title = {Code, Not Canvas: Multi-Agent Layout Generation Beyond Vision Models},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing custom layout automation or code/agent-based layout generation methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for custom-layout-automation"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
           ]
         },
         {
@@ -5614,6 +6362,36 @@
           ]
         },
         {
+          "baseline_id": "chat-a2",
+          "short_name": "Chat A2",
+          "display_name": "Chat-A2: An LLM-aided Design Space Exploration Framework for High-Performance CPU Design",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Chat-A2: An LLM-aided Design Space Exploration Framework for High-Performance CPU Design",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{zhu2026chat,\n  author = {Zhantong Zhu and Kangbo Bai and Tianyu Jia},\n  title = {Chat-A2: An LLM-aided Design Space Exploration Framework for High-Performance CPU Design},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing design-space exploration, microarchitecture search, or HLS/architecture DSE methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for design-space-exploration"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: XiangShan Nanhu default (human-architect-optimized)."
+          ]
+        },
+        {
           "baseline_id": "coco-ml",
           "short_name": "CoCO-ML",
           "display_name": "CoCO-ML: ML-Enhanced Performance and Power Estimation for DNNs on Heterogeneous SoCs",
@@ -5681,6 +6459,36 @@
             "Multi-staged decomposition may miss global Pareto-optimal designs",
             "AC-Copilot toolchain not publicly available as of search date",
             "Results depend on specific AI model and accelerator template"
+          ]
+        },
+        {
+          "baseline_id": "fifoadvisor",
+          "short_name": "Fifoadvisor",
+          "display_name": "FIFOAdvisor: A DSE Framework for Automated FIFO Sizing of High-Level Synthesis Designs",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "FIFOAdvisor: A DSE Framework for Automated FIFO Sizing of High-Level Synthesis Designs",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{abikaram2026fifoadvisor,\n  author = {Stefan Abi-Karam and Rishov Sarkar and Suhail Basalama and Jason Cong and Callie Hao},\n  title = {FIFOAdvisor: A DSE Framework for Automated FIFO Sizing of High-Level Synthesis Designs},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing design-space exploration, microarchitecture search, or HLS/architecture DSE methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for design-space-exploration"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: Baseline-Min, Baseline-Max."
           ]
         },
         {
@@ -5866,6 +6674,36 @@
           "reproducibility": "unknown",
           "caveats": [
             "GPU DP approach is specialized to MCH detailed placement; DP formulation may not cover all placement constraints"
+          ]
+        },
+        {
+          "baseline_id": "hre-cell-aware-placement-with-fragmentsaver-legalization",
+          "short_name": "Hre Cell Aware Placement With",
+          "display_name": "An Effective Placement Framework for Designs with Half-Row-Extended Cells",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "An Effective Placement Framework for Designs with Half-Row-Extended Cells",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{wu2026hre,\n  author = {Po-Yi Wu and Tzu-Sheng Hung and Wai-Kei Mak and Ting-Chi Wang},\n  title = {An Effective Placement Framework for Designs with Half-Row-Extended Cells},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing legalization or detailed-placement methods under cell geometry constraints"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for detailed-placement"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
           ]
         },
         {
@@ -6331,6 +7169,36 @@
           ]
         },
         {
+          "baseline_id": "ml-driven-dtco-framework",
+          "short_name": "ML Driven Dtco Framework",
+          "display_name": "ML-driven Design Technology Co-Optimization Framework for Advanced Technology Nodes",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "ML-driven Design Technology Co-Optimization Framework for Advanced Technology Nodes",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{seo2026ml,\n  author = {Hyunbae Seo and Handong Cho and Sehyeon Chung and Kyumyung Choi and Taewhan Kim},\n  title = {ML-driven Design Technology Co-Optimization Framework for Advanced Technology Nodes},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing design-technology co-optimization or technology-aware layout/standard-cell exploration methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for dtco"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: sweep."
+          ]
+        },
+        {
           "baseline_id": "protocelllayout",
           "short_name": "ProtoCellLayout",
           "display_name": "ProtoCellLayout: Prototype-Guided Graph Learning for Accurate and Generalizable Standard Cell Layout PPA Estimation",
@@ -6581,6 +7449,36 @@
             "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
             "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
             "Draft audit recorded experiment comparison candidates including: CROP, BO, Optuna, LLM Search, FlowTuner."
+          ]
+        },
+        {
+          "baseline_id": "causaltuner",
+          "short_name": "Causaltuner",
+          "display_name": "CausalTuner: Will Causality Help High-Dimensional EDA Tool Parameter Tuning",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "CausalTuner: Will Causality Help High-Dimensional EDA Tool Parameter Tuning",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{yu2026causaltuner,\n  author = {Ziyang Yu and Peng Xu and Su Zheng and Siyuan Xu and Hao Geng and Bei Yu and Martin Wong},\n  title = {CausalTuner: Will Causality Help High-Dimensional EDA Tool Parameter Tuning},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing methods in the eda-flow-parameter-tuning topic"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for eda-flow-parameter-tuning"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: BOCS, PTPT, REMOTune, Explorer, RankTuner."
           ]
         },
         {
@@ -7121,6 +8019,36 @@
       "aliases": [],
       "baselines": [
         {
+          "baseline_id": "ctp-ift",
+          "short_name": "Ctp Ift",
+          "display_name": "RTL Verification for Secure Speculation Using Cascaded Two-Phase Information Flow Tracking",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "RTL Verification for Secure Speculation Using Cascaded Two-Phase Information Flow Tracking",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{liu2026ctp,\n  author = {Yuhao Liu and Ying Li and Yinhao Zhou and Chang Guo and Zhenfeng Li and Yanyun Lu},\n  title = {RTL Verification for Secure Speculation Using Cascaded Two-Phase Information Flow Tracking},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing RTL/formal/functional verification methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for formal-and-functional-verification"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: UPEC, ShadowLogic, Pensieve."
+          ]
+        },
+        {
           "baseline_id": "explainable-gnn-fusa",
           "short_name": "Explainable GNN FuSa Framework",
           "display_name": "ISO 26262-Aligned Functional Safety Verification Framework with Explainable Graph Neural Network",
@@ -7640,6 +8568,37 @@
       "description": "Baseline coverage guidance for papers that make global placement claims.",
       "baselines": [
         {
+          "baseline_id": "accfft",
+          "short_name": "Accfft",
+          "display_name": "Accelerating Electrostatics-based Global Placement with Enhanced FFT Computation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Accelerating Electrostatics-based Global Placement with Enhanced FFT Computation",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{zhang2026accfft,\n  author = {Hangyu Zhang and Sachin S. Sapatnekar},\n  title = {Accelerating Electrostatics-based Global Placement with Enhanced FFT Computation},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing global placement, mixed-size placement, or electrostatic placement acceleration methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for global-placement"
+          ],
+          "metrics": [
+            "HPWL",
+            "routability",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: ePlace-MS, Pplace-MS, DREAMPlace."
+          ]
+        },
+        {
           "baseline_id": "acco-placement",
           "short_name": "ACCO",
           "display_name": "PPA-driven Placement via Adaptive Cluster Constraints Optimization",
@@ -7777,6 +8736,37 @@
           ]
         },
         {
+          "baseline_id": "dualplace",
+          "short_name": "Dualplace",
+          "display_name": "DUALPlace: Reinforcement Learning based Mixed-size Placement with Multi Modal Cross Attention",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "DUALPlace: Reinforcement Learning based Mixed-size Placement with Multi Modal Cross Attention",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{wu2026dualplace,\n  author = {Yue Wu and Hu Liu and Jiayi Ding and Junwei Li and Tieming Han and Xiaoyan Yang},\n  title = {DUALPlace: Reinforcement Learning based Mixed-size Placement with Multi Modal Cross Attention},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing global placement, mixed-size placement, or electrostatic placement acceleration methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for global-placement"
+          ],
+          "metrics": [
+            "HPWL",
+            "routability",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: DeepTH-finetune, DREAMPlace, AlphaChip, DeepPR, MaskPlace, DeepTH, Flora."
+          ]
+        },
+        {
           "baseline_id": "hybrid-region-aware-placer",
           "short_name": "Hybrid-Region-Aware Multi-Electrostatic Placer",
           "display_name": "Efficient Analytical Placement Algorithm with Hybrid Fence Region Constraints Using Non-Newtonian Fluid Model",
@@ -7896,6 +8886,36 @@
             "no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review",
             "comparison includes an advanced commercial tool iTool, so exact commercial setup may not be publicly reproducible",
             "the method is a full global router with several components, not only an adaptive cost function ablation"
+          ]
+        },
+        {
+          "baseline_id": "au-medal",
+          "short_name": "Au Medal",
+          "display_name": "Au-MEDAL: Adaptable Grid Router with Metal Edge Detection And Layer Integration",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Au-MEDAL: Adaptable Grid Router with Metal Edge Detection And Layer Integration",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{kahng2026au,\n  author = {Andrew B. Kahng and Seokhyeong Kang and Sehyeon Kim and Jakang Lee and Dooseok Yoon},\n  title = {Au-MEDAL: Adaptable Grid Router with Metal Edge Detection And Layer Integration},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing global routing, grid routing, or layer-integrated routing methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for global-routing"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
           ]
         },
         {
@@ -8384,6 +9404,68 @@
           ]
         },
         {
+          "baseline_id": "lumilock",
+          "short_name": "Lumilock",
+          "display_name": "LumiLock: LUT-based Multi-Key Logic Locking",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "LumiLock: LUT-based Multi-Key Logic Locking",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{nakai2026lumilock,\n  author = {Tsunato Nakai and Takuya Higashi},\n  title = {LumiLock: LUT-based Multi-Key Logic Locking},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing hardware-security verification, Trojan detection, logic-locking, or IP-protection methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for hardware-security-verification"
+          ],
+          "metrics": [
+            "detection accuracy",
+            "attack success/failure",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: LUT-based logic locking, K-Gate Lock."
+          ]
+        },
+        {
+          "baseline_id": "promea",
+          "short_name": "Promea",
+          "display_name": "Safeguarding Neural Network IPs from Scan Chain based Model Extraction Attacks",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Safeguarding Neural Network IPs from Scan Chain based Model Extraction Attacks",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{reddy2026promea,\n  author = {E Bhawani Eswar Reddy and Gundameedi Sai Ram Mohan and Sukanta Bhattacharjee and Chandan Karfa},\n  title = {Safeguarding Neural Network IPs from Scan Chain based Model Extraction Attacks},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing hardware-security verification, Trojan detection, logic-locking, or IP-protection methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for hardware-security-verification"
+          ],
+          "metrics": [
+            "detection accuracy",
+            "attack success/failure",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: 784-1024-10 baseline, 784-256-32-10 baseline, 784-512-64-10 baseline, 784-1024-128-10 baseline, 784-256-64-32-10 baseline."
+          ]
+        },
+        {
           "baseline_id": "salad",
           "short_name": "SALAD",
           "display_name": "SALAD: Systematic Assessment of Machine Unlearning on LLM-Aided Hardware Design",
@@ -8414,6 +9496,68 @@
           "caveats": [
             "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
             "Artifact availability and exact reproduction scripts were not verified in this merge pass."
+          ]
+        },
+        {
+          "baseline_id": "sand",
+          "short_name": "Sand",
+          "display_name": "SAND: A Self-supervised and Adaptive NAS-Driven Framework for Hardware Trojan Detection",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "SAND: A Self-supervised and Adaptive NAS-Driven Framework for Hardware Trojan Detection",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{pan2026sand,\n  author = {Zhixin Pan and Ziyu Shu and Linh Nguyen and Amberbir Alemayoh},\n  title = {SAND: A Self-supervised and Adaptive NAS-Driven Framework for Hardware Trojan Detection},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing hardware-security verification, Trojan detection, logic-locking, or IP-protection methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for hardware-security-verification"
+          ],
+          "metrics": [
+            "detection accuracy",
+            "attack success/failure",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
+          ]
+        },
+        {
+          "baseline_id": "scprompt",
+          "short_name": "Scprompt",
+          "display_name": "SCPrompt: Semantic Compression and Prompt-Guided LLM Reasoning for RTL Trojan Detection",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "SCPrompt: Semantic Compression and Prompt-Guided LLM Reasoning for RTL Trojan Detection",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{he2026scprompt,\n  author = {Jiaji He and Jiansheng Chen and Fei Zhao and Yaohua Wang and Yongqiang Lyu},\n  title = {SCPrompt: Semantic Compression and Prompt-Guided LLM Reasoning for RTL Trojan Detection},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing hardware-security verification, Trojan detection, logic-locking, or IP-protection methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for hardware-security-verification"
+          ],
+          "metrics": [
+            "detection accuracy",
+            "attack success/failure",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: GPT-4-Turbo, Moonshot-V1."
           ]
         },
         {
@@ -8700,6 +9844,36 @@
       "aliases": [],
       "baselines": [
         {
+          "baseline_id": "selective-regression-timing-characterization",
+          "short_name": "Selective Regression Timing Characterization",
+          "display_name": "Fast Timing Library Characterization Through Selective Use of Regression Models",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Fast Timing Library Characterization Through Selective Use of Regression Models",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{manda2026selective,\n  author = {Manikanta Prahlad Manda and Seunggyu Lee and Daijoon Hyun},\n  title = {Fast Timing Library Characterization Through Selective Use of Regression Models},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing timing, power, or Liberty library characterization methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for library-characterization"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: full simulation (PrimeLib/HSPICE), Empirical model [4]."
+          ]
+        },
+        {
           "baseline_id": "setupkit",
           "short_name": "SetupKit",
           "display_name": "SetupKit: Efficient Multi-Corner Setup/Hold Time Characterization Using Bias-Enhanced Interpolation and Active Learning",
@@ -8759,6 +9933,36 @@
       ],
       "description": "Lithography hotspot detection methods for identifying layout clips likely to print poorly across process nodes, including supervised, domain-adaptation, graph-based, and layout-language-model approaches.",
       "baselines": [
+        {
+          "baseline_id": "interpretable-gat-based-lithographic-hotspot-detection",
+          "short_name": "Interpretable Gat Based Lithographic Hotspot",
+          "display_name": "Understand and Detect: Lithographic Hotspot Detection by the Interpretable Graph Attention Network",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Understand and Detect: Lithographic Hotspot Detection by the Interpretable Graph Attention Network",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{liu2026interpretable,\n  author = {Andy Liu and Silin Chen and Guohao Wang and Wenzheng Zhao and Yuxiang Fu and Ningmu Zou},\n  title = {Understand and Detect: Lithographic Hotspot Detection by the Interpretable Graph Attention Network},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing lithographic hotspot detection methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for lithography-hotspot-detection"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: TCAD'2020, TODAES'2022, DATE'2023, GLSVLSI'2024, TCAD'2025."
+          ]
+        },
         {
           "baseline_id": "node2node",
           "short_name": "Node2Node",
@@ -8913,6 +10117,36 @@
       ],
       "description": "Methods that use large language models, specifications, RTL, coverage feedback, or formal-verification feedback to generate or refine hardware verification assertions.",
       "baselines": [
+        {
+          "baseline_id": "assertminer",
+          "short_name": "Assertminer",
+          "display_name": "AssertMiner: Module-Level Spec Generation and Assertion Mining using Static Analysis Guided LLMs",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "AssertMiner: Module-Level Spec Generation and Assertion Mining using Static Analysis Guided LLMs",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{lyu2026assertminer,\n  author = {Hongqin Lyu and Yonghao Wang and Jiaxin Zhou and Zhiteng Chao and Tiancheng Wang and Huawei Li},\n  title = {AssertMiner: Module-Level Spec Generation and Assertion Mining using Static Analysis Guided LLMs},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing LLM-assisted assertion generation, assertion mining, or hardware specification workflows"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for llm-assertion-generation"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: AssertLLM, Spec2Assertion."
+          ]
+        },
         {
           "baseline_id": "autoassert-trustassert",
           "short_name": "AutoAssert/TrustAssert",
@@ -9123,6 +10357,36 @@
             "the paper is partly an efficacy study of LLM placement rather than a pure leaderboard claim; PA-LLM is the best reported tradeoff while PA-PA remains competitive",
             "formal verification uses Cadence JasperGold and security-property templates, so reproducing exact results may require commercial tool access"
           ]
+        },
+        {
+          "baseline_id": "supersaga",
+          "short_name": "Supersaga",
+          "display_name": "SuperSAGA: A Supervisor-Subordinate Agentic Workflow for the Generation of Assertions",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "SuperSAGA: A Supervisor-Subordinate Agentic Workflow for the Generation of Assertions",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{paul2026supersaga,\n  author = {Subhajit Paul and Ansuman Banerjee and Sumana Ghosh and Sudhakar Surendran and Raj Kumar Gajavelly},\n  title = {SuperSAGA: A Supervisor-Subordinate Agentic Workflow for the Generation of Assertions},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing LLM-assisted assertion generation, assertion mining, or hardware specification workflows"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for llm-assertion-generation"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
+          ]
         }
       ]
     },
@@ -9215,6 +10479,66 @@
           ]
         },
         {
+          "baseline_id": "hdlxgraph",
+          "short_name": "Hdlxgraph",
+          "display_name": "HDLxGraph: Bridging Large Language Models and HDL Repositories via HDL Graph Databases",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "HDLxGraph: Bridging Large Language Models and HDL Repositories via HDL Graph Databases",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{zheng2026hdlxgraph,\n  author = {Pingqing Zheng and Jiayin Qin and Fuqi Zhang and Niraj Chitla and Zishen Wan and Shang Wu and Yu (Kevin) Cao and Caiwen Ding and Yang (Katie) Zhao},\n  title = {HDLxGraph: Bridging Large Language Models and HDL Repositories via HDL Graph Databases},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing LLM/RAG/agent workflows for EDA automation or hardware-design assistance"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for llm-for-eda-automation"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: Similarity-based RAG, GraphRAG."
+          ]
+        },
+        {
+          "baseline_id": "llm-assisted-circuit-verification-a-comprehensive-survey",
+          "short_name": "Llm Assisted Circuit Verification A",
+          "display_name": "LLM-Assisted Circuit Verification: A Comprehensive Survey",
+          "role": "historical_reference",
+          "nomination": "community",
+          "publication": {
+            "title": "LLM-Assisted Circuit Verification: A Comprehensive Survey",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{liu2026llm,\n  author = {Hongduo Liu and Yuntao Lu and Mingjun Wang and Xufeng Yao and Bei Yu},\n  title = {LLM-Assisted Circuit Verification: A Comprehensive Survey},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing LLM/RAG/agent workflows for EDA automation or hardware-design assistance"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for llm-for-eda-automation"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
+          ]
+        },
+        {
           "baseline_id": "llm4verilog",
           "short_name": "LLM4Verilog",
           "display_name": "LLM4Verilog: Building Large-Scale, High-Quality Data Infrastructure for Verilog Code Generation via Community Efforts",
@@ -9244,6 +10568,36 @@
           "reproducibility": "artifact_available",
           "caveats": [
             "Community-driven data collection may introduce quality variance; filtering pipeline is critical to dataset quality"
+          ]
+        },
+        {
+          "baseline_id": "lorecast",
+          "short_name": "Lorecast",
+          "display_name": "Lorecast: Layout-Aware Performance and Power Forecasting from Natural Language",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Lorecast: Layout-Aware Performance and Power Forecasting from Natural Language",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{wang2026lorecast,\n  author = {Runzhi Wang and Prianka Sengupta and Cristhian Roman-Vicharra and Yiran Chen and Jiang Hu},\n  title = {Lorecast: Layout-Aware Performance and Power Forecasting from Natural Language},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing LLM/RAG/agent workflows for EDA automation or hardware-design assistance"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for llm-for-eda-automation"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: GPT4-based Lorecast, Gemini 1.5 Pro-based Lorecast."
           ]
         },
         {
@@ -9357,6 +10711,36 @@
             "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
             "Draft audit recorded experiment comparison candidates including: Naive prompting, Granite-Code-34b, CodeLlama34b, Deepseek-33b, Mixtral-8x7b."
           ]
+        },
+        {
+          "baseline_id": "verirag",
+          "short_name": "Verirag",
+          "display_name": "VeriRAG: A Knowledge Graph-Augmented RAG for Verilog and Assertion Generation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "VeriRAG: A Knowledge Graph-Augmented RAG for Verilog and Assertion Generation",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{thangellamudi2026verirag,\n  author = {Jayanth Thangellamudi and Raghul Saravanan and and Sai Manoj Pudukotai Dinakarrao},\n  title = {VeriRAG: A Knowledge Graph-Augmented RAG for Verilog and Assertion Generation},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing LLM/RAG/agent workflows for EDA automation or hardware-design assistance"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for llm-for-eda-automation"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: VeriGen, RTLCoder, BetterV, OriGen, CodeV, AssertLLM, SANGAM, VerilogCoder."
+          ]
         }
       ]
     },
@@ -9378,6 +10762,38 @@
       ],
       "description": "Use of large language models for RTL code generation, including Verilog/VHDL generation from natural-language specifications and RTL bug fixing.",
       "baselines": [
+        {
+          "baseline_id": "autoverifix",
+          "short_name": "Autoverifix",
+          "display_name": "AutoVeriFix: Automatically Correcting Errors and Enhancing Functional Correctness in LLM-Generated Verilog Code",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "AutoVeriFix: Automatically Correcting Errors and Enhancing Functional Correctness in LLM-Generated Verilog Code",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{tan2026autoverifix,\n  author = {Yan Tan and Xiangchen Meng and Zijun Jiang and Yangdi Lyu},\n  title = {AutoVeriFix: Automatically Correcting Errors and Enhancing Functional Correctness in LLM-Generated Verilog Code},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing LLM-assisted RTL, Verilog, HDL generation, or repair methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for llm-rtl-generation"
+          ],
+          "metrics": [
+            "functional correctness",
+            "syntax pass rate",
+            "repair success",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: OriGen, RTLCoder."
+          ]
+        },
         {
           "baseline_id": "decortl",
           "short_name": "DecoRTL",
@@ -9687,6 +11103,38 @@
           ]
         },
         {
+          "baseline_id": "revolution",
+          "short_name": "Revolution",
+          "display_name": "REvolution: An Evolutionary Framework for RTL Generation driven by Large Language Models",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "REvolution: An Evolutionary Framework for RTL Generation driven by Large Language Models",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{min2026revolution,\n  author = {Kyungjun Min and Kyumin Cho and Junhwan Jang and Seokhyeong Kang},\n  title = {REvolution: An Evolutionary Framework for RTL Generation driven by Large Language Models},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing LLM-assisted RTL, Verilog, HDL generation, or repair methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for llm-rtl-generation"
+          ],
+          "metrics": [
+            "functional correctness",
+            "syntax pass rate",
+            "repair success",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
+          ]
+        },
+        {
           "baseline_id": "scalertl",
           "short_name": "ScaleRTL",
           "display_name": "ScaleRTL: Scaling LLMs with Reasoning Data and Test-Time Compute for Accurate RTL Code Generation",
@@ -9860,6 +11308,38 @@
             "no DBLP/Crossref/arXiv exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review",
             "the paper states a GitHub dataset URL, but HTTP/git verification timed out during this pass, so the repository is not listed as a verified baseline link",
             "results depend on generated reasoning annotations, injected bug taxonomy, and access to GPU fine-tuning infrastructure"
+          ]
+        },
+        {
+          "baseline_id": "vflow",
+          "short_name": "Vflow",
+          "display_name": "VFlow: Discovering Optimal Agentic Workflows for Verilog Generation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "VFlow: Discovering Optimal Agentic Workflows for Verilog Generation",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{wei2026vflow,\n  author = {Yangbo Wei and Zhen Huang and Lei He and Li Huang and Ting-Jung Lin and Wei W. Xing},\n  title = {VFlow: Discovering Optimal Agentic Workflows for Verilog Generation},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing LLM-assisted RTL, Verilog, HDL generation, or repair methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for llm-rtl-generation"
+          ],
+          "metrics": [
+            "functional correctness",
+            "syntax pass rate",
+            "repair success",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: CodeV-R1, RTL-Coder, GPT-4o, Llama 3.1 405B."
           ]
         }
       ]
@@ -10053,6 +11533,66 @@
           ]
         },
         {
+          "baseline_id": "mdpoplanner",
+          "short_name": "Mdpoplanner",
+          "display_name": "MdpoPlanner: Mask-Driven Floorplan via Reinforcement Learning-Based Placement Order",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "MdpoPlanner: Mask-Driven Floorplan via Reinforcement Learning-Based Placement Order",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{wu2026mdpoplanner,\n  author = {Yue Wu and Caiyu Chen and Xiaoyan Yang},\n  title = {MdpoPlanner: Mask-Driven Floorplan via Reinforcement Learning-Based Placement Order},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing macro placement, floorplanning, or large-block placement frameworks"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for macro-placement"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
+          ]
+        },
+        {
+          "baseline_id": "multi-tier-mol-macro-placement-framework",
+          "short_name": "Multi Tier Mol Macro Placement",
+          "display_name": "Boosting Scalability and Performance: Macro Placement for Flexible 3D-Stacked ML Accelerators",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Boosting Scalability and Performance: Macro Placement for Flexible 3D-Stacked ML Accelerators",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{hu2026multi,\n  author = {Jiawei Hu and Canlin Zhang and Pruek Vanna-iampikul and Tushar Krishna and Sung Kyu Lim},\n  title = {Boosting Scalability and Performance: Macro Placement for Flexible 3D-Stacked ML Accelerators},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing macro placement, floorplanning, or large-block placement frameworks"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for macro-placement"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: 2D SARA, SOTA MoL (two-tier), 2D Systolic Array."
+          ]
+        },
+        {
           "baseline_id": "rl-rudy-macro-placement",
           "short_name": "RL-RUDY MacroPlace",
           "display_name": "RL-Based Macro Placement with Cell Clustering and RUDY Modeling",
@@ -10086,6 +11626,36 @@
             "no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review",
             "late-breaking result gives limited artifact detail; no public repository was verified in this pass",
             "benchmarks exclude fence-region constraints, so results should be reviewed against other macro-placement baselines with matching benchmark settings"
+          ]
+        },
+        {
+          "baseline_id": "timing-driven-hierarchical-macro-placement",
+          "short_name": "Timing Driven Hierarchical Macro Placement",
+          "display_name": "A Timing-Driven Hierarchical Macro Placement Framework for Large-Scale Complex IP Blocks",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "A Timing-Driven Hierarchical Macro Placement Framework for Large-Scale Complex IP Blocks",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{fu2026timing,\n  author = {Wei Fu and Lixin Chen and Jinghui Zhou and Ziran Zhu},\n  title = {A Timing-Driven Hierarchical Macro Placement Framework for Large-Scale Complex IP Blocks},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing macro placement, floorplanning, or large-block placement frameworks"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for macro-placement"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: Hier-RTLMP."
           ]
         }
       ]
@@ -10160,6 +11730,66 @@
       "description": "Circuit representation learning, EDA flow parameter tuning, and ML-driven EDA benchmarks and QA tools.",
       "aliases": [],
       "baselines": [
+        {
+          "baseline_id": "dali-pd",
+          "short_name": "Dali Pd",
+          "display_name": "DALI-PD: Diffusion-based Synthetic Layout Heatmap Generation for ML in Physical Design",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "DALI-PD: Diffusion-based Synthetic Layout Heatmap Generation for ML in Physical Design",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{wu2026dali,\n  author = {Bing-Yue Wu and Vidya A. Chhabria},\n  title = {DALI-PD: Diffusion-based Synthetic Layout Heatmap Generation for ML in Physical Design},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing ML-for-EDA datasets, pretrained models, or physical-design learning workflows"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for ml-for-eda"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: CircuitNet."
+          ]
+        },
+        {
+          "baseline_id": "ipcl",
+          "short_name": "Ipcl",
+          "display_name": "iPCL: Pre-training for Chip Layout",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "iPCL: Pre-training for Chip Layout",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{li2026ipcl,\n  author = {Xingquan Li and Weiguo Li and Xinhua Lai and Junfeng Liu and Rui Wang},\n  title = {iPCL: Pre-training for Chip Layout},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing ML-for-EDA datasets, pretrained models, or physical-design learning workflows"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for ml-for-eda"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
+          ]
+        },
         {
           "baseline_id": "mm-grade",
           "short_name": "MM-GRADE",
@@ -10398,6 +12028,66 @@
             "no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review",
             "the paper adopts the same routing strategy as a prior method, so the main contribution is TDM ratio assignment and delay-aware TDM wire assignment",
             "proposed topic overlaps HoPart's multi-FPGA partitioning/routing topic; human taxonomy review may split die-level routing if enough drafts accumulate"
+          ]
+        },
+        {
+          "baseline_id": "preference-guided-bayesian-optimization",
+          "short_name": "Preference Guided Bayesian Optimization",
+          "display_name": "Automated Parameter Tuning for Multi-FPGA Partitioning: A Preference-Guided Approach",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Automated Parameter Tuning for Multi-FPGA Partitioning: A Preference-Guided Approach",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{dai2026preference,\n  author = {Yutao Dai and Shengbo Tong and Chunyan Pei and Zhuohua Liu and Wei Xing and Yi Liu and Rui Wang and Wenjian Yu},\n  title = {Automated Parameter Tuning for Multi-FPGA Partitioning: A Preference-Guided Approach},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing multi-FPGA partitioning, die-level routing, or TDM assignment methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for multi-fpga-system-partitioning-and-routing"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
+          ]
+        },
+        {
+          "baseline_id": "timing-aware-co-optimization-framework-tl-ta",
+          "short_name": "Timing Aware Co Optimization Framework",
+          "display_name": "Timing-Aware Optimization of Die-Level Routing and TDM Assignment for Multi-FPGA Systems",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Timing-Aware Optimization of Die-Level Routing and TDM Assignment for Multi-FPGA Systems",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{chen2026timing,\n  author = {Yijun Chen and Haoyuan Li and Chunyan Pei and Jianwang Zhai and Kang Zhao and Wenjian Yu},\n  title = {Timing-Aware Optimization of Die-Level Routing and TDM Assignment for Multi-FPGA Systems},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing multi-FPGA partitioning, die-level routing, or TDM assignment methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for multi-fpga-system-partitioning-and-routing"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: Huang [19], Top 3 official solutions (2023 EDA Elite Challenge), TL+AA (timing-aware load-balanced router + average assignment TDM), SP+TA (shortest-path router + timing-aware TDM), SP+AA (shortest-path router + average assignment TDM)."
           ]
         }
       ]
@@ -10912,6 +12602,36 @@
             "first performance-driven pre-assignment routing for package designs; no public code identified",
             "industry co-authored, may include proprietary benchmarks"
           ]
+        },
+        {
+          "baseline_id": "topological-optimization-based-layer-assignment",
+          "short_name": "Topological Optimization Based Layer Assignment",
+          "display_name": "Topological Optimization-Based Layer Assignment Method for Fan-Out Wafer-Level Packaging",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Topological Optimization-Based Layer Assignment Method for Fan-Out Wafer-Level Packaging",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{wu2026topological,\n  author = {Haoying Wu and Guanxian Zhu and Xu He and Mingyu Liu},\n  title = {Topological Optimization-Based Layer Assignment Method for Fan-Out Wafer-Level Packaging},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing package, fan-out wafer-level package, or layer-assignment routing methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for package-routing"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: Via-Based Redistribution Layer Routing for InFO Packages, Bus Assignment Considering Flexible Escape Routing."
+          ]
         }
       ]
     },
@@ -11116,6 +12836,36 @@
       ],
       "description": "Board-level PCB physical-design methods for component placement, routing, and layout migration, including migration from reference layouts and evaluation by board routing, signal-integrity, electromagnetic, and manufacturability metrics.",
       "baselines": [
+        {
+          "baseline_id": "drlplace",
+          "short_name": "Drlplace",
+          "display_name": "DRLPlace: A Deep Reinforcement Learning-based Irregular and High-Density Printed Circuit Board Placement Method",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "DRLPlace: A Deep Reinforcement Learning-based Irregular and High-Density Printed Circuit Board Placement Method",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{cai2026drlplace,\n  author = {Lei Cai and Ke Cheng and Jixin Zhang and Haiyun Li and Zhiwei Ye},\n  title = {DRLPlace: A Deep Reinforcement Learning-based Irregular and High-Density Printed Circuit Board Placement Method},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing PCB placement, routing, migration, or physical-design methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for pcb-physical-design"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: manual placement, SA-PCB, RL-based placement."
+          ]
+        },
         {
           "baseline_id": "pcb-migrator",
           "short_name": "PCB-Migrator",
@@ -11591,6 +13341,66 @@
           ]
         },
         {
+          "baseline_id": "dph-sizer",
+          "short_name": "Dph Sizer",
+          "display_name": "A Heterogeneous Graph-based Gate Sizer Integrating Graph Attention Network and Transformer",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "A Heterogeneous Graph-based Gate Sizer Integrating Graph Attention Network and Transformer",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{ahn2026dph,\n  author = {Jinmo Ahn and Jinoh Cho and Jaemin Seo and Jaeseung Lee and Jakang Lee and Seokhyeong Kang},\n  title = {A Heterogeneous Graph-based Gate Sizer Integrating Graph Attention Network and Transformer},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing post-placement physical optimization, ECO, delay padding, or gate sizing methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for physical-optimization"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
+          ]
+        },
+        {
+          "baseline_id": "dual-decomposition-with-path-relationship-analysis",
+          "short_name": "Dual Decomposition With Path Relationship",
+          "display_name": "Novel Multi-Corner Delay Padding using Path Relationship Analysis and Dual Decomposition",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Novel Multi-Corner Delay Padding using Path Relationship Analysis and Dual Decomposition",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{zhu2026dual,\n  author = {Kaixiang Zhu and Jiangnan Li and Lingli Wang and Wai-Shing Luk},\n  title = {Novel Multi-Corner Delay Padding using Path Relationship Analysis and Dual Decomposition},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing post-placement physical optimization, ECO, delay padding, or gate sizing methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for physical-optimization"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: single worst-case corner baseline."
+          ]
+        },
+        {
           "baseline_id": "invited-advanced-node-design-closure-perspective",
           "short_name": "Advanced-node Closure Perspective",
           "display_name": "Challenges and Opportunities in Advanced-node Design Closure",
@@ -11623,6 +13433,66 @@
             "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
             "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
             "Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry."
+          ]
+        },
+        {
+          "baseline_id": "ir-drop-aware-eco",
+          "short_name": "Ir Drop Aware ECO",
+          "display_name": "IR Drop-Aware ECO: A Fast Approach to Minimize Layout and Timing Disturbance",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "IR Drop-Aware ECO: A Fast Approach to Minimize Layout and Timing Disturbance",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{hu2026ir,\n  author = {Jingchao Hu and Yibo Lin and Hao Yu and Quan Chen and Zhou Jin and Cheng Zhuo},\n  title = {IR Drop-Aware ECO: A Fast Approach to Minimize Layout and Timing Disturbance},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing post-placement physical optimization, ECO, delay padding, or gate sizing methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for physical-optimization"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
+          ]
+        },
+        {
+          "baseline_id": "rectification-learning-qbf-based-eco",
+          "short_name": "Rectification Learning Qbf Based ECO",
+          "display_name": "Formalization of Rectification Learning for Economic Design Updates",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Formalization of Rectification Learning for Economic Design Updates",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{kravets2026rectification,\n  author = {Victor N. Kravets and Jie-Hong R. Jiang},\n  title = {Formalization of Rectification Learning for Economic Design Updates},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing post-placement physical optimization, ECO, delay padding, or gate sizing methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for physical-optimization"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: syseco."
           ]
         }
       ]
@@ -11997,6 +13867,70 @@
           ]
         },
         {
+          "baseline_id": "dpo-3d",
+          "short_name": "Dpo 3d",
+          "display_name": "DPO-3D: Differentiable Power Delivery Network Optimization via Flexible Modeling for Routability and IR-Drop Tradeoff in Face-to-Face 3D ICs",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "DPO-3D: Differentiable Power Delivery Network Optimization via Flexible Modeling for Routability and IR-Drop Tradeoff in Face-to-Face 3D ICs",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{zhuang2026dpo,\n  author = {Zhen Zhuang and Zheng Yang and Yuxuan Zhao and Jiawei Hu and Bei Yu and Sung Kyu Lim and Tsung-Yi Ho},\n  title = {DPO-3D: Differentiable Power Delivery Network Optimization via Flexible Modeling for Routability and IR-Drop Tradeoff in Face-to-Face 3D ICs},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing PDN, IR-drop, decap, or current-crowding analysis/optimization methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for power-delivery-network-analysis"
+          ],
+          "metrics": [
+            "IR drop",
+            "impedance",
+            "current density",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: original flow, ILP-based method, state-of-the-art baseline (unnamed)."
+          ]
+        },
+        {
+          "baseline_id": "gat-based-pdn-current-crowding-analysis",
+          "short_name": "Gat Based PDN Current Crowding",
+          "display_name": "Graph Attention-Based Current Crowding Analysis at TSV Interfaces in 3D Power Delivery Networks",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Graph Attention-Based Current Crowding Analysis at TSV Interfaces in 3D Power Delivery Networks",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{yang2026gat,\n  author = {Zheng Yang and Zhen Zhuang and Tsung-Yi Ho and Sung Kyu Lim},\n  title = {Graph Attention-Based Current Crowding Analysis at TSV Interfaces in 3D Power Delivery Networks},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing PDN, IR-drop, decap, or current-crowding analysis/optimization methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for power-delivery-network-analysis"
+          ],
+          "metrics": [
+            "IR drop",
+            "impedance",
+            "current density",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
+          ]
+        },
+        {
           "baseline_id": "mf-mor",
           "short_name": "MF-MOR",
           "display_name": "MF-MOR: Multi-Fidelity Model Order Reduction for Many-Port Linear Systems in Chip Power Modeling",
@@ -12174,6 +14108,38 @@
       "description": "Quantum circuit compilation, mapping, scheduling, routing, and architecture-aware execution for trapped-ion, modular, and other quantum-computing platforms.",
       "baselines": [
         {
+          "baseline_id": "a-scalable-and-high-quality-qubit-mapping-and-shuttling-framework-for-neutral-at",
+          "short_name": "A Scalable And High Quality",
+          "display_name": "A Scalable and High-Quality Qubit Mapping and Shuttling Framework for Neutral Atom Quantum Devices",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "A Scalable and High-Quality Qubit Mapping and Shuttling Framework for Neutral Atom Quantum Devices",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{hsieh2026a,\n  author = {Sung-Ying Hsieh and Wai-Kei Mak},\n  title = {A Scalable and High-Quality Qubit Mapping and Shuttling Framework for Neutral Atom Quantum Devices},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing quantum circuit synthesis, mapping, shuttling, or compilation methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for quantum-circuit-compilation"
+          ],
+          "metrics": [
+            "gate count",
+            "depth",
+            "fidelity",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
+          ]
+        },
+        {
           "baseline_id": "improved-ion-shuttling-approach",
           "short_name": "Improved QCCD Shuttling",
           "display_name": "An Improved Ion-Shuttling Approach for QCCD Architectures",
@@ -12205,6 +14171,70 @@
             "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
             "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
             "Draft audit recorded experiment comparison candidates including: Prior QCCD shuttling approach [27]."
+          ]
+        },
+        {
+          "baseline_id": "mlir-based-quantum-oracle-synthesis-toolchain",
+          "short_name": "Mlir Based Quantum Oracle Synthesis",
+          "display_name": "Quantum Oracle Synthesis from HDL Designs via Multi Level Intermediate Representation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Quantum Oracle Synthesis from HDL Designs via Multi Level Intermediate Representation",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{lancellotti2026mlir,\n  author = {Giacomo Lancellotti and Filippo Buda and Giacomo Carugati and Daniele Gazzola and Alessandro Barenghi and Giovanni Agosta and Gerardo Pelosi},\n  title = {Quantum Oracle Synthesis from HDL Designs via Multi Level Intermediate Representation},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing quantum circuit synthesis, mapping, shuttling, or compilation methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for quantum-circuit-compilation"
+          ],
+          "metrics": [
+            "gate count",
+            "depth",
+            "fidelity",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: MLIR-based quantum oracle synthesis toolchain."
+          ]
+        },
+        {
+          "baseline_id": "subgraph-based-qubit-mapping",
+          "short_name": "Subgraph Based Qubit Mapping",
+          "display_name": "Subgraph-based Qubit Mapping for Noisy Intermediate-Scale Quantum Computing",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Subgraph-based Qubit Mapping for Noisy Intermediate-Scale Quantum Computing",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{gao2026subgraph,\n  author = {Junyi Gao and Wei-Hsiang Tseng and Yao-Wen Chang},\n  title = {Subgraph-based Qubit Mapping for Noisy Intermediate-Scale Quantum Computing},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing quantum circuit synthesis, mapping, shuttling, or compilation methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for quantum-circuit-compilation"
+          ],
+          "metrics": [
+            "gate count",
+            "depth",
+            "fidelity",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: FSQM [16]."
           ]
         },
         {
@@ -13561,6 +15591,37 @@
           "links": {}
         },
         {
+          "baseline_id": "fiawase",
+          "short_name": "Fiawase",
+          "display_name": "FIawase: A SET Fault Injection Framework Towards Exhaustive System-Level Impact Evaluation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "FIawase: A SET Fault Injection Framework Towards Exhaustive System-Level Impact Evaluation",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{zhang2026fiawase,\n  author = {Mingtao Zhang and Quan Cheng and Masanori Hashimoto},\n  title = {FIawase: A SET Fault Injection Framework Towards Exhaustive System-Level Impact Evaluation},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing hardware/system testing, fuzzing, or fault-injection methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for testing-and-fuzzing"
+          ],
+          "metrics": [
+            "bug/fault detection",
+            "coverage",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: HachiFI."
+          ]
+        },
+        {
           "baseline_id": "firefly",
           "short_name": "Firefly",
           "display_name": "Firefly: Shedding Light on Verification Gaps Using LLM-Powered Mutation Testing",
@@ -13591,6 +15652,37 @@
           "caveats": [
             "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
             "Artifact availability and exact reproduction scripts were not verified in this merge pass."
+          ]
+        },
+        {
+          "baseline_id": "gemfuzz",
+          "short_name": "Gemfuzz",
+          "display_name": "GEmFuzz: Uncovering System-Level Vulnerabilities in SoCs via Emulation-Based Grey-Box Fuzzing",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "GEmFuzz: Uncovering System-Level Vulnerabilities in SoCs via Emulation-Based Grey-Box Fuzzing",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{saha2026gemfuzz,\n  author = {Shuvagata Saha and Ahmed Alhurubi and Tanvir Rahman and Hasan Al Shaikh and Sujan Kumar Saha and Farimah Farahmandi and Mark Tehranipoor},\n  title = {GEmFuzz: Uncovering System-Level Vulnerabilities in SoCs via Emulation-Based Grey-Box Fuzzing},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing hardware/system testing, fuzzing, or fault-injection methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for testing-and-fuzzing"
+          ],
+          "metrics": [
+            "bug/fault detection",
+            "coverage",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: HyPFuzz, TheHuzz, Cascade, DifuzzRTL, DirectFuzz, FormalFuzzer, HFL, HyperFuzzing, ..."
           ]
         },
         {
@@ -13627,6 +15719,37 @@
           "caveats": [
             "ATPG integration adds complexity to the fuzzing flow; setup may be design-specific",
             "graybox approach requires partial design knowledge that may not always be available"
+          ]
+        },
+        {
+          "baseline_id": "targetfuzz",
+          "short_name": "Targetfuzz",
+          "display_name": "TargetFuzz: Enabling Directed Graybox Fuzzing via SAT-Guided Seed Generation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "TargetFuzz: Enabling Directed Graybox Fuzzing via SAT-Guided Seed Generation",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{saravanan2026targetfuzz,\n  author = {Raghul Saravanan and Sai Manoj Pudukotai Dinakarrao},\n  title = {TargetFuzz: Enabling Directed Graybox Fuzzing via SAT-Guided Seed Generation},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing hardware/system testing, fuzzing, or fault-injection methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for testing-and-fuzzing"
+          ],
+          "metrics": [
+            "bug/fault detection",
+            "coverage",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: DirectFuzz, CGF (Coverage-Guided Fuzzing)."
           ]
         },
         {
@@ -13877,6 +16000,37 @@
           ]
         },
         {
+          "baseline_id": "asm-satnn-co-simulation-framework",
+          "short_name": "Asm Satnn Co Simulation Framework",
+          "display_name": "Efficient Simulation of IC Packages with TEC Based on Adaptive Segmented Method and Spatially-Aware Thermal Neural Network",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Efficient Simulation of IC Packages with TEC Based on Adaptive Segmented Method and Spatially-Aware Thermal Neural Network",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{li2026asm,\n  author = {Longfei Li and Xinyue Li and Shunxiang Lan and Liang Chen and Haibao Chen and Min Tang},\n  title = {Efficient Simulation of IC Packages with TEC Based on Adaptive Segmented Method and Spatially-Aware Thermal Neural Network},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing chip/package thermal modeling, simulation, or thermal-map estimation methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for thermal-analysis"
+          ],
+          "metrics": [
+            "temperature error",
+            "runtime",
+            "memory usage"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: MLP, CNN, U-Net, COMSOL Multiphysics."
+          ]
+        },
+        {
           "baseline_id": "beol-thermal-model",
           "short_name": "BEOL-Thermal-Model",
           "display_name": "High-Resolution Full-Chip Thermal Resistance Extraction of BEOL Interconnects in 3-D ICs Considering Detailed Via Connectivity",
@@ -13907,6 +16061,37 @@
           "caveats": [
             "high-resolution extraction considering detailed via connectivity; no public tool release identified",
             "accuracy improvement with negligible time overhead claimed but not quantified"
+          ]
+        },
+        {
+          "baseline_id": "domain-transformation-and-decomposition-method-dtdm",
+          "short_name": "Domain Transformation And Decomposition Method",
+          "display_name": "Domain Transformation and Decomposition Method for Composable Thermal Modeling and Simulation of Chiplet-Based 2.5D Integrated System",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Domain Transformation and Decomposition Method for Composable Thermal Modeling and Simulation of Chiplet-Based 2.5D Integrated System",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{lan2026domain,\n  author = {Shunxiang Lan and Min Tang},\n  title = {Domain Transformation and Decomposition Method for Composable Thermal Modeling and Simulation of Chiplet-Based 2.5D Integrated System},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing chip/package thermal modeling, simulation, or thermal-map estimation methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for thermal-analysis"
+          ],
+          "metrics": [
+            "temperature error",
+            "runtime",
+            "memory usage"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: ANSYS FLUENT, Thermal-WLP [25]."
           ]
         },
         {
@@ -14087,6 +16272,37 @@
           ]
         },
         {
+          "baseline_id": "multimodal-diffusion-fusion",
+          "short_name": "Multimodal Diffusion Fusion",
+          "display_name": "Full-Chip Thermal Map Estimation by Multimodal Data Fusion via Denoising Diffusion",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Full-Chip Thermal Map Estimation by Multimodal Data Fusion via Denoising Diffusion",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{li2026multimodal,\n  author = {Jing Li and Wei Xing and Yuquan Sun and Yuanqing Cheng},\n  title = {Full-Chip Thermal Map Estimation by Multimodal Data Fusion via Denoising Diffusion},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing chip/package thermal modeling, simulation, or thermal-map estimation methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for thermal-analysis"
+          ],
+          "metrics": [
+            "temperature error",
+            "runtime",
+            "memory usage"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: thermal-sensors-only, performance-counters-only, multimodal-fusion."
+          ]
+        },
+        {
           "baseline_id": "nstherm",
           "short_name": "NSTherm",
           "display_name": "NSTherm: An Error-Bounded Network-Stochastic Fusion Thermal Simulator for Geometry-Adaptable Chiplets",
@@ -14194,6 +16410,37 @@
             "first point-cloud representation for 2.5D IC thermal prediction; no comparison with other point-cloud EDA architectures",
             "may require retraining for significantly different packaging technologies"
           ]
+        },
+        {
+          "baseline_id": "thpa",
+          "short_name": "Thpa",
+          "display_name": "ThPA: Thermal Simulation for Advanced ICs",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "ThPA: Thermal Simulation for Advanced ICs",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{chen2026thpa,\n  author = {Bo-Wen Chen and Yong-Han Lin and Chien-Yu Lin and Yu-Min Lee},\n  title = {ThPA: Thermal Simulation for Advanced ICs},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing chip/package thermal modeling, simulation, or thermal-map estimation methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for thermal-analysis"
+          ],
+          "metrics": [
+            "temperature error",
+            "runtime",
+            "memory usage"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: ANSYS Icepak, CG-Jacobi-precon."
+          ]
         }
       ]
     },
@@ -14270,7 +16517,72 @@
         "timing-driven global placement"
       ],
       "description": "Global placement methods that optimize timing objectives or timing-aware trade-offs during placement.",
-      "baselines": []
+      "baselines": [
+        {
+          "baseline_id": "c3po",
+          "short_name": "C3po",
+          "display_name": "C3PO: Commercial-Quality Global Placement via Coherent, Concurrent Timing, Routability, and Wirelength Optimization",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "C3PO: Commercial-Quality Global Placement via Coherent, Concurrent Timing, Routability, and Wirelength Optimization",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{lu2026c3po,\n  author = {Yi-Chen Lu and Hao-Hsiang Hsiao and Rongjian Liang and Wen-Hao Liu and Haoxing Ren},\n  title = {C3PO: Commercial-Quality Global Placement via Coherent, Concurrent Timing, Routability, and Wirelength Optimization},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing placement methods that optimize timing, routability, and wirelength together"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for timing-driven-global-placement"
+          ],
+          "metrics": [
+            "wirelength",
+            "timing",
+            "routability",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: DREAMPlace 4.0, DAC'22, ICCAD'24, DATE'25, DAC'25, Commercial PD tool (industry-leading)."
+          ]
+        },
+        {
+          "baseline_id": "comprehensive-delay-aware-net-weighting",
+          "short_name": "Comprehensive Delay Aware Net Weighting",
+          "display_name": "Comprehensive Delay-Aware Net Weighting Framework for Timing-Driven Global Placement",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Comprehensive Delay-Aware Net Weighting Framework for Timing-Driven Global Placement",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{chen2026comprehensive,\n  author = {Lixin Chen and Keyu Peng and Jinghui Zhou and Hao Gu and Wei Fu and Shuting Cai and Ziran Zhu},\n  title = {Comprehensive Delay-Aware Net Weighting Framework for Timing-Driven Global Placement},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing placement methods that optimize timing, routability, and wirelength together"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for timing-driven-global-placement"
+          ],
+          "metrics": [
+            "wirelength",
+            "timing",
+            "routability",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: DREAMPlace 4.0, DAC'22, ISPD'24, ICCAD'24, DATE'25."
+          ]
+        }
+      ]
     },
     {
       "review_triggers": [
@@ -14288,6 +16600,36 @@
       ],
       "description": "Global routing methods that optimize or trade off timing, RC, congestion, power, and routing quality before detailed routing.",
       "baselines": [
+        {
+          "baseline_id": "gpu-accelerated-global-routing-with-timing-and-congestion-optimization",
+          "short_name": "Gpu Accelerated Global Routing With",
+          "display_name": "GPU-Accelerated Global Routing with Balanced Timing and Congestion Optimization",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "GPU-Accelerated Global Routing with Balanced Timing and Congestion Optimization",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{zhou2026gpu,\n  author = {Jinghui Zhou and Fuxing Huang and Lixin Chen and Xinglin Zheng and Ziran Zhu},\n  title = {GPU-Accelerated Global Routing with Balanced Timing and Congestion Optimization},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing global-routing methods with timing/congestion objectives"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for timing-driven-global-routing"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: ISPD 2025 contest 1st place, ISPD 2025 contest 2nd place, ISPD 2025 contest 3rd place."
+          ]
+        },
         {
           "baseline_id": "gradient-guided-rc-weighting",
           "short_name": "Gradient-guided RC Weighting",
@@ -14371,6 +16713,36 @@
             "Requires signoff timing data for supervised training and calibration",
             "Results depend on timing-window feature quality and routing-stage feature extraction",
             "Added during post-merge gap scan from ICCAD extracted text not covered by accepted baselines"
+          ]
+        },
+        {
+          "baseline_id": "gnn-based-timing-yield-predictor-from-ssta",
+          "short_name": "Gnn Based Timing Yield Predictor",
+          "display_name": "GNN-Based Timing Yield Prediction From Statistical Static Timing Analysis",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "GNN-Based Timing Yield Prediction From Statistical Static Timing Analysis",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{xi2026gnn,\n  author = {Chenbo Xi and Liang Zhang and Biwei Xie and Pingqiang Zhou},\n  title = {GNN-Based Timing Yield Prediction From Statistical Static Timing Analysis},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing timing prediction, timing-yield estimation, or learned timing models"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for timing-prediction"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit recorded experiment comparison candidates including: GCNII, GraphSage, GAT, Ye's method."
           ]
         },
         {
@@ -14815,12 +17187,42 @@
           "caveats": [
             "first decoupled Bayesian approach with statistical corners; no public code identified yet"
           ]
+        },
+        {
+          "baseline_id": "tabesa",
+          "short_name": "Tabesa",
+          "display_name": "Beyond Labels: Data-Efficient Wafer Yield Prediction with TabESA",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Beyond Labels: Data-Efficient Wafer Yield Prediction with TabESA",
+            "venue": "ASP-DAC",
+            "year": 2026,
+            "bibtex": "@inproceedings{guo2026tabesa,\n  author = {Pang Guo and Yining Chen},\n  title = {Beyond Labels: Data-Efficient Wafer Yield Prediction with TabESA},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing yield prediction or yield optimization methods"
+          ],
+          "benchmark_scope": [
+            "ASP-DAC 2026 experiments, benchmarks, or case studies reported for yield-optimization"
+          ],
+          "metrics": [
+            "quality metric reported by the paper",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
+          ]
         }
       ]
     }
   ],
   "_counts": {
     "topics": 121,
-    "baselines": 356
+    "baselines": 434
   }
 }

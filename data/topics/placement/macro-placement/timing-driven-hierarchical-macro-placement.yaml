@@ -1,0 +1,23 @@
+baseline_id: timing-driven-hierarchical-macro-placement
+short_name: Timing Driven Hierarchical Macro Placement
+display_name: A Timing-Driven Hierarchical Macro Placement Framework for Large-Scale Complex IP Blocks
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: A Timing-Driven Hierarchical Macro Placement Framework for Large-Scale Complex IP Blocks
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{fu2026timing,\n  author = {Wei Fu and Lixin Chen and Jinghui Zhou and Ziran Zhu},\n  title = {A Timing-Driven Hierarchical Macro Placement Framework for Large-Scale Complex IP Blocks},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing macro placement, floorplanning, or large-block placement frameworks
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for macro-placement
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: Hier-RTLMP.'

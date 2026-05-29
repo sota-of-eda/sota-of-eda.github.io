@@ -1,0 +1,25 @@
+baseline_id: mlir-based-quantum-oracle-synthesis-toolchain
+short_name: Mlir Based Quantum Oracle Synthesis
+display_name: Quantum Oracle Synthesis from HDL Designs via Multi Level Intermediate Representation
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Quantum Oracle Synthesis from HDL Designs via Multi Level Intermediate Representation
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{lancellotti2026mlir,\n  author = {Giacomo Lancellotti and Filippo Buda and Giacomo Carugati and Daniele Gazzola and Alessandro Barenghi and Giovanni Agosta and Gerardo Pelosi},\n  title = {Quantum Oracle Synthesis from HDL Designs via Multi Level Intermediate Representation},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing quantum circuit synthesis, mapping, shuttling, or compilation methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for quantum-circuit-compilation
+metrics:
+- gate count
+- depth
+- fidelity
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: MLIR-based quantum oracle synthesis toolchain.'

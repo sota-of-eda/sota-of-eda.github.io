@@ -1,0 +1,25 @@
+baseline_id: combrewriter
+short_name: Combrewriter
+display_name: 'CombRewriter: Enabling Combinational Logic Simplification in MLIR-Based Hardware Compiler'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'CombRewriter: Enabling Combinational Logic Simplification in MLIR-Based Hardware Compiler'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{zheng2026combrewriter,\n  author = {Haisheng Zheng and Zhuolun He and Shuo Yin and Yuzhe Ma and Bei Yu},\n  title = {CombRewriter: Enabling Combinational Logic Simplification in MLIR-Based Hardware Compiler},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing logic synthesis, arithmetic optimization, rewriting, or hardware-compiler optimization methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for logic-synthesis
+metrics:
+- area
+- delay
+- power
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: SOTA netlist optimization (unnamed).'

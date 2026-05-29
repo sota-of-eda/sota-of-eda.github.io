@@ -1,0 +1,23 @@
+baseline_id: tabesa
+short_name: Tabesa
+display_name: 'Beyond Labels: Data-Efficient Wafer Yield Prediction with TabESA'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Beyond Labels: Data-Efficient Wafer Yield Prediction with TabESA'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{guo2026tabesa,\n  author = {Pang Guo and Yining Chen},\n  title = {Beyond Labels: Data-Efficient Wafer Yield Prediction with TabESA},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing yield prediction or yield optimization methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for yield-optimization
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded.

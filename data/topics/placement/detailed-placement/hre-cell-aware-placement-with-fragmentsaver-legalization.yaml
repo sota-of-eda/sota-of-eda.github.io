@@ -1,0 +1,23 @@
+baseline_id: hre-cell-aware-placement-with-fragmentsaver-legalization
+short_name: Hre Cell Aware Placement With
+display_name: An Effective Placement Framework for Designs with Half-Row-Extended Cells
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: An Effective Placement Framework for Designs with Half-Row-Extended Cells
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{wu2026hre,\n  author = {Po-Yi Wu and Tzu-Sheng Hung and Wai-Kei Mak and Ting-Chi Wang},\n  title = {An Effective Placement Framework for Designs with Half-Row-Extended Cells},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing legalization or detailed-placement methods under cell geometry constraints
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for detailed-placement
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded.

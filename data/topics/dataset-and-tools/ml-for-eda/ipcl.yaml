@@ -1,0 +1,23 @@
+baseline_id: ipcl
+short_name: Ipcl
+display_name: 'iPCL: Pre-training for Chip Layout'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'iPCL: Pre-training for Chip Layout'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{li2026ipcl,\n  author = {Xingquan Li and Weiguo Li and Xinhua Lai and Junfeng Liu and Rui Wang},\n  title = {iPCL: Pre-training for Chip Layout},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing ML-for-EDA datasets, pretrained models, or physical-design learning workflows
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for ml-for-eda
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded.

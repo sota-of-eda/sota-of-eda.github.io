@@ -1,0 +1,24 @@
+baseline_id: gemfuzz
+short_name: Gemfuzz
+display_name: 'GEmFuzz: Uncovering System-Level Vulnerabilities in SoCs via Emulation-Based Grey-Box Fuzzing'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'GEmFuzz: Uncovering System-Level Vulnerabilities in SoCs via Emulation-Based Grey-Box Fuzzing'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{saha2026gemfuzz,\n  author = {Shuvagata Saha and Ahmed Alhurubi and Tanvir Rahman and Hasan Al Shaikh and Sujan Kumar Saha and Farimah Farahmandi and Mark Tehranipoor},\n  title = {GEmFuzz: Uncovering System-Level Vulnerabilities in SoCs via Emulation-Based Grey-Box Fuzzing},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing hardware/system testing, fuzzing, or fault-injection methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for testing-and-fuzzing
+metrics:
+- bug/fault detection
+- coverage
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: HyPFuzz, TheHuzz, Cascade, DifuzzRTL, DirectFuzz, FormalFuzzer, HFL, HyperFuzzing, ...'

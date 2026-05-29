@@ -1,0 +1,23 @@
+baseline_id: selective-regression-timing-characterization
+short_name: Selective Regression Timing Characterization
+display_name: Fast Timing Library Characterization Through Selective Use of Regression Models
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Fast Timing Library Characterization Through Selective Use of Regression Models
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{manda2026selective,\n  author = {Manikanta Prahlad Manda and Seunggyu Lee and Daijoon Hyun},\n  title = {Fast Timing Library Characterization Through Selective Use of Regression Models},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing timing, power, or Liberty library characterization methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for library-characterization
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: full simulation (PrimeLib/HSPICE), Empirical model [4].'

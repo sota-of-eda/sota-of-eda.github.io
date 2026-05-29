@@ -1,0 +1,25 @@
+baseline_id: cfet-cell-synthesis-with-backside-metal-utilization
+short_name: Cfet Cell Synthesis With Backside
+display_name: Synthesis of CFET Standard Cells Utilizing Backside Interconnects Towards Improving Pin Accessibility
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Synthesis of CFET Standard Cells Utilizing Backside Interconnects Towards Improving Pin Accessibility
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{park2026cfet,\n  author = {Hyunbum Park and Taewhan Kim},\n  title = {Synthesis of CFET Standard Cells Utilizing Backside Interconnects Towards Improving Pin Accessibility},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- evaluating standard-cell, cell-library, transistor-level cell synthesis, or layout generation methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for automated-cell-synthesis
+metrics:
+- cell area
+- pin accessibility
+- DRC count
+- PPA
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: conventional CFET cells.'

@@ -1,0 +1,23 @@
+baseline_id: rectification-learning-qbf-based-eco
+short_name: Rectification Learning Qbf Based ECO
+display_name: Formalization of Rectification Learning for Economic Design Updates
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Formalization of Rectification Learning for Economic Design Updates
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{kravets2026rectification,\n  author = {Victor N. Kravets and Jie-Hong R. Jiang},\n  title = {Formalization of Rectification Learning for Economic Design Updates},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing post-placement physical optimization, ECO, delay padding, or gate sizing methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for physical-optimization
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: syseco.'

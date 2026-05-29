@@ -1,0 +1,25 @@
+baseline_id: a-scalable-and-high-quality-qubit-mapping-and-shuttling-framework-for-neutral-at
+short_name: A Scalable And High Quality
+display_name: A Scalable and High-Quality Qubit Mapping and Shuttling Framework for Neutral Atom Quantum Devices
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: A Scalable and High-Quality Qubit Mapping and Shuttling Framework for Neutral Atom Quantum Devices
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{hsieh2026a,\n  author = {Sung-Ying Hsieh and Wai-Kei Mak},\n  title = {A Scalable and High-Quality Qubit Mapping and Shuttling Framework for Neutral Atom Quantum Devices},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing quantum circuit synthesis, mapping, shuttling, or compilation methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for quantum-circuit-compilation
+metrics:
+- gate count
+- depth
+- fidelity
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded.

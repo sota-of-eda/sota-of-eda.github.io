@@ -1,0 +1,25 @@
+baseline_id: subgraph-based-qubit-mapping
+short_name: Subgraph Based Qubit Mapping
+display_name: Subgraph-based Qubit Mapping for Noisy Intermediate-Scale Quantum Computing
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Subgraph-based Qubit Mapping for Noisy Intermediate-Scale Quantum Computing
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{gao2026subgraph,\n  author = {Junyi Gao and Wei-Hsiang Tseng and Yao-Wen Chang},\n  title = {Subgraph-based Qubit Mapping for Noisy Intermediate-Scale Quantum Computing},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing quantum circuit synthesis, mapping, shuttling, or compilation methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for quantum-circuit-compilation
+metrics:
+- gate count
+- depth
+- fidelity
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: FSQM [16].'

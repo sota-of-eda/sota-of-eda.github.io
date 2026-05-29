@@ -1,0 +1,25 @@
+baseline_id: vflow
+short_name: Vflow
+display_name: 'VFlow: Discovering Optimal Agentic Workflows for Verilog Generation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'VFlow: Discovering Optimal Agentic Workflows for Verilog Generation'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{wei2026vflow,\n  author = {Yangbo Wei and Zhen Huang and Lei He and Li Huang and Ting-Jung Lin and Wei W. Xing},\n  title = {VFlow: Discovering Optimal Agentic Workflows for Verilog Generation},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing LLM-assisted RTL, Verilog, HDL generation, or repair methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for llm-rtl-generation
+metrics:
+- functional correctness
+- syntax pass rate
+- repair success
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: CodeV-R1, RTL-Coder, GPT-4o, Llama 3.1 405B.'

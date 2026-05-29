@@ -1,0 +1,23 @@
+baseline_id: topological-optimization-based-layer-assignment
+short_name: Topological Optimization Based Layer Assignment
+display_name: Topological Optimization-Based Layer Assignment Method for Fan-Out Wafer-Level Packaging
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Topological Optimization-Based Layer Assignment Method for Fan-Out Wafer-Level Packaging
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{wu2026topological,\n  author = {Haoying Wu and Guanxian Zhu and Xu He and Mingyu Liu},\n  title = {Topological Optimization-Based Layer Assignment Method for Fan-Out Wafer-Level Packaging},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing package, fan-out wafer-level package, or layer-assignment routing methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for package-routing
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: Via-Based Redistribution Layer Routing for InFO Packages, Bus Assignment Considering Flexible Escape Routing.'

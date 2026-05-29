@@ -1,0 +1,25 @@
+baseline_id: recrel-recelim
+short_name: Recrel Recelim
+display_name: Automatic Recursion Elimination using Recurrence Relations for Synthesis of Stack-free Hardware
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Automatic Recursion Elimination using Recurrence Relations for Synthesis of Stack-free Hardware
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{musa2026recrel,\n  author = {Adam Musa and Christophe Dubach},\n  title = {Automatic Recursion Elimination using Recurrence Relations for Synthesis of Stack-free Hardware},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing HLS transformation, estimation, or synthesis-flow methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for high-level-synthesis
+metrics:
+- latency
+- resource usage
+- timing estimate
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: HeteroGen, HeteroRefactor, HLSRecurse, TreeRecur, Flatten (Recursion Flattening), RHFSM, RTR.'

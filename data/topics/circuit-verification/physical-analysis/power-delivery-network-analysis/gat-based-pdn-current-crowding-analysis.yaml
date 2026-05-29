@@ -1,0 +1,25 @@
+baseline_id: gat-based-pdn-current-crowding-analysis
+short_name: Gat Based PDN Current Crowding
+display_name: Graph Attention-Based Current Crowding Analysis at TSV Interfaces in 3D Power Delivery Networks
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Graph Attention-Based Current Crowding Analysis at TSV Interfaces in 3D Power Delivery Networks
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{yang2026gat,\n  author = {Zheng Yang and Zhen Zhuang and Tsung-Yi Ho and Sung Kyu Lim},\n  title = {Graph Attention-Based Current Crowding Analysis at TSV Interfaces in 3D Power Delivery Networks},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing PDN, IR-drop, decap, or current-crowding analysis/optimization methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for power-delivery-network-analysis
+metrics:
+- IR drop
+- impedance
+- current density
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded.

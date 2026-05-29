@@ -1,0 +1,24 @@
+baseline_id: scprompt
+short_name: Scprompt
+display_name: 'SCPrompt: Semantic Compression and Prompt-Guided LLM Reasoning for RTL Trojan Detection'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'SCPrompt: Semantic Compression and Prompt-Guided LLM Reasoning for RTL Trojan Detection'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{he2026scprompt,\n  author = {Jiaji He and Jiansheng Chen and Fei Zhao and Yaohua Wang and Yongqiang Lyu},\n  title = {SCPrompt: Semantic Compression and Prompt-Guided LLM Reasoning for RTL Trojan Detection},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing hardware-security verification, Trojan detection, logic-locking, or IP-protection methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for hardware-security-verification
+metrics:
+- detection accuracy
+- attack success/failure
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: GPT-4-Turbo, Moonshot-V1.'

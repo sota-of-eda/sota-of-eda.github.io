@@ -1,0 +1,25 @@
+baseline_id: disclosed-pins
+short_name: Disclosed Pins
+display_name: Enhancing Pin Accessibility Through Pin Pattern Migration and Optimization Across Cell Boundaries
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Enhancing Pin Accessibility Through Pin Pattern Migration and Optimization Across Cell Boundaries
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{seo2026disclosed,\n  author = {Hyunbae Seo and Sehyeon Chung and Taewhan Kim},\n  title = {Enhancing Pin Accessibility Through Pin Pattern Migration and Optimization Across Cell Boundaries},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- evaluating standard-cell, cell-library, transistor-level cell synthesis, or layout generation methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for automated-cell-synthesis
+metrics:
+- cell area
+- pin accessibility
+- DRC count
+- PPA
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: internally extended cells, dummy poly inserted cells, ML minimized cells.'

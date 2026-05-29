@@ -1,0 +1,23 @@
+baseline_id: beam
+short_name: Beam
+display_name: 'BEAM: Bidirectional MEEF-Driven Mask Optimization for Curvilinear Photonic Design'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'BEAM: Bidirectional MEEF-Driven Mask Optimization for Curvilinear Photonic Design'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{liang2026beam,\n  author = {Xiaoxiao Liang and Yang Luo and Bei Yu and Yuzhe Ma},\n  title = {BEAM: Bidirectional MEEF-Driven Mask Optimization for Curvilinear Photonic Design},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing OPC, curvilinear mask optimization, or lithography mask correction methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for mask-optimization
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded.

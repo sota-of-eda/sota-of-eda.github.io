@@ -1,0 +1,25 @@
+baseline_id: dclog
+short_name: Dclog
+display_name: 'DCLOG: Don''t Cares-based Logic Optimization using Pre-training Graph Neural Networks'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'DCLOG: Don''t Cares-based Logic Optimization using Pre-training Graph Neural Networks'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{fu2026dclog,\n  author = {Rongliang Fu and Libo Shen and Ziyi Wang and Zhengxing Lei and Zixiao Wang and Junying Huang and Bei Yu and Tsung-Yi Ho},\n  title = {DCLOG: Don't Cares-based Logic Optimization using Pre-training Graph Neural Networks},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing logic synthesis, arithmetic optimization, rewriting, or hardware-compiler optimization methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for logic-synthesis
+metrics:
+- area
+- delay
+- power
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: logic resubstitution [8], exact rewriting [10].'

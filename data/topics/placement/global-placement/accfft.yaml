@@ -1,0 +1,24 @@
+baseline_id: accfft
+short_name: Accfft
+display_name: Accelerating Electrostatics-based Global Placement with Enhanced FFT Computation
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Accelerating Electrostatics-based Global Placement with Enhanced FFT Computation
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{zhang2026accfft,\n  author = {Hangyu Zhang and Sachin S. Sapatnekar},\n  title = {Accelerating Electrostatics-based Global Placement with Enhanced FFT Computation},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing global placement, mixed-size placement, or electrostatic placement acceleration methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for global-placement
+metrics:
+- HPWL
+- routability
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: ePlace-MS, Pplace-MS, DREAMPlace.'

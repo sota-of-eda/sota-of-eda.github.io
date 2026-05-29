@@ -1,0 +1,23 @@
+baseline_id: assertminer
+short_name: Assertminer
+display_name: 'AssertMiner: Module-Level Spec Generation and Assertion Mining using Static Analysis Guided LLMs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'AssertMiner: Module-Level Spec Generation and Assertion Mining using Static Analysis Guided LLMs'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{lyu2026assertminer,\n  author = {Hongqin Lyu and Yonghao Wang and Jiaxin Zhou and Zhiteng Chao and Tiancheng Wang and Huawei Li},\n  title = {AssertMiner: Module-Level Spec Generation and Assertion Mining using Static Analysis Guided LLMs},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing LLM-assisted assertion generation, assertion mining, or hardware specification workflows
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for llm-assertion-generation
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: AssertLLM, Spec2Assertion.'

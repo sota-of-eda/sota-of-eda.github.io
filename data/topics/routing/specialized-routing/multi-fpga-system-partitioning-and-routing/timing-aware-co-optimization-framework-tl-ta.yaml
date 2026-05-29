@@ -1,0 +1,23 @@
+baseline_id: timing-aware-co-optimization-framework-tl-ta
+short_name: Timing Aware Co Optimization Framework
+display_name: Timing-Aware Optimization of Die-Level Routing and TDM Assignment for Multi-FPGA Systems
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Timing-Aware Optimization of Die-Level Routing and TDM Assignment for Multi-FPGA Systems
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{chen2026timing,\n  author = {Yijun Chen and Haoyuan Li and Chunyan Pei and Jianwang Zhai and Kang Zhao and Wenjian Yu},\n  title = {Timing-Aware Optimization of Die-Level Routing and TDM Assignment for Multi-FPGA Systems},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing multi-FPGA partitioning, die-level routing, or TDM assignment methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for multi-fpga-system-partitioning-and-routing
+metrics:
+- quality metric reported by the paper
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: Huang [19], Top 3 official solutions (2023 EDA Elite Challenge), TL+AA (timing-aware load-balanced router + average assignment TDM), SP+TA (shortest-path router + timing-aware TDM), SP+AA (shortest-path router + average assignment TDM).'

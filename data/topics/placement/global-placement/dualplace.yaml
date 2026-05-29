@@ -1,0 +1,24 @@
+baseline_id: dualplace
+short_name: Dualplace
+display_name: 'DUALPlace: Reinforcement Learning based Mixed-size Placement with Multi Modal Cross Attention'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'DUALPlace: Reinforcement Learning based Mixed-size Placement with Multi Modal Cross Attention'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{wu2026dualplace,\n  author = {Yue Wu and Hu Liu and Jiayi Ding and Junwei Li and Tieming Han and Xiaoyan Yang},\n  title = {DUALPlace: Reinforcement Learning based Mixed-size Placement with Multi Modal Cross Attention},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing global placement, mixed-size placement, or electrostatic placement acceleration methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for global-placement
+metrics:
+- HPWL
+- routability
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: DeepTH-finetune, DREAMPlace, AlphaChip, DeepPR, MaskPlace, DeepTH, Flora.'

@@ -1,0 +1,25 @@
+baseline_id: genial
+short_name: Genial
+display_name: 'GENIAL: Generative Design Space Exploration via Network Inversion for Low Power Algorithmic Logic Units'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'GENIAL: Generative Design Space Exploration via Network Inversion for Low Power Algorithmic Logic Units'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{bouvier2026genial,\n  author = {Maxence Bouvier and Ryan Amaudruz and Felix Arnold and Renzo Andri and Lukas Cavigelli},\n  title = {GENIAL: Generative Design Space Exploration via Network Inversion for Low Power Algorithmic Logic Units},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing logic synthesis, arithmetic optimization, rewriting, or hardware-compiler optimization methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for logic-synthesis
+metrics:
+- area
+- delay
+- power
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: GENIAL 4-bit multiplier encoding, GENIAL Pareto front, GENIAL vs SME encoding.'

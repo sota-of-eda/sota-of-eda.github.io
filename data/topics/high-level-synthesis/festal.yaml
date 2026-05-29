@@ -1,0 +1,25 @@
+baseline_id: festal
+short_name: Festal
+display_name: 'FESTAL: Dataflow Accelerator Synthesis Framework with Graph-Based Fusion for FPGA'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'FESTAL: Dataflow Accelerator Synthesis Framework with Graph-Based Fusion for FPGA'
+  venue: ASP-DAC
+  year: 2026
+  bibtex: "@inproceedings{xu2026festal,\n  author = {Ruifan Xu and Yuyang Zou and Yun Liang},\n  title = {FESTAL: Dataflow Accelerator Synthesis Framework with Graph-Based Fusion for FPGA},\n  booktitle = {Proceedings of the 31st Asia and South Pacific Design Automation Conference},\n  year = {2026}\n}"
+links: {}
+compare_when:
+- comparing HLS transformation, estimation, or synthesis-flow methods
+benchmark_scope:
+- ASP-DAC 2026 experiments, benchmarks, or case studies reported for high-level-synthesis
+metrics:
+- latency
+- resource usage
+- timing estimate
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.
+- 'Draft audit recorded experiment comparison candidates including: POM, ScaleHLS, Stream-HLS, HIDA.'
