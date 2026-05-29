@@ -1,0 +1,14 @@
+topic_id: timing-driven-global-routing
+parent_id: global-routing
+short_name: Timing GR
+display_name: Timing-Driven Global Routing
+aliases:
+- timing-driven global routing
+- RC-aware global routing
+- timing-aware routing weights
+description: Global routing methods that optimize or trade off timing, RC, congestion,
+  power, and routing quality before detailed routing.
+review_triggers:
+- paper claims timing-driven or RC-aware global routing improvement
+- experiments report WNS, TNS, routing score, congestion, switching power, wirelength,
+  or runtime for global routing

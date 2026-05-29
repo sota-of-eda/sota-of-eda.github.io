@@ -1,0 +1,27 @@
+baseline_id: astrotune
+short_name: AstroTune
+display_name: 'AstroTune: AST-Assisted LLM Retrieval for Cross-Stage Design Flow Parameter Tuner'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'AstroTune: AST-Assisted LLM Retrieval for Cross-Stage Design Flow Parameter Tuner'
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{wang2026astrotune,\n  author = {Runzhi Wang and Jingyu Pan and Yiran Chen and Jiang Hu},\n  title = {AstroTune: AST-Assisted LLM Retrieval for Cross-Stage Design Flow Parameter Tuner},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779579}\n}"
+  doi: 10.1145/3764386.3779579
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779579
+compare_when:
+- comparing EDA flow parameter tuning, tool-configuration optimization, or cross-stage search methods
+benchmark_scope:
+- cross-stage EDA design-flow parameter-tuning benchmarks
+metrics:
+- PPA/QoR
+- search efficiency
+- runtime
+- parameter transferability
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- 'Draft audit recorded experiment comparison candidates including: CROP, BO, Optuna, LLM Search, FlowTuner.'

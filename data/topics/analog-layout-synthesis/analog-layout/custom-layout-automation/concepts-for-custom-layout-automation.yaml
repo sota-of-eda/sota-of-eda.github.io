@@ -1,0 +1,26 @@
+baseline_id: concepts-for-custom-layout-automation
+short_name: Custom Layout Automation Concepts
+display_name: 'Invited: Novel Concepts to Improve Custom Layout Automation Capabilities'
+role: historical_reference
+nomination: community
+publication:
+  title: 'Invited: Novel Concepts to Improve Custom Layout Automation Capabilities'
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{jerke2026concepts,\n  author = {Göran Jerke and Thomas Burdick and Vinko Marolt and Peter Herth and Andrew Beckett},\n  title = {Invited: Novel Concepts to Improve Custom Layout Automation Capabilities},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779617}\n}"
+  doi: 10.1145/3764386.3779617
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779617
+compare_when:
+- reviewing custom analog layout automation, planning, device generation, or layout-methodology flows
+benchmark_scope:
+- custom analog layout planning, generation, and design-automation use cases
+metrics:
+- layout quality
+- manual-effort reduction
+- methodology coverage
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry.

@@ -1,0 +1,14 @@
+topic_id: chiplet-architecture-exploration
+parent_id: 3d-ic-physical-design
+short_name: Chiplet DSE
+display_name: Chiplet Architecture Exploration
+aliases:
+- chiplet design space exploration
+- chiplet architecture DSE
+- chiplet simulation and exploration
+description: Simulation and design-space exploration frameworks for chiplet architectures
+  that evaluate performance, power, area, thermal, cost, and package-level trade-offs.
+review_triggers:
+- paper proposes chiplet architecture simulation or design-space exploration
+- experiments report Pareto quality, hypervolume, latency, power, area, thermal, cost,
+  or evaluation-budget efficiency

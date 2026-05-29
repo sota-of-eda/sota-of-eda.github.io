@@ -1,0 +1,27 @@
+baseline_id: mip-spt
+short_name: MIP-SPT
+display_name: Multi-Level Interconnect Planning for Signal-Power-Thermal Integrity in 2.5D/3D Integration
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Multi-Level Interconnect Planning for Signal-Power-Thermal Integrity in 2.5D/3D Integration
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{miao2026mip,\n  author = {Siyuan Miao and Lingkang Zhu and Xiangqiao Meng and Wenkai Yang and Chengyu Zhu and Chen Wu and Lei He},\n  title = {Multi-Level Interconnect Planning for Signal-Power-Thermal Integrity in 2.5D/3D Integration},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779583}\n}"
+  doi: 10.1145/3764386.3779583
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779583
+compare_when:
+- comparing 2.5D/3D IC placement, planning, partitioning, or interconnect-planning methods
+benchmark_scope:
+- 2.5D/3D IC placement, interconnect-planning, and soft-module planning benchmarks
+metrics:
+- wirelength
+- timing
+- signal/power/thermal integrity
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- 'Draft audit recorded experiment comparison candidates including: single-phase Bayesian optimization (SPBO), [15] (existing work), [9] SYSgen.'

@@ -1,0 +1,17 @@
+topic_id: quantum-circuit-compilation
+parent_id: quantum-eda
+short_name: Quantum Compile
+display_name: Quantum Circuit Compilation
+aliases:
+- quantum compilation
+- quantum circuit mapping
+- modular quantum compilation
+- QCCD compilation
+- ion shuttling compilation
+description: Quantum circuit compilation, mapping, scheduling, routing, and architecture-aware
+  execution for trapped-ion, modular, and other quantum-computing platforms.
+review_triggers:
+- paper claims quantum circuit compilation, mapping, routing, scheduling, or ion-shuttling
+  improvement
+- experiments compare gate count, shuttle count, latency, inter-QPU operations, fidelity,
+  or compile time

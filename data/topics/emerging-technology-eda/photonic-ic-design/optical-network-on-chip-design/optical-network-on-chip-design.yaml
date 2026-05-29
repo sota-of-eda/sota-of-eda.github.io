@@ -1,0 +1,16 @@
+topic_id: optical-network-on-chip-design
+parent_id: photonic-ic-design
+short_name: ONoC Design
+display_name: Optical Network-on-Chip Design
+aliases:
+- ONoC design
+- WRONoC design
+- wavelength-routed optical network-on-chip
+- optical NoC topology design
+description: Design automation for wavelength-routed or other optical networks-on-chip,
+  including topology generation, layout-aware routing, wavelength assignment, and
+  co-optimization.
+review_triggers:
+- paper claims optical NoC or WRONoC design automation
+- experiments compare topology, routing, wavelength, latency, bandwidth, layout, or
+  scalability metrics for optical networks-on-chip

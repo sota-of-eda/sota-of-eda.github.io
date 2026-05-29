@@ -1,0 +1,27 @@
+baseline_id: benchmarker
+short_name: Benchmarker
+display_name: 'Invited: Benchmarker: A Web-Based System for Tracking Experimental Results'
+role: artifact_baseline
+nomination: community
+publication:
+  title: 'Invited: Benchmarker: A Web-Based System for Tracking Experimental Results'
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{rana2026benchmarker,\n  author = {Rahul Rana and Tejas Bachhav and Aniruddha Dhumal and Ashutosh Pareek and Riya Sara Angel Korrapolu and Sathya Sai Ram Prabhala and Dishant Bhatnagar and Patrick H. Madden},\n  title = {Invited: Benchmarker: A Web-Based System for Tracking Experimental Results},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3790088}\n}"
+  doi: 10.1145/3764386.3790088
+links:
+  paper_url: https://doi.org/10.1145/3764386.3790088
+compare_when:
+- comparing reusable EDA benchmark, tracking, tool, or dataset infrastructure
+benchmark_scope:
+- EDA benchmark tracking, physical-design benchmark, or contest-infrastructure use cases
+metrics:
+- benchmark coverage
+- result traceability
+- transparency
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry.

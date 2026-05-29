@@ -27,9 +27,19 @@ METADATA_FIELDS = [
 REGISTRY_FIELDS = ["match_key", "baseline_id", "topic_id", "short_name", "display_name", "title", "doi"]
 POLLUTION_RE = re.compile(r"\b(1st|2nd|3rd|University|School of|Department|Faculty|@|\.edu|\.com)\b", re.I)
 SECTION_RE = re.compile(r"\b(Abstract|Experiment|Experimental|Evaluation|Results|Benchmark|Table|Fig\.?|Figure)\b", re.I)
+EXPERIMENT_SECTION_RE = re.compile(r"\b(Experiment|Experimental|Evaluation|Results|Benchmark)\b", re.I)
+EXPERIMENT_HEADER_RE = re.compile(r"^\s*(?:\d+(?:\.\d+)*\s+)?(?:Experimental\s+Results|Experimental\s+Setup|Experiments?|Evaluation|Results|Benchmarks?)\b", re.I)
+TABLE_SECTION_RE = re.compile(r"\bTable\b", re.I)
+FIGURE_SECTION_RE = re.compile(r"\b(Fig\.?|Figure)\b", re.I)
 ROLE_VALUES = {"proposed_method", "method", "benchmark", "tool", "dataset", "unknown"}
 EXPERIMENT_ROLE_VALUES = {"compared_method", "tool_flow", "benchmark", "ablation", "metric_reference"}
 REQUEST_KIND_VALUES = {"candidate_paper", "experiment_baseline"}
+EXPERIMENT_ROLE_ALIASES = {
+    "baseline": "compared_method",
+    "state-of-the-art": "compared_method",
+    "sota": "compared_method",
+    "comparison": "compared_method",
+}
 
 
 def batch_paths(batch: Path) -> dict[str, Path]:
@@ -109,7 +119,7 @@ def run_pdftotext(path: Path, first_pages_only: bool) -> str:
         cmd += ["-f", "1", "-l", "2"]
     cmd += [str(path), "-"]
     result = subprocess.run(cmd, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-    return result.stdout.replace("\x01", " ")
+    return result.stdout.replace("\x00", " ").replace("\x01", " ")
 
 
 def source_text(source: str, first_pages_only: bool) -> str:
@@ -122,6 +132,7 @@ def source_text(source: str, first_pages_only: bool) -> str:
 
 
 def compact(text: str, limit: int) -> str:
+    text = text.replace("\x00", " ").replace("\x01", " ")
     text = re.sub(r"[ \t]+", " ", text)
     text = re.sub(r"\n{3,}", "\n\n", text).strip()
     return text if len(text) <= limit else text[: limit - 4].rstrip() + " ..."
@@ -129,7 +140,17 @@ def compact(text: str, limit: int) -> str:
 
 def windows(text: str, limit: int = 5) -> list[str]:
     lines = text.splitlines()
-    hits = [i for i, line in enumerate(lines) if SECTION_RE.search(line)]
+    header_hits = [i for i, line in enumerate(lines) if EXPERIMENT_HEADER_RE.search(line)]
+    priority_hits = [i for i, line in enumerate(lines) if EXPERIMENT_SECTION_RE.search(line)]
+    table_hits = [i for i, line in enumerate(lines) if TABLE_SECTION_RE.search(line)]
+    figure_hits = [i for i, line in enumerate(lines) if FIGURE_SECTION_RE.search(line)]
+    fallback_hits = [i for i, line in enumerate(lines) if SECTION_RE.search(line)]
+    hits = []
+    seen = set()
+    for idx in header_hits + priority_hits + table_hits + figure_hits + fallback_hits:
+        if idx not in seen:
+            hits.append(idx)
+            seen.add(idx)
     out = []
     for idx in hits[:limit]:
         start = max(0, idx - 4)
@@ -260,6 +281,7 @@ def validate_extract(data: dict[str, Any]) -> list[str]:
         if not str(baseline.get("evidence_location", "") or "").strip():
             errors.append(f"experiment_baselines[{i}] missing evidence_location")
         role = str(baseline.get("role", "compared_method") or "compared_method")
+        role = EXPERIMENT_ROLE_ALIASES.get(role.lower(), role)
         if role not in EXPERIMENT_ROLE_VALUES:
             errors.append(f"experiment_baselines[{i}] invalid role: {role}")
     for i, req in enumerate(as_list(data.get("metadata_requests")), 1):
@@ -467,9 +489,9 @@ def enrich_experiment_baselines(batch: Path, baselines: list[Any]) -> list[dict[
         match = match_registry(index, name)
         item = {
             "name": name,
-            "role": str(baseline.get("role", "compared_method") or "compared_method"),
+            "role": EXPERIMENT_ROLE_ALIASES.get(str(baseline.get("role", "compared_method") or "compared_method").lower(), str(baseline.get("role", "compared_method") or "compared_method")),
             "evidence_location": str(baseline.get("evidence_location", "") or ""),
-            "evidence_text_short": str(baseline.get("evidence_text_short", "") or ""),
+            "evidence_text_short": str(baseline.get("evidence_text_short", "") or baseline.get("evidence_text", "") or baseline.get("evidence", "") or ""),
             "benchmark_context": str(baseline.get("benchmark_context", "") or ""),
             "metric_context": str(baseline.get("metric_context", "") or ""),
             "search_query_hint": str(baseline.get("search_query_hint", "") or ""),
@@ -517,6 +539,9 @@ def draft(args: argparse.Namespace) -> int:
             "merge_note": "Draft only. Codex or human must verify BibTeX, topic, metadata, and duplicate status before accepted merge.",
         },
     }
+    needs = [str(item).strip() for item in as_list(extract.get("needs")) if str(item).strip()]
+    if needs:
+        content["review_needs"] = needs
     out = paths["drafts"] / f"{args.id}.yaml"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(yaml.safe_dump(content, sort_keys=False, allow_unicode=False), encoding="utf-8")

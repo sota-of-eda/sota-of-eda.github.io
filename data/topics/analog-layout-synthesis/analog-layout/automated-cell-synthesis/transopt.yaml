@@ -1,0 +1,25 @@
+baseline_id: transopt
+short_name: TransOpt
+display_name: 'TransOpt: A Scalable Transistor-Level Placement and Routing Optimization Framework Beyond Standard Cells'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'TransOpt: A Scalable Transistor-Level Placement and Routing Optimization Framework Beyond Standard Cells'
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{hsu2026transopt,\n  author = {Chen-Hao Hsu and David Z. Pan},\n  title = {TransOpt: A Scalable Transistor-Level Placement and Routing Optimization Framework Beyond Standard Cells},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779582}\n}"
+  doi: 10.1145/3764386.3779582
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779582
+compare_when:
+- comparing standard-cell, cell-library, or transistor-level cell synthesis/layout-generation methods
+benchmark_scope:
+- adder/multiplier benchmarks generated from GT3 3nm GAAFET standard-cell netlists
+metrics:
+- total wirelength
+- total via count
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- 'Draft audit recorded experiment comparison candidates including: SDC Baseline, T-Level Baseline, RouteOpt Only, PlaceOpt Only.'

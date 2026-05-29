@@ -1,0 +1,28 @@
+baseline_id: polymath
+short_name: Polymath
+display_name: 'Invited: Polymath: Self-Improving Hierarchical Workflow for Multi-Domain Problem Solving'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Invited: Polymath: Self-Improving Hierarchical Workflow for Multi-Domain Problem Solving'
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{ho2026polymath,\n  author = {Chia-Tung Ho and Jing Gong and Haoyu Yang and Abhishek Akkur and Haoxing Ren},\n  title = {Invited: Polymath: Self-Improving Hierarchical Workflow for Multi-Domain Problem Solving},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779639}\n}"
+  doi: 10.1145/3764386.3779639
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779639
+compare_when:
+- comparing agentic EDA workflows, tool-using chip-design agents, or AI-assisted physical-design flows
+benchmark_scope:
+- chipVQA, LogQA, AXI verification setup hardware benchmarks
+- GSM8K, HumanEval, MATH, MBPP, DROP, and other agent benchmarks
+metrics:
+- pass@1
+- pass@3
+- benchmark scores
+- average score
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- 'Draft audit recorded experiment comparison candidates including: Cursor, ADAS, AFlow.'

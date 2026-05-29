@@ -1,0 +1,26 @@
+baseline_id: infineon-em-avoidance-strategies
+short_name: Infineon EM Avoidance
+display_name: Electromigration Avoidance Strategies in Infineon
+role: historical_reference
+nomination: community
+publication:
+  title: Electromigration Avoidance Strategies in Infineon
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{siemes2026infineon,\n  author = {Shanthi Siemes},\n  title = {Electromigration Avoidance Strategies in Infineon},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779593}\n}"
+  doi: 10.1145/3764386.3779593
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779593
+compare_when:
+- reviewing electromigration signoff, avoidance, or industrial reliability methodology
+benchmark_scope:
+- industrial EM signoff, avoidance, and 3DIC/WoW reliability scenarios
+metrics:
+- EM violation risk
+- thermal/self-heating impact
+- signoff coverage
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry.

@@ -1,0 +1,26 @@
+baseline_id: wronoc-advanced-design-automation-overview
+short_name: WRONoC Design Automation Overview
+display_name: 'Invited: Navigating the Frontier of Optimality and Complexity: Advanced Design Automation for Wavelength-Routed ONoCs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Invited: Navigating the Frontier of Optimality and Complexity: Advanced Design Automation for Wavelength-Routed ONoCs'
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{zheng2026wronoc,\n  author = {Zhidan Zheng and Mengchu Li and Tsun-Ming Tseng and Ulf Schlichtmann},\n  title = {Invited: Navigating the Frontier of Optimality and Complexity: Advanced Design Automation for Wavelength-Routed ONoCs},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3793429}\n}"
+  doi: 10.1145/3764386.3793429
+links:
+  paper_url: https://doi.org/10.1145/3764386.3793429
+compare_when:
+- comparing design automation, simulation, or optimization for wavelength-routed optical NoCs
+benchmark_scope:
+- wavelength-routed optical network-on-chip design cases
+metrics:
+- layout/topology quality
+- optimization complexity
+- topology/layout co-optimization quality
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- 'Draft audit recorded experiment comparison candidates including: sequential WRONoC design methodology, co-optimization WRONoC methodology.'

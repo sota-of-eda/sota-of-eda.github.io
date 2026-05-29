@@ -1,0 +1,16 @@
+topic_id: agentic-eda-workflows
+parent_id: llm-for-eda-automation
+short_name: Agentic EDA
+display_name: Agentic EDA Workflows
+aliases:
+- agentic EDA
+- LLM EDA agents
+- agentic chip design
+- AI-powered physical design
+- agent engineers
+description: LLM or AI agent workflows that automate EDA tool use, flow tuning, code
+  modification, design closure, or chip-design tasks through iterative tool interaction.
+review_triggers:
+- paper proposes or evaluates agentic EDA workflows
+- experiments or case studies involve EDA tool use, flow optimization, physical-design
+  automation, code evolution, or multi-agent chip-design tasks

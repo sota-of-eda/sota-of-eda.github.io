@@ -1,0 +1,27 @@
+baseline_id: kahypar-and-mt-kahypar-survey
+short_name: KaHyPar / Mt-KaHyPar Survey
+display_name: 'Invited: Modern Hypergraph Partitioning: KaHyPar, Mt-KaHyPar, and Beyond'
+role: historical_reference
+nomination: community
+publication:
+  title: 'Invited: Modern Hypergraph Partitioning: KaHyPar, Mt-KaHyPar, and Beyond'
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{schlag2026kahypar,\n  author = {Sebastian Schlag and Tobias Heuer and Christian Schulz},\n  title = {Invited: Modern Hypergraph Partitioning: KaHyPar, Mt-KaHyPar, and Beyond},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779636}\n}"
+  doi: 10.1145/3764386.3779636
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779636
+compare_when:
+- comparing hypergraph partitioning algorithms or partitioning tools used in EDA flows
+benchmark_scope:
+- hypergraph partitioning instances and EDA partitioning use cases
+metrics:
+- cut quality
+- balance
+- runtime
+- scalability
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry.

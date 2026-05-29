@@ -1,0 +1,15 @@
+topic_id: physics-based-em-analysis
+parent_id: electromigration-analysis
+short_name: Physics EM
+display_name: Physics-Based Electromigration Analysis
+aliases:
+- physics-based EM analysis
+- transient EM analysis
+- circuit-aware EM modeling
+description: Physics-based electromigration analysis and optimization methods for
+  interconnects, power grids, clock networks, and heterogeneous integrated systems.
+review_triggers:
+- paper proposes physics-based EM analysis, transient EM simulation, or circuit-aware
+  EM optimization
+- experiments or case studies involve EM stress, current-density limits, lifetime,
+  thermal coupling, or reliability closure

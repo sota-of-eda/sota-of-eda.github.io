@@ -1,0 +1,27 @@
+baseline_id: physics-based-em-analysis-and-optimization-overview
+short_name: Physics-based EM Overview
+display_name: 'Invited: Toward Accurate, Large-scale Electromigration Analysis and Optimization in Integrated Systems'
+role: historical_reference
+nomination: community
+publication:
+  title: 'Invited: Toward Accurate, Large-scale Electromigration Analysis and Optimization in Integrated Systems'
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{sapatnekar2026physics,\n  author = {Sachin S. Sapatnekar},\n  title = {Invited: Toward Accurate, Large-scale Electromigration Analysis and Optimization in Integrated Systems},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3780044}\n}"
+  doi: 10.1145/3764386.3780044
+links:
+  paper_url: https://doi.org/10.1145/3764386.3780044
+compare_when:
+- comparing physics-based electromigration analysis or optimization methods
+benchmark_scope:
+- large-scale interconnect EM analysis and optimization scenarios
+metrics:
+- EM lifetime or stress estimate
+- analysis accuracy
+- runtime
+- scalability
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry.

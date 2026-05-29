@@ -1,0 +1,15 @@
+topic_id: scan-chain-optimization
+parent_id: testing
+short_name: Scan Chain Opt
+display_name: Scan-Chain Optimization
+aliases:
+- scan chain reordering
+- scan chain swapping
+- scan-chain placement
+- scan-chain optimization
+description: Design-for-test and physical-design methods that optimize scan-chain
+  ordering, swapping, placement interaction, runtime, or scan-wirelength trade-offs.
+review_triggers:
+- paper optimizes scan-chain ordering, swapping, or physical implementation
+- experiments report scan-chain wirelength, runtime, MAXBIT constraints, DFT legality,
+  or placement/routing impact

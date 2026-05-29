@@ -1,0 +1,26 @@
+baseline_id: technology-aware-3d-placement-with-ilp-based-region-planning
+short_name: Technology-aware 3D Placement
+display_name: Technology-Aware 3D Placement with ILP-Based Region Planning for Soft Modules
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Technology-Aware 3D Placement with ILP-Based Region Planning for Soft Modules
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{song2026technology,\n  author = {Cheng-Xun Song and Minh Anh Phan and Sheng-Tan Huang and Shao-Yun Fang and Tung-Chieh Chen and Kai-Shun Hu and Chin-Fang Cindy Shen},\n  title = {Technology-Aware 3D Placement with ILP-Based Region Planning for Soft Modules},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779584}\n}"
+  doi: 10.1145/3764386.3779584
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779584
+compare_when:
+- comparing 2.5D/3D IC placement, planning, partitioning, or interconnect-planning methods
+benchmark_scope:
+- soft-module F2F 3D IC placement cases
+metrics:
+- wirelength
+- placement overhead
+- wirelength reduction
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- 'Draft audit recorded experiment comparison candidates including: No region constraint, Pre-defined regions.'

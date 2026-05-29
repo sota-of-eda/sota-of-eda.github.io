@@ -1,0 +1,27 @@
+baseline_id: grandplan
+short_name: GrandPlan
+display_name: 'GrandPlan: Differentiable, Simultaneous Top-Level Floorplanning and Partition-Level Cell Placement for Large-Scale IP-Cores'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'GrandPlan: Differentiable, Simultaneous Top-Level Floorplanning and Partition-Level Cell Placement for Large-Scale IP-Cores'
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{xiong2026grandplan,\n  author = {Zhili Xiong and Yi-Chen Lu and David Z. Pan and Haoxing Ren},\n  title = {GrandPlan: Differentiable, Simultaneous Top-Level Floorplanning and Partition-Level Cell Placement for Large-Scale IP-Cores},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779591}\n}"
+  doi: 10.1145/3764386.3779591
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779591
+compare_when:
+- comparing macro placement, floorplanning, or partition-level physical-design methods
+benchmark_scope:
+- large-scale IP-core floorplanning, macro placement, and partition-level placement benchmarks
+metrics:
+- wirelength
+- routability
+- partition quality
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- 'Draft audit recorded experiment comparison candidates including: Human-expert-crafted floorplans.'

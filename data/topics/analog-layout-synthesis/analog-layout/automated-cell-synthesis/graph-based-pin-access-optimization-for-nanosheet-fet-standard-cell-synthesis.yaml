@@ -1,0 +1,28 @@
+baseline_id: graph-based-pin-access-optimization-for-nanosheet-fet-standard-cell-synthesis
+short_name: Nanosheet Pin-access Cell Synthesis
+display_name: A Graph-Based Approach for Optimizing Pin Access in Nanosheet FET Standard Cell Library Synthesis
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: A Graph-Based Approach for Optimizing Pin Access in Nanosheet FET Standard Cell Library Synthesis
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{shih2026graph,\n  author = {Meng-Yu Shih and Ting-Xin Lin and Yih-Lang Li},\n  title = {A Graph-Based Approach for Optimizing Pin Access in Nanosheet FET Standard Cell Library Synthesis},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779576}\n}"
+  doi: 10.1145/3764386.3779576
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779576
+compare_when:
+- comparing standard-cell, cell-library, or transistor-level cell synthesis/layout-generation methods
+benchmark_scope:
+- nanosheet-FET standard-cell, cell-library, and transistor-level P&R benchmarks
+metrics:
+- cell area
+- pin accessibility
+- DRC count
+- PPA
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- 'Draft audit recorded experiment comparison candidates including: NS3K, LP (Longest Pin).'

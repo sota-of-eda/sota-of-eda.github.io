@@ -1,0 +1,33 @@
+baseline_id: multi-agent-self-evolved-abc
+short_name: Self-Evolved ABC
+display_name: 'Autonomous Evolution of EDA Tools: Multi-Agent Self-Evolved ABC'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Autonomous Evolution of EDA Tools: Multi-Agent Self-Evolved ABC'
+  venue: DAC
+  year: 2026
+  doi: 10.1145/3770743.3804221
+  bibtex: "@inproceedings{yu2026autonomous,\n  title={Autonomous Evolution of EDA Tools: Multi-Agent Self-Evolved ABC},\n  author={Yu, Cunxi and Ren, Haoxing},\n  booktitle={Proceedings of the 63rd ACM/IEEE Design Automation Conference (DAC)},\n  year={2026},\n  doi={10.1145/3770743.3804221}\n}"
+links:
+  paper_url: https://doi.org/10.1145/3770743.3804221
+  arxiv_url: https://arxiv.org/abs/2604.15082
+  pdf_url: https://arxiv.org/pdf/2604.15082
+compare_when:
+  - evaluating agentic or LLM-driven frameworks that evolve ABC or other integrated logic-synthesis tools
+  - comparing ABC-integrated logic optimization, flow-tuning, and technology-mapping improvements under correctness checking
+  - benchmarking end-to-end logic-synthesis QoR improvements rather than standalone prompt/code-generation quality
+benchmark_scope:
+  - ISCAS85, ISCAS89, ITC99, EPFL, VTR DSP, and arithmetic benchmark suites
+  - ASAP7 7 nm mapped flows covering logic optimization, mapping, buffering, gate sizing, and static timing analysis
+  - ablations over vanilla versus evolved FlowTune, AIG synthesis/orchestration, and mapping subsystems
+metrics:
+  - normalized QoR relative to vanilla FlowTune, AIG synthesis, and mapping baseline
+  - worst negative slack, post-buffering and gate-sizing area, and area-delay product
+  - AIG node count, depth, edge count, mapper area, mapper delay estimate, LUT count, and LUT depth
+  - combinational equivalence checking pass/fail before QoR evaluation
+reproducibility: paper_only
+caveats:
+  - public artifact link for the paper was not identified during this pass; third-party inspired harnesses should not be treated as the paper artifact
+  - results depend on a large distributed evaluation setup with 87 AMD EPYC CPU nodes and Claude 4.5 Sonnet agents
+  - comparison target is the paper's vanilla integrated ABC/FlowTune/AIG/mapping configuration, not every external logic-synthesis optimizer

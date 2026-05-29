@@ -1,0 +1,15 @@
+topic_id: photonic-ic-routing
+parent_id: photonic-ic-design
+short_name: PIC Routing
+display_name: Photonic IC Routing
+aliases:
+- photonic routing
+- PIC routing
+- active photonic IC routing
+- waveguide-electrical co-routing
+description: Routing automation for photonic integrated circuits, including electrical/waveguide
+  co-routing, active PIC routing, and photonics-aware design-rule constraints.
+review_triggers:
+- paper proposes routing for photonic integrated circuits
+- experiments report waveguide/electrical routing quality, vias, layer usage, optical
+  loss, violations, or routing runtime

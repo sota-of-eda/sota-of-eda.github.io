@@ -1,0 +1,33 @@
+baseline_id: agentic-ai-for-physical-design-r-d
+short_name: Agentic AI for Physical Design R&D
+display_name: 'Invited: Agentic AI for Physical Design R&D: Status and Prospects'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Invited: Agentic AI for Physical Design R&D: Status and Prospects'
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{ghose2026agentic,\n  author = {Amur Ghose and Andrew B. Kahng and Sayak Kundu and Bodhisatta Pramanik},\n  title = {Invited: Agentic AI for Physical Design R&D: Status and Prospects},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779612}\n}"
+  doi: 10.1145/3764386.3779612
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779612
+compare_when:
+- comparing agentic EDA workflows, tool-using chip-design agents, or AI-assisted physical-design flows
+benchmark_scope:
+- OpenROAD/ORFS physical-design flow tuning cases
+- Verilator simulation case studies
+- hypergraph partitioning benchmarks in OpenROAD-related case study
+metrics:
+- wirelength
+- effective clock period
+- HPWL
+- flow tuning outcomes
+- simulation cycles per second
+- speedup
+- cut size
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- 'Draft audit recorded experiment comparison candidates including: OR-AutoTuner, Verilator default flags, TritonPart / FastPart.'

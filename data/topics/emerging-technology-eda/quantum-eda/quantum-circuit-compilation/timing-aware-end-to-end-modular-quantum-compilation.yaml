@@ -1,0 +1,27 @@
+baseline_id: timing-aware-end-to-end-modular-quantum-compilation
+short_name: Timing-aware Modular QC
+display_name: Timing-Aware End-to-End Circuit Compilation Framework for Modular Quantum Systems
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Timing-Aware End-to-End Circuit Compilation Framework for Modular Quantum Systems
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{huang2026timing,\n  author = {Ching-Yao Huang and Wai-Kei Mak},\n  title = {Timing-Aware End-to-End Circuit Compilation Framework for Modular Quantum Systems},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779586}\n}"
+  doi: 10.1145/3764386.3779586
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779586
+compare_when:
+- comparing quantum circuit compilation, placement, routing, shuttling, or modular-QPU mapping methods
+benchmark_scope:
+- BRevLib and BAlgo quantum benchmarks on realistic 3-QPU and 4-QPU modular systems
+metrics:
+- final circuit latency
+- inserted inter-QPU operations
+- runtime
+- latency
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- 'Draft audit recorded experiment comparison candidates including: Prior modular quantum compiler [19], Prior modular quantum compilation methods [23][28].'

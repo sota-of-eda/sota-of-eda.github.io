@@ -2317,6 +2317,41 @@
           ]
         },
         {
+          "baseline_id": "benchmarker",
+          "short_name": "Benchmarker",
+          "display_name": "Invited: Benchmarker: A Web-Based System for Tracking Experimental Results",
+          "role": "artifact_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Invited: Benchmarker: A Web-Based System for Tracking Experimental Results",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{rana2026benchmarker,\n  author = {Rahul Rana and Tejas Bachhav and Aniruddha Dhumal and Ashutosh Pareek and Riya Sara Angel Korrapolu and Sathya Sai Ram Prabhala and Dishant Bhatnagar and Patrick H. Madden},\n  title = {Invited: Benchmarker: A Web-Based System for Tracking Experimental Results},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3790088}\n}",
+            "doi": "10.1145/3764386.3790088"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3790088"
+          },
+          "compare_when": [
+            "comparing reusable EDA benchmark, tracking, tool, or dataset infrastructure"
+          ],
+          "benchmark_scope": [
+            "EDA benchmark tracking, physical-design benchmark, or contest-infrastructure use cases"
+          ],
+          "metrics": [
+            "benchmark coverage",
+            "result traceability",
+            "transparency",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry."
+          ]
+        },
+        {
           "baseline_id": "hdl2v",
           "short_name": "hdl2v",
           "display_name": "hdl2v: A Code Translation Dataset for Enhanced LLM Verilog Generation",
@@ -2384,6 +2419,48 @@
           ]
         },
         {
+          "baseline_id": "rosettastone-2-0",
+          "short_name": "RosettaStone 2.0",
+          "display_name": "Invited: Toward Sustainable and Transparent Benchmarking for Academic Physical Design Research",
+          "role": "artifact_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Invited: Toward Sustainable and Transparent Benchmarking for Academic Physical Design Research",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{jiang2026rosettastone,\n  author = {Liwen Jiang and Andrew B. Kahng and Zhiang Wang and Zhiyu Zheng},\n  title = {Invited: Toward Sustainable and Transparent Benchmarking for Academic Physical Design Research},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779611}\n}",
+            "doi": "10.1145/3764386.3779611"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779611"
+          },
+          "compare_when": [
+            "comparing reusable EDA benchmark, tracking, tool, or dataset infrastructure"
+          ],
+          "benchmark_scope": [
+            "aes, ibex, jpeg physical-design benchmarking cases across 2D/3D enablements",
+            "aes, ibex, jpeg physical-design benchmarking cases",
+            "RosettaStone 2.0 Pin-3D reference cases",
+            "RosettaStone 2.0 physical-design reference flow"
+          ],
+          "metrics": [
+            "HBT counts",
+            "timing/QoR",
+            "DRVs",
+            "runtime",
+            "flow outcome metrics",
+            "2D versus 3D implementation QoR",
+            "flow outcomes",
+            "HBT/cross-tier metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit recorded experiment comparison candidates including: Pin-3D reference flow, 2D ORFS baseline, Restricted vs Flexible tier strategy, Mixed-toolchain configuration."
+          ]
+        },
+        {
           "baseline_id": "turtle",
           "short_name": "TuRTLe",
           "display_name": "TuRTLe: A Unified Evaluation of LLMs for RTL Generation",
@@ -2436,6 +2513,40 @@
       ],
       "description": "EDA methods for emerging technologies beyond conventional CMOS digital flows, including photonic, quantum, flexible-electronics, superconducting, and memristive design automation.",
       "baselines": [
+        {
+          "baseline_id": "analog-computation-with-oscillatory-neural-networks",
+          "short_name": "Oscillatory NN Analog Computation",
+          "display_name": "Invited: Analog Computation with Oscillatory Neural Networks",
+          "role": "historical_reference",
+          "nomination": "community",
+          "publication": {
+            "title": "Invited: Analog Computation with Oscillatory Neural Networks",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{todrisanial2026analog,\n  author = {Aida Todri-Sanial},\n  title = {Invited: Analog Computation with Oscillatory Neural Networks},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779626}\n}",
+            "doi": "10.1145/3764386.3779626"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779626"
+          },
+          "compare_when": [
+            "reviewing EDA support for emerging computing fabrics or non-CMOS design technologies"
+          ],
+          "benchmark_scope": [
+            "oscillatory neural-network or emerging analog-computing design contexts"
+          ],
+          "metrics": [
+            "energy efficiency",
+            "computing fabric feasibility",
+            "design-automation coverage"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry."
+          ]
+        },
         {
           "baseline_id": "neurosim-agent",
           "short_name": "NeuroSim Agent",
@@ -2628,37 +2739,25 @@
         "3d ic physical design"
       ],
       "description": "Physical-design methods for 2.5D/3D ICs and chiplet stacks, including partitioning, floorplanning, placement, terminal assignment/legalization, bonding-aware routing, and full-flow backend optimization.",
+      "baselines": []
+    },
+    {
+      "review_triggers": [
+        "paper proposes 3D placement, region planning, partitioning, or interconnect planning",
+        "experiments report wirelength, timing, inter-die delay, TSV/RDL/via count, thermal/power integrity, or 3D placement overhead"
+      ],
+      "topic_id": "3d-ic-placement-and-planning",
+      "parent_id": "3d-ic-physical-design",
+      "short_name": "3D Place/Plan",
+      "display_name": "3D IC Placement and Planning",
+      "aliases": [
+        "3D IC placement planning",
+        "technology-aware 3D placement",
+        "interconnect planning for 3D IC",
+        "F2F 3D placement"
+      ],
+      "description": "Placement, region planning, and interconnect-planning methods for 2.5D/3D ICs and face-to-face or chiplet-based integration.",
       "baselines": [
-        {
-          "baseline_id": "chiplet-cost-model",
-          "short_name": "Chiplet Cost Model",
-          "display_name": "Quantitative Cost Model and Cost Optimization Methods for Multi-Technology-Node Architecture",
-          "role": "candidate_recent_baseline",
-          "nomination": "community",
-          "publication": {
-            "title": "Quantitative Cost Model and Cost Optimization Methods for Multi-Technology-Node Architecture",
-            "venue": "ICCAD",
-            "year": 2025,
-            "doi": "10.1109/iccad66269.2025.11240864",
-            "bibtex": "@inproceedings{yuan2025chiplet,\n  title={Quantitative Cost Model and Cost Optimization Methods for Multi-Technology-Node Architecture},\n  author={Yuan, Qimin and Huang, Kai and Jiang, Xiaowen and Xiong, Dongliang},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
-          },
-          "links": {
-            "paper_url": "https://doi.org/10.1109/iccad66269.2025.11240864"
-          },
-          "compare_when": [
-            "Comparing chiplet cost models and design economics analysis"
-          ],
-          "benchmark_scope": [
-            "AMD EPYC chiplet data for validation"
-          ],
-          "metrics": [
-            "Cost savings (18%-31%)"
-          ],
-          "reproducibility": "paper_only",
-          "caveats": [
-            "Cost model validated against limited public data (AMD EPYC); real manufacturing costs are proprietary"
-          ]
-        },
         {
           "baseline_id": "critical-path-3d-placement",
           "short_name": "CP-3D Placement",
@@ -2766,6 +2865,41 @@
           ]
         },
         {
+          "baseline_id": "idda-3d",
+          "short_name": "IDDA-3D",
+          "display_name": "IDDA-3D: Inter-Die Delay Aware Timing-Driven Placement on Face-to-Face bonded 3D ICs",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "IDDA-3D: Inter-Die Delay Aware Timing-Driven Placement on Face-to-Face bonded 3D ICs",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{yang2026idda,\n  author = {Zixian Yang and Shanyi Li and Leilei Jin and Tsung-Yi Ho and Chien-Nan Jimmy Liu},\n  title = {IDDA-3D: Inter-Die Delay Aware Timing-Driven Placement on Face-to-Face bonded 3D ICs},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779590}\n}",
+            "doi": "10.1145/3764386.3779590"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779590"
+          },
+          "compare_when": [
+            "comparing 2.5D/3D IC placement, planning, partitioning, or interconnect-planning methods"
+          ],
+          "benchmark_scope": [
+            "2.5D/3D IC placement, interconnect-planning, and soft-module planning benchmarks"
+          ],
+          "metrics": [
+            "wirelength",
+            "timing",
+            "signal/power/thermal integrity",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit recorded experiment comparison candidates including: OpenROAD 2D, Analytical-3D."
+          ]
+        },
+        {
           "baseline_id": "incremacro-3d",
           "short_name": "IncreMacro-3D",
           "display_name": "IncreMacro-3D: Incremental Macro Placement for Face-to-Face Stacked Memory-on-Logic 3D ICs",
@@ -2802,33 +2936,38 @@
           ]
         },
         {
-          "baseline_id": "mmpack",
-          "short_name": "MMPack",
-          "display_name": "MMPack: Multi-Mask Co-Design for Ultra-Large Wafer-Scale Package Integration",
+          "baseline_id": "mip-spt",
+          "short_name": "MIP-SPT",
+          "display_name": "Multi-Level Interconnect Planning for Signal-Power-Thermal Integrity in 2.5D/3D Integration",
           "role": "candidate_recent_baseline",
           "nomination": "community",
           "publication": {
-            "title": "MMPack: Multi-Mask Co-Design for Ultra-Large Wafer-Scale Package Integration",
-            "venue": "ICCAD",
-            "year": 2025,
-            "doi": "10.1109/iccad66269.2025.11240755",
-            "bibtex": "@inproceedings{li2025mmpack,\n  title={MMPack: Multi-Mask Co-Design for Ultra-Large Wafer-Scale Package Integration},\n  author={Li, Shanyi and Zhuang, Zhen and Liang, Siyuan and Yu, Bei and Ho, Tsung-Yi},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+            "title": "Multi-Level Interconnect Planning for Signal-Power-Thermal Integrity in 2.5D/3D Integration",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{miao2026mip,\n  author = {Siyuan Miao and Lingkang Zhu and Xiangqiao Meng and Wenkai Yang and Chengyu Zhu and Chen Wu and Lei He},\n  title = {Multi-Level Interconnect Planning for Signal-Power-Thermal Integrity in 2.5D/3D Integration},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779583}\n}",
+            "doi": "10.1145/3764386.3779583"
           },
           "links": {
-            "paper_url": "https://doi.org/10.1109/iccad66269.2025.11240755"
+            "paper_url": "https://doi.org/10.1145/3764386.3779583"
           },
           "compare_when": [
-            "Comparing chiplet/package co-design floorplanning frameworks with multi-die integration"
+            "comparing 2.5D/3D IC placement, planning, partitioning, or interconnect-planning methods"
           ],
           "benchmark_scope": [
-            "Synthetic chiplet-package co-design benchmarks"
+            "2.5D/3D IC placement, interconnect-planning, and soft-module planning benchmarks"
           ],
           "metrics": [
-            "Runtime reduction (95%+ vs MCMP)"
+            "wirelength",
+            "timing",
+            "signal/power/thermal integrity",
+            "runtime"
           ],
-          "reproducibility": "unknown",
+          "reproducibility": "paper_only",
           "caveats": [
-            "Evaluated on synthetic benchmarks only; real chiplet designs may have additional constraints"
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit recorded experiment comparison candidates including: single-phase Bayesian optimization (SPBO), [15] (existing work), [9] SYSgen."
           ]
         },
         {
@@ -2861,41 +3000,6 @@
           "caveats": [
             "First open-source 3D IC platform; currently validated on mature GF180 node, not advanced nodes"
           ]
-        },
-        {
-          "baseline_id": "p2p-chiplet",
-          "short_name": "P2P-Chiplet",
-          "display_name": "P2P-Chiplet: Partition and Placement Co-Optimization for Multi-Chiplet Architecture",
-          "role": "candidate_recent_baseline",
-          "nomination": "community",
-          "publication": {
-            "title": "P2P-Chiplet: Partition and Placement Co-Optimization for Multi-Chiplet Architecture",
-            "venue": "ICCAD",
-            "year": 2025,
-            "bibtex": "@inproceedings{p2pchiplet2025,\n  author = {Qidie Wu and Jiangyuan Gu and Xuguang Yuan and Shaojun Wei and Shouyi Yin},\n  title = {P2P-Chiplet: Partition and Placement Co-Optimization for Multi-Chiplet Architecture},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--9}\n}\n",
-            "doi": "10.1109/iccad66269.2025.11240768"
-          },
-          "compare_when": [
-            "Evaluating chiplet-based design automation flows",
-            "Comparing partition-placement co-optimization for 2.5D integration",
-            "Benchmarking multi-chiplet architecture design methodologies"
-          ],
-          "benchmark_scope": [
-            "Multi-chiplet designs (2.5D integration)",
-            "Interposer-based architectures"
-          ],
-          "metrics": [
-            "D2D power consumption reduction (13.25%)",
-            "Latency reduction (21.06%)",
-            "Area overhead (6.64%)"
-          ],
-          "reproducibility": "unknown",
-          "caveats": [
-            "HeteroACG framework aggregates topological and physical optimization",
-            "Limited to 2.5D integration; 3D stacking not addressed",
-            "No public code repository found at time of review"
-          ],
-          "links": {}
         },
         {
           "baseline_id": "rl-hbt-legalization",
@@ -2969,6 +3073,40 @@
           ]
         },
         {
+          "baseline_id": "technology-aware-3d-placement-with-ilp-based-region-planning",
+          "short_name": "Technology-aware 3D Placement",
+          "display_name": "Technology-Aware 3D Placement with ILP-Based Region Planning for Soft Modules",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Technology-Aware 3D Placement with ILP-Based Region Planning for Soft Modules",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{song2026technology,\n  author = {Cheng-Xun Song and Minh Anh Phan and Sheng-Tan Huang and Shao-Yun Fang and Tung-Chieh Chen and Kai-Shun Hu and Chin-Fang Cindy Shen},\n  title = {Technology-Aware 3D Placement with ILP-Based Region Planning for Soft Modules},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779584}\n}",
+            "doi": "10.1145/3764386.3779584"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779584"
+          },
+          "compare_when": [
+            "comparing 2.5D/3D IC placement, planning, partitioning, or interconnect-planning methods"
+          ],
+          "benchmark_scope": [
+            "soft-module F2F 3D IC placement cases"
+          ],
+          "metrics": [
+            "wirelength",
+            "placement overhead",
+            "wirelength reduction"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit recorded experiment comparison candidates including: No region constraint, Pre-defined regions."
+          ]
+        },
+        {
           "baseline_id": "unified-3d-ic-design-flow",
           "short_name": "Unified 3D IC Flow",
           "display_name": "A Unified Design Flow for Homogeneous and Heterogeneous 3D Integration with Fine-Pitch Hybrid Bonding",
@@ -3001,41 +3139,207 @@
           "caveats": [
             "ICCAD 2025 paper, recently published"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "review_triggers": [
+        "paper proposes or evaluates agentic EDA workflows",
+        "experiments or case studies involve EDA tool use, flow optimization, physical-design automation, code evolution, or multi-agent chip-design tasks"
+      ],
+      "topic_id": "agentic-eda-workflows",
+      "parent_id": "llm-for-eda-automation",
+      "short_name": "Agentic EDA",
+      "display_name": "Agentic EDA Workflows",
+      "aliases": [
+        "agentic EDA",
+        "LLM EDA agents",
+        "agentic chip design",
+        "AI-powered physical design",
+        "agent engineers"
+      ],
+      "description": "LLM or AI agent workflows that automate EDA tool use, flow tuning, code modification, design closure, or chip-design tasks through iterative tool interaction.",
+      "baselines": [
         {
-          "baseline_id": "vertical-bonding-chiplet-floorplanning",
-          "short_name": "VB Chiplet FP",
-          "display_name": "Vertical-Bonding-Aware 3D Chiplet Partitioning and Floorplanning",
+          "baseline_id": "agentic-ai-for-physical-design-r-d",
+          "short_name": "Agentic AI for Physical Design R&D",
+          "display_name": "Invited: Agentic AI for Physical Design R&D: Status and Prospects",
           "role": "candidate_recent_baseline",
           "nomination": "community",
           "publication": {
-            "title": "3D Chiplet Partitioning and Floorplanning Interaction with Vertical Bonding Consideration",
-            "venue": "DATE",
+            "title": "Invited: Agentic AI for Physical Design R&D: Status and Prospects",
+            "venue": "ISPD",
             "year": 2026,
-            "bibtex": "@inproceedings{shen2026chiplet,\n  title={3D Chiplet Partitioning and Floorplanning Interaction with Vertical Bonding Consideration},\n  author={Shen, Tong and Chen, Mengen and He, Xu and Wang, Yao and Guo, Yang},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+            "bibtex": "@inproceedings{ghose2026agentic,\n  author = {Amur Ghose and Andrew B. Kahng and Sayak Kundu and Bodhisatta Pramanik},\n  title = {Invited: Agentic AI for Physical Design R&D: Status and Prospects},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779612}\n}",
+            "doi": "10.1145/3764386.3779612"
           },
           "links": {
-            "pdf_url": "https://past.date-conference.com/proceedings-archive/2026/DATA/742.pdf"
+            "paper_url": "https://doi.org/10.1145/3764386.3779612"
           },
           "compare_when": [
-            "evaluating 3D chiplet partitioning and floorplanning for hybrid-bonding or fine-pitch vertical interconnect technologies",
-            "comparing methods that jointly optimize chiplet partitioning, HPWL, and inter-die vertical connection overflow"
+            "comparing agentic EDA workflows, tool-using chip-design agents, or AI-assisted physical-design flows"
           ],
           "benchmark_scope": [
-            "industrial 3D chiplet benchmarks with 84K to 131M cells, 25 to 141K modules, and multiple top/base die chiplet-count configurations",
-            "comparison against adapted ChipletPart and TritonPart under matching 3D chiplet constraints"
+            "OpenROAD/ORFS physical-design flow tuning cases",
+            "Verilator simulation case studies",
+            "hypergraph partitioning benchmarks in OpenROAD-related case study"
           ],
           "metrics": [
+            "wirelength",
+            "effective clock period",
             "HPWL",
-            "inter-die vertical connection overflow",
-            "constraint meet/fail status",
+            "flow tuning outcomes",
+            "simulation cycles per second",
+            "speedup",
+            "cut size",
             "runtime"
           ],
           "reproducibility": "paper_only",
           "caveats": [
-            "no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review",
-            "ChipletPart was modified to align with the paper's 3D chiplet scenario, so baseline comparability depends on the adaptation details",
-            "industrial benchmarks and implementation scripts were not verified as publicly available"
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit recorded experiment comparison candidates including: OR-AutoTuner, Verilator default flags, TritonPart / FastPart."
+          ]
+        },
+        {
+          "baseline_id": "agentic-chip-design-from-spec2gds",
+          "short_name": "Agentic Spec2GDS",
+          "display_name": "Agentic Chip Design from Spec2GDS – Faster and Better than a Human Expert?",
+          "role": "historical_reference",
+          "nomination": "community",
+          "publication": {
+            "title": "Agentic Chip Design from Spec2GDS – Faster and Better than a Human Expert?",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{andersen2026agentic,\n  author = {Thomas Andersen},\n  title = {Agentic Chip Design from Spec2GDS – Faster and Better than a Human Expert?},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779630}\n}",
+            "doi": "10.1145/3764386.3779630"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779630"
+          },
+          "compare_when": [
+            "comparing agentic EDA workflows, tool-using chip-design agents, or AI-assisted physical-design flows"
+          ],
+          "benchmark_scope": [
+            "physical-design, EDA coding, and chip-design agent case studies"
+          ],
+          "metrics": [
+            "PPA/QoR",
+            "task success rate",
+            "iteration count",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry."
+          ]
+        },
+        {
+          "baseline_id": "ai-ml-in-eda-and-engineering-simulation",
+          "short_name": "AI/ML in EDA and Simulation",
+          "display_name": "Use of AI/ML in Electronic Design Automation and Engineering Simulation",
+          "role": "historical_reference",
+          "nomination": "community",
+          "publication": {
+            "title": "Use of AI/ML in Electronic Design Automation and Engineering Simulation",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{banerjee2026ai,\n  author = {Prith Banerjee},\n  title = {Use of AI/ML in Electronic Design Automation and Engineering Simulation},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779619}\n}",
+            "doi": "10.1145/3764386.3779619"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779619"
+          },
+          "compare_when": [
+            "comparing agentic EDA workflows, tool-using chip-design agents, or AI-assisted physical-design flows"
+          ],
+          "benchmark_scope": [
+            "physical-design, EDA coding, and chip-design agent case studies"
+          ],
+          "metrics": [
+            "PPA/QoR",
+            "task success rate",
+            "iteration count",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry."
+          ]
+        },
+        {
+          "baseline_id": "ai-powered-physical-design-methodologies",
+          "short_name": "AI-powered Physical Design Methodologies",
+          "display_name": "Breaking through Chip Design Barriers with AI-powered Physical Design Methodologies",
+          "role": "historical_reference",
+          "nomination": "community",
+          "publication": {
+            "title": "Breaking through Chip Design Barriers with AI-powered Physical Design Methodologies",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{gupta2026ai,\n  author = {Ankur Gupta},\n  title = {Breaking through Chip Design Barriers with AI-powered Physical Design Methodologies},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779629}\n}",
+            "doi": "10.1145/3764386.3779629"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779629"
+          },
+          "compare_when": [
+            "comparing agentic EDA workflows, tool-using chip-design agents, or AI-assisted physical-design flows"
+          ],
+          "benchmark_scope": [
+            "physical-design, EDA coding, and chip-design agent case studies"
+          ],
+          "metrics": [
+            "PPA/QoR",
+            "task success rate",
+            "iteration count",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry."
+          ]
+        },
+        {
+          "baseline_id": "polymath",
+          "short_name": "Polymath",
+          "display_name": "Invited: Polymath: Self-Improving Hierarchical Workflow for Multi-Domain Problem Solving",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Invited: Polymath: Self-Improving Hierarchical Workflow for Multi-Domain Problem Solving",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{ho2026polymath,\n  author = {Chia-Tung Ho and Jing Gong and Haoyu Yang and Abhishek Akkur and Haoxing Ren},\n  title = {Invited: Polymath: Self-Improving Hierarchical Workflow for Multi-Domain Problem Solving},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779639}\n}",
+            "doi": "10.1145/3764386.3779639"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779639"
+          },
+          "compare_when": [
+            "comparing agentic EDA workflows, tool-using chip-design agents, or AI-assisted physical-design flows"
+          ],
+          "benchmark_scope": [
+            "chipVQA, LogQA, AXI verification setup hardware benchmarks",
+            "GSM8K, HumanEval, MATH, MBPP, DROP, and other agent benchmarks"
+          ],
+          "metrics": [
+            "pass@1",
+            "pass@3",
+            "benchmark scores",
+            "average score"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit recorded experiment comparison candidates including: Cursor, ADAS, AFlow."
           ]
         }
       ]
@@ -4187,6 +4491,42 @@
           ]
         },
         {
+          "baseline_id": "graph-based-pin-access-optimization-for-nanosheet-fet-standard-cell-synthesis",
+          "short_name": "Nanosheet Pin-access Cell Synthesis",
+          "display_name": "A Graph-Based Approach for Optimizing Pin Access in Nanosheet FET Standard Cell Library Synthesis",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "A Graph-Based Approach for Optimizing Pin Access in Nanosheet FET Standard Cell Library Synthesis",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{shih2026graph,\n  author = {Meng-Yu Shih and Ting-Xin Lin and Yih-Lang Li},\n  title = {A Graph-Based Approach for Optimizing Pin Access in Nanosheet FET Standard Cell Library Synthesis},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779576}\n}",
+            "doi": "10.1145/3764386.3779576"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779576"
+          },
+          "compare_when": [
+            "comparing standard-cell, cell-library, or transistor-level cell synthesis/layout-generation methods"
+          ],
+          "benchmark_scope": [
+            "nanosheet-FET standard-cell, cell-library, and transistor-level P&R benchmarks"
+          ],
+          "metrics": [
+            "cell area",
+            "pin accessibility",
+            "DRC count",
+            "PPA",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit recorded experiment comparison candidates including: NS3K, LP (Longest Pin)."
+          ]
+        },
+        {
           "baseline_id": "mambo",
           "short_name": "MAMBO",
           "display_name": "Industry Track: MAMBO: ML Accelerated Multi-Agent Black-Box Optimization for Enhancing Standard Cell Synthesis Quality",
@@ -4402,6 +4742,39 @@
             "Design space pruning techniques may not generalize to all cell types",
             "Block-level PPA evaluation depends on downstream tool quality"
           ]
+        },
+        {
+          "baseline_id": "transopt",
+          "short_name": "TransOpt",
+          "display_name": "TransOpt: A Scalable Transistor-Level Placement and Routing Optimization Framework Beyond Standard Cells",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "TransOpt: A Scalable Transistor-Level Placement and Routing Optimization Framework Beyond Standard Cells",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{hsu2026transopt,\n  author = {Chen-Hao Hsu and David Z. Pan},\n  title = {TransOpt: A Scalable Transistor-Level Placement and Routing Optimization Framework Beyond Standard Cells},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779582}\n}",
+            "doi": "10.1145/3764386.3779582"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779582"
+          },
+          "compare_when": [
+            "comparing standard-cell, cell-library, or transistor-level cell synthesis/layout-generation methods"
+          ],
+          "benchmark_scope": [
+            "adder/multiplier benchmarks generated from GT3 3nm GAAFET standard-cell netlists"
+          ],
+          "metrics": [
+            "total wirelength",
+            "total via count"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit recorded experiment comparison candidates including: SDC Baseline, T-Level Baseline, RouteOpt Only, PlaceOpt Only."
+          ]
         }
       ]
     },
@@ -4468,6 +4841,189 @@
             "no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review",
             "previous MARCH, COMPACT, DAG, and SAT implementations are not publicly available according to the paper, so comparative numbers are cited from prior publications rather than rerun uniformly",
             "proposed topic is bus-routing under routing; human taxonomy review may later merge it into a broader detailed-routing topic if one is created"
+          ]
+        }
+      ]
+    },
+    {
+      "review_triggers": [
+        "paper proposes chiplet architecture simulation or design-space exploration",
+        "experiments report Pareto quality, hypervolume, latency, power, area, thermal, cost, or evaluation-budget efficiency"
+      ],
+      "topic_id": "chiplet-architecture-exploration",
+      "parent_id": "3d-ic-physical-design",
+      "short_name": "Chiplet DSE",
+      "display_name": "Chiplet Architecture Exploration",
+      "aliases": [
+        "chiplet design space exploration",
+        "chiplet architecture DSE",
+        "chiplet simulation and exploration"
+      ],
+      "description": "Simulation and design-space exploration frameworks for chiplet architectures that evaluate performance, power, area, thermal, cost, and package-level trade-offs.",
+      "baselines": [
+        {
+          "baseline_id": "chase",
+          "short_name": "CHASE",
+          "display_name": "CHASE: A CHiplet Architecture Simulation and Exploration Framework with Decoupled Multi-Fidelity Optimization",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "CHASE: A CHiplet Architecture Simulation and Exploration Framework with Decoupled Multi-Fidelity Optimization",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{chen2026chase,\n  author = {Shixin Chen and Hengyuan Zhang and Jianwang Zhai and Bei Yu},\n  title = {CHASE: A CHiplet Architecture Simulation and Exploration Framework with Decoupled Multi-Fidelity Optimization},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779577}\n}",
+            "doi": "10.1145/3764386.3779577"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779577"
+          },
+          "compare_when": [
+            "comparing chiplet architecture exploration, simulation, or multi-fidelity optimization frameworks"
+          ],
+          "benchmark_scope": [
+            "chiplet architecture DSE with MatMul, NPB, and SPEC CPU2006 workloads"
+          ],
+          "metrics": [
+            "latency-area Pareto",
+            "latency-power Pareto",
+            "normalized hypervolume under fixed cost budget"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit recorded experiment comparison candidates including: SoC-Tuner, BOOM-Explorer, Regression, XGBoost, Random Forest, SVR."
+          ]
+        },
+        {
+          "baseline_id": "chiplet-cost-model",
+          "short_name": "Chiplet Cost Model",
+          "display_name": "Quantitative Cost Model and Cost Optimization Methods for Multi-Technology-Node Architecture",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Quantitative Cost Model and Cost Optimization Methods for Multi-Technology-Node Architecture",
+            "venue": "ICCAD",
+            "year": 2025,
+            "doi": "10.1109/iccad66269.2025.11240864",
+            "bibtex": "@inproceedings{yuan2025chiplet,\n  title={Quantitative Cost Model and Cost Optimization Methods for Multi-Technology-Node Architecture},\n  author={Yuan, Qimin and Huang, Kai and Jiang, Xiaowen and Xiong, Dongliang},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/iccad66269.2025.11240864"
+          },
+          "compare_when": [
+            "Comparing chiplet cost models and design economics analysis"
+          ],
+          "benchmark_scope": [
+            "AMD EPYC chiplet data for validation"
+          ],
+          "metrics": [
+            "Cost savings (18%-31%)"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Cost model validated against limited public data (AMD EPYC); real manufacturing costs are proprietary"
+          ]
+        },
+        {
+          "baseline_id": "mmpack",
+          "short_name": "MMPack",
+          "display_name": "MMPack: Multi-Mask Co-Design for Ultra-Large Wafer-Scale Package Integration",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "MMPack: Multi-Mask Co-Design for Ultra-Large Wafer-Scale Package Integration",
+            "venue": "ICCAD",
+            "year": 2025,
+            "doi": "10.1109/iccad66269.2025.11240755",
+            "bibtex": "@inproceedings{li2025mmpack,\n  title={MMPack: Multi-Mask Co-Design for Ultra-Large Wafer-Scale Package Integration},\n  author={Li, Shanyi and Zhuang, Zhen and Liang, Siyuan and Yu, Bei and Ho, Tsung-Yi},\n  booktitle={2025 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n  year={2025},\n  organization={IEEE}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/iccad66269.2025.11240755"
+          },
+          "compare_when": [
+            "Comparing chiplet/package co-design floorplanning frameworks with multi-die integration"
+          ],
+          "benchmark_scope": [
+            "Synthetic chiplet-package co-design benchmarks"
+          ],
+          "metrics": [
+            "Runtime reduction (95%+ vs MCMP)"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Evaluated on synthetic benchmarks only; real chiplet designs may have additional constraints"
+          ]
+        },
+        {
+          "baseline_id": "p2p-chiplet",
+          "short_name": "P2P-Chiplet",
+          "display_name": "P2P-Chiplet: Partition and Placement Co-Optimization for Multi-Chiplet Architecture",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "P2P-Chiplet: Partition and Placement Co-Optimization for Multi-Chiplet Architecture",
+            "venue": "ICCAD",
+            "year": 2025,
+            "bibtex": "@inproceedings{p2pchiplet2025,\n  author = {Qidie Wu and Jiangyuan Gu and Xuguang Yuan and Shaojun Wei and Shouyi Yin},\n  title = {P2P-Chiplet: Partition and Placement Co-Optimization for Multi-Chiplet Architecture},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},\n  year = {2025},\n  pages = {1--9}\n}\n",
+            "doi": "10.1109/iccad66269.2025.11240768"
+          },
+          "compare_when": [
+            "Evaluating chiplet-based design automation flows",
+            "Comparing partition-placement co-optimization for 2.5D integration",
+            "Benchmarking multi-chiplet architecture design methodologies"
+          ],
+          "benchmark_scope": [
+            "Multi-chiplet designs (2.5D integration)",
+            "Interposer-based architectures"
+          ],
+          "metrics": [
+            "D2D power consumption reduction (13.25%)",
+            "Latency reduction (21.06%)",
+            "Area overhead (6.64%)"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "HeteroACG framework aggregates topological and physical optimization",
+            "Limited to 2.5D integration; 3D stacking not addressed",
+            "No public code repository found at time of review"
+          ],
+          "links": {}
+        },
+        {
+          "baseline_id": "vertical-bonding-chiplet-floorplanning",
+          "short_name": "VB Chiplet FP",
+          "display_name": "Vertical-Bonding-Aware 3D Chiplet Partitioning and Floorplanning",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "3D Chiplet Partitioning and Floorplanning Interaction with Vertical Bonding Consideration",
+            "venue": "DATE",
+            "year": 2026,
+            "bibtex": "@inproceedings{shen2026chiplet,\n  title={3D Chiplet Partitioning and Floorplanning Interaction with Vertical Bonding Consideration},\n  author={Shen, Tong and Chen, Mengen and He, Xu and Wang, Yao and Guo, Yang},\n  booktitle={2026 Design, Automation and Test in Europe Conference (DATE)},\n  year={2026}\n}"
+          },
+          "links": {
+            "pdf_url": "https://past.date-conference.com/proceedings-archive/2026/DATA/742.pdf"
+          },
+          "compare_when": [
+            "evaluating 3D chiplet partitioning and floorplanning for hybrid-bonding or fine-pitch vertical interconnect technologies",
+            "comparing methods that jointly optimize chiplet partitioning, HPWL, and inter-die vertical connection overflow"
+          ],
+          "benchmark_scope": [
+            "industrial 3D chiplet benchmarks with 84K to 131M cells, 25 to 141K modules, and multiple top/base die chiplet-count configurations",
+            "comparison against adapted ChipletPart and TritonPart under matching 3D chiplet constraints"
+          ],
+          "metrics": [
+            "HPWL",
+            "inter-die vertical connection overflow",
+            "constraint meet/fail status",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review",
+            "ChipletPart was modified to align with the paper's 3D chiplet scenario, so baseline comparability depends on the adaptation details",
+            "industrial benchmarks and implementation scripts were not verified as publicly available"
           ]
         }
       ]
@@ -4872,6 +5428,93 @@
             "manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved",
             "paper says X-Sim will be released as open source, but no public repository URL was verified in this pass",
             "scope is memristive CIM crossbar simulation, so human review should decide whether this belongs in broad circuit-simulation or a future CIM-specific topic"
+          ]
+        }
+      ]
+    },
+    {
+      "review_triggers": [
+        "paper claims custom or analog layout automation methodology",
+        "paper discusses or evaluates constraint-driven layout, abstraction, partitioning, interactive layout tools, or analog layout productivity"
+      ],
+      "topic_id": "custom-layout-automation",
+      "parent_id": "analog-layout",
+      "short_name": "Custom Layout",
+      "display_name": "Custom Layout Automation",
+      "aliases": [
+        "custom layout automation",
+        "analog custom layout automation",
+        "interactive custom layout",
+        "constraint-driven custom layout"
+      ],
+      "description": "Automation and methodology for custom or analog layout design, including constraint capture, abstraction, partitioning, interactive layout assistance, and layout tool capabilities.",
+      "baselines": [
+        {
+          "baseline_id": "analog-ic-design-automation-challenge-perspective",
+          "short_name": "Analog IC DA Challenge Perspective",
+          "display_name": "Invited: Analog IC Design Automation – More than a Technical Challenge",
+          "role": "historical_reference",
+          "nomination": "community",
+          "publication": {
+            "title": "Invited: Analog IC Design Automation – More than a Technical Challenge",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{prautsch2026analog,\n  author = {Benjamin Prautsch and Uwe Eichler},\n  title = {Invited: Analog IC Design Automation – More than a Technical Challenge},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3787955}\n}",
+            "doi": "10.1145/3764386.3787955"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3787955"
+          },
+          "compare_when": [
+            "reviewing custom analog layout automation, planning, device generation, or layout-methodology flows"
+          ],
+          "benchmark_scope": [
+            "custom analog layout planning, generation, and design-automation use cases"
+          ],
+          "metrics": [
+            "layout quality",
+            "manual-effort reduction",
+            "methodology coverage"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry."
+          ]
+        },
+        {
+          "baseline_id": "concepts-for-custom-layout-automation",
+          "short_name": "Custom Layout Automation Concepts",
+          "display_name": "Invited: Novel Concepts to Improve Custom Layout Automation Capabilities",
+          "role": "historical_reference",
+          "nomination": "community",
+          "publication": {
+            "title": "Invited: Novel Concepts to Improve Custom Layout Automation Capabilities",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{jerke2026concepts,\n  author = {Göran Jerke and Thomas Burdick and Vinko Marolt and Peter Herth and Andrew Beckett},\n  title = {Invited: Novel Concepts to Improve Custom Layout Automation Capabilities},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779617}\n}",
+            "doi": "10.1145/3764386.3779617"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779617"
+          },
+          "compare_when": [
+            "reviewing custom analog layout automation, planning, device generation, or layout-methodology flows"
+          ],
+          "benchmark_scope": [
+            "custom analog layout planning, generation, and design-automation use cases"
+          ],
+          "metrics": [
+            "layout quality",
+            "manual-effort reduction",
+            "methodology coverage"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry."
           ]
         }
       ]
@@ -5464,6 +6107,61 @@
     },
     {
       "review_triggers": [
+        "paper proposes die-to-die or chiplet package routing",
+        "experiments report routability, wirelength, via count, shielding legality, layer constraints, or runtime for package/interposer routing"
+      ],
+      "topic_id": "die-to-die-routing",
+      "parent_id": "package-routing",
+      "short_name": "D2D Routing",
+      "display_name": "Die-to-Die Routing",
+      "aliases": [
+        "die-to-die routing",
+        "D2D routing",
+        "advanced package routing",
+        "chiplet pin-row routing"
+      ],
+      "description": "Die-to-die and advanced-package routing methods for chiplet or multi-die systems, including pin-row asymmetry, via constraints, shielding, and routability optimization.",
+      "baselines": [
+        {
+          "baseline_id": "concurrent-any-angle-d2d-routing-framework",
+          "short_name": "Any-angle D2D Routing",
+          "display_name": "Any-Angle Die-to-Die Routing for Advanced Packages with Asymmetric Pin Row Structures, Via Constraints, and Shielding-Aware Reservation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Any-Angle Die-to-Die Routing for Advanced Packages with Asymmetric Pin Row Structures, Via Constraints, and Shielding-Aware Reservation",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{chang2026concurrent,\n  author = {Hsin-Tzu Chang and Iris Hui-Ru Jiang and Hua-Yu Chang and Chun-Hao Lai},\n  title = {Any-Angle Die-to-Die Routing for Advanced Packages with Asymmetric Pin Row Structures, Via Constraints, and Shielding-Aware Reservation},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779587}\n}",
+            "doi": "10.1145/3764386.3779587"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779587"
+          },
+          "compare_when": [
+            "comparing die-to-die or advanced-package routing methods"
+          ],
+          "benchmark_scope": [
+            "advanced package die-to-die routing instances with pin rows, via constraints, and shielding"
+          ],
+          "metrics": [
+            "routed nets",
+            "wirelength",
+            "via count",
+            "shielding quality",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit recorded experiment comparison candidates including: AAR (Chung et al.), SR (Chang et al.)."
+          ]
+        }
+      ]
+    },
+    {
+      "review_triggers": [
         "paper claims coverage-directed, reinforcement-learning, constrained-random, or model-based test generation for design verification",
         "experiments compare against random test generation, directed test generators, litmus-test generators, or commercial verification flows",
         "metrics include functional/structural coverage, bug exposure, generated test count, simulation time, or coverage convergence"
@@ -5778,6 +6476,59 @@
     },
     {
       "review_triggers": [
+        "paper evaluates EDA documentation question answering or retrieval-augmented generation",
+        "experiments report answer quality, retrieval quality, BLEU, ROUGE, LLM-judge, UniEval, or human evaluation on EDA documentation benchmarks"
+      ],
+      "topic_id": "eda-documentation-qa",
+      "parent_id": "llm-for-eda-automation",
+      "short_name": "EDA Doc QA",
+      "display_name": "EDA Documentation Question Answering",
+      "aliases": [
+        "EDA documentation QA",
+        "EDA RAG",
+        "OpenROAD documentation QA",
+        "EDA tool assistant"
+      ],
+      "description": "LLM, RAG, and retrieval systems for answering EDA tool documentation questions or assisting EDA users with documentation-grounded knowledge.",
+      "baselines": [
+        {
+          "baseline_id": "graph-based-rag-for-eda-documentation-qa",
+          "short_name": "Graph-RAG EDA Documentation QA",
+          "display_name": "Invited: Infusing EDA Knowledge into LLM Systems: An Information-Source Perspective",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Invited: Infusing EDA Knowledge into LLM Systems: An Information-Source Perspective",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{qin2026graph,\n  author = {Yuhan Qin and Yuan Pu and Tairu Qiu and Zhuolun He and Bei Yu},\n  title = {Invited: Infusing EDA Knowledge into LLM Systems: An Information-Source Perspective},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779640}\n}",
+            "doi": "10.1145/3764386.3779640"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779640"
+          },
+          "compare_when": [
+            "evaluating EDA documentation QA, RAG, or knowledge-source grounding systems"
+          ],
+          "benchmark_scope": [
+            "OpenROAD documentation QA benchmarks: EDA Corpus, ORD-QA, ORD-GQA"
+          ],
+          "metrics": [
+            "BLEU",
+            "ROUGE-L",
+            "UniEval"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit recorded experiment comparison candidates including: GraphRAG, LightRAG, ToG, ORAssistant, RAG-EDA."
+          ]
+        }
+      ]
+    },
+    {
+      "review_triggers": [
         "paper claims automatic EDA tool parameter tuning or flow design space exploration",
         "paper optimizes PPA or hypervolume over synthesis, floorplan, placement, routing, or full-flow parameters",
         "paper compares Bayesian optimization, recommender, retrieval, or learning-based flow tuning methods"
@@ -5797,6 +6548,41 @@
       ],
       "description": "Methods that tune configurable EDA tool and flow parameters across one or more implementation stages, optimizing PPA or multi-objective QoR under expensive evaluation budgets.",
       "baselines": [
+        {
+          "baseline_id": "astrotune",
+          "short_name": "AstroTune",
+          "display_name": "AstroTune: AST-Assisted LLM Retrieval for Cross-Stage Design Flow Parameter Tuner",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "AstroTune: AST-Assisted LLM Retrieval for Cross-Stage Design Flow Parameter Tuner",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{wang2026astrotune,\n  author = {Runzhi Wang and Jingyu Pan and Yiran Chen and Jiang Hu},\n  title = {AstroTune: AST-Assisted LLM Retrieval for Cross-Stage Design Flow Parameter Tuner},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779579}\n}",
+            "doi": "10.1145/3764386.3779579"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779579"
+          },
+          "compare_when": [
+            "comparing EDA flow parameter tuning, tool-configuration optimization, or cross-stage search methods"
+          ],
+          "benchmark_scope": [
+            "cross-stage EDA design-flow parameter-tuning benchmarks"
+          ],
+          "metrics": [
+            "PPA/QoR",
+            "search efficiency",
+            "runtime",
+            "parameter transferability"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit recorded experiment comparison candidates including: CROP, BO, Optuna, LLM Search, FlowTuner."
+          ]
+        },
         {
           "baseline_id": "eda-flow-matters",
           "short_name": "EDA Flow Matters",
@@ -5976,6 +6762,59 @@
     },
     {
       "review_triggers": [
+        "paper proposes EDA ontology or knowledge-graph workflow",
+        "paper links design artifacts, timing paths, layout regions, DFM rules, yield data, or test structures for reasoning, query, or ML-assisted automation"
+      ],
+      "topic_id": "eda-knowledge-graph-workflows",
+      "parent_id": "llm-for-eda-automation",
+      "short_name": "EDA KG",
+      "display_name": "EDA Knowledge-Graph Workflows",
+      "aliases": [
+        "EDA knowledge graph",
+        "EDA ontology",
+        "ontology-driven EDA",
+        "knowledge graph EDA flow"
+      ],
+      "description": "EDA workflows that use ontologies or knowledge graphs to integrate design, timing, layout, DFM, yield, test, and tool-flow knowledge for reasoning or automation.",
+      "baselines": [
+        {
+          "baseline_id": "bidirectional-eda-flow-with-ontology-and-knowledge-graph",
+          "short_name": "Ontology/KG EDA Flow",
+          "display_name": "Invited: A Bidirectional EDA Flow in VLSI Design Using Ontology and Knowledge Graph",
+          "role": "historical_reference",
+          "nomination": "community",
+          "publication": {
+            "title": "Invited: A Bidirectional EDA Flow in VLSI Design Using Ontology and Knowledge Graph",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{torunoglu2026bidirectional,\n  author = {Ilhami H. Torunoglu},\n  title = {Invited: A Bidirectional EDA Flow in VLSI Design Using Ontology and Knowledge Graph},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779627}\n}",
+            "doi": "10.1145/3764386.3779627"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779627"
+          },
+          "compare_when": [
+            "reviewing ontology, knowledge-graph, or bidirectional knowledge workflows for VLSI design"
+          ],
+          "benchmark_scope": [
+            "VLSI design ontology and knowledge-graph workflow demonstrations"
+          ],
+          "metrics": [
+            "knowledge coverage",
+            "query quality",
+            "workflow traceability"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry."
+          ]
+        }
+      ]
+    },
+    {
+      "review_triggers": [
         "paper claims electromigration analysis or reliability verification improvement",
         "paper addresses EM-aware PDN or signal interconnect design",
         "paper proposes aging or wearout analysis for IC reliability",
@@ -6098,6 +6937,127 @@
             "no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review",
             "evaluation couples custom physical EM modeling, thermal simulation, and modified placement/routing; reproduction may require technology-specific EM techfile assumptions and current/power extraction",
             "the central topic is EM reliability/signoff co-optimization; placement/routing results should not be interpreted as generic global-placement or global-routing SOTA"
+          ]
+        }
+      ]
+    },
+    {
+      "review_triggers": [
+        "paper describes EM signoff, avoidance, or mitigation methodology",
+        "paper addresses mission profiles, extraction corners, temperature-aware EM, 3DIC/WoW EM, or industrial reliability closure"
+      ],
+      "topic_id": "em-signoff-methodology",
+      "parent_id": "electromigration-analysis",
+      "short_name": "EM Signoff",
+      "display_name": "Electromigration Signoff Methodology",
+      "aliases": [
+        "EM signoff methodology",
+        "industrial EM avoidance",
+        "3DIC EM signoff",
+        "mission-profile-aware EM"
+      ],
+      "description": "Industrial or methodology-oriented electromigration signoff, avoidance, and mitigation flows, including mission profiles, extraction corners, thermal coupling, and 3DIC concerns.",
+      "baselines": [
+        {
+          "baseline_id": "3dic-wafer-on-wafer-em-self-heating-analysis",
+          "short_name": "WoW 3DIC EM Analysis",
+          "display_name": "Addressing Electromigration Challenges in 3D Integrated Circuit (3DIC) Wafer-On-Wafer Technology",
+          "role": "historical_reference",
+          "nomination": "community",
+          "publication": {
+            "title": "Addressing Electromigration Challenges in 3D Integrated Circuit (3DIC) Wafer-On-Wafer Technology",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{khn20263dic,\n  author = {Ingo Kühn and Ivan Valentinov Petkov},\n  title = {Addressing Electromigration Challenges in 3D Integrated Circuit (3DIC) Wafer-On-Wafer Technology},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779594}\n}",
+            "doi": "10.1145/3764386.3779594"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779594"
+          },
+          "compare_when": [
+            "reviewing electromigration signoff, avoidance, or industrial reliability methodology"
+          ],
+          "benchmark_scope": [
+            "industrial EM signoff, avoidance, and 3DIC/WoW reliability scenarios"
+          ],
+          "metrics": [
+            "EM violation risk",
+            "thermal/self-heating impact",
+            "signoff coverage"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry."
+          ]
+        },
+        {
+          "baseline_id": "infineon-em-avoidance-strategies",
+          "short_name": "Infineon EM Avoidance",
+          "display_name": "Electromigration Avoidance Strategies in Infineon",
+          "role": "historical_reference",
+          "nomination": "community",
+          "publication": {
+            "title": "Electromigration Avoidance Strategies in Infineon",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{siemes2026infineon,\n  author = {Shanthi Siemes},\n  title = {Electromigration Avoidance Strategies in Infineon},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779593}\n}",
+            "doi": "10.1145/3764386.3779593"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779593"
+          },
+          "compare_when": [
+            "reviewing electromigration signoff, avoidance, or industrial reliability methodology"
+          ],
+          "benchmark_scope": [
+            "industrial EM signoff, avoidance, and 3DIC/WoW reliability scenarios"
+          ],
+          "metrics": [
+            "EM violation risk",
+            "thermal/self-heating impact",
+            "signoff coverage"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry."
+          ]
+        },
+        {
+          "baseline_id": "lienig-retrospective-across-analog-design-em-and-3d-integration",
+          "short_name": "Lienig PD Retrospective",
+          "display_name": "From Evolutionary Algorithms to Analog Design, Electromigration, 3D Integration, and Beyond: On Jens Lienig's Contributions to Advance Physical Design",
+          "role": "historical_reference",
+          "nomination": "community",
+          "publication": {
+            "title": "From Evolutionary Algorithms to Analog Design, Electromigration, 3D Integration, and Beyond: On Jens Lienig's Contributions to Advance Physical Design",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{knechtel2026lienig,\n  author = {Johann Knechtel and Susann Rothe and Robert Fischbach and Matthias Thiele and Tilo Meister and Andreas Krinke},\n  title = {From Evolutionary Algorithms to Analog Design, Electromigration, 3D Integration, and Beyond: On Jens Lienig's Contributions to Advance Physical Design},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779613}\n}",
+            "doi": "10.1145/3764386.3779613"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779613"
+          },
+          "compare_when": [
+            "reviewing electromigration signoff, avoidance, or industrial reliability methodology"
+          ],
+          "benchmark_scope": [
+            "industrial EM signoff, avoidance, and 3DIC/WoW reliability scenarios"
+          ],
+          "metrics": [
+            "EM violation risk",
+            "thermal/self-heating impact",
+            "signoff coverage"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry."
           ]
         }
       ]
@@ -6939,6 +7899,41 @@
           ]
         },
         {
+          "baseline_id": "bonnroute-overview",
+          "short_name": "BonnRoute Overview",
+          "display_name": "Invited: BonnRoute: Classic Routing Algorithms with Recent Advances",
+          "role": "historical_reference",
+          "nomination": "community",
+          "publication": {
+            "title": "Invited: BonnRoute: Classic Routing Algorithms with Recent Advances",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{vygen2026bonnroute,\n  author = {Jens Vygen},\n  title = {Invited: BonnRoute: Classic Routing Algorithms with Recent Advances},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779624}\n}",
+            "doi": "10.1145/3764386.3779624"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779624"
+          },
+          "compare_when": [
+            "reviewing production-scale routing systems or comparing global-routing frameworks"
+          ],
+          "benchmark_scope": [
+            "industrial global/detailed routing systems and large-scale routing use cases"
+          ],
+          "metrics": [
+            "routing quality",
+            "wirelength",
+            "overflow",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry."
+          ]
+        },
+        {
           "baseline_id": "cotl",
           "short_name": "CoTL",
           "display_name": "Towards Multi-Objective Routing: A Novel Coreset-based Transfer Learning Framework",
@@ -7547,6 +8542,41 @@
           "reproducibility": "unknown",
           "caveats": [
             "Spectral methods may have scalability limits on very large modern designs"
+          ]
+        },
+        {
+          "baseline_id": "kahypar-and-mt-kahypar-survey",
+          "short_name": "KaHyPar / Mt-KaHyPar Survey",
+          "display_name": "Invited: Modern Hypergraph Partitioning: KaHyPar, Mt-KaHyPar, and Beyond",
+          "role": "historical_reference",
+          "nomination": "community",
+          "publication": {
+            "title": "Invited: Modern Hypergraph Partitioning: KaHyPar, Mt-KaHyPar, and Beyond",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{schlag2026kahypar,\n  author = {Sebastian Schlag and Tobias Heuer and Christian Schulz},\n  title = {Invited: Modern Hypergraph Partitioning: KaHyPar, Mt-KaHyPar, and Beyond},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779636}\n}",
+            "doi": "10.1145/3764386.3779636"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779636"
+          },
+          "compare_when": [
+            "comparing hypergraph partitioning algorithms or partitioning tools used in EDA flows"
+          ],
+          "benchmark_scope": [
+            "hypergraph partitioning instances and EDA partitioning use cases"
+          ],
+          "metrics": [
+            "cut quality",
+            "balance",
+            "runtime",
+            "scalability"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry."
           ]
         }
       ]
@@ -8254,6 +9284,47 @@
           ]
         },
         {
+          "baseline_id": "multi-agent-self-evolved-abc",
+          "short_name": "Self-Evolved ABC",
+          "display_name": "Autonomous Evolution of EDA Tools: Multi-Agent Self-Evolved ABC",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Autonomous Evolution of EDA Tools: Multi-Agent Self-Evolved ABC",
+            "venue": "DAC",
+            "year": 2026,
+            "doi": "10.1145/3770743.3804221",
+            "bibtex": "@inproceedings{yu2026autonomous,\n  title={Autonomous Evolution of EDA Tools: Multi-Agent Self-Evolved ABC},\n  author={Yu, Cunxi and Ren, Haoxing},\n  booktitle={Proceedings of the 63rd ACM/IEEE Design Automation Conference (DAC)},\n  year={2026},\n  doi={10.1145/3770743.3804221}\n}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3770743.3804221",
+            "arxiv_url": "https://arxiv.org/abs/2604.15082",
+            "pdf_url": "https://arxiv.org/pdf/2604.15082"
+          },
+          "compare_when": [
+            "evaluating agentic or LLM-driven frameworks that evolve ABC or other integrated logic-synthesis tools",
+            "comparing ABC-integrated logic optimization, flow-tuning, and technology-mapping improvements under correctness checking",
+            "benchmarking end-to-end logic-synthesis QoR improvements rather than standalone prompt/code-generation quality"
+          ],
+          "benchmark_scope": [
+            "ISCAS85, ISCAS89, ITC99, EPFL, VTR DSP, and arithmetic benchmark suites",
+            "ASAP7 7 nm mapped flows covering logic optimization, mapping, buffering, gate sizing, and static timing analysis",
+            "ablations over vanilla versus evolved FlowTune, AIG synthesis/orchestration, and mapping subsystems"
+          ],
+          "metrics": [
+            "normalized QoR relative to vanilla FlowTune, AIG synthesis, and mapping baseline",
+            "worst negative slack, post-buffering and gate-sizing area, and area-delay product",
+            "AIG node count, depth, edge count, mapper area, mapper delay estimate, LUT count, and LUT depth",
+            "combinational equivalence checking pass/fail before QoR evaluation"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "public artifact link for the paper was not identified during this pass; third-party inspired harnesses should not be treated as the paper artifact",
+            "results depend on a large distributed evaluation setup with 87 AMD EPYC CPU nodes and Claude 4.5 Sonnet agents",
+            "comparison target is the paper's vanilla integrated ABC/FlowTune/AIG/mapping configuration, not every external logic-synthesis optimizer"
+          ]
+        },
+        {
           "baseline_id": "rtlexplain",
           "short_name": "RTLExplain",
           "display_name": "RTLExplain: A Structured Approach to RTL Code Summarization and Question Answering for Medium-to-Large Designs Using LLMs",
@@ -8947,6 +10018,41 @@
           ]
         },
         {
+          "baseline_id": "grandplan",
+          "short_name": "GrandPlan",
+          "display_name": "GrandPlan: Differentiable, Simultaneous Top-Level Floorplanning and Partition-Level Cell Placement for Large-Scale IP-Cores",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "GrandPlan: Differentiable, Simultaneous Top-Level Floorplanning and Partition-Level Cell Placement for Large-Scale IP-Cores",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{xiong2026grandplan,\n  author = {Zhili Xiong and Yi-Chen Lu and David Z. Pan and Haoxing Ren},\n  title = {GrandPlan: Differentiable, Simultaneous Top-Level Floorplanning and Partition-Level Cell Placement for Large-Scale IP-Cores},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779591}\n}",
+            "doi": "10.1145/3764386.3779591"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779591"
+          },
+          "compare_when": [
+            "comparing macro placement, floorplanning, or partition-level physical-design methods"
+          ],
+          "benchmark_scope": [
+            "large-scale IP-core floorplanning, macro placement, and partition-level placement benchmarks"
+          ],
+          "metrics": [
+            "wirelength",
+            "routability",
+            "partition quality",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit recorded experiment comparison candidates including: Human-expert-crafted floorplans."
+          ]
+        },
+        {
           "baseline_id": "rl-rudy-macro-placement",
           "short_name": "RL-RUDY MacroPlace",
           "display_name": "RL-Based Macro Placement with Cell Clustering and RUDY Modeling",
@@ -9188,6 +10294,41 @@
       ],
       "description": "Methods for partitioning large designs across multiple FPGAs and routing inter-FPGA connections under I/O, hop-count, TDM, resource, congestion, and timing constraints.",
       "baselines": [
+        {
+          "baseline_id": "fpga-based-emulation-physical-synthesis-layout-issues",
+          "short_name": "FPGA Emulation Physical Synthesis Issues",
+          "display_name": "Physical Synthesis/layout Issues Specific to FPGA-based Emulation",
+          "role": "historical_reference",
+          "nomination": "community",
+          "publication": {
+            "title": "Physical Synthesis/layout Issues Specific to FPGA-based Emulation",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{krupnova2026fpga,\n  author = {Helena Krupnova},\n  title = {Physical Synthesis/layout Issues Specific to FPGA-based Emulation},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3790091}\n}",
+            "doi": "10.1145/3764386.3790091"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3790091"
+          },
+          "compare_when": [
+            "reviewing partitioning, placement, routing, or physical-synthesis issues for multi-FPGA emulation"
+          ],
+          "benchmark_scope": [
+            "FPGA-based emulation partitioning and physical-synthesis/layout scenarios"
+          ],
+          "metrics": [
+            "convergence",
+            "bitfile generation success",
+            "routing quality",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry."
+          ]
+        },
         {
           "baseline_id": "hopart",
           "short_name": "HoPart",
@@ -9567,6 +10708,126 @@
     },
     {
       "review_triggers": [
+        "paper claims optical NoC or WRONoC design automation",
+        "experiments compare topology, routing, wavelength, latency, bandwidth, layout, or scalability metrics for optical networks-on-chip"
+      ],
+      "topic_id": "optical-network-on-chip-design",
+      "parent_id": "photonic-ic-design",
+      "short_name": "ONoC Design",
+      "display_name": "Optical Network-on-Chip Design",
+      "aliases": [
+        "ONoC design",
+        "WRONoC design",
+        "wavelength-routed optical network-on-chip",
+        "optical NoC topology design"
+      ],
+      "description": "Design automation for wavelength-routed or other optical networks-on-chip, including topology generation, layout-aware routing, wavelength assignment, and co-optimization.",
+      "baselines": [
+        {
+          "baseline_id": "fab-wronoc",
+          "short_name": "FAB",
+          "display_name": "FAB: Fast and Demand-Aware Bandwidth Allocation Method for Wavelength-Routed Optical Networks-on-Chip",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "FAB: Fast and Demand-Aware Bandwidth Allocation Method for Wavelength-Routed Optical Networks-on-Chip",
+            "venue": "ICCAD",
+            "year": 2025,
+            "doi": "10.1109/iccad66269.2025.11240910",
+            "bibtex": "@inproceedings{cheng2025fab,\n  author = {Liaoyuan Cheng and Mengchu Li and Zhidan Zheng and Tsun-Ming Tseng\nand Ulf Schlichtmann},\n  title = {{FAB}: Fast and Demand-Aware Bandwidth Allocation Method for Wavelength-Routed\nOptical Networks-on-Chip},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240910},\n  publisher = {IEEE}\n}\n"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/iccad66269.2025.11240910"
+          },
+          "compare_when": [
+            "comparing optical NoC bandwidth allocation quality and runtime",
+            "evaluating worst-case transmission latency in WRONoC designs"
+          ],
+          "benchmark_scope": [
+            "wavelength-routed optical network-on-chip topologies"
+          ],
+          "metrics": [
+            "worst-case transmission latency reduction: up to 87.5%",
+            "optimization speedup: up to 500,000x vs SOTA"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "new ICCAD 2025 paper; no public code repository identified yet"
+          ]
+        },
+        {
+          "baseline_id": "wronoc-advanced-design-automation-overview",
+          "short_name": "WRONoC Design Automation Overview",
+          "display_name": "Invited: Navigating the Frontier of Optimality and Complexity: Advanced Design Automation for Wavelength-Routed ONoCs",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Invited: Navigating the Frontier of Optimality and Complexity: Advanced Design Automation for Wavelength-Routed ONoCs",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{zheng2026wronoc,\n  author = {Zhidan Zheng and Mengchu Li and Tsun-Ming Tseng and Ulf Schlichtmann},\n  title = {Invited: Navigating the Frontier of Optimality and Complexity: Advanced Design Automation for Wavelength-Routed ONoCs},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3793429}\n}",
+            "doi": "10.1145/3764386.3793429"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3793429"
+          },
+          "compare_when": [
+            "comparing design automation, simulation, or optimization for wavelength-routed optical NoCs"
+          ],
+          "benchmark_scope": [
+            "wavelength-routed optical network-on-chip design cases"
+          ],
+          "metrics": [
+            "layout/topology quality",
+            "optimization complexity",
+            "topology/layout co-optimization quality"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit recorded experiment comparison candidates including: sequential WRONoC design methodology, co-optimization WRONoC methodology."
+          ]
+        },
+        {
+          "baseline_id": "wroxim",
+          "short_name": "WROXIM",
+          "display_name": "WROXIM: A Network-Level Simulation Platform for Wavelength-Routed Optical Networks-on-Chip",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "WROXIM: A Network-Level Simulation Platform for Wavelength-Routed Optical Networks-on-Chip",
+            "venue": "ICCAD",
+            "year": 2025,
+            "doi": "10.1109/iccad66269.2025.11241004",
+            "bibtex": "@inproceedings{Chang_2025, title={WROXIM: A Network-Level Simulation Platform for Wavelength-Routed Optical Networks-on-Chip}, url={http://dx.doi.org/10.1109/iccad66269.2025.11241004}, DOI={10.1109/iccad66269.2025.11241004}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Chang, Jeng-De and Zheng, Zhidan and Cheng, Liaoyuan and Zhang, Liu-Xuan-Wei and Tseng, Tsun-Ming and Lin, Ing-Chao and Schlichtmann, Ulf}, year={2025}, month=Oct, pages={1-9}}"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1109/iccad66269.2025.11241004"
+          },
+          "compare_when": [
+            "comparing optical network-on-chip simulation platforms",
+            "evaluating cycle-accurate WRONoC performance modeling"
+          ],
+          "benchmark_scope": [
+            "WRONoC configurations with various topologies"
+          ],
+          "metrics": [
+            "latency",
+            "throughput",
+            "energy consumption"
+          ],
+          "reproducibility": "unknown",
+          "caveats": [
+            "Network-level only; does not model physical-layer optical effects",
+            "First platform in its class; no comparable academic tools to benchmark against",
+            "WRONoC technology is still emerging; limited real-world validation"
+          ]
+        }
+      ]
+    },
+    {
+      "review_triggers": [
         "paper claims package or interposer routing improvement",
         "paper addresses escape routing or RDL routing",
         "paper proposes routing for chiplet or 2.5D/3D integration"
@@ -9738,6 +10999,40 @@
           "caveats": [
             "ICCAD 2025 paper, recently published"
           ]
+        },
+        {
+          "baseline_id": "substrate-netlist-extraction-for-analog-design",
+          "short_name": "Substrate Netlist Extraction",
+          "display_name": "Invited: Substrate Netlist Extraction in Analog Design",
+          "role": "historical_reference",
+          "nomination": "community",
+          "publication": {
+            "title": "Invited: Substrate Netlist Extraction in Analog Design",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{heinrich2026substrate,\n  author = {Klaus Heinrich and Pietro Buccella},\n  title = {Invited: Substrate Netlist Extraction in Analog Design},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779634}\n}",
+            "doi": "10.1145/3764386.3779634"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779634"
+          },
+          "compare_when": [
+            "comparing substrate/parasitic extraction methods for analog or mixed-signal layouts"
+          ],
+          "benchmark_scope": [
+            "analog substrate/parasitic extraction flows and substrate netlist use cases"
+          ],
+          "metrics": [
+            "substrate network quality",
+            "extraction accuracy",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry."
+          ]
         }
       ]
     },
@@ -9882,38 +11177,6 @@
       "description": "Design automation for silicon photonic integrated circuits, including placement, routing, simulation, and electro-optical co-design.",
       "baselines": [
         {
-          "baseline_id": "adaptive-waveguide-router",
-          "short_name": "Adaptive-Waveguide-Router",
-          "display_name": "Constraints-aware Adaptive Routing with Hybrid Waveguides for Photonic Integrated Circuits",
-          "role": "candidate_recent_baseline",
-          "nomination": "community",
-          "publication": {
-            "title": "Constraints-aware Adaptive Routing with Hybrid Waveguides for Photonic Integrated Circuits",
-            "venue": "ICCAD",
-            "year": 2025,
-            "doi": "10.1109/iccad66269.2025.11240866",
-            "bibtex": "@inproceedings{wu2025adaptive,\n  author = {Yuchao Wu and Xiaofei Yu and Xianyi Feng and Yeyu Tong and Yuzhe\nMa},\n  title = {Constraints-aware Adaptive Routing with Hybrid Waveguides for Photonic\nIntegrated Circuits},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240866},\n  publisher = {IEEE}\n}\n"
-          },
-          "links": {
-            "paper_url": "https://doi.org/10.1109/iccad66269.2025.11240866"
-          },
-          "compare_when": [
-            "comparing photonic waveguide routing quality and speed against prior optical routers",
-            "evaluating insertion loss minimization with hybrid waveguides"
-          ],
-          "benchmark_scope": [
-            "photonic integrated circuits with hybrid waveguide classes"
-          ],
-          "metrics": [
-            "insertion loss reduction: up to 37%",
-            "speedup over prior work: 250x"
-          ],
-          "reproducibility": "unknown",
-          "caveats": [
-            "first complete optical routing framework handling hybrid waveguide classes; no public code identified"
-          ]
-        },
-        {
           "baseline_id": "apollo-pic-placement",
           "short_name": "Apollo",
           "display_name": "Apollo: Automated Routing-Informed Placement for Large-Scale Photonic Integrated Circuits",
@@ -9947,38 +11210,6 @@
           "caveats": [
             "first GPU-accelerated PIC placement framework; limited comparison against prior automated PIC placers since the field is nascent",
             "may not cover all photonic-specific constraints (e.g., thermal crosstalk, fabrication variation)"
-          ]
-        },
-        {
-          "baseline_id": "fab-wronoc",
-          "short_name": "FAB",
-          "display_name": "FAB: Fast and Demand-Aware Bandwidth Allocation Method for Wavelength-Routed Optical Networks-on-Chip",
-          "role": "candidate_recent_baseline",
-          "nomination": "community",
-          "publication": {
-            "title": "FAB: Fast and Demand-Aware Bandwidth Allocation Method for Wavelength-Routed Optical Networks-on-Chip",
-            "venue": "ICCAD",
-            "year": 2025,
-            "doi": "10.1109/iccad66269.2025.11240910",
-            "bibtex": "@inproceedings{cheng2025fab,\n  author = {Liaoyuan Cheng and Mengchu Li and Zhidan Zheng and Tsun-Ming Tseng\nand Ulf Schlichtmann},\n  title = {{FAB}: Fast and Demand-Aware Bandwidth Allocation Method for Wavelength-Routed\nOptical Networks-on-Chip},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240910},\n  publisher = {IEEE}\n}\n"
-          },
-          "links": {
-            "paper_url": "https://doi.org/10.1109/iccad66269.2025.11240910"
-          },
-          "compare_when": [
-            "comparing optical NoC bandwidth allocation quality and runtime",
-            "evaluating worst-case transmission latency in WRONoC designs"
-          ],
-          "benchmark_scope": [
-            "wavelength-routed optical network-on-chip topologies"
-          ],
-          "metrics": [
-            "worst-case transmission latency reduction: up to 87.5%",
-            "optimization speedup: up to 500,000x vs SOTA"
-          ],
-          "reproducibility": "unknown",
-          "caveats": [
-            "new ICCAD 2025 paper; no public code repository identified yet"
           ]
         },
         {
@@ -10051,40 +11282,92 @@
             "DeepONet-based approach requires retraining for new PIC geometries",
             "0.07% MAPE may not reflect worst-case thermal prediction errors"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "review_triggers": [
+        "paper proposes routing for photonic integrated circuits",
+        "experiments report waveguide/electrical routing quality, vias, layer usage, optical loss, violations, or routing runtime"
+      ],
+      "topic_id": "photonic-ic-routing",
+      "parent_id": "photonic-ic-design",
+      "short_name": "PIC Routing",
+      "display_name": "Photonic IC Routing",
+      "aliases": [
+        "photonic routing",
+        "PIC routing",
+        "active photonic IC routing",
+        "waveguide-electrical co-routing"
+      ],
+      "description": "Routing automation for photonic integrated circuits, including electrical/waveguide co-routing, active PIC routing, and photonics-aware design-rule constraints.",
+      "baselines": [
         {
-          "baseline_id": "wroxim",
-          "short_name": "WROXIM",
-          "display_name": "WROXIM: A Network-Level Simulation Platform for Wavelength-Routed Optical Networks-on-Chip",
+          "baseline_id": "adaptive-waveguide-router",
+          "short_name": "Adaptive-Waveguide-Router",
+          "display_name": "Constraints-aware Adaptive Routing with Hybrid Waveguides for Photonic Integrated Circuits",
           "role": "candidate_recent_baseline",
           "nomination": "community",
           "publication": {
-            "title": "WROXIM: A Network-Level Simulation Platform for Wavelength-Routed Optical Networks-on-Chip",
+            "title": "Constraints-aware Adaptive Routing with Hybrid Waveguides for Photonic Integrated Circuits",
             "venue": "ICCAD",
             "year": 2025,
-            "doi": "10.1109/iccad66269.2025.11241004",
-            "bibtex": "@inproceedings{Chang_2025, title={WROXIM: A Network-Level Simulation Platform for Wavelength-Routed Optical Networks-on-Chip}, url={http://dx.doi.org/10.1109/iccad66269.2025.11241004}, DOI={10.1109/iccad66269.2025.11241004}, booktitle={2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, publisher={IEEE}, author={Chang, Jeng-De and Zheng, Zhidan and Cheng, Liaoyuan and Zhang, Liu-Xuan-Wei and Tseng, Tsun-Ming and Lin, Ing-Chao and Schlichtmann, Ulf}, year={2025}, month=Oct, pages={1-9}}"
+            "doi": "10.1109/iccad66269.2025.11240866",
+            "bibtex": "@inproceedings{wu2025adaptive,\n  author = {Yuchao Wu and Xiaofei Yu and Xianyi Feng and Yeyu Tong and Yuzhe\nMa},\n  title = {Constraints-aware Adaptive Routing with Hybrid Waveguides for Photonic\nIntegrated Circuits},\n  booktitle = {2025 IEEE/ACM International Conference On Computer Aided Design\n(ICCAD)},\n  year = {2025},\n  pages = {1--9},\n  doi = {10.1109/iccad66269.2025.11240866},\n  publisher = {IEEE}\n}\n"
           },
           "links": {
-            "paper_url": "https://doi.org/10.1109/iccad66269.2025.11241004"
+            "paper_url": "https://doi.org/10.1109/iccad66269.2025.11240866"
           },
           "compare_when": [
-            "comparing optical network-on-chip simulation platforms",
-            "evaluating cycle-accurate WRONoC performance modeling"
+            "comparing photonic waveguide routing quality and speed against prior optical routers",
+            "evaluating insertion loss minimization with hybrid waveguides"
           ],
           "benchmark_scope": [
-            "WRONoC configurations with various topologies"
+            "photonic integrated circuits with hybrid waveguide classes"
           ],
           "metrics": [
-            "latency",
-            "throughput",
-            "energy consumption"
+            "insertion loss reduction: up to 37%",
+            "speedup over prior work: 250x"
           ],
           "reproducibility": "unknown",
           "caveats": [
-            "Network-level only; does not model physical-layer optical effects",
-            "First platform in its class; no comparable academic tools to benchmark against",
-            "WRONoC technology is still emerging; limited real-world validation"
+            "first complete optical routing framework handling hybrid waveguide classes; no public code identified"
+          ]
+        },
+        {
+          "baseline_id": "lidar-3-0",
+          "short_name": "LiDAR 3.0",
+          "display_name": "LiDAR 3.0: Photonics-Aware Planning-Guided Automated Electrical Routing for Large-Scale Active Photonic Integrated Circuits",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "LiDAR 3.0: Photonics-Aware Planning-Guided Automated Electrical Routing for Large-Scale Active Photonic Integrated Circuits",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{zhou2026lidar,\n  author = {Hongjian Zhou and Haoyu Yang and Nicholas Gangi and Bowen Liu and Meng Zhang and Haoxing Ren and Xu Wang and Rena Huang and Jiaqi Gu},\n  title = {LiDAR 3.0: Photonics-Aware Planning-Guided Automated Electrical Routing for Large-Scale Active Photonic Integrated Circuits},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779589}\n}",
+            "doi": "10.1145/3764386.3779589"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779589"
+          },
+          "compare_when": [
+            "comparing automated electrical/optical routing methods for photonic integrated circuits"
+          ],
+          "benchmark_scope": [
+            "Clements, ADEPT, and GWOR active photonic integrated circuit benchmarks"
+          ],
+          "metrics": [
+            "via count",
+            "layer count",
+            "user-specified violations",
+            "runtime",
+            "wirelength"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit recorded experiment comparison candidates including: Anaroute, Anaroute*."
           ]
         }
       ]
@@ -10306,6 +11589,94 @@
             "Uses differentiable approximations and discrete-aware updates for inherently discrete buffer-insertion decisions",
             "Added during post-merge gap scan because the original ICCAD machine-reader pass missed this paper"
           ]
+        },
+        {
+          "baseline_id": "invited-advanced-node-design-closure-perspective",
+          "short_name": "Advanced-node Closure Perspective",
+          "display_name": "Challenges and Opportunities in Advanced-node Design Closure",
+          "role": "historical_reference",
+          "nomination": "community",
+          "publication": {
+            "title": "Challenges and Opportunities in Advanced-node Design Closure",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{reece2026invited,\n  author = {Will Reece},\n  title = {Challenges and Opportunities in Advanced-node Design Closure},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779635}\n}",
+            "doi": "10.1145/3764386.3779635"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779635"
+          },
+          "compare_when": [
+            "discussing advanced-node physical-design closure methodology or comparing closure-flow optimization methods"
+          ],
+          "benchmark_scope": [
+            "advanced-node physical-design closure case studies and methodology discussions"
+          ],
+          "metrics": [
+            "timing closure",
+            "power",
+            "congestion",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry."
+          ]
+        }
+      ]
+    },
+    {
+      "review_triggers": [
+        "paper proposes physics-based EM analysis, transient EM simulation, or circuit-aware EM optimization",
+        "experiments or case studies involve EM stress, current-density limits, lifetime, thermal coupling, or reliability closure"
+      ],
+      "topic_id": "physics-based-em-analysis",
+      "parent_id": "electromigration-analysis",
+      "short_name": "Physics EM",
+      "display_name": "Physics-Based Electromigration Analysis",
+      "aliases": [
+        "physics-based EM analysis",
+        "transient EM analysis",
+        "circuit-aware EM modeling"
+      ],
+      "description": "Physics-based electromigration analysis and optimization methods for interconnects, power grids, clock networks, and heterogeneous integrated systems.",
+      "baselines": [
+        {
+          "baseline_id": "physics-based-em-analysis-and-optimization-overview",
+          "short_name": "Physics-based EM Overview",
+          "display_name": "Invited: Toward Accurate, Large-scale Electromigration Analysis and Optimization in Integrated Systems",
+          "role": "historical_reference",
+          "nomination": "community",
+          "publication": {
+            "title": "Invited: Toward Accurate, Large-scale Electromigration Analysis and Optimization in Integrated Systems",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{sapatnekar2026physics,\n  author = {Sachin S. Sapatnekar},\n  title = {Invited: Toward Accurate, Large-scale Electromigration Analysis and Optimization in Integrated Systems},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3780044}\n}",
+            "doi": "10.1145/3764386.3780044"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3780044"
+          },
+          "compare_when": [
+            "comparing physics-based electromigration analysis or optimization methods"
+          ],
+          "benchmark_scope": [
+            "large-scale interconnect EM analysis and optimization scenarios"
+          ],
+          "metrics": [
+            "EM lifetime or stress estimate",
+            "analysis accuracy",
+            "runtime",
+            "scalability"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry."
+          ]
         }
       ]
     },
@@ -10403,6 +11774,61 @@
             "no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review",
             "experiments are focused on MMS benchmarks and DREAMPlace initialization, so results may not transfer directly to other placers or legalization/detailed-placement flows",
             "proposed topic is narrower than accepted global-placement; human taxonomy review should decide whether placement-initialization merits a separate child topic"
+          ]
+        }
+      ]
+    },
+    {
+      "review_triggers": [
+        "paper proposes or benchmarks post-placement buffering or gate sizing",
+        "experiments report TNS, WNS, slew/cap violations, area, power, or runtime after placement"
+      ],
+      "topic_id": "post-placement-buffering-and-sizing",
+      "parent_id": "physical-optimization",
+      "short_name": "Post-Place Sizing",
+      "display_name": "Post-Placement Buffering and Sizing",
+      "aliases": [
+        "post-placement buffering",
+        "post-placement sizing",
+        "buffering and gate sizing contest",
+        "timing ECO sizing"
+      ],
+      "description": "Timing-driven post-placement optimization tasks that insert buffers or resize gates after placement while balancing timing, area, power, violations, and runtime.",
+      "baselines": [
+        {
+          "baseline_id": "ispd-2026-post-placement-buffering-and-sizing-contest",
+          "short_name": "ISPD 2026 Buffering/Sizing Contest",
+          "display_name": "Invited: Post-Placement Buffering and Sizing Contest",
+          "role": "artifact_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Invited: Post-Placement Buffering and Sizing Contest",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{kahng2026ispd,\n  author = {Andrew B. Kahng and Seokhyeong Kang and Sayak Kundu and Yiting Liu and Davit Markarian and Seonghyeon Park and Zhiang Wang},\n  title = {Invited: Post-Placement Buffering and Sizing Contest},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779616}\n}",
+            "doi": "10.1145/3764386.3779616"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779616"
+          },
+          "compare_when": [
+            "evaluating post-placement buffering or gate-sizing methods and contest benchmarks"
+          ],
+          "benchmark_scope": [
+            "ISPD 2026 post-placement buffering and sizing contest benchmarks in ASAP7"
+          ],
+          "metrics": [
+            "TNS/WNS improvement",
+            "slew/capacitance violations",
+            "area",
+            "power",
+            "runtime score"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit recorded experiment comparison candidates including: OpenROAD Resizer baseline script."
           ]
         }
       ]
@@ -10728,6 +12154,95 @@
       ],
       "description": "Open-source predictive process design kits for IC design research at advanced technology nodes",
       "baselines": []
+    },
+    {
+      "review_triggers": [
+        "paper claims quantum circuit compilation, mapping, routing, scheduling, or ion-shuttling improvement",
+        "experiments compare gate count, shuttle count, latency, inter-QPU operations, fidelity, or compile time"
+      ],
+      "topic_id": "quantum-circuit-compilation",
+      "parent_id": "quantum-eda",
+      "short_name": "Quantum Compile",
+      "display_name": "Quantum Circuit Compilation",
+      "aliases": [
+        "quantum compilation",
+        "quantum circuit mapping",
+        "modular quantum compilation",
+        "QCCD compilation",
+        "ion shuttling compilation"
+      ],
+      "description": "Quantum circuit compilation, mapping, scheduling, routing, and architecture-aware execution for trapped-ion, modular, and other quantum-computing platforms.",
+      "baselines": [
+        {
+          "baseline_id": "improved-ion-shuttling-approach",
+          "short_name": "Improved QCCD Shuttling",
+          "display_name": "An Improved Ion-Shuttling Approach for QCCD Architectures",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "An Improved Ion-Shuttling Approach for QCCD Architectures",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{wu2026improved,\n  author = {Tung-Yeh Wu and Ting-Chi Wang},\n  title = {An Improved Ion-Shuttling Approach for QCCD Architectures},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779585}\n}",
+            "doi": "10.1145/3764386.3779585"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779585"
+          },
+          "compare_when": [
+            "comparing quantum circuit compilation, placement, routing, shuttling, or modular-QPU mapping methods"
+          ],
+          "benchmark_scope": [
+            "linear QCCD quantum circuit benchmarks"
+          ],
+          "metrics": [
+            "shuttle count",
+            "compile time",
+            "fidelity improvement"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit recorded experiment comparison candidates including: Prior QCCD shuttling approach [27]."
+          ]
+        },
+        {
+          "baseline_id": "timing-aware-end-to-end-modular-quantum-compilation",
+          "short_name": "Timing-aware Modular QC",
+          "display_name": "Timing-Aware End-to-End Circuit Compilation Framework for Modular Quantum Systems",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Timing-Aware End-to-End Circuit Compilation Framework for Modular Quantum Systems",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{huang2026timing,\n  author = {Ching-Yao Huang and Wai-Kei Mak},\n  title = {Timing-Aware End-to-End Circuit Compilation Framework for Modular Quantum Systems},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779586}\n}",
+            "doi": "10.1145/3764386.3779586"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779586"
+          },
+          "compare_when": [
+            "comparing quantum circuit compilation, placement, routing, shuttling, or modular-QPU mapping methods"
+          ],
+          "benchmark_scope": [
+            "BRevLib and BAlgo quantum benchmarks on realistic 3-QPU and 4-QPU modular systems"
+          ],
+          "metrics": [
+            "final circuit latency",
+            "inserted inter-QPU operations",
+            "runtime",
+            "latency"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit recorded experiment comparison candidates including: Prior modular quantum compiler [19], Prior modular quantum compilation methods [23][28]."
+          ]
+        }
+      ]
     },
     {
       "review_triggers": [
@@ -11421,6 +12936,62 @@
             "no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review",
             "the public GitHub repository was reachable, but artifact completeness and exact environment reproduction were not deeply audited in this pass",
             "Rocket Chip and commercial-scale scalability claims should be reviewed together with benchmark-version and instrumentation differences noted in the paper"
+          ]
+        }
+      ]
+    },
+    {
+      "review_triggers": [
+        "paper optimizes scan-chain ordering, swapping, or physical implementation",
+        "experiments report scan-chain wirelength, runtime, MAXBIT constraints, DFT legality, or placement/routing impact"
+      ],
+      "topic_id": "scan-chain-optimization",
+      "parent_id": "testing",
+      "short_name": "Scan Chain Opt",
+      "display_name": "Scan-Chain Optimization",
+      "aliases": [
+        "scan chain reordering",
+        "scan chain swapping",
+        "scan-chain placement",
+        "scan-chain optimization"
+      ],
+      "description": "Design-for-test and physical-design methods that optimize scan-chain ordering, swapping, placement interaction, runtime, or scan-wirelength trade-offs.",
+      "baselines": [
+        {
+          "baseline_id": "scan-partition-splitting-for-p-r-scan-chain-runtime-scaling",
+          "short_name": "Scan Partition Splitting",
+          "display_name": "Invited: Improving Runtime Scaling in the EDA Flow for Designs with Millions of Gates",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Invited: Improving Runtime Scaling in the EDA Flow for Designs with Millions of Gates",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{chinnery2026scan,\n  author = {David Chinnery},\n  title = {Invited: Improving Runtime Scaling in the EDA Flow for Designs with Millions of Gates},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779614}\n}",
+            "doi": "10.1145/3764386.3779614"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779614"
+          },
+          "compare_when": [
+            "evaluating scan-chain reordering, partitioning, or physical-implementation runtime/QoR trade-offs"
+          ],
+          "benchmark_scope": [
+            "large industrial designs with millions of gates and scan-chain MAXBIT constraints"
+          ],
+          "metrics": [
+            "scan reordering runtime",
+            "CPU/runtime ratio",
+            "partition splitting speedup",
+            "normalized scan wirelength",
+            "runtime speedup",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit recorded experiment comparison candidates including: Aprisa Init, Aprisa Fix, Aprisa Faster."
           ]
         }
       ]
@@ -12702,6 +14273,61 @@
       "baselines": []
     },
     {
+      "review_triggers": [
+        "paper claims timing-driven or RC-aware global routing improvement",
+        "experiments report WNS, TNS, routing score, congestion, switching power, wirelength, or runtime for global routing"
+      ],
+      "topic_id": "timing-driven-global-routing",
+      "parent_id": "global-routing",
+      "short_name": "Timing GR",
+      "display_name": "Timing-Driven Global Routing",
+      "aliases": [
+        "timing-driven global routing",
+        "RC-aware global routing",
+        "timing-aware routing weights"
+      ],
+      "description": "Global routing methods that optimize or trade off timing, RC, congestion, power, and routing quality before detailed routing.",
+      "baselines": [
+        {
+          "baseline_id": "gradient-guided-rc-weighting",
+          "short_name": "Gradient-guided RC Weighting",
+          "display_name": "Gradient-Guided RC Weighting for Timing-Driven Global Routing",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Gradient-Guided RC Weighting for Timing-Driven Global Routing",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{xiao2026gradient,\n  author = {Liang Xiao and Qinkai Duan and Leilei Jin and Jinwei Liu and Tsung-Yi Ho and Evangeline F.Y. Young and Martin D.F. Wong},\n  title = {Gradient-Guided RC Weighting for Timing-Driven Global Routing},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779588}\n}",
+            "doi": "10.1145/3764386.3779588"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779588"
+          },
+          "compare_when": [
+            "evaluating global-routing methods with timing, RC, or power-aware objectives"
+          ],
+          "benchmark_scope": [
+            "10 ISPD25 timing-driven global-routing contest benchmarks"
+          ],
+          "metrics": [
+            "weighted routing quality score",
+            "WNS",
+            "TNS",
+            "congestion",
+            "switching power",
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit recorded experiment comparison candidates including: ISPD 2025 Contest Winner (1st place), ISPD 2025 Contest Winner (2nd place), ISPD 2025 Contest Winner (3rd place)."
+          ]
+        }
+      ]
+    },
+    {
       "review_triggers": [],
       "topic_id": "timing-prediction",
       "parent_id": "timing",
@@ -12902,6 +14528,43 @@
           "reproducibility": "unknown",
           "caveats": [
             "first diffusion-sharing-driven global placement framework; no public release identified yet"
+          ]
+        },
+        {
+          "baseline_id": "vplace",
+          "short_name": "VPlace",
+          "display_name": "A New Approach to Performance-Driven Analog IC Placement",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "A New Approach to Performance-Driven Analog IC Placement",
+            "venue": "ISPD",
+            "year": 2026,
+            "bibtex": "@inproceedings{fang2026vplace,\n  author = {Donghao Fang and Hailiang Hu and Wuxi Li and Jiang Hu},\n  title = {A New Approach to Performance-Driven Analog IC Placement},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779578}\n}",
+            "doi": "10.1145/3764386.3779578"
+          },
+          "links": {
+            "paper_url": "https://doi.org/10.1145/3764386.3779578"
+          },
+          "compare_when": [
+            "comparing transistor-level or analog IC placement methods"
+          ],
+          "benchmark_scope": [
+            "six analog circuits in ASAP7: two-/three-stage OTA, VGA, and SCF"
+          ],
+          "metrics": [
+            "HPWL",
+            "gain",
+            "UGF",
+            "bandwidth",
+            "phase margin",
+            "CPU runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
+            "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
+            "Draft audit recorded experiment comparison candidates including: ALIGN, PEA+SA."
           ]
         }
       ]
@@ -13157,7 +14820,7 @@
     }
   ],
   "_counts": {
-    "topics": 106,
-    "baselines": 317
+    "topics": 121,
+    "baselines": 356
   }
 }

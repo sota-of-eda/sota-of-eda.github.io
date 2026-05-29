@@ -1,0 +1,27 @@
+baseline_id: agentic-chip-design-from-spec2gds
+short_name: Agentic Spec2GDS
+display_name: Agentic Chip Design from Spec2GDS – Faster and Better than a Human Expert?
+role: historical_reference
+nomination: community
+publication:
+  title: Agentic Chip Design from Spec2GDS – Faster and Better than a Human Expert?
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{andersen2026agentic,\n  author = {Thomas Andersen},\n  title = {Agentic Chip Design from Spec2GDS – Faster and Better than a Human Expert?},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779630}\n}"
+  doi: 10.1145/3764386.3779630
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779630
+compare_when:
+- comparing agentic EDA workflows, tool-using chip-design agents, or AI-assisted physical-design flows
+benchmark_scope:
+- physical-design, EDA coding, and chip-design agent case studies
+metrics:
+- PPA/QoR
+- task success rate
+- iteration count
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry.

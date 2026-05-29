@@ -1,0 +1,29 @@
+baseline_id: gradient-guided-rc-weighting
+short_name: Gradient-guided RC Weighting
+display_name: Gradient-Guided RC Weighting for Timing-Driven Global Routing
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Gradient-Guided RC Weighting for Timing-Driven Global Routing
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{xiao2026gradient,\n  author = {Liang Xiao and Qinkai Duan and Leilei Jin and Jinwei Liu and Tsung-Yi Ho and Evangeline F.Y. Young and Martin D.F. Wong},\n  title = {Gradient-Guided RC Weighting for Timing-Driven Global Routing},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779588}\n}"
+  doi: 10.1145/3764386.3779588
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779588
+compare_when:
+- evaluating global-routing methods with timing, RC, or power-aware objectives
+benchmark_scope:
+- 10 ISPD25 timing-driven global-routing contest benchmarks
+metrics:
+- weighted routing quality score
+- WNS
+- TNS
+- congestion
+- switching power
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- 'Draft audit recorded experiment comparison candidates including: ISPD 2025 Contest Winner (1st place), ISPD 2025 Contest Winner (2nd place), ISPD 2025 Contest Winner (3rd place).'

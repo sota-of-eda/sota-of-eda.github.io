@@ -1,0 +1,27 @@
+baseline_id: ai-ml-in-eda-and-engineering-simulation
+short_name: AI/ML in EDA and Simulation
+display_name: Use of AI/ML in Electronic Design Automation and Engineering Simulation
+role: historical_reference
+nomination: community
+publication:
+  title: Use of AI/ML in Electronic Design Automation and Engineering Simulation
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{banerjee2026ai,\n  author = {Prith Banerjee},\n  title = {Use of AI/ML in Electronic Design Automation and Engineering Simulation},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779619}\n}"
+  doi: 10.1145/3764386.3779619
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779619
+compare_when:
+- comparing agentic EDA workflows, tool-using chip-design agents, or AI-assisted physical-design flows
+benchmark_scope:
+- physical-design, EDA coding, and chip-design agent case studies
+metrics:
+- PPA/QoR
+- task success rate
+- iteration count
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry.

@@ -1,0 +1,26 @@
+baseline_id: bidirectional-eda-flow-with-ontology-and-knowledge-graph
+short_name: Ontology/KG EDA Flow
+display_name: 'Invited: A Bidirectional EDA Flow in VLSI Design Using Ontology and Knowledge Graph'
+role: historical_reference
+nomination: community
+publication:
+  title: 'Invited: A Bidirectional EDA Flow in VLSI Design Using Ontology and Knowledge Graph'
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{torunoglu2026bidirectional,\n  author = {Ilhami H. Torunoglu},\n  title = {Invited: A Bidirectional EDA Flow in VLSI Design Using Ontology and Knowledge Graph},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779627}\n}"
+  doi: 10.1145/3764386.3779627
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779627
+compare_when:
+- reviewing ontology, knowledge-graph, or bidirectional knowledge workflows for VLSI design
+benchmark_scope:
+- VLSI design ontology and knowledge-graph workflow demonstrations
+metrics:
+- knowledge coverage
+- query quality
+- workflow traceability
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry.

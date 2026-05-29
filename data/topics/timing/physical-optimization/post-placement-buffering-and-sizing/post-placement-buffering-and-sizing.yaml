@@ -1,0 +1,16 @@
+topic_id: post-placement-buffering-and-sizing
+parent_id: physical-optimization
+short_name: Post-Place Sizing
+display_name: Post-Placement Buffering and Sizing
+aliases:
+- post-placement buffering
+- post-placement sizing
+- buffering and gate sizing contest
+- timing ECO sizing
+description: Timing-driven post-placement optimization tasks that insert buffers or
+  resize gates after placement while balancing timing, area, power, violations, and
+  runtime.
+review_triggers:
+- paper proposes or benchmarks post-placement buffering or gate sizing
+- experiments report TNS, WNS, slew/cap violations, area, power, or runtime after
+  placement

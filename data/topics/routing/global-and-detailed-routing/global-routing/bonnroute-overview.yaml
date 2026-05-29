@@ -1,0 +1,27 @@
+baseline_id: bonnroute-overview
+short_name: BonnRoute Overview
+display_name: 'Invited: BonnRoute: Classic Routing Algorithms with Recent Advances'
+role: historical_reference
+nomination: community
+publication:
+  title: 'Invited: BonnRoute: Classic Routing Algorithms with Recent Advances'
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{vygen2026bonnroute,\n  author = {Jens Vygen},\n  title = {Invited: BonnRoute: Classic Routing Algorithms with Recent Advances},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779624}\n}"
+  doi: 10.1145/3764386.3779624
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779624
+compare_when:
+- reviewing production-scale routing systems or comparing global-routing frameworks
+benchmark_scope:
+- industrial global/detailed routing systems and large-scale routing use cases
+metrics:
+- routing quality
+- wirelength
+- overflow
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry.

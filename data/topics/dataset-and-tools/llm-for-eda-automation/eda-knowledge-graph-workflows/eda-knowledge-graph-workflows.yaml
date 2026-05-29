@@ -1,0 +1,15 @@
+topic_id: eda-knowledge-graph-workflows
+parent_id: llm-for-eda-automation
+short_name: EDA KG
+display_name: EDA Knowledge-Graph Workflows
+aliases:
+- EDA knowledge graph
+- EDA ontology
+- ontology-driven EDA
+- knowledge graph EDA flow
+description: EDA workflows that use ontologies or knowledge graphs to integrate design,
+  timing, layout, DFM, yield, test, and tool-flow knowledge for reasoning or automation.
+review_triggers:
+- paper proposes EDA ontology or knowledge-graph workflow
+- paper links design artifacts, timing paths, layout regions, DFM rules, yield data,
+  or test structures for reasoning, query, or ML-assisted automation

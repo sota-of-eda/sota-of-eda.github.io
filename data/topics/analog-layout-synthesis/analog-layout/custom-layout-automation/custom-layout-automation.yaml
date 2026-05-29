@@ -1,0 +1,16 @@
+topic_id: custom-layout-automation
+parent_id: analog-layout
+short_name: Custom Layout
+display_name: Custom Layout Automation
+aliases:
+- custom layout automation
+- analog custom layout automation
+- interactive custom layout
+- constraint-driven custom layout
+description: Automation and methodology for custom or analog layout design, including
+  constraint capture, abstraction, partitioning, interactive layout assistance, and
+  layout tool capabilities.
+review_triggers:
+- paper claims custom or analog layout automation methodology
+- paper discusses or evaluates constraint-driven layout, abstraction, partitioning,
+  interactive layout tools, or analog layout productivity

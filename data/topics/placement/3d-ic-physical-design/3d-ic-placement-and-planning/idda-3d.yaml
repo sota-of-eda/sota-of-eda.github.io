@@ -1,0 +1,27 @@
+baseline_id: idda-3d
+short_name: IDDA-3D
+display_name: 'IDDA-3D: Inter-Die Delay Aware Timing-Driven Placement on Face-to-Face bonded 3D ICs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'IDDA-3D: Inter-Die Delay Aware Timing-Driven Placement on Face-to-Face bonded 3D ICs'
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{yang2026idda,\n  author = {Zixian Yang and Shanyi Li and Leilei Jin and Tsung-Yi Ho and Chien-Nan Jimmy Liu},\n  title = {IDDA-3D: Inter-Die Delay Aware Timing-Driven Placement on Face-to-Face bonded 3D ICs},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779590}\n}"
+  doi: 10.1145/3764386.3779590
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779590
+compare_when:
+- comparing 2.5D/3D IC placement, planning, partitioning, or interconnect-planning methods
+benchmark_scope:
+- 2.5D/3D IC placement, interconnect-planning, and soft-module planning benchmarks
+metrics:
+- wirelength
+- timing
+- signal/power/thermal integrity
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- 'Draft audit recorded experiment comparison candidates including: OpenROAD 2D, Analytical-3D.'

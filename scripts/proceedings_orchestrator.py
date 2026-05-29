@@ -14,6 +14,10 @@ CLAUDE_SKILL = Path(".claude/skills/proceedings-extractor/SKILL.md")
 TEMPLATE = Path(".claude/skills/proceedings-extractor/scripts/review_template.py")
 
 
+def clean_prompt_text(text: str) -> str:
+    return text.replace("\x00", " ").replace("\x01", " ")
+
+
 def run(cmd: list[str], *, capture: bool = False) -> subprocess.CompletedProcess[str]:
     return subprocess.run(cmd, check=True, text=True, stdout=subprocess.PIPE if capture else None)
 
@@ -37,10 +41,10 @@ def packet(batch: Path, item_id: str) -> Path:
 
 
 def claude_prompt(packet_path: Path) -> str:
-    packet_text = packet_path.read_text(encoding="utf-8")
-    skill_text = CLAUDE_SKILL.read_text(encoding="utf-8") if CLAUDE_SKILL.exists() else ""
-    template_text = run(["python3", str(TEMPLATE), "--id", packet_path.stem, "--source", str(packet_path)], capture=True).stdout
-    return f"""Return YAML only. Fill this template; keep unknown fields empty and list them under needs.
+    packet_text = clean_prompt_text(packet_path.read_text(encoding="utf-8"))
+    skill_text = clean_prompt_text(CLAUDE_SKILL.read_text(encoding="utf-8")) if CLAUDE_SKILL.exists() else ""
+    template_text = clean_prompt_text(run(["python3", str(TEMPLATE), "--id", packet_path.stem, "--source", str(packet_path)], capture=True).stdout)
+    return clean_prompt_text(f"""Return YAML only. Fill this template; keep unknown fields empty and list them under needs.
 Do not include markdown fences or commentary. Use double-quoted strings for free text.
 Experiment baselines must come only from Experiment/Evaluation/Results/Table/Figure evidence.
 
@@ -60,22 +64,17 @@ Packet:
 ```markdown
 {packet_text}
 ```
-"""
+""")
 
 
 def yaml_text(text: str) -> str:
-    text = text.strip()
+    text = clean_prompt_text(text).strip()
     if "\ndecision:" in text and not text.startswith("decision:"):
         text = "decision:" + text.split("\ndecision:", 1)[1]
-    if text.startswith("```"):
-        lines = text.splitlines()
-        if lines and lines[0].startswith("```"):
-            lines = lines[1:]
-        if lines and lines[-1].strip() == "```":
-            lines = lines[:-1]
-        text = "\n".join(lines).strip()
-    if text.endswith("```"):
-        text = text.rsplit("```", 1)[0].strip()
+    lines = [line for line in text.splitlines() if not line.strip().startswith("```")]
+    text = "\n".join(lines).strip()
+    if "\ndecision:" in text and not text.startswith("decision:"):
+        text = "decision:" + text.split("\ndecision:", 1)[1]
     return text
 
 

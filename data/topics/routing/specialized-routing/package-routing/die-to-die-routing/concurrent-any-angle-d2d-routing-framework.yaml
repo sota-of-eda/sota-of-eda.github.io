@@ -1,0 +1,28 @@
+baseline_id: concurrent-any-angle-d2d-routing-framework
+short_name: Any-angle D2D Routing
+display_name: Any-Angle Die-to-Die Routing for Advanced Packages with Asymmetric Pin Row Structures, Via Constraints, and Shielding-Aware Reservation
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Any-Angle Die-to-Die Routing for Advanced Packages with Asymmetric Pin Row Structures, Via Constraints, and Shielding-Aware Reservation
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{chang2026concurrent,\n  author = {Hsin-Tzu Chang and Iris Hui-Ru Jiang and Hua-Yu Chang and Chun-Hao Lai},\n  title = {Any-Angle Die-to-Die Routing for Advanced Packages with Asymmetric Pin Row Structures, Via Constraints, and Shielding-Aware Reservation},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779587}\n}"
+  doi: 10.1145/3764386.3779587
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779587
+compare_when:
+- comparing die-to-die or advanced-package routing methods
+benchmark_scope:
+- advanced package die-to-die routing instances with pin rows, via constraints, and shielding
+metrics:
+- routed nets
+- wirelength
+- via count
+- shielding quality
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- 'Draft audit recorded experiment comparison candidates including: AAR (Chung et al.), SR (Chang et al.).'

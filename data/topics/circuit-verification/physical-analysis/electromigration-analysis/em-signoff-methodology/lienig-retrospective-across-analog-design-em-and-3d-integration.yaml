@@ -1,0 +1,26 @@
+baseline_id: lienig-retrospective-across-analog-design-em-and-3d-integration
+short_name: Lienig PD Retrospective
+display_name: 'From Evolutionary Algorithms to Analog Design, Electromigration, 3D Integration, and Beyond: On Jens Lienig''s Contributions to Advance Physical Design'
+role: historical_reference
+nomination: community
+publication:
+  title: 'From Evolutionary Algorithms to Analog Design, Electromigration, 3D Integration, and Beyond: On Jens Lienig''s Contributions to Advance Physical Design'
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{knechtel2026lienig,\n  author = {Johann Knechtel and Susann Rothe and Robert Fischbach and Matthias Thiele and Tilo Meister and Andreas Krinke},\n  title = {From Evolutionary Algorithms to Analog Design, Electromigration, 3D Integration, and Beyond: On Jens Lienig's Contributions to Advance Physical Design},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779613}\n}"
+  doi: 10.1145/3764386.3779613
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779613
+compare_when:
+- reviewing electromigration signoff, avoidance, or industrial reliability methodology
+benchmark_scope:
+- industrial EM signoff, avoidance, and 3DIC/WoW reliability scenarios
+metrics:
+- EM violation risk
+- thermal/self-heating impact
+- signoff coverage
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry.

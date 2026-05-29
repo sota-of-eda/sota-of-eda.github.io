@@ -1,0 +1,15 @@
+topic_id: 3d-ic-placement-and-planning
+parent_id: 3d-ic-physical-design
+short_name: 3D Place/Plan
+display_name: 3D IC Placement and Planning
+aliases:
+- 3D IC placement planning
+- technology-aware 3D placement
+- interconnect planning for 3D IC
+- F2F 3D placement
+description: Placement, region planning, and interconnect-planning methods for 2.5D/3D
+  ICs and face-to-face or chiplet-based integration.
+review_triggers:
+- paper proposes 3D placement, region planning, partitioning, or interconnect planning
+- experiments report wirelength, timing, inter-die delay, TSV/RDL/via count, thermal/power
+  integrity, or 3D placement overhead

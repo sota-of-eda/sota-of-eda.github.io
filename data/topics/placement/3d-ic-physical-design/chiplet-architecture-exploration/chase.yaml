@@ -1,0 +1,26 @@
+baseline_id: chase
+short_name: CHASE
+display_name: 'CHASE: A CHiplet Architecture Simulation and Exploration Framework with Decoupled Multi-Fidelity Optimization'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'CHASE: A CHiplet Architecture Simulation and Exploration Framework with Decoupled Multi-Fidelity Optimization'
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{chen2026chase,\n  author = {Shixin Chen and Hengyuan Zhang and Jianwang Zhai and Bei Yu},\n  title = {CHASE: A CHiplet Architecture Simulation and Exploration Framework with Decoupled Multi-Fidelity Optimization},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779577}\n}"
+  doi: 10.1145/3764386.3779577
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779577
+compare_when:
+- comparing chiplet architecture exploration, simulation, or multi-fidelity optimization frameworks
+benchmark_scope:
+- chiplet architecture DSE with MatMul, NPB, and SPEC CPU2006 workloads
+metrics:
+- latency-area Pareto
+- latency-power Pareto
+- normalized hypervolume under fixed cost budget
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- 'Draft audit recorded experiment comparison candidates including: SoC-Tuner, BOOM-Explorer, Regression, XGBoost, Random Forest, SVR.'

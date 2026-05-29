@@ -1,0 +1,16 @@
+topic_id: em-signoff-methodology
+parent_id: electromigration-analysis
+short_name: EM Signoff
+display_name: Electromigration Signoff Methodology
+aliases:
+- EM signoff methodology
+- industrial EM avoidance
+- 3DIC EM signoff
+- mission-profile-aware EM
+description: Industrial or methodology-oriented electromigration signoff, avoidance,
+  and mitigation flows, including mission profiles, extraction corners, thermal coupling,
+  and 3DIC concerns.
+review_triggers:
+- paper describes EM signoff, avoidance, or mitigation methodology
+- paper addresses mission profiles, extraction corners, temperature-aware EM, 3DIC/WoW
+  EM, or industrial reliability closure

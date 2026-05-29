@@ -1,0 +1,15 @@
+topic_id: eda-documentation-qa
+parent_id: llm-for-eda-automation
+short_name: EDA Doc QA
+display_name: EDA Documentation Question Answering
+aliases:
+- EDA documentation QA
+- EDA RAG
+- OpenROAD documentation QA
+- EDA tool assistant
+description: LLM, RAG, and retrieval systems for answering EDA tool documentation
+  questions or assisting EDA users with documentation-grounded knowledge.
+review_triggers:
+- paper evaluates EDA documentation question answering or retrieval-augmented generation
+- experiments report answer quality, retrieval quality, BLEU, ROUGE, LLM-judge, UniEval,
+  or human evaluation on EDA documentation benchmarks

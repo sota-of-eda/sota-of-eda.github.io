@@ -1,0 +1,16 @@
+topic_id: die-to-die-routing
+parent_id: package-routing
+short_name: D2D Routing
+display_name: Die-to-Die Routing
+aliases:
+- die-to-die routing
+- D2D routing
+- advanced package routing
+- chiplet pin-row routing
+description: Die-to-die and advanced-package routing methods for chiplet or multi-die
+  systems, including pin-row asymmetry, via constraints, shielding, and routability
+  optimization.
+review_triggers:
+- paper proposes die-to-die or chiplet package routing
+- experiments report routability, wirelength, via count, shielding legality, layer
+  constraints, or runtime for package/interposer routing

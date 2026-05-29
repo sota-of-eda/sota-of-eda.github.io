@@ -1,0 +1,28 @@
+baseline_id: ispd-2026-post-placement-buffering-and-sizing-contest
+short_name: ISPD 2026 Buffering/Sizing Contest
+display_name: 'Invited: Post-Placement Buffering and Sizing Contest'
+role: artifact_baseline
+nomination: community
+publication:
+  title: 'Invited: Post-Placement Buffering and Sizing Contest'
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{kahng2026ispd,\n  author = {Andrew B. Kahng and Seokhyeong Kang and Sayak Kundu and Yiting Liu and Davit Markarian and Seonghyeon Park and Zhiang Wang},\n  title = {Invited: Post-Placement Buffering and Sizing Contest},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779616}\n}"
+  doi: 10.1145/3764386.3779616
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779616
+compare_when:
+- evaluating post-placement buffering or gate-sizing methods and contest benchmarks
+benchmark_scope:
+- ISPD 2026 post-placement buffering and sizing contest benchmarks in ASAP7
+metrics:
+- TNS/WNS improvement
+- slew/capacitance violations
+- area
+- power
+- runtime score
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- 'Draft audit recorded experiment comparison candidates including: OpenROAD Resizer baseline script.'

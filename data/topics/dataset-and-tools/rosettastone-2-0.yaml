@@ -1,0 +1,34 @@
+baseline_id: rosettastone-2-0
+short_name: RosettaStone 2.0
+display_name: 'Invited: Toward Sustainable and Transparent Benchmarking for Academic Physical Design Research'
+role: artifact_baseline
+nomination: community
+publication:
+  title: 'Invited: Toward Sustainable and Transparent Benchmarking for Academic Physical Design Research'
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{jiang2026rosettastone,\n  author = {Liwen Jiang and Andrew B. Kahng and Zhiang Wang and Zhiyu Zheng},\n  title = {Invited: Toward Sustainable and Transparent Benchmarking for Academic Physical Design Research},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779611}\n}"
+  doi: 10.1145/3764386.3779611
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779611
+compare_when:
+- comparing reusable EDA benchmark, tracking, tool, or dataset infrastructure
+benchmark_scope:
+- aes, ibex, jpeg physical-design benchmarking cases across 2D/3D enablements
+- aes, ibex, jpeg physical-design benchmarking cases
+- RosettaStone 2.0 Pin-3D reference cases
+- RosettaStone 2.0 physical-design reference flow
+metrics:
+- HBT counts
+- timing/QoR
+- DRVs
+- runtime
+- flow outcome metrics
+- 2D versus 3D implementation QoR
+- flow outcomes
+- HBT/cross-tier metrics
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- 'Draft audit recorded experiment comparison candidates including: Pin-3D reference flow, 2D ORFS baseline, Restricted vs Flexible tier strategy, Mixed-toolchain configuration.'

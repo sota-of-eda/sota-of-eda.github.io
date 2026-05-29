@@ -1,0 +1,29 @@
+baseline_id: scan-partition-splitting-for-p-r-scan-chain-runtime-scaling
+short_name: Scan Partition Splitting
+display_name: 'Invited: Improving Runtime Scaling in the EDA Flow for Designs with Millions of Gates'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Invited: Improving Runtime Scaling in the EDA Flow for Designs with Millions of Gates'
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{chinnery2026scan,\n  author = {David Chinnery},\n  title = {Invited: Improving Runtime Scaling in the EDA Flow for Designs with Millions of Gates},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779614}\n}"
+  doi: 10.1145/3764386.3779614
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779614
+compare_when:
+- evaluating scan-chain reordering, partitioning, or physical-implementation runtime/QoR trade-offs
+benchmark_scope:
+- large industrial designs with millions of gates and scan-chain MAXBIT constraints
+metrics:
+- scan reordering runtime
+- CPU/runtime ratio
+- partition splitting speedup
+- normalized scan wirelength
+- runtime speedup
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- 'Draft audit recorded experiment comparison candidates including: Aprisa Init, Aprisa Fix, Aprisa Faster.'

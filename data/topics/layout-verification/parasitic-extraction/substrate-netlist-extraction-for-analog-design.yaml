@@ -1,0 +1,26 @@
+baseline_id: substrate-netlist-extraction-for-analog-design
+short_name: Substrate Netlist Extraction
+display_name: 'Invited: Substrate Netlist Extraction in Analog Design'
+role: historical_reference
+nomination: community
+publication:
+  title: 'Invited: Substrate Netlist Extraction in Analog Design'
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{heinrich2026substrate,\n  author = {Klaus Heinrich and Pietro Buccella},\n  title = {Invited: Substrate Netlist Extraction in Analog Design},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779634}\n}"
+  doi: 10.1145/3764386.3779634
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779634
+compare_when:
+- comparing substrate/parasitic extraction methods for analog or mixed-signal layouts
+benchmark_scope:
+- analog substrate/parasitic extraction flows and substrate netlist use cases
+metrics:
+- substrate network quality
+- extraction accuracy
+- runtime
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- Draft audit did not extract conventional experiment-baseline comparisons; treat this as an invited, survey, methodology, or tool/benchmark coverage entry.

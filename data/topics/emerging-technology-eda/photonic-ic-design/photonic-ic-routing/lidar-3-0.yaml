@@ -1,0 +1,28 @@
+baseline_id: lidar-3-0
+short_name: LiDAR 3.0
+display_name: 'LiDAR 3.0: Photonics-Aware Planning-Guided Automated Electrical Routing for Large-Scale Active Photonic Integrated Circuits'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'LiDAR 3.0: Photonics-Aware Planning-Guided Automated Electrical Routing for Large-Scale Active Photonic Integrated Circuits'
+  venue: ISPD
+  year: 2026
+  bibtex: "@inproceedings{zhou2026lidar,\n  author = {Hongjian Zhou and Haoyu Yang and Nicholas Gangi and Bowen Liu and Meng Zhang and Haoxing Ren and Xu Wang and Rena Huang and Jiaqi Gu},\n  title = {LiDAR 3.0: Photonics-Aware Planning-Guided Automated Electrical Routing for Large-Scale Active Photonic Integrated Circuits},\n  booktitle = {Proceedings of the 2026 International Symposium on Physical Design},\n  year = {2026},\n  publisher = {ACM},\n  doi = {10.1145/3764386.3779589}\n}"
+  doi: 10.1145/3764386.3779589
+links:
+  paper_url: https://doi.org/10.1145/3764386.3779589
+compare_when:
+- comparing automated electrical/optical routing methods for photonic integrated circuits
+benchmark_scope:
+- Clements, ADEPT, and GWOR active photonic integrated circuit benchmarks
+metrics:
+- via count
+- layer count
+- user-specified violations
+- runtime
+- wirelength
+reproducibility: paper_only
+caveats:
+- Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.
+- DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.
+- 'Draft audit recorded experiment comparison candidates including: Anaroute, Anaroute*.'
