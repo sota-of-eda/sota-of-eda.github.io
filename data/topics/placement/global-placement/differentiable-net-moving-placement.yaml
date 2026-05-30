@@ -1,0 +1,26 @@
+baseline_id: differentiable-net-moving-placement
+short_name: Diff Net-Moving
+display_name: Differentiable Net-Moving and Local Congestion Mitigation for Routability-Driven Global Placement
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Differentiable Net-Moving and Local Congestion Mitigation for Routability-Driven Global Placement
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{li2025diffnetmoving,\n  title = {Differentiable Net-Moving and Local Congestion Mitigation for Routability-Driven Global Placement},\n  author = {Wenchao Li and Hongxi Wu and Duanxiang Liu and Xingquan Li and Wenxing Zhu},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing global placement or routability-driven placement flows
+benchmark_scope:
+- DAC 2025 paper experiments for "Differentiable Net-Moving and Local Congestion Mitigation for Routability-Driven Global Placement"; compare against Xplace-Route, ePlace, cell-inflation routability methods, BB-based congestion model.
+- Topic gate routed this row to `global-placement` using existing taxonomy; no new topic was created for this item.
+metrics:
+- DRC/DRV count
+- wirelength
+- via count
+- runtime
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: Xplace-Route, ePlace, cell-inflation routability methods, BB-based congestion model.'

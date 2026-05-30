@@ -1,0 +1,26 @@
+baseline_id: uvllm
+short_name: UVLLM
+display_name: 'UVLLM: An Automated Universal RTL Verification Framework using LLMs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'UVLLM: An Automated Universal RTL Verification Framework using LLMs'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{hu2025uvllm,\n  title = {UVLLM: An Automated Universal RTL Verification Framework using LLMs},\n  author = {Yuchen Hu and Junhao Ye and Ke Xu and Jialin Sun and Shiyue Zhang and Xinyao Jiao and Dingrong Pan and Jie Zhou and Ning Wang and Weiwei Shan and Xinwei Fang and Xi Wang and Nan Guan and Zhe Jiang},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing formal, functional, or RTL verification methods
+benchmark_scope:
+- 'DAC 2025 paper experiments for "UVLLM: An Automated Universal RTL Verification Framework using LLMs"; compare against MEIC.'
+- Topic gate routed this row to `formal-and-functional-verification` using existing taxonomy; no new topic was created for this item.
+metrics:
+- solved cases
+- runtime
+- manual effort
+- accuracy or success rate
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: MEIC.'

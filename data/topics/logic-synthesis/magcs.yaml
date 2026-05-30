@@ -1,0 +1,27 @@
+baseline_id: magcs
+short_name: MAGCS
+display_name: 'MAGCS: Multi-Agent Guided Configuration Search for Optimization Fault Detection in Logic Synthesis'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'MAGCS: Multi-Agent Guided Configuration Search for Optimization Fault Detection in Logic Synthesis'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{zou2025magcs,\n  title = {MAGCS: Multi-Agent Guided Configuration Search for Optimization Fault Detection in Logic Synthesis},\n  author = {Peiyu Zou and Xiaochen Li and Shikai Guo and Weihong Sun and Yuyao Xu and He Jiang},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing logic synthesis, mapping, optimization, or approximate synthesis methods
+benchmark_scope:
+- 'DAC 2025 paper experiments for "MAGCS: Multi-Agent Guided Configuration Search for Optimization Fault Detection in Logic Synthesis"; compare against DeLoSo, DynSwarm, InitSwarm.'
+- Topic gate routed this row to `logic-synthesis` using existing taxonomy; no new topic was created for this item.
+metrics:
+- area
+- delay
+- quality of result
+- runtime
+- faults found where applicable
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: DeLoSo, DynSwarm, InitSwarm.'

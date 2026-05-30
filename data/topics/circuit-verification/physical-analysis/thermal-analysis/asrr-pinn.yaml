@@ -1,0 +1,25 @@
+baseline_id: asrr-pinn
+short_name: ASRR-PINN
+display_name: 'ASRR-PINN: Adaptive Sub-Regional Random Resampling-Based PINN for Thermal Analysis of 3D-ICs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ASRR-PINN: Adaptive Sub-Regional Random Resampling-Based PINN for Thermal Analysis of 3D-ICs'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{zhou2025asrrpinn,\n  title = {ASRR-PINN: Adaptive Sub-Regional Random Resampling-Based PINN for Thermal Analysis of 3D-ICs},\n  author = {Zijian Zhou and Min Tang and Liang Chen},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- evaluating PINN-based or learning-accelerated thermal analysis for 3D ICs
+benchmark_scope:
+- 3D-IC thermal-analysis cases with adaptive sampling and parameterized thermal-conductivity/ambient-temperature studies; comparisons include RAR, RAD, and uniform PINN sampling schemes.
+metrics:
+- maximum absolute temperature error
+- mean absolute temperature error
+- runtime speedup
+- parameterized-sweep speedup
+reproducibility: paper_only
+caveats:
+- Rescued from DAC 2025 skip-seed pool using clean local proceedings page extraction; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: RAR sampling, RAD sampling, uniform PINN sampling.'

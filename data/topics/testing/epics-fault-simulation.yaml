@@ -1,0 +1,25 @@
+baseline_id: epics-fault-simulation
+short_name: EPICS
+display_name: 'EPICS: Efficient Parallel Pattern Fault Simulation for Sequential Circuits via Strongly Connected Components'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'EPICS: Efficient Parallel Pattern Fault Simulation for Sequential Circuits via Strongly Connected Components'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{wang2025epics,\n  title = {EPICS: Efficient Parallel Pattern Fault Simulation for Sequential Circuits via Strongly Connected Components},\n  author = {Mingjun Wang and Hui Wang and Jianan Mu and Xinyu Zhang and Bin Sun and Yihan Wen and Zizhen Liu and Feng Gu and Jun Gao and Shengwen Liang and Jing Ye and Xiaowei Li and Huawei Li},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing parallel pattern fault simulation for sequential circuits
+benchmark_scope:
+- academic and industrial sequential-circuit fault-simulation benchmarks compared with commercial Z01X and VISION+ flows
+metrics:
+- fault-simulation runtime
+- speedup
+- fault coverage
+- ablation impact of SCC traversal and lazy propagation
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 compact proceedings packet and Claude review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates recorded in the packet review: Z01X, VISION+, EPICS--, EPICS-.'

@@ -1,0 +1,26 @@
+baseline_id: mr-tpl-router
+short_name: Mr.TPL
+display_name: 'Mr.TPL: A Method for Multi-Pin Net Router in Triple Patterning Lithography'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Mr.TPL: A Method for Multi-Pin Net Router in Triple Patterning Lithography'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{wang2025mrtpl,\n  title = {Mr.TPL: A Method for Multi-Pin Net Router in Triple Patterning Lithography},\n  author = {Chengkai Wang and Weiqing Ji and Mingyang Kou and Zhiyang Chen and Fei Li and Nengyong Zhu and Hailong Yao},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing detailed routing methods under lithography or design-rule constraints
+benchmark_scope:
+- 'DAC 2025 paper experiments for "Mr.TPL: A Method for Multi-Pin Net Router in Triple Patterning Lithography"; compare against Ma et al. TPL-aware routing, Lin et al. TPL-aware routing.'
+- Topic gate routed this row to `detailed-routing` using existing taxonomy; no new topic was created for this item.
+metrics:
+- wirelength
+- via count
+- conflict count
+- runtime
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: Ma et al. TPL-aware routing, Lin et al. TPL-aware routing.'

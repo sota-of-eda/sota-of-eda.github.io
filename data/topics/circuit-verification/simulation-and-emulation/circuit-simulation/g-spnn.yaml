@@ -1,0 +1,24 @@
+baseline_id: g-spnn
+short_name: G-SpNN
+display_name: 'G-SpNN: GPU-Accelerated Passivity Enforcement for S-Parameter Modeling with Neural Networks'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'G-SpNN: GPU-Accelerated Passivity Enforcement for S-Parameter Modeling with Neural Networks'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{zeng2025gspnn,\n  title = {G-SpNN: GPU-Accelerated Passivity Enforcement for S-Parameter Modeling with Neural Networks},\n  author = {Lijie Zeng and Jiatai Sun and Xiao Wu and Dan Niu and Tianshi Wang and Yibo Lin and Zuochang Ye and Zhou Jin},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- evaluating passivity enforcement and macromodeling acceleration for S-parameter or RF circuit simulation
+benchmark_scope:
+- large-port S-parameter macromodeling cases for high-frequency circuits, RFICs, and chip-packaging simulation contexts; comparisons include DAO
+metrics:
+- convergence speedup
+- memory usage
+- loss/accuracy during passivity enforcement
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 compact proceedings packet and Claude review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates recorded in the packet review: DAO (Domain-Alternated Optimization).'

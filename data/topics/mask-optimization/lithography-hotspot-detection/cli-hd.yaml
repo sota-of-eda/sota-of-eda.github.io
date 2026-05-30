@@ -1,0 +1,26 @@
+baseline_id: cli-hd
+short_name: CLI-HD
+display_name: 'Delving into Topology Representation for Layout Pattern: A Novel Contrastive Learning Framework for Hotspot Detection'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Delving into Topology Representation for Layout Pattern: A Novel Contrastive Learning Framework for Hotspot Detection'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{chen2025clihd,\n  title = {Delving into Topology Representation for Layout Pattern: A Novel Contrastive Learning Framework for Hotspot Detection},\n  author = {Silin Chen and Kangjian Di and Guohao Wang and Wenzheng Zhao and Li Du and Ningmu Zou},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing lithographic hotspot detection models
+benchmark_scope:
+- 'DAC 2025 paper experiments for "Delving into Topology Representation for Layout Pattern: A Novel Contrastive Learning Framework for Hotspot Detection"; compare against ResNet50, MobileNetV2, ViT-16, Swin-Transformer Tiny, TCAD 2020 hotspot detector, TODAES 2022 hotspot detector, DATE 2023 hotspot detector, GLSVLSI 2024 hotspot detector.'
+- Topic gate routed this row to `lithography-hotspot-detection` using existing taxonomy; no new topic was created for this item.
+metrics:
+- accuracy
+- false alarm rate
+- miss count
+- inference speed
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: ResNet50, MobileNetV2, ViT-16, Swin-Transformer Tiny, TCAD 2020 hotspot detector, TODAES 2022 hotspot detector, DATE 2023 hotspot detector, GLSVLSI 2024 hotspot detector.'

@@ -1,0 +1,25 @@
+baseline_id: chiplet-em
+short_name: ChipletEM
+display_name: 'ChipletEM: Physics-Based 2.5D and 3D Chiplet Heterogeneous Integration Electromigration Signoff Tool Using Coupled Stress and Thermal Simulation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ChipletEM: Physics-Based 2.5D and 3D Chiplet Heterogeneous Integration Electromigration Signoff Tool Using Coupled Stress and Thermal Simulation'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{sun2025chipletem,\n  title = {ChipletEM: Physics-Based 2.5D and 3D Chiplet Heterogeneous Integration Electromigration Signoff Tool Using Coupled Stress and Thermal Simulation},\n  author = {Zeyu Sun and Weijie Tong and Xiaoning Ma and He Cao and Jianyun Liu and Zhiqiang Li and Qinzhi Xu},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- evaluating physics-based electromigration signoff for heterogeneous integration
+benchmark_scope:
+- 'DAC 2025 paper experiments for "ChipletEM: Physics-Based 2.5D and 3D Chiplet Heterogeneous Integration Electromigration Signoff Tool Using Coupled Stress and Thermal Simulation"; compare against Commercial FEM tool, State-of-art AFD method.'
+- Topic gate routed this row to `physics-based-em-analysis` using existing taxonomy; no new topic was created for this item.
+metrics:
+- EM/stress/thermal accuracy
+- runtime
+- agreement with FEM or analytical baselines
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: Commercial FEM tool, State-of-art AFD method.'

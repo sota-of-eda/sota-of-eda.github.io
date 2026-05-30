@@ -1,0 +1,25 @@
+baseline_id: pyranet-verilog-dataset
+short_name: PyraNet
+display_name: 'PyraNet: A Multi-Layered Hierarchical Dataset for Verilog'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'PyraNet: A Multi-Layered Hierarchical Dataset for Verilog'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{nadimi2025pyranet,\n  title = {PyraNet: A Multi-Layered Hierarchical Dataset for Verilog},\n  author = {Bardia Nadimi and Ghali Omar Boutaib and Hao Zheng},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- evaluating LLM-based RTL generation or Verilog datasets
+benchmark_scope:
+- 'DAC 2025 paper experiments for "PyraNet: A Multi-Layered Hierarchical Dataset for Verilog"; compare against CodeLlama-7B, RTLCoder, OriGen, VerilogEval.'
+- Topic gate routed this row to `llm-rtl-generation` using existing taxonomy; no new topic was created for this item.
+metrics:
+- syntax/functionality pass rate
+- benchmark accuracy
+- fine-tuning benefit
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: CodeLlama-7B, RTLCoder, OriGen, VerilogEval.'

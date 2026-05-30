@@ -1,0 +1,24 @@
+baseline_id: assertsolver
+short_name: AssertSolver
+display_name: 'Insights from Rights and Wrongs: A Large Language Model for Solving Assertion Failures in RTL Design'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Insights from Rights and Wrongs: A Large Language Model for Solving Assertion Failures in RTL Design'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{zhou2025assertsolver,\n  title = {Insights from Rights and Wrongs: A Large Language Model for Solving Assertion Failures in RTL Design},\n  author = {Jie Zhou and Youshu Ji and Ning Wang and Yuchen Hu and Xinyao Jiao and Bingkun Yao and Xinwei Fang and Shuai Zhao and Nan Guan and Zhe Jiang},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- evaluating LLM-based RTL assertion-failure debugging or verification assistance
+benchmark_scope:
+- 900+ SystemVerilog assertion-failure instances across bug types and code lengths, compared with DeepSeek-Coder-6.7B, o1-preview, and SFT baselines
+metrics:
+- assertion-failure solving accuracy
+- performance by bug type
+- performance by code length
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 compact proceedings packet and Claude review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates recorded in the packet review: Deepseek-Coder-6.7b, o1-preview, SFT Model.'

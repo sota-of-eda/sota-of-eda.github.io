@@ -1,0 +1,26 @@
+baseline_id: hls-post-implementation-performance-prediction
+short_name: HLS Perf Prediction
+display_name: A Post-Implementation Performance Prediction Method with HLS Optimization Directives
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: A Post-Implementation Performance Prediction Method with HLS Optimization Directives
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{zhu2025hlsperfprediction,\n  title = {A Post-Implementation Performance Prediction Method with HLS Optimization Directives},\n  author = {Jingyu Zhu and Yan Ding and Lu Xiao and Kenli Li and Chubo Liu and Zheng Xiao},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing HLS analysis or optimization methods
+benchmark_scope:
+- DAC 2025 paper experiments for "A Post-Implementation Performance Prediction Method with HLS Optimization Directives"; compare against Lin-analyzer, Comba, GNN-DS, HARP.
+- Topic gate routed this row to `high-level-synthesis` using existing taxonomy; no new topic was created for this item.
+metrics:
+- latency or delay
+- resource usage
+- prediction error
+- runtime
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: Lin-analyzer, Comba, GNN-DS, HARP.'

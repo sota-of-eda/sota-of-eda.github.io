@@ -1,0 +1,25 @@
+baseline_id: patternpaint
+short_name: PatternPaint
+display_name: 'PatternPaint: Practical Layout Pattern Generation Using Diffusion-Based Inpainting'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'PatternPaint: Practical Layout Pattern Generation Using Diffusion-Based Inpainting'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{zhou2025patternpaint,\n  title = {PatternPaint: Practical Layout Pattern Generation Using Diffusion-Based Inpainting},\n  author = {Guanglei Zhou and Bhargav Korrapati and Gaurav Rajavendra Reddy and Chen-Chia Chang and Jingyu Pan and Jiang Hu and Yiran Chen and Dipto G. Thakurta},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- evaluating layout pattern generation or DFM pattern inpainting methods for advanced-node design rules
+benchmark_scope:
+- Intel 18A layout-pattern generation cases with default, complex, and complex-discrete-width design-rule settings
+metrics:
+- legal pattern success rate
+- legality improvement
+- runtime
+- few-shot fine-tuning benefit
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 compact proceedings packet and Claude review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates recorded in the packet review: Rule-based methods, Training-based methods [19], [23].'

@@ -1,0 +1,24 @@
+baseline_id: simulation-based-parallel-sweeping
+short_name: Parallel Sweeping CEC
+display_name: 'Simulation-based Parallel Sweeping: A New Perspective on Combinational Equivalence Checking'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Simulation-based Parallel Sweeping: A New Perspective on Combinational Equivalence Checking'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{liu2025parallelsweepingcec,\n  title = {Simulation-based Parallel Sweeping: A New Perspective on Combinational Equivalence Checking},\n  author = {Tianji Liu and Evangeline F.Y. Young},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- evaluating simulation-based or GPU-assisted combinational equivalence checking
+benchmark_scope:
+- EPFL combinational benchmarks and IWLS 2005 benchmarks compared with ABC and Cadence Conformal
+metrics:
+- runtime speedup
+- number of solved large cases
+- acceleration when combined with ABC
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 compact proceedings packet and Claude review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates recorded in the packet review: ABC (SAT sweeping checker), Conformal (commercial checker).'

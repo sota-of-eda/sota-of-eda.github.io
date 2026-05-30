@@ -1,0 +1,24 @@
+baseline_id: interconfuzz
+short_name: InterConFuzz
+display_name: 'InterConFuzz: A Fuzzing-based Comprehensive NoC Verification Framework'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'InterConFuzz: A Fuzzing-based Comprehensive NoC Verification Framework'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{miftah2025interconfuzz,\n  title = {InterConFuzz: A Fuzzing-based Comprehensive NoC Verification Framework},\n  author = {Samit Shahnawaz Miftah and Hyunmin Kim and Kanad Basu},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- evaluating fuzzing-based NoC or SoC interconnect verification frameworks
+benchmark_scope:
+- OpenTitan SoC NoC security verification compared with SeVNoC
+metrics:
+- number of security flaws found
+- memory reduction
+- compute reduction
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 compact proceedings packet and Claude review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates recorded in the packet review: SeVNoC.'

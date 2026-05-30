@@ -1,0 +1,26 @@
+baseline_id: mario-analog-sizing
+short_name: MARIO
+display_name: 'MARIO: A Superadditive Multi-Algorithm Interworking Optimization Framework for Analog Circuit Sizing'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'MARIO: A Superadditive Multi-Algorithm Interworking Optimization Framework for Analog Circuit Sizing'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{li2025mario,\n  title = {MARIO: A Superadditive Multi-Algorithm Interworking Optimization Framework for Analog Circuit Sizing},\n  author = {Wangzhen Li and Yuan Meng and Ruiyu Lyu and Changhao Yan and Keren Zhu and Zhaori Bi and Dian Zhou and Xuan Zeng},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing analog circuit sizing, variation-aware sizing, or analog optimization frameworks
+benchmark_scope:
+- 'DAC 2025 paper experiments for "MARIO: A Superadditive Multi-Algorithm Interworking Optimization Framework for Analog Circuit Sizing"; compare against TuRBO, cVTS.'
+- Review-seed gate routed this row to `analog-sizing` using existing taxonomy; no new topic was created for this item.
+metrics:
+- objective satisfaction
+- simulation count
+- optimization runtime
+- yield or robustness
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 review-seed packet and local proceedings evidence; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- Accepted from the lower-confidence review-seed pool only because title/authors, topic fit, and named experiment baselines passed Codex gate.

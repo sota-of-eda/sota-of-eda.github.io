@@ -1,0 +1,24 @@
+baseline_id: ffet-dtco-standard-cells
+short_name: FFET DTCO
+display_name: Design and Technology Co-optimization Utilizing Flip-FET (FFET) Standard Cells
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Design and Technology Co-optimization Utilizing Flip-FET (FFET) Standard Cells
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{ahn2025ffetdtco,\n  title = {Design and Technology Co-optimization Utilizing Flip-FET (FFET) Standard Cells},\n  author = {Jaehoon Ahn and Taewhan Kim},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- evaluating DTCO or automated standard-cell synthesis for advanced transistor structures
+benchmark_scope:
+- FFET standard-cell designs compared with CFET cells for area, wirelength, and backside power-rail routing failures
+metrics:
+- cell area
+- total wirelength
+- routing BPR failure count
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 compact proceedings packet and Claude review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates recorded in the packet review: CFET.'

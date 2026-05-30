@@ -1,0 +1,25 @@
+baseline_id: ml-driven-stl-generation
+short_name: ML-STL
+display_name: Machine Learning-Driven STL Generation for Enhancing Functional Safety of E/E Systems
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Machine Learning-Driven STL Generation for Enhancing Functional Safety of E/E Systems
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{das2025mlstl,\n  title = {Machine Learning-Driven STL Generation for Enhancing Functional Safety of E/E Systems},\n  author = {Sanjay Das and Swastik Bhattacharya and Anand Menon and Shamik Kundu and Pooja Madhusoodhanan and Prasanth Viswanathan Pillai and Rubin Parekhji and Arnab Raha and Suvadeep Banerjee and Suriyaprakash Natarajan and Kanad Basu},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing directed or learned test-generation methods
+benchmark_scope:
+- DAC 2025 paper experiments for "Machine Learning-Driven STL Generation for Enhancing Functional Safety of E/E Systems"; compare against Random pattern generation.
+- Topic gate routed this row to `directed-test-generation` using existing taxonomy; no new topic was created for this item.
+metrics:
+- coverage or detected violations
+- test count
+- runtime
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: Random pattern generation.'

@@ -1,0 +1,25 @@
+baseline_id: pispice
+short_name: PiSPICE
+display_name: 'PiSPICE: Accelerating Post-Layout SPICE Simulation via Essential Parasitic Identification'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'PiSPICE: Accelerating Post-Layout SPICE Simulation via Essential Parasitic Identification'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{jin2025pispice,\n  title = {PiSPICE: Accelerating Post-Layout SPICE Simulation via Essential Parasitic Identification},\n  author = {Zhou Jin and Jing Li and Jian Xin and Tianjia Zhou and Xiao Wu and Dan Niu and Zuochang Ye},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing post-layout SPICE simulation acceleration or parasitic identification methods
+benchmark_scope:
+- post-layout circuit cases CKT1 through CKT3 compared with TICER, PRIMA, and Spectre
+metrics:
+- simulation speedup
+- gain error
+- CMRR error
+- absolute error
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 compact proceedings packet and Claude review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates recorded in the packet review: TICER, PRIMA, Spectre.'

@@ -1,0 +1,26 @@
+baseline_id: 3d-flow
+short_name: 3D-Flow
+display_name: '3D-Flow: Flow-based Standard Cell Legalization for 3D ICs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: '3D-Flow: Flow-based Standard Cell Legalization for 3D ICs'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{zhao20253dflow,\n  title = {3D-Flow: Flow-based Standard Cell Legalization for 3D ICs},\n  author = {Yuxuan Zhao and Peiyu Liao and Bei Yu},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing detailed placement or legalization methods
+benchmark_scope:
+- 'DAC 2025 paper experiments for "3D-Flow: Flow-based Standard Cell Legalization for 3D ICs"; compare against Tetris, Abacus, BonnPlaceLegal.'
+- Topic gate routed this row to `detailed-placement` using existing taxonomy; no new topic was created for this item.
+metrics:
+- wirelength
+- placement legality
+- timing
+- runtime
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: Tetris, Abacus, BonnPlaceLegal.'

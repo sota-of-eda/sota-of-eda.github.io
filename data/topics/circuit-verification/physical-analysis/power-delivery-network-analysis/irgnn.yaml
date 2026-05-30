@@ -1,0 +1,26 @@
+baseline_id: irgnn
+short_name: IRGNN
+display_name: 'IRGNN: A Graph-based Framework Integrating Numerical Solution and Point Cloud for Static IR Drop Prediction'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'IRGNN: A Graph-based Framework Integrating Numerical Solution and Point Cloud for Static IR Drop Prediction'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{guo2025irgnn,\n  title = {IRGNN: A Graph-based Framework Integrating Numerical Solution and Point Cloud for Static IR Drop Prediction},\n  author = {Feng Guo and Yueyue Xi and Jianwang Zhai and Jingyu Jia and Jiawei Liu and Kang Zhao and Chuan Shi},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- evaluating PDN, IR-drop, or power-grid analysis methods
+benchmark_scope:
+- 'DAC 2025 paper experiments for "IRGNN: A Graph-based Framework Integrating Numerical Solution and Point Cloud for Static IR Drop Prediction"; compare against IREDGe, MAVIREC, PGAU, MAUnet, AMG-PCG.'
+- Topic gate routed this row to `power-delivery-network-analysis` using existing taxonomy; no new topic was created for this item.
+metrics:
+- IR-drop error
+- runtime
+- prediction accuracy
+- design-quality metrics
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: IREDGe, MAVIREC, PGAU, MAUnet, AMG-PCG.'

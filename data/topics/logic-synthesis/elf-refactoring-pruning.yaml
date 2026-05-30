@@ -1,0 +1,27 @@
+baseline_id: elf-refactoring-pruning
+short_name: ELF
+display_name: 'ELF: Efficient Logic Synthesis by Pruning Redundancy in Refactoring'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ELF: Efficient Logic Synthesis by Pruning Redundancy in Refactoring'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{tsaras2025elf,\n  title = {ELF: Efficient Logic Synthesis by Pruning Redundancy in Refactoring},\n  author = {Dimitris Tsaras and Xing Li and Lei Chen and Zhiyao Xie and Mingxuan Yuan},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing logic synthesis, mapping, optimization, or approximate synthesis methods
+benchmark_scope:
+- 'DAC 2025 paper experiments for "ELF: Efficient Logic Synthesis by Pruning Redundancy in Refactoring"; compare against ABC refactor.'
+- Topic gate routed this row to `logic-synthesis` using existing taxonomy; no new topic was created for this item.
+metrics:
+- area
+- delay
+- quality of result
+- runtime
+- faults found where applicable
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: ABC refactor.'

@@ -1,0 +1,26 @@
+baseline_id: ighf-ir-drop-prediction
+short_name: IGHF
+display_name: A Novel Image-Graph Heterogeneous Fusion Framework for Static IR Drop Prediction
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: A Novel Image-Graph Heterogeneous Fusion Framework for Static IR Drop Prediction
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{niu2025ighf,\n  title = {A Novel Image-Graph Heterogeneous Fusion Framework for Static IR Drop Prediction},\n  author = {Dan Niu and Dekang Zhang and Yichao Cao and Zhou Jin and Chao Wang and Yichao Dong and Changyin Sun},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- evaluating PDN, IR-drop, or power-grid analysis methods
+benchmark_scope:
+- DAC 2025 paper experiments for "A Novel Image-Graph Heterogeneous Fusion Framework for Static IR Drop Prediction"; compare against MAUNet, IREDGe.
+- Topic gate routed this row to `power-delivery-network-analysis` using existing taxonomy; no new topic was created for this item.
+metrics:
+- IR-drop error
+- runtime
+- prediction accuracy
+- design-quality metrics
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: MAUNet, IREDGe.'

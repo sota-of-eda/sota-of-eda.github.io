@@ -1,0 +1,26 @@
+baseline_id: nested-domain-decomposition-pg-solver
+short_name: Nested-DDM PG Solver
+display_name: A Cutting-Edge Parallel Solver for Scalable Power Grid Analysis Using Nested Domain Decomposition
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: A Cutting-Edge Parallel Solver for Scalable Power Grid Analysis Using Nested Domain Decomposition
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{song2025nestedddmpgsolver,\n  title = {A Cutting-Edge Parallel Solver for Scalable Power Grid Analysis Using Nested Domain Decomposition},\n  author = {Jianfei Song and Xiaoyu Yang and Zhou Jin and Cheng Zhuo},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- evaluating PDN, IR-drop, or power-grid analysis methods
+benchmark_scope:
+- DAC 2025 paper experiments for "A Cutting-Edge Parallel Solver for Scalable Power Grid Analysis Using Nested Domain Decomposition"; compare against Conventional DDM parallel solver, CKTSO parallel solver, CHOLMOD-based serial direct solver.
+- Topic gate routed this row to `power-delivery-network-analysis` using existing taxonomy; no new topic was created for this item.
+metrics:
+- IR-drop error
+- runtime
+- prediction accuracy
+- design-quality metrics
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: Conventional DDM parallel solver, CKTSO parallel solver, CHOLMOD-based serial direct solver.'

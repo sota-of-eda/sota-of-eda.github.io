@@ -1,0 +1,24 @@
+baseline_id: rewire-cgra-mapping
+short_name: Rewire
+display_name: 'Rewire: Advancing CGRA Mapping Through a Consolidated Routing Paradigm'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Rewire: Advancing CGRA Mapping Through a Consolidated Routing Paradigm'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{li2025rewire,\n  title = {Rewire: Advancing CGRA Mapping Through a Consolidated Routing Paradigm},\n  author = {Zhaoying Li and Dan Wu and Dhananjaya Wijerathne and Dan Chen and Huize Li and Cheng Tan and Tulika Mitra},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing CGRA mapping and routing algorithms for performance and compilation time
+benchmark_scope:
+- CGRA mapping benchmarks on 4x4 and 8x8 arrays compared with PathFinder and simulated annealing mappers
+metrics:
+- performance improvement
+- compilation-time reduction
+- initiation interval
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 compact proceedings packet and Claude review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates recorded in the packet review: PathFinder (PF*), Simulated Annealing (SA).'

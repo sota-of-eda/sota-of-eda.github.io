@@ -1,0 +1,26 @@
+baseline_id: transparent-boxing-logic-restructuring
+short_name: Transparent Boxing
+display_name: Logic Restructuring with Preserved Logic Blocks
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Logic Restructuring with Preserved Logic Blocks
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{lee2025transparentboxing,\n  title = {Logic Restructuring with Preserved Logic Blocks},\n  author = {Siang-Yun Lee and Heinz Riener and Sascha Richter and Ankush Sood},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing logic restructuring or technology-independent optimization while preserving special logic blocks
+benchmark_scope:
+- Academic and industrial logic-synthesis benchmarks with technology-independent and full-flow evaluations; comparison is against black-boxing preserved logic blocks.
+metrics:
+- mapped network size
+- timing improvement
+- area
+- power
+- wirelength
+reproducibility: paper_only
+caveats:
+- Rescued from DAC 2025 skip-seed pool using clean local proceedings page extraction; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: black-boxing preserved logic blocks.'

@@ -1,0 +1,14 @@
+topic_id: combinational-equivalence-checking
+parent_id: formal-and-functional-verification
+short_name: CEC
+display_name: Combinational Equivalence Checking
+aliases:
+- CEC
+- combinational equivalence checking
+- SAT sweeping
+- datapath CEC
+description: Methods and tools for proving or falsifying equivalence between combinational circuits, including SAT sweeping, datapath-oriented CEC, simulation-assisted CEC, and commercial CEC comparisons.
+review_triggers:
+- paper claims improved combinational equivalence checking or SAT sweeping
+- experiments compare against ABC cec, Hybrid-CEC, Cadence Conformal, or other CEC tools
+- metrics include solved instances, undecided/timeout rate, proof runtime, or speedup on EPFL, IWLS, or industrial datapath circuits

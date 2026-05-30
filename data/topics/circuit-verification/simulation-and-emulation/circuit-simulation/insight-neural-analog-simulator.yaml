@@ -1,0 +1,26 @@
+baseline_id: insight-neural-analog-simulator
+short_name: INSIGHT
+display_name: 'INSIGHT: A Universal Neural Simulator Framework for Analog Circuits with Autoregressive Transformers'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'INSIGHT: A Universal Neural Simulator Framework for Analog Circuits with Autoregressive Transformers'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{poddar2025insight,\n  title = {INSIGHT: A Universal Neural Simulator Framework for Analog Circuits with Autoregressive Transformers},\n  author = {Souradip Poddar and Youngmin Oh and Yao Lai and Hanqing Zhu and Bosun Hwang and David Z. Pan},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing neural surrogate simulators or performance predictors for analog circuit simulation and sizing loops
+benchmark_scope:
+- Analog benchmark circuits including Miller-compensated op amps, TIAs, level shifter, folded-cascode amplifier, and LDO; comparisons include LbC and CRONuS FC-Ensemble.
+metrics:
+- test R2 score
+- test MSE loss
+- simulation-cost reduction
+- training time
+- memory footprint
+reproducibility: paper_only
+caveats:
+- Rescued from DAC 2025 skip-seed pool using clean local proceedings page extraction; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: Learn-by-Compare (LbC), FC-Ensemble from CRONuS.'

@@ -1,0 +1,27 @@
+baseline_id: mixed-structural-choice-operator
+short_name: MCH
+display_name: 'Mixed Structural Choice Operator: Enhancing Technology Mapping with Heterogeneous Representations'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Mixed Structural Choice Operator: Enhancing Technology Mapping with Heterogeneous Representations'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{hu2025mch,\n  title = {Mixed Structural Choice Operator: Enhancing Technology Mapping with Heterogeneous Representations},\n  author = {Zhang Hu and Hongyang Pan and Yinshui Xia and Lunyao Wang and Zhufei Chu},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing logic synthesis, mapping, optimization, or approximate synthesis methods
+benchmark_scope:
+- 'DAC 2025 paper experiments for "Mixed Structural Choice Operator: Enhancing Technology Mapping with Heterogeneous Representations"; compare against traditional structural choice methods, DCH.'
+- Topic gate routed this row to `logic-synthesis` using existing taxonomy; no new topic was created for this item.
+metrics:
+- area
+- delay
+- quality of result
+- runtime
+- faults found where applicable
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: traditional structural choice methods, DCH.'

@@ -1,0 +1,24 @@
+baseline_id: neuralmesh
+short_name: NeuralMesh
+display_name: 'NeuralMesh: Neural Network For FEM Mesh Generation in 2.5D/3D Chiplet Thermal Simulation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'NeuralMesh: Neural Network For FEM Mesh Generation in 2.5D/3D Chiplet Thermal Simulation'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{chen2025neuralmesh,\n  title = {NeuralMesh: Neural Network For FEM Mesh Generation in 2.5D/3D Chiplet Thermal Simulation},\n  author = {Pengju Chen and Dan Niu and Dekang Zhang and Wenhao Wang and Depeng Xie and Zhou Jin and Wei W. Xing and Lei He},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- evaluating FEM mesh generation for 2.5D/3D chiplet thermal simulation
+benchmark_scope:
+- seven chiplet thermal simulation benchmarks with comparison against COMSOL and Gmsh mesh generation
+metrics:
+- mesh-generation speedup
+- number of mesh elements
+- thermal simulation quality
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 compact proceedings packet and Claude review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates recorded in the packet review: COMSOL, Gmsh.'

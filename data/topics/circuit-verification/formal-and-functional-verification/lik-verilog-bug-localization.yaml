@@ -1,0 +1,27 @@
+baseline_id: lik-verilog-bug-localization
+short_name: LiK
+display_name: 'Location is Key: Leveraging LLM for Functional Bug Localization in Verilog Design'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Location is Key: Leveraging LLM for Functional Bug Localization in Verilog Design'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{yao2025lik,\n  title = {Location is Key: Leveraging LLM for Functional Bug Localization in Verilog Design},\n  author = {Bingkun Yao and Ning Wang and Jie Zhou and Xi Wang and Hong Gao and Zhe Jiang and Nan Guan},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links:
+  repo_url: https://github.com/bingkunyao/Location-is-key.
+compare_when:
+- comparing formal, functional, or RTL verification methods
+benchmark_scope:
+- 'DAC 2025 paper experiments for "Location is Key: Leveraging LLM for Functional Bug Localization in Verilog Design"; compare against Strider, GPT-o1-preview, Claude-3.5-Sonnet, MEIC.'
+- Topic gate routed this row to `formal-and-functional-verification` using existing taxonomy; no new topic was created for this item.
+metrics:
+- solved cases
+- runtime
+- manual effort
+- accuracy or success rate
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: Strider, GPT-o1-preview, Claude-3.5-Sonnet, MEIC.'

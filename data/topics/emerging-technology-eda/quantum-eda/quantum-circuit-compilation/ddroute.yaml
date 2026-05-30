@@ -1,0 +1,24 @@
+baseline_id: ddroute
+short_name: DDRoute
+display_name: 'DDRoute: a Novel Depth-Driven Approach to the Qubit Routing Problem'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'DDRoute: a Novel Depth-Driven Approach to the Qubit Routing Problem'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{annechini2025ddroute,\n  title = {DDRoute: a Novel Depth-Driven Approach to the Qubit Routing Problem},\n  author = {Alessandro Annechini and Marco Venere and Donatella Sciuto and Marco D. Santambrogio},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- evaluating qubit routing methods that optimize routed circuit depth under hardware topology constraints
+benchmark_scope:
+- Deutsch-Jozsa, adder, and QNN circuits on Google Sycamore, Rigetti Aspen, and IBM Eagle/Osprey/Condor topologies; SABRE is an explicit baseline
+metrics:
+- depth ratio
+- routing completion within time limit
+- depth reduction
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 compact proceedings packet and Claude review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates recorded in the packet review: SABRE.'

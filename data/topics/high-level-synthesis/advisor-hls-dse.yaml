@@ -1,0 +1,25 @@
+baseline_id: advisor-hls-dse
+short_name: ADVISOR
+display_name: 'ADVISOR: Approximate Computing-friendly High-Level Synthesis Design Space Explorer'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ADVISOR: Approximate Computing-friendly High-Level Synthesis Design Space Explorer'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{parchamdar2025advisor,\n  title = {ADVISOR: Approximate Computing-friendly High-Level Synthesis Design Space Explorer},\n  author = {Baharealsadat Parchamdar and Benjamin Carrion Schaefer},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing HLS design-space exploration flows for approximate-computing-friendly hardware generation
+benchmark_scope:
+- S2CBench DSP and image-processing applications synthesized with NEC CyberWorkBench and Synopsys Design Compiler; comparison uses a NAIVE full-approximation exploration baseline.
+metrics:
+- area reduction
+- runtime
+- MAPE
+- PSNR
+reproducibility: paper_only
+caveats:
+- Rescued from DAC 2025 skip-seed pool using clean local proceedings page extraction; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: NAIVE full approximation of each explored HLS design.'

@@ -1,0 +1,26 @@
+baseline_id: circuitgps-capacitance-prediction
+short_name: CircuitGPS
+display_name: Few-shot Learning on AMS Circuits and Its Application to Parasitic Capacitance Prediction
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Few-shot Learning on AMS Circuits and Its Application to Parasitic Capacitance Prediction
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{shen2025circuitgps,\n  title = {Few-shot Learning on AMS Circuits and Its Application to Parasitic Capacitance Prediction},\n  author = {Shan Shen and Yibin Zhang and Hector Rodriguez Rodriguez and Wenjian Yu},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links:
+  repo_url: https://github.com/ShenShan123/CirGPS.git
+compare_when:
+- comparing parasitic-capacitance prediction or extraction methods
+benchmark_scope:
+- DAC 2025 paper experiments for "Few-shot Learning on AMS Circuits and Its Application to Parasitic Capacitance Prediction"; compare against ParaGraph, DLPL-Cap.
+- Topic gate routed this row to `parasitic-extraction` using existing taxonomy; no new topic was created for this item.
+metrics:
+- capacitance error
+- few-shot accuracy
+- runtime
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: ParaGraph, DLPL-Cap.'

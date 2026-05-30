@@ -1,0 +1,24 @@
+baseline_id: epoc-quantum-pulse-generation
+short_name: EPOC
+display_name: 'EPOC: An Efficient Pulse Generation Framework with Advanced Synthesis for Quantum Circuits'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'EPOC: An Efficient Pulse Generation Framework with Advanced Synthesis for Quantum Circuits'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{cheng2025epoc,\n  title = {EPOC: An Efficient Pulse Generation Framework with Advanced Synthesis for Quantum Circuits},\n  author = {Jinglei Cheng and Yuchen Zhu and Yidong Zhou and Hang Ren and Zhixin Song and Zhiding Liang},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing quantum circuit synthesis, routing, or pulse-generation flows that optimize circuit depth or latency
+benchmark_scope:
+- 34 quantum circuits and multiple pulse-generation comparisons including BQSKit synthesis and gate-based pulse generation
+metrics:
+- circuit depth reduction
+- latency reduction
+- success across benchmark circuits
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 compact proceedings packet and Claude review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates recorded in the packet review: BQSKit synthesis, gate-based pulse generation.'

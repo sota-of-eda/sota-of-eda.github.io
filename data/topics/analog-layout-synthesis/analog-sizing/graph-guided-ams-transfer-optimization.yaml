@@ -1,0 +1,25 @@
+baseline_id: graph-guided-ams-transfer-optimization
+short_name: Graph-Guided AMS Transfer
+display_name: Graph-Guided Transfer Learning to Boost the Efficiency of System-Level Optimization of Analog/Mixed-Signal Circuits
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Graph-Guided Transfer Learning to Boost the Efficiency of System-Level Optimization of Analog/Mixed-Signal Circuits
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{wang2025graphguidedamstransfer,\n  title = {Graph-Guided Transfer Learning to Boost the Efficiency of System-Level Optimization of Analog/Mixed-Signal Circuits},\n  author = {Jiaqi Wang and Georges G. E. Gielen},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing system-level analog/mixed-signal circuit optimization and transfer-learning methods
+benchmark_scope:
+- Continuous-time Delta-Sigma ADC system-level optimization cases including 3rd-order CIFF, 4th-order CIFF, and 4th-order CRFB architectures; comparisons include NSGA-II, DE, BO, RL-MLP, and RL-GAT from scratch.
+metrics:
+- optimized power
+- simulation steps
+- sample efficiency
+- performance requirement satisfaction
+reproducibility: paper_only
+caveats:
+- Rescued from DAC 2025 skip-seed pool using clean local proceedings page extraction; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: NSGA-II, DE, BO, RL-MLP, RL-GAT from scratch.'

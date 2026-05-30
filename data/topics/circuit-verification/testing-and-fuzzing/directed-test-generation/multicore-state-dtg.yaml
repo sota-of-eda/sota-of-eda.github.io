@@ -1,0 +1,25 @@
+baseline_id: multicore-state-dtg
+short_name: Multicore DTG State
+display_name: Multicore Environment State Representation for Agent-Directed Test Generation
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Multicore Environment State Representation for Agent-Directed Test Generation
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{miranda2025multicoredtgstate,\n  title = {Multicore Environment State Representation for Agent-Directed Test Generation},\n  author = {Bruno D. Miranda and Luiz M. V. Pereira and Marcio Castro and Luiz C. V. dos Santos},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing agent-directed or reinforcement-learning test generation for multicore verification
+benchmark_scope:
+- 16-core and 32-core ARMv8 two-level MOESI multicore verification tasks; comparisons include RAG, DQG variants, MTG, and RLG.
+metrics:
+- coverage
+- generated test count
+- learning effectiveness
+- bug or behavior exposure
+reproducibility: paper_only
+caveats:
+- Rescued from DAC 2025 skip-seed pool using clean local proceedings page extraction; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: Random Agent Generator (RAG), Deep-Q Generator with coverage observations (DQG+), MTG, RLG.'

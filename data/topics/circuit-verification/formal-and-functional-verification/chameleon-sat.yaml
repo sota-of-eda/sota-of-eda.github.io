@@ -1,0 +1,25 @@
+baseline_id: chameleon-sat
+short_name: Chameleon-SAT
+display_name: 'Chameleon-SAT: An Adaptive Boolean Satisfiability Accelerator Using Mixed-Signal In-Memory Computing for Versatile SAT Problems'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Chameleon-SAT: An Adaptive Boolean Satisfiability Accelerator Using Mixed-Signal In-Memory Computing for Versatile SAT Problems'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{chou2025chameleonsat,\n  title = {Chameleon-SAT: An Adaptive Boolean Satisfiability Accelerator Using Mixed-Signal In-Memory Computing for Versatile SAT Problems},\n  author = {Iris Ying Chou and Hao Kong and Yi Huang and Jianfeng Zhu and Wenping Zhu and Shaojun Wei and Aoyang Zhang and Leibo Liu},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- evaluating SAT-solving acceleration when the workload is used for formal verification or Boolean reasoning
+benchmark_scope:
+- SAT problem sets compared against CPU DPLL, CDCL, and local-search solvers
+metrics:
+- solver runtime
+- algorithm-selection quality
+- CTV and variable-count sensitivity
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 compact proceedings packet and Claude review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates recorded in the packet review: DPLL (CPU), CDCL (CPU), Local Search (CPU).'
+- SAT acceleration is included only when the comparison context is formal verification or Boolean reasoning for EDA; otherwise this may be too general.

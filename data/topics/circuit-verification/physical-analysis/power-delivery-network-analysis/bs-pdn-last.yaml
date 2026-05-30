@@ -1,0 +1,26 @@
+baseline_id: bs-pdn-last
+short_name: BS-PDN-Last
+display_name: 'BS-PDN-Last: Towards Optimal Power Delivery Network Design With Multifunctional Backside Metal Layers'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'BS-PDN-Last: Towards Optimal Power Delivery Network Design With Multifunctional Backside Metal Layers'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{park2025bspdnlast,\n  title = {BS-PDN-Last: Towards Optimal Power Delivery Network Design With Multifunctional Backside Metal Layers},\n  author = {Min Gyu Park and Amaan Rahman and Sung Kyu Lim},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- evaluating PDN, IR-drop, or power-grid analysis methods
+benchmark_scope:
+- 'DAC 2025 paper experiments for "BS-PDN-Last: Towards Optimal Power Delivery Network Design With Multifunctional Backside Metal Layers"; compare against Conventional PDN-first flow, FS-PDN (frontside-only), BS-PDN (backside PDN only).'
+- Topic gate routed this row to `power-delivery-network-analysis` using existing taxonomy; no new topic was created for this item.
+metrics:
+- IR-drop error
+- runtime
+- prediction accuracy
+- design-quality metrics
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: Conventional PDN-first flow, FS-PDN (frontside-only), BS-PDN (backside PDN only).'

@@ -1,0 +1,26 @@
+baseline_id: synergistic-die-level-router
+short_name: Die-Level Router
+display_name: Synergistic Die-Level Router for Multi-FPGA System with Time-Division Multiplexing Optimization
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Synergistic Die-Level Router for Multi-FPGA System with Time-Division Multiplexing Optimization
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{wang2025dielevelrouter,\n  title = {Synergistic Die-Level Router for Multi-FPGA System with Time-Division Multiplexing Optimization},\n  author = {Jiarui Wang and Yanjing Liu and Yibo Lin},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing multi-FPGA partitioning or die-level routing methods
+benchmark_scope:
+- DAC 2025 paper experiments for "Synergistic Die-Level Router for Multi-FPGA System with Time-Division Multiplexing Optimization"; compare against SOTA die-level multi-FPGA system router [18], SMT-based initial routing [8][9], Maze routing + spanning tree [10].
+- Topic gate routed this row to `multi-fpga-system-partitioning-and-routing` using existing taxonomy; no new topic was created for this item.
+metrics:
+- TDM ratio
+- wirelength or hop count
+- runtime
+- routability
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: SOTA die-level multi-FPGA system router [18], SMT-based initial routing [8][9], Maze routing + spanning tree [10].'

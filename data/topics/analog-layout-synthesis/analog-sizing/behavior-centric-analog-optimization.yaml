@@ -1,0 +1,26 @@
+baseline_id: behavior-centric-analog-optimization
+short_name: BCOA
+display_name: Decoupling Analog Circuit Representation from Technology for Behavior-Centric Optimization
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Decoupling Analog Circuit Representation from Technology for Behavior-Centric Optimization
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{li2025bcoa,\n  title = {Decoupling Analog Circuit Representation from Technology for Behavior-Centric Optimization},\n  author = {Jintao Li and Haochang Zhi and Jiang Xiao and Keren Zhu and Yun Li},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing analog circuit sizing, variation-aware sizing, or analog optimization frameworks
+benchmark_scope:
+- DAC 2025 paper experiments for "Decoupling Analog Circuit Representation from Technology for Behavior-Centric Optimization"; compare against rGNNRL, cVTSBO, gm/ID, RL, GCNRL.
+- Review-seed gate routed this row to `analog-sizing` using existing taxonomy; no new topic was created for this item.
+metrics:
+- objective satisfaction
+- simulation count
+- optimization runtime
+- yield or robustness
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 review-seed packet and local proceedings evidence; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- Accepted from the lower-confidence review-seed pool only because title/authors, topic fit, and named experiment baselines passed Codex gate.

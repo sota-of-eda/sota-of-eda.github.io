@@ -1,0 +1,25 @@
+baseline_id: ssdl-ilt
+short_name: SSDL-ILT
+display_name: 'SSDL-ILT: Efficient ILT utilizing a self-supervised deep learning model'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'SSDL-ILT: Efficient ILT utilizing a self-supervised deep learning model'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{xu2025ssdlilt,\n  title = {SSDL-ILT: Efficient ILT utilizing a self-supervised deep learning model},\n  author = {Rui Xu and Junqi Yang and Haoxiang Jiang and Ming Fang},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing inverse lithography or mask-optimization methods
+benchmark_scope:
+- 'DAC 2025 paper experiments for "SSDL-ILT: Efficient ILT utilizing a self-supervised deep learning model"; compare against GAN-OPC, Neural-ILT, DevelSet, A2-ILT.'
+- Topic gate routed this row to `mask-optimization` using existing taxonomy; no new topic was created for this item.
+metrics:
+- pattern fidelity
+- runtime speedup
+- printability or process-window quality
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: GAN-OPC, Neural-ILT, DevelSet, A2-ILT.'

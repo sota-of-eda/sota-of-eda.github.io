@@ -1,0 +1,26 @@
+baseline_id: remap-macro-placement
+short_name: ReMaP
+display_name: 'ReMaP: Macro Placement by Recursively Prototyping and Periphery-Guided Relocating'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ReMaP: Macro Placement by Recursively Prototyping and Periphery-Guided Relocating'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{shi2025remap,\n  title = {ReMaP: Macro Placement by Recursively Prototyping and Periphery-Guided Relocating},\n  author = {Yunqi Shi and Xi Lin and Siyuan Xu and Shixiong Kai and Ke Xue and Mingxuan Yuan and Chao Qian and Zhi-Hua Zhou},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing macro placement methods
+benchmark_scope:
+- 'DAC 2025 paper experiments for "ReMaP: Macro Placement by Recursively Prototyping and Periphery-Guided Relocating"; compare against RTL-MP, Hier-RTLMP, DREAMPlace 4.1.0.'
+- Topic gate routed this row to `macro-placement` using existing taxonomy; no new topic was created for this item.
+metrics:
+- wirelength
+- WNS/TNS
+- routability
+- runtime
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: RTL-MP, Hier-RTLMP, DREAMPlace 4.1.0.'

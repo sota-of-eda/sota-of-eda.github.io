@@ -1,0 +1,26 @@
+baseline_id: ig-kway
+short_name: iG-kway
+display_name: 'iG-kway: Incremental k-way Graph Partitioning on GPU'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'iG-kway: Incremental k-way Graph Partitioning on GPU'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{lee2025igkway,\n  title = {iG-kway: Incremental k-way Graph Partitioning on GPU},\n  author = {Wan Luan Lee and Shui Jiang and Dian-Lun Lin and Che Chang and Boyang Zhang and Yi-Hua Chung and Ulf Schlichtmann and Tsung-Yi Ho and Tsung-Wei Huang},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing VLSI graph or hypergraph partitioning methods on circuit benchmarks
+benchmark_scope:
+- "DAC 2025 paper experiments for \"iG-kway: Incremental k-way Graph Partitioning on GPU\"; compare against G-kway\u2020."
+- Review-seed gate routed this row to `hypergraph-partitioning` using existing taxonomy; no new topic was created for this item.
+metrics:
+- cutsize
+- balance
+- runtime
+- incremental update quality
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 review-seed packet and local proceedings evidence; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- Accepted from the lower-confidence review-seed pool only because title/authors, topic fit, and named experiment baselines passed Codex gate.

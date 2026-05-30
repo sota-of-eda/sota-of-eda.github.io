@@ -1,0 +1,25 @@
+baseline_id: sau-fno
+short_name: SAU-FNO
+display_name: Self-Attention to Operator Learning-based 3D-IC Thermal Simulation
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Self-Attention to Operator Learning-based 3D-IC Thermal Simulation
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{huang2025saufno,\n  title = {Self-Attention to Operator Learning-based 3D-IC Thermal Simulation},\n  author = {Zhen Huang and Hong Wang and Wenkai Yang and Muxi Tang and Depeng Xie and Ting-Jung Lin and Yu Zhang and Wei W. Xing and Lei He},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- evaluating thermal simulation or prediction for 3D ICs
+benchmark_scope:
+- DAC 2025 paper experiments for "Self-Attention to Operator Learning-based 3D-IC Thermal Simulation"; compare against FNO, MLA-FNO, DeepOHeat, PINN, CNN, COMSOL, MTA.
+- Topic gate routed this row to `thermal-analysis` using existing taxonomy; no new topic was created for this item.
+metrics:
+- temperature error
+- runtime
+- correlation to simulator or commercial-tool results
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: FNO, MLA-FNO, DeepOHeat, PINN, CNN, COMSOL, MTA.'

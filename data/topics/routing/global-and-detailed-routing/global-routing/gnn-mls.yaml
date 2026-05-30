@@ -1,0 +1,26 @@
+baseline_id: gnn-mls
+short_name: GNN-MLS
+display_name: 'GNN-MLS: Signal Routing in Mixed-Node 3D ICs through GNN-Assisted Metal Layer Sharing'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'GNN-MLS: Signal Routing in Mixed-Node 3D ICs through GNN-Assisted Metal Layer Sharing'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{hu2025gnnmls,\n  title = {GNN-MLS: Signal Routing in Mixed-Node 3D ICs through GNN-Assisted Metal Layer Sharing},\n  author = {Jiawei Hu and Pruek Vanna-iampikul and Zhen Zhuang and Tsung-Yi Ho and Sung Kyu Lim},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing global routing or 3D-IC routing methods
+benchmark_scope:
+- 'DAC 2025 paper experiments for "GNN-MLS: Signal Routing in Mixed-Node 3D ICs through GNN-Assisted Metal Layer Sharing"; compare against No MLS, SOTA MLS (heuristic).'
+- Topic gate routed this row to `global-routing` using existing taxonomy; no new topic was created for this item.
+metrics:
+- wirelength
+- WNS/TNS
+- violation count
+- runtime
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: No MLS, SOTA MLS (heuristic).'

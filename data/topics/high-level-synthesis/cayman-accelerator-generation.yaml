@@ -1,0 +1,24 @@
+baseline_id: cayman-accelerator-generation
+short_name: Cayman
+display_name: 'Cayman: Custom Accelerator Generation with Control Flow and Data Access Optimization'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Cayman: Custom Accelerator Generation with Control Flow and Data Access Optimization'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{xiao2025cayman,\n  title = {Cayman: Custom Accelerator Generation with Control Flow and Data Access Optimization},\n  author = {Youwei Xiao and Fan Cui and Zizhang Luo and Weijie Peng and Yun Liang},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing HLS or custom accelerator generation methods with control-flow and data-access optimization
+benchmark_scope:
+- four accelerator-generation benchmarks compared with NOVIA and QsCores under area constraints
+metrics:
+- speedup
+- area
+- Pareto-optimal solution quality
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 compact proceedings packet and Claude review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates recorded in the packet review: NOVIA, QsCores.'

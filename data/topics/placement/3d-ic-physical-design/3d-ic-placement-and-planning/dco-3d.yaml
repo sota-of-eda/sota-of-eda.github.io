@@ -1,0 +1,26 @@
+baseline_id: dco-3d
+short_name: DCO-3D
+display_name: 'DCO-3D: Differentiable Congestion Optimization in 3D ICs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'DCO-3D: Differentiable Congestion Optimization in 3D ICs'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{hsiao2025dco3d,\n  title = {DCO-3D: Differentiable Congestion Optimization in 3D ICs},\n  author = {Hao-Hsiang Hsiao and Yi-Chen Lu and Pruek Vanna-iampikul and Anthony Agnesina and Rongjian Liang and Yuan-Hsiang Lu and Haoxing Ren and Sung Kyu Lim},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing 3D-IC placement or congestion optimization methods
+benchmark_scope:
+- 'DAC 2025 paper experiments for "DCO-3D: Differentiable Congestion Optimization in 3D ICs"; compare against Pin-3D, Pin-3D + Cong., Pin-3D + BO.'
+- Review-seed gate routed this row to `3d-ic-placement-and-planning` using existing taxonomy; no new topic was created for this item.
+metrics:
+- congestion overflow
+- wirelength
+- timing metrics
+- runtime
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 review-seed packet and local proceedings evidence; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- Accepted from the lower-confidence review-seed pool only because title/authors, topic fit, and named experiment baselines passed Codex gate.

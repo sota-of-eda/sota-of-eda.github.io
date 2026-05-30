@@ -1,0 +1,26 @@
+baseline_id: fastpath-security-verification
+short_name: FastPath
+display_name: 'FastPath: A Hybrid Approach for Efficient Hardware Security Verification'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'FastPath: A Hybrid Approach for Efficient Hardware Security Verification'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{deutschmann2025fastpath,\n  title = {FastPath: A Hybrid Approach for Efficient Hardware Security Verification},\n  author = {Lucas Deutschmann and Andres Meza and Dominik Stoffel and Wolfgang Kunz and Ryan Kastner},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- evaluating hardware security verification flows
+benchmark_scope:
+- 'DAC 2025 paper experiments for "FastPath: A Hybrid Approach for Efficient Hardware Security Verification"; compare against UPEC-DIT formal-only approach.'
+- Topic gate routed this row to `hardware-security-verification` using existing taxonomy; no new topic was created for this item.
+metrics:
+- manual inspection count
+- bug/leak detection
+- runtime or effort reduction
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: UPEC-DIT formal-only approach.'
+- One comparison baseline is named by method class or proprietary signoff flow rather than by a public tool name in the extracted text.

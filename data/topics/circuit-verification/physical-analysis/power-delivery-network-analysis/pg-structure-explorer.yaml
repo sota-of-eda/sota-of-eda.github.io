@@ -1,0 +1,26 @@
+baseline_id: pg-structure-explorer
+short_name: PG Structure Explorer
+display_name: Power-Grid Structure Exploration with Unified Sequence-based Learning Framework
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Power-Grid Structure Exploration with Unified Sequence-based Learning Framework
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{chuang2025pgstructureexplorer,\n  title = {Power-Grid Structure Exploration with Unified Sequence-based Learning Framework},\n  author = {Yi-Lin Chuang and Hao-Wei Chan and Chih-Yun Yen and Shih-An Hsieh and Ching-Feng Chen and Sheng-Te Lai},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- evaluating PDN, IR-drop, or power-grid analysis methods
+benchmark_scope:
+- DAC 2025 paper experiments for "Power-Grid Structure Exploration with Unified Sequence-based Learning Framework"; compare against Linear regression [16], XGBoost [8], [12], U-Net [4], [5], [15], Commercial sign-off IR analysis tool, Tree-based model with attention pruning [17].
+- Topic gate routed this row to `power-delivery-network-analysis` using existing taxonomy; no new topic was created for this item.
+metrics:
+- IR-drop error
+- runtime
+- prediction accuracy
+- design-quality metrics
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: Linear regression [16], XGBoost [8], [12], U-Net [4], [5], [15], Commercial sign-off IR analysis tool, Tree-based model with attention pruning [17].'

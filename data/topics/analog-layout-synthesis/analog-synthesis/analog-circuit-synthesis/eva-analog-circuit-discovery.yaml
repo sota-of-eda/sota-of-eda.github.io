@@ -1,0 +1,26 @@
+baseline_id: eva-analog-circuit-discovery
+short_name: EVA
+display_name: 'EVA: An Efficient and Versatile Generative Engine for Targeted Discovery of Novel Analog Circuits'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'EVA: An Efficient and Versatile Generative Engine for Targeted Discovery of Novel Analog Circuits'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{gao2025eva,\n  title = {EVA: An Efficient and Versatile Generative Engine for Targeted Discovery of Novel Analog Circuits},\n  author = {Jian Gao and Weimin Fu and Xiaolong Guo and Weidong Cao and Xuan Zhang},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing ML-based analog circuit topology synthesis or discovery methods
+benchmark_scope:
+- Analog topology dataset spanning op amps, LDOs, bandgap references, comparators, PLLs, LNAs, PAs, mixers, VCOs, power converters, and switched-capacitor samplers; comparisons include AnalogCoder, Artisan, LaMAGIC, and CktGNN.
+metrics:
+- validity
+- novelty
+- versatility
+- training sample efficiency
+- discovery efficiency
+reproducibility: paper_only
+caveats:
+- Rescued from DAC 2025 skip-seed pool using clean local proceedings page extraction; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: AnalogCoder, Artisan, LaMAGIC, CktGNN.'

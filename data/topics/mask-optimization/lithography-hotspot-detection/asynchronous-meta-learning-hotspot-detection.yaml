@@ -1,0 +1,26 @@
+baseline_id: asynchronous-meta-learning-hotspot-detection
+short_name: Async Meta-HD
+display_name: Generalizable Lithographic Hotspot Detection Using Asynchronous Meta-Learning with Only One Shot
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Generalizable Lithographic Hotspot Detection Using Asynchronous Meta-Learning with Only One Shot
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{jiang2025asyncmetahd,\n  title = {Generalizable Lithographic Hotspot Detection Using Asynchronous Meta-Learning with Only One Shot},\n  author = {Cong Jiang and Yujia Wang and Dan Feng and Haoyu Yang and Kang Liu},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing lithographic hotspot detection models
+benchmark_scope:
+- DAC 2025 paper experiments for "Generalizable Lithographic Hotspot Detection Using Asynchronous Meta-Learning with Only One Shot"; compare against Attention-based CNN hotspot detector [2] (Geng et al.), DCT-based CNN hotspot detector [1] (Yang et al.), Bayesian optimization NAS for hotspot CNN [3] (Jiang et al.).
+- Topic gate routed this row to `lithography-hotspot-detection` using existing taxonomy; no new topic was created for this item.
+metrics:
+- accuracy
+- false alarm rate
+- miss count
+- inference speed
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: Attention-based CNN hotspot detector [2] (Geng et al.), DCT-based CNN hotspot detector [1] (Yang et al.), Bayesian optimization NAS for hotspot CNN [3] (Jiang et al.).'

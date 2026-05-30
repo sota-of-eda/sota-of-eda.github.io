@@ -1,0 +1,26 @@
+baseline_id: sdm-peb
+short_name: SDM-PEB
+display_name: 'SDM-PEB: Spatial-Depthwise Mamba for Enhanced Post-Exposure Bake Simulation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'SDM-PEB: Spatial-Depthwise Mamba for Enhanced Post-Exposure Bake Simulation'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{yu2025sdmpeb,\n  title = {SDM-PEB: Spatial-Depthwise Mamba for Enhanced Post-Exposure Bake Simulation},\n  author = {Ziyang Yu and Peng Xu and Zixiao Wang and Binwu Zhu and Qipan Wang and Yibo Lin and Runsheng Wang and Bei Yu and Martin Wong},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing post-exposure bake or lithography simulation models
+benchmark_scope:
+- 'DAC 2025 paper experiments for "SDM-PEB: Spatial-Depthwise Mamba for Enhanced Post-Exposure Bake Simulation"; compare against S-Litho (commercial solver), Previous PEB methods.'
+- Review-seed gate routed this row to `lithography-simulation` using existing taxonomy; no new topic was created for this item.
+metrics:
+- critical-dimension error
+- inhibitor development-rate error
+- runtime
+- correlation with simulator output
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 review-seed packet and local proceedings evidence; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- Accepted from the lower-confidence review-seed pool only because title/authors, topic fit, and named experiment baselines passed Codex gate.

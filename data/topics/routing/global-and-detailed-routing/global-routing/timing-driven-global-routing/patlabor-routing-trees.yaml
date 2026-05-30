@@ -1,0 +1,26 @@
+baseline_id: patlabor-routing-trees
+short_name: PatLabor
+display_name: 'PatLabor: Pareto Optimization of Timing-Driven Routing Trees'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'PatLabor: Pareto Optimization of Timing-Driven Routing Trees'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{chen2025patlabor,\n  title = {PatLabor: Pareto Optimization of Timing-Driven Routing Trees},\n  author = {Zhiyang Chen and Hailong Yao and Xia Yin},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing timing-driven routing-tree or global-routing methods
+benchmark_scope:
+- 'DAC 2025 paper experiments for "PatLabor: Pareto Optimization of Timing-Driven Routing Trees"; compare against SALT, YSD, FLUTE.'
+- Topic gate routed this row to `timing-driven-global-routing` using existing taxonomy; no new topic was created for this item.
+metrics:
+- wirelength
+- timing metrics
+- routing-tree quality
+- runtime
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: SALT, YSD, FLUTE.'

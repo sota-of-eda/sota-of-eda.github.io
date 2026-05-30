@@ -1,0 +1,26 @@
+baseline_id: bs-routing-aware-cfet-cell-synthesis
+short_name: BS-Routing CFET
+display_name: Synthesis of CFET Cell Library Leveraging Backside Metal Routing
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Synthesis of CFET Cell Library Leveraging Backside Metal Routing
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{lin2025bsroutingcfet,\n  title = {Synthesis of CFET Cell Library Leveraging Backside Metal Routing},\n  author = {Ting-Xin Lin and Yih-Lang Li},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing transistor-level or standard-cell layout synthesis flows
+benchmark_scope:
+- DAC 2025 paper experiments for "Synthesis of CFET Cell Library Leveraging Backside Metal Routing"; compare against [11] two-stage CFET cell synthesis.
+- Topic gate routed this row to `automated-cell-synthesis` using existing taxonomy; no new topic was created for this item.
+metrics:
+- cell area
+- wirelength or metal usage
+- routability
+- runtime
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: [11] two-stage CFET cell synthesis.'

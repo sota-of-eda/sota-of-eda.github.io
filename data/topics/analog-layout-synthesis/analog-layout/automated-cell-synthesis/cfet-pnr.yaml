@@ -1,0 +1,26 @@
+baseline_id: cfet-pnr
+short_name: CFET-PnR
+display_name: Comprehensive Placement and Routing Framework with Guaranteed In-Cell Routability for Synthesizing Complementary-FET Cells
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Comprehensive Placement and Routing Framework with Guaranteed In-Cell Routability for Synthesizing Complementary-FET Cells
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{zheng2025cfetpnr,\n  title = {Comprehensive Placement and Routing Framework with Guaranteed In-Cell Routability for Synthesizing Complementary-FET Cells},\n  author = {Zhengzhe Zheng and Yinuo Wu and Keyu Peng and Chao Wang and Ziran Zhu},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing transistor-level or standard-cell layout synthesis flows
+benchmark_scope:
+- DAC 2025 paper experiments for "Comprehensive Placement and Routing Framework with Guaranteed In-Cell Routability for Synthesizing Complementary-FET Cells"; compare against Search-based CFET placement method [7], SMT-based CFET cell generator [4].
+- Topic gate routed this row to `automated-cell-synthesis` using existing taxonomy; no new topic was created for this item.
+metrics:
+- cell area
+- wirelength or metal usage
+- routability
+- runtime
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: Search-based CFET placement method [7], SMT-based CFET cell generator [4].'

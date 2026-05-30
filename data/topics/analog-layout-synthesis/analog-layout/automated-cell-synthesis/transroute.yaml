@@ -1,0 +1,26 @@
+baseline_id: transroute
+short_name: TransRoute
+display_name: 'TransRoute: A Novel Hierarchical Transistor-Level Routing Framework Beyond Standard-Cell Methodology'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'TransRoute: A Novel Hierarchical Transistor-Level Routing Framework Beyond Standard-Cell Methodology'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{hsu2025transroute,\n  title = {TransRoute: A Novel Hierarchical Transistor-Level Routing Framework Beyond Standard-Cell Methodology},\n  author = {Chen-Hao Hsu and David Z. Pan and Laurent Perron and Fr\xE9d\xE9ric Didier and Xiaoqing Xu and Hao Chen},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing transistor-level or standard-cell layout synthesis flows
+benchmark_scope:
+- 'DAC 2025 paper experiments for "TransRoute: A Novel Hierarchical Transistor-Level Routing Framework Beyond Standard-Cell Methodology"; compare against standard-cell-based routing, TransPlace.'
+- Topic gate routed this row to `automated-cell-synthesis` using existing taxonomy; no new topic was created for this item.
+metrics:
+- cell area
+- wirelength or metal usage
+- routability
+- runtime
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: standard-cell-based routing, TransPlace.'

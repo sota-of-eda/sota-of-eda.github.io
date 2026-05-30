@@ -546,9 +546,10 @@ interface ScannedConference {
 const scannedConfDefs: ScannedConference[] = [
   { venue: 'ICCAD', year: 2025 },
   { venue: 'DATE', year: 2026 },
-  { venue: 'MLCAD', year: 2025},
+  { venue: 'MLCAD', year: 2025 },
   { venue: 'ISPD', year: 2026 },
   { venue: 'ASP-DAC', year: 2026 },
+  { venue: 'DAC', year: 2025 },
 ];
 
 function buildScannedConferences() {

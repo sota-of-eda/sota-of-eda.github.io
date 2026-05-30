@@ -1,0 +1,25 @@
+baseline_id: pdp-cec
+short_name: PDP-CEC
+display_name: Parallel Dynamic Partitioning for Datapath Combinational Equivalence Checking
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Parallel Dynamic Partitioning for Datapath Combinational Equivalence Checking
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{zhou2025pdpcec,\n  title = {Parallel Dynamic Partitioning for Datapath Combinational Equivalence Checking},\n  author = {Shuai Zhou and Weikang Zhang and Xindi Zhang and Zite Jiang and Haihang You and Shaowei Cai},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing combinational equivalence checking methods for datapath-heavy industrial circuits
+benchmark_scope:
+- 742 industrial datapath circuits and dpath benchmarks with ABC cec and Hybrid-CEC baselines
+metrics:
+- solved-problem count
+- runtime speedup
+- timeout rate
+- undecided rate
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 compact proceedings packet and Claude review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates recorded in the packet review: ABC &cec, Hybrid-CEC.'

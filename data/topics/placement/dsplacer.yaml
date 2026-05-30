@@ -1,0 +1,26 @@
+baseline_id: dsplacer
+short_name: DSPlacer
+display_name: 'DSPlacer: DSP Placement for FPGA-based CNN Accelerator'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'DSPlacer: DSP Placement for FPGA-based CNN Accelerator'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{xie2025dsplacer,\n  title = {DSPlacer: DSP Placement for FPGA-based CNN Accelerator},\n  author = {Baohui Xie and Xinrui Zhu and Zhiyuan Lu and Yuan Pu and Tongkai Wu and Xiaofeng Zou and Bei Yu and Tinghuan Chen},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing specialized placement methods
+benchmark_scope:
+- 'DAC 2025 paper experiments for "DSPlacer: DSP Placement for FPGA-based CNN Accelerator"; compare against AMD Xilinx Vivado 2020.2, AMF-Placer 2.0.'
+- Topic gate routed this row to `placement` using existing taxonomy; no new topic was created for this item.
+metrics:
+- wirelength
+- timing
+- resource utilization
+- runtime
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: AMD Xilinx Vivado 2020.2, AMF-Placer 2.0.'

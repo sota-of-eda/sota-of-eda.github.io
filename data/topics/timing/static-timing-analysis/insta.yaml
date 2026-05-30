@@ -1,0 +1,27 @@
+baseline_id: insta
+short_name: INSTA
+display_name: 'INSTA: An Ultra-Fast, Differentiable, Statistical Static Timing Analysis Engine for Industrial Physical Design Applications'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'INSTA: An Ultra-Fast, Differentiable, Statistical Static Timing Analysis Engine for Industrial Physical Design Applications'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{lu2025insta,\n  title = {INSTA: An Ultra-Fast, Differentiable, Statistical Static Timing Analysis Engine for Industrial Physical Design Applications},\n  author = {Yi-Chen Lu and Zhizheng Guo and Kishor Kunal and Rongjian Liang and Haoxing Ren},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing static timing analysis engines or timing-aware optimization loops
+benchmark_scope:
+- 'DAC 2025 paper experiments for "INSTA: An Ultra-Fast, Differentiable, Statistical Static Timing Analysis Engine for Industrial Physical Design Applications"; compare against industry signoff STA tool, net-weighting placer.'
+- Topic gate routed this row to `static-timing-analysis` using existing taxonomy; no new topic was created for this item.
+metrics:
+- STA correlation
+- runtime
+- timing improvement
+- optimization QoR
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: industry signoff STA tool, net-weighting placer.'
+- One comparison baseline is named by method class or proprietary signoff flow rather than by a public tool name in the extracted text.

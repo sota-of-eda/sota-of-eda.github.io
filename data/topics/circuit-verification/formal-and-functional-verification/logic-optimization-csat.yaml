@@ -1,0 +1,26 @@
+baseline_id: logic-optimization-csat
+short_name: Logic-Opt CSAT
+display_name: 'Logic Optimization Meets SAT: A Novel Framework for Circuit-SAT Solving'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Logic Optimization Meets SAT: A Novel Framework for Circuit-SAT Solving'
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{shi2025logicoptcsat,\n  title = {Logic Optimization Meets SAT: A Novel Framework for Circuit-SAT Solving},\n  author = {Zhengyuan Shi and Tiebing Tang and Jiaying Zhu and Sadaf Khan and Hui-Ling Zhen and Mingxuan Yuan and Zhufei Chu and Qiang Xu},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing formal, functional, or RTL verification methods
+benchmark_scope:
+- 'DAC 2025 paper experiments for "Logic Optimization Meets SAT: A Novel Framework for Circuit-SAT Solving"; compare against conventional CSAT pipeline (direct AIG-to-CNF conversion).'
+- Topic gate routed this row to `formal-and-functional-verification` using existing taxonomy; no new topic was created for this item.
+metrics:
+- solved cases
+- runtime
+- manual effort
+- accuracy or success rate
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: conventional CSAT pipeline (direct AIG-to-CNF conversion).'

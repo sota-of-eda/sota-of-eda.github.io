@@ -1,0 +1,26 @@
+baseline_id: property-driven-parallel-ltl-smc
+short_name: Parallel LTL SMC
+display_name: Property-driven Parallel Symbolic Model Checking of LTL
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Property-driven Parallel Symbolic Model Checking of LTL
+  venue: DAC
+  year: 2025
+  bibtex: "@inproceedings{su2025parallelltlsmc,\n  title = {Property-driven Parallel Symbolic Model Checking of LTL},\n  author = {Yuheng Su and Yingcheng Li and Qiusong Yang and Yiwei Ci and Ziyu Huang},\n  booktitle = {Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC)},\n  year = {2025}\n}"
+links: {}
+compare_when:
+- comparing formal, functional, or RTL verification methods
+benchmark_scope:
+- DAC 2025 paper experiments for "Property-driven Parallel Symbolic Model Checking of LTL"; compare against sequential symbolic model checking, BDD-library-based parallel model checking, LTSMin.
+- Topic gate routed this row to `formal-and-functional-verification` using existing taxonomy; no new topic was created for this item.
+metrics:
+- solved cases
+- runtime
+- manual effort
+- accuracy or success rate
+reproducibility: paper_only
+caveats:
+- Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.
+- Use as coverage guidance for comparison setup, not as a universal SOTA ranking.
+- 'Experiment-baseline candidates found in exact paper pages: sequential symbolic model checking, BDD-library-based parallel model checking, LTSMin.'
