@@ -1,0 +1,22 @@
+baseline_id: ibisgen
+short_name: IBISgen
+display_name: 'IBISgen: An Agent-based Framework for Automated IBIS Model Generation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'IBISgen: An Agent-based Framework for Automated IBIS Model Generation'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{huang2026ibisgen,\n  title={IBISgen: An Agent-based Framework for Automated IBIS Model Generation},\n  author={Wentai Huang and Ziwen Wang and Yiming Huang and Shuilong Chen and Lei He},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing IBISgen with manual IBIS workflow, conventional IBIS workflow, SPICE golden reference for Circuit Simulation & Solver Acceleration tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Circuit Simulation & Solver Acceleration; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- RMSE
+- FoM
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

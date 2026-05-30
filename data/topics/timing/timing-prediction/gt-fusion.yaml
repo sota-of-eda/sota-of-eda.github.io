@@ -1,0 +1,24 @@
+baseline_id: gt-fusion
+short_name: GT-Fusion
+display_name: 'GT-Fusion: Synergizing LLM Semantics, Topology, and Geometry for PPA Prediction and Optimization'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'GT-Fusion: Synergizing LLM Semantics, Topology, and Geometry for PPA Prediction and Optimization'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{lai2026gt,\n  title={GT-Fusion: Synergizing LLM Semantics, Topology, and Geometry for PPA Prediction and Optimization},\n  author={Xinhua Lai and He Liu and Miao Liu and Jungang Xu and Xingquan Li},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing GT-Fusion with Pure UNet, UNet+GNN for Timing Estimation and Prediction tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Timing Estimation and Prediction; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- congestion
+- delay
+- RMSE
+- MAE
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

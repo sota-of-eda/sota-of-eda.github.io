@@ -1,0 +1,22 @@
+baseline_id: dp-based-dual-sided-cell-timing-optimization-with-custom-library-develop
+short_name: DP-based dual-sided cell timing optimization wit
+display_name: DTCO Dual-Sided Standard Cells with DP-Based Optimization and Custom Library Development
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: DTCO Dual-Sided Standard Cells with DP-Based Optimization and Custom Library Development
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{zhi2026dtco,\n  title={DTCO Dual-Sided Standard Cells with DP-Based Optimization and Custom Library Development},\n  author={Qinzhe Zhi and Peijie Ma and Heng Wu and Tianyu Jia},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing DP-based dual-sided cell timing optimization with custom library development with FS-only baseline, Tool-based dual-sided baseline for Automated Cell Synthesis tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Automated Cell Synthesis; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- WNS
+- area
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

@@ -1,0 +1,21 @@
+baseline_id: autopdr
+short_name: AutoPDR
+display_name: 'AutoPDR: Circuit-Aware Solver Configuration Prediction for Hardware Model Checking'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'AutoPDR: Circuit-Aware Solver Configuration Prediction for Hardware Model Checking'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{hu2026autopdr,\n  title={AutoPDR: Circuit-Aware Solver Configuration Prediction for Hardware Model Checking},\n  author={Guangyu Hu and Chen Chen and Xiaofeng Zhou and Jiaxi Zhang and Wei Zhang and Hongce Zhang},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing AutoPDR with default PDR configuration (ABC pdr command), GraphSAGE vs other GNN encoders for Formal and Functional Verification tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 rescue-pass evaluation setup for Formal and Functional Verification; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- paper-reported quality and runtime metrics
+reproducibility: paper_only
+caveats:
+- Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

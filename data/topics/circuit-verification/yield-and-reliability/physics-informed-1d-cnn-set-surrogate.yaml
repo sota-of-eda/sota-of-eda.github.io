@@ -1,0 +1,21 @@
+baseline_id: physics-informed-1d-cnn-set-surrogate
+short_name: Physics-Informed 1D-CNN SET Surrogate
+display_name: Physics-Informed and Uncertainty-Aware Surrogate Modeling of Single-Event Transients for Aerospace Applications
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Physics-Informed and Uncertainty-Aware Surrogate Modeling of Single-Event Transients for Aerospace Applications
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{li2026physics,\n  title={Physics-Informed and Uncertainty-Aware Surrogate Modeling of Single-Event Transients for Aerospace Applications},\n  author={Yaoyu Li and Bi Wang and Hanbin Wang and Chao Wang and Zhaohao Wang and Yingqi Ma},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing Physics-Informed 1D-CNN SET Surrogate with TCAD simulation for Yield Analysis and Reliability tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Yield Analysis and Reliability; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- speedup
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

@@ -1,0 +1,24 @@
+baseline_id: elmoreceff
+short_name: ElmoreCeff
+display_name: 'ElmoreCeff: A GPU-Friendly Elmore-Like Delay Calculator with a Closed-Form Effective Capacitance Model'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ElmoreCeff: A GPU-Friendly Elmore-Like Delay Calculator with a Closed-Form Effective Capacitance Model'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{liu2026elmoreceff,\n  title={ElmoreCeff: A GPU-Friendly Elmore-Like Delay Calculator with a Closed-Form Effective Capacitance Model},\n  author={Haichuan Liu and Zizheng Guo and Runsheng Wang and Yibo Lin},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing ElmoreCeff with Elmore, MOR (CPU), MOR (GPU) for Static Timing Analysis tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Static Timing Analysis; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- speedup
+- WNS
+- TNS
+- delay
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

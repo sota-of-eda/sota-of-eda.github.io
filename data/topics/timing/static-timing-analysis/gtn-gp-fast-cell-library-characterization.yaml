@@ -1,0 +1,21 @@
+baseline_id: gtn-gp-fast-cell-library-characterization
+short_name: GTN+GP fast cell library characterization
+display_name: Fast Generation Strategies for cell library characterization in Advanced Technology Node
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Fast Generation Strategies for cell library characterization in Advanced Technology Node
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{lei2026fast,\n  title={Fast Generation Strategies for cell library characterization in Advanced Technology Node},\n  author={Zonghan Lei and Chaozheng Qin and Wenli Huang and Wenchao Liu and Bin Li and Zhaohui Wu},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing GTN+GP fast cell library characterization with SPECTRE Monte Carlo simulation for Static Timing Analysis tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Static Timing Analysis; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- runtime
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

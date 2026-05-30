@@ -1,0 +1,21 @@
+baseline_id: specwave
+short_name: SpecWave
+display_name: 'SpecWave: Spectral-Enhanced Graph Learning for Crosstalk-Aware Waveform Prediction'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'SpecWave: Spectral-Enhanced Graph Learning for Crosstalk-Aware Waveform Prediction'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{mao2026specwave,\n  title={SpecWave: Spectral-Enhanced Graph Learning for Crosstalk-Aware Waveform Prediction},\n  author={Yanlong Mao and Jiajie Xu and Bowen Shi and Yaning Jia and Hao Yan},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing SpecWave with HSPICE, Commercial STA tool, GraphCAD, GTN-Path for Static Timing Analysis tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Static Timing Analysis; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- speedup
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

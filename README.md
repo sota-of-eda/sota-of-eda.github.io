@@ -2,7 +2,7 @@
 
 **An awesome EDA benchmark collection and baseline registry for Electronic Design Automation (EDA) / VLSI CAD research.**
 
-Indexes **122 topics** and **500 baselines** across placement, routing, timing, logic synthesis, high-level synthesis, circuit verification, analog layout, mask optimization, testing, and more.
+Indexes **122 topics** and **596 baselines** across placement, routing, timing, logic synthesis, high-level synthesis, circuit verification, analog layout, mask optimization, testing, and more.
 
 This registry helps authors, reviewers, and AI agents check whether an experiment discusses reference baselines that match the paper's claim, benchmark scope, and caveats. Designed for AI-assisted SOTA comparison — **verify entries before citing**.
 

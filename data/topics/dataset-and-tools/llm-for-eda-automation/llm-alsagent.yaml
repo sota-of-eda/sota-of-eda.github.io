@@ -1,0 +1,22 @@
+baseline_id: llm-alsagent
+short_name: LLM-AlsAgent
+display_name: 'LLM-AlsAgent: A Text-Editing Proximal Policy Optimization Framework for Approximate Logic Synthesis'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'LLM-AlsAgent: A Text-Editing Proximal Policy Optimization Framework for Approximate Logic Synthesis'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{liao2026llm,\n  title={LLM-AlsAgent: A Text-Editing Proximal Policy Optimization Framework for Approximate Logic Synthesis},\n  author={Kuo Liao and Weichuan Zuo and Jienan Chen},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing LLM-AlsAgent with SALSA, SEALS, SASIMI, Q-ALS, DeepPowerX for LLM for EDA Automation tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for LLM for EDA Automation; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- power
+- area
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

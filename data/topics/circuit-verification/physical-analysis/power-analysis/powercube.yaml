@@ -1,0 +1,24 @@
+baseline_id: powercube
+short_name: PowerCube
+display_name: 'PowerCube: A Formula-in-the-Loop Framework for Cross-Stage Power Map Prediction'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'PowerCube: A Formula-in-the-Loop Framework for Cross-Stage Power Map Prediction'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{zhao2026powercube,\n  title={PowerCube: A Formula-in-the-Loop Framework for Cross-Stage Power Map Prediction},\n  author={Yuxiang Zhao and Jing Mai and Zishu Li and Haoyi Zhang and Jincheng Lou and Qing He and Runsheng Wang and Yibo Lin},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing PowerCube with PowPrediCT, ATLAS, Attention-based power approximation for Power Analysis and Estimation tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Power Analysis and Estimation; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- runtime
+- speedup
+- power
+- MAE
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

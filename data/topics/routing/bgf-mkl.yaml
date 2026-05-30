@@ -1,0 +1,22 @@
+baseline_id: bgf-mkl
+short_name: BGF-MKL
+display_name: Preventing Clock Routing Short with Noisy Label Correction under Worst IR Drop Constraints before Power Planning and Placement
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Preventing Clock Routing Short with Noisy Label Correction under Worst IR Drop Constraints before Power Planning and Placement
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{liu2026preventing,\n  title={Preventing Clock Routing Short with Noisy Label Correction under Worst IR Drop Constraints before Power Planning and Placement},\n  author={Qi Liu and Ming Ling},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing BGF-MKL with Prior SVM (single kernel), No-fusion / fixed-weight baselines for Routing tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 rescue-pass evaluation setup for Routing; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- power
+- IR drop
+reproducibility: paper_only
+caveats:
+- Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

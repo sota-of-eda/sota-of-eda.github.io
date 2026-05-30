@@ -1,0 +1,21 @@
+baseline_id: pinn-2dfet
+short_name: PINN-2DFET
+display_name: 'PINN-2DFET: A Physics-Informed Neural Network for Compact Modeling of 2D FETs'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'PINN-2DFET: A Physics-Informed Neural Network for Compact Modeling of 2D FETs'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{zhang2026pinn,\n  title={PINN-2DFET: A Physics-Informed Neural Network for Compact Modeling of 2D FETs},\n  author={Xu Zhang and Yu Geng and Mingyang Kou and Weiqing Ji and Zheng Zhang and Hailong Yao},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing PINN-2DFET with PIML, Pi-NN, PRNN for Circuit Simulation & Solver Acceleration tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 rescue-pass evaluation setup for Circuit Simulation & Solver Acceleration; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- RMSE
+reproducibility: paper_only
+caveats:
+- Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

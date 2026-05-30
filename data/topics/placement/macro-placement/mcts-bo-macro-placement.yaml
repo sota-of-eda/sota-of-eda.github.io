@@ -1,0 +1,21 @@
+baseline_id: mcts-bo-macro-placement
+short_name: MCTS-BO macro placement
+display_name: Macro Placement Algorithm Based on Monte Carlo Tree Search and Bayesian Optimization
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Macro Placement Algorithm Based on Monte Carlo Tree Search and Bayesian Optimization
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{yu2026macro,\n  title={Macro Placement Algorithm Based on Monte Carlo Tree Search and Bayesian Optimization},\n  author={Huicheng Yu and Yue Wu and Xiaoyan Yang},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing MCTS-BO macro placement with EfficientPlace, WireMask-BBO, conventional BO, MCTS, RL-based methods for Macro Placement tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Macro Placement; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- paper-reported quality and runtime metrics
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

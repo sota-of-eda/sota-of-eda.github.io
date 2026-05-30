@@ -1,0 +1,23 @@
+baseline_id: kan-char
+short_name: KAN-CHAR
+display_name: 'KAN-CHAR: Efficient Cell Library Characterization for DTCO via Kolmogorov-Arnold Graph Learning'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'KAN-CHAR: Efficient Cell Library Characterization for DTCO via Kolmogorov-Arnold Graph Learning'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{xu2026kan,\n  title={KAN-CHAR: Efficient Cell Library Characterization for DTCO via Kolmogorov-Arnold Graph Learning},\n  author={Shubo Xu and Zeyuan Deng and Zhi Li and Peng Cao},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing KAN-CHAR with Traditional SPICE characterization, H-GAT (prior GNN method) for Standard Cell Library Characterization tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Standard Cell Library Characterization; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- runtime
+- delay
+- MAE
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

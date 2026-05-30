@@ -1,0 +1,21 @@
+baseline_id: causally-grounded-generation-cgg
+short_name: Causally-Grounded Generation (CGG)
+display_name: 'Causally-Grounded Generation: LLM-Based Analog Circuit Synthesis via Causal Hierarchy'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Causally-Grounded Generation: LLM-Based Analog Circuit Synthesis via Causal Hierarchy'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{mai2026causally,\n  title={Causally-Grounded Generation: LLM-Based Analog Circuit Synthesis via Causal Hierarchy},\n  author={Wenjin Mai and Xuan Zeng and Zhaori Bi},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing Causally-Grounded Generation (CGG) with Pure LLM generation (no simulator grounding) for LLM for EDA Automation tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for LLM for EDA Automation; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- paper-reported quality and runtime metrics
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

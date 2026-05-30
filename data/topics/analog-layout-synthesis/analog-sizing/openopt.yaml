@@ -1,0 +1,24 @@
+baseline_id: openopt
+short_name: OpenOpt
+display_name: 'OpenOpt: An Open-Source SRAM Optimizer Based on Equivalent Circuit Model'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'OpenOpt: An Open-Source SRAM Optimizer Based on Equivalent Circuit Model'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{wang2026openopt,\n  title={OpenOpt: An Open-Source SRAM Optimizer Based on Equivalent Circuit Model},\n  author={Yikai Wang and Yiheng Wu and Can Wang and Bohao Liu and Junhao Ma and Zhuohua Liu and Qinxin Mei and Shan Shen},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing OpenOpt with SA, PSO, CBO, SMAC, RoSE-Opt for Analog Circuit Sizing and Optimization tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Analog Circuit Sizing and Optimization; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- speedup
+- power
+- area
+- FoM
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

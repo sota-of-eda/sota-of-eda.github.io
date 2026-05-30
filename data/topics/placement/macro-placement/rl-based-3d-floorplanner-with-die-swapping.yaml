@@ -1,0 +1,21 @@
+baseline_id: rl-based-3d-floorplanner-with-die-swapping
+short_name: RL-based 3D Floorplanner with Die Swapping
+display_name: Reinforcement Learning-based 3D Floorplanner with Die Swapping Mechanism
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Reinforcement Learning-based 3D Floorplanner with Die Swapping Mechanism
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{luo2026reinforcement,\n  title={Reinforcement Learning-based 3D Floorplanner with Die Swapping Mechanism},\n  author={Qin Luo and Hailiang Li and Evangeline F.Y. Young},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing RL-based 3D Floorplanner with Die Swapping with PaOR, FlexPlacer for Macro Placement tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Macro Placement; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- wirelength
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

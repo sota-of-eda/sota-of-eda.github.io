@@ -1,0 +1,21 @@
+baseline_id: pre-routing-timing-prediction-with-global-netlist-topology-awareness
+short_name: 'Dual-branch model with MILA graph transformer + '
+display_name: Pre-routing Timing Prediction with Global Netlist Topology Awareness
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Pre-routing Timing Prediction with Global Netlist Topology Awareness
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{wu2026pre,\n  title={Pre-routing Timing Prediction with Global Netlist Topology Awareness},\n  author={Mingle Wu and Zhongdong Qi and Qi Peng},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing Dual-branch model with MILA graph transformer + level-wise GNN for pre-routing timing prediction with Restructure-tolerant timing prediction via multimodal fusion [7], Pre-routing timing prediction method [3], Pre-routing timing prediction method [5], Pre-routing timing prediction method [4] for Timing Estimation and Prediction tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 rescue-pass evaluation setup for Timing Estimation and Prediction; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- paper-reported quality and runtime metrics
+reproducibility: paper_only
+caveats:
+- Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

@@ -1,0 +1,22 @@
+baseline_id: mlir-based-cgra-compilation-flow
+short_name: MLIR-based CGRA compilation flow
+display_name: 'An MLIR-Based Compilation Flow for CGRAs: Optimized CDFG Generation, Control-Flow Handling, and Scalability'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'An MLIR-Based Compilation Flow for CGRAs: Optimized CDFG Generation, Control-Flow Handling, and Scalability'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{lou2026an,\n  title={An MLIR-Based Compilation Flow for CGRAs: Optimized CDFG Generation, Control-Flow Handling, and Scalability},\n  author={Jiahang Lou and Jiayao Hu and Jianrong Zhang and Yikuan Chen and Zewei Zhong and Yuan Dai and Wenbo Yin and Lingli Wang and Yu He and Qing He},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing MLIR-based CGRA compilation flow with SOTA MLIR compiler, Hycube, TRAM for High Level Synthesis tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for High Level Synthesis; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- energy
+- area
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

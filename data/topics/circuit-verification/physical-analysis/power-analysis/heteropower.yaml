@@ -1,0 +1,21 @@
+baseline_id: heteropower
+short_name: HeteroPower
+display_name: 'HeteroPower: A CPU-GPU Heterogeneous Engine to Accelerate Gate-Level Power Analysis'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'HeteroPower: A CPU-GPU Heterogeneous Engine to Accelerate Gate-Level Power Analysis'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{shi2026heteropower,\n  title={HeteroPower: A CPU-GPU Heterogeneous Engine to Accelerate Gate-Level Power Analysis},\n  author={Xizhe Shi and Zizheng Guo and Zuodong Zhang and Yun Liang and Runsheng Wang and Yibo Lin},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing HeteroPower with PrimeTime PX, OpenSTA for Power Analysis and Estimation tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Power Analysis and Estimation; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- paper-reported quality and runtime metrics
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

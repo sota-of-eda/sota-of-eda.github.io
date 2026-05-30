@@ -1,0 +1,22 @@
+baseline_id: cryo-bsim4-ngspice-integration
+short_name: Cryo-BSIM4 NGSPICE integration
+display_name: 'Tail-Aware Variability Simulation for Planar CMOS under Cryogenic Condition: From Compact Modeling to SPICE Integration'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Tail-Aware Variability Simulation for Planar CMOS under Cryogenic Condition: From Compact Modeling to SPICE Integration'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{zhong2026tail,\n  title={Tail-Aware Variability Simulation for Planar CMOS under Cryogenic Condition: From Compact Modeling to SPICE Integration},\n  author={Yongqiang Zhong and Junwei Guo and Chenyang Zhang and Xiaochang Zhang and Pengpeng Ren and Runsheng Wang and Zhigang Ji},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing Cryo-BSIM4 NGSPICE integration with HSPICE Verilog-A Monte Carlo for Circuit Simulation & Solver Acceleration tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Circuit Simulation & Solver Acceleration; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- runtime
+- speedup
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

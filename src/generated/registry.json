@@ -295,6 +295,34 @@
           ]
         },
         {
+          "baseline_id": "diffhls",
+          "short_name": "DiffHLS",
+          "display_name": "DiffHLS: Differential Learning for High-Level Synthesis QoR Prediction with GNNs and LLM Code Embeddings",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "DiffHLS: Differential Learning for High-Level Synthesis QoR Prediction with GNNs and LLM Code Embeddings",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{peng2026diffhls,\n  title={DiffHLS: Differential Learning for High-Level Synthesis QoR Prediction with GNNs and LLM Code Embeddings},\n  author={Zedong Peng and Zeju Li and Qiang Xu and Jieru Zhao},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing DiffHLS with GNN baselines (4 backbones), GNN-only ablation for High Level Synthesis tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for High Level Synthesis; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "QoR"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "dynvec",
           "short_name": "DynVec",
           "display_name": "DynVec: An End-to-End Framework for Efficient Vector-Dataflow Execution",
@@ -633,6 +661,35 @@
           ]
         },
         {
+          "baseline_id": "mlir-based-cgra-compilation-flow",
+          "short_name": "MLIR-based CGRA compilation flow",
+          "display_name": "An MLIR-Based Compilation Flow for CGRAs: Optimized CDFG Generation, Control-Flow Handling, and Scalability",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "An MLIR-Based Compilation Flow for CGRAs: Optimized CDFG Generation, Control-Flow Handling, and Scalability",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{lou2026an,\n  title={An MLIR-Based Compilation Flow for CGRAs: Optimized CDFG Generation, Control-Flow Handling, and Scalability},\n  author={Jiahang Lou and Jiayao Hu and Jianrong Zhang and Yikuan Chen and Zewei Zhong and Yuan Dai and Wenbo Yin and Lingli Wang and Yu He and Qing He},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing MLIR-based CGRA compilation flow with SOTA MLIR compiler, Hycube, TRAM for High Level Synthesis tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for High Level Synthesis; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "energy",
+            "area"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "recrel-recelim",
           "short_name": "Recrel Recelim",
           "display_name": "Automatic Recursion Elimination using Recurrence Relations for Synthesis of Stack-free Hardware",
@@ -693,6 +750,34 @@
             "Formalized from DAC 2025 compact proceedings packet and Claude review; DOI and publisher-export BibTeX were not verified in this pass.",
             "Use as coverage guidance for comparison setup, not as a universal SOTA ranking.",
             "Experiment-baseline candidates recorded in the packet review: PathFinder (PF*), Simulated Annealing (SA)."
+          ]
+        },
+        {
+          "baseline_id": "routeflow",
+          "short_name": "RouteFlow",
+          "display_name": "RouteFlow: A Routing-Efficient CGRA Framework Through Accelerated Layout-Aware Mapping",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "RouteFlow: A Routing-Efficient CGRA Framework Through Accelerated Layout-Aware Mapping",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{pang2026routeflow,\n  title={RouteFlow: A Routing-Efficient CGRA Framework Through Accelerated Layout-Aware Mapping},\n  author={Hongyu Pang and Jiajun Qin and Song Chen and Qi Xu},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing RouteFlow with TRAM-Base, TRAM-Base-S, TRAM, TRAM-S, island-style CGRA for High Level Synthesis tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for High Level Synthesis; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -1514,6 +1599,34 @@
           ]
         },
         {
+          "baseline_id": "ips-iterative-pairing-selection",
+          "short_name": "IPS (Iterative Pairing Selection)",
+          "display_name": "A Novel Iterative Pairing Selection (IPS) Framework for FPGA Dual-Output LUT",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "A Novel Iterative Pairing Selection (IPS) Framework for FPGA Dual-Output LUT",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{wang2026a,\n  title={A Novel Iterative Pairing Selection (IPS) Framework for FPGA Dual-Output LUT},\n  author={Zhaohan Wang and Yunfan Zuo and Yuhang Du and Ziji Zhao and Yaling Li and Chengao Zhang and Jiajie Xu and Lixin Ge},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing IPS (Iterative Pairing Selection) with Resyn ABC (single-output mapping), Lu et al. 2025 (multi-output LUT mapping) for Logic Synthesis tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for Logic Synthesis; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "area"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "learning-to-approximate",
           "short_name": "Learning to Approximate",
           "display_name": "Learning to Approximate: Circuit Learning and Deep Reinforcement Learning for Approximate Logic Synthesis with an Error Rate Guarantee",
@@ -2294,7 +2407,37 @@
         "physical design routing"
       ],
       "description": "Routing topics that connect placed design objects under congestion, design-rule, and timing constraints.",
-      "baselines": []
+      "baselines": [
+        {
+          "baseline_id": "bgf-mkl",
+          "short_name": "BGF-MKL",
+          "display_name": "Preventing Clock Routing Short with Noisy Label Correction under Worst IR Drop Constraints before Power Planning and Placement",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Preventing Clock Routing Short with Noisy Label Correction under Worst IR Drop Constraints before Power Planning and Placement",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{liu2026preventing,\n  title={Preventing Clock Routing Short with Noisy Label Correction under Worst IR Drop Constraints before Power Planning and Placement},\n  author={Qi Liu and Ming Ling},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing BGF-MKL with Prior SVM (single kernel), No-fusion / fixed-weight baselines for Routing tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for Routing; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "power",
+            "IR drop"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        }
+      ]
     },
     {
       "review_triggers": [],
@@ -2466,6 +2609,63 @@
             "comparison limited to Calibre; may not cover all commercial DRC tools",
             "automaton construction overhead not fully characterized"
           ]
+        },
+        {
+          "baseline_id": "geotrans",
+          "short_name": "GeoTrans",
+          "display_name": "GeoTrans: A Geometry-Driven Transitive Connectivity Resolution Engine for Efficient Layout Net Tracing",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "GeoTrans: A Geometry-Driven Transitive Connectivity Resolution Engine for Efficient Layout Net Tracing",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{su2026geotrans,\n  title={GeoTrans: A Geometry-Driven Transitive Connectivity Resolution Engine for Efficient Layout Net Tracing},\n  author={Chunrun Su and Boyu Shi and Shuo Liu and Chao Wang},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing GeoTrans with 2025 China Postgraduate EDA Competition Rank 1st for Layout Verification tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Layout Verification; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup",
+            "accuracy"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "grid-based-r-tree-hybrid-net-tracing",
+          "short_name": "Grid-based R-tree hybrid net tracing",
+          "display_name": "Efficient and Scalable Parallel Net Tracing for Large-Scale Industrial Layouts via Hybrid Spatial Indexing",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Efficient and Scalable Parallel Net Tracing for Large-Scale Industrial Layouts via Hybrid Spatial Indexing",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{yang2026efficient,\n  title={Efficient and Scalable Parallel Net Tracing for Large-Scale Industrial Layouts via Hybrid Spatial Indexing},\n  author={Kaifeng Yang and Minghua Shen},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Grid-based R-tree hybrid net tracing with R-tree, R*-tree for Layout Verification tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Layout Verification; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
         }
       ]
     },
@@ -2510,6 +2710,34 @@
             "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
             "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
             "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
+          ]
+        },
+        {
+          "baseline_id": "bird-mo",
+          "short_name": "BIRD-MO",
+          "display_name": "Efficient Mask Optimization via Brownian Bridge Diffusion Model",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Efficient Mask Optimization via Brownian Bridge Diffusion Model",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{li2026efficient,\n  title={Efficient Mask Optimization via Brownian Bridge Diffusion Model},\n  author={Yihan Li and Wanlin Zhang and Liying Yang and Hu Ding},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing BIRD-MO with GAN-OPC, DAMO, Neural-ILT for Mask Optimization tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Mask Optimization; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "L2"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -2612,6 +2840,34 @@
           ]
         },
         {
+          "baseline_id": "modiff",
+          "short_name": "MODiff",
+          "display_name": "MODiff: Layout-Guided Mask Optimization via Diffusion Model",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "MODiff: Layout-Guided Mask Optimization via Diffusion Model",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{li2026modiff,\n  title={MODiff: Layout-Guided Mask Optimization via Diffusion Model},\n  author={Jiale Li and Silin Chen and Yiqing Wang and Kangjian Di and Li Du and Ningmu Zou},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing MODiff with GAN-OPC, Neural-ILT, Level-Set, CircleOpt for Mask Optimization tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Mask Optimization; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "pattern-paint",
           "short_name": "PatternPaint / Vario",
           "display_name": "Diffusion-Model-Enhanced Layout Pattern Generation for Sub-3nm DFM",
@@ -2675,6 +2931,34 @@
           ]
         },
         {
+          "baseline_id": "pitch-conditioned-fno-surrogate-for-differentiable-opc",
+          "short_name": "Pitch-Conditioned FNO Surrogate for Differentiab",
+          "display_name": "Differentiable Optical Proximity Correction for Metasurfaces Using a Pitch-Conditioned Neural Operator Surrogate",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Differentiable Optical Proximity Correction for Metasurfaces Using a Pitch-Conditioned Neural Operator Surrogate",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{yang2026differentiable,\n  title={Differentiable Optical Proximity Correction for Metasurfaces Using a Pitch-Conditioned Neural Operator Surrogate},\n  author={Zaifeng Yang and Ayan Nussupbekov and Ray Jia Hong Ng and Viet Phuong Bui and Wei Bin Ewe and Hong Son Chu and Ching Eng Png},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Pitch-Conditioned FNO Surrogate for Differentiable OPC with Before OPC (no mask correction), After OPC (pitch-conditioned FNO surrogate) for Mask Optimization tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Mask Optimization; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "second-order-full-chip-ilt",
           "short_name": "Second-Order ILT",
           "display_name": "Scalable Second-Order Optimizer for Full-Chip Inverse Lithography Techniques",
@@ -2709,6 +2993,35 @@
             "no DBLP/Crossref/arXiv/Semantic Scholar exact metadata record or formal DATE/IEEE DOI was found during this pass; BibTeX is manually formatted from the official DATE PDF and marked for human metadata review",
             "experiments build on FuILT/OpenILT and compare primarily with a first-order FuILT baseline; broader comparisons to learning-based or commercial ILT flows are not shown",
             "PVB slightly increases in the reported full configuration even though L2, EPE, and composite score improve"
+          ]
+        },
+        {
+          "baseline_id": "sfdo-symmetric-frequency-domain-optimization",
+          "short_name": "SFDO (Symmetric Frequency-Domain Optimization)",
+          "display_name": "Adaptive Frequency-Domain Optimization for Lithography Mask Synthesis with Topological Constraints",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Adaptive Frequency-Domain Optimization for Lithography Mask Synthesis with Topological Constraints",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{liu2026adaptive,\n  title={Adaptive Frequency-Domain Optimization for Lithography Mask Synthesis with Topological Constraints},\n  author={Jiale Liu and Wenjing He and Fengyun Long and Ruifan Gao and Luying Liang and Yijiang Shen},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing SFDO (Symmetric Frequency-Domain Optimization) with Level Set Method (LSM), Pixel-Based ILT with Fixed Regularization (PB-Fixed) for Mask Optimization tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for Mask Optimization; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "area",
+            "EPE"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -2808,6 +3121,36 @@
             "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
             "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
             "Draft audit recorded experiment comparison candidates including: Standard OPC (no re-fragmentation), RFC re-fragmentation (Zhang et al.), Heuristic 1 (early EPE), Heuristic 2 (pre-OPC EPE)."
+          ]
+        },
+        {
+          "baseline_id": "u-wno-ilt",
+          "short_name": "U-WNO-ILT",
+          "display_name": "U-WNO-ILT: U-Net Enhanced Wavelet Neural Operator with Spectral-Spatial Decoupling for Inverse Lithography",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "U-WNO-ILT: U-Net Enhanced Wavelet Neural Operator with Spectral-Spatial Decoupling for Inverse Lithography",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{shang2026u,\n  title={U-WNO-ILT: U-Net Enhanced Wavelet Neural Operator with Spectral-Spatial Decoupling for Inverse Lithography},\n  author={Xinyu Shang and Tianyi Xu and Hongwei Yao and Bingyi Ye and Yang Shen and Xiaojin Li and Yabin Sun and Yuhang Zhang},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing U-WNO-ILT with GAN-OPC, DAMO-ILT, Neural-ILT, GMUNet-ILT, Pure FNO for Mask Optimization tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Mask Optimization; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup",
+            "EPE",
+            "L2"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -4098,6 +4441,37 @@
           ]
         },
         {
+          "baseline_id": "swift-place",
+          "short_name": "SWIFT-Place",
+          "display_name": "SWIFT-Place: Sequential Wirelength, Interposer Footprint, and Thermal-Aware Placement for 2.5D Advanced Packaging Systems",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "SWIFT-Place: Sequential Wirelength, Interposer Footprint, and Thermal-Aware Placement for 2.5D Advanced Packaging Systems",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{hou2026swift,\n  title={SWIFT-Place: Sequential Wirelength, Interposer Footprint, and Thermal-Aware Placement for 2.5D Advanced Packaging Systems},\n  author={Yubo Hou and Sezin Ata Kircali and Gen Liang Lim and Richard Chang and Mihai Dragos Rotaru and Dutta Rahul and Ashish James},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing SWIFT-Place with TAP-2.5D for 3D IC Placement and Planning tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for 3D IC Placement and Planning; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "runtime",
+            "speedup",
+            "wirelength",
+            "area"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "technology-aware-3d-placement-with-ilp-based-region-planning",
           "short_name": "Technology-aware 3D Placement",
           "display_name": "Technology-Aware 3D Placement with ILP-Based Region Planning for Soft Modules",
@@ -5140,6 +5514,62 @@
       "aliases": [],
       "baselines": [
         {
+          "baseline_id": "align-portable-expertise-for-analog-sizing",
+          "short_name": "ALIGN (PortAbLe ExpertIse for AnaloG SiziNg)",
+          "display_name": "Portable Expertise for Analog Sizing: A Data-Agnostic Foundation Model Approach",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Portable Expertise for Analog Sizing: A Data-Agnostic Foundation Model Approach",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{liu2026portable,\n  title={Portable Expertise for Analog Sizing: A Data-Agnostic Foundation Model Approach},\n  author={Zhuohua Liu and Kaiqi Huang and Qinxin Mei and Yuanqi Hu and Wei W. Xing},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing ALIGN (PortAbLe ExpertIse for AnaloG SiziNg) with INSIGHT, KATO, Bayesian Optimization (BO) for Analog Circuit Sizing and Optimization tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Analog Circuit Sizing and Optimization; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "amacrosyn",
+          "short_name": "AmacroSyn",
+          "display_name": "Automated Synthesis of Abuttable Macros for Analog Layout",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Automated Synthesis of Abuttable Macros for Analog Layout",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{huang2026automated,\n  title={Automated Synthesis of Abuttable Macros for Analog Layout},\n  author={Li Huang and Xueying Huang and Xinpeng Wang and Fuya Yang and Junjie Yang and Lin Yang and Chuanxu Liu and Rui Ye and Zhanfei Chen and Ting-Jung Lin and Lei He},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing AmacroSyn with Acell-only baseline, Manual Pcell-based layouts for Analog Circuit Sizing and Optimization tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Analog Circuit Sizing and Optimization; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "area"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "anaflow",
           "short_name": "AnaFlow",
           "display_name": "AnaFlow: Agentic LLM-based Workflow for Reasoning-Driven Explainable and Sample-Efficient Analog Circuit Sizing",
@@ -5439,6 +5869,121 @@
           ]
         },
         {
+          "baseline_id": "memo",
+          "short_name": "MEMO",
+          "display_name": "MEMO: Dynamic Routing Mixture-of-Experts Reinforcement Learning for Multi-Objective Analog Circuit Sizing",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "MEMO: Dynamic Routing Mixture-of-Experts Reinforcement Learning for Multi-Objective Analog Circuit Sizing",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{han2026memo,\n  title={MEMO: Dynamic Routing Mixture-of-Experts Reinforcement Learning for Multi-Objective Analog Circuit Sizing},\n  author={Yanan Han and Bijian Lan and Jing Wan},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing MEMO with DDPG (single-policy) for Analog Circuit Sizing and Optimization tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Analog Circuit Sizing and Optimization; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "openopt",
+          "short_name": "OpenOpt",
+          "display_name": "OpenOpt: An Open-Source SRAM Optimizer Based on Equivalent Circuit Model",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "OpenOpt: An Open-Source SRAM Optimizer Based on Equivalent Circuit Model",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{wang2026openopt,\n  title={OpenOpt: An Open-Source SRAM Optimizer Based on Equivalent Circuit Model},\n  author={Yikai Wang and Yiheng Wu and Can Wang and Bohao Liu and Junhao Ma and Zhuohua Liu and Qinxin Mei and Shan Shen},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing OpenOpt with SA, PSO, CBO, SMAC, RoSE-Opt for Analog Circuit Sizing and Optimization tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Analog Circuit Sizing and Optimization; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup",
+            "power",
+            "area",
+            "FoM"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "paradigm",
+          "short_name": "PARADIGM",
+          "display_name": "PARADIGM: Pareto-Optimized Analog Design via Intelligent Database-Guided Methodology",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "PARADIGM: Pareto-Optimized Analog Design via Intelligent Database-Guided Methodology",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{peng2026paradigm,\n  title={PARADIGM: Pareto-Optimized Analog Design via Intelligent Database-Guided Methodology},\n  author={Anlan Peng and Chengjie Liu and Yuan Du and Li Du*},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing PARADIGM with TuRBO (standalone), P2C Net (direct prediction), CART / RF / XGBoost / SVM / kNN / NN classifiers for Analog Circuit Sizing and Optimization tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for Analog Circuit Sizing and Optimization; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "physsar",
+          "short_name": "PhysSAR",
+          "display_name": "PhysSAR: Feasibility-Frontier SAR Sizing with Physics Constraints and LLM Guidance",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "PhysSAR: Feasibility-Frontier SAR Sizing with Physics Constraints and LLM Guidance",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{li2026physsar,\n  title={PhysSAR: Feasibility-Frontier SAR Sizing with Physics Constraints and LLM Guidance},\n  author={Chang Li and Tianze Wu and Zhidi Yang and Shan Zhang and Dongdong Li and Zhichao Tan and Liang Zhao},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing PhysSAR with Random Search (RS), Bayesian Optimization (BO) for Analog Circuit Sizing and Optimization tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Analog Circuit Sizing and Optimization; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "ppaas",
           "short_name": "PPAAS",
           "display_name": "PPAAS: PVT and Pareto Aware Analog Sizing via Goal-Conditioned Reinforcement Learning",
@@ -5474,6 +6019,91 @@
             "Goal-conditioned RL training can be computationally expensive",
             "Skip-on-Fail strategy may miss corner cases",
             "Validation limited to specific analog circuit topologies"
+          ]
+        },
+        {
+          "baseline_id": "sp-bo",
+          "short_name": "SP-BO",
+          "display_name": "SP-BO: Simulation-Pruning Bayesian Optimization via Conformal Filtering for Efficient Analog Sizing",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "SP-BO: Simulation-Pruning Bayesian Optimization via Conformal Filtering for Efficient Analog Sizing",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{liu2026sp,\n  title={SP-BO: Simulation-Pruning Bayesian Optimization via Conformal Filtering for Efficient Analog Sizing},\n  author={Xuhua Liu and Zhuofu Tao and Yichen Shi and Zhiyuan Wang and Zhongyi Li and Ze Zhang and Hongyang Wang and Shuilong Chen and Ting-Jung Lin and Quan Chen and Lei He},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing SP-BO with Standard BO (Optuna), Warm-starting Optuna, BO without conformal filtering for Analog Circuit Sizing and Optimization tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Analog Circuit Sizing and Optimization; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "topmat",
+          "short_name": "TopMat",
+          "display_name": "TopMat: Knowledge Transfer and Hierarchical Optimization for Analog Circuit Sizing via Sub-circuit Topology Matching",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "TopMat: Knowledge Transfer and Hierarchical Optimization for Analog Circuit Sizing via Sub-circuit Topology Matching",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{yao2026topmat,\n  title={TopMat: Knowledge Transfer and Hierarchical Optimization for Analog Circuit Sizing via Sub-circuit Topology Matching},\n  author={Yuan Yao and Yuxuan Zhang and Yuanqi Hu and Wei W. Xing},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing TopMat with KATO, CCINN, ANGEL, PESMOC, MSEMOC for Analog Circuit Sizing and Optimization tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Analog Circuit Sizing and Optimization; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "toposynth",
+          "short_name": "TopoSynth",
+          "display_name": "TopoSynth: Explainable and Sample-Efficient Topology Synthesis of Analog/Mixed-Signal Circuits via an LLM-powered Multi-Agent System",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "TopoSynth: Explainable and Sample-Efficient Topology Synthesis of Analog/Mixed-Signal Circuits via an LLM-powered Multi-Agent System",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{wang2026toposynth,\n  title={TopoSynth: Explainable and Sample-Efficient Topology Synthesis of Analog/Mixed-Signal Circuits via an LLM-powered Multi-Agent System},\n  author={Jiaqi Wang and Georges G.E. Gielen},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing TopoSynth with state-of-the-art bi-level Bayesian optimization baseline for Analog Circuit Sizing and Optimization tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Analog Circuit Sizing and Optimization; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup",
+            "power"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -5644,6 +6274,36 @@
           ]
         },
         {
+          "baseline_id": "capcell",
+          "short_name": "CAPCell",
+          "display_name": "CAPCell: Standard Cell Layout Synthesis with Parasitic Capacitance Aware Parallel Sampling",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "CAPCell: Standard Cell Layout Synthesis with Parasitic Capacitance Aware Parallel Sampling",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{guo2026capcell,\n  title={CAPCell: Standard Cell Layout Synthesis with Parasitic Capacitance Aware Parallel Sampling},\n  author={Kairong Guo and Jiechen Huang and Wenjian Yu and Yibo Lin},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing CAPCell with Wirelength-driven baseline, Baseline layout variants for Automated Cell Synthesis tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Automated Cell Synthesis; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "TNS",
+            "delay",
+            "area"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "cfet-cell-synthesis-with-backside-metal-utilization",
           "short_name": "Cfet Cell Synthesis With Backside",
           "display_name": "Synthesis of CFET Standard Cells Utilizing Backside Interconnects Towards Improving Pin Accessibility",
@@ -5775,6 +6435,35 @@
           ]
         },
         {
+          "baseline_id": "dp-based-dual-sided-cell-timing-optimization-with-custom-library-develop",
+          "short_name": "DP-based dual-sided cell timing optimization wit",
+          "display_name": "DTCO Dual-Sided Standard Cells with DP-Based Optimization and Custom Library Development",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "DTCO Dual-Sided Standard Cells with DP-Based Optimization and Custom Library Development",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{zhi2026dtco,\n  title={DTCO Dual-Sided Standard Cells with DP-Based Optimization and Custom Library Development},\n  author={Qinzhe Zhi and Peijie Ma and Heng Wu and Tianyu Jia},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing DP-based dual-sided cell timing optimization with custom library development with FS-only baseline, Tool-based dual-sided baseline for Automated Cell Synthesis tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Automated Cell Synthesis; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "WNS",
+            "area"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "dynamic-grid-shifting-ilp-routing",
           "short_name": "Dynamic Grid-Shifting ILP",
           "display_name": "Standard Cell Layout Generator Empowered by ILP-based Routing with Dynamic Grid-Shifting for Advanced Nodes",
@@ -5871,6 +6560,35 @@
             "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
             "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
             "Draft audit recorded experiment comparison candidates including: NS3K, LP (Longest Pin)."
+          ]
+        },
+        {
+          "baseline_id": "lsnce",
+          "short_name": "LSnce",
+          "display_name": "LSnce: Large-Scale Netlist Constraint Extraction via Graph Similarity Learning",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "LSnce: Large-Scale Netlist Constraint Extraction via Graph Similarity Learning",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{he2026lsnce,\n  title={LSnce: Large-Scale Netlist Constraint Extraction via Graph Similarity Learning},\n  author={Tengjun He and Yuhe Wang and Jialiang Ren and Zhicheng He and Jianguo Hu},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing LSnce with GCN for Automated Cell Synthesis tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for Automated Cell Synthesis; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "accuracy",
+            "F1"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -6111,6 +6829,36 @@
             "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
             "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
             "Draft audit recorded experiment comparison candidates including: [8] 3.5T dual-sided designs, Manual AOI22xp5 designs."
+          ]
+        },
+        {
+          "baseline_id": "sntroute",
+          "short_name": "SNTRoute",
+          "display_name": "SNTRoute: Scalable Negotiation-Based Transistor Routing with Dense-Grid Exploration for Standard Cell Layout Synthesis",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "SNTRoute: Scalable Negotiation-Based Transistor Routing with Dense-Grid Exploration for Standard Cell Layout Synthesis",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{wu2026sntroute,\n  title={SNTRoute: Scalable Negotiation-Based Transistor Routing with Dense-Grid Exploration for Standard Cell Layout Synthesis},\n  author={Yinuo Wu and Keyu Peng and Zhengzhe Zheng and Xiqiong Bai and Chao Wang and Ziran Zhu},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing SNTRoute with hand-crafted layouts, state-of-the-art transistor router for Automated Cell Synthesis tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Automated Cell Synthesis; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "runtime",
+            "speedup",
+            "wirelength"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -6721,6 +7469,35 @@
       "description": "Methods that improve circuit simulation, SPICE-like nonlinear solver convergence, transient/AC/DC/RF analysis, sparse linear solvers, waveform prediction, or solver selection for transistor-level and analog/mixed-signal circuits.",
       "baselines": [
         {
+          "baseline_id": "cryo-bsim4-ngspice-integration",
+          "short_name": "Cryo-BSIM4 NGSPICE integration",
+          "display_name": "Tail-Aware Variability Simulation for Planar CMOS under Cryogenic Condition: From Compact Modeling to SPICE Integration",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Tail-Aware Variability Simulation for Planar CMOS under Cryogenic Condition: From Compact Modeling to SPICE Integration",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{zhong2026tail,\n  title={Tail-Aware Variability Simulation for Planar CMOS under Cryogenic Condition: From Compact Modeling to SPICE Integration},\n  author={Yongqiang Zhong and Junwei Guo and Chenyang Zhang and Xiaochang Zhang and Pengpeng Ren and Runsheng Wang and Zhigang Ji},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Cryo-BSIM4 NGSPICE integration with HSPICE Verilog-A Monte Carlo for Circuit Simulation & Solver Acceleration tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Circuit Simulation & Solver Acceleration; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "runtime",
+            "speedup"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "ei-tr",
           "short_name": "EI-TR",
           "display_name": "EI-TR: A Versatile Exponential Integrator Framework for Transient Analysis of Generic Nonlinear Circuits",
@@ -6858,6 +7635,63 @@
           ]
         },
         {
+          "baseline_id": "grind",
+          "short_name": "GRIND",
+          "display_name": "GRIND: GNN and Reinforcement Learning Enhanced Multilevel Nested Dissection for Circuit Matrix Reordering",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "GRIND: GNN and Reinforcement Learning Enhanced Multilevel Nested Dissection for Circuit Matrix Reordering",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{song2026grind,\n  title={GRIND: GNN and Reinforcement Learning Enhanced Multilevel Nested Dissection for Circuit Matrix Reordering},\n  author={Jianfei Song and Zhenhua Wu and Zhou Jin and Cheng Zhuo},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing GRIND with METIS, NESDIS, RCM, COLAMD for Circuit Simulation & Solver Acceleration tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Circuit Simulation & Solver Acceleration; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "ibisgen",
+          "short_name": "IBISgen",
+          "display_name": "IBISgen: An Agent-based Framework for Automated IBIS Model Generation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "IBISgen: An Agent-based Framework for Automated IBIS Model Generation",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{huang2026ibisgen,\n  title={IBISgen: An Agent-based Framework for Automated IBIS Model Generation},\n  author={Wentai Huang and Ziwen Wang and Yiming Huang and Shuilong Chen and Lei He},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing IBISgen with manual IBIS workflow, conventional IBIS workflow, SPICE golden reference for Circuit Simulation & Solver Acceleration tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Circuit Simulation & Solver Acceleration; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "RMSE",
+            "FoM"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "insight-neural-analog-simulator",
           "short_name": "INSIGHT",
           "display_name": "INSIGHT: A Universal Neural Simulator Framework for Analog Circuits with Autoregressive Transformers",
@@ -6925,6 +7759,120 @@
             "manual DATE PDF BibTeX is used because publisher/DBLP/Crossref DOI metadata is unresolved",
             "evaluation uses industrial RF matrices that may not be publicly redistributable",
             "scope is sparse ordering for RF circuit simulation solvers, not general graph partitioning or physical placement"
+          ]
+        },
+        {
+          "baseline_id": "physics-augmented-cryogenic-compact-model-40nm-180nm-300k-9mk",
+          "short_name": "Physics-augmented cryogenic compact model (40nm/",
+          "display_name": "Compact Modeling and Characterization Strategies for CMOS Technology Down to 9 mK: From Physics to Simulation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Compact Modeling and Characterization Strategies for CMOS Technology Down to 9 mK: From Physics to Simulation",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{ma2026compact,\n  title={Compact Modeling and Characterization Strategies for CMOS Technology Down to 9 mK: From Physics to Simulation},\n  author={Zhizhao Ma and Shilong Li and Yuhuan Lin and Kai Chen and Quan Chen},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Physics-augmented cryogenic compact model (40nm/180nm, 300K–9mK) with p-MOSFET parameter summary (300K–9mK), n-MOSFET parameter summary (300K–9mK), IDsat vs temperature (W/L=1μm/1μm, 300K–9mK), Parameter ratio trends (SS, μeff, Vth, RSD vs T/Troom), Effective mobility extraction (n-MOSFETs, 300K–4K) for Circuit Simulation & Solver Acceleration tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for Circuit Simulation & Solver Acceleration; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "temperature",
+            "coverage"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "physics-aware-neural-compact-model-for-finfet-dtco",
+          "short_name": "Physics-Aware Neural Compact Model for FinFET DT",
+          "display_name": "A Physics-Aware Deep Learning Framework for Closed-Loop FinFET DTCO",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "A Physics-Aware Deep Learning Framework for Closed-Loop FinFET DTCO",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{geng2026a,\n  title={A Physics-Aware Deep Learning Framework for Closed-Loop FinFET DTCO},\n  author={Hanshuo Geng and Guangxin Guo and Yifan Tai and Yuqing Han and Hailong You},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Physics-Aware Neural Compact Model for FinFET DTCO with Traditional TCAD + parameter extraction DTCO flow, NSGA-II multi-objective optimization for Circuit Simulation & Solver Acceleration tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Circuit Simulation & Solver Acceleration; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "power",
+            "SNM"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "physics-based-ots-compact-model-with-lk-equation",
+          "short_name": "Physics-based OTS compact model with LK equation",
+          "display_name": "A Physics-Based OTS Compact Model with Force-Driven Adaptive Damping and Differentiable Hysteresis",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "A Physics-Based OTS Compact Model with Force-Driven Adaptive Damping and Differentiable Hysteresis",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{li2026a,\n  title={A Physics-Based OTS Compact Model with Force-Driven Adaptive Damping and Differentiable Hysteresis},\n  author={Yukun Li and Jiajun Qiu and Sannian Song and Lining Zhang},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Physics-based OTS compact model with LK equation with GeAsSe OTS-1 (50% As2Se3), GeAsSe OTS-2 (40% As2Se3), GeAsSe OTS-3 (22% As2Se3) for Circuit Simulation & Solver Acceleration tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Circuit Simulation & Solver Acceleration; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "pinn-2dfet",
+          "short_name": "PINN-2DFET",
+          "display_name": "PINN-2DFET: A Physics-Informed Neural Network for Compact Modeling of 2D FETs",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "PINN-2DFET: A Physics-Informed Neural Network for Compact Modeling of 2D FETs",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{zhang2026pinn,\n  title={PINN-2DFET: A Physics-Informed Neural Network for Compact Modeling of 2D FETs},\n  author={Xu Zhang and Yu Geng and Mingyang Kou and Weiqing Ji and Zheng Zhang and Hailong Yao},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing PINN-2DFET with PIML, Pi-NN, PRNN for Circuit Simulation & Solver Acceleration tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for Circuit Simulation & Solver Acceleration; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "RMSE"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -7083,6 +8031,64 @@
       "description": "Methods and tools for proving or falsifying equivalence between combinational circuits, including SAT sweeping, datapath-oriented CEC, simulation-assisted CEC, and commercial CEC comparisons.",
       "baselines": [
         {
+          "baseline_id": "cirsat",
+          "short_name": "CirSAT",
+          "display_name": "Efficient SAT Sweeping via Direct Circuit-Based SAT Solving",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Efficient SAT Sweeping via Direct Circuit-Based SAT Solving",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{xu2026efficient,\n  title={Efficient SAT Sweeping via Direct Circuit-Based SAT Solving},\n  author={Junjie Xu and Zhang Hu and Yinshui Xia and Lunyao Wang and Zhufei Chu},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing CirSAT with MiniSat, Kissat, ABC &fraig for Combinational Equivalence Checking tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Combinational Equivalence Checking; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "runtime",
+            "speedup",
+            "SAT solving time"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "condec",
+          "short_name": "CondEC",
+          "display_name": "CondEC: Equivalence Checking under Conditions",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "CondEC: Equivalence Checking under Conditions",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{che2026condec,\n  title={CondEC: Equivalence Checking under Conditions},\n  author={Wenbin Che and Changyuan Yu and Hongce Zhang},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing CondEC with ABC &cec, Kissat, CaDiCaL for Combinational Equivalence Checking tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Combinational Equivalence Checking; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "pdp-cec",
           "short_name": "PDP-CEC",
           "display_name": "Parallel Dynamic Partitioning for Datapath Combinational Equivalence Checking",
@@ -7115,6 +8121,34 @@
           ]
         },
         {
+          "baseline_id": "phase-coordinated-sat-sweeping",
+          "short_name": "Phase-Coordinated SAT-Sweeping",
+          "display_name": "A Phase-Coordinated Optimization Framework for Accelerating SAT-Sweeping",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "A Phase-Coordinated Optimization Framework for Accelerating SAT-Sweeping",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{wang2026a,\n  title={A Phase-Coordinated Optimization Framework for Accelerating SAT-Sweeping},\n  author={Haihang Wang and Yue Wu and Xiaoyan Yang},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Phase-Coordinated SAT-Sweeping with &fraig -x for Combinational Equivalence Checking tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Combinational Equivalence Checking; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "simulation-based-parallel-sweeping",
           "short_name": "Parallel Sweeping CEC",
           "display_name": "Simulation-based Parallel Sweeping: A New Perspective on Combinational Equivalence Checking",
@@ -7143,6 +8177,34 @@
             "Formalized from DAC 2025 compact proceedings packet and Claude review; DOI and publisher-export BibTeX were not verified in this pass.",
             "Use as coverage guidance for comparison setup, not as a universal SOTA ranking.",
             "Experiment-baseline candidates recorded in the packet review: ABC (SAT sweeping checker), Conformal (commercial checker)."
+          ]
+        },
+        {
+          "baseline_id": "stp-based-cec-for-ternary-logic",
+          "short_name": "STP-based CEC for ternary logic",
+          "display_name": "STP-Based Combinational Equivalence Checking for Ternary Logic Synthesis",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "STP-Based Combinational Equivalence Checking for Ternary Logic Synthesis",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{wang2026stp,\n  title={STP-Based Combinational Equivalence Checking for Ternary Logic Synthesis},\n  author={Yanzhen Wang and Zhang Hu and Jingning Yu and Chengyu Ma and Yinshui Xia and Lunyao Wang and Zhufei Chu},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing STP-based CEC for ternary logic with Exhaustive ternary enumeration for Combinational Equivalence Checking tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Combinational Equivalence Checking; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         }
       ]
@@ -7734,6 +8796,34 @@
             "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
             "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
             "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
+          ]
+        },
+        {
+          "baseline_id": "ilsdp",
+          "short_name": "ILSDP",
+          "display_name": "ILSDP: An Iterated Local Search Algorithm for Routing-Aware FPGA Detailed Placement",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "ILSDP: An Iterated Local Search Algorithm for Routing-Aware FPGA Detailed Placement",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{luo2026ilsdp,\n  title={ILSDP: An Iterated Local Search Algorithm for Routing-Aware FPGA Detailed Placement},\n  author={Canhui Luo and Zhouxing Su and Zhipeng Lü},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing ILSDP with CAPlace, SA for Detailed Placement tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Detailed Placement; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "wirelength"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -9146,6 +10236,35 @@
       "aliases": [],
       "baselines": [
         {
+          "baseline_id": "accunit",
+          "short_name": "AccUnit",
+          "display_name": "AccUnit: Accelerating Unit Level Verification for RISC-V Processors Using FPGA",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "AccUnit: Accelerating Unit Level Verification for RISC-V Processors Using FPGA",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{zhu2026accunit,\n  title={AccUnit: Accelerating Unit Level Verification for RISC-V Processors Using FPGA},\n  author={Chenang Zhu and Weidong Li and Weijie Weng and Yungang Bao and Kan Shi},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing AccUnit with Software simulation (unit-level) for Formal and Functional Verification tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Formal and Functional Verification; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup",
+            "coverage"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "assertsolver",
           "short_name": "AssertSolver",
           "display_name": "Insights from Rights and Wrongs: A Large Language Model for Solving Assertion Failures in RTL Design",
@@ -9174,6 +10293,63 @@
             "Formalized from DAC 2025 compact proceedings packet and Claude review; DOI and publisher-export BibTeX were not verified in this pass.",
             "Use as coverage guidance for comparison setup, not as a universal SOTA ranking.",
             "Experiment-baseline candidates recorded in the packet review: Deepseek-Coder-6.7b, o1-preview, SFT Model."
+          ]
+        },
+        {
+          "baseline_id": "autopdr",
+          "short_name": "AutoPDR",
+          "display_name": "AutoPDR: Circuit-Aware Solver Configuration Prediction for Hardware Model Checking",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "AutoPDR: Circuit-Aware Solver Configuration Prediction for Hardware Model Checking",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{hu2026autopdr,\n  title={AutoPDR: Circuit-Aware Solver Configuration Prediction for Hardware Model Checking},\n  author={Guangyu Hu and Chen Chen and Xiaofeng Zhou and Jiaxi Zhang and Wei Zhang and Hongce Zhang},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing AutoPDR with default PDR configuration (ABC pdr command), GraphSAGE vs other GNN encoders for Formal and Functional Verification tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for Formal and Functional Verification; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "bottom-up-two-level-compilation-framework",
+          "short_name": "Bottom-Up Two-Level Compilation Framework",
+          "display_name": "A Bottom-Up Two-Level Compilation Optimization Framework for RTL Simulation Acceleration",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "A Bottom-Up Two-Level Compilation Optimization Framework for RTL Simulation Acceleration",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{zheng2026a,\n  title={A Bottom-Up Two-Level Compilation Optimization Framework for RTL Simulation Acceleration},\n  author={Jiepeng Zheng and Minghua Shen},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Bottom-Up Two-Level Compilation Framework with GalaxSim iterative baseline, Verilator for Formal and Functional Verification tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Formal and Functional Verification; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "runtime",
+            "EPE"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -9591,6 +10767,35 @@
           ]
         },
         {
+          "baseline_id": "orion",
+          "short_name": "Orion",
+          "display_name": "Orion: Automated Verification of Randomized Dynamic Schedules for Dataflow HLS",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Orion: Automated Verification of Randomized Dynamic Schedules for Dataflow HLS",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{wang2026orion,\n  title={Orion: Automated Verification of Randomized Dynamic Schedules for Dataflow HLS},\n  author={Lianghui Wang and Zijian Jiang and Ziqing Zhang and Weijie Weng and Yungang Bao and Kan Shi},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Orion with PEDIA (cycle-based stalling units) for Formal and Functional Verification tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Formal and Functional Verification; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup",
+            "coverage"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "property-driven-parallel-ltl-smc",
           "short_name": "Parallel LTL SMC",
           "display_name": "Property-driven Parallel Symbolic Model Checking of LTL",
@@ -9624,6 +10829,34 @@
           ]
         },
         {
+          "baseline_id": "rdm-sqed",
+          "short_name": "RDM-SQED",
+          "display_name": "Reducing SQED Duplicate Mode via Processor-Level Abstraction",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Reducing SQED Duplicate Mode via Processor-Level Abstraction",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{li2026reducing,\n  title={Reducing SQED Duplicate Mode via Processor-Level Abstraction},\n  author={Yufeng Li and Linze Li and Qiusong Yang and Yiwei Ci and Enyuan Tian and Xuying Zhao and Yungang Bao and Kan Shi},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing RDM-SQED with SQED (original), EDDI-V, Other SQED variants [7]-[9] for Formal and Functional Verification tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Formal and Functional Verification; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "recurrent-circuitsat-sampling",
           "short_name": "Recurrent CircuitSAT",
           "display_name": "Recurrent CircuitSAT Sampling for Sequential Circuits",
@@ -9654,6 +10887,35 @@
           "caveats": [
             "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
             "Artifact availability and exact reproduction scripts were not verified in this merge pass."
+          ]
+        },
+        {
+          "baseline_id": "symbolic-method-bdd-based-cs-ps-symbolic-algorithms",
+          "short_name": "Symbolic Method (BDD-based CS/PS Symbolic Algori",
+          "display_name": "Symbolic Method for Static CDC Checking",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Symbolic Method for Static CDC Checking",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{he2026symbolic,\n  title={Symbolic Method for Static CDC Checking},\n  author={Qin He and Ziqi Liu and Yingmeng Li},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Symbolic Method (BDD-based CS/PS Symbolic Algorithms) with Industrial Tool A for Formal and Functional Verification tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for Formal and Functional Verification; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "runtime",
+            "accuracy"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -11364,6 +12626,36 @@
       "aliases": [],
       "baselines": [
         {
+          "baseline_id": "kan-char",
+          "short_name": "KAN-CHAR",
+          "display_name": "KAN-CHAR: Efficient Cell Library Characterization for DTCO via Kolmogorov-Arnold Graph Learning",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "KAN-CHAR: Efficient Cell Library Characterization for DTCO via Kolmogorov-Arnold Graph Learning",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{xu2026kan,\n  title={KAN-CHAR: Efficient Cell Library Characterization for DTCO via Kolmogorov-Arnold Graph Learning},\n  author={Shubo Xu and Zeyuan Deng and Zhi Li and Peng Cao},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing KAN-CHAR with Traditional SPICE characterization, H-GAT (prior GNN method) for Standard Cell Library Characterization tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Standard Cell Library Characterization; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "runtime",
+            "delay",
+            "MAE"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "selective-regression-timing-characterization",
           "short_name": "Selective Regression Timing Characterization",
           "display_name": "Fast Timing Library Characterization Through Selective Use of Regression Models",
@@ -11487,6 +12779,35 @@
           ]
         },
         {
+          "baseline_id": "boundary-only-layout-encoding",
+          "short_name": "boundary-only-layout-encoding",
+          "display_name": "Boundary-Only Layout Encoding for Lithography Hotspot Detection",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Boundary-Only Layout Encoding for Lithography Hotspot Detection",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{zhang2026boundary,\n  title={Boundary-Only Layout Encoding for Lithography Hotspot Detection},\n  author={Yufeng Zhang and Zhili Xu and Yuqian Zang and Jiale Li and Silin Chen and Zhaoyang Wang and Chihwei Chiang and Ningmu Zou},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing boundary-only-layout-encoding with TCAD'19, DAC'19, ICCAD'20, DATE'22, ISEDA'25 for Lithography Hotspot Detection tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for Lithography Hotspot Detection; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "runtime",
+            "accuracy"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "cli-hd",
           "short_name": "CLI-HD",
           "display_name": "Delving into Topology Representation for Layout Pattern: A Novel Contrastive Learning Framework for Hotspot Detection",
@@ -11517,6 +12838,63 @@
             "Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.",
             "Use as coverage guidance for comparison setup, not as a universal SOTA ranking.",
             "Experiment-baseline candidates found in exact paper pages: ResNet50, MobileNetV2, ViT-16, Swin-Transformer Tiny, TCAD 2020 hotspot detector, TODAES 2022 hotspot detector, DATE 2023 hotspot detector, GLSVLSI 2024 hotspot detector."
+          ]
+        },
+        {
+          "baseline_id": "drcllm",
+          "short_name": "DRCLLM",
+          "display_name": "Lithography Test Layout Generation Using DRC-Constrained Large Language Models",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Lithography Test Layout Generation Using DRC-Constrained Large Language Models",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{sun2026lithography,\n  title={Lithography Test Layout Generation Using DRC-Constrained Large Language Models},\n  author={Jinheng Sun and Tianshuai Qi and Haoxin Zuo and Yingying Shang and Qingchen Cao and Zhenjie Yao and Jiangliu Shi},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing DRCLLM with Vanilla LLM (no DRC constraint), 4 LLM backbones for Lithography Hotspot Detection tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Lithography Hotspot Detection; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "edge-vector-skip-matching-evsm",
+          "short_name": "Edge-Vector Skip-Matching (EVSM)",
+          "display_name": "Layout Pattern Matching Using Edge-Vector Sparse Sequences and Dual-Anchor Probing",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Layout Pattern Matching Using Edge-Vector Sparse Sequences and Dual-Anchor Probing",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{liu2026layout,\n  title={Layout Pattern Matching Using Edge-Vector Sparse Sequences and Dual-Anchor Probing},\n  author={Shuo Liu and Chunrun Su and Jiaju Li and Chao Wang},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Edge-Vector Skip-Matching (EVSM) with SOTA academic approaches, Calibre for Lithography Hotspot Detection tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Lithography Hotspot Detection; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup",
+            "accuracy"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -11622,6 +13000,34 @@
             "industrial non-Manhattan datasets and Calibre labeling details may affect reproducibility outside the released artifact",
             "the paper title does not give a concise method acronym; baseline_id uses a descriptive method name and the paper-stated GitHub artifact is linked"
           ]
+        },
+        {
+          "baseline_id": "point-jr",
+          "short_name": "Point-JR",
+          "display_name": "Discriminative Joint Representation Learning via High-Fidelity Point Clouds for Pattern Clustering",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Discriminative Joint Representation Learning via High-Fidelity Point Clouds for Pattern Clustering",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{wei2026discriminative,\n  title={Discriminative Joint Representation Learning via High-Fidelity Point Clouds for Pattern Clustering},\n  author={Longyue Wei and Changzhe Jiao and Rongfang Wang},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Point-JR with DCT, HOT, eLPA-DCE, Loc-GNN for Lithography Hotspot Detection tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for Lithography Hotspot Detection; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
         }
       ]
     },
@@ -11710,6 +13116,35 @@
             "Formalized from DAC 2025 review-seed packet and local proceedings evidence; DOI and publisher-export BibTeX were not verified in this pass.",
             "Use as coverage guidance for comparison setup, not as a universal SOTA ranking.",
             "Accepted from the lower-confidence review-seed pool only because title/authors, topic fit, and named experiment baselines passed Codex gate."
+          ]
+        },
+        {
+          "baseline_id": "tc-fno",
+          "short_name": "TC-FNO",
+          "display_name": "TC-FNO: Fourier Neural Operator with Learnable Time-Step Embedding for 3D Lithography Exposure Simulation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "TC-FNO: Fourier Neural Operator with Learnable Time-Step Embedding for 3D Lithography Exposure Simulation",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{zang2026tc,\n  title={TC-FNO: Fourier Neural Operator with Learnable Time-Step Embedding for 3D Lithography Exposure Simulation},\n  author={Yuqian Zang and Yiqing Wang and Silin Chen and Jiale Li and Zhili Xu and Yufeng Zhang and Hao Zhang and Chia-Yen Li and Ningmu Zou},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing TC-FNO with DeepCNN, CGAN, FNO for Lithography Simulation tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for Lithography Simulation; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "runtime",
+            "RMSE"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         }
       ]
@@ -12034,6 +13469,34 @@
       "description": "LLM-based agents, copilots, benchmarks, and evaluation frameworks that automate or assess EDA tool use, documentation question answering, scripting, debugging, or workflow assistance.",
       "baselines": [
         {
+          "baseline_id": "causally-grounded-generation-cgg",
+          "short_name": "Causally-Grounded Generation (CGG)",
+          "display_name": "Causally-Grounded Generation: LLM-Based Analog Circuit Synthesis via Causal Hierarchy",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Causally-Grounded Generation: LLM-Based Analog Circuit Synthesis via Causal Hierarchy",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{mai2026causally,\n  title={Causally-Grounded Generation: LLM-Based Analog Circuit Synthesis via Causal Hierarchy},\n  author={Wenjin Mai and Xuan Zeng and Zhaori Bi},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Causally-Grounded Generation (CGG) with Pure LLM generation (no simulator grounding) for LLM for EDA Automation tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for LLM for EDA Automation; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "context-enhanced-spec-generation",
           "short_name": "Context-Enhanced Spec Generation",
           "display_name": "Context-Enhanced Spec Generation: Context-Enhanced Architectural Specification Generation for SoC Designs",
@@ -12125,6 +13588,63 @@
             "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
             "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
             "Draft audit recorded experiment comparison candidates including: Similarity-based RAG, GraphRAG."
+          ]
+        },
+        {
+          "baseline_id": "ic-select",
+          "short_name": "IC-SELECT",
+          "display_name": "IC-SELECT: Agentic RAG-Based Component Selection for System-Level Analog IC Design",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "IC-SELECT: Agentic RAG-Based Component Selection for System-Level Analog IC Design",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{zhang2026ic,\n  title={IC-SELECT: Agentic RAG-Based Component Selection for System-Level Analog IC Design},\n  author={Yubo Zhang and Bijian Lan and Qing Peng and Jing Wan},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing IC-SELECT with Naive RAG, RAG without categorized vector database for LLM for EDA Automation tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for LLM for EDA Automation; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "accuracy"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "llm-alsagent",
+          "short_name": "LLM-AlsAgent",
+          "display_name": "LLM-AlsAgent: A Text-Editing Proximal Policy Optimization Framework for Approximate Logic Synthesis",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "LLM-AlsAgent: A Text-Editing Proximal Policy Optimization Framework for Approximate Logic Synthesis",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{liao2026llm,\n  title={LLM-AlsAgent: A Text-Editing Proximal Policy Optimization Framework for Approximate Logic Synthesis},\n  author={Kuo Liao and Weichuan Zuo and Jienan Chen},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing LLM-AlsAgent with SALSA, SEALS, SASIMI, Q-ALS, DeepPowerX for LLM for EDA Automation tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for LLM for EDA Automation; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "power",
+            "area"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -12298,6 +13818,62 @@
           ]
         },
         {
+          "baseline_id": "prompt-set",
+          "short_name": "Prompt-Set",
+          "display_name": "Prompt-Set: Bridging the Semantic and Optimization Gaps in LLM-Assisted HLS via Deep Structural Refactoring and System-Level Closure",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Prompt-Set: Bridging the Semantic and Optimization Gaps in LLM-Assisted HLS via Deep Structural Refactoring and System-Level Closure",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{wu2026prompt,\n  title={Prompt-Set: Bridging the Semantic and Optimization Gaps in LLM-Assisted HLS via Deep Structural Refactoring and System-Level Closure},\n  author={HongPeng Wu and JunJie Fan and MingJun Cai and Bin Huang},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Prompt-Set with CorrectHDL, SAGE-HLS, HLSPilot, Vivado HLS (baseline) for LLM for EDA Automation tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for LLM for EDA Automation; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "refevo",
+          "short_name": "RefEvo",
+          "display_name": "RefEvo: Agentic Design with Co-Evolutionary Verification for Agile Reference Model Generation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "RefEvo: Agentic Design with Co-Evolutionary Verification for Agile Reference Model Generation",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{zhang2026refevo,\n  title={RefEvo: Agentic Design with Co-Evolutionary Verification for Agile Reference Model Generation},\n  author={Yifan Zhang and Jianmin Ye and Jiahao Yang and Xi Wang},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing RefEvo with Naive, Flow Only for LLM for EDA Automation tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for LLM for EDA Automation; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "rtlexplain",
           "short_name": "RTLExplain",
           "display_name": "RTLExplain: A Structured Approach to RTL Code Summarization and Question Answering for Medium-to-Large Designs Using LLMs",
@@ -12329,6 +13905,34 @@
             "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
             "Artifact availability and exact reproduction scripts were not verified in this merge pass.",
             "Draft audit recorded experiment comparison candidates including: Naive prompting, Granite-Code-34b, CodeLlama34b, Deepseek-33b, Mixtral-8x7b."
+          ]
+        },
+        {
+          "baseline_id": "specmind",
+          "short_name": "SpecMind",
+          "display_name": "SpecMind: Automated Analog-to-Digital Converter (ADC) Diagnosis with Agentic Reasoning",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "SpecMind: Automated Analog-to-Digital Converter (ADC) Diagnosis with Agentic Reasoning",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{zhang2026specmind,\n  title={SpecMind: Automated Analog-to-Digital Converter (ADC) Diagnosis with Agentic Reasoning},\n  author={Zhishuai Zhang and Kezhuo Liu and Aodong Zhang and Shilong Liu and Yi Zhong and Nan Sun and Lu Jie},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing SpecMind with Baseline VLMs for LLM for EDA Automation tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for LLM for EDA Automation; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "accuracy"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -12411,6 +14015,36 @@
             "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
             "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
             "Draft audit recorded experiment comparison candidates including: OriGen, RTLCoder."
+          ]
+        },
+        {
+          "baseline_id": "circuitmind",
+          "short_name": "CircuitMind",
+          "display_name": "CircuitMind: Achieving Human-Level Circuit Efficiency via Multi-Agent Collaboration and Gate-Aware Benchmarking",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "CircuitMind: Achieving Human-Level Circuit Efficiency via Multi-Agent Collaboration and Gate-Aware Benchmarking",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{qin2026circuitmind,\n  title={CircuitMind: Achieving Human-Level Circuit Efficiency via Multi-Agent Collaboration and Gate-Aware Benchmarking},\n  author={Haiyan Qin and Jiahao Feng and Xiaotong Feng and Wang Kang},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing CircuitMind with GPT-4o-mini (28.6% on sequential tasks), DS-V3 (26.3%), QW:7B (SEI=0.010), CM(QW:7B) (SEI=0.105), Human expert designers (top-tier) for LLM-Assisted RTL Generation tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for LLM-Assisted RTL Generation; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "delay",
+            "power",
+            "area"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -12542,6 +14176,34 @@
           "caveats": [
             "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
             "Artifact availability and exact reproduction scripts were not verified in this merge pass."
+          ]
+        },
+        {
+          "baseline_id": "lego",
+          "short_name": "LEGO",
+          "display_name": "LEGO: An LLM Skill-Based Front-End Design Generation Platform",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "LEGO: An LLM Skill-Based Front-End Design Generation Platform",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{lou2026lego,\n  title={LEGO: An LLM Skill-Based Front-End Design Generation Platform},\n  author={Jincheng Lou and Ruohan Xu and Jiecheng Ma and Runzhe Tao and Xinyu Qu and Yibo Lin},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing LEGO with gpt-5.2-codex (baseline), hierarchy-verilog, VerilogCoder, MAGE for LLM-Assisted RTL Generation tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for LLM-Assisted RTL Generation; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -12783,6 +14445,34 @@
             "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
             "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
             "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
+          ]
+        },
+        {
+          "baseline_id": "rtlpilot",
+          "short_name": "RTLPilot",
+          "display_name": "RTLPilot: Skill-Driven Multi-Agent System for RTL Code Migration",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "RTLPilot: Skill-Driven Multi-Agent System for RTL Code Migration",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{tan2026rtlpilot,\n  title={RTLPilot: Skill-Driven Multi-Agent System for RTL Code Migration},\n  author={Xiao Tan and Chenyue Li and Sunan Zou and Wei Yan and Guojie Luo},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing RTLPilot with MAGE, Naive Agent, Vanilla LLM for LLM-Assisted RTL Generation tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for LLM-Assisted RTL Generation; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -13149,6 +14839,63 @@
           ]
         },
         {
+          "baseline_id": "esplace",
+          "short_name": "ESPlace",
+          "display_name": "ESPlace: Fast Macro Placement Using Evolution Strategy with Partial Evaluation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "ESPlace: Fast Macro Placement Using Evolution Strategy with Partial Evaluation",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{ma2026esplace,\n  title={ESPlace: Fast Macro Placement Using Evolution Strategy with Partial Evaluation},\n  author={Limei Ma and Handing Wang and Hongzhong Wu},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing ESPlace with EfficientPlace, MaskPlace, MaskRegulate, GraphPlace, DeepPR for Macro Placement tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Macro Placement; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "ffx-morl",
+          "short_name": "FFX-MORL",
+          "display_name": "Fast, Feasible Chiplet Placements via Warm-Start Multi-Objective Reinforcement Learning",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Fast, Feasible Chiplet Placements via Warm-Start Multi-Objective Reinforcement Learning",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{ata2026fast,\n  title={Fast, Feasible Chiplet Placements via Warm-Start Multi-Objective Reinforcement Learning},\n  author={Sezin Kircali Ata and Yubo Hou and Mihai Dragos Rotaru and Rahul Dutta and Ashish James},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing FFX-MORL with RLPLANNER for Macro Placement tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Macro Placement; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "wirelength",
+            "temperature"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "grandplan",
           "short_name": "GrandPlan",
           "display_name": "GrandPlan: Differentiable, Simultaneous Top-Level Floorplanning and Partition-Level Cell Placement for Large-Scale IP-Cores",
@@ -13181,6 +14928,34 @@
             "Recent ISPD 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
             "DOI was read from local proceedings text; BibTeX is minimally formatted pending publisher-export spot check.",
             "Draft audit recorded experiment comparison candidates including: Human-expert-crafted floorplans."
+          ]
+        },
+        {
+          "baseline_id": "mcts-bo-macro-placement",
+          "short_name": "MCTS-BO macro placement",
+          "display_name": "Macro Placement Algorithm Based on Monte Carlo Tree Search and Bayesian Optimization",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Macro Placement Algorithm Based on Monte Carlo Tree Search and Bayesian Optimization",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{yu2026macro,\n  title={Macro Placement Algorithm Based on Monte Carlo Tree Search and Bayesian Optimization},\n  author={Huicheng Yu and Yue Wu and Xiaoyan Yang},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing MCTS-BO macro placement with EfficientPlace, WireMask-BBO, conventional BO, MCTS, RL-based methods for Macro Placement tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Macro Placement; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -13274,6 +15049,34 @@
             "Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.",
             "Use as coverage guidance for comparison setup, not as a universal SOTA ranking.",
             "Experiment-baseline candidates found in exact paper pages: RTL-MP, Hier-RTLMP, DREAMPlace 4.1.0."
+          ]
+        },
+        {
+          "baseline_id": "rl-based-3d-floorplanner-with-die-swapping",
+          "short_name": "RL-based 3D Floorplanner with Die Swapping",
+          "display_name": "Reinforcement Learning-based 3D Floorplanner with Die Swapping Mechanism",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Reinforcement Learning-based 3D Floorplanner with Die Swapping Mechanism",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{luo2026reinforcement,\n  title={Reinforcement Learning-based 3D Floorplanner with Die Swapping Mechanism},\n  author={Qin Luo and Hailiang Li and Evangeline F.Y. Young},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing RL-based 3D Floorplanner with Die Swapping with PaOR, FlexPlacer for Macro Placement tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Macro Placement; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "wirelength"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -13742,6 +15545,34 @@
             "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
             "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
             "Draft audit did not extract conventional experiment-baseline comparisons; keep this entry as method/tool/survey coverage until manually expanded."
+          ]
+        },
+        {
+          "baseline_id": "repart",
+          "short_name": "RePart",
+          "display_name": "RePart: Efficient Hypergraph Partitioning with Logic Replication Optimization for Multi-FPGA System",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "RePart: Efficient Hypergraph Partitioning with Logic Replication Optimization for Multi-FPGA System",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{fu2026repart,\n  title={RePart: Efficient Hypergraph Partitioning with Logic Replication Optimization for Multi-FPGA System},\n  author={Zizhuo Fu and Yifan Zhou and Zhaoxin Lu and Guangyu Sun and Runsheng Wang and Meng Li and Yibo Lin},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing RePart with SOTA hypergraph partitioners, EDA Elite Challenge winners, RePart (ablation variants) for Multi-FPGA System Partitioning and Routing tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Multi-FPGA System Partitioning and Routing; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -14439,6 +16270,36 @@
           ]
         },
         {
+          "baseline_id": "g-resnet-ipq",
+          "short_name": "G-ResNet-IPQ",
+          "display_name": "Finding the Physics-Aware Winning Ticket: A Hardware-Efficient Capacitance Extraction Framework via Feature Derivation, Pruning and Quantization",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Finding the Physics-Aware Winning Ticket: A Hardware-Efficient Capacitance Extraction Framework via Feature Derivation, Pruning and Quantization",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{zhang2026finding,\n  title={Finding the Physics-Aware Winning Ticket: A Hardware-Efficient Capacitance Extraction Framework via Feature Derivation, Pruning and Quantization},\n  author={Jian Zhang and Boyang Yan and Zifei Cai and Xiangshui Miao and Xingsheng Wang},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing G-ResNet-IPQ with ResNet34, ResNet18, ConvNext-atto, MobileNetV2, MobileNetV3 for Parasitic Extraction tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for Parasitic Extraction; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup",
+            "energy",
+            "capacitance"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "ml-capacitance-extraction",
           "short_name": "ML Capacitance Extraction",
           "display_name": "Capacitance Extraction via Machine Learning with Application to Interconnect Geometry Exploration",
@@ -14651,6 +16512,37 @@
             "paper references public PCB-PR-App, PcbRouter, SA-PCB, Freerouting, and DeepPCB baselines, but no PCB-Migrator implementation repository was verified in this pass",
             "proposed topic is board-level PCB physical design; human taxonomy review should not fold it into IC global-placement solely because it includes placement"
           ]
+        },
+        {
+          "baseline_id": "pr-gpt",
+          "short_name": "PR-GPT",
+          "display_name": "Unified Sequence Modeling for Joint PCB Placement and Routing via Causal Transformers",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Unified Sequence Modeling for Joint PCB Placement and Routing via Causal Transformers",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{wang2026unified,\n  title={Unified Sequence Modeling for Joint PCB Placement and Routing via Causal Transformers},\n  author={Hao Wang and Jienan Chen and Meiqi Li and Silu Xiong and Xiantuo He},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing PR-GPT with FreeRouting, RL-Router, Cypress+A*, GNN-Place+A*, Altium Designer 23.0 for PCB Physical Design tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for PCB Physical Design; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup",
+            "wirelength",
+            "congestion",
+            "DRC"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
         }
       ]
     },
@@ -14836,6 +16728,34 @@
           ]
         },
         {
+          "baseline_id": "elite",
+          "short_name": "ELITE",
+          "display_name": "ELITE: Efficient Lookup Table Assisted Routing Engine for Photonic Integrated Circuits",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "ELITE: Efficient Lookup Table Assisted Routing Engine for Photonic Integrated Circuits",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{yu2026elite,\n  title={ELITE: Efficient Lookup Table Assisted Routing Engine for Photonic Integrated Circuits},\n  author={Xiaofei Yu and Yuchao Wu and Haopeng Yan and Yeyu Tong and Yuzhe Ma},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing ELITE with Manual design, BSG-route [13], ILP [11] for Photonic IC Routing tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for Photonic IC Routing; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "lidar-3-0",
           "short_name": "LiDAR 3.0",
           "display_name": "LiDAR 3.0: Photonics-Aware Planning-Guided Automated Electrical Routing for Large-Scale Active Photonic Integrated Circuits",
@@ -14989,6 +16909,34 @@
       "aliases": [],
       "baselines": [
         {
+          "baseline_id": "axon",
+          "short_name": "AXON",
+          "display_name": "AXON: An Automated Netlist Optimization Framework for High-Speed Adders",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "AXON: An Automated Netlist Optimization Framework for High-Speed Adders",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{yang2026axon,\n  title={AXON: An Automated Netlist Optimization Framework for High-Speed Adders},\n  author={Tiantian Yang and Xuanle Ren and Qingdian Wan and Qi Meng},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing AXON with Commercial synthesis tool (Design Compiler) for Timing-Driven Physical Optimization tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Timing-Driven Physical Optimization; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "delay"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "bigx",
           "short_name": "BIGX",
           "display_name": "BIGX: GPU Acceleration for Versatile Buffer Insertion",
@@ -15092,6 +17040,34 @@
           ]
         },
         {
+          "baseline_id": "differentiable-tier-partitioning-with-hypergraph-extension",
+          "short_name": "Differentiable Tier Partitioning with Hypergraph",
+          "display_name": "Differentiable Timing-Aware Tier Partitioning with Hypergraph Extension for Heterogeneous 3D ICs",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Differentiable Timing-Aware Tier Partitioning with Hypergraph Extension for Heterogeneous 3D ICs",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{qian2026differentiable,\n  title={Differentiable Timing-Aware Tier Partitioning with Hypergraph Extension for Heterogeneous 3D ICs},\n  author={Xilin Qian and Han Zhang and Peng Cao},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Differentiable Tier Partitioning with Hypergraph Extension with Pin-3D default bin-based partitioning, FM-based partitioning for Timing-Driven Physical Optimization tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Timing-Driven Physical Optimization; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "TNS"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "dph-sizer",
           "short_name": "Dph Sizer",
           "display_name": "A Heterogeneous Graph-based Gate Sizer Integrating Graph Attention Network and Transformer",
@@ -15149,6 +17125,36 @@
             "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
             "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
             "Draft audit recorded experiment comparison candidates including: single worst-case corner baseline."
+          ]
+        },
+        {
+          "baseline_id": "gradient-guided-hierarchical-lagrangian-optimization",
+          "short_name": "Gradient-Guided Hierarchical Lagrangian Optimiza",
+          "display_name": "Gradient-Guided Hierarchical Lagrangian Optimization for Timing ECO",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Gradient-Guided Hierarchical Lagrangian Optimization for Timing ECO",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{zhang2026gradient,\n  title={Gradient-Guided Hierarchical Lagrangian Optimization for Timing ECO},\n  author={Yanfang Zhang and Jiajie Xu and Hao Yan},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Gradient-Guided Hierarchical Lagrangian Optimization with [9] imitation learning with HGNNs for Timing-Driven Physical Optimization tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Timing-Driven Physical Optimization; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "TNS",
+            "power",
+            "area"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -15544,6 +17550,96 @@
             "proposed power-analysis topic should be reconciled with existing circuit-verification power-estimation drafts such as VIRTUAL before Workflow C",
             "no public code repository was verified in this pass"
           ]
+        },
+        {
+          "baseline_id": "heteropower",
+          "short_name": "HeteroPower",
+          "display_name": "HeteroPower: A CPU-GPU Heterogeneous Engine to Accelerate Gate-Level Power Analysis",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "HeteroPower: A CPU-GPU Heterogeneous Engine to Accelerate Gate-Level Power Analysis",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{shi2026heteropower,\n  title={HeteroPower: A CPU-GPU Heterogeneous Engine to Accelerate Gate-Level Power Analysis},\n  author={Xizhe Shi and Zizheng Guo and Zuodong Zhang and Yun Liang and Runsheng Wang and Yibo Lin},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing HeteroPower with PrimeTime PX, OpenSTA for Power Analysis and Estimation tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Power Analysis and Estimation; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "powercube",
+          "short_name": "PowerCube",
+          "display_name": "PowerCube: A Formula-in-the-Loop Framework for Cross-Stage Power Map Prediction",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "PowerCube: A Formula-in-the-Loop Framework for Cross-Stage Power Map Prediction",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{zhao2026powercube,\n  title={PowerCube: A Formula-in-the-Loop Framework for Cross-Stage Power Map Prediction},\n  author={Yuxiang Zhao and Jing Mai and Zishu Li and Haoyi Zhang and Jincheng Lou and Qing He and Runsheng Wang and Yibo Lin},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing PowerCube with PowPrediCT, ATLAS, Attention-based power approximation for Power Analysis and Estimation tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Power Analysis and Estimation; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "runtime",
+            "speedup",
+            "power",
+            "MAE"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "powersub",
+          "short_name": "PowerSub",
+          "display_name": "Highly Accurate Power Estimation in FPGA HLS via Adaptive and Enhanced Subgraph Learning",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Highly Accurate Power Estimation in FPGA HLS via Adaptive and Enhanced Subgraph Learning",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{liu2026highly,\n  title={Highly Accurate Power Estimation in FPGA HLS via Adaptive and Enhanced Subgraph Learning},\n  author={Yuchen Liu and Xiangfei Hu and Yuyang Ye and Tinghuan Chen and Zhe Lin and Hao Yan},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing PowerSub with PowerGear, GCN, GraphConv, Vivado for Power Analysis and Estimation tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Power Analysis and Estimation; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "runtime",
+            "speedup",
+            "power",
+            "accuracy"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
         }
       ]
     },
@@ -15747,6 +17843,63 @@
           ]
         },
         {
+          "baseline_id": "gnn-accelerated-mvf",
+          "short_name": "GNN-Accelerated MVF",
+          "display_name": "GNN-Accelerated Magnitude Vector Fitting Method for Rapid Pole Identification and Transient Simulation of 2.5D Power Delivery Networks",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "GNN-Accelerated Magnitude Vector Fitting Method for Rapid Pole Identification and Transient Simulation of 2.5D Power Delivery Networks",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{shen2026gnn,\n  title={GNN-Accelerated Magnitude Vector Fitting Method for Rapid Pole Identification and Transient Simulation of 2.5D Power Delivery Networks},\n  author={Jiacheng Shen and Yuanyuan Duan and Guangxi Fan and Lyu Lyu and Cheng Wang and Xiaolei Zhu and Leilai Shao},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing GNN-Accelerated MVF with Standard MVF (Magnitude Vector Fitting), Enhanced MVF, NGSPICE for Power Delivery Network Analysis tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Power Delivery Network Analysis; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "h2gat",
+          "short_name": "H2GAT",
+          "display_name": "Electromigration Stress Prediction for Power Delivery TSVs in 3D ICs Using Hierarchical Heterogeneous Graph Attention Networks",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Electromigration Stress Prediction for Power Delivery TSVs in 3D ICs Using Hierarchical Heterogeneous Graph Attention Networks",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{cui2026electromigration,\n  title={Electromigration Stress Prediction for Power Delivery TSVs in 3D ICs Using Hierarchical Heterogeneous Graph Attention Networks},\n  author={Shuo Cui and Yunfan Zuo and Yan Li and Hao Yan and Longxing Shi},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing H2GAT with COMSOL FEA, PostPINN-EM, BPINN-EM, Yang et al. (GAT for TSV current crowding) for Power Delivery Network Analysis tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Power Delivery Network Analysis; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup",
+            "power"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "ighf-ir-drop-prediction",
           "short_name": "IGHF",
           "display_name": "A Novel Image-Graph Heterogeneous Fusion Framework for Static IR Drop Prediction",
@@ -15849,6 +18002,35 @@
           ]
         },
         {
+          "baseline_id": "minivit",
+          "short_name": "MiniViT",
+          "display_name": "MiniViT: A Lightweight and Physics-Aware Vision Transformer for Efficient IR Drop Prediction in Multi-Layer PCBs",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "MiniViT: A Lightweight and Physics-Aware Vision Transformer for Efficient IR Drop Prediction in Multi-Layer PCBs",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{chen2026minivit,\n  title={MiniViT: A Lightweight and Physics-Aware Vision Transformer for Efficient IR Drop Prediction in Multi-Layer PCBs},\n  author={Rui Chen and Jienan Chen},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing MiniViT with U-Net, PDNNet for Power Delivery Network Analysis tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Power Delivery Network Analysis; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "power",
+            "IR drop"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "ml-early-ir-drop-mitigation",
           "short_name": "ML Early IR-Drop",
           "display_name": "ML-Driven Early IR-Drop Mitigation for Fast and Reliable IR-Drop Closure",
@@ -15915,6 +18097,34 @@
             "Formalized from DAC 2025 local proceedings pages and exact second-pass review; DOI and publisher-export BibTeX were not verified in this pass.",
             "Use as coverage guidance for comparison setup, not as a universal SOTA ranking.",
             "Experiment-baseline candidates found in exact paper pages: Conventional DDM parallel solver, CKTSO parallel solver, CHOLMOD-based serial direct solver."
+          ]
+        },
+        {
+          "baseline_id": "pdndataset-ern-vit",
+          "short_name": "PDNDataset + ERN-ViT",
+          "display_name": "PDNDataset: A Machine Learning-Based Dataset for Multi-Load Copper-Plane DC IR-Drop Analysis",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "PDNDataset: A Machine Learning-Based Dataset for Multi-Load Copper-Plane DC IR-Drop Analysis",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{ji2026pdndataset,\n  title={PDNDataset: A Machine Learning-Based Dataset for Multi-Load Copper-Plane DC IR-Drop Analysis},\n  author={Yuxi Ji and Yubin Song and Rui Chen and Jienan Chen},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing PDNDataset + ERN-ViT with Commercial FEM tool (PowerDC), MNA-Solver for Power Delivery Network Analysis tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Power Delivery Network Analysis; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -16722,6 +18932,34 @@
             "relies on commercial physical-design tool flow and generated routing blockage commands, which may limit reproducibility",
             "proposed topic placement is provisional because the work bridges placement/routability prediction and routing guidance; it should not be merged into global-placement without human taxonomy review"
           ]
+        },
+        {
+          "baseline_id": "gsgnn-gsegment-based-gnn-for-pre-routing-congestion-prediction",
+          "short_name": "GSGNN (GSegment-based GNN for pre-routing conges",
+          "display_name": "GSGNN: A novel GSegment-based Graph Neural Network for VLSI Pre-Routing Congestion Prediction",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "GSGNN: A novel GSegment-based Graph Neural Network for VLSI Pre-Routing Congestion Prediction",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{peng2026gsgnn,\n  title={GSGNN: A novel GSegment-based Graph Neural Network for VLSI Pre-Routing Congestion Prediction},\n  author={Xuan Peng and Yi Zou},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing GSGNN (GSegment-based GNN for pre-routing congestion prediction) with GraphSAGE, GNet U-Net, GNet LHNN, GSegment U-Net for Routability Prediction & Optimization tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for Routability Prediction & Optimization; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "F1"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
         }
       ]
     },
@@ -17273,6 +19511,94 @@
       "description": "Baseline coverage guidance for papers that make static timing analysis claims.",
       "baselines": [
         {
+          "baseline_id": "atc-hybrid-gnn-for-slm-aware-timing-analysis",
+          "short_name": "ATC + hybrid GNN for SLM-aware timing analysis",
+          "display_name": "Fast Timing Analysis Framework Considering Manufacturing and In-field Operation for Silicon Lifecycle Management",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Fast Timing Analysis Framework Considering Manufacturing and In-field Operation for Silicon Lifecycle Management",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{zhang2026fast,\n  title={Fast Timing Analysis Framework Considering Manufacturing and In-field Operation for Silicon Lifecycle Management},\n  author={Yewei Zhang and Huizhen Qiu and Feiyang Shu and Muyan Jin and Pengpeng Ren and Zhigang Ji},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing ATC + hybrid GNN for SLM-aware timing analysis with Direct-trained AN2 GNN (30,000 samples), Fine-tuned AO21 (300 samples), Fine-tuned DFF (300 samples) for Static Timing Analysis tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for Static Timing Analysis; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "delay",
+            "accuracy"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "elmoreceff",
+          "short_name": "ElmoreCeff",
+          "display_name": "ElmoreCeff: A GPU-Friendly Elmore-Like Delay Calculator with a Closed-Form Effective Capacitance Model",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "ElmoreCeff: A GPU-Friendly Elmore-Like Delay Calculator with a Closed-Form Effective Capacitance Model",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{liu2026elmoreceff,\n  title={ElmoreCeff: A GPU-Friendly Elmore-Like Delay Calculator with a Closed-Form Effective Capacitance Model},\n  author={Haichuan Liu and Zizheng Guo and Runsheng Wang and Yibo Lin},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing ElmoreCeff with Elmore, MOR (CPU), MOR (GPU) for Static Timing Analysis tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Static Timing Analysis; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup",
+            "WNS",
+            "TNS",
+            "delay"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "gtn-gp-fast-cell-library-characterization",
+          "short_name": "GTN+GP fast cell library characterization",
+          "display_name": "Fast Generation Strategies for cell library characterization in Advanced Technology Node",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Fast Generation Strategies for cell library characterization in Advanced Technology Node",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{lei2026fast,\n  title={Fast Generation Strategies for cell library characterization in Advanced Technology Node},\n  author={Zonghan Lei and Chaozheng Qin and Wenli Huang and Wenchao Liu and Bin Li and Zhaohui Wu},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing GTN+GP fast cell library characterization with SPECTRE Monte Carlo simulation for Static Timing Analysis tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Static Timing Analysis; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "runtime"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "insta",
           "short_name": "INSTA",
           "display_name": "INSTA: An Ultra-Fast, Differentiable, Statistical Static Timing Analysis Engine for Industrial Physical Design Applications",
@@ -17338,6 +19664,63 @@
             "Recent MLCAD 2025 proceedings entry; include it as a candidate comparison target rather than a universal SOTA ranking.",
             "Artifact availability and exact reproduction scripts were not verified in this merge pass."
           ]
+        },
+        {
+          "baseline_id": "sparse-gcs-timer",
+          "short_name": "Sparse-GCS Timer",
+          "display_name": "Sparse-GCS: A High-Performance GPU Timer for Composite Current Source Model-Based STA",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Sparse-GCS: A High-Performance GPU Timer for Composite Current Source Model-Based STA",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{li2026sparse,\n  title={Sparse-GCS: A High-Performance GPU Timer for Composite Current Source Model-Based STA},\n  author={Haoran Li and Yukun Wang and Hu Zhou and Guangyu Sun and Guojie Luo},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Sparse-GCS Timer with GCS-Timer for Static Timing Analysis tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Static Timing Analysis; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup",
+            "memory"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "specwave",
+          "short_name": "SpecWave",
+          "display_name": "SpecWave: Spectral-Enhanced Graph Learning for Crosstalk-Aware Waveform Prediction",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "SpecWave: Spectral-Enhanced Graph Learning for Crosstalk-Aware Waveform Prediction",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{mao2026specwave,\n  title={SpecWave: Spectral-Enhanced Graph Learning for Crosstalk-Aware Waveform Prediction},\n  author={Yanlong Mao and Jiajie Xu and Bowen Shi and Yaning Jia and Hao Yan},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing SpecWave with HSPICE, Commercial STA tool, GraphCAD, GTN-Path for Static Timing Analysis tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Static Timing Analysis; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
         }
       ]
     },
@@ -17397,6 +19780,34 @@
             "no public code repository was verified in this pass",
             "the topic deliberately avoids existing CMOS logic-synthesis because AQFP buffer/splitter insertion is superconducting-logic technology-specific EDA",
             "proposed topic should be reviewed against the existing provisional rsfq-design topic before Workflow C"
+          ]
+        },
+        {
+          "baseline_id": "timing-oriented-dff-and-splitter-refinement",
+          "short_name": "Timing-Oriented DFF and Splitter Refinement",
+          "display_name": "Timing-Oriented DFF and Splitter Refinement for RSFQ Circuits",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Timing-Oriented DFF and Splitter Refinement for RSFQ Circuits",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{hu2026timing,\n  title={Timing-Oriented DFF and Splitter Refinement for RSFQ Circuits},\n  author={Qiangqiang Hu and Zhang Hu and Yinshui Xia and Lunyao Wang and Zhufei Chu},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Timing-Oriented DFF and Splitter Refinement with PBMap, Minglei Zhou's DFF insertion algorithm for Superconducting Logic Design Automation tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Superconducting Logic Design Automation; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         }
       ]
@@ -17727,6 +20138,35 @@
             "Recent ASP-DAC 2026 proceedings entry; include it as coverage guidance rather than a universal SOTA ranking.",
             "BibTeX is minimally formatted from local proceedings PDF metadata; DOI/publisher-export BibTeX was not verified in this pass.",
             "Draft audit recorded experiment comparison candidates including: HyPFuzz, TheHuzz, Cascade, DifuzzRTL, DirectFuzz, FormalFuzzer, HFL, HyperFuzzing, ..."
+          ]
+        },
+        {
+          "baseline_id": "gnn-based-seu-sensitive-register-prediction-gat",
+          "short_name": "GNN-based SEU-sensitive register prediction (GAT",
+          "display_name": "Graph Neural Network-based Prediction of SEU-type Sensitive Registers in Gate-level VLSI Circuits",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Graph Neural Network-based Prediction of SEU-type Sensitive Registers in Gate-level VLSI Circuits",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{li2026graph,\n  title={Graph Neural Network-based Prediction of SEU-type Sensitive Registers in Gate-level VLSI Circuits},\n  author={Yiqing Li and Huixin Peng and Yan Liang and Fei Xiao and Huimeng Guo and Mingwei Mi and Liang Wang and Yuanfu Zhao},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing GNN-based SEU-sensitive register prediction (GAT) with GCN, GraphSAGE, SSIM-based fault injection for Hardware Testing and Fuzzing tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Hardware Testing and Fuzzing; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup",
+            "F1"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -18275,6 +20715,35 @@
           ]
         },
         {
+          "baseline_id": "ic-moe",
+          "short_name": "IC-MoE",
+          "display_name": "IC-MoE: Interface-Constrained MoE for Fast Thermal Evaluation in 3D ICs",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "IC-MoE: Interface-Constrained MoE for Fast Thermal Evaluation in 3D ICs",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{meng2026ic,\n  title={IC-MoE: Interface-Constrained MoE for Fast Thermal Evaluation in 3D ICs},\n  author={Xiangqiao Meng and Wenkai Yang and Siyuan Miao and Jinlong Yan and Rumin Zhang and Chen Wu and Lei He},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing IC-MoE with DeepOHeat, Commercial numerical solver (unnamed) for Thermal & Electro-Thermal Analysis tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Thermal & Electro-Thermal Analysis; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup",
+            "temperature"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "interposer-thermal-transformer",
           "short_name": "Interposer Thermal Transformer",
           "display_name": "Sensor Placement and Transformer-Based Thermal Map Generation for Reusable Interposers",
@@ -18444,6 +20913,35 @@
             "Author metadata not confirmed; paper identified via IEEE Xplore DOI only",
             "Diffeomorphic mapping approach may have limitations for extreme geometry variations",
             "Neural-guided variance reduction requires training data from target process"
+          ]
+        },
+        {
+          "baseline_id": "osf",
+          "short_name": "OSF",
+          "display_name": "OSF: An Operator-Splitting Framework for Fast Heterogeneous Thermal Simulation",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "OSF: An Operator-Splitting Framework for Fast Heterogeneous Thermal Simulation",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{ai2026osf,\n  title={OSF: An Operator-Splitting Framework for Fast Heterogeneous Thermal Simulation},\n  author={Hao Ai and Liang Chen and Jianhua Zhang and Wenxing Zhu},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing OSF with COMSOL, FCS (Area-Weighted), Standard CG for Thermal & Electro-Thermal Analysis tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Thermal & Electro-Thermal Analysis; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup",
+            "MAE"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -18918,6 +21416,67 @@
           ]
         },
         {
+          "baseline_id": "graphdta",
+          "short_name": "GraphDTA",
+          "display_name": "GraphDTA: Fast Dynamic Timing Analysis for Circuits with Graph Representation Learning",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "GraphDTA: Fast Dynamic Timing Analysis for Circuits with Graph Representation Learning",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{fan2026graphdta,\n  title={GraphDTA: Fast Dynamic Timing Analysis for Circuits with Graph Representation Learning},\n  author={Guangxi Fan and Tianliang Ma and Xuguang Sun and Xun Wang and Cheng Wang and Zhiping Yu and Xiaolei Zhu and Leilai Shao},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing GraphDTA with existing machine-learning methods, gate-level simulation for Timing Estimation and Prediction tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Timing Estimation and Prediction; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup",
+            "slack",
+            "WNS"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "gt-fusion",
+          "short_name": "GT-Fusion",
+          "display_name": "GT-Fusion: Synergizing LLM Semantics, Topology, and Geometry for PPA Prediction and Optimization",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "GT-Fusion: Synergizing LLM Semantics, Topology, and Geometry for PPA Prediction and Optimization",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{lai2026gt,\n  title={GT-Fusion: Synergizing LLM Semantics, Topology, and Geometry for PPA Prediction and Optimization},\n  author={Xinhua Lai and He Liu and Miao Liu and Jungang Xu and Xingquan Li},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing GT-Fusion with Pure UNet, UNet+GNN for Timing Estimation and Prediction tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Timing Estimation and Prediction; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "congestion",
+            "delay",
+            "RMSE",
+            "MAE"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "nua-timer",
           "short_name": "NUA-Timer",
           "display_name": "NUA-Timer: Pre-Synthesis Timing Prediction Under Non-Uniform Input Arrival Times",
@@ -18950,6 +21509,62 @@
             "Pre-synthesis prediction accuracy depends on training data quality",
             "Bidirectional propagation network may not capture all timing effects",
             "Non-uniform input arrival time modeling adds complexity"
+          ]
+        },
+        {
+          "baseline_id": "paragate",
+          "short_name": "ParaGate",
+          "display_name": "ParaGate: Parasitic-Driven Domain Adaptation Transfer Learning for Netlist Performance Prediction",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "ParaGate: Parasitic-Driven Domain Adaptation Transfer Learning for Netlist Performance Prediction",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{sun2026paragate,\n  title={ParaGate: Parasitic-Driven Domain Adaptation Transfer Learning for Netlist Performance Prediction},\n  author={Bin Sun and Jingyi Zhou and Jianan Mu and Zhiteng Chao and Tianmeng Yang and Ziyue Xu and Jing Ye and Huawei Li},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing ParaGate with LaRC-Timer (reproduced), Timer-Inspired GNN (reproduced), Cell-wise GNN (reproduced), EDA tool with wire-load model, ParaGate w/o P (ablation) for Timing Estimation and Prediction tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for Timing Estimation and Prediction; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "power"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "pre-routing-timing-prediction-with-global-netlist-topology-awareness",
+          "short_name": "Dual-branch model with MILA graph transformer + ",
+          "display_name": "Pre-routing Timing Prediction with Global Netlist Topology Awareness",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Pre-routing Timing Prediction with Global Netlist Topology Awareness",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{wu2026pre,\n  title={Pre-routing Timing Prediction with Global Netlist Topology Awareness},\n  author={Mingle Wu and Zhongdong Qi and Qi Peng},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Dual-branch model with MILA graph transformer + level-wise GNN for pre-routing timing prediction with Restructure-tolerant timing prediction via multimodal fusion [7], Pre-routing timing prediction method [3], Pre-routing timing prediction method [5], Pre-routing timing prediction method [4] for Timing Estimation and Prediction tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for Timing Estimation and Prediction; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "paper-reported quality and runtime metrics"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         },
         {
@@ -19274,6 +21889,35 @@
       "aliases": [],
       "baselines": [
         {
+          "baseline_id": "aging-aware-slm-with-in-situ-pmm-monitoring-and-avs",
+          "short_name": "Aging-aware SLM with in-situ PMM monitoring and ",
+          "display_name": "Toward Aging-Aware Silicon Lifecycle Management in Advanced Technology: In-Situ Monitor Design, Deployment and AVS Architecture",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Toward Aging-Aware Silicon Lifecycle Management in Advanced Technology: In-Situ Monitor Design, Deployment and AVS Architecture",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{jin2026toward,\n  title={Toward Aging-Aware Silicon Lifecycle Management in Advanced Technology: In-Situ Monitor Design, Deployment and AVS Architecture},\n  author={Hongbei Jin and Feiyang Shu and Huizhen Qiu and Yewei Zhang and Pengpeng Ren and Zhiguo Yu and Zhigang Ji},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Aging-aware SLM with in-situ PMM monitoring and AVS with Baseline design with conventional voltage guardband for Yield Analysis and Reliability tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Yield Analysis and Reliability; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "power",
+            "area"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
           "baseline_id": "bagnet",
           "short_name": "BAGNet",
           "display_name": "BAGNet: A Boundary-Aware Graph Neural Network for SRAM Yield Analysis in Post-Layout Simulation",
@@ -19307,6 +21951,118 @@
             "Author metadata not confirmed; paper identified via IEEE Xplore DOI only",
             "First GNN framework for SRAM yield in post-layout simulation; limited baselines for comparison",
             "Boundary-awareness may be SRAM-specific; generalizability to other memory types unclear"
+          ]
+        },
+        {
+          "baseline_id": "gnn-reliability",
+          "short_name": "GNN-reliability",
+          "display_name": "GNN-reliability: A function-aware graph neural network for reliability prediction of gate-level netlist",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "GNN-reliability: A function-aware graph neural network for reliability prediction of gate-level netlist",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{li2026gnn,\n  title={GNN-reliability: A function-aware graph neural network for reliability prediction of gate-level netlist},\n  author={Zongta Li and Liang Yang and Hao Li and Mian Lou and Yingqi Li},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing GNN-reliability with GCN, GIN, GAT, GraphSAGE, FGNN for Yield Analysis and Reliability tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for Yield Analysis and Reliability; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "MAE"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "gradient-driven-grey-box-yield-optimization",
+          "short_name": "Gradient-Driven Grey-Box Yield Optimization",
+          "display_name": "Gradient-Driven Yield Optimization for Carbon Nanotube Circuits",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Gradient-Driven Yield Optimization for Carbon Nanotube Circuits",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{li2026gradient,\n  title={Gradient-Driven Yield Optimization for Carbon Nanotube Circuits},\n  author={Xingyang Li and Wei W. Xing and Yuanqing Cheng and Yuquan Sun},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Gradient-Driven Grey-Box Yield Optimization with HSPICE brute-force Monte Carlo, ALBO (Active Learning Bayesian Optimization), EMCBO, KDEBO, MVEBO for Yield Analysis and Reliability tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for Yield Analysis and Reliability; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "physics-informed-1d-cnn-set-surrogate",
+          "short_name": "Physics-Informed 1D-CNN SET Surrogate",
+          "display_name": "Physics-Informed and Uncertainty-Aware Surrogate Modeling of Single-Event Transients for Aerospace Applications",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "Physics-Informed and Uncertainty-Aware Surrogate Modeling of Single-Event Transients for Aerospace Applications",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{li2026physics,\n  title={Physics-Informed and Uncertainty-Aware Surrogate Modeling of Single-Event Transients for Aerospace Applications},\n  author={Yaoyu Li and Bi Wang and Hanbin Wang and Chao Wang and Zhaohao Wang and Yingqi Ma},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing Physics-Informed 1D-CNN SET Surrogate with TCAD simulation for Yield Analysis and Reliability tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 evaluation setup for Yield Analysis and Reliability; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "speedup"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
+          ]
+        },
+        {
+          "baseline_id": "xfs-mmoe",
+          "short_name": "XFS-MMoE",
+          "display_name": "XFS-MMoE: Cross-Task Feature Stitching with Multi-Gate Mixture-of-Experts for the Prediction of Drop-Impact Reliability",
+          "role": "candidate_recent_baseline",
+          "nomination": "community",
+          "publication": {
+            "title": "XFS-MMoE: Cross-Task Feature Stitching with Multi-Gate Mixture-of-Experts for the Prediction of Drop-Impact Reliability",
+            "venue": "ISEDA",
+            "year": 2026,
+            "bibtex": "@inproceedings{li2026xfs,\n  title={XFS-MMoE: Cross-Task Feature Stitching with Multi-Gate Mixture-of-Experts for the Prediction of Drop-Impact Reliability},\n  author={Longfei Li and Xinwei Chen and Min Tang and Junfa Mao},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+          },
+          "links": {},
+          "compare_when": [
+            "comparing XFS-MMoE with DNN, CNN, DeepONet, MMoE for Yield Analysis and Reliability tasks"
+          ],
+          "benchmark_scope": [
+            "paper-reported ISEDA 2026 rescue-pass evaluation setup for Yield Analysis and Reliability; exact benchmark suite should be checked in the source PDF before citation"
+          ],
+          "metrics": [
+            "MRE"
+          ],
+          "reproducibility": "paper_only",
+          "caveats": [
+            "Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.",
+            "Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation."
           ]
         }
       ]
@@ -19395,6 +22151,6 @@
   ],
   "_counts": {
     "topics": 122,
-    "baselines": 500
+    "baselines": 596
   }
 }

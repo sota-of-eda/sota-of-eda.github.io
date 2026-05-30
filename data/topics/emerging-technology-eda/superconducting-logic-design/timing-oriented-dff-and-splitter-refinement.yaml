@@ -1,0 +1,21 @@
+baseline_id: timing-oriented-dff-and-splitter-refinement
+short_name: Timing-Oriented DFF and Splitter Refinement
+display_name: Timing-Oriented DFF and Splitter Refinement for RSFQ Circuits
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Timing-Oriented DFF and Splitter Refinement for RSFQ Circuits
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{hu2026timing,\n  title={Timing-Oriented DFF and Splitter Refinement for RSFQ Circuits},\n  author={Qiangqiang Hu and Zhang Hu and Yinshui Xia and Lunyao Wang and Zhufei Chu},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing Timing-Oriented DFF and Splitter Refinement with PBMap, Minglei Zhou's DFF insertion algorithm for Superconducting Logic Design Automation tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Superconducting Logic Design Automation; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- paper-reported quality and runtime metrics
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

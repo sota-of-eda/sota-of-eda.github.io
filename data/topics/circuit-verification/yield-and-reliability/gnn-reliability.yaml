@@ -1,0 +1,21 @@
+baseline_id: gnn-reliability
+short_name: GNN-reliability
+display_name: 'GNN-reliability: A function-aware graph neural network for reliability prediction of gate-level netlist'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'GNN-reliability: A function-aware graph neural network for reliability prediction of gate-level netlist'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{li2026gnn,\n  title={GNN-reliability: A function-aware graph neural network for reliability prediction of gate-level netlist},\n  author={Zongta Li and Liang Yang and Hao Li and Mian Lou and Yingqi Li},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing GNN-reliability with GCN, GIN, GAT, GraphSAGE, FGNN for Yield Analysis and Reliability tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 rescue-pass evaluation setup for Yield Analysis and Reliability; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- MAE
+reproducibility: paper_only
+caveats:
+- Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

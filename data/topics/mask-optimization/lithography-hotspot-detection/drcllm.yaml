@@ -1,0 +1,21 @@
+baseline_id: drcllm
+short_name: DRCLLM
+display_name: Lithography Test Layout Generation Using DRC-Constrained Large Language Models
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Lithography Test Layout Generation Using DRC-Constrained Large Language Models
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{sun2026lithography,\n  title={Lithography Test Layout Generation Using DRC-Constrained Large Language Models},\n  author={Jinheng Sun and Tianshuai Qi and Haoxin Zuo and Yingying Shang and Qingchen Cao and Zhenjie Yao and Jiangliu Shi},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing DRCLLM with Vanilla LLM (no DRC constraint), 4 LLM backbones for Lithography Hotspot Detection tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Lithography Hotspot Detection; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- paper-reported quality and runtime metrics
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

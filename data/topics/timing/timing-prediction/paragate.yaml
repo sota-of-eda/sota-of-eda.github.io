@@ -1,0 +1,21 @@
+baseline_id: paragate
+short_name: ParaGate
+display_name: 'ParaGate: Parasitic-Driven Domain Adaptation Transfer Learning for Netlist Performance Prediction'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ParaGate: Parasitic-Driven Domain Adaptation Transfer Learning for Netlist Performance Prediction'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{sun2026paragate,\n  title={ParaGate: Parasitic-Driven Domain Adaptation Transfer Learning for Netlist Performance Prediction},\n  author={Bin Sun and Jingyi Zhou and Jianan Mu and Zhiteng Chao and Tianmeng Yang and Ziyue Xu and Jing Ye and Huawei Li},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing ParaGate with LaRC-Timer (reproduced), Timer-Inspired GNN (reproduced), Cell-wise GNN (reproduced), EDA tool with wire-load model, ParaGate w/o P (ablation) for Timing Estimation and Prediction tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 rescue-pass evaluation setup for Timing Estimation and Prediction; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- power
+reproducibility: paper_only
+caveats:
+- Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

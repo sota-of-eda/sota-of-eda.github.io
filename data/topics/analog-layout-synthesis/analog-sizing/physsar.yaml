@@ -1,0 +1,21 @@
+baseline_id: physsar
+short_name: PhysSAR
+display_name: 'PhysSAR: Feasibility-Frontier SAR Sizing with Physics Constraints and LLM Guidance'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'PhysSAR: Feasibility-Frontier SAR Sizing with Physics Constraints and LLM Guidance'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{li2026physsar,\n  title={PhysSAR: Feasibility-Frontier SAR Sizing with Physics Constraints and LLM Guidance},\n  author={Chang Li and Tianze Wu and Zhidi Yang and Shan Zhang and Dongdong Li and Zhichao Tan and Liang Zhao},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing PhysSAR with Random Search (RS), Bayesian Optimization (BO) for Analog Circuit Sizing and Optimization tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Analog Circuit Sizing and Optimization; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- paper-reported quality and runtime metrics
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

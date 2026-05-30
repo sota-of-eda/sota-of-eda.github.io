@@ -1,0 +1,21 @@
+baseline_id: differentiable-tier-partitioning-with-hypergraph-extension
+short_name: Differentiable Tier Partitioning with Hypergraph
+display_name: Differentiable Timing-Aware Tier Partitioning with Hypergraph Extension for Heterogeneous 3D ICs
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Differentiable Timing-Aware Tier Partitioning with Hypergraph Extension for Heterogeneous 3D ICs
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{qian2026differentiable,\n  title={Differentiable Timing-Aware Tier Partitioning with Hypergraph Extension for Heterogeneous 3D ICs},\n  author={Xilin Qian and Han Zhang and Peng Cao},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing Differentiable Tier Partitioning with Hypergraph Extension with Pin-3D default bin-based partitioning, FM-based partitioning for Timing-Driven Physical Optimization tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Timing-Driven Physical Optimization; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- TNS
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

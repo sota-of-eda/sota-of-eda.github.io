@@ -1,0 +1,23 @@
+baseline_id: u-wno-ilt
+short_name: U-WNO-ILT
+display_name: 'U-WNO-ILT: U-Net Enhanced Wavelet Neural Operator with Spectral-Spatial Decoupling for Inverse Lithography'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'U-WNO-ILT: U-Net Enhanced Wavelet Neural Operator with Spectral-Spatial Decoupling for Inverse Lithography'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{shang2026u,\n  title={U-WNO-ILT: U-Net Enhanced Wavelet Neural Operator with Spectral-Spatial Decoupling for Inverse Lithography},\n  author={Xinyu Shang and Tianyi Xu and Hongwei Yao and Bingyi Ye and Yang Shen and Xiaojin Li and Yabin Sun and Yuhang Zhang},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing U-WNO-ILT with GAN-OPC, DAMO-ILT, Neural-ILT, GMUNet-ILT, Pure FNO for Mask Optimization tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Mask Optimization; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- speedup
+- EPE
+- L2
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

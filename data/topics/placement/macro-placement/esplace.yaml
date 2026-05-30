@@ -1,0 +1,21 @@
+baseline_id: esplace
+short_name: ESPlace
+display_name: 'ESPlace: Fast Macro Placement Using Evolution Strategy with Partial Evaluation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ESPlace: Fast Macro Placement Using Evolution Strategy with Partial Evaluation'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{ma2026esplace,\n  title={ESPlace: Fast Macro Placement Using Evolution Strategy with Partial Evaluation},\n  author={Limei Ma and Handing Wang and Hongzhong Wu},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing ESPlace with EfficientPlace, MaskPlace, MaskRegulate, GraphPlace, DeepPR for Macro Placement tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Macro Placement; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- paper-reported quality and runtime metrics
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

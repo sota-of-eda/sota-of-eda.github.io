@@ -1,0 +1,21 @@
+baseline_id: ips-iterative-pairing-selection
+short_name: IPS (Iterative Pairing Selection)
+display_name: A Novel Iterative Pairing Selection (IPS) Framework for FPGA Dual-Output LUT
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: A Novel Iterative Pairing Selection (IPS) Framework for FPGA Dual-Output LUT
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{wang2026a,\n  title={A Novel Iterative Pairing Selection (IPS) Framework for FPGA Dual-Output LUT},\n  author={Zhaohan Wang and Yunfan Zuo and Yuhang Du and Ziji Zhao and Yaling Li and Chengao Zhang and Jiajie Xu and Lixin Ge},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing IPS (Iterative Pairing Selection) with Resyn ABC (single-output mapping), Lu et al. 2025 (multi-output LUT mapping) for Logic Synthesis tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 rescue-pass evaluation setup for Logic Synthesis; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- area
+reproducibility: paper_only
+caveats:
+- Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

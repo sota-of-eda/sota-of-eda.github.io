@@ -1,0 +1,21 @@
+baseline_id: pdndataset-ern-vit
+short_name: PDNDataset + ERN-ViT
+display_name: 'PDNDataset: A Machine Learning-Based Dataset for Multi-Load Copper-Plane DC IR-Drop Analysis'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'PDNDataset: A Machine Learning-Based Dataset for Multi-Load Copper-Plane DC IR-Drop Analysis'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{ji2026pdndataset,\n  title={PDNDataset: A Machine Learning-Based Dataset for Multi-Load Copper-Plane DC IR-Drop Analysis},\n  author={Yuxi Ji and Yubin Song and Rui Chen and Jienan Chen},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing PDNDataset + ERN-ViT with Commercial FEM tool (PowerDC), MNA-Solver for Power Delivery Network Analysis tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Power Delivery Network Analysis; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- speedup
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

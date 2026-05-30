@@ -1,0 +1,21 @@
+baseline_id: gsgnn-gsegment-based-gnn-for-pre-routing-congestion-prediction
+short_name: GSGNN (GSegment-based GNN for pre-routing conges
+display_name: 'GSGNN: A novel GSegment-based Graph Neural Network for VLSI Pre-Routing Congestion Prediction'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'GSGNN: A novel GSegment-based Graph Neural Network for VLSI Pre-Routing Congestion Prediction'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{peng2026gsgnn,\n  title={GSGNN: A novel GSegment-based Graph Neural Network for VLSI Pre-Routing Congestion Prediction},\n  author={Xuan Peng and Yi Zou},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing GSGNN (GSegment-based GNN for pre-routing congestion prediction) with GraphSAGE, GNet U-Net, GNet LHNN, GSegment U-Net for Routability Prediction & Optimization tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 rescue-pass evaluation setup for Routability Prediction & Optimization; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- F1
+reproducibility: paper_only
+caveats:
+- Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

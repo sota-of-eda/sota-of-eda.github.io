@@ -1,0 +1,22 @@
+baseline_id: physics-augmented-cryogenic-compact-model-40nm-180nm-300k-9mk
+short_name: Physics-augmented cryogenic compact model (40nm/
+display_name: 'Compact Modeling and Characterization Strategies for CMOS Technology Down to 9 mK: From Physics to Simulation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Compact Modeling and Characterization Strategies for CMOS Technology Down to 9 mK: From Physics to Simulation'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{ma2026compact,\n  title={Compact Modeling and Characterization Strategies for CMOS Technology Down to 9 mK: From Physics to Simulation},\n  author={Zhizhao Ma and Shilong Li and Yuhuan Lin and Kai Chen and Quan Chen},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- "comparing Physics-augmented cryogenic compact model (40nm/180nm, 300K\u20139mK) with p-MOSFET parameter summary (300K\u20139mK), n-MOSFET parameter summary (300K\u20139mK), IDsat vs temperature (W/L=1\u03BCm/1\u03BCm, 300K\u20139mK), Parameter ratio trends (SS, \u03BCeff, Vth, RSD vs T/Troom), Effective mobility extraction (n-MOSFETs, 300K\u20134K) for Circuit Simulation & Solver Acceleration tasks"
+benchmark_scope:
+- paper-reported ISEDA 2026 rescue-pass evaluation setup for Circuit Simulation & Solver Acceleration; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- temperature
+- coverage
+reproducibility: paper_only
+caveats:
+- Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

@@ -1,0 +1,22 @@
+baseline_id: ffx-morl
+short_name: FFX-MORL
+display_name: Fast, Feasible Chiplet Placements via Warm-Start Multi-Objective Reinforcement Learning
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Fast, Feasible Chiplet Placements via Warm-Start Multi-Objective Reinforcement Learning
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{ata2026fast,\n  title={Fast, Feasible Chiplet Placements via Warm-Start Multi-Objective Reinforcement Learning},\n  author={Sezin Kircali Ata and Yubo Hou and Mihai Dragos Rotaru and Rahul Dutta and Ashish James},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing FFX-MORL with RLPLANNER for Macro Placement tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Macro Placement; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- wirelength
+- temperature
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

@@ -1,0 +1,21 @@
+baseline_id: repart
+short_name: RePart
+display_name: 'RePart: Efficient Hypergraph Partitioning with Logic Replication Optimization for Multi-FPGA System'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'RePart: Efficient Hypergraph Partitioning with Logic Replication Optimization for Multi-FPGA System'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{fu2026repart,\n  title={RePart: Efficient Hypergraph Partitioning with Logic Replication Optimization for Multi-FPGA System},\n  author={Zizhuo Fu and Yifan Zhou and Zhaoxin Lu and Guangyu Sun and Runsheng Wang and Meng Li and Yibo Lin},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing RePart with SOTA hypergraph partitioners, EDA Elite Challenge winners, RePart (ablation variants) for Multi-FPGA System Partitioning and Routing tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Multi-FPGA System Partitioning and Routing; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- speedup
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

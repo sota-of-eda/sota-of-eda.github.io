@@ -1,0 +1,21 @@
+baseline_id: physics-based-ots-compact-model-with-lk-equation
+short_name: Physics-based OTS compact model with LK equation
+display_name: A Physics-Based OTS Compact Model with Force-Driven Adaptive Damping and Differentiable Hysteresis
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: A Physics-Based OTS Compact Model with Force-Driven Adaptive Damping and Differentiable Hysteresis
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{li2026a,\n  title={A Physics-Based OTS Compact Model with Force-Driven Adaptive Damping and Differentiable Hysteresis},\n  author={Yukun Li and Jiajun Qiu and Sannian Song and Lining Zhang},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing Physics-based OTS compact model with LK equation with GeAsSe OTS-1 (50% As2Se3), GeAsSe OTS-2 (40% As2Se3), GeAsSe OTS-3 (22% As2Se3) for Circuit Simulation & Solver Acceleration tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Circuit Simulation & Solver Acceleration; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- paper-reported quality and runtime metrics
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

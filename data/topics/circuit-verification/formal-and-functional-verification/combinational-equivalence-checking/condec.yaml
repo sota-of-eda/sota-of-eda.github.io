@@ -1,0 +1,21 @@
+baseline_id: condec
+short_name: CondEC
+display_name: 'CondEC: Equivalence Checking under Conditions'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'CondEC: Equivalence Checking under Conditions'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{che2026condec,\n  title={CondEC: Equivalence Checking under Conditions},\n  author={Wenbin Che and Changyuan Yu and Hongce Zhang},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing CondEC with ABC &cec, Kissat, CaDiCaL for Combinational Equivalence Checking tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Combinational Equivalence Checking; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- speedup
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

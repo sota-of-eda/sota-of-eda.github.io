@@ -1,0 +1,22 @@
+baseline_id: edge-vector-skip-matching-evsm
+short_name: Edge-Vector Skip-Matching (EVSM)
+display_name: Layout Pattern Matching Using Edge-Vector Sparse Sequences and Dual-Anchor Probing
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Layout Pattern Matching Using Edge-Vector Sparse Sequences and Dual-Anchor Probing
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{liu2026layout,\n  title={Layout Pattern Matching Using Edge-Vector Sparse Sequences and Dual-Anchor Probing},\n  author={Shuo Liu and Chunrun Su and Jiaju Li and Chao Wang},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing Edge-Vector Skip-Matching (EVSM) with SOTA academic approaches, Calibre for Lithography Hotspot Detection tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Lithography Hotspot Detection; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- speedup
+- accuracy
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

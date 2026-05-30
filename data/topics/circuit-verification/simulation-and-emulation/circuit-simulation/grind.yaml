@@ -1,0 +1,21 @@
+baseline_id: grind
+short_name: GRIND
+display_name: 'GRIND: GNN and Reinforcement Learning Enhanced Multilevel Nested Dissection for Circuit Matrix Reordering'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'GRIND: GNN and Reinforcement Learning Enhanced Multilevel Nested Dissection for Circuit Matrix Reordering'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{song2026grind,\n  title={GRIND: GNN and Reinforcement Learning Enhanced Multilevel Nested Dissection for Circuit Matrix Reordering},\n  author={Jianfei Song and Zhenhua Wu and Zhou Jin and Cheng Zhuo},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing GRIND with METIS, NESDIS, RCM, COLAMD for Circuit Simulation & Solver Acceleration tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Circuit Simulation & Solver Acceleration; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- paper-reported quality and runtime metrics
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

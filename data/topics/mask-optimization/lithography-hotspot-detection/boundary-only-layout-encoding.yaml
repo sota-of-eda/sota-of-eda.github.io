@@ -1,0 +1,22 @@
+baseline_id: boundary-only-layout-encoding
+short_name: boundary-only-layout-encoding
+display_name: Boundary-Only Layout Encoding for Lithography Hotspot Detection
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Boundary-Only Layout Encoding for Lithography Hotspot Detection
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{zhang2026boundary,\n  title={Boundary-Only Layout Encoding for Lithography Hotspot Detection},\n  author={Yufeng Zhang and Zhili Xu and Yuqian Zang and Jiale Li and Silin Chen and Zhaoyang Wang and Chihwei Chiang and Ningmu Zou},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing boundary-only-layout-encoding with TCAD'19, DAC'19, ICCAD'20, DATE'22, ISEDA'25 for Lithography Hotspot Detection tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 rescue-pass evaluation setup for Lithography Hotspot Detection; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- runtime
+- accuracy
+reproducibility: paper_only
+caveats:
+- Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

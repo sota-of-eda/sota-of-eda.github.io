@@ -1,0 +1,21 @@
+baseline_id: specmind
+short_name: SpecMind
+display_name: 'SpecMind: Automated Analog-to-Digital Converter (ADC) Diagnosis with Agentic Reasoning'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'SpecMind: Automated Analog-to-Digital Converter (ADC) Diagnosis with Agentic Reasoning'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{zhang2026specmind,\n  title={SpecMind: Automated Analog-to-Digital Converter (ADC) Diagnosis with Agentic Reasoning},\n  author={Zhishuai Zhang and Kezhuo Liu and Aodong Zhang and Shilong Liu and Yi Zhong and Nan Sun and Lu Jie},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing SpecMind with Baseline VLMs for LLM for EDA Automation tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for LLM for EDA Automation; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- accuracy
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

@@ -1,0 +1,21 @@
+baseline_id: amacrosyn
+short_name: AmacroSyn
+display_name: Automated Synthesis of Abuttable Macros for Analog Layout
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Automated Synthesis of Abuttable Macros for Analog Layout
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{huang2026automated,\n  title={Automated Synthesis of Abuttable Macros for Analog Layout},\n  author={Li Huang and Xueying Huang and Xinpeng Wang and Fuya Yang and Junjie Yang and Lin Yang and Chuanxu Liu and Rui Ye and Zhanfei Chen and Ting-Jung Lin and Lei He},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing AmacroSyn with Acell-only baseline, Manual Pcell-based layouts for Analog Circuit Sizing and Optimization tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Analog Circuit Sizing and Optimization; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- area
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

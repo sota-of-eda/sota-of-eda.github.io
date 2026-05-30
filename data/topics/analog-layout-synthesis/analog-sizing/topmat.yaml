@@ -1,0 +1,21 @@
+baseline_id: topmat
+short_name: TopMat
+display_name: 'TopMat: Knowledge Transfer and Hierarchical Optimization for Analog Circuit Sizing via Sub-circuit Topology Matching'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'TopMat: Knowledge Transfer and Hierarchical Optimization for Analog Circuit Sizing via Sub-circuit Topology Matching'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{yao2026topmat,\n  title={TopMat: Knowledge Transfer and Hierarchical Optimization for Analog Circuit Sizing via Sub-circuit Topology Matching},\n  author={Yuan Yao and Yuxuan Zhang and Yuanqi Hu and Wei W. Xing},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing TopMat with KATO, CCINN, ANGEL, PESMOC, MSEMOC for Analog Circuit Sizing and Optimization tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Analog Circuit Sizing and Optimization; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- paper-reported quality and runtime metrics
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

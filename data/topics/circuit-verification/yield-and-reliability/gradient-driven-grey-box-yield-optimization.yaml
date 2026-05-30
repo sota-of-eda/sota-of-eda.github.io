@@ -1,0 +1,21 @@
+baseline_id: gradient-driven-grey-box-yield-optimization
+short_name: Gradient-Driven Grey-Box Yield Optimization
+display_name: Gradient-Driven Yield Optimization for Carbon Nanotube Circuits
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Gradient-Driven Yield Optimization for Carbon Nanotube Circuits
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{li2026gradient,\n  title={Gradient-Driven Yield Optimization for Carbon Nanotube Circuits},\n  author={Xingyang Li and Wei W. Xing and Yuanqing Cheng and Yuquan Sun},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing Gradient-Driven Grey-Box Yield Optimization with HSPICE brute-force Monte Carlo, ALBO (Active Learning Bayesian Optimization), EMCBO, KDEBO, MVEBO for Yield Analysis and Reliability tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 rescue-pass evaluation setup for Yield Analysis and Reliability; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- speedup
+reproducibility: paper_only
+caveats:
+- Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

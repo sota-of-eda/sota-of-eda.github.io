@@ -1,0 +1,21 @@
+baseline_id: routeflow
+short_name: RouteFlow
+display_name: 'RouteFlow: A Routing-Efficient CGRA Framework Through Accelerated Layout-Aware Mapping'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'RouteFlow: A Routing-Efficient CGRA Framework Through Accelerated Layout-Aware Mapping'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{pang2026routeflow,\n  title={RouteFlow: A Routing-Efficient CGRA Framework Through Accelerated Layout-Aware Mapping},\n  author={Hongyu Pang and Jiajun Qin and Song Chen and Qi Xu},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing RouteFlow with TRAM-Base, TRAM-Base-S, TRAM, TRAM-S, island-style CGRA for High Level Synthesis tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for High Level Synthesis; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- speedup
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

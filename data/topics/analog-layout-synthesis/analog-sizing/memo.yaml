@@ -1,0 +1,21 @@
+baseline_id: memo
+short_name: MEMO
+display_name: 'MEMO: Dynamic Routing Mixture-of-Experts Reinforcement Learning for Multi-Objective Analog Circuit Sizing'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'MEMO: Dynamic Routing Mixture-of-Experts Reinforcement Learning for Multi-Objective Analog Circuit Sizing'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{han2026memo,\n  title={MEMO: Dynamic Routing Mixture-of-Experts Reinforcement Learning for Multi-Objective Analog Circuit Sizing},\n  author={Yanan Han and Bijian Lan and Jing Wan},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing MEMO with DDPG (single-policy) for Analog Circuit Sizing and Optimization tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Analog Circuit Sizing and Optimization; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- paper-reported quality and runtime metrics
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

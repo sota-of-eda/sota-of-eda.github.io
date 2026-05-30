@@ -1,0 +1,22 @@
+baseline_id: osf
+short_name: OSF
+display_name: 'OSF: An Operator-Splitting Framework for Fast Heterogeneous Thermal Simulation'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'OSF: An Operator-Splitting Framework for Fast Heterogeneous Thermal Simulation'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{ai2026osf,\n  title={OSF: An Operator-Splitting Framework for Fast Heterogeneous Thermal Simulation},\n  author={Hao Ai and Liang Chen and Jianhua Zhang and Wenxing Zhu},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing OSF with COMSOL, FCS (Area-Weighted), Standard CG for Thermal & Electro-Thermal Analysis tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Thermal & Electro-Thermal Analysis; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- speedup
+- MAE
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

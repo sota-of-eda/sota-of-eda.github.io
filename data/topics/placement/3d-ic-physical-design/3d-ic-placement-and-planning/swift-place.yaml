@@ -1,0 +1,24 @@
+baseline_id: swift-place
+short_name: SWIFT-Place
+display_name: 'SWIFT-Place: Sequential Wirelength, Interposer Footprint, and Thermal-Aware Placement for 2.5D Advanced Packaging Systems'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'SWIFT-Place: Sequential Wirelength, Interposer Footprint, and Thermal-Aware Placement for 2.5D Advanced Packaging Systems'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{hou2026swift,\n  title={SWIFT-Place: Sequential Wirelength, Interposer Footprint, and Thermal-Aware Placement for 2.5D Advanced Packaging Systems},\n  author={Yubo Hou and Sezin Ata Kircali and Gen Liang Lim and Richard Chang and Mihai Dragos Rotaru and Dutta Rahul and Ashish James},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing SWIFT-Place with TAP-2.5D for 3D IC Placement and Planning tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 rescue-pass evaluation setup for 3D IC Placement and Planning; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- runtime
+- speedup
+- wirelength
+- area
+reproducibility: paper_only
+caveats:
+- Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

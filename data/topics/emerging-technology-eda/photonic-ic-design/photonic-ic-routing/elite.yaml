@@ -1,0 +1,21 @@
+baseline_id: elite
+short_name: ELITE
+display_name: 'ELITE: Efficient Lookup Table Assisted Routing Engine for Photonic Integrated Circuits'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'ELITE: Efficient Lookup Table Assisted Routing Engine for Photonic Integrated Circuits'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{yu2026elite,\n  title={ELITE: Efficient Lookup Table Assisted Routing Engine for Photonic Integrated Circuits},\n  author={Xiaofei Yu and Yuchao Wu and Haopeng Yan and Yeyu Tong and Yuzhe Ma},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing ELITE with Manual design, BSG-route [13], ILP [11] for Photonic IC Routing tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 rescue-pass evaluation setup for Photonic IC Routing; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- paper-reported quality and runtime metrics
+reproducibility: paper_only
+caveats:
+- Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

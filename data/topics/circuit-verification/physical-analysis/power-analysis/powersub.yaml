@@ -1,0 +1,24 @@
+baseline_id: powersub
+short_name: PowerSub
+display_name: Highly Accurate Power Estimation in FPGA HLS via Adaptive and Enhanced Subgraph Learning
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Highly Accurate Power Estimation in FPGA HLS via Adaptive and Enhanced Subgraph Learning
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{liu2026highly,\n  title={Highly Accurate Power Estimation in FPGA HLS via Adaptive and Enhanced Subgraph Learning},\n  author={Yuchen Liu and Xiangfei Hu and Yuyang Ye and Tinghuan Chen and Zhe Lin and Hao Yan},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing PowerSub with PowerGear, GCN, GraphConv, Vivado for Power Analysis and Estimation tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Power Analysis and Estimation; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- runtime
+- speedup
+- power
+- accuracy
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

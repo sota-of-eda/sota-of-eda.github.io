@@ -1,0 +1,22 @@
+baseline_id: gnn-based-seu-sensitive-register-prediction-gat
+short_name: GNN-based SEU-sensitive register prediction (GAT
+display_name: Graph Neural Network-based Prediction of SEU-type Sensitive Registers in Gate-level VLSI Circuits
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: Graph Neural Network-based Prediction of SEU-type Sensitive Registers in Gate-level VLSI Circuits
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{li2026graph,\n  title={Graph Neural Network-based Prediction of SEU-type Sensitive Registers in Gate-level VLSI Circuits},\n  author={Yiqing Li and Huixin Peng and Yan Liang and Fei Xiao and Huimeng Guo and Mingwei Mi and Liang Wang and Yuanfu Zhao},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing GNN-based SEU-sensitive register prediction (GAT) with GCN, GraphSAGE, SSIM-based fault injection for Hardware Testing and Fuzzing tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Hardware Testing and Fuzzing; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- speedup
+- F1
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

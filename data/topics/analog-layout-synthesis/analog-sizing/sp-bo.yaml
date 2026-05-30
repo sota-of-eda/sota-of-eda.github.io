@@ -1,0 +1,21 @@
+baseline_id: sp-bo
+short_name: SP-BO
+display_name: 'SP-BO: Simulation-Pruning Bayesian Optimization via Conformal Filtering for Efficient Analog Sizing'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'SP-BO: Simulation-Pruning Bayesian Optimization via Conformal Filtering for Efficient Analog Sizing'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{liu2026sp,\n  title={SP-BO: Simulation-Pruning Bayesian Optimization via Conformal Filtering for Efficient Analog Sizing},\n  author={Xuhua Liu and Zhuofu Tao and Yichen Shi and Zhiyuan Wang and Zhongyi Li and Ze Zhang and Hongyang Wang and Shuilong Chen and Ting-Jung Lin and Quan Chen and Lei He},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing SP-BO with Standard BO (Optuna), Warm-starting Optuna, BO without conformal filtering for Analog Circuit Sizing and Optimization tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Analog Circuit Sizing and Optimization; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- runtime
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

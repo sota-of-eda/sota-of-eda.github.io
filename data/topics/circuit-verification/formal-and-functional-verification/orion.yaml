@@ -1,0 +1,22 @@
+baseline_id: orion
+short_name: Orion
+display_name: 'Orion: Automated Verification of Randomized Dynamic Schedules for Dataflow HLS'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Orion: Automated Verification of Randomized Dynamic Schedules for Dataflow HLS'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{wang2026orion,\n  title={Orion: Automated Verification of Randomized Dynamic Schedules for Dataflow HLS},\n  author={Lianghui Wang and Zijian Jiang and Ziqing Zhang and Weijie Weng and Yungang Bao and Kan Shi},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing Orion with PEDIA (cycle-based stalling units) for Formal and Functional Verification tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Formal and Functional Verification; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- speedup
+- coverage
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

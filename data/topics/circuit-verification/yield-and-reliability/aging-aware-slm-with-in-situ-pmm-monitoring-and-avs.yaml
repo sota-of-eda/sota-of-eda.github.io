@@ -1,0 +1,22 @@
+baseline_id: aging-aware-slm-with-in-situ-pmm-monitoring-and-avs
+short_name: 'Aging-aware SLM with in-situ PMM monitoring and '
+display_name: 'Toward Aging-Aware Silicon Lifecycle Management in Advanced Technology: In-Situ Monitor Design, Deployment and AVS Architecture'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'Toward Aging-Aware Silicon Lifecycle Management in Advanced Technology: In-Situ Monitor Design, Deployment and AVS Architecture'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{jin2026toward,\n  title={Toward Aging-Aware Silicon Lifecycle Management in Advanced Technology: In-Situ Monitor Design, Deployment and AVS Architecture},\n  author={Hongbei Jin and Feiyang Shu and Huizhen Qiu and Yewei Zhang and Pengpeng Ren and Zhiguo Yu and Zhigang Ji},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing Aging-aware SLM with in-situ PMM monitoring and AVS with Baseline design with conventional voltage guardband for Yield Analysis and Reliability tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 evaluation setup for Yield Analysis and Reliability; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- power
+- area
+reproducibility: paper_only
+caveats:
+- Formalized from a local ISEDA 2026 proceedings packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from compact Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.

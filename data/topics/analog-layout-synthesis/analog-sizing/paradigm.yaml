@@ -1,0 +1,21 @@
+baseline_id: paradigm
+short_name: PARADIGM
+display_name: 'PARADIGM: Pareto-Optimized Analog Design via Intelligent Database-Guided Methodology'
+role: candidate_recent_baseline
+nomination: community
+publication:
+  title: 'PARADIGM: Pareto-Optimized Analog Design via Intelligent Database-Guided Methodology'
+  venue: ISEDA
+  year: 2026
+  bibtex: "@inproceedings{peng2026paradigm,\n  title={PARADIGM: Pareto-Optimized Analog Design via Intelligent Database-Guided Methodology},\n  author={Anlan Peng and Chengjie Liu and Yuan Du and Li Du*},\n  booktitle={2026 International Symposium on EDA (ISEDA)},\n  year={2026}\n}"
+links: {}
+compare_when:
+- comparing PARADIGM with TuRBO (standalone), P2C Net (direct prediction), CART / RF / XGBoost / SVM / kNN / NN classifiers for Analog Circuit Sizing and Optimization tasks
+benchmark_scope:
+- paper-reported ISEDA 2026 rescue-pass evaluation setup for Analog Circuit Sizing and Optimization; exact benchmark suite should be checked in the source PDF before citation
+metrics:
+- paper-reported quality and runtime metrics
+reproducibility: paper_only
+caveats:
+- Formalized from an ISEDA 2026 defer-rescue packet; DOI and publisher-export BibTeX were not verified in this pass.
+- Experiment-baseline names were extracted from targeted Experiment/Evaluation/Table/Figure evidence and should be spot-checked before citation.
